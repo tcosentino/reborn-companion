@@ -1,11 +1,12 @@
 import { marked } from 'marked'
-import { useMemo } from 'react'
+import { useEffect, useMemo, useRef } from 'react'
 import type { BattleBlock, Section } from '../data/types'
 import { battleId, href } from '../lib/route'
 import { useProgress } from '../lib/progress'
 import { Battle } from './blocks/Battle'
 import { Encounters, Mining, Pickup, Shop, Tutor, WildHeld } from './blocks/Tables'
-import { useGame } from './common'
+import { useDex, useGame } from './common'
+import { linkProse, nameMaps } from '../features/hovercards/names'
 import { HiddenItems } from '../features/hidden-items/HiddenItems'
 import { groupHiddenItems, type RenderBlock } from '../features/hidden-items/group'
 
@@ -13,7 +14,11 @@ marked.setOptions({ gfm: true })
 
 const Prose = ({ md }: { md: string }) => {
   const html = useMemo(() => marked.parse(md, { async: false }) as string, [md])
-  return <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />
+  const dex = useDex()
+  const ref = useRef<HTMLDivElement>(null)
+  // Items (*italic*) and Pokemon (**bold**) that match the dex become hover triggers
+  useEffect(() => { if (ref.current) linkProse(ref.current, nameMaps(dex)) }, [html, dex])
+  return <div className="prose" ref={ref} dangerouslySetInnerHTML={{ __html: html }} />
 }
 
 const Image = ({ src, file }: { src: string; file: string }) => {

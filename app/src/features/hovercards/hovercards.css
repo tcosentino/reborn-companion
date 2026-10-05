@@ -1,0 +1,35 @@
+.hc-trigger { cursor: help }
+a .hc-trigger, .hc-trigger a { cursor: pointer }
+.hc-trigger:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px }
+.hc-prose { text-decoration: underline dotted var(--accent); text-decoration-thickness: 1.5px; text-underline-offset: 3px }
+.hc-prose:hover { background: var(--accent-soft); border-radius: 3px }
+
+.hc-card {
+  position: fixed; z-index: 100; box-sizing: border-box;
+  width: min(300px, calc(100vw - 16px)); overflow-y: auto; overscroll-behavior: contain;
+  background: var(--surface); color: var(--ink); border: 1px solid var(--line);
+  border-top: 3px solid var(--hc-accent, var(--accent)); border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .22), 0 2px 6px rgba(0, 0, 0, .12);
+  padding: .7rem .8rem; display: grid; gap: .55rem; font-size: .84rem; line-height: 1.45;
+  animation: hc-in .12s ease-out
+}
+.hc-card.hc-measuring { visibility: hidden }
+@keyframes hc-in { from { opacity: 0; transform: translateY(3px) } }
+@media (prefers-reduced-motion: reduce) { .hc-card { animation: none } }
+
+.hc-head { display: flex; gap: .7rem; align-items: center; min-width: 0 }
+.hc-head.hc-compact { justify-content: space-between; align-items: baseline; gap: .5rem }
+.hc-id { display: grid; gap: .25rem; min-width: 0; justify-items: start }
+.hc-name { font: 700 1.05rem/1.2 var(--display) }
+.hc-types { display: flex; gap: .3rem; flex-wrap: wrap }
+.hc-stats { display: flex; gap: 1rem; flex-wrap: wrap }
+.hc-stats > span { display: grid; gap: .1rem }
+.hc-stats b { font-size: .84rem; text-transform: capitalize }
+.hc-desc { margin: 0; color: var(--ink) }
+.hc-line { margin: 0; display: grid; gap: .15rem }
+.hc-ab + .hc-ab::before { content: ' / '; color: var(--muted) }
+.hc-ab { display: inline }
+.hc-line .hc-ab:first-of-type { margin-left: 0 }
+.hc-ha { font: 700 .58rem var(--mono); font-style: normal; letter-spacing: .05em; margin-left: .3rem; padding: .08rem .3rem; border-radius: 3px; background: var(--accent-soft); color: var(--accent); vertical-align: 1px }
+.hc-link { font-weight: 600; justify-self: start; padding: .2rem 0 }
+@media (pointer: coarse) { .hc-link { padding: .55rem 0 } }

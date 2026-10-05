@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { DexContext, GameContext } from './components/common'
 import { SectionView } from './components/SectionView'
+import { HoverCardHost } from './features/hovercards/HoverCardHost'
 import { PokedexContext, type PokedexData } from './components/pokedex/context'
 import { PokedexView } from './components/pokedex/PokedexView'
 import { SpeciesView } from './components/pokedex/SpeciesView'
@@ -136,6 +137,7 @@ const GuideView = ({ game, route }: { game: GameConfig; route: Route }) => {
                   : <div className="state">Loading {current.title}&hellip;</div>}
             </main>
           </div>
+          <HoverCardHost />
         </PokedexContext.Provider>
       </DexContext.Provider>
     </GameContext.Provider>

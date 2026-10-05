@@ -5,6 +5,7 @@ import { FieldBanner } from '../fields/FieldBanner'
 import { TypeChip, itemName, typeVar, useDex } from '../common'
 import { StatBars } from '../dex/StatBars'
 import { MonSprite } from '../dex/MonSprite'
+import { DexHover } from '../../features/hovercards/DexHover'
 
 const STAT_LABELS = ['HP', 'Atk', 'Def', 'SpA', 'SpD', 'Spe']
 
@@ -24,13 +25,11 @@ const Move = ({ sym }: { sym: string }) => {
   const dex = useDex()
   const mv = dex.moves[sym]
   if (!mv) return <li>{sym}</li>
-  const detail = [dex.types[mv.type]?.name, mv.category, mv.power && mv.power > 1 ? `${mv.power} BP` : null, mv.accuracy ? `${mv.accuracy}%` : null]
-    .filter(Boolean).join(' · ')
   return (
-    <li style={{ ['--mc' as string]: typeVar(mv.type) }} title={`${detail}\n${mv.desc}`}>
+    <DexHover as="li" kind="move" sym={sym} style={{ ['--mc' as string]: typeVar(mv.type) }}>
       {mv.name}
       {mv.power && mv.power > 1 ? <span className="bp">{mv.power}</span> : mv.category === 'status' ? <span className="bp">st</span> : null}
-    </li>
+    </DexHover>
   )
 }
 
@@ -47,7 +46,7 @@ const MonRow = ({ m, owner, showSpread }: { m: PartyMon; owner?: string; showSpr
       <MonSprite species={m.species} form={m.form} shiny={m.shiny} size="md" />
       <div className="mon-id">
         <div className="mon-top">
-          <b>{m.nickname ?? dex.species[m.species]?.name ?? m.displayName}</b>
+          <DexHover kind="species" sym={m.species} form={m.form}><b>{m.nickname ?? dex.species[m.species]?.name ?? m.displayName}</b></DexHover>
           <span className="mono">Lv {m.level}</span>
           {m.gender && <span className="mono muted">{m.gender === 'M' ? '♂' : '♀'}</span>}
         </div>
@@ -63,8 +62,8 @@ const MonRow = ({ m, owner, showSpread }: { m: PartyMon; owner?: string; showSpr
       </div>
       <div className="mon-kit">
         <div className="ability">
-          {ability && <>Ability <b title={ability.desc}>{ability.name}</b></>}
-          {m.item && <> · Holds <b title={dex.items[m.item]?.desc}>{itemName(dex, m.item)}</b></>}
+          {ability && <>Ability <DexHover kind="ability" sym={m.ability}><b>{ability.name}</b></DexHover></>}
+          {m.item && <> · Holds <DexHover kind="item" sym={m.item}><b>{itemName(dex, m.item)}</b></DexHover></>}
         </div>
         <ul className="moves">{m.moves.map((mv, i) => <Move key={i} sym={mv} />)}</ul>
         {showSpread && (
