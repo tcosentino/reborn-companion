@@ -11,3 +11,4 @@ app/public/data/
 .claude/worktrees/
 app/public/sprites/
 .playwright-mcp/
+app/tsconfig.tsbuildinfo
