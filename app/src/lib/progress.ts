@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 
 // Per-browser checklists (defeated trainers, caught Pokemon). Storage can be unavailable, so every access is guarded.
-export type Checklist = 'progress' | 'caught'
+export type Checklist = 'progress' | 'caught' | 'hidden'
 
 const key = (game: string, list: Checklist) => `pokeguide:${game}:${list}`
 
