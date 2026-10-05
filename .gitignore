@@ -8,3 +8,4 @@ upstream/
 app/node_modules/
 app/dist/
 app/public/data/
+app/public/sprites
