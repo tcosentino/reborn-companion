@@ -18,6 +18,12 @@ const CARD_ID = 'hc-card'
 const OPEN_DELAY = 250
 const SWITCH_DELAY = 80
 
+const DexIcon = () => (
+  <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M11 4h5v5M16 4l-7 7M14 12v3.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5H8" />
+  </svg>
+)
+
 const SpeciesCard = ({ t }: { t: HoverTarget }) => {
   const dex = useDex()
   const game = useGame()
@@ -42,6 +48,7 @@ const SpeciesCard = ({ t }: { t: HoverTarget }) => {
           {form && form.name !== 'Normal Form' && <span className="mono muted">{form.name}</span>}
           <div className="hc-types">{form?.types.map(ty => <TypeChip key={ty} type={ty} small />)}</div>
         </div>
+        <a className="hc-link" href={dexHref(game.id, t.sym)} aria-label="Open in Pokedex" title="Open in Pokedex"><DexIcon /></a>
       </header>
       {form && <StatBars stats={form.baseStats} variant="full" />}
       {abilities.length > 0 && (
@@ -60,7 +67,6 @@ const SpeciesCard = ({ t }: { t: HoverTarget }) => {
           <span>{where.map(l => `${l.place}${l.methods[0] ? ` (${l.methods[0]})` : ''}`).join('; ')}</span>
         </p>
       )}
-      <a className="hc-link" href={dexHref(game.id, t.sym)}>Open in Pokedex</a>
     </>
   )
 }

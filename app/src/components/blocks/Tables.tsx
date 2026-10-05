@@ -36,7 +36,7 @@ export const Encounters = ({ b, id }: { b: EncountersBlock; id?: string }) => {
                 <div className={`enc-row${r.firstSeen ? ' new' : ''}${pokedex ? ' with-dex' : ''}`} key={j}>
                   {pokedex && <CaughtToggle sym={r.species} name={r.displayName} />}
                   <div className="name">
-                    <MonSprite species={r.species} form={r.form} size="icon" />
+                    <DexHover kind="species" sym={r.species} form={r.form} focusable={false} className="hc-sprite"><MonSprite species={r.species} form={r.form} size="icon" /></DexHover>
                     <div>
                       <span className="name-line">
                         <DexHover kind="species" sym={r.species} form={r.form} focusable={false}><a href={dexHref(game.id, r.species)}><b>{r.displayName}</b></a></DexHover>

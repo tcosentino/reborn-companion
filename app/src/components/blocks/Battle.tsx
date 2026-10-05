@@ -43,7 +43,7 @@ const MonRow = ({ m, owner, showSpread }: { m: PartyMon; owner?: string; showSpr
   return (
     <div className="mon-row">
       <div className="mon-lead">
-      <MonSprite species={m.species} form={m.form} shiny={m.shiny} size="sm" />
+      <DexHover kind="species" sym={m.species} form={m.form} focusable={false} className="hc-sprite"><MonSprite species={m.species} form={m.form} shiny={m.shiny} size="sm" /></DexHover>
       <div className="mon-id">
         <div className="mon-top">
           <DexHover kind="species" sym={m.species} form={m.form}><b>{m.nickname ?? dex.species[m.species]?.name ?? m.displayName}</b></DexHover>
