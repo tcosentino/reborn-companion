@@ -4,10 +4,10 @@ import { describeEvolution } from '../../lib/evolution'
 import { TIER_LABEL, preEvolutionMap } from '../../lib/ranking'
 import { dexHref, href } from '../../lib/route'
 import { TypeChip, useGame } from '../common'
+import { StatBars } from '../dex/StatBars'
 import { CaughtToggle, TierBadge, tierSourceLabel } from './bits'
 import { usePokedex } from './context'
 
-const STAT_NAMES = ['HP', 'Atk', 'Def', 'SpA', 'SpD', 'Spe']
 
 export const SpeciesView = ({ sym }: { sym: Sym }) => {
   const game = useGame()
@@ -69,17 +69,7 @@ export const SpeciesView = ({ sym }: { sym: Sym }) => {
 
         <section className="panel">
           <div className="block-head"><h3>Base stats</h3><span className="eyebrow">Total {total}</span></div>
-          <table className="stat-table">
-            <tbody>
-              {f.baseStats.map((v, i) => (
-                <tr key={i}>
-                  <th>{STAT_NAMES[i]}</th>
-                  <td className="mono">{v}</td>
-                  <td className="stat-bar"><i style={{ width: `${Math.min(100, (v / 200) * 100)}%` }} /></td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <StatBars stats={f.baseStats} variant="full" />
         </section>
 
         <section className="panel">
