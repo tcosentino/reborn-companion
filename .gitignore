@@ -5,3 +5,6 @@ out/
 upstream/
 .gems/
 upstream/
+app/node_modules/
+app/dist/
+app/public/data/

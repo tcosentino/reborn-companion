@@ -83,9 +83,21 @@ pokemon-rebor/
 
 - [x] Prototype: redesigned Obsidia Ward section as a standalone page ([artifact](https://claude.ai/artifact/GfQd2ALrvCBC9L5fvCuc5K))
 - [x] Cloned upstream repo and mapped its macros and game-file dependencies
-- [ ] Obtain Reborn 19.5 `Scripts/` locally
-- [ ] JSON emitter for the generator
-- [ ] Scaffold the Vite app
-- [ ] Episode views, trainer cards, encounters, shops
+- [x] Obtain Reborn 19.5 `Scripts/` locally (19.5.0 Mac build; live guide uses 19.5.18)
+- [x] JSON emitter for the generator (`upstream` branch `json-export`, golden-tested byte-identical HTML)
+- [x] Scaffold the Vite app (`app/`, multi-game registry in `app/src/games.ts`)
+- [x] Episode views, trainer cards, encounters, shops
 - [ ] Search, progress tracking, compact view
 - [ ] Deploy (possibly under troycosentino.com)
+
+## Running locally
+
+```
+bash scripts/build-json.sh      # game-scripts/ -> out/json/reborn/
+bash scripts/sync-data.sh       # out/json/reborn/ -> app/public/data/reborn/
+cd app && yarn && yarn dev      # http://localhost:5174/#/reborn/obsidia-ward
+```
+
+Tests: `bash scripts/test.sh` (generator golden + JSON tests) and `cd app && yarn test`.
+
+Adding another game: produce the same JSON schema (`index.json`, `dex.json`, `chapters/*.json`, see `app/src/data/types.ts`) into `app/public/data/<id>/` and add an entry to `app/src/games.ts`.
