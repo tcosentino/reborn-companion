@@ -84,12 +84,14 @@ export type Role = Moveset['role']
 export const roleOf = (atk: number, spa: number): Role =>
   Math.abs(atk - spa) <= 10 ? 'Mixed' : atk > spa ? 'Physical' : 'Special'
 
-// Expected damage weight of a move for this species, before matchups
-export const moveValue = (m: MoveData, types: Sym[], atk: number, spa: number, source: MoveSource): number => {
+// Expected damage weight of a move for this species, before matchups.
+// Egg moves and moves only learned very late in a run count for less.
+export const moveValue = (m: MoveData, types: Sym[], atk: number, spa: number, source: MoveSource, level?: number): number => {
   const stat = m.category === 'physical' ? atk : spa
   const stab = types.includes(m.type) ? 1.5 : 1
   const access = source === 'egg' ? 0.75 : 1
-  return (m.power ?? 0) * ((m.accuracy ?? 100) / 100) * stab * (stat / 100) * access
+  const late = source === 'level' && level != null ? (level >= 75 ? 0.6 : level >= 60 ? 0.8 : 1) : 1
+  return (m.power ?? 0) * ((m.accuracy ?? 100) / 100) * stab * (stat / 100) * access * late
 }
 
 const NATURES: Record<Role, [string, string]> = {
@@ -117,7 +119,7 @@ export const buildMoveset = (dex: Dex, pokedex: Pokedex, learnsets: Learnsets, s
   const pool = learnable(pokedex, learnsets, sym)
     .map(l => ({ l, m: learnsets.moves[l.move] }))
     .filter((x): x is { l: Learnable; m: MoveData } => isUsableAttack(x.m) && allowed.includes(x.m.category))
-    .map(x => ({ ...x, v: moveValue(x.m, types, atk, spa, x.l.source) }))
+    .map(x => ({ ...x, v: moveValue(x.m, types, atk, spa, x.l.source, x.l.level) }))
   if (pool.length === 0) return null
 
   const vmax = Math.max(...pool.map(p => p.v))
@@ -128,10 +130,10 @@ export const buildMoveset = (dex: Dex, pokedex: Pokedex, learnsets: Learnsets, s
     if ((x.m.power ?? 0) >= 60) seHits(dex, x.m.type, defenders).forEach(t => covered.add(t))
   }
 
-  // One STAB move per own type first, strongest first
+  // One STAB move per own type first, strongest first, unless that STAB is too weak to be worth a slot
   const stabs = types
     .map(t => pool.filter(p => p.m.type === t).sort((a, b) => b.v - a.v)[0])
-    .filter(Boolean)
+    .filter(p => p && (p.m.power ?? 0) >= 50 && p.v >= 0.4 * vmax)
     .sort((a, b) => b.v - a.v)
   stabs.forEach(pick)
 
@@ -145,8 +147,10 @@ export const buildMoveset = (dex: Dex, pokedex: Pokedex, learnsets: Learnsets, s
 
   while (chosen.length < attackSlots) {
     const used = new Set(chosen.map(c => c.m.type))
-    const next = pool
-      .filter(p => !chosen.includes(p))
+    // Prefer a new type; repeat a type only when every new-type option is feeble (under 35% of the best move)
+    const fresh = pool.filter(p => !chosen.includes(p) && !used.has(p.m.type) && p.v >= 0.35 * vmax)
+    const strong = pool.filter(p => !chosen.includes(p) && p.v >= 0.35 * vmax)
+    const next = (fresh.length ? fresh : strong.length ? strong : pool.filter(p => !chosen.includes(p)))
       .map(p => {
         const gain = (p.m.power ?? 0) >= 60 ? seHits(dex, p.m.type, defenders).filter(t => !covered.has(t)).length : 0
         return { p, s: p.v / vmax + 0.12 * gain + (used.has(p.m.type) ? -0.6 : 0.1) }

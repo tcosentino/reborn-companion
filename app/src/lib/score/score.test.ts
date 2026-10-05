@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { Dex, Learnsets, MoveData, Pokedex } from '../../data/types'
-import { boostsStat, buildMoveset, isUsableAttack, learnable, roleOf } from './moves'
+import { boostsStat, buildMoveset, isUsableAttack, learnable, moveValue, roleOf } from './moves'
 import { availableFrom, finalForms, hinderedByAbility, isMajorTrainer, tierFor } from './rank'
 
 const move = (name: string, type: string, category: string, power: number | null, desc = '', accuracy = 100): MoveData =>
@@ -103,6 +103,16 @@ describe('buildMoveset', () => {
     expect(names).not.toContain('HYPERBEAM')
     expect(names).not.toContain('SOLARBEAM')
     expect(set.coverage).toContain('GRASS')
+  })
+
+  it('never repeats a type while another type is available', () => {
+    const set = buildMoveset(dex, pokedex, learnsets, 'CHARIZARD')!
+    const types = set.moves.filter(m => m.category !== 'status').map(m => m.type)
+    expect(new Set(types).size).toBe(types.length)
+  })
+
+  it('discounts moves learned very late', () => {
+    expect(moveValue(moves.FLAMETHROWER, ['FIRE'], 100, 100, 'level', 80)).toBeLessThan(moveValue(moves.FLAMETHROWER, ['FIRE'], 100, 100, 'level', 30))
   })
 
   it('returns null when nothing can attack', () => {
