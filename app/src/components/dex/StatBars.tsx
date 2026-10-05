@@ -34,7 +34,7 @@ export const StatBars = ({
     return (
       <div className="stat-bars compact" role="img" aria-label={label} title={label}>
         {stats.map((stat, i) => {
-          const percent = statToPercent(stat)
+          const percent = Math.max(8, statToPercent(stat, 180))
           const band = getStatBand(stat)
           return (
             <div

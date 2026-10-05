@@ -16,8 +16,9 @@ export const getStatBand = (stat: number): 'red' | 'orange' | 'yellow' | 'green'
 }
 
 /**
- * Convert a stat value (0-255) to a percentage (0-100), capped at 100%.
+ * Convert a stat value to a percentage of `max` (default 255), capped at 100%.
+ * The compact strip uses a lower max (180) so early-game Pokemon stay readable.
  */
-export const statToPercent = (stat: number): number => {
-  return Math.min(100, (stat / 255) * 100)
+export const statToPercent = (stat: number, max = 255): number => {
+  return Math.min(100, (stat / max) * 100)
 }

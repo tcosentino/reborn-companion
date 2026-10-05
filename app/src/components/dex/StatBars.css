@@ -95,32 +95,21 @@
 
 /* Compact variant: vertical strip of 6 bars */
 .stat-bars.compact {
-  height: 22px;
-  width: 60px;
-  gap: 0;
+  height: 26px;
+  width: 72px;
+  gap: 2px;
   align-items: flex-end;
-  justify-content: space-between;
-  padding: 2px 0;
+  padding: 3px;
   border: 1px solid var(--line);
   border-radius: 4px;
   background: var(--sunk);
-  overflow: hidden;
 }
 
 .stat-bars.compact .bar {
   flex: 1;
   min-width: 0;
-  height: 100%;
-  border-radius: 2px;
-  background: var(--sunk);
-  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 1px;
   transition: height 0.3s;
-}
-
-@media (prefers-color-scheme: dark) {
-  .stat-bars.compact .bar {
-    border-right-color: rgba(255, 255, 255, 0.08);
-  }
 }
 
 .stat-bars.compact .bar.red {
