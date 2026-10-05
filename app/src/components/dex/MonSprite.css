@@ -17,11 +17,6 @@
   .mon-lead .mon-sprite.sm { --s: 48px }
 }
 
-/* Encounter rows: icon left of the name */
-.enc-row .name { display: flex; align-items: center; gap: .3rem }
-.enc-row .name > div { display: grid; min-width: 0 }
-.enc-row:not(.with-dex) { grid-template-columns: 11.5rem minmax(0, 1fr) 3rem }
-.enc-row.with-dex { grid-template-columns: 1.1rem 12.5rem minmax(0, 1fr) 3rem }
 
 /* When the card itself is narrow (sidebar collapsed, tablets), five columns crush the moves.
    Keep Pokemon / type / stats on the first line and give moves and weaknesses full-width lines. */

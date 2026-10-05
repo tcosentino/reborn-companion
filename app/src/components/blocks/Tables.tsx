@@ -1,59 +1,75 @@
-import type { EncounterMethod, EncountersBlock, MiningBlock, PickupBlock, ShopBlock, TutorBlock, WildHeldBlock } from '../../data/types'
+import type { EncountersBlock, MiningBlock, PickupBlock, ShopBlock, TutorBlock, WildHeldBlock } from '../../data/types'
 import { dexHref } from '../../lib/route'
 import { TypeChip, itemName, money, typeVar, useDex, useGame } from '../common'
 import { MonSprite } from '../dex/MonSprite'
 import { CaughtToggle, TierBadge } from '../pokedex/bits'
 import { usePokedex } from '../pokedex/context'
 import { DexHover } from '../../features/hovercards/DexHover'
+import { buildEncounterGrid } from './encounterGrid'
 
-// Morning/Day/Night tables are often identical; collapse them into one "All day" table
-const collapseTimes = (methods: EncounterMethod[]): EncounterMethod[] => {
-  const out: EncounterMethod[] = []
-  for (const m of methods) {
-    const sibs = methods.filter(x => x.method === m.method)
-    const same = sibs.length > 1 && sibs.every(s => JSON.stringify(s.rows) === JSON.stringify(sibs[0].rows))
-    if (same) {
-      if (!out.some(o => o.method === m.method)) out.push({ ...m, time: 'All day' })
-    } else out.push(m)
-  }
-  return out
+const Ring = ({ rate, color }: { rate: number; color: string }) => {
+  const r = 7, c = 2 * Math.PI * r
+  return (
+    <svg className="ring" viewBox="0 0 18 18" aria-hidden="true">
+      <circle cx="9" cy="9" r={r} className="track" />
+      <circle cx="9" cy="9" r={r} className="fill" style={{ stroke: color }} strokeDasharray={`${(c * Math.min(rate, 100)) / 100} ${c}`} />
+    </svg>
+  )
 }
+
+const RateCell = ({ rate, color, span }: { rate: number | null; color: string; span?: number }) => (
+  <td className="rate" colSpan={span}>
+    {rate == null
+      ? <span className="none" aria-label="Not found here">-</span>
+      : <span className="cell" aria-label={`${rate}% encounter rate`}><Ring rate={rate} color={color} />{rate}%</span>}
+  </td>
+)
 
 export const Encounters = ({ b, id }: { b: EncountersBlock; id?: string }) => {
   const dex = useDex()
   const game = useGame()
   const pokedex = usePokedex()
+  const { times, groups } = buildEncounterGrid(b.methods)
+  const width = Math.max(times.length, 1)
+  const lead = pokedex ? 2 : 1
   return (
     <section className="enc" id={id}>
       <div className="block-head"><h3>{b.name}</h3><span className="eyebrow">Wild encounters</span></div>
-      <div className="enc-methods">
-        {collapseTimes(b.methods).map((m, i) => (
-          <div className="enc-method" key={i}>
-            <div className="tags"><span className="tag accent">{m.method}</span>{m.time && <span className="tag">{m.time}</span>}</div>
-            {[...m.rows].sort((a, z) => z.rate - a.rate).map((r, j) => {
-              const types = dex.species[r.species]?.forms['0']?.types ?? []
-              return (
-                <div className={`enc-row${r.firstSeen ? ' new' : ''}${pokedex ? ' with-dex' : ''}`} key={j}>
-                  {pokedex && <CaughtToggle sym={r.species} name={r.displayName} />}
-                  <div className="name">
-                    <DexHover kind="species" sym={r.species} form={r.form} focusable={false} className="hc-sprite"><MonSprite species={r.species} form={r.form} size="icon" /></DexHover>
-                    <div>
-                      <span className="name-line">
-                        <DexHover kind="species" sym={r.species} form={r.form} focusable={false}><a href={dexHref(game.id, r.species)}><b>{r.displayName}</b></a></DexHover>
-                        {pokedex?.ranks[r.species] && <TierBadge rank={pokedex.ranks[r.species]} />}
-                      </span>
-                      <small>Lv {r.levels}{r.form && r.form !== 'Normal Form' ? ` · ${r.form}` : ''}</small>
-                    </div>
-                  </div>
-                  <div className="bar" role="img" aria-label={`${r.rate}% encounter rate`}>
-                    <i style={{ width: `${r.rate}%`, ['--tc' as string]: typeVar(types[0] ?? 'NORMAL') }} />
-                  </div>
-                  <div className="pct">{r.rate}%</div>
-                </div>
-              )
-            })}
-          </div>
-        ))}
+      <div className="enc-scroll">
+        <table className="enc-grid">
+          <thead>
+            <tr>
+              <th className="mon" colSpan={lead}>Pokemon</th>
+              {times.length ? times.map(t => <th className="rate" key={t}>{t}</th>) : <th className="rate">Rate</th>}
+            </tr>
+          </thead>
+          {groups.map(g => (
+            <tbody key={g.method}>
+              <tr className="method"><th colSpan={lead + width}><span className="tag accent">{g.label}</span></th></tr>
+              {g.rows.map(r => {
+                const color = typeVar(dex.species[r.species]?.forms['0']?.types[0] ?? 'NORMAL')
+                return (
+                  <tr className={r.firstSeen ? 'new' : ''} key={`${r.species}|${r.form ?? ''}`}>
+                    {pokedex && <td className="chk"><CaughtToggle sym={r.species} name={r.displayName} /></td>}
+                    <td className="mon">
+                      <div className="name">
+                        <DexHover kind="species" sym={r.species} form={r.form} focusable={false} className="hc-sprite"><MonSprite species={r.species} form={r.form} size="icon" /></DexHover>
+                        <span className="name-line">
+                          <DexHover kind="species" sym={r.species} form={r.form} focusable={false}><a href={dexHref(game.id, r.species)}><b>{r.displayName}</b></a></DexHover>
+                          {pokedex?.ranks[r.species] && <TierBadge rank={pokedex.ranks[r.species]} />}
+                          <small>Lv {r.levels}{r.form && r.form !== 'Normal Form' ? ` · ${r.form}` : ''}</small>
+                        </span>
+                      </div>
+                    </td>
+                    {g.timed
+                      ? r.rates.map((rate, i) => <RateCell key={i} rate={rate} color={color} />)
+                      : <RateCell rate={r.rates[0]} color={color} span={width} />}
+                  </tr>
+                )
+              })}
+            </tbody>
+          ))}
+        </table>
       </div>
       <p className="legend-note"><span className="new-dot" /> First place this Pokemon appears in the guide{pokedex && <>. Tick the box when caught; the letter is how worth leveling it is (S best, D skip).</>}</p>
     </section>

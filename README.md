@@ -11,6 +11,7 @@ BIGJRA's guide is the most complete Reborn walkthrough, but it ships as a single
 - **Full walkthrough**: every main episode (1-19), every post-game episode (1-9) and the appendices, split into navigable sections such as "Obsidia Ward".
 - **Trainer cards**: one row per Pokemon showing level, types, ability, moves and held item. A "Weak to" column computes type matchups, with 4x weaknesses listed first. Field effects appear where they apply.
 - **Encounters, shops, tutors, partner battles, pickup tables**: rendered from data rather than static HTML.
+  - Wild encounter tables group rows by method (Grass, Cave, Surf, rods...), one row per Pokemon. Time of day is the only thing shown as columns, and only when the Morning/Day/Night tables differ; methods mostly have different Pokemon, so method columns would be mostly empty. Grouping lives in `app/src/components/blocks/encounterGrid.ts`.
 - **Companion features**: search across the whole guide, per-section progress tracking ("next unbeaten trainer"), a compact view, and team-coverage hints such as "Hits most of this team: Rock, Electric".
 - **Mobile first**: readable at phone width, with light and dark themes.
 - **Lazy loading**: one episode's JSON at a time. The full guide is several hundred trainers and about 20k lines of tables, which is too much to render at once on a phone.
