@@ -4,6 +4,7 @@ import { teamCoverage, weaknesses } from '../../lib/typechart'
 import { FieldBanner } from '../fields/FieldBanner'
 import { TypeChip, itemName, typeVar, useDex } from '../common'
 import { StatBars } from '../dex/StatBars'
+import { MonSprite } from '../dex/MonSprite'
 
 const STAT_LABELS = ['HP', 'Atk', 'Def', 'SpA', 'SpD', 'Spe']
 
@@ -42,6 +43,8 @@ const MonRow = ({ m, owner, showSpread }: { m: PartyMon; owner?: string; showSpr
   const baseStats = dex.species[m.species]?.forms[String(m.form ?? 0)]?.baseStats ?? Object.values(dex.species[m.species]?.forms ?? {})[0]?.baseStats
   return (
     <div className="mon-row">
+      <div className="mon-lead">
+      <MonSprite species={m.species} form={m.form} shiny={m.shiny} size="md" />
       <div className="mon-id">
         <div className="mon-top">
           <b>{m.nickname ?? dex.species[m.species]?.name ?? m.displayName}</b>
@@ -56,6 +59,7 @@ const MonRow = ({ m, owner, showSpread }: { m: PartyMon; owner?: string; showSpr
         </div>
         {baseStats && <StatBars stats={baseStats} variant="compact" />}
         {owner && <span className="eyebrow">{owner}'s</span>}
+      </div>
       </div>
       <div className="mon-kit">
         <div className="ability">

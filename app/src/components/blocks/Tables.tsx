@@ -3,6 +3,7 @@ import { dexHref } from '../../lib/route'
 import { TypeChip, itemName, money, typeVar, useDex, useGame } from '../common'
 import { CaughtToggle, TierBadge } from '../pokedex/bits'
 import { usePokedex } from '../pokedex/context'
+import { MonSprite } from '../dex/MonSprite'
 
 // Morning/Day/Night tables are often identical; collapse them into one "All day" table
 const collapseTimes = (methods: EncounterMethod[]): EncounterMethod[] => {
@@ -33,11 +34,11 @@ export const Encounters = ({ b }: { b: EncountersBlock }) => {
               return (
                 <div className={`enc-row${r.firstSeen ? ' new' : ''}${pokedex ? ' with-dex' : ''}`} key={j}>
                   {pokedex && <CaughtToggle sym={r.species} name={r.displayName} />}
-                  <div className="name">
+                  <div className="name"><MonSprite species={r.species} form={r.form} size="icon" /><div>
                     <span className="name-line">
                       <a href={dexHref(game.id, r.species)}><b>{r.displayName}</b></a>
                       {pokedex?.ranks[r.species] && <TierBadge rank={pokedex.ranks[r.species]} />}
-                    </span><small>Lv {r.levels}{r.form && r.form !== 'Normal Form' ? ` · ${r.form}` : ''}</small></div>
+                    </span><small>Lv {r.levels}{r.form && r.form !== 'Normal Form' ? ` · ${r.form}` : ''}</small></div></div>
                   <div className="bar" role="img" aria-label={`${r.rate}% encounter rate`}>
                     <i style={{ width: `${r.rate}%`, ['--tc' as string]: typeVar(types[0] ?? 'NORMAL') }} />
                   </div>
