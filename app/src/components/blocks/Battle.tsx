@@ -1,6 +1,7 @@
 import type { BattleBlock, Dex, PartyMon } from '../../data/types'
 import { battleId } from '../../lib/route'
 import { teamCoverage, weaknesses } from '../../lib/typechart'
+import { FieldBanner } from '../fields/FieldBanner'
 import { TypeChip, itemName, typeVar, useDex } from '../common'
 
 const STAT_LABELS = ['HP', 'Atk', 'Def', 'SpA', 'SpD', 'Spe']
@@ -87,6 +88,7 @@ export const Battle = ({ b, done, onToggle }: { b: BattleBlock; done: boolean; o
 
   return (
     <article className={`trainer${done ? ' is-done' : ''}`} id={`battle-${id}`}>
+      <FieldBanner b={b} />
       <div className="tr-head">
         <div className="tr-name">
           <span className="eyebrow">{b.partner ? 'Partner' : 'VS'} · {classes}</span>
@@ -96,7 +98,7 @@ export const Battle = ({ b, done, onToggle }: { b: BattleBlock; done: boolean; o
           {b.double && <span className="tag accent">Double battle</span>}
           <span className="tag">{b.party.length} Pokemon</span>
           <span className="tag">{lv}</span>
-          {b.showField && <span className={`tag${b.fieldName ? ' field' : ''}`}>Field: {b.fieldName ?? 'None'}</span>}
+          {b.showField && !b.field && !b.fieldName && <span className="tag">No field</span>}
         </div>
         {!b.partner && (
           <label className="beat">
