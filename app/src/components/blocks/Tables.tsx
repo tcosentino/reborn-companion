@@ -4,6 +4,7 @@ import { TypeChip, itemName, money, typeVar, useDex, useGame } from '../common'
 import { MonSprite } from '../dex/MonSprite'
 import { CaughtToggle, TierBadge } from '../pokedex/bits'
 import { usePokedex } from '../pokedex/context'
+import { DexHover } from '../../features/hovercards/DexHover'
 
 // Morning/Day/Night tables are often identical; collapse them into one "All day" table
 const collapseTimes = (methods: EncounterMethod[]): EncounterMethod[] => {
@@ -18,12 +19,12 @@ const collapseTimes = (methods: EncounterMethod[]): EncounterMethod[] => {
   return out
 }
 
-export const Encounters = ({ b }: { b: EncountersBlock }) => {
+export const Encounters = ({ b, id }: { b: EncountersBlock; id?: string }) => {
   const dex = useDex()
   const game = useGame()
   const pokedex = usePokedex()
   return (
-    <section className="enc">
+    <section className="enc" id={id}>
       <div className="block-head"><h3>{b.name}</h3><span className="eyebrow">Wild encounters</span></div>
       <div className="enc-methods">
         {collapseTimes(b.methods).map((m, i) => (
@@ -38,7 +39,7 @@ export const Encounters = ({ b }: { b: EncountersBlock }) => {
                     <MonSprite species={r.species} form={r.form} size="icon" />
                     <div>
                       <span className="name-line">
-                        <a href={dexHref(game.id, r.species)}><b>{r.displayName}</b></a>
+                        <DexHover kind="species" sym={r.species} form={r.form} focusable={false}><a href={dexHref(game.id, r.species)}><b>{r.displayName}</b></a></DexHover>
                         {pokedex?.ranks[r.species] && <TierBadge rank={pokedex.ranks[r.species]} />}
                       </span>
                       <small>Lv {r.levels}{r.form && r.form !== 'Normal Form' ? ` · ${r.form}` : ''}</small>
@@ -59,16 +60,15 @@ export const Encounters = ({ b }: { b: EncountersBlock }) => {
   )
 }
 
-export const Shop = ({ b }: { b: ShopBlock }) => {
-  const dex = useDex()
+export const Shop = ({ b, id }: { b: ShopBlock; id?: string }) => {
   return (
-    <section className="shop">
+    <section className="shop" id={id}>
       <div className="block-head"><h3>{b.title}</h3><span className="eyebrow">Shop</span></div>
       <table>
         <tbody>
           {b.items.map((it, i) => (
-            <tr key={i} className={it.highlight ? 'pick' : ''} title={it.item ? dex.items[it.item]?.desc : undefined}>
-              <td>{it.name}</td>
+            <tr key={i} className={it.highlight ? 'pick' : ''}>
+              <td><DexHover kind="item" sym={it.item}>{it.name}</DexHover></td>
               <td className="price">{money(it.price)}</td>
             </tr>
           ))}
@@ -78,18 +78,18 @@ export const Shop = ({ b }: { b: ShopBlock }) => {
   )
 }
 
-export const Tutor = ({ b }: { b: TutorBlock }) => {
+export const Tutor = ({ b, id }: { b: TutorBlock; id?: string }) => {
   const dex = useDex()
   return (
-    <section className="shop">
+    <section className="shop" id={id}>
       <div className="block-head"><h3>{b.title}</h3><span className="eyebrow">Move tutor</span></div>
       <table>
         <tbody>
           {b.moves.map((m, i) => {
             const mv = m.move ? dex.moves[m.move] : null
             return (
-              <tr key={i} title={mv?.desc}>
-                <td>{m.name}</td>
+              <tr key={i}>
+                <td><DexHover kind="move" sym={m.move}>{m.name}</DexHover></td>
                 <td>{mv && <TypeChip type={mv.type} small />}</td>
                 <td className="mono muted">{mv ? `${mv.category}${mv.power ? ` · ${mv.power}` : ''}` : ''}</td>
                 <td className="price">{money(m.price)}</td>

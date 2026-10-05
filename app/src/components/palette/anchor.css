@@ -1,0 +1,10 @@
+/* Highlight for a block reached through a palette deep link */
+.enc, .shop, .trainer { scroll-margin-top: 16px }
+.palette-flash { animation: palette-flash 1.6s ease-out }
+@keyframes palette-flash {
+  0%, 35% { box-shadow: 0 0 0 3px var(--accent), 0 0 0 9px var(--accent-soft) }
+  100% { box-shadow: 0 0 0 0 transparent }
+}
+@media (prefers-reduced-motion: reduce) {
+  .palette-flash { animation: none; box-shadow: 0 0 0 3px var(--accent) }
+}

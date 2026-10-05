@@ -94,9 +94,11 @@ pokemon-rebor/
 
 ```
 bash scripts/build-json.sh      # game-scripts/ -> out/json/reborn/
-bash scripts/sync-data.sh       # out/json/reborn/ -> app/public/data/reborn/
+bash scripts/sync-data.sh       # builds search.json, then out/json/reborn/ -> app/public/data/reborn/
 cd app && yarn && yarn dev      # http://localhost:5174/#/reborn/obsidia-ward
 ```
+
+`sync-data.sh` runs `node scripts/build-search.ts` (Node >= 23.6, native TS type stripping) to write `out/json/<game>/search.json`, the compact index behind the Cmd+K palette (`app/src/components/palette/`). Palette deep links use `#/<game>/<section>/<anchor>`, where the anchor is a block id such as `battle-<teamIds>`, `enc-<slug>`, `shop-<slug>` or `tutor-<slug>`.
 
 Tests: `bash scripts/test.sh` (generator golden + JSON tests) and `cd app && yarn test`.
 

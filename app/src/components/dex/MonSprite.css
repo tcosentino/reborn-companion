@@ -22,3 +22,17 @@
 .enc-row .name > div { display: grid; min-width: 0 }
 .enc-row:not(.with-dex) { grid-template-columns: 11.5rem minmax(0, 1fr) 3rem }
 .enc-row.with-dex { grid-template-columns: 1.1rem 12.5rem minmax(0, 1fr) 3rem }
+
+/* When the card itself is narrow (sidebar collapsed, tablets), five columns crush the moves.
+   Keep Pokemon / type / stats on the first line and give moves and weaknesses full-width lines. */
+.party { container-type: inline-size }
+@container (max-width: 820px) {
+  .party .party-cols { display: none }
+  .party .mon-row { grid-template-columns: minmax(0, 1fr) auto auto; align-items: start }
+  .party .mon-row .mon-kit, .party .mon-row .weak { grid-column: 1 / -1 }
+  .party .mon-row .weak .eyebrow { display: inline; margin-right: .3rem }
+}
+@container (max-width: 480px) {
+  .party .mon-row { grid-template-columns: minmax(0, 1fr) auto }
+  .party .mon-row .mon-stats { grid-column: 1 / -1 }
+}
