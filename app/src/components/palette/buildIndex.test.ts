@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { Chapter, Dex, GuideIndex } from '../../data/types'
 import { blockAnchors } from './anchors'
-import { buildSearchIndex, proseItemMentions } from './buildIndex'
+import { buildSearchIndex, proseItemMentions, tmParts } from './buildIndex'
 
 describe('blockAnchors', () => {
   it('ids battles by team and dedupes repeated titles', () => {
@@ -78,5 +78,46 @@ describe('buildSearchIndex', () => {
     expect(anchor(potion[2][0][1])).toBe('shop-mart')
     expect(potion[3]).toEqual([0])
     expect(anchor(idx.mv[0][2][0][1])).toBe('tutor-tutor')
+  })
+
+  it('labels shop and tutor anchors with their block titles', () => {
+    expect(idx.al?.[idx.a.indexOf('shop-mart')]).toBe('Mart')
+    expect(idx.al?.[idx.a.indexOf('battle-Wayne:StreetRat:0')]).toBe('')
+  })
+})
+
+describe('TMs', () => {
+  it('splits TM names', () => {
+    expect(tmParts('TM57 Charge Beam')).toEqual({ code: 'TM57', rest: 'Charge Beam' })
+    expect(tmParts('tm57chargebeam')).toEqual({ code: 'TM57', rest: 'chargebeam' })
+    expect(tmParts('HM01')).toEqual({ code: 'HM01', rest: '' })
+    expect(tmParts('Trick Room')).toBeNull()
+  })
+
+  it('merges shop and prose TMs by number and names them after their move', () => {
+    const dex = {
+      species: {},
+      items: { TM64: { name: 'TM64', desc: '', price: 7500 } },
+      moves: { EXPLOSION: { name: 'Explosion' }, CHARGEBEAM: { name: 'Charge Beam' } },
+      abilities: {}, types: {}, fields: {}
+    } as unknown as Dex
+    const index = { chapters: [{ id: 'ep1', title: 'Episode 1', file: 'ep1.json', sections: [] }] } as unknown as GuideIndex
+    const chapter = {
+      id: 'ep1', title: 'Episode 1',
+      sections: [{
+        id: 'ward', title: 'Ward',
+        blocks: [
+          { type: 'prose', markdown: 'Pick up *TM57 Charge Beam* and *TM64*.' },
+          { type: 'shop', title: 'Mart', items: [{ name: 'TM64 Explosion', item: 'TM64', price: 7500 }] }
+        ]
+      }]
+    } as unknown as Chapter
+    const idx = buildSearchIndex(index, dex, new Map([['ep1.json', chapter]]))
+    const rows = Object.fromEntries(idx.i.map(r => [r[1], r]))
+    expect(rows.TM57.slice(0, 1).concat(rows.TM57[4] ?? '')).toEqual(['TM57 Charge Beam', 'CHARGEBEAM'])
+    expect(rows.TM64[0]).toBe('TM64 Explosion')
+    expect(rows.TM64[2]).toHaveLength(1)
+    expect(rows.TM64[3]).toEqual([0])
+    expect(rows.TM64[4]).toBe('EXPLOSION')
   })
 })

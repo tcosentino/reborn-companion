@@ -14,8 +14,9 @@ export type CatchRef = [number, number, number, number, number]
 // [species SYM, catches, trainers using it, first appearance [sectionIdx, anchorIdx] or null]
 export type SpeciesRow = [string, CatchRef[], number, [number, number] | null]
 
-// [display name, item SYM or '', shops, sectionIdxs where it is found in the field]
-export type ItemRow = [string, string, PlaceRef[], number[]]
+// [display name, item SYM or '', shops, sectionIdxs where it is found in the field, move SYM a TM/HM/TR teaches]
+// TMs are keyed by their number (sym 'TM57') and named 'TM57 Charge Beam' even when the dex lacks them.
+export type ItemRow = [string, string, PlaceRef[], number[], string?]
 
 // [display name, move SYM or '', tutors]
 export type MoveRow = [string, string, PlaceRef[]]
@@ -25,6 +26,8 @@ export interface SearchIndex {
   ch: string[]
   s: [string, string, number][]
   a: string[]
+  // Display titles parallel to `a` for shop, tutor and encounter blocks ('' for battles)
+  al?: string[]
   m: string[]
   f: string[]
   t: TrainerRow[]

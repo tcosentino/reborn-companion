@@ -43,7 +43,7 @@ export const buildEntries = (idx: SearchIndex, dex: Dex): Entry[] => {
     if (!inGuide && !OPEN_IN_POKEDEX) return
     out.push({ kind: 'species', ref, terms: [normalize(speciesName(dex, sym))], boost: catches.length ? 3 : inGuide ? 2 : 0 })
   })
-  idx.i.forEach(([name], ref) => out.push({ kind: 'item', ref, terms: [normalize(name)] }))
+  idx.i.forEach(([name, , , , teaches], ref) => out.push({ kind: 'item', ref, terms: [normalize(name)], ...(teaches ? { also: 'move' as const } : {}) }))
   idx.mv.forEach(([name], ref) => out.push({ kind: 'move', ref, terms: [normalize(name)] }))
   return out
 }

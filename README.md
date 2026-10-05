@@ -148,3 +148,19 @@ Lives in `app/src/features/guide-nav/` with pure logic in `app/src/lib/guideNav.
   - The logic lives in `app/src/lib/score/` and is unit-tested.
 - **Recommended moveset**: the species page also shows a computed set (role, nature, four moves, coverage) built from the game's learnsets and move data, including moves a pre-evolution must learn. Compare shows it side by side.
 - `ranks.json` and `movesets.json` are built by `node app/scripts/build-ranks.ts`, which `scripts/sync-data.sh` runs automatically.
+- **Gift / special**: sections whose prose bolds the species (`mentions`) and that are not already listed under "Where to find", so gifts, eggs, statics and trades show up.
+- **Faced in battle**: every trainer whose party includes the species (from `search.json`), grouped by episode and linked to the battle block. The first 10 show until "Show all".
+
+## Item and move pages
+
+- `#/<game>/item/<SYM>` lists every shop that sells an item (with price), every section whose prose names it as a pickup, and, for TMs, the move it teaches plus any tutors for that move. Items without a dex SYM (coins, Pokemon sold in shops) use a name key such as `500coins`.
+- `#/<game>/move/<SYM>` shows type, category, power, accuracy and PP, the tutors and TMs that teach it, and every species that learns it by TM/tutor or level up (`learnsets.json`, loaded only on this page; long lists are capped until "Show all").
+- Both pages are built client-side from `search.json` (`app/src/components/palette/places.ts`). Routes are in `app/src/lib/route.ts` (`itemHref`, `moveHref`); the pages live in `app/src/components/reference/`.
+- TMs: `buildIndex.ts` keys TM/HM/TR items by number, merges shop listings with prose pickups such as `*TM57 Charge Beam*`, names them after their move and stores the move SYM as the row's fifth field. Shop and tutor anchors get display titles in `al` (parallel to `a`).
+- Item and move hover cards add a "Where to get" / "Where to learn" line ("Sold at Grand Hall Candy ($12,000), Seventh Street Misc. Wares ($12,000), +4 more") that links to these pages, reusing the palette's cached search index.
+
+## Search palette
+
+- Hits with several locations show a `+N` chip. Click it or press Right arrow (caret at the end of the input) to list each location with its episode; Left arrow collapses.
+- Shift+Enter, or the Dex/Page button, opens the Pokedex entry for Pokemon and the item/move page for items and moves.
+- Scope prefixes: `t:` trainers, `p:` Pokemon, `i:` items, `m:` moves and TMs, `s:` sections (e.g. `m: iron`). Scoped searches show up to 30 hits per group.

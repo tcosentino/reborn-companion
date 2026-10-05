@@ -12,6 +12,7 @@ import {
   cancelClose, cancelOpen, closeNow, getTarget, openNow, readTarget, scheduleClose, scheduleOpen, subscribe,
   type HoverTarget
 } from './store'
+import { ItemWhere, MoveWhere } from './WhereLine'
 import './hovercards.css'
 
 const CARD_ID = 'hc-card'
@@ -90,6 +91,7 @@ const MoveCard = ({ t, dex }: { t: HoverTarget; dex: Dex }) => {
         {stat('PP', mv.pp)}
       </div>
       <p className="hc-desc">{mv.desc}</p>
+      <MoveWhere sym={t.sym} />
     </>
   )
 }
@@ -104,6 +106,7 @@ const ItemCard = ({ t, dex }: { t: HoverTarget; dex: Dex }) => {
         {it.price != null && <span className="mono muted">{money(it.price)}</span>}
       </header>
       <p className="hc-desc">{it.desc}</p>
+      <ItemWhere sym={t.sym} />
     </>
   )
 }
@@ -248,7 +251,8 @@ export const HoverCardHost = () => {
 
   if (!target) return null
   const type = accent(target, dex)
-  const interactive = target.kind === 'species'
+  // Cards with links inside behave as dialogs on touch
+  const interactive = target.kind !== 'ability'
   return createPortal(
     <div
       id={CARD_ID}

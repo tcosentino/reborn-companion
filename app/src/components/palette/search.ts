@@ -10,6 +10,25 @@ export const KIND_LABEL: Record<Kind, string> = {
 }
 
 export const DEFAULT_CAPS: Record<Kind, number> = { section: 5, trainer: 8, species: 6, item: 6, move: 5 }
+// A scoped search shows one or two groups, so it can list more
+export const SCOPED_CAP = 30
+
+// Query prefixes that restrict results to one kind: "t: julia", "m:iron"
+export const SCOPES: { prefix: string; kind: Kind; label: string }[] = [
+  { prefix: 't', kind: 'trainer', label: 'trainer' },
+  { prefix: 'p', kind: 'species', label: 'Pokemon' },
+  { prefix: 'i', kind: 'item', label: 'item' },
+  { prefix: 'm', kind: 'move', label: 'move/TM' },
+  { prefix: 's', kind: 'section', label: 'section' }
+]
+
+export interface Scoped { scope: Kind | null; query: string }
+
+export const parseScope = (raw: string): Scoped => {
+  const m = /^\s*([a-z]):\s*/i.exec(raw)
+  const hit = m && SCOPES.find(s => s.prefix === m[1].toLowerCase())
+  return hit ? { scope: hit.kind, query: raw.slice(m[0].length) } : { scope: null, query: raw }
+}
 
 export interface Entry {
   kind: Kind
@@ -19,6 +38,8 @@ export interface Entry {
   terms: string[]
   // Small tie-breaker added to the score (e.g. species that appear in the guide)
   boost?: number
+  // A second scope this entry belongs to (TM items show up under the move scope)
+  also?: Kind
 }
 
 export interface Hit { entry: Entry; score: number }
@@ -95,11 +116,15 @@ export const scoreEntry = (q: string, e: Entry) => {
 
 // Rank entries for a query, grouped by kind. Groups are ordered by their best hit
 // (ties fall back to KINDS order), hits inside a group by score then index order.
+// A scope prefix (see SCOPES) limits the kinds searched and lifts the caps.
 export const search = (entries: Entry[], query: string, caps: Record<Kind, number> = DEFAULT_CAPS): Group[] => {
-  const q = normalize(query)
+  const { scope, query: rest } = parseScope(query)
+  const q = normalize(rest)
   if (!q) return []
+  const cap = (k: Kind) => scope ? SCOPED_CAP : caps[k]
   const byKind = new Map<Kind, Hit[]>()
   for (const entry of entries) {
+    if (scope && entry.kind !== scope && entry.also !== scope) continue
     const s = scoreEntry(q, entry)
     if (!s) continue
     const list = byKind.get(entry.kind)
@@ -111,7 +136,7 @@ export const search = (entries: Entry[], query: string, caps: Record<Kind, numbe
     const hits = byKind.get(kind)
     if (!hits) continue
     hits.sort((a, b) => b.score - a.score || a.entry.ref - b.entry.ref)
-    groups.push({ kind, hits: hits.slice(0, caps[kind]), total: hits.length })
+    groups.push({ kind, hits: hits.slice(0, cap(kind)), total: hits.length })
   }
   return groups.sort((a, b) => b.hits[0].score - a.hits[0].score || KINDS.indexOf(a.kind) - KINDS.indexOf(b.kind))
 }

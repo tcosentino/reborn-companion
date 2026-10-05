@@ -23,6 +23,12 @@ export const proseItemMentions = (md: string, lookup: (key: string) => string | 
   return found
 }
 
+// 'TM57 Charge Beam', 'TM57' or the key 'tm57chargebeam' -> { code: 'TM57', rest: 'Charge Beam' }
+export const tmParts = (s: string) => {
+  const m = /^(tm|hm|tr)\s*(\d+)\s*(.*)$/i.exec(s.trim())
+  return m ? { code: `${m[1].toUpperCase()}${m[2]}`, rest: m[3].trim() } : null
+}
+
 const table = () => {
   const list: string[] = []
   const pos = new Map<string, number>()
@@ -38,6 +44,7 @@ const pushUnique = (xs: number[], x: number) => { if (!xs.includes(x)) xs.push(x
 
 export const buildSearchIndex = (index: GuideIndex, dex: Dex, chapters: Map<string, Chapter>): SearchIndex => {
   const anchors = table()
+  const anchorLabels: string[] = []
   const methods = table()
   const fields = table()
   const sections: [string, string, number][] = []
@@ -55,9 +62,18 @@ export const buildSearchIndex = (index: GuideIndex, dex: Dex, chapters: Map<stri
   const trainerSpecies = new Map<number, Set<string>>()
 
   const itemByKey = new Map(Object.entries(dex.items).map(([sym, it]) => [itemKey(it.name), sym]))
+  const moveByKey = new Map(Object.entries(dex.moves).map(([sym, mv]) => [itemKey(mv.name), sym]))
+  // TM code -> move it teaches, learned from shop names ('TM64 Explosion') and prose
+  const tmMove = new Map<string, string>()
+  const noteTm = (text: string) => {
+    const t = tmParts(text)
+    const mv = t?.rest ? moveByKey.get(itemKey(t.rest)) : undefined
+    if (t && mv && !tmMove.has(t.code)) tmMove.set(t.code, mv)
+    return t?.code
+  }
   const items = new Map<string, ItemRow>()
   const item = (name: string, sym: string | null) => {
-    const resolved = sym ?? itemByKey.get(itemKey(name)) ?? ''
+    const resolved = sym ?? itemByKey.get(itemKey(name)) ?? noteTm(name) ?? ''
     const key = resolved || `name:${itemKey(name)}`
     let row = items.get(key)
     if (!row) { row = [resolved ? dex.items[resolved]?.name ?? name : name, resolved, [], []]; items.set(key, row) }
@@ -81,6 +97,10 @@ export const buildSearchIndex = (index: GuideIndex, dex: Dex, chapters: Map<stri
       const ids = blockAnchors(sec.blocks)
       sec.blocks.forEach((b, bi) => {
         const aIdx = ids[bi] ? anchors.id(ids[bi] as string) : -1
+        if (aIdx >= 0 && anchorLabels[aIdx] === undefined) {
+          const named = b as { title?: string; name?: string }
+          anchorLabels[aIdx] = b.type === 'battle' ? '' : named.title ?? named.name ?? ''
+        }
         if (b.type === 'battle') {
           const bb = b as BattleBlock
           bb.party.forEach(p => {
@@ -124,6 +144,7 @@ export const buildSearchIndex = (index: GuideIndex, dex: Dex, chapters: Map<stri
           }
         } else if (b.type === 'shop') {
           for (const it of (b as ShopBlock).items) {
+            noteTm(it.name)
             const row = item(it.name, it.item)
             if (!row[2].some(p => p[0] === sIdx && p[1] === aIdx)) row[2].push([sIdx, aIdx, it.price] as PlaceRef)
           }
@@ -133,19 +154,27 @@ export const buildSearchIndex = (index: GuideIndex, dex: Dex, chapters: Map<stri
             if (!row[2].some(p => p[0] === sIdx && p[1] === aIdx)) row[2].push([sIdx, aIdx, mv.price] as PlaceRef)
           }
         } else if (b.type === 'prose') {
-          for (const sym of proseItemMentions(b.markdown, k => itemByKey.get(k))) pushUnique(item('', sym)[3], sIdx)
+          for (const sym of proseItemMentions(b.markdown, k => itemByKey.get(k) ?? noteTm(k))) pushUnique(item('', sym)[3], sIdx)
         }
       })
     }
   })
 
   trainerSpecies.forEach((set, i) => { species[i][2] = set.size })
+  for (const row of items.values()) {
+    const t = tmParts(row[1])
+    if (!t || t.rest) continue
+    const mv = tmMove.get(t.code)
+    row[0] = mv ? `${t.code} ${dex.moves[mv]?.name ?? mv}` : row[0] || t.code
+    if (mv) row[4] = mv
+  }
 
   return {
     v: 1,
     ch: index.chapters.map(c => c.title),
     s: sections,
     a: anchors.list,
+    al: anchors.list.map((_, i) => anchorLabels[i] ?? ''),
     m: methods.list,
     f: fields.list,
     t: [...trainers.values()],

@@ -8,6 +8,8 @@ import { PokedexContext, type PokedexData } from './components/pokedex/context'
 import { PokedexView } from './components/pokedex/PokedexView'
 import { SpeciesView } from './components/pokedex/SpeciesView'
 import { CompareView } from './components/pokedex/CompareView'
+import { ItemView } from './components/reference/ItemView'
+import { MoveView } from './components/reference/MoveView'
 import { loadChapter, loadDex, loadIndex, loadPokedex, loadRanks, useAsync } from './data/load'
 import type { GuideIndex } from './data/types'
 import { GAMES, gameById, type GameConfig } from './games'
@@ -153,16 +155,18 @@ const GuideView = ({ game, route }: { game: GameConfig; route: Route }) => {
   const resumeAnchor = !route.pokedex && route.section && route.section === boot?.section ? boot.anchor : null
   useAnchorScroll(route.pokedex ? null : route.anchor ?? resumeAnchor, chapter.data ? current?.id : undefined)
 
-  useEffect(() => { scrollTo(0, 0) }, [current?.id, route.pokedex, route.species])
+  useEffect(() => { scrollTo(0, 0) }, [current?.id, route.pokedex, route.species, route.item, route.move])
   // The game root previews the first section; it must not replace the saved spot
   useEffect(() => {
     if (current && !route.pokedex && route.section) writeLastSection(game.id, current.id)
   }, [current, route.pokedex, route.section, game.id])
   useEffect(() => {
+    // Item and move pages set their own title once the search index loads
+    if (route.item || route.move) return
     const species = route.species && dexData?.dex.species[route.species]?.name
     const title = route.pokedex ? species || (route.compare ? 'Compare' : 'Pokedex') : current?.title
     if (title) document.title = `${title} · ${game.name} · PokeGuide`
-  }, [current, route.pokedex, route.species, route.compare, dexData, game.name])
+  }, [current, route.pokedex, route.species, route.compare, route.item, route.move, dexData, game.name])
 
   const err = idx.error ?? dex.error ?? chapter.error
   if (err) return <main className="state">Could not load the guide. {err}. Run scripts/sync-data.sh to copy the generated data into the app.</main>
@@ -196,6 +200,8 @@ const GuideView = ({ game, route }: { game: GameConfig; route: Route }) => {
               {route.pokedex
                 ? pokedex.error
                   ? <div className="state">Could not load the Pokedex. {pokedex.error}</div>
+                  : route.item ? <ItemView itemKey={route.item} />
+                  : route.move ? <MoveView sym={route.move} />
                   : route.compare
                     ? <CompareView syms={route.compare} />
                     : route.species

@@ -9,6 +9,7 @@ import { TypeChip, useGame } from '../common'
 import { StatBars } from '../dex/StatBars'
 import { CaughtToggle, CompareToggle, CompareTray, TierBadge } from './bits'
 import { usePokedex } from './context'
+import { SpeciesGuideLists } from './SpeciesGuideLists'
 
 const FACTORS: [Factor, string][] = [['stats', 'Stats'], ['moves', 'Movepool'], ['bosses', 'Boss matchups'], ['availability', 'Availability']]
 
@@ -184,6 +185,7 @@ export const SpeciesView = ({ sym }: { sym: Sym }) => {
               </table>
             )}
         </section>
+        <SpeciesGuideLists key={sym} sym={sym} species={s} />
       </div>
       <CompareTray />
     </article>

@@ -35,3 +35,5 @@ a .hc-trigger, .hc-trigger a { cursor: pointer }
 .hc-link { align-self: flex-start; margin-left: auto; flex-shrink: 0; display: grid; place-items: center; width: 28px; height: 28px; margin-top: -.2rem; margin-right: -.3rem; border-radius: 6px; color: var(--muted) }
 .hc-link:hover, .hc-link:focus-visible { color: var(--accent); background: var(--accent-soft) }
 @media (pointer: coarse) { .hc-link { width: 40px; height: 40px } }
+.hc-where { color: var(--ink); text-decoration: underline dotted var(--accent); text-underline-offset: 3px }
+.hc-where:hover, .hc-where:focus-visible { color: var(--accent) }

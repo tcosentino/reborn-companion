@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { DEFAULT_CAPS, normalize, score, search, type Entry, type Kind } from './search'
+import { DEFAULT_CAPS, SCOPED_CAP, normalize, parseScope, score, search, type Entry, type Kind } from './search'
 
 const e = (kind: Kind, ref: number, ...terms: string[]): Entry => ({ kind, ref, terms: terms.map(normalize) })
 
@@ -100,5 +100,40 @@ describe('search', () => {
     for (const q of ['a', 'ac', 'ace', 'ace t', 'ace tr', 'grnt', 'xyz']) search(big, q)
     const per = (performance.now() - t0) / 7
     expect(per).toBeLessThan(30)
+  })
+})
+
+describe('scope prefixes', () => {
+  it('parses known prefixes with or without a space', () => {
+    expect(parseScope('t: julia')).toEqual({ scope: 'trainer', query: 'julia' })
+    expect(parseScope('M:iron')).toEqual({ scope: 'move', query: 'iron' })
+    expect(parseScope('  p:  klink')).toEqual({ scope: 'species', query: 'klink' })
+    expect(parseScope('i:')).toEqual({ scope: 'item', query: '' })
+    expect(parseScope('s:obsidia')).toEqual({ scope: 'section', query: 'obsidia' })
+  })
+
+  it('leaves other text alone', () => {
+    expect(parseScope('x: foo')).toEqual({ scope: null, query: 'x: foo' })
+    expect(parseScope('tm57')).toEqual({ scope: null, query: 'tm57' })
+    expect(parseScope('rock: t:')).toEqual({ scope: null, query: 'rock: t:' })
+  })
+
+  const entries = [
+    e('item', 0, 'Steel Gem'),
+    { ...e('item', 1, 'TM62 Steel Wing'), also: 'move' as Kind },
+    e('move', 0, 'Steel Wing'),
+    e('trainer', 0, 'Steel Trainer')
+  ]
+
+  it('limits results to the scope, including TM items under moves', () => {
+    expect(search(entries, 'm: steel').map(g => [g.kind, g.hits.map(h => h.entry.ref)])).toEqual([['move', [0]], ['item', [1]]])
+    expect(search(entries, 'i:steel').flatMap(g => g.hits.map(h => h.entry.ref))).toEqual([0, 1])
+    expect(search(entries, 't: steel').map(g => g.kind)).toEqual(['trainer'])
+    expect(search(entries, 't:')).toEqual([])
+  })
+
+  it('lifts the per-group cap', () => {
+    const many = Array.from({ length: 40 }, (_, i) => e('species', i, `Pidgey ${i}`))
+    expect(search(many, 'p: pidgey')[0].hits).toHaveLength(SCOPED_CAP)
   })
 })
