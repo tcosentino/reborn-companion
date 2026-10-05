@@ -1,0 +1,93 @@
+/* Field banner: --fc is the field's dominant type color, tinted onto the page surface so text stays
+   readable in light and dark. Patterns are drawn on ::before with --fp, a translucent --fc. */
+.fb {
+  --fp: color-mix(in srgb, var(--fc) 26%, transparent);
+  --fs: color-mix(in srgb, var(--fc) 15%, var(--surface));
+  position: relative; overflow: hidden; isolation: isolate;
+  background: var(--fs);
+  border-bottom: 1px solid color-mix(in srgb, var(--fc) 45%, var(--line));
+  border-left: 4px solid var(--fc);
+}
+.fb::before { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none }
+.fb-bar { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .9rem; padding: .6rem 1rem .6rem .85rem }
+.fb-title { display: grid; gap: .1rem; min-width: 0; flex: 1 1 11rem }
+.fb-title h4 { margin: 0; font: 700 1.15rem/1.15 var(--display); letter-spacing: .01em; color: var(--ink); text-wrap: balance }
+.fb-chips { display: flex; flex-wrap: wrap; gap: .3rem }
+.fb-toggle {
+  font: 600 .72rem/1 var(--mono); padding: .4rem .65rem; border-radius: 6px; cursor: pointer;
+  color: var(--ink); background: color-mix(in srgb, var(--surface) 70%, transparent);
+  border: 1px solid color-mix(in srgb, var(--fc) 50%, var(--line));
+}
+.fb-toggle:hover { background: var(--surface) }
+.fb-toggle[aria-expanded='true'] { background: var(--surface) }
+
+.fb-panel { display: grid; gap: .9rem; padding: .2rem 1rem .9rem .85rem; background: color-mix(in srgb, var(--surface) 72%, transparent); border-top: 1px dashed color-mix(in srgb, var(--fc) 40%, var(--line)) }
+.fb-detail { display: grid; gap: .7rem; margin-top: .4rem }
+.fb-summary { margin: 0; font-size: .9rem; color: var(--ink) }
+.fb-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: .8rem 1.2rem }
+.fb-sec { display: grid; gap: .3rem; align-content: start }
+.fb-sec ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .15rem }
+.fb-sec li { display: flex; justify-content: space-between; gap: .8rem; font-size: .82rem; color: var(--ink); border-bottom: 1px dotted var(--line); padding-block: .1rem }
+.fb-sec li b { color: var(--muted); font-size: .75rem }
+.fb-sec li[title] { cursor: help }
+.fb-changes li { display: list-item; list-style: '› '; margin-left: 1rem; border: 0 }
+
+@media (max-width: 480px) {
+  .fb-bar { padding-inline: .7rem }
+  .fb-toggle { margin-left: auto }
+}
+
+/* Patterns */
+.fb[data-pattern='plain']::before { background: linear-gradient(110deg, var(--fp), transparent 55%) }
+.fb[data-pattern='stripes']::before { background: repeating-linear-gradient(135deg, var(--fp) 0 7px, transparent 7px 16px) }
+.fb[data-pattern='bubbles']::before {
+  background:
+    radial-gradient(circle at 12% 70%, var(--fp) 0 7px, transparent 8px),
+    radial-gradient(circle at 34% 25%, var(--fp) 0 4px, transparent 5px),
+    radial-gradient(circle at 62% 65%, var(--fp) 0 10px, transparent 11px),
+    radial-gradient(circle at 86% 30%, var(--fp) 0 6px, transparent 7px),
+    radial-gradient(circle at 96% 85%, var(--fp) 0 4px, transparent 5px);
+}
+.fb[data-pattern='embers']::before {
+  background:
+    radial-gradient(ellipse 80% 90% at 50% 140%, color-mix(in srgb, var(--fc) 45%, transparent), transparent 70%),
+    radial-gradient(circle, var(--fp) 0 1.5px, transparent 2px) 0 0 / 23px 19px,
+    radial-gradient(circle, var(--fp) 0 1px, transparent 1.5px) 11px 9px / 23px 19px;
+}
+.fb[data-pattern='blades']::before {
+  background:
+    linear-gradient(0deg, color-mix(in srgb, var(--fc) 30%, transparent), transparent 70%),
+    repeating-linear-gradient(98deg, var(--fp) 0 2px, transparent 2px 8px);
+}
+.fb[data-pattern='bolts']::before {
+  background:
+    repeating-linear-gradient(62deg, transparent 0 12px, var(--fp) 12px 14px),
+    repeating-linear-gradient(-62deg, transparent 0 12px, var(--fp) 12px 14px);
+}
+.fb[data-pattern='frost']::before {
+  background:
+    radial-gradient(circle, var(--fp) 0 1.5px, transparent 2px) 0 0 / 16px 16px,
+    linear-gradient(180deg, color-mix(in srgb, var(--fc) 25%, transparent), transparent 80%);
+}
+.fb[data-pattern='waves']::before { background: repeating-radial-gradient(circle at 50% 170%, transparent 0 9px, var(--fp) 9px 11px) }
+.fb[data-pattern='grid']::before {
+  background:
+    linear-gradient(var(--fp) 1px, transparent 1px) 0 0 / 18px 18px,
+    linear-gradient(90deg, var(--fp) 1px, transparent 1px) 0 0 / 18px 18px;
+}
+.fb[data-pattern='stars']::before {
+  background:
+    radial-gradient(circle, var(--fp) 0 1.2px, transparent 1.8px) 0 0 / 28px 28px,
+    radial-gradient(circle, var(--fp) 0 .8px, transparent 1.4px) 14px 14px / 28px 28px,
+    linear-gradient(120deg, color-mix(in srgb, var(--fc) 22%, transparent), transparent 60%);
+}
+.fb[data-pattern='dunes']::before { background: repeating-linear-gradient(172deg, transparent 0 9px, var(--fp) 9px 11px) }
+.fb[data-pattern='rock']::before { background: repeating-conic-gradient(var(--fp) 0 25%, transparent 0 50%) 0 0 / 26px 26px }
+.fb[data-pattern='rainbow']::before {
+  background: linear-gradient(100deg,
+    color-mix(in srgb, var(--t-fire) 28%, transparent),
+    color-mix(in srgb, var(--t-electric) 28%, transparent),
+    color-mix(in srgb, var(--t-grass) 28%, transparent),
+    color-mix(in srgb, var(--t-water) 28%, transparent),
+    color-mix(in srgb, var(--t-psychic) 28%, transparent));
+}

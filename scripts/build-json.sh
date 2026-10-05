@@ -13,3 +13,4 @@ rm -rf "$JSON_OUT/chapters" "$JSON_OUT/index.json" "$JSON_OUT/dex.json" "$JSON_O
 mkdir -p "$JSON_OUT" "$MD_OUT"
 cd "$ROOT/upstream"
 ruby wt_generator.rb reborn "$ROOT/game-scripts" "$MD_OUT/reborn.md" --json "$JSON_OUT"
+ruby "$ROOT/scripts/build-fields.rb" "$JSON_OUT"
