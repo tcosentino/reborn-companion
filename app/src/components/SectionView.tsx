@@ -1,11 +1,13 @@
 import { marked } from 'marked'
 import { useMemo } from 'react'
-import type { Block, BattleBlock, Section } from '../data/types'
+import type { BattleBlock, Section } from '../data/types'
 import { battleId, href } from '../lib/route'
 import { useProgress } from '../lib/progress'
 import { Battle } from './blocks/Battle'
 import { Encounters, Mining, Pickup, Shop, Tutor, WildHeld } from './blocks/Tables'
 import { useGame } from './common'
+import { HiddenItems } from '../features/hidden-items/HiddenItems'
+import { groupHiddenItems, type RenderBlock } from '../features/hidden-items/group'
 
 marked.setOptions({ gfm: true })
 
@@ -24,7 +26,7 @@ const Image = ({ src, file }: { src: string; file: string }) => {
   )
 }
 
-const BlockView = ({ b, done, toggle }: { b: Block; done: Record<string, true>; toggle: (id: string) => void }) => {
+const BlockView = ({ b, done, toggle }: { b: RenderBlock; done: Record<string, true>; toggle: (id: string) => void }) => {
   switch (b.type) {
     case 'prose': return <Prose md={b.markdown} />
     case 'image': return <Image src={b.src} file={b.file} />
@@ -35,6 +37,7 @@ const BlockView = ({ b, done, toggle }: { b: Block; done: Record<string, true>; 
     case 'pickup': return <Pickup b={b} />
     case 'mining': return <Mining b={b} />
     case 'wildHeld': return <WildHeld b={b} />
+    case 'hiddenItems': return <HiddenItems b={b} />
     case 'html': return <div className="prose" dangerouslySetInnerHTML={{ __html: b.html }} />
   }
 }
@@ -53,6 +56,7 @@ export const SectionView = ({ section, chapterTitle, prev, next }: Props) => {
   const beaten = battles.filter(b => done[battleId(b.trainers.map(t => t.teamId))]).length
   const nextUp = battles.find(b => !done[battleId(b.trainers.map(t => t.teamId))])
   const counts = section.blocks.reduce<Record<string, number>>((acc, b) => ({ ...acc, [b.type]: (acc[b.type] ?? 0) + 1 }), {})
+  const blocks = useMemo(() => groupHiddenItems(section.blocks, section.id ?? ''), [section])
   const levels = battles.flatMap(b => b.party.map(p => p.level))
 
   return (
@@ -83,7 +87,7 @@ export const SectionView = ({ section, chapterTitle, prev, next }: Props) => {
       </header>
 
       <div className="blocks">
-        {section.blocks.map((b, i) => <BlockView key={i} b={b} done={done} toggle={toggle} />)}
+        {blocks.map((b, i) => <BlockView key={i} b={b} done={done} toggle={toggle} />)}
       </div>
 
       <nav className="pager">
