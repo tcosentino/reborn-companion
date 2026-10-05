@@ -3,3 +3,5 @@ _extract/
 out/
 .DS_Store
 upstream/
+.gems/
+upstream/
