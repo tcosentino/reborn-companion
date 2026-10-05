@@ -8,6 +8,7 @@ import { Encounters, Mining, Pickup, Shop, Tutor, WildHeld } from './blocks/Tabl
 import { useGame } from './common'
 import { HiddenItems } from '../features/hidden-items/HiddenItems'
 import { groupHiddenItems, type RenderBlock } from '../features/hidden-items/group'
+import { blockAnchors } from './palette/anchors'
 
 marked.setOptions({ gfm: true })
 
@@ -26,14 +27,14 @@ const Image = ({ src, file }: { src: string; file: string }) => {
   )
 }
 
-const BlockView = ({ b, done, toggle }: { b: RenderBlock; done: Record<string, true>; toggle: (id: string) => void }) => {
+const BlockView = ({ b, id, done, toggle }: { b: RenderBlock; id?: string; done: Record<string, true>; toggle: (id: string) => void }) => {
   switch (b.type) {
     case 'prose': return <Prose md={b.markdown} />
     case 'image': return <Image src={b.src} file={b.file} />
     case 'battle': return <Battle b={b} done={!!done[battleId(b.trainers.map(t => t.teamId))]} onToggle={toggle} />
-    case 'encounters': return <Encounters b={b} />
-    case 'shop': return <Shop b={b} />
-    case 'tutor': return <Tutor b={b} />
+    case 'encounters': return <Encounters b={b} id={id} />
+    case 'shop': return <Shop b={b} id={id} />
+    case 'tutor': return <Tutor b={b} id={id} />
     case 'pickup': return <Pickup b={b} />
     case 'mining': return <Mining b={b} />
     case 'wildHeld': return <WildHeld b={b} />
@@ -58,6 +59,8 @@ export const SectionView = ({ section, chapterTitle, prev, next }: Props) => {
   const counts = section.blocks.reduce<Record<string, number>>((acc, b) => ({ ...acc, [b.type]: (acc[b.type] ?? 0) + 1 }), {})
   const blocks = useMemo(() => groupHiddenItems(section.blocks, section.id ?? ''), [section])
   const levels = battles.flatMap(b => b.party.map(p => p.level))
+  // Anchors only depend on battle/encounter/shop/tutor blocks, which grouping leaves untouched
+  const anchors = useMemo(() => blockAnchors(blocks), [blocks])
 
   return (
     <article className="section">
@@ -87,7 +90,7 @@ export const SectionView = ({ section, chapterTitle, prev, next }: Props) => {
       </header>
 
       <div className="blocks">
-        {blocks.map((b, i) => <BlockView key={i} b={b} done={done} toggle={toggle} />)}
+        {blocks.map((b, i) => <BlockView key={i} b={b} id={anchors[i] ?? undefined} done={done} toggle={toggle} />)}
       </div>
 
       <nav className="pager">

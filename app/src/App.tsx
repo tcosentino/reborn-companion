@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import { DexContext, GameContext } from './components/common'
 import { SectionView } from './components/SectionView'
+import { useAnchorScroll } from './components/palette/anchorScroll'
+import { CommandPalette, PaletteButton } from './components/palette/CommandPalette'
 import { PokedexContext, type PokedexData } from './components/pokedex/context'
 import { PokedexView } from './components/pokedex/PokedexView'
 import { SpeciesView } from './components/pokedex/SpeciesView'
@@ -38,10 +40,8 @@ const GamePicker = () => (
 const Sidebar = ({ game, idx, current, open, onClose, inDex }: {
   game: GameConfig; idx: GuideIndex; current: FlatSection; open: boolean; onClose: () => void; inDex: boolean
 }) => {
-  const [q, setQ] = useState('')
   const [expanded, setExpanded] = useState<string | null>(current.chapterId)
   useEffect(() => setExpanded(current.chapterId), [current.chapterId])
-  const needle = q.trim().toLowerCase()
 
   return (
     <nav className={`sidebar${open ? ' open' : ''}`} aria-label="Guide contents">
@@ -50,14 +50,11 @@ const Sidebar = ({ game, idx, current, open, onClose, inDex }: {
         <span className="eyebrow">{game.name} {idx.version}</span>
       </div>
       <a className={`dex-link${inDex ? ' active' : ''}`} href={dexHref(game.id)} onClick={onClose}>Pokedex</a>
-      <input id="section-search" className="search" type="search" placeholder="Find a location" value={q} onChange={e => setQ(e.target.value)} />
+      <PaletteButton className="search" onOpen={onClose} />
       <ol className="chapters">
         {idx.chapters.map(c => {
-          const sections = c.sections
-            .map(s => ({ id: s.id ?? c.id, title: s.title ?? 'Introduction' }))
-            .filter(s => !needle || s.title.toLowerCase().includes(needle) || c.title.toLowerCase().includes(needle))
-          if (needle && sections.length === 0) return null
-          const isOpen = needle ? true : expanded === c.id
+          const sections = c.sections.map(s => ({ id: s.id ?? c.id, title: s.title ?? 'Introduction' }))
+          const isOpen = expanded === c.id
           return (
             <li key={c.id} className={c.id === current.chapterId ? 'current' : ''}>
               <button className="chapter-btn" onClick={() => setExpanded(isOpen ? null : c.id)} aria-expanded={isOpen}>
@@ -99,6 +96,7 @@ const GuideView = ({ game, route }: { game: GameConfig; route: Route }) => {
   }, [pokedex.data, idx.data, game.id])
   const chapter = useAsync(() => current ? loadChapter(game.id, current.file) : Promise.resolve(undefined), [game.id, current?.file])
   const [menu, setMenu] = useState(false)
+  useAnchorScroll(route.pokedex ? null : route.anchor, chapter.data ? current?.id : undefined)
 
   useEffect(() => { scrollTo(0, 0) }, [current?.id, route.pokedex, route.species])
   useEffect(() => {
@@ -123,6 +121,7 @@ const GuideView = ({ game, route }: { game: GameConfig; route: Route }) => {
       <DexContext.Provider value={dex.data}>
         <PokedexContext.Provider value={dexData}>
           <div className="shell">
+            <CommandPalette />
             <button className="menu-btn" onClick={() => setMenu(m => !m)} aria-expanded={menu}>{menu ? 'Close' : 'Contents'}</button>
             <Sidebar game={game} idx={idx.data} current={current} open={menu} onClose={() => setMenu(false)} inDex={route.pokedex} />
             <main className="content">

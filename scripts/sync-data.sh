@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
-# Copy generated guide JSON into the app's public data folder.
+# Build the palette search index, then copy generated guide JSON into the app's public data folder.
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 GAME="${1:-reborn}"
+node --no-warnings "$ROOT/scripts/build-search.ts" "$GAME"
 rm -rf "$ROOT/app/public/data/$GAME"
 mkdir -p "$ROOT/app/public/data"
 cp -R "$ROOT/out/json/$GAME" "$ROOT/app/public/data/$GAME"

@@ -18,12 +18,12 @@ const collapseTimes = (methods: EncounterMethod[]): EncounterMethod[] => {
   return out
 }
 
-export const Encounters = ({ b }: { b: EncountersBlock }) => {
+export const Encounters = ({ b, id }: { b: EncountersBlock; id?: string }) => {
   const dex = useDex()
   const game = useGame()
   const pokedex = usePokedex()
   return (
-    <section className="enc">
+    <section className="enc" id={id}>
       <div className="block-head"><h3>{b.name}</h3><span className="eyebrow">Wild encounters</span></div>
       <div className="enc-methods">
         {collapseTimes(b.methods).map((m, i) => (
@@ -59,10 +59,10 @@ export const Encounters = ({ b }: { b: EncountersBlock }) => {
   )
 }
 
-export const Shop = ({ b }: { b: ShopBlock }) => {
+export const Shop = ({ b, id }: { b: ShopBlock; id?: string }) => {
   const dex = useDex()
   return (
-    <section className="shop">
+    <section className="shop" id={id}>
       <div className="block-head"><h3>{b.title}</h3><span className="eyebrow">Shop</span></div>
       <table>
         <tbody>
@@ -78,10 +78,10 @@ export const Shop = ({ b }: { b: ShopBlock }) => {
   )
 }
 
-export const Tutor = ({ b }: { b: TutorBlock }) => {
+export const Tutor = ({ b, id }: { b: TutorBlock; id?: string }) => {
   const dex = useDex()
   return (
-    <section className="shop">
+    <section className="shop" id={id}>
       <div className="block-head"><h3>{b.title}</h3><span className="eyebrow">Move tutor</span></div>
       <table>
         <tbody>
