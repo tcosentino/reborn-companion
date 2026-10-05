@@ -1,0 +1,144 @@
+:root {
+  --stat-red: #e74c3c;
+  --stat-orange: #e67e22;
+  --stat-yellow: #f39c12;
+  --stat-green: #27ae60;
+  --stat-teal: #16a085;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --stat-red: #e67e7e;
+    --stat-orange: #f0a060;
+    --stat-yellow: #f5c969;
+    --stat-green: #58d468;
+    --stat-teal: #4fd4c7;
+  }
+}
+
+.stat-bars {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Full variant: 6 stat rows + 1 BST row */
+.stat-bars.full {
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 0;
+}
+
+.stat-bars.full .stat-row {
+  display: grid;
+  grid-template-columns: 2.5rem 2.5rem minmax(0, 1fr);
+  gap: 0.6rem;
+  align-items: center;
+  font-size: 0.82rem;
+}
+
+.stat-bars.full .label {
+  font: 600 0.75rem var(--mono);
+  color: var(--muted);
+  text-align: left;
+}
+
+.stat-bars.full .number {
+  font: 600 0.82rem var(--mono);
+  color: var(--ink);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-bars.full .bar-container {
+  height: 12px;
+  background: var(--sunk);
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.stat-bars.full .bar-fill {
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+.stat-bars.full .stat-row.total {
+  border-top: 1px solid var(--line);
+  margin-top: 0.4rem;
+  padding-top: 0.4rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Stat value band colors */
+.bar-fill.red {
+  background: var(--stat-red);
+}
+
+.bar-fill.orange {
+  background: var(--stat-orange);
+}
+
+.bar-fill.yellow {
+  background: var(--stat-yellow);
+}
+
+.bar-fill.green {
+  background: var(--stat-green);
+}
+
+.bar-fill.teal {
+  background: var(--stat-teal);
+}
+
+/* Compact variant: vertical strip of 6 bars */
+.stat-bars.compact {
+  height: 22px;
+  width: 60px;
+  gap: 0;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 2px 0;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--sunk);
+  overflow: hidden;
+}
+
+.stat-bars.compact .bar {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border-radius: 2px;
+  background: var(--sunk);
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  transition: height 0.3s;
+}
+
+@media (prefers-color-scheme: dark) {
+  .stat-bars.compact .bar {
+    border-right-color: rgba(255, 255, 255, 0.08);
+  }
+}
+
+.stat-bars.compact .bar.red {
+  background: var(--stat-red);
+}
+
+.stat-bars.compact .bar.orange {
+  background: var(--stat-orange);
+}
+
+.stat-bars.compact .bar.yellow {
+  background: var(--stat-yellow);
+}
+
+.stat-bars.compact .bar.green {
+  background: var(--stat-green);
+}
+
+.stat-bars.compact .bar.teal {
+  background: var(--stat-teal);
+}
