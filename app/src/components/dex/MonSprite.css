@@ -1,0 +1,24 @@
+.mon-sprite { --s: 64px; flex: none; width: var(--s); height: var(--s); display: inline-grid; place-items: center; overflow: hidden }
+.mon-sprite.icon { --s: 40px }
+.mon-sprite.sm { --s: 64px }
+.mon-sprite.md { --s: 96px }
+.mon-sprite.lg { --s: 160px }
+.mon-sprite img { width: 100%; height: 100%; object-fit: contain; image-rendering: pixelated }
+.mon-sprite svg { width: 55%; height: 55%; fill: none; stroke: var(--line); stroke-width: 1.4; stroke-linecap: round }
+.mon-sprite[data-missing] { opacity: .8 }
+
+/* Trainer rows: sprite left of the name */
+.mon-lead { display: flex; align-items: flex-start; gap: .6rem; min-width: 0 }
+.mon-lead .mon-id { flex: 1 }
+/* Widen the five-column trainer row's first column to fit the sprite */
+.party .mon-row, .party .party-cols { grid-template-columns: 13.5rem 6.5rem 4.5rem minmax(0, 1fr) 9rem }
+@media (max-width: 640px) {
+  .party .mon-row { grid-template-columns: minmax(0, 1fr) auto }
+  .mon-lead .mon-sprite.sm { --s: 48px }
+}
+
+/* Encounter rows: icon left of the name */
+.enc-row .name { display: flex; align-items: center; gap: .3rem }
+.enc-row .name > div { display: grid; min-width: 0 }
+.enc-row:not(.with-dex) { grid-template-columns: 11.5rem minmax(0, 1fr) 3rem }
+.enc-row.with-dex { grid-template-columns: 1.1rem 12.5rem minmax(0, 1fr) 3rem }

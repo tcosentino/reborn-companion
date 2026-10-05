@@ -3,6 +3,7 @@ import { battleId } from '../../lib/route'
 import { teamCoverage, weaknesses } from '../../lib/typechart'
 import { FieldBanner } from '../fields/FieldBanner'
 import { TypeChip, itemName, typeVar, useDex } from '../common'
+import { MonSprite } from '../dex/MonSprite'
 import { StatBars } from '../dex/StatBars'
 
 const STAT_LABELS = ['HP', 'Atk', 'Def', 'SpA', 'SpD', 'Spe']
@@ -42,6 +43,8 @@ const MonRow = ({ m, owner, showSpread }: { m: PartyMon; owner?: string; showSpr
   const baseStats = dex.species[m.species]?.forms[String(m.form ?? 0)]?.baseStats ?? Object.values(dex.species[m.species]?.forms ?? {})[0]?.baseStats
   return (
     <div className="mon-row">
+      <div className="mon-lead">
+      <MonSprite species={m.species} form={m.form} shiny={m.shiny} size="sm" />
       <div className="mon-id">
         <div className="mon-top">
           <b>{m.nickname ?? dex.species[m.species]?.name ?? m.displayName}</b>
@@ -51,6 +54,7 @@ const MonRow = ({ m, owner, showSpread }: { m: PartyMon; owner?: string; showSpr
         </div>
         {ability && <span className="ability"><b title={ability.desc}>{ability.name}</b></span>}
         {m.item && <span className="ability">@ <b title={dex.items[m.item]?.desc}>{itemName(dex, m.item)}</b></span>}
+      </div>
       </div>
       <div className="types">
         {types.map(t => <TypeChip key={t} type={t} />)}

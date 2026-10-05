@@ -1,6 +1,7 @@
 import type { EncounterMethod, EncountersBlock, MiningBlock, PickupBlock, ShopBlock, TutorBlock, WildHeldBlock } from '../../data/types'
 import { dexHref } from '../../lib/route'
 import { TypeChip, itemName, money, typeVar, useDex, useGame } from '../common'
+import { MonSprite } from '../dex/MonSprite'
 import { CaughtToggle, TierBadge } from '../pokedex/bits'
 import { usePokedex } from '../pokedex/context'
 
@@ -34,10 +35,15 @@ export const Encounters = ({ b }: { b: EncountersBlock }) => {
                 <div className={`enc-row${r.firstSeen ? ' new' : ''}${pokedex ? ' with-dex' : ''}`} key={j}>
                   {pokedex && <CaughtToggle sym={r.species} name={r.displayName} />}
                   <div className="name">
-                    <span className="name-line">
-                      <a href={dexHref(game.id, r.species)}><b>{r.displayName}</b></a>
-                      {pokedex?.ranks[r.species] && <TierBadge rank={pokedex.ranks[r.species]} />}
-                    </span><small>Lv {r.levels}{r.form && r.form !== 'Normal Form' ? ` · ${r.form}` : ''}</small></div>
+                    <MonSprite species={r.species} form={r.form} size="icon" />
+                    <div>
+                      <span className="name-line">
+                        <a href={dexHref(game.id, r.species)}><b>{r.displayName}</b></a>
+                        {pokedex?.ranks[r.species] && <TierBadge rank={pokedex.ranks[r.species]} />}
+                      </span>
+                      <small>Lv {r.levels}{r.form && r.form !== 'Normal Form' ? ` · ${r.form}` : ''}</small>
+                    </div>
+                  </div>
                   <div className="bar" role="img" aria-label={`${r.rate}% encounter rate`}>
                     <i style={{ width: `${r.rate}%`, ['--tc' as string]: typeVar(types[0] ?? 'NORMAL') }} />
                   </div>
