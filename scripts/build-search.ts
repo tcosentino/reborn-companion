@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url'
 import { gzipSync } from 'node:zlib'
 import type { Chapter, Dex, GuideIndex } from '../app/src/data/types'
 import { buildSearchIndex } from '../app/src/components/palette/buildIndex.ts'
+import { buildSectionBattles } from '../app/src/lib/sectionBattles.ts'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const game = process.argv[2] ?? 'reborn'
@@ -21,3 +22,8 @@ writeFileSync(join(dir, 'search.json'), out)
 
 const kb = (n: number) => `${(n / 1024).toFixed(1)} KB`
 console.log(`search.json: ${kb(Buffer.byteLength(out))} raw, ${kb(gzipSync(out).length)} gzip (${Math.round(performance.now() - t0)} ms)`)
+
+// Per-section battle ids for whole-guide progress in the sidebar
+const battles = JSON.stringify(buildSectionBattles(index, chapters))
+writeFileSync(join(dir, 'battles.json'), battles)
+console.log(`battles.json: ${kb(Buffer.byteLength(battles))} raw, ${kb(gzipSync(battles).length)} gzip`)

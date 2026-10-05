@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Build the palette search index, then copy generated guide JSON into the app's public data folder.
+# Build the palette search index and battles.json, then copy generated guide JSON into the app's public data folder.
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 GAME="${1:-reborn}"

@@ -78,7 +78,8 @@ const MonRow = ({ m, owner, showSpread }: { m: PartyMon; owner?: string; showSpr
   )
 }
 
-export const Battle = ({ b, done, onToggle }: { b: BattleBlock; done: boolean; onToggle: (id: string) => void }) => {
+// collapsed: "Hide defeated" is on, so a beaten card shrinks to its header row
+export const Battle = ({ b, done, onToggle, collapsed }: { b: BattleBlock; done: boolean; onToggle: (id: string) => void; collapsed?: boolean }) => {
   const dex = useDex()
   const id = battleId(b.trainers.map(t => t.teamId))
   const lvs = b.party.map(p => p.level)
@@ -91,7 +92,7 @@ export const Battle = ({ b, done, onToggle }: { b: BattleBlock; done: boolean; o
   const classes = [...new Set(b.trainers.map(t => t.title))].join(' & ')
 
   return (
-    <article className={`trainer${done ? ' is-done' : ''}`} id={`battle-${id}`}>
+    <article className={`trainer${done ? ' is-done' : ''}${done && collapsed ? ' is-collapsed' : ''}`} id={`battle-${id}`}>
       <FieldBanner b={b} />
       <div className="tr-head">
         <div className="tr-name">

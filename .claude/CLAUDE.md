@@ -12,3 +12,7 @@ See `README.md` for the data pipeline, layout and run commands.
 ## Tests
 
 - `bash scripts/test.sh` (override unit tests + upstream generator tests) and `cd app && yarn test`.
+
+## Progress data
+
+- Battle checklist ids are `teamId`s joined as in `lib/route.ts` `battleId`. `battles.json` (from `app/src/lib/sectionBattles.ts`, run by `scripts/build-search.ts`) must count the same battles as `SectionView` (non-partner only), or sidebar totals drift from section totals.

@@ -11,7 +11,13 @@ import { CompareView } from './components/pokedex/CompareView'
 import { loadChapter, loadDex, loadIndex, loadPokedex, loadRanks, useAsync } from './data/load'
 import type { GuideIndex } from './data/types'
 import { GAMES, gameById, type GameConfig } from './games'
-import { readLastSection, writeLastSection } from './lib/progress'
+import { readLastSection, readLastSpot, useProgress, writeLastSection } from './lib/progress'
+import { loadBattles } from './data/load'
+import { furthestBeaten, mySpot, sumTallies, tally } from './lib/guideNav'
+import type { BattleRef } from './lib/sectionBattles'
+import { flashAnchor } from './components/palette/anchorScroll'
+import { BottomBar } from './features/guide-nav/BottomBar'
+import { ResumeCard } from './features/guide-nav/ResumeCard'
 import { dexHref, href, useRoute, type Route } from './lib/route'
 
 interface FlatSection { id: string; title: string; chapterId: string; chapterTitle: string; file: string; index: number }
@@ -36,11 +42,29 @@ const GamePicker = () => (
   </main>
 )
 
-const Sidebar = ({ game, idx, current, open, onClose, inDex }: {
-  game: GameConfig; idx: GuideIndex; current: FlatSection; open: boolean; onClose: () => void; inDex: boolean
+const Count = ({ beaten, total }: { beaten: number; total: number }) => total > 0
+  ? <span className={`side-count${beaten === total ? ' full' : ''}`} aria-label={`${beaten} of ${total} battles won`}>{beaten}/{total}</span>
+  : null
+
+const Sidebar = ({ game, idx, flat, current, open, onClose, inDex, battles }: {
+  game: GameConfig; idx: GuideIndex; flat: FlatSection[]; current: FlatSection; open: boolean; onClose: () => void; inDex: boolean
+  battles?: Record<string, BattleRef[]>
 }) => {
-  const [expanded, setExpanded] = useState<string | null>(current.chapterId)
-  useEffect(() => setExpanded(current.chapterId), [current.chapterId])
+  const { done } = useProgress(game.id)
+  const order = useMemo(() => flat.map(s => s.id), [flat])
+  const furthest = battles ? flat[furthestBeaten(order, battles, done)] : undefined
+  const spot = battles ? mySpot(order, battles, done) : null
+  const total = battles ? sumTallies(order.map(id => tally(battles[id], done))) : null
+
+  // The current chapter and the one holding your furthest progress start open
+  const [expanded, setExpanded] = useState<Set<string>>(() => new Set([current.chapterId]))
+  useEffect(() => setExpanded(new Set([current.chapterId, ...(furthest ? [furthest.chapterId] : [])])), [current.chapterId, furthest?.chapterId])
+  const toggleChapter = (id: string) => setExpanded(s => {
+    const next = new Set(s)
+    if (!next.delete(id)) next.add(id)
+    return next
+  })
+  const spotHref = spot ? href(game.id, spot.section, spot.anchor) : null
 
   return (
     <nav className={`sidebar${open ? ' open' : ''}`} aria-label="Guide contents">
@@ -50,20 +74,42 @@ const Sidebar = ({ game, idx, current, open, onClose, inDex }: {
       </div>
       <a className={`dex-link${inDex ? ' active' : ''}`} href={dexHref(game.id)} onClick={onClose}>Pokedex</a>
       <PaletteButton className="search" onOpen={onClose} />
+      {spot && spotHref && (
+        <a className="my-spot" href={spotHref} onClick={e => {
+          onClose()
+          // Same hash would not re-trigger the anchor scroll
+          if (location.hash === spotHref && spot.anchor) { e.preventDefault(); flashAnchor(spot.anchor) }
+        }}>
+          <span>Jump to my spot</span>
+          <small>{flat.find(s => s.id === spot.section)?.title}{spot.label ? ` · ${spot.label}` : ''}</small>
+        </a>
+      )}
+      {total && total.total > 0 && (
+        <div className="side-total">
+          <span className="eyebrow">Guide progress</span>
+          <Count {...total} />
+        </div>
+      )}
       <ol className="chapters">
         {idx.chapters.map(c => {
           const sections = c.sections.map(s => ({ id: s.id ?? c.id, title: s.title ?? 'Introduction' }))
-          const isOpen = expanded === c.id
+          const isOpen = expanded.has(c.id)
+          const ct = battles ? sumTallies(sections.map(s => tally(battles[s.id], done))) : null
           return (
             <li key={c.id} className={c.id === current.chapterId ? 'current' : ''}>
-              <button className="chapter-btn" onClick={() => setExpanded(isOpen ? null : c.id)} aria-expanded={isOpen}>
-                {c.title}
+              <button className="chapter-btn" onClick={() => toggleChapter(c.id)} aria-expanded={isOpen}>
+                <span>{c.title}</span>
+                {ct && <Count {...ct} />}
               </button>
               {isOpen && (
                 <ol className="sections">
                   {sections.map(s => (
                     <li key={s.id}>
-                      <a href={href(game.id, s.id)} onClick={onClose} aria-current={!inDex && s.id === current.id ? 'page' : undefined}>{s.title}</a>
+                      <a href={href(game.id, s.id)} onClick={onClose} aria-current={!inDex && s.id === current.id ? 'page' : undefined}
+                        className={s.id === furthest?.id ? 'furthest' : undefined} title={s.id === furthest?.id ? 'Furthest section with a battle won' : undefined}>
+                        <span>{s.title}</span>
+                        {battles && <Count {...tally(battles[s.id], done)} />}
+                      </a>
                     </li>
                   ))}
                 </ol>
@@ -95,12 +141,23 @@ const GuideView = ({ game, route }: { game: GameConfig; route: Route }) => {
   }, [pokedex.data, ranks.data, idx.data])
   const chapter = useAsync(() => current ? loadChapter(game.id, current.file) : Promise.resolve(undefined), [game.id, current?.file])
   const [menu, setMenu] = useState(false)
-  useAnchorScroll(route.pokedex ? null : route.anchor, chapter.data ? current?.id : undefined)
+  // Per-section battle ids for whole-guide progress; the sidebar shows counts once it arrives
+  const battles = useAsync(() => loadBattles(game.id), [game.id])
+  const order = useMemo(() => Object.fromEntries(flat.map(s => [s.id, s.index])), [flat])
+  const titles = useMemo(() => Object.fromEntries(flat.map(s => [s.id, s.title])), [flat])
+  // Spot saved by the previous visit: reopening that section without an anchor returns to the saved block
+  const [boot, setBoot] = useState(() => readLastSpot(game.id))
+  useEffect(() => {
+    if (route.section && route.section !== boot?.section) setBoot(null)
+  }, [route.section, boot?.section])
+  const resumeAnchor = !route.pokedex && route.section && route.section === boot?.section ? boot.anchor : null
+  useAnchorScroll(route.pokedex ? null : route.anchor ?? resumeAnchor, chapter.data ? current?.id : undefined)
 
   useEffect(() => { scrollTo(0, 0) }, [current?.id, route.pokedex, route.species])
+  // The game root previews the first section; it must not replace the saved spot
   useEffect(() => {
-    if (current && !route.pokedex) writeLastSection(game.id, current.id)
-  }, [current, route.pokedex, game.id])
+    if (current && !route.pokedex && route.section) writeLastSection(game.id, current.id)
+  }, [current, route.pokedex, route.section, game.id])
   useEffect(() => {
     const species = route.species && dexData?.dex.species[route.species]?.name
     const title = route.pokedex ? species || (route.compare ? 'Compare' : 'Pokedex') : current?.title
@@ -114,6 +171,8 @@ const GuideView = ({ game, route }: { game: GameConfig; route: Route }) => {
   const sectionData = chapter.data?.sections.find(s => (s.id ?? chapter.data?.id) === current.id)
   const prev = flat[current.index - 1] ?? null
   const next = flat[current.index + 1] ?? null
+  // "Back to <section>" on Pokedex pages returns to the last section and block read
+  const lastSpot = route.pokedex ? readLastSpot(game.id) : null
 
   return (
     <GameContext.Provider value={game}>
@@ -121,9 +180,19 @@ const GuideView = ({ game, route }: { game: GameConfig; route: Route }) => {
         <PokedexContext.Provider value={dexData}>
           <div className="shell">
             <CommandPalette />
-            <button className="menu-btn" onClick={() => setMenu(m => !m)} aria-expanded={menu}>{menu ? 'Close' : 'Contents'}</button>
-            <Sidebar game={game} idx={idx.data} current={current} open={menu} onClose={() => setMenu(false)} inDex={route.pokedex} />
+            <Sidebar game={game} idx={idx.data} flat={flat} current={current} open={menu} onClose={() => setMenu(false)} inDex={route.pokedex} battles={battles.data?.s} />
             <main className="content">
+              {route.pokedex && lastSpot && titles[lastSpot.section] && (
+                <div className="guide-return">
+                  <a href={href(game.id, lastSpot.section, lastSpot.anchor)}>
+                    <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                    Back to {titles[lastSpot.section]}
+                  </a>
+                </div>
+              )}
+              {!route.pokedex && !route.section && boot && (
+                <ResumeCard game={game.id} spot={boot} order={flat.map(s => s.id)} titles={titles} battles={battles.data?.s} />
+              )}
               {route.pokedex
                 ? pokedex.error
                   ? <div className="state">Could not load the Pokedex. {pokedex.error}</div>
@@ -133,8 +202,10 @@ const GuideView = ({ game, route }: { game: GameConfig; route: Route }) => {
                       ? <SpeciesView sym={route.species} />
                       : <PokedexView idx={idx.data} defaultChapter={readLastSection(game.id) ? current.chapterId : null} />
                 : sectionData
-                  ? <SectionView key={current.id} section={sectionData} chapterTitle={current.chapterTitle} prev={prev} next={next} />
+                  ? <SectionView key={current.id} section={sectionData} sectionKey={current.id} chapterTitle={current.chapterTitle} prev={prev} next={next}
+                      sectionOrder={order} track={!!route.section} menuOpen={menu} onContents={() => setMenu(m => !m)} />
                   : <div className="state">Loading {current.title}&hellip;</div>}
+              {(route.pokedex || !sectionData) && <BottomBar game={game.id} menuOpen={menu} onContents={() => setMenu(m => !m)} />}
             </main>
           </div>
           <HoverCardHost />

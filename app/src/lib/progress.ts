@@ -2,7 +2,8 @@ import { useCallback, useEffect, useState } from 'react'
 
 // Per-browser checklists (defeated trainers, caught Pokemon). Storage can be unavailable, so every access is guarded.
 // 'compare' is the tray of species queued for the compare page (insertion order is kept)
-export type Checklist = 'progress' | 'caught' | 'hidden' | 'compare'
+// 'prefs' holds boolean view settings such as hideDefeated
+export type Checklist = 'progress' | 'caught' | 'hidden' | 'compare' | 'prefs'
 
 const key = (game: string, list: Checklist) => `pokeguide:${game}:${list}`
 
@@ -42,11 +43,35 @@ export const useChecklist = (game: string, list: Checklist) => {
 export const useProgress = (game: string) => useChecklist(game, 'progress')
 export const useCaught = (game: string) => useChecklist(game, 'caught')
 
-// Last guide section viewed, used as the default "available by" point in the Pokedex
+export const usePrefs = (game: string) => useChecklist(game, 'prefs')
+
+// Last guide section viewed, used as the default "available by" point in the Pokedex and for resuming.
+// lastSection stays a plain section id (the original format); the block anchor within it is stored
+// separately as JSON so older readers keep working.
+export interface Spot { section: string; anchor: string | null }
+
 const lastKey = (game: string) => `pokeguide:${game}:lastSection`
+const anchorKey = (game: string) => `pokeguide:${game}:lastAnchor`
+
+// The saved anchor only counts when it belongs to the saved section
+export const parseSpot = (section: string | null, anchorJson: string | null): Spot | null => {
+  if (!section) return null
+  try {
+    const a = JSON.parse(anchorJson ?? 'null') as Partial<Spot> | null
+    return { section, anchor: a?.section === section && typeof a.anchor === 'string' ? a.anchor : null }
+  } catch { return { section, anchor: null } }
+}
+
 export const readLastSection = (game: string): string | null => {
   try { return localStorage.getItem(lastKey(game)) } catch { return null }
 }
-export const writeLastSection = (game: string, id: string) => {
-  try { localStorage.setItem(lastKey(game), id) } catch { /* storage unavailable */ }
+export const readLastSpot = (game: string): Spot | null => {
+  try { return parseSpot(localStorage.getItem(lastKey(game)), localStorage.getItem(anchorKey(game))) } catch { return null }
+}
+// Pass an anchor to also record the block in view; omit it to keep the saved one
+export const writeLastSection = (game: string, id: string, anchor?: string | null) => {
+  try {
+    localStorage.setItem(lastKey(game), id)
+    if (anchor !== undefined) localStorage.setItem(anchorKey(game), JSON.stringify({ section: id, anchor }))
+  } catch { /* storage unavailable */ }
 }

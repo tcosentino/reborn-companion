@@ -58,13 +58,21 @@ h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-he
 .brand { font: 700 1.3rem var(--display); color: var(--ink); text-decoration: none }
 .search { margin: 0 1rem .8rem; width: calc(100% - 2rem); padding: .5rem .7rem; border: 1px solid var(--line); border-radius: 6px; background: var(--sunk); color: var(--ink); font: inherit; font-size: .9rem }
 .chapters, .sections { list-style: none; margin: 0; padding: 0 }
-.chapter-btn { all: unset; display: block; width: 100%; box-sizing: border-box; padding: .45rem 1rem; font: 600 .86rem/1.35 var(--display); cursor: pointer; color: var(--ink) }
+.chapter-btn { all: unset; display: flex; justify-content: space-between; align-items: baseline; gap: .6rem; width: 100%; box-sizing: border-box; padding: .45rem 1rem; font: 600 .86rem/1.35 var(--display); cursor: pointer; color: var(--ink) }
 .chapter-btn:hover { background: var(--sunk) }
 .chapters > li.current > .chapter-btn { color: var(--accent) }
-.sections a { display: block; padding: .28rem 1rem .28rem 1.6rem; font-size: .87rem; color: var(--muted); text-decoration: none; border-left: 3px solid transparent }
+.sections a { display: flex; justify-content: space-between; align-items: baseline; gap: .6rem; padding: .28rem 1rem .28rem 1.6rem; font-size: .87rem; color: var(--muted); text-decoration: none; border-left: 3px solid transparent }
 .sections a:hover { color: var(--ink); background: var(--sunk) }
 .sections a[aria-current] { color: var(--ink); font-weight: 700; border-left-color: var(--accent); background: var(--accent-soft) }
-.menu-btn { display: none }
+/* Whole-guide progress: per-section and per-chapter counts, furthest section, "Jump to my spot" */
+.side-count { flex: none; font: 600 .68rem var(--mono); font-variant-numeric: tabular-nums; color: var(--muted) }
+.side-count.full { color: var(--good) }
+.sections a.furthest { box-shadow: inset 3px 0 0 var(--good) }
+.sections a.furthest > span:first-child::after { content: ''; display: inline-block; width: .4rem; height: .4rem; margin-left: .4rem; border-radius: 50%; background: var(--good); vertical-align: middle }
+.my-spot { display: grid; margin: 0 1rem .8rem; padding: .45rem .7rem; border: 1px solid var(--good); border-radius: 6px; background: color-mix(in srgb, var(--good) 8%, var(--surface)); color: var(--ink); text-decoration: none; font: 600 .86rem var(--display) }
+.my-spot small { font: 400 .76rem var(--body); color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.my-spot:hover { border-color: var(--accent) }
+.side-total { display: flex; justify-content: space-between; align-items: baseline; padding: 0 1rem .4rem }
 
 .content { min-width: 0; padding: 0 clamp(16px, 4vw, 48px) 4rem }
 .section { max-width: 980px; margin: 0 auto }
@@ -73,7 +81,8 @@ h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-he
   .shell { grid-template-columns: minmax(0, 1fr) }
   .sidebar { position: fixed; inset: 0 auto 0 0; width: min(320px, 85vw); z-index: 20; transform: translateX(-100%); transition: transform .2s; box-shadow: 0 0 40px rgb(0 0 0 / .25) }
   .sidebar.open { transform: none }
-  .menu-btn { display: block; position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 30; padding: .6rem 1rem; border-radius: 99px; border: 0; background: var(--ink); color: var(--bg); font: 600 .85rem var(--mono); cursor: pointer }
+  /* The bottom bar (features/guide-nav) replaces the floating buttons; leave room for it */
+  .sidebar { padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px)) }
 }
 
 /* Section hero */
@@ -85,7 +94,10 @@ h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-he
 .stat span { color: var(--muted); font-size: .88rem }
 .meter { height: 8px; max-width: 420px; background: var(--sunk); border: 1px solid var(--line); border-radius: 99px; overflow: hidden }
 .meter i { display: block; height: 100%; background: var(--accent); transition: width .3s }
-.next-up { font: 600 .85rem var(--mono); justify-self: start }
+.next-up { font: 600 .85rem var(--mono); margin-right: auto }
+.hero-row { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; max-width: 640px }
+.hide-done { display: inline-flex; align-items: center; gap: .4rem; font: 600 .78rem var(--mono); color: var(--muted); cursor: pointer }
+.hide-done input { accent-color: var(--accent); margin: 0 }
 
 .blocks { display: grid; gap: 1.1rem }
 .prose { max-width: 70ch }
@@ -114,6 +126,11 @@ figure img { display: block; width: 100%; height: auto }
 .beat input { accent-color: var(--good); margin: 0 }
 .trainer.is-done .beat { color: var(--good); border-color: var(--good) }
 .trainer.is-done .party, .trainer.is-done .coverage { opacity: .5 }
+/* "Hide defeated": beaten cards shrink to their header row */
+.trainer.is-collapsed > :not(.tr-head) { display: none }
+.trainer.is-collapsed .tr-head { border-bottom: 0; padding-block: .5rem }
+.trainer.is-collapsed .tr-name h3 { font-size: 1rem }
+.trainer.is-collapsed .tags { display: none }
 .coverage { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .5rem; padding: .5rem 1rem; border-bottom: 1px solid var(--line) }
 .coverage .eyebrow { margin-right: .3rem }
 .party { transition: opacity .2s }

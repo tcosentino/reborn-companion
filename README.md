@@ -89,7 +89,8 @@ pokemon-rebor/
 - [x] JSON emitter for the generator (`upstream` branch `json-export`, golden-tested byte-identical HTML)
 - [x] Scaffold the Vite app (`app/`, multi-game registry in `app/src/games.ts`)
 - [x] Episode views, trainer cards, encounters, shops
-- [ ] Search, progress tracking, compact view
+- [x] Search (Cmd+K palette) and progress tracking: whole-guide progress, resume, hide defeated (see "Guide navigation")
+- [ ] Compact view
 - [ ] Deploy (possibly under troycosentino.com)
 
 ## Running locally
@@ -100,7 +101,7 @@ bash scripts/sync-data.sh       # builds search.json, then out/json/reborn/ -> a
 cd app && yarn && yarn dev      # http://localhost:5174/#/reborn/obsidia-ward
 ```
 
-`sync-data.sh` runs `node scripts/build-search.ts` (Node >= 23.6, native TS type stripping) to write `out/json/<game>/search.json`, the compact index behind the Cmd+K palette (`app/src/components/palette/`). Palette deep links use `#/<game>/<section>/<anchor>`, where the anchor is a block id such as `battle-<teamIds>`, `enc-<slug>`, `shop-<slug>` or `tutor-<slug>`.
+`sync-data.sh` runs `node scripts/build-search.ts` (Node >= 23.6, native TS type stripping) to write `out/json/<game>/search.json`, the compact index behind the Cmd+K palette (`app/src/components/palette/`). Palette deep links use `#/<game>/<section>/<anchor>`, where the anchor is a block id such as `battle-<teamIds>`, `enc-<slug>`, `shop-<slug>` or `tutor-<slug>`. The same script writes `battles.json` (each section's non-partner battle ids and labels, about 12 KB gzipped), which drives whole-guide progress without loading every chapter.
 
 Tests: `bash scripts/test.sh` (override unit tests, generator golden + JSON tests) and `cd app && yarn test`.
 
@@ -119,6 +120,18 @@ Replacement body for that section (the heading line is kept).
 `build-json.sh` copies the raw markdown to `out/raw/`, applies every override (`scripts/apply-overrides.ts`), and points the generator at the copy via `WT_RAW_DIR`. An override replaces everything from its heading to the next heading of the same or higher level, so subsections are replaced too. The build fails if the heading is missing or appears more than once in the file, so upstream renames surface immediately. Links to other sections use `#/<game>/<section-id>`.
 
 Adding another game: produce the same JSON schema (`index.json`, `dex.json`, `chapters/*.json`, see `app/src/data/types.ts`) into `app/public/data/<id>/` and add an entry to `app/src/games.ts`.
+
+## Guide navigation
+
+Lives in `app/src/features/guide-nav/` with pure logic in `app/src/lib/guideNav.ts`, `catchHere.ts` and `sectionBattles.ts` (unit-tested).
+
+- **Resume**: the block being read (the last anchored block above the reading line) or the battle last ticked is saved with the section (`pokeguide:<game>:lastAnchor`, next to the original plain `lastSection` key). Reloading that section returns to the block. The game root (`#/<game>`) shows a "Continue" card with the next unbeaten trainer there and your furthest progress.
+- **Back to guide**: Pokedex, species and compare pages link back to the last section and block.
+- **Whole-guide progress**: the sidebar shows beaten/total per section, per chapter and overall from `battles.json`, marks the furthest section with a battle won, opens its chapter, and offers "Jump to my spot" (the first unbeaten battle from there on).
+- **On this page**: a sticky dropdown listing the section's battles (with ticks), encounter tables, shops and tutors, highlighting the block in view.
+- **Hide defeated**: collapses beaten trainer cards to their header row (`pokeguide:<game>:prefs`).
+- **Catch here**: a header chip, "N species here, M not caught", expands into the section's wild species (deduplicated, sorted by tier then new-to-dex) with one-tap caught toggles. "Last listed here" flags species that no later encounter table or walkthrough mention lists (evolutions and unlisted gifts are not considered).
+- **Phone bottom bar** (under 860px): Contents, previous/next section, Search, and a center button that jumps to the next unbeaten trainer, or marks it beaten once it is on screen. It replaces the floating Contents and search buttons.
 
 ## Pokedex
 
