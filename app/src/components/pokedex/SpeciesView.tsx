@@ -5,7 +5,7 @@ import { TIER_LABEL, preEvolutionMap } from '../../lib/ranking'
 import { dexHref, href } from '../../lib/route'
 import { TypeChip, useGame } from '../common'
 import { StatBars } from '../dex/StatBars'
-import { CaughtToggle, TierBadge, tierSourceLabel } from './bits'
+import { CaughtToggle, CompareToggle, CompareTray, TierBadge, tierSourceLabel } from './bits'
 import { usePokedex } from './context'
 
 
@@ -39,7 +39,10 @@ export const SpeciesView = ({ sym }: { sym: Sym }) => {
         <a className="eyebrow back" href={dexHref(game.id)}>Pokedex</a>
         <h1>{s.name} <span className="muted mono num">#{String(s.num).padStart(3, '0')}</span></h1>
         <div className="types">{f.types.map(t => <TypeChip key={t} type={t} />)}<span className="muted kind">{s.kind} Pokemon</span></div>
-        <CaughtToggle sym={sym} name={s.name} label />
+        <div className="hero-actions">
+          <CaughtToggle sym={sym} name={s.name} label />
+          <CompareToggle sym={sym} name={s.name} />
+        </div>
       </header>
 
       {Object.keys(s.forms).length > 1 && (
@@ -118,6 +121,7 @@ export const SpeciesView = ({ sym }: { sym: Sym }) => {
             )}
         </section>
       </div>
+      <CompareTray />
     </article>
   )
 }

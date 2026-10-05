@@ -1,13 +1,33 @@
 import { useEffect, useState } from 'react'
 
-// Routes: #/<game>, #/<game>/<sectionId>, #/<game>/pokedex and #/<game>/pokedex/<SPECIES>
-export interface Route { game: string | null; section: string | null; pokedex: boolean; species: string | null }
+// Routes: #/<game>, #/<game>/<sectionId>, #/<game>/pokedex, #/<game>/pokedex/<SPECIES>
+// and #/<game>/pokedex/compare/<SPECIES>,<SPECIES>,...
+export interface Route {
+  game: string | null
+  section: string | null
+  pokedex: boolean
+  species: string | null
+  // Species being compared; null when not on the compare page
+  compare: string[] | null
+}
+
+export const MAX_COMPARE = 4
+
+// Unique, non-empty, capped at MAX_COMPARE
+export const parseCompare = (list: string | undefined): string[] =>
+  [...new Set((list ?? '').split(',').map(s => s.trim()).filter(Boolean))].slice(0, MAX_COMPARE)
 
 export const parseHash = (hash: string): Route => {
-  const [game, section, species] = hash.replace(/^#\/?/, '').split('/').map(decodeURIComponent)
-  if (section === 'pokedex') return { game: game || null, section: null, pokedex: true, species: species || null }
-  return { game: game || null, section: section || null, pokedex: false, species: null }
+  const [game, section, species, list] = hash.replace(/^#\/?/, '').split('/').map(decodeURIComponent)
+  if (section === 'pokedex' && species === 'compare') {
+    return { game: game || null, section: null, pokedex: true, species: null, compare: parseCompare(list) }
+  }
+  if (section === 'pokedex') return { game: game || null, section: null, pokedex: true, species: species || null, compare: null }
+  return { game: game || null, section: section || null, pokedex: false, species: null, compare: null }
 }
+
+export const compareHref = (game: string, species: string[]) =>
+  `#/${game}/pokedex/compare${species.length ? `/${species.map(encodeURIComponent).join(',')}` : ''}`
 
 export const dexHref = (game: string, species?: string | null) =>
   `#/${game}/pokedex${species ? `/${encodeURIComponent(species)}` : ''}`

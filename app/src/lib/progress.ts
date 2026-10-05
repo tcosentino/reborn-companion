@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useState } from 'react'
 
 // Per-browser checklists (defeated trainers, caught Pokemon). Storage can be unavailable, so every access is guarded.
-export type Checklist = 'progress' | 'caught' | 'hidden'
+// 'compare' is the tray of species queued for the compare page (insertion order is kept)
+export type Checklist = 'progress' | 'caught' | 'hidden' | 'compare'
 
 const key = (game: string, list: Checklist) => `pokeguide:${game}:${list}`
 
@@ -29,7 +30,13 @@ export const useChecklist = (game: string, list: Checklist) => {
     listeners.forEach(l => l())
   }, [game, list])
 
-  return { done, toggle }
+  // Replace the whole list (order of `ids` is kept)
+  const replace = useCallback((ids: string[]) => {
+    try { localStorage.setItem(key(game, list), JSON.stringify(Object.fromEntries(ids.map(id => [id, true])))) } catch { /* storage unavailable */ }
+    listeners.forEach(l => l())
+  }, [game, list])
+
+  return { done, toggle, replace }
 }
 
 export const useProgress = (game: string) => useChecklist(game, 'progress')

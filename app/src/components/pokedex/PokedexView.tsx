@@ -4,7 +4,7 @@ import { useCaught } from '../../lib/progress'
 import { TIERS, TIER_LABEL, bst } from '../../lib/ranking'
 import { dexHref, href } from '../../lib/route'
 import { TypeChip, useGame } from '../common'
-import { CaughtToggle, TierBadge } from './bits'
+import { CaughtToggle, CompareToggle, CompareTray, TierBadge } from './bits'
 import { firstChapter, usePokedex } from './context'
 
 type CaughtFilter = 'all' | 'caught' | 'missing'
@@ -116,11 +116,13 @@ export const PokedexView = ({ idx, defaultChapter }: Props) => {
                 {loc ? <a href={href(game.id, loc.sectionId)}>{loc.sectionTitle}</a> : <span className="muted">Not in encounter tables</span>}
                 {s.locations.length > 1 && <span className="muted"> +{s.locations.length - 1}</span>}
               </span>
+              <CompareToggle sym={sym} name={s.name} />
             </li>
           )
         })}
       </ol>
       {shown.length === 0 && <p className="state">No Pokemon match these filters.</p>}
+      <CompareTray />
     </article>
   )
 }

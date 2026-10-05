@@ -4,6 +4,7 @@ import { SectionView } from './components/SectionView'
 import { PokedexContext, type PokedexData } from './components/pokedex/context'
 import { PokedexView } from './components/pokedex/PokedexView'
 import { SpeciesView } from './components/pokedex/SpeciesView'
+import { CompareView } from './components/pokedex/CompareView'
 import { loadChapter, loadDex, loadIndex, loadPokedex, useAsync } from './data/load'
 import { tierList } from './data/tiers'
 import type { GuideIndex } from './data/types'
@@ -105,9 +106,9 @@ const GuideView = ({ game, route }: { game: GameConfig; route: Route }) => {
   }, [current, route.pokedex, game.id])
   useEffect(() => {
     const species = route.species && dexData?.dex.species[route.species]?.name
-    const title = route.pokedex ? species || 'Pokedex' : current?.title
+    const title = route.pokedex ? species || (route.compare ? 'Compare' : 'Pokedex') : current?.title
     if (title) document.title = `${title} · ${game.name} · PokeGuide`
-  }, [current, route.pokedex, route.species, dexData, game.name])
+  }, [current, route.pokedex, route.species, route.compare, dexData, game.name])
 
   const err = idx.error ?? dex.error ?? chapter.error
   if (err) return <main className="state">Could not load the guide. {err}. Run scripts/sync-data.sh to copy the generated data into the app.</main>
@@ -128,9 +129,11 @@ const GuideView = ({ game, route }: { game: GameConfig; route: Route }) => {
               {route.pokedex
                 ? pokedex.error
                   ? <div className="state">Could not load the Pokedex. {pokedex.error}</div>
-                  : route.species
-                    ? <SpeciesView sym={route.species} />
-                    : <PokedexView idx={idx.data} defaultChapter={readLastSection(game.id) ? current.chapterId : null} />
+                  : route.compare
+                    ? <CompareView syms={route.compare} />
+                    : route.species
+                      ? <SpeciesView sym={route.species} />
+                      : <PokedexView idx={idx.data} defaultChapter={readLastSection(game.id) ? current.chapterId : null} />
                 : sectionData
                   ? <SectionView key={current.id} section={sectionData} chapterTitle={current.chapterTitle} prev={prev} next={next} />
                   : <div className="state">Loading {current.title}&hellip;</div>}
