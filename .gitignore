@@ -1,0 +1,5 @@
+game-scripts/
+_extract/
+out/
+.DS_Store
+upstream/
