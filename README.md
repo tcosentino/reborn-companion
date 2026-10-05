@@ -68,6 +68,7 @@ pokemon-rebor/
   upstream/          BIGJRA repo clone (gitignored; git clone https://github.com/BIGJRA/BIGJRA.github.io upstream)
   game-scripts/      local copy of Reborn Scripts/ (gitignored, never published)
   scripts/           extraction: Ruby JSON emitter and/or TS post-processing
+  overrides/         per-section content edits applied to upstream's raw markdown at build time
   app/               Vite + React + TS app
     public/data/     generated JSON (episodes + lookups)
     src/
@@ -100,7 +101,21 @@ cd app && yarn && yarn dev      # http://localhost:5174/#/reborn/obsidia-ward
 
 `sync-data.sh` runs `node scripts/build-search.ts` (Node >= 23.6, native TS type stripping) to write `out/json/<game>/search.json`, the compact index behind the Cmd+K palette (`app/src/components/palette/`). Palette deep links use `#/<game>/<section>/<anchor>`, where the anchor is a block id such as `battle-<teamIds>`, `enc-<slug>`, `shop-<slug>` or `tutor-<slug>`.
 
-Tests: `bash scripts/test.sh` (generator golden + JSON tests) and `cd app && yarn test`.
+Tests: `bash scripts/test.sh` (override unit tests, generator golden + JSON tests) and `cd app && yarn test`.
+
+## Editing guide content
+
+Never edit `upstream/src/_raw/` directly: `upstream/` is gitignored here, its commits only exist locally, and edits make pulling BIGJRA's updates harder. Instead add a section override to `overrides/<game>/`:
+
+```
+---
+file: main_ep_01.md
+heading: All Aboard!
+---
+Replacement body for that section (the heading line is kept).
+```
+
+`build-json.sh` copies the raw markdown to `out/raw/`, applies every override (`scripts/apply-overrides.ts`), and points the generator at the copy via `WT_RAW_DIR`. An override replaces everything from its heading to the next heading of the same or higher level, so subsections are replaced too. The build fails if the heading is missing or appears more than once in the file, so upstream renames surface immediately. Links to other sections use `#/<game>/<section-id>`.
 
 Adding another game: produce the same JSON schema (`index.json`, `dex.json`, `chapters/*.json`, see `app/src/data/types.ts`) into `app/public/data/<id>/` and add an entry to `app/src/games.ts`.
 
