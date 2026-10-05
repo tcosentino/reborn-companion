@@ -6,6 +6,7 @@ import { useProgress } from '../lib/progress'
 import { Battle } from './blocks/Battle'
 import { Encounters, Mining, Pickup, Shop, Tutor, WildHeld } from './blocks/Tables'
 import { useGame } from './common'
+import { blockAnchors } from './palette/anchors'
 
 marked.setOptions({ gfm: true })
 
@@ -24,14 +25,14 @@ const Image = ({ src, file }: { src: string; file: string }) => {
   )
 }
 
-const BlockView = ({ b, done, toggle }: { b: Block; done: Record<string, true>; toggle: (id: string) => void }) => {
+const BlockView = ({ b, id, done, toggle }: { b: Block; id?: string; done: Record<string, true>; toggle: (id: string) => void }) => {
   switch (b.type) {
     case 'prose': return <Prose md={b.markdown} />
     case 'image': return <Image src={b.src} file={b.file} />
     case 'battle': return <Battle b={b} done={!!done[battleId(b.trainers.map(t => t.teamId))]} onToggle={toggle} />
-    case 'encounters': return <Encounters b={b} />
-    case 'shop': return <Shop b={b} />
-    case 'tutor': return <Tutor b={b} />
+    case 'encounters': return <Encounters b={b} id={id} />
+    case 'shop': return <Shop b={b} id={id} />
+    case 'tutor': return <Tutor b={b} id={id} />
     case 'pickup': return <Pickup b={b} />
     case 'mining': return <Mining b={b} />
     case 'wildHeld': return <WildHeld b={b} />
@@ -54,6 +55,7 @@ export const SectionView = ({ section, chapterTitle, prev, next }: Props) => {
   const nextUp = battles.find(b => !done[battleId(b.trainers.map(t => t.teamId))])
   const counts = section.blocks.reduce<Record<string, number>>((acc, b) => ({ ...acc, [b.type]: (acc[b.type] ?? 0) + 1 }), {})
   const levels = battles.flatMap(b => b.party.map(p => p.level))
+  const anchors = useMemo(() => blockAnchors(section.blocks), [section.blocks])
 
   return (
     <article className="section">
@@ -83,7 +85,7 @@ export const SectionView = ({ section, chapterTitle, prev, next }: Props) => {
       </header>
 
       <div className="blocks">
-        {section.blocks.map((b, i) => <BlockView key={i} b={b} done={done} toggle={toggle} />)}
+        {section.blocks.map((b, i) => <BlockView key={i} b={b} id={anchors[i] ?? undefined} done={done} toggle={toggle} />)}
       </div>
 
       <nav className="pager">
