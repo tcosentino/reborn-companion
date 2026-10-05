@@ -10,7 +10,7 @@ import { execFileSync } from 'node:child_process'
 import { copyFileSync, existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { homedir, tmpdir } from 'node:os'
 import { dirname, join, resolve } from 'node:path'
-import { cropPng } from './png-crop.ts'
+import { alphaBounds, cropPng, type Box } from './png-crop.ts'
 import { battlerSource, iconSource, type Dims, type SpriteSource } from '../app/src/components/dex/spriteMap.ts'
 
 interface DexForm { name?: string }
@@ -58,6 +58,21 @@ const emit = (srcDir: string, src: SpriteSource, dest: string): Dims => {
   return { w, h }
 }
 
+// Battler cells are 192px with the Pokemon small at the bottom; trim to the visible pixels.
+// Normal and shiny share one box (their union) so both versions sit identically.
+const cellOf = (srcDir: string, src: SpriteSource): Box => src.crop ?? { x: 0, y: 0, ...pngDims(join(srcDir, src.file)) }
+const visibleBox = (srcDir: string, src: SpriteSource): Box | null =>
+  alphaBounds(readFileSync(join(srcDir, src.file)), cellOf(srcDir, src))
+const union = (a: Box | null, b: Box | null): Box | null => {
+  if (!a || !b) return a ?? b
+  const x = Math.min(a.x, b.x), y = Math.min(a.y, b.y)
+  return { x, y, w: Math.max(a.x + a.w, b.x + b.w) - x, h: Math.max(a.y + a.h, b.y + b.h) - y }
+}
+// Shift a box found in one cell onto another cell of the same size (normal -> shiny column)
+const relativeTo = (box: Box, from: Box, to: Box): Box => ({ ...box, x: box.x - from.x + to.x, y: box.y - from.y + to.y })
+const trimmed = (src: SpriteSource, cell: Box, box: Box | null): SpriteSource =>
+  box ? { ...src, crop: relativeTo(box, cell, cellOf(battlerDir, src)) } : src
+
 const dex = JSON.parse(readFileSync(dexPath, 'utf8')) as DexJson
 rmSync(outDir, { recursive: true, force: true })
 const manifest: Record<string, Record<string, ManifestForm>> = {}
@@ -71,14 +86,24 @@ for (const [sym, sp] of Object.entries(dex.species)) {
     const entry: ManifestForm = { name: form.name, w: 0, h: 0 }
     const front = battlerSource(sym, idx, false, battlers)
     if (front) {
+      const shiny = battlerSource(sym, idx, true, battlers)
+      const frontCell = cellOf(battlerDir, front)
+      const sameSheet = shiny && shiny.file === front.file
+      // Union only works when both live in same-sized cells of one sheet; standalone files trim alone
+      const frontBox = sameSheet
+        ? union(visibleBox(battlerDir, front), (() => {
+            const b = visibleBox(battlerDir, shiny)
+            return b && relativeTo(b, cellOf(battlerDir, shiny), frontCell)
+          })())
+        : visibleBox(battlerDir, front)
       entry.front = rel('front', sym, formKey)
-      const d = emit(battlerDir, front, abs(entry.front))
+      const d = emit(battlerDir, trimmed(front, frontCell, frontBox), abs(entry.front))
       entry.w = d.w
       entry.h = d.h
-      const shiny = battlerSource(sym, idx, true, battlers)
       if (shiny) {
         entry.shiny = rel('shiny', sym, formKey)
-        emit(battlerDir, shiny, abs(entry.shiny))
+        const shinyBox = sameSheet ? frontBox : visibleBox(battlerDir, shiny)
+        emit(battlerDir, trimmed(shiny, sameSheet ? frontCell : cellOf(battlerDir, shiny), shinyBox), abs(entry.shiny))
       }
     }
     const icon = iconSource(sym, idx, false, icons)

@@ -8,7 +8,7 @@
 .mon-sprite[data-missing] { opacity: .8 }
 
 /* Trainer rows: sprite left of the name */
-.mon-lead { display: flex; align-items: flex-start; gap: .6rem; min-width: 0 }
+.mon-lead { display: flex; align-items: center; gap: .6rem; min-width: 0 }
 .mon-lead .mon-id { flex: 1 }
 /* Widen the five-column trainer row's first column to fit the sprite */
 .party .mon-row, .party .party-cols { grid-template-columns: 13.5rem 6.5rem 4.5rem minmax(0, 1fr) 9rem }

@@ -45,7 +45,10 @@ const paeth = (a: number, b: number, c: number) => {
   return pa <= pb && pa <= pc ? a : pb <= pc ? b : c
 }
 
-export const cropPng = (png: Buffer, x0: number, y0: number, w: number, h: number): Buffer => {
+interface Decoded { chunks: Chunk[]; ihdr: Buffer; width: number; height: number; colorType: number; bpp: number; stride: number; px: Buffer }
+
+// Unfiltered pixel bytes of an 8/16-bit, non-interlaced PNG
+const decodePng = (png: Buffer): Decoded => {
   const chunks = readChunks(png)
   const ihdr = chunks.find(c => c.type === 'IHDR')!.data
   const width = ihdr.readUInt32BE(0), height = ihdr.readUInt32BE(4)
@@ -66,6 +69,38 @@ export const cropPng = (png: Buffer, x0: number, y0: number, w: number, h: numbe
       px[y * stride + i] = (src[i] + add) & 0xff
     }
   }
+  return { chunks, ihdr, width, height, colorType, bpp, stride, px }
+}
+
+export interface Box { x: number; y: number; w: number; h: number }
+
+// Bounding box of visible (non-transparent) pixels inside a region, or null if it is empty.
+// Handles RGBA, gray+alpha and paletted images with a tRNS chunk; other layouts count as opaque.
+export const alphaBounds = (png: Buffer, region: Box): Box | null => {
+  const { chunks, width, height, colorType, bpp, stride, px } = decodePng(png)
+  const trns = chunks.find(c => c.type === 'tRNS')?.data
+  const visible = (x: number, y: number) => {
+    const o = y * stride + x * bpp
+    if (colorType === 6) return px[o + bpp - (bpp === 8 ? 2 : 1)] > 0
+    if (colorType === 4) return px[o + bpp - (bpp === 4 ? 2 : 1)] > 0
+    if (colorType === 3) return !trns || px[o] >= trns.length || trns[px[o]] > 0
+    return true
+  }
+  let minX = Infinity, minY = Infinity, maxX = -1, maxY = -1
+  for (let y = Math.max(0, region.y); y < Math.min(height, region.y + region.h); y++) {
+    for (let x = Math.max(0, region.x); x < Math.min(width, region.x + region.w); x++) {
+      if (!visible(x, y)) continue
+      if (x < minX) minX = x
+      if (x > maxX) maxX = x
+      if (y < minY) minY = y
+      if (y > maxY) maxY = y
+    }
+  }
+  return maxX < 0 ? null : { x: minX, y: minY, w: maxX - minX + 1, h: maxY - minY + 1 }
+}
+
+export const cropPng = (png: Buffer, x0: number, y0: number, w: number, h: number): Buffer => {
+  const { chunks, ihdr, width, height, bpp, stride, px } = decodePng(png)
   const out = Buffer.alloc((w * bpp + 1) * h)
   for (let y = 0; y < h; y++) {
     const sy = y0 + y
