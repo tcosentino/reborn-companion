@@ -47,7 +47,7 @@ export const PokedexView = ({ idx, defaultChapter }: Props) => {
     .filter(r => !tier || r.rank?.tier === tier)
     .filter(r => caught === 'all' || (caught === 'caught') === !!done[r.sym])
     .sort((a, b) =>
-      sort === 'tier' ? TIERS.indexOf(a.rank.tier) - TIERS.indexOf(b.rank.tier) || b.total - a.total
+      sort === 'tier' ? TIERS.indexOf(a.rank.tier) - TIERS.indexOf(b.rank.tier) || b.rank.score - a.rank.score || b.total - a.total
         : sort === 'first' ? a.first - b.first || a.s.num - b.s.num
           : a.s.num - b.s.num)
 
@@ -99,7 +99,7 @@ export const PokedexView = ({ idx, defaultChapter }: Props) => {
         {upTo
           ? <>Species found in wild encounter tables or shops up to <b>{chapterTitle}</b>. Starters, gifts and eggs only show under &ldquo;All species&rdquo;.</>
           : <>Every species in the game, including ones only obtainable as gifts, eggs or not at all.</>}
-        {' '}Tiers are a mix of community picks and editorial calls (hover a badge for which); ones marked <span className="tier tier-c est">C?</span> are estimated from base stats.
+        {' '}Tiers are computed from base stats, movepool, matchups against the guide's boss battles and how early the Pokemon is catchable.
       </p>
 
       <ol className="dex-list">

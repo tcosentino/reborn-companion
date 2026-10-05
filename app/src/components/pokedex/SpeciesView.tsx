@@ -1,18 +1,32 @@
+import './pokedex.css'
 import { useEffect, useMemo, useState } from 'react'
-import type { Sym } from '../../data/types'
+import type { Factor, MoveSource, SetMove, Sym } from '../../data/types'
+import { loadMovesets, useAsync } from '../../data/load'
 import { describeEvolution } from '../../lib/evolution'
-import { TIER_LABEL, preEvolutionMap } from '../../lib/ranking'
+import { preEvolutionMap } from '../../lib/ranking'
 import { dexHref, href } from '../../lib/route'
 import { TypeChip, useGame } from '../common'
 import { StatBars } from '../dex/StatBars'
-import { CaughtToggle, CompareToggle, CompareTray, TierBadge, tierSourceLabel } from './bits'
+import { CaughtToggle, CompareToggle, CompareTray, TierBadge } from './bits'
 import { usePokedex } from './context'
 
+const FACTORS: [Factor, string][] = [['stats', 'Stats'], ['moves', 'Movepool'], ['bosses', 'Boss matchups'], ['availability', 'Availability']]
+
+const learnLabel = (m: SetMove) => {
+  const how: Record<MoveSource, string> = {
+    level: m.level != null ? `Lv ${m.level}` : 'Level up',
+    machine: 'TM/Tutor',
+    relearn: 'Relearner',
+    egg: 'Egg move'
+  }
+  return how[m.source]
+}
 
 export const SpeciesView = ({ sym }: { sym: Sym }) => {
   const game = useGame()
   const data = usePokedex()
   const [form, setForm] = useState('0')
+  const movesets = useAsync(() => loadMovesets(game.id), [game.id])
   useEffect(() => setForm('0'), [sym])
   const pre = useMemo(() => data ? preEvolutionMap(data.dex) : {}, [data])
 
@@ -22,6 +36,7 @@ export const SpeciesView = ({ sym }: { sym: Sym }) => {
 
   const f = s.forms[form] ?? s.forms['0']
   const rank = data.ranks[sym]
+  const set = movesets.data?.species[sym]
   const total = f.baseStats.reduce((a, b) => a + b, 0)
   const abilityName = (a: Sym) => data.dex.abilities[a]?.name ?? a
   const from = (pre[sym] ?? []).flatMap(p => {
@@ -58,17 +73,66 @@ export const SpeciesView = ({ sym }: { sym: Sym }) => {
       <div className="dex-grid">
         {rank && (
           <section className="panel verdict">
-            <div className="block-head"><h3>Worth leveling?</h3><span className="eyebrow">{tierSourceLabel(rank)}</span></div>
+            <div className="block-head"><h3>Worth leveling?</h3></div>
             <div className="verdict-body">
               <TierBadge rank={rank} full />
               <p>{rank.note}</p>
-              {rank.via && rank.source !== 'curated' && (
-                <p className="muted">See <a href={dexHref(game.id, rank.via)}>{data.dex.species[rank.via]?.name}</a>.</p>
+              {rank.via && (
+                <p className="muted">Rated as its final form <a href={dexHref(game.id, rank.via)}>{data.dex.species[rank.via]?.name ?? rank.via}</a>.</p>
               )}
-              <p className="muted small">Tier {rank.tier}: {TIER_LABEL[rank.tier]}.</p>
+              <div className="factors">
+                {FACTORS.map(([k, label]) => {
+                  const v = rank.factors[k]
+                  return (
+                    <div className="factor" key={k}>
+                      <span className="factor-name">{label}</span>
+                      <span className="factor-bar" role="img" aria-label={v == null ? 'unknown' : `${Math.round(v)} out of 100`}>
+                        {v != null && <i style={{ width: `${Math.max(0, Math.min(100, v))}%` }} />}
+                      </span>
+                      <span className="factor-val mono">{v == null ? 'unknown' : Math.round(v)}</span>
+                    </div>
+                  )
+                })}
+              </div>
+              {(rank.reasons.good.length > 0 || rank.reasons.bad.length > 0) && (
+                <ul className="reasons">
+                  {rank.reasons.good.map((r, i) => <li key={`g${i}`} className="good"><b aria-hidden>+</b> {r}</li>)}
+                  {rank.reasons.bad.map((r, i) => <li key={`b${i}`} className="bad"><b aria-hidden>&ndash;</b> {r}</li>)}
+                </ul>
+              )}
             </div>
           </section>
         )}
+
+        <section className="panel moveset">
+          <div className="block-head"><h3>Recommended moveset</h3>{set && <span className="eyebrow">{set.role}</span>}</div>
+          {movesets.error ? <p className="muted pad">Moveset data is unavailable.</p>
+            : !movesets.data ? <p className="muted pad">Loading&hellip;</p>
+              : !set ? <p className="muted pad">No recommendation for this Pokemon.</p>
+                : (
+                  <div className="verdict-body">
+                    <p className="muted small">{set.role} attacker, {set.nature} nature</p>
+                    <ul className="set-moves">
+                      {set.moves.map(m => {
+                        const pre = m.from ? data.dex.species[m.from]?.name ?? m.from : null
+                        return (
+                          <li key={m.move}>
+                            <TypeChip type={m.type} small />
+                            <span className="set-name">{m.name}</span>
+                            <span className="mono muted small">{m.category === 'status' ? 'Status' : `${m.power ?? '\u2013'} pow · ${m.accuracy || '\u2013'}%`}</span>
+                            <span className="muted small set-how">{learnLabel(m)}{pre && ` (as ${pre})`}</span>
+                          </li>
+                        )
+                      })}
+                    </ul>
+                    {set.coverage.length > 0 && (
+                      <div className="set-coverage"><span className="muted small">Hits super-effectively:</span> {set.coverage.map(t => <TypeChip key={t} type={t} small />)}</div>
+                    )}
+                    <p>{set.note}</p>
+                  </div>
+                )}
+          <p className="muted small pad">Computed from the game&rsquo;s learnsets and move data.</p>
+        </section>
 
         <section className="panel">
           <div className="block-head"><h3>Base stats</h3><span className="eyebrow">Total {total}</span></div>

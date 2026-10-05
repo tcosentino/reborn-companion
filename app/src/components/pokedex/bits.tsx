@@ -1,24 +1,17 @@
 import './compare.css'
-import type { Sym } from '../../data/types'
-import { TIER_LABEL, type Rank } from '../../lib/ranking'
+import type { RankEntry, Sym } from '../../data/types'
+import { TIER_LABEL } from '../../lib/ranking'
 import { useCaught, useChecklist } from '../../lib/progress'
 import { MAX_COMPARE, compareHref } from '../../lib/route'
 import { usePokedex } from './context'
 import { useGame } from '../common'
 
-const sourceLabel = (rank: Rank) =>
-  rank.source === 'estimate' ? 'Stat estimate'
-    : `${rank.basis === 'community' ? 'Community pick' : 'Editorial pick'}${rank.source === 'inherited' ? ', via evolution' : ''}`
-
-export const TierBadge = ({ rank, full }: { rank: Rank; full?: boolean }) => (
-  <span className={`tier tier-${rank.tier.toLowerCase()}${rank.source === 'estimate' ? ' est' : ''}`}
-    title={`${rank.tier}: ${TIER_LABEL[rank.tier]} (${sourceLabel(rank)}). ${rank.note}`}>
-    {rank.tier}{rank.source === 'estimate' && <span aria-hidden>?</span>}
+export const TierBadge = ({ rank, full }: { rank: RankEntry; full?: boolean }) => (
+  <span className={`tier tier-${rank.tier.toLowerCase()}`} title={`${rank.tier}: ${TIER_LABEL[rank.tier]}. ${rank.note}`}>
+    {rank.tier}
     {full && <span className="tier-label">{TIER_LABEL[rank.tier]}</span>}
   </span>
 )
-
-export const tierSourceLabel = sourceLabel
 
 export const CaughtToggle = ({ sym, name, label }: { sym: Sym; name: string; label?: boolean }) => {
   const game = useGame()

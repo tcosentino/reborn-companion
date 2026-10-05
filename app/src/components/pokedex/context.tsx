@@ -1,11 +1,9 @@
 import { createContext, useContext } from 'react'
-import type { Pokedex, Sym, TierList } from '../../data/types'
-import type { Rank } from '../../lib/ranking'
+import type { Pokedex, RankEntry, Sym } from '../../data/types'
 
 export interface PokedexData {
   dex: Pokedex
-  tiers: TierList | null
-  ranks: Record<Sym, Rank>
+  ranks: Record<Sym, RankEntry>
   // Guide order of chapters, used for "available by" filtering
   chapterOrder: Record<string, number>
 }

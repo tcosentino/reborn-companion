@@ -173,6 +173,8 @@ export interface PokedexSpecies {
   kind: string
   forms: Record<string, PokedexForm>
   locations: DexLocation[]
+  // Guide sections whose prose bolds this species: gifts, eggs, purchases, static encounters
+  mentions?: { chapterId: string; sectionId: string; sectionTitle: string }[]
 }
 
 export interface Pokedex {
@@ -182,8 +184,52 @@ export interface Pokedex {
   names: Record<Sym, string>
 }
 
-// Curated rankings, src/data/tiers/<game>.json
 export type Tier = 'S' | 'A' | 'B' | 'C' | 'D'
-// basis: 'community' when the rating follows forum consensus, 'editorial' for judgment calls
-export interface TierEntry { tier: Tier; note: string; basis?: 'community' | 'editorial' }
-export interface TierList { source: string; tiers: Record<Sym, TierEntry> }
+
+// learnsets.json: per-species, per-form move lists plus full move data (build-time input for ranks/movesets)
+export interface LearnsetForm { level: [number, Sym][]; machine: Sym[]; egg: Sym[]; relearn: Sym[] }
+export interface MoveData { name: string; type: Sym; category: string; power: number | null; accuracy: number | null; pp: number | null; desc: string }
+export interface Learnsets { species: Record<Sym, Record<string, LearnsetForm>>; moves: Record<Sym, MoveData> }
+
+// ranks.json and movesets.json are computed by app/scripts/build-ranks.ts from game data only
+export type Factor = 'stats' | 'moves' | 'bosses' | 'availability'
+
+export interface RankEntry {
+  tier: Tier
+  // 0-100, percentile of the composite score among fully evolved species
+  score: number
+  // Final form this rating comes from, when it is not the species itself
+  via?: Sym
+  // 0-100 percentiles; availability is null when the guide never lists the line
+  factors: Record<Factor, number | null>
+  note: string
+  reasons: { good: string[]; bad: string[] }
+}
+
+export interface Ranks { generatedAt: string; method: string; species: Record<Sym, RankEntry> }
+
+export type MoveSource = 'level' | 'relearn' | 'machine' | 'egg'
+
+export interface SetMove {
+  move: Sym
+  name: string
+  type: Sym
+  category: string
+  power: number | null
+  accuracy: number | null
+  source: MoveSource
+  level?: number
+  // Pre-evolution the move has to be learned on, when the species itself cannot learn it
+  from?: Sym
+}
+
+export interface Moveset {
+  role: 'Physical' | 'Special' | 'Mixed'
+  nature: string
+  moves: SetMove[]
+  // Single types hit super-effectively by at least one move in the set
+  coverage: Sym[]
+  note: string
+}
+
+export interface Movesets { generatedAt: string; species: Record<Sym, Moveset> }

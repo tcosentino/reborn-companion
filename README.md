@@ -108,7 +108,12 @@ Adding another game: produce the same JSON schema (`index.json`, `dex.json`, `ch
 
 - **Caught checklist**: stored per browser (`pokeguide:<game>:caught` in localStorage) and shared between the Pokedex and the checkboxes in every wild encounter table. It does not sync across devices.
 - **Available by**: filters to species found in encounter tables or shops up to a chosen episode. It defaults to the episode of the last guide section you viewed. Starters, gifts and eggs are not in encounter tables, so they only appear under "All species".
-- **"Worth leveling" tiers (S-D)**, from `app/src/lib/ranking.ts`, decided in this order:
-  1. **Curated**: from `app/src/data/tiers/<game>.json`. Each entry is tagged `basis: community` (follows forum consensus) or `basis: editorial` (a judgment call). Most Reborn entries are editorial, so edit freely.
-  2. **Inherited**: a species without an entry takes the best curated tier among its evolutions.
-  3. **Estimated**: otherwise the tier comes from the highest base stat total in its line, shown as an outlined badge with `?`.
+- **"Worth leveling" tiers (S-D)**: computed purely from game data, no curated lists. Each species gets four 0-100 percentile factors: base stats, movepool, matchups against the guide's boss battles, and availability (how early it is catchable). They combine into a score, and tiers are percentile-based among fully evolved species: S top 5%, A next 15%, B next 30%, C next 30%, D bottom 20%. Pre-evolutions take their best final form's tier. The species page shows the factor breakdown and the data-derived reasons.
+  - **Stats**: offense-weighted base stats.
+  - **Movepool**: strength and type coverage of the recommended set.
+  - **Boss matchups**: how that set and the species' typing fare against main-story boss Pokemon from the chapter it becomes catchable. Bosses are battles with named trainers, whose trainer type is all caps or matches their name.
+  - **Availability**: the earliest chapter where the line is in an encounter table or shop, or bolded in the walkthrough prose (`mentions` in `pokedex.json`, which catches gifts, eggs and starters).
+  - **Penalties**: the score is reduced for trade evolutions (which need a Link Stone in Reborn), evolutions at level 50+, and abilities whose description shows they hinder the user (Truant, Slow Start, Defeatist).
+  - The logic lives in `app/src/lib/score/` and is unit-tested.
+- **Recommended moveset**: the species page also shows a computed set (role, nature, four moves, coverage) built from the game's learnsets and move data, including moves a pre-evolution must learn. Compare shows it side by side.
+- `ranks.json` and `movesets.json` are built by `node app/scripts/build-ranks.ts`, which `scripts/sync-data.sh` runs automatically.

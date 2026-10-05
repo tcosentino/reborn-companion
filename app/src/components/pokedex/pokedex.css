@@ -1,0 +1,16 @@
+.factors { display: grid; gap: 6px; margin-top: 8px }
+.factor { display: grid; grid-template-columns: 8.5em 1fr 4.5em; align-items: center; gap: 8px; font-size: 13px }
+.factor-name { color: var(--muted) }
+.factor-bar { height: 6px; border-radius: 3px; background: var(--sunk); overflow: hidden }
+.factor-bar i { display: block; height: 100%; background: var(--accent) }
+.factor-val { text-align: right; font-size: 12px; color: var(--muted) }
+.reasons { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 4px; font-size: 13px }
+.reasons b { display: inline-block; width: 1em; font-family: var(--mono) }
+.reasons .good b { color: var(--good) }
+.reasons .bad b { color: var(--warn) }
+.set-moves { list-style: none; margin: 8px 0; padding: 0; display: grid; gap: 6px }
+.set-moves li { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 4px 10px }
+.set-name { font-weight: 600 }
+.set-how { grid-column: 2 / -1 }
+.set-coverage { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-bottom: 8px }
+.cmp-moves li { display: flex; align-items: center; gap: 6px }

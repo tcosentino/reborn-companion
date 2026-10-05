@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState, type ReactNode } from 'react'
-import type { Sym } from '../../data/types'
+import type { Factor, Sym } from '../../data/types'
+import { loadMovesets, useAsync } from '../../data/load'
 import { leaders, matchupRows, multLabel } from '../../lib/compare'
 import { describeEvolution } from '../../lib/evolution'
 import { useChecklist } from '../../lib/progress'
@@ -8,6 +9,7 @@ import { TypeChip, useDex, useGame } from '../common'
 import { CaughtToggle, TierBadge } from './bits'
 import { usePokedex } from './context'
 
+const FACTORS: [Factor, string][] = [['stats', 'Stats'], ['moves', 'Moves'], ['bosses', 'Bosses'], ['availability', 'Avail']]
 const STAT_NAMES = ['HP', 'Attack', 'Defense', 'Sp. Atk', 'Sp. Def', 'Speed']
 
 // Side-by-side comparison of up to MAX_COMPARE species. The URL is the source of truth;
@@ -18,6 +20,7 @@ export const CompareView = ({ syms }: { syms: Sym[] }) => {
   const data = usePokedex()
   const tray = useChecklist(game.id, 'compare')
   const [pick, setPick] = useState('')
+  const movesets = useAsync(() => loadMovesets(game.id), [game.id]).data?.species
 
   const valid = data ? syms.filter(s => data.dex.species[s]) : []
   const go = (list: Sym[]) => { location.hash = compareHref(game.id, list) }
@@ -126,6 +129,37 @@ export const CompareView = ({ syms }: { syms: Sym[] }) => {
                       )}
                     </ul>
                   ))}
+                </Row>
+                <Row label="Moveset">
+                  {mons.map(({ sym }) => {
+                    const set = movesets?.[sym]
+                    if (!set) return <span className="muted">{movesets ? '' : 'Loading...'}</span>
+                    return (
+                      <ul className="plain cmp-moves">
+                        {set.moves.map(m => <li key={m.move}><TypeChip type={m.type} small /> {m.name}</li>)}
+                      </ul>
+                    )
+                  })}
+                </Row>
+                <Row label="Score">
+                  {mons.map((m, j) => {
+                    const r = data.ranks[m.sym]
+                    if (!r) return null
+                    return (
+                      <span className="small">
+                        {FACTORS.map(([k, label], n) => {
+                          const best = leaders(mons.map(x => data.ranks[x.sym]?.factors[k] ?? -1)).includes(j)
+                          const v = r.factors[k]
+                          return (
+                            <span key={k}>
+                              {n > 0 && ' \u00b7 '}
+                              <span className={best ? 'lead' : undefined}>{label} <span className="mono">{v == null ? '?' : Math.round(v)}</span></span>
+                            </span>
+                          )
+                        })}
+                      </span>
+                    )
+                  })}
                 </Row>
                 <Row label="Evolves">
                   {mons.map(({ f }) => f.evolutions.length === 0

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
-import type { Evolution, Pokedex, TierList } from '../data/types'
+import type { Evolution, Pokedex } from '../data/types'
 import { describeEvolution } from './evolution'
-import { descendants, estimateTier, preEvolutionMap, rankAll, rankSpecies } from './ranking'
+import { descendants, preEvolutionMap } from './ranking'
 import { compareHref, dexHref, parseCompare, parseHash } from './route'
 import { leaders, multLabel } from './compare'
 
@@ -31,15 +31,6 @@ const dex: Pokedex = {
   names: { WATERSTONE: 'Water Stone', RAGEFIST: 'Rage Fist' }
 }
 
-const tiers: TierList = {
-  source: 'test',
-  tiers: {
-    GENGAR: { tier: 'A', note: 'Fast special attacker.', basis: 'community' },
-    VAPOREON: { tier: 'B', note: 'Bulky water.' },
-    ESPEON: { tier: 'S', note: 'Sweeps.' }
-  }
-}
-
 describe('ranking', () => {
   it('walks every evolution branch', () => {
     expect(descendants(dex, 'GASTLY')).toEqual(['HAUNTER', 'GENGAR'])
@@ -51,31 +42,6 @@ describe('ranking', () => {
     const pre = preEvolutionMap(dex)
     expect(pre.GENGAR).toEqual(['HAUNTER'])
     expect(pre.GASTLY).toBeUndefined()
-  })
-
-  it('uses curated tiers directly', () => {
-    expect(rankSpecies(dex, tiers, 'GENGAR')).toMatchObject({ tier: 'A', source: 'curated', basis: 'community' })
-  })
-
-  it('inherits the best curated tier from any evolution', () => {
-    const r = rankSpecies(dex, tiers, 'EEVEE')
-    expect(r).toMatchObject({ tier: 'S', source: 'inherited', via: 'ESPEON' })
-    expect(r?.note).toContain('Espeon')
-    expect(rankSpecies(dex, tiers, 'GASTLY')).toMatchObject({ tier: 'A', via: 'GENGAR', basis: 'community' })
-  })
-
-  it('estimates from the best evolution base stat total when not curated', () => {
-    expect(rankSpecies(dex, tiers, 'SENTRET')).toMatchObject({ tier: 'D', source: 'estimate', via: 'FURRET' })
-    expect(rankSpecies(dex, tiers, 'MANKEY')).toMatchObject({ tier: 'B', source: 'estimate', via: 'ANNIHILAPE' })
-    expect(rankSpecies(dex, null, 'FURRET')).toMatchObject({ source: 'estimate', via: undefined })
-  })
-
-  it('estimate thresholds', () => {
-    expect(['A', 'B', 'C', 'D'].map((_, i) => estimateTier([600, 520, 450, 449][i]))).toEqual(['A', 'B', 'C', 'D'])
-  })
-
-  it('ranks the whole dex', () => {
-    expect(Object.keys(rankAll(dex, tiers))).toHaveLength(Object.keys(dex.species).length)
   })
 })
 

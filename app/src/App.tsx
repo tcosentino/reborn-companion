@@ -5,12 +5,10 @@ import { PokedexContext, type PokedexData } from './components/pokedex/context'
 import { PokedexView } from './components/pokedex/PokedexView'
 import { SpeciesView } from './components/pokedex/SpeciesView'
 import { CompareView } from './components/pokedex/CompareView'
-import { loadChapter, loadDex, loadIndex, loadPokedex, useAsync } from './data/load'
-import { tierList } from './data/tiers'
+import { loadChapter, loadDex, loadIndex, loadPokedex, loadRanks, useAsync } from './data/load'
 import type { GuideIndex } from './data/types'
 import { GAMES, gameById, type GameConfig } from './games'
 import { readLastSection, writeLastSection } from './lib/progress'
-import { rankAll } from './lib/ranking'
 import { dexHref, href, useRoute, type Route } from './lib/route'
 
 interface FlatSection { id: string; title: string; chapterId: string; chapterTitle: string; file: string; index: number }
@@ -85,18 +83,18 @@ const GuideView = ({ game, route }: { game: GameConfig; route: Route }) => {
   const dex = useAsync(() => loadDex(game.id), [game.id])
   // Loaded in the background: the guide renders without dex extras (caught/tier badges) until it arrives
   const pokedex = useAsync(() => loadPokedex(game.id), [game.id])
+  const ranks = useAsync(() => loadRanks(game.id), [game.id])
   const flat = useMemo(() => idx.data ? flatten(idx.data) : [], [idx.data])
   const section = route.pokedex ? readLastSection(game.id) : route.section
   const current = flat.find(s => s.id === section) ?? flat[0]
   const dexData = useMemo<PokedexData | null>(() => {
-    if (!pokedex.data || !idx.data) return null
+    if (!pokedex.data || !ranks.data || !idx.data) return null
     return {
       dex: pokedex.data,
-      tiers: tierList(game.id),
-      ranks: rankAll(pokedex.data, tierList(game.id)),
+      ranks: ranks.data.species,
       chapterOrder: Object.fromEntries(idx.data.chapters.map((c, i) => [c.id, i]))
     }
-  }, [pokedex.data, idx.data, game.id])
+  }, [pokedex.data, ranks.data, idx.data])
   const chapter = useAsync(() => current ? loadChapter(game.id, current.file) : Promise.resolve(undefined), [game.id, current?.file])
   const [menu, setMenu] = useState(false)
 
