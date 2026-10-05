@@ -47,26 +47,24 @@ const MonRow = ({ m, owner, showSpread }: { m: PartyMon; owner?: string; showSpr
           <b>{m.nickname ?? dex.species[m.species]?.name ?? m.displayName}</b>
           <span className="mono">Lv {m.level}</span>
           {m.gender && <span className="mono muted">{m.gender === 'M' ? '♂' : '♀'}</span>}
+          {owner && <span className="eyebrow">{owner}'s</span>}
         </div>
-        <div className="types">
-          {types.map(t => <TypeChip key={t} type={t} />)}
-          {m.formName && m.form !== 0 && <span className="tag">{m.formName}</span>}
-          {m.shiny && <span className="tag warn">Shiny</span>}
-          {m.shadow && <span className="tag">Shadow</span>}
-        </div>
-        {baseStats && <StatBars stats={baseStats} variant="compact" />}
-        {owner && <span className="eyebrow">{owner}'s</span>}
+        {ability && <span className="ability"><b title={ability.desc}>{ability.name}</b></span>}
+        {m.item && <span className="ability">@ <b title={dex.items[m.item]?.desc}>{itemName(dex, m.item)}</b></span>}
       </div>
+      <div className="types">
+        {types.map(t => <TypeChip key={t} type={t} />)}
+        {m.formName && m.form !== 0 && <span className="tag">{m.formName}</span>}
+        {m.shiny && <span className="tag warn">Shiny</span>}
+        {m.shadow && <span className="tag">Shadow</span>}
+      </div>
+      <div className="mon-stats">{baseStats && <StatBars stats={baseStats} variant="compact" />}</div>
       <div className="mon-kit">
-        <div className="ability">
-          {ability && <>Ability <b title={ability.desc}>{ability.name}</b></>}
-          {m.item && <> · Holds <b title={dex.items[m.item]?.desc}>{itemName(dex, m.item)}</b></>}
-        </div>
         <ul className="moves">{m.moves.map((mv, i) => <Move key={i} sym={mv} />)}</ul>
         {showSpread && (
-          <div className="spread mono">
+          <span className="spread mono">
             {titleCase(m.nature)}{m.evs && ` · EVs ${spread(m.evs)}`}{m.ivs && ` · IVs ${spread(m.ivs)}`}
-          </div>
+          </span>
         )}
       </div>
       <div className="weak">
@@ -116,7 +114,7 @@ export const Battle = ({ b, done, onToggle }: { b: BattleBlock; done: boolean; o
         </div>
       )}
       <div className="party">
-        <div className="party-cols eyebrow"><span>Pokemon</span><span>Ability &amp; moves</span><span>Weak to</span></div>
+        <div className="party-cols eyebrow"><span>Pokemon / ability</span><span>Type</span><span>Stats</span><span>Moves</span><span>Weak to</span></div>
         {b.party.map((m, i) => (
           <MonRow key={i} m={m} showSpread={!uniform} owner={b.double && b.trainers.length > 1 ? b.trainers[m.owner]?.name : undefined} />
         ))}

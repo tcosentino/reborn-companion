@@ -117,15 +117,16 @@ figure img { display: block; width: 100%; height: auto }
 .coverage { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .5rem; padding: .5rem 1rem; border-bottom: 1px solid var(--line) }
 .coverage .eyebrow { margin-right: .3rem }
 .party { transition: opacity .2s }
-.mon-row, .party-cols { display: grid; grid-template-columns: 11rem minmax(0, 1fr) 9.5rem; gap: .5rem 1.25rem; padding: .75rem 1rem; align-items: start }
+.mon-row, .party-cols { display: grid; grid-template-columns: 9.5rem 6.5rem 4.5rem minmax(0, 1fr) 9rem; gap: .5rem .9rem; padding: .6rem 1rem; align-items: center }
 .party-cols { padding-block: .4rem; background: var(--sunk); border-bottom: 1px solid var(--line) }
 .party-cols span { font-size: .64rem }
 .mon-row + .mon-row { border-top: 1px solid var(--line) }
-.mon-id { display: grid; gap: .35rem; min-width: 0 }
-.mon-top { display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap }
+.mon-id { display: grid; gap: .1rem; min-width: 0 }
+.mon-id .ability { font-size: .78rem }
+.mon-top { display: flex; align-items: baseline; gap: .45rem; flex-wrap: wrap; min-width: 0 }
 .mon-top b { font: 600 1.05rem var(--display) }
 .mon-top .mono { font-size: .78rem; color: var(--muted) }
-.mon-kit { display: grid; gap: .4rem; min-width: 0 }
+.mon-kit { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem .75rem; min-width: 0 }
 .types { display: flex; gap: .25rem; flex-wrap: wrap }
 .type { font: 700 .66rem/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: #fff; padding: .28rem .45rem; border-radius: 4px; background: var(--tc); white-space: nowrap }
 .type.sm { font-size: .6rem; padding: .24rem .38rem }
@@ -136,12 +137,13 @@ figure img { display: block; width: 100%; height: auto }
 .moves li { font-size: .82rem; padding: .22rem .5rem; background: var(--sunk); border-radius: 4px; border-left: 3px solid var(--mc, var(--line)); white-space: nowrap; cursor: help; display: flex; gap: .4rem; align-items: baseline }
 .moves .bp { font: .68rem var(--mono); color: var(--muted) }
 .spread { font-size: .74rem; color: var(--muted) }
-.weak { display: flex; flex-wrap: wrap; gap: .25rem; align-content: start }
+.weak { display: flex; flex-wrap: wrap; gap: .25rem; align-content: center }
 .weak .eyebrow { display: none }
 .tr-foot { padding: .55rem 1rem; font: .75rem var(--mono); color: var(--muted); background: var(--sunk); border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: .25rem 1.1rem }
 @media (max-width: 640px) {
   .party-cols { display: none }
-  .mon-row { grid-template-columns: minmax(0, 1fr) }
+  .mon-row { grid-template-columns: minmax(0, 1fr) auto; align-items: start }
+  .mon-kit, .weak { grid-column: 1 / -1 }
   .weak .eyebrow { display: block; width: 100%; font-size: .6rem }
 }
 
