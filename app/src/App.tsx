@@ -3,6 +3,7 @@ import { DexContext, GameContext } from './components/common'
 import { SectionView } from './components/SectionView'
 import { useAnchorScroll } from './components/palette/anchorScroll'
 import { CommandPalette, PaletteButton } from './components/palette/CommandPalette'
+import { HoverCardHost } from './features/hovercards/HoverCardHost'
 import { PokedexContext, type PokedexData } from './components/pokedex/context'
 import { PokedexView } from './components/pokedex/PokedexView'
 import { SpeciesView } from './components/pokedex/SpeciesView'
@@ -138,6 +139,7 @@ const GuideView = ({ game, route }: { game: GameConfig; route: Route }) => {
                   : <div className="state">Loading {current.title}&hellip;</div>}
             </main>
           </div>
+          <HoverCardHost />
         </PokedexContext.Provider>
       </DexContext.Provider>
     </GameContext.Provider>
