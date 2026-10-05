@@ -2,6 +2,7 @@ import type { BattleBlock, Dex, PartyMon } from '../../data/types'
 import { battleId } from '../../lib/route'
 import { teamCoverage, weaknesses } from '../../lib/typechart'
 import { TypeChip, itemName, typeVar, useDex } from '../common'
+import { MonSprite } from '../dex/MonSprite'
 
 const STAT_LABELS = ['HP', 'Atk', 'Def', 'SpA', 'SpD', 'Spe']
 
@@ -39,6 +40,8 @@ const MonRow = ({ m, owner, showSpread }: { m: PartyMon; owner?: string; showSpr
   const ability = m.ability ? dex.abilities[m.ability] : null
   return (
     <div className="mon-row">
+      <div className="mon-lead">
+      <MonSprite species={m.species} form={m.form} shiny={m.shiny} size="md" />
       <div className="mon-id">
         <div className="mon-top">
           <b>{m.nickname ?? dex.species[m.species]?.name ?? m.displayName}</b>
@@ -52,6 +55,7 @@ const MonRow = ({ m, owner, showSpread }: { m: PartyMon; owner?: string; showSpr
           {m.shadow && <span className="tag">Shadow</span>}
         </div>
         {owner && <span className="eyebrow">{owner}'s</span>}
+      </div>
       </div>
       <div className="mon-kit">
         <div className="ability">

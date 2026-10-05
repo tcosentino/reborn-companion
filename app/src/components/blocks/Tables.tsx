@@ -1,5 +1,6 @@
 import type { EncounterMethod, EncountersBlock, MiningBlock, PickupBlock, ShopBlock, TutorBlock, WildHeldBlock } from '../../data/types'
 import { TypeChip, itemName, money, typeVar, useDex } from '../common'
+import { MonSprite } from '../dex/MonSprite'
 
 // Morning/Day/Night tables are often identical; collapse them into one "All day" table
 const collapseTimes = (methods: EncounterMethod[]): EncounterMethod[] => {
@@ -27,7 +28,7 @@ export const Encounters = ({ b }: { b: EncountersBlock }) => {
               const types = dex.species[r.species]?.forms['0']?.types ?? []
               return (
                 <div className={`enc-row${r.firstSeen ? ' new' : ''}`} key={j}>
-                  <div className="name"><b>{r.displayName}</b><small>Lv {r.levels}{r.form && r.form !== 'Normal Form' ? ` · ${r.form}` : ''}</small></div>
+                  <div className="name"><MonSprite species={r.species} form={r.form} size="icon" /><div><b>{r.displayName}</b><small>Lv {r.levels}{r.form && r.form !== 'Normal Form' ? ` · ${r.form}` : ''}</small></div></div>
                   <div className="bar" role="img" aria-label={`${r.rate}% encounter rate`}>
                     <i style={{ width: `${r.rate}%`, ['--tc' as string]: typeVar(types[0] ?? 'NORMAL') }} />
                   </div>
