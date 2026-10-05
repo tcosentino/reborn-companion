@@ -4,8 +4,24 @@
     {
       "name": "app",
       "runtimeExecutable": "yarn",
-      "runtimeArgs": ["--cwd", "app", "dev"],
+      "runtimeArgs": [
+        "--cwd",
+        "app",
+        "dev"
+      ],
       "port": 5174
+    },
+    {
+      "name": "app-scratch",
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": [
+        "--cwd",
+        "app",
+        "dev",
+        "--port",
+        "5199"
+      ],
+      "port": 5199
     }
   ]
 }

@@ -20,6 +20,7 @@ import type { BattleRef } from './lib/sectionBattles'
 import { flashAnchor } from './components/palette/anchorScroll'
 import { BottomBar } from './features/guide-nav/BottomBar'
 import { ResumeCard } from './features/guide-nav/ResumeCard'
+import { BackupControls } from './features/guide-nav/BackupControls'
 import { dexHref, href, useRoute, type Route } from './lib/route'
 
 interface FlatSection { id: string; title: string; chapterId: string; chapterTitle: string; file: string; index: number }
@@ -120,6 +121,7 @@ const Sidebar = ({ game, idx, flat, current, open, onClose, inDex, battles }: {
           )
         })}
       </ol>
+      <BackupControls />
     </nav>
   )
 }

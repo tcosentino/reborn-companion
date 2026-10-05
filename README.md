@@ -133,6 +133,15 @@ Lives in `app/src/features/guide-nav/` with pure logic in `app/src/lib/guideNav.
 - **Catch here**: a header chip, "N species here, M not caught", expands into the section's wild species (deduplicated, sorted by tier then new-to-dex) with one-tap caught toggles. "Last listed here" flags species that no later encounter table or walkthrough mention lists (evolutions and unlisted gifts are not considered).
 - **Phone bottom bar** (under 860px): Contents, previous/next section, Search, and a center button that jumps to the next unbeaten trainer, or marks it beaten once it is on screen. It replaces the floating Contents and search buttons.
 
+## Keeping progress safe
+
+Progress (beaten trainers, caught Pokemon, hidden items, prefs, resume spot) lives in the browser's localStorage under `pokeguide:<game>:*`. App updates and rebuilds do not touch it, but three things can:
+
+- **Origin change**: localStorage is per origin. Dev and `vite preview` are pinned to `localhost:5174` with `strictPort`, so a busy port fails instead of silently opening an empty 5175. Hosting the app elsewhere (e.g. troycosentino.com) is a new origin: use Back up / Restore.
+- **Id changes**: battle ticks are keyed by battle id. `sync-data.sh` runs `scripts/check-progress-ids.ts`, which fails the build if any id in the committed baseline `progress-ids/<game>.json` disappears. Rerun with `--accept` only after deciding those ticks may be orphaned. Ticks for unknown ids are never deleted, so a reverted id comes back ticked.
+- **Browser eviction or clearing**: the app requests persistent storage on load. The sidebar footer has **Back up** (downloads every `pokeguide:` key as JSON) and **Restore** (merges a backup in: checklists are unioned so nothing is unticked; prefs and resume spot take the file's values). Logic in `app/src/lib/backup.ts`.
+- **Auto-backup**: while running under `yarn dev` or `yarn preview`, the app POSTs its backup to `/__backup` 10 s after load and every 30 minutes (`app/src/lib/autoBackup.ts`). The Vite plugin `app/backupPlugin.ts` writes `backups/progress-<local time>.json` at the repo root (gitignored), skipping empty or unchanged snapshots and keeping the newest 50. Restore any of them with the Restore button. On a static host the endpoint is absent and auto-backup switches itself off.
+
 ## Pokedex
 
 `#/<game>/pokedex` lists every species, and `#/<game>/pokedex/<SPECIES>` shows one: stats, abilities, evolutions with their conditions, and every guide section where it can be found. The generator writes this data to `pokedex.json`, which holds all species plus ability names and evolution-parameter names. The app loads it in the background, so the guide never waits on it.

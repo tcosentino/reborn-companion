@@ -12,3 +12,4 @@ app/public/data/
 app/public/sprites/
 .playwright-mcp/
 app/tsconfig.tsbuildinfo
+backups/
