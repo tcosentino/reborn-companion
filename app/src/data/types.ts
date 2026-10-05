@@ -151,3 +151,39 @@ export interface Dex {
   types: Record<Sym, { name: string; weaknesses: Sym[]; resistances: Sym[]; immunities: Sym[] }>
   fields: Record<Sym, string>
 }
+
+// pokedex.json: every species, loaded lazily for the Pokedex page and encounter badges
+export interface Evolution { species: Sym; method: string; parameter: number | string | null }
+
+export interface PokedexForm extends SpeciesForm { evolutions: Evolution[] }
+
+export interface DexLocation {
+  chapterId: string
+  sectionId: string
+  sectionTitle: string
+  place: string
+  methods: string[]
+  levels: string[]
+}
+
+export interface PokedexSpecies {
+  name: string
+  num: number
+  catchRate: number
+  kind: string
+  forms: Record<string, PokedexForm>
+  locations: DexLocation[]
+}
+
+export interface Pokedex {
+  species: Record<Sym, PokedexSpecies>
+  abilities: Record<Sym, { name: string; desc: string }>
+  // Display names for symbol evolution parameters (items, moves, species)
+  names: Record<Sym, string>
+}
+
+// Curated rankings, src/data/tiers/<game>.json
+export type Tier = 'S' | 'A' | 'B' | 'C' | 'D'
+// basis: 'community' when the rating follows forum consensus, 'editorial' for judgment calls
+export interface TierEntry { tier: Tier; note: string; basis?: 'community' | 'editorial' }
+export interface TierList { source: string; tiers: Record<Sym, TierEntry> }

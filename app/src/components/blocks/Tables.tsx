@@ -1,5 +1,8 @@
 import type { EncounterMethod, EncountersBlock, MiningBlock, PickupBlock, ShopBlock, TutorBlock, WildHeldBlock } from '../../data/types'
-import { TypeChip, itemName, money, typeVar, useDex } from '../common'
+import { dexHref } from '../../lib/route'
+import { TypeChip, itemName, money, typeVar, useDex, useGame } from '../common'
+import { CaughtToggle, TierBadge } from '../pokedex/bits'
+import { usePokedex } from '../pokedex/context'
 
 // Morning/Day/Night tables are often identical; collapse them into one "All day" table
 const collapseTimes = (methods: EncounterMethod[]): EncounterMethod[] => {
@@ -16,6 +19,8 @@ const collapseTimes = (methods: EncounterMethod[]): EncounterMethod[] => {
 
 export const Encounters = ({ b }: { b: EncountersBlock }) => {
   const dex = useDex()
+  const game = useGame()
+  const pokedex = usePokedex()
   return (
     <section className="enc">
       <div className="block-head"><h3>{b.name}</h3><span className="eyebrow">Wild encounters</span></div>
@@ -26,8 +31,13 @@ export const Encounters = ({ b }: { b: EncountersBlock }) => {
             {[...m.rows].sort((a, z) => z.rate - a.rate).map((r, j) => {
               const types = dex.species[r.species]?.forms['0']?.types ?? []
               return (
-                <div className={`enc-row${r.firstSeen ? ' new' : ''}`} key={j}>
-                  <div className="name"><b>{r.displayName}</b><small>Lv {r.levels}{r.form && r.form !== 'Normal Form' ? ` · ${r.form}` : ''}</small></div>
+                <div className={`enc-row${r.firstSeen ? ' new' : ''}${pokedex ? ' with-dex' : ''}`} key={j}>
+                  {pokedex && <CaughtToggle sym={r.species} name={r.displayName} />}
+                  <div className="name">
+                    <span className="name-line">
+                      <a href={dexHref(game.id, r.species)}><b>{r.displayName}</b></a>
+                      {pokedex?.ranks[r.species] && <TierBadge rank={pokedex.ranks[r.species]} />}
+                    </span><small>Lv {r.levels}{r.form && r.form !== 'Normal Form' ? ` · ${r.form}` : ''}</small></div>
                   <div className="bar" role="img" aria-label={`${r.rate}% encounter rate`}>
                     <i style={{ width: `${r.rate}%`, ['--tc' as string]: typeVar(types[0] ?? 'NORMAL') }} />
                   </div>
@@ -38,7 +48,7 @@ export const Encounters = ({ b }: { b: EncountersBlock }) => {
           </div>
         ))}
       </div>
-      <p className="legend-note"><span className="new-dot" /> First place this Pokemon appears in the guide</p>
+      <p className="legend-note"><span className="new-dot" /> First place this Pokemon appears in the guide{pokedex && <>. Tick the box when caught; the letter is how worth leveling it is (S best, D skip).</>}</p>
     </section>
   )
 }

@@ -101,3 +101,14 @@ cd app && yarn && yarn dev      # http://localhost:5174/#/reborn/obsidia-ward
 Tests: `bash scripts/test.sh` (generator golden + JSON tests) and `cd app && yarn test`.
 
 Adding another game: produce the same JSON schema (`index.json`, `dex.json`, `chapters/*.json`, see `app/src/data/types.ts`) into `app/public/data/<id>/` and add an entry to `app/src/games.ts`.
+
+## Pokedex
+
+`#/<game>/pokedex` lists every species, and `#/<game>/pokedex/<SPECIES>` shows one: stats, abilities, evolutions with their conditions, and every guide section where it can be found. The generator writes this data to `pokedex.json`, which holds all species plus ability names and evolution-parameter names. The app loads it in the background, so the guide never waits on it.
+
+- **Caught checklist**: stored per browser (`pokeguide:<game>:caught` in localStorage) and shared between the Pokedex and the checkboxes in every wild encounter table. It does not sync across devices.
+- **Available by**: filters to species found in encounter tables or shops up to a chosen episode. It defaults to the episode of the last guide section you viewed. Starters, gifts and eggs are not in encounter tables, so they only appear under "All species".
+- **"Worth leveling" tiers (S-D)**, from `app/src/lib/ranking.ts`, decided in this order:
+  1. **Curated**: from `app/src/data/tiers/<game>.json`. Each entry is tagged `basis: community` (follows forum consensus) or `basis: editorial` (a judgment call). Most Reborn entries are editorial, so edit freely.
+  2. **Inherited**: a species without an entry takes the best curated tier among its evolutions.
+  3. **Estimated**: otherwise the tier comes from the highest base stat total in its line, shown as an outlined badge with `?`.

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import type { Chapter, Dex, GuideIndex } from './types'
+import type { Chapter, Dex, GuideIndex, Pokedex } from './types'
 
 const cache = new Map<string, Promise<unknown>>()
 
@@ -17,6 +17,7 @@ const base = (game: string) => `${import.meta.env.BASE_URL}data/${game}/`
 
 export const loadIndex = (game: string) => fetchJson<GuideIndex>(`${base(game)}index.json`)
 export const loadDex = (game: string) => fetchJson<Dex>(`${base(game)}dex.json`)
+export const loadPokedex = (game: string) => fetchJson<Pokedex>(`${base(game)}pokedex.json`)
 export const loadChapter = (game: string, file: string) => fetchJson<Chapter>(`${base(game)}${file}`)
 
 type AsyncState<T> = { data?: T; error?: string }

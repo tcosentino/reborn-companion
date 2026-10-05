@@ -174,3 +174,74 @@ figure img { display: block; width: 100%; height: auto }
 .src { margin-top: 1.5rem; font-size: .82rem; color: var(--muted) }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important } }
+
+/* Pokedex */
+.dex-link { display: block; margin: 0 1rem .8rem; padding: .45rem .7rem; border: 1px solid var(--line); border-radius: 6px; font: 600 .86rem var(--display); color: var(--ink); text-decoration: none; background: var(--sunk) }
+.dex-link:hover, .dex-link.active { border-color: var(--accent); color: var(--accent) }
+.dex-controls { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: .6rem }
+.dex-controls .search { margin: 0; width: auto; flex: 1 1 200px }
+.dex-controls select { padding: .45rem .5rem; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); font: inherit; font-size: .86rem; max-width: 100% }
+.dex-note { margin: 0 0 1rem; font-size: .82rem; color: var(--muted) }
+.dex-list { list-style: none; margin: 0; padding: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden }
+.dex-list li { display: grid; grid-template-columns: 1.6rem 3.2rem minmax(7rem, 1fr) 9rem 2.2rem minmax(0, 1.3fr); gap: .6rem; align-items: center; padding: .45rem 1rem; border-top: 1px solid var(--line); font-size: .9rem; content-visibility: auto; contain-intrinsic-size: auto 2.4rem }
+.dex-list li:first-child { border-top: 0 }
+.dex-list li.is-caught { background: color-mix(in srgb, var(--good) 7%, transparent) }
+.dex-list .num { font-size: .74rem }
+.dex-name { font: 600 1rem var(--display); color: var(--ink); text-decoration: none }
+.dex-name:hover { color: var(--accent) }
+.dex-where { font-size: .84rem; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+@media (max-width: 640px) {
+  .dex-list li { grid-template-columns: 1.6rem minmax(0, 1fr) auto; grid-template-areas: 'c n t' 'c ty ty' 'c w w'; row-gap: .25rem }
+  .dex-list li > .caught { grid-area: c; align-self: start }
+  .dex-list li > .num { display: none }
+  .dex-list li > .dex-name { grid-area: n }
+  .dex-list li > .tier { grid-area: t }
+  .dex-list li > .types { grid-area: ty }
+  .dex-list li > .dex-where { grid-area: w }
+}
+
+.caught { display: inline-flex; align-items: center; gap: .4rem; cursor: pointer }
+.caught input { accent-color: var(--good); margin: 0; width: 1rem; height: 1rem; cursor: pointer }
+.caught.with-label { justify-self: start; font: 600 .8rem var(--mono); color: var(--muted); padding: .4rem .65rem; border: 1px solid var(--line); border-radius: 6px; background: var(--sunk) }
+.caught.with-label.is-caught { color: var(--good); border-color: var(--good) }
+
+.tier { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; min-width: 1.6rem; font: 700 .74rem/1 var(--mono); padding: .26rem .4rem; border-radius: 4px; color: #fff; background: var(--tier); cursor: help; white-space: nowrap }
+.tier.est { background: transparent; color: var(--tier); box-shadow: inset 0 0 0 1.5px var(--tier) }
+.tier-s { --tier: #c2410c } .tier-a { --tier: #b7791f } .tier-b { --tier: #2c7a3c } .tier-c { --tier: #4a6fa5 } .tier-d { --tier: #7a7f88 }
+@media (prefers-color-scheme: dark) {
+  .tier-s { --tier: #f97316 } .tier-a { --tier: #e0a43a } .tier-b { --tier: #5cbf6e } .tier-c { --tier: #7aa2dc } .tier-d { --tier: #8d939c }
+}
+.tier-label { font-weight: 600; letter-spacing: .02em }
+
+.enc-row.with-dex { grid-template-columns: 1.1rem 9rem minmax(0, 1fr) 3rem }
+.enc-row .name-line { display: flex; align-items: center; gap: .35rem; flex-wrap: wrap }
+.enc-row .name a { color: var(--ink); text-decoration: none }
+.enc-row .name a:hover { color: var(--accent) }
+.enc-row .tier { font-size: .6rem; min-width: 1.2rem; padding: .16rem .3rem }
+
+.dex-species h1 .num { font-size: .45em; font-weight: 400 }
+.dex-species .back { text-decoration: none; justify-self: start }
+.dex-species .kind { font-size: .86rem; margin-left: .4rem; align-self: center }
+.form-tabs { margin-bottom: 1rem }
+.form-tabs button { cursor: pointer }
+.dex-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; align-items: start }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden }
+.panel.wide { grid-column: 1 / -1 }
+.pad { padding: .6rem 1rem; margin: 0 }
+.small { font-size: .8rem }
+.verdict-body { padding: .8rem 1rem; display: grid; gap: .5rem; justify-items: start }
+.verdict-body p { margin: 0 }
+.verdict .tier { font-size: .9rem; padding: .4rem .6rem }
+.stat-table { width: 100%; border-collapse: collapse; font-size: .88rem }
+.stat-table th { text-align: left; font: 600 .74rem var(--mono); color: var(--muted); padding: .32rem .5rem .32rem 1rem; width: 3.5rem }
+.stat-table td.mono { width: 2.8rem; text-align: right; padding-right: .7rem }
+.stat-table .stat-bar { padding-right: 1rem }
+.stat-bar i { display: block; height: 9px; border-radius: 3px; background: var(--accent) }
+.abilities { margin: 0; padding: .4rem 1rem; display: grid; gap: .6rem }
+.abilities dt { font-weight: 700; display: flex; gap: .4rem; align-items: center }
+.abilities dd { margin: 0; font-size: .85rem; color: var(--muted) }
+.evo { list-style: none; margin: 0; padding: .5rem 1rem; display: grid; gap: .45rem }
+.evo li { display: grid; grid-template-columns: 2.6rem auto 1fr; gap: .6rem; align-items: baseline; font-size: .9rem }
+.loc-table { width: 100%; border-collapse: collapse; font-size: .88rem }
+.loc-table td { padding: .42rem 1rem; border-top: 1px solid var(--line); vertical-align: top }
+.loc-table tr:first-child td { border-top: 0 }

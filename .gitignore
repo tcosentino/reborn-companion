@@ -8,3 +8,6 @@ upstream/
 app/node_modules/
 app/dist/
 app/public/data/
+.claude/worktrees/
+app/public/sprites/
+.playwright-mcp/
