@@ -99,7 +99,7 @@ export const PokedexView = ({ idx, defaultChapter }: Props) => {
         {upTo
           ? <>Species found in wild encounter tables or shops up to <b>{chapterTitle}</b>. Starters, gifts and eggs only show under &ldquo;All species&rdquo;.</>
           : <>Every species in the game, including ones only obtainable as gifts, eggs or not at all.</>}
-        {' '}Tiers are computed from base stats, movepool, matchups against the guide's boss battles and how early the Pokemon is catchable.
+        {' '}Tiers are computed from base stats (including Mega forms), movepool, matchups against the guide's boss battles, how early the Pokemon is catchable and its best ability.
       </p>
 
       <ol className="dex-list">

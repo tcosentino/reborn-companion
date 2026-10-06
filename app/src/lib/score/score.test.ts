@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import type { Dex, Learnsets, MoveData, Pokedex } from '../../data/types'
 import { boostsStat, buildMoveset, isUsableAttack, learnable, moveValue, roleOf } from './moves'
-import { availableFrom, finalForms, hinderedByAbility, isMajorTrainer, tierFor } from './rank'
+import { ABILITY_VALUE, DEFAULT_ABILITY, abilityValue } from './abilities'
+import { HIDDEN_ABILITY_CREDIT, availableFrom, bestAbility, finalForms, firstMention, hinderedByAbility, isMajorTrainer, megaForms, megaShare, starterAbilities, tierFor } from './rank'
 
 const move = (name: string, type: string, category: string, power: number | null, desc = '', accuracy = 100): MoveData =>
   ({ name, type, category, power, accuracy, pp: 10, desc })
@@ -141,5 +142,61 @@ describe('rank helpers', () => {
     expect(finalForms(pokedex, 'CHARMANDER')).toEqual(['CHARIZARD'])
     expect(hinderedByAbility(pokedex, 'SLAKING')).toBe(true)
     expect(hinderedByAbility(pokedex, 'CHARIZARD')).toBe(false)
+  })
+})
+
+describe('abilities and megas', () => {
+  const blaziken: Pokedex = {
+    species: {
+      TORCHIC: { name: 'Torchic', num: 255, catchRate: 45, kind: '', locations: [], forms: { '0': { name: 'Normal Form', types: ['FIRE'], baseStats: [45, 60, 40, 70, 50, 45], abilities: ['BLAZE'], hiddenAbility: 'SPEEDBOOST', evolutions: [{ species: 'BLAZIKEN', method: 'Level', parameter: 16 }] } } },
+      BLAZIKEN: {
+        name: 'Blaziken', num: 257, catchRate: 45, kind: '', locations: [], forms: {
+          '0': { name: 'Normal Form', types: ['FIRE', 'FIGHTING'], baseStats: [80, 120, 70, 110, 70, 80], abilities: ['BLAZE'], hiddenAbility: 'SPEEDBOOST', evolutions: [] },
+          '1': { name: 'Mega Form', types: ['FIRE', 'FIGHTING'], baseStats: [80, 160, 80, 130, 80, 100], abilities: ['SPEEDBOOST'], evolutions: [] }
+        }
+      }
+    },
+    abilities: {},
+    names: {}
+  }
+  const items = {
+    BLAZIKENITE: { name: 'Blazikenite', desc: 'Have Blaziken hold it, and this stone will enable it to Mega Evolve during battle.', price: 999 },
+    CHARIZARDITEX: { name: 'Charizardite X', desc: 'Have Charizard hold it, and this stone will enable it to Mega Evolve during battle.', price: 999 }
+  }
+  const megaDex = { ...dex, items } as unknown as Dex
+
+  it('values curated abilities and defaults the rest', () => {
+    expect(abilityValue('SPEEDBOOST')).toBe(1)
+    expect(abilityValue('RUNAWAY')).toBe(DEFAULT_ABILITY)
+    expect(Object.values(ABILITY_VALUE).every(v => v >= 0 && v <= 1)).toBe(true)
+  })
+
+  it('discounts hidden abilities unless the starter picker recommends them', () => {
+    expect(bestAbility(blaziken, 'BLAZIKEN', {}, [])).toMatchObject({ ability: 'SPEEDBOOST', source: 'hidden', value: HIDDEN_ABILITY_CREDIT })
+    expect(bestAbility(blaziken, 'BLAZIKEN', { TORCHIC: 'SPEEDBOOST' }, [])).toMatchObject({ ability: 'SPEEDBOOST', source: 'starter', value: 1 })
+  })
+
+  it('scales a Mega ability by its share of the story', () => {
+    const pick = bestAbility({ ...blaziken, species: { ...blaziken.species, BLAZIKEN: { ...blaziken.species.BLAZIKEN, forms: { ...blaziken.species.BLAZIKEN.forms, '0': { ...blaziken.species.BLAZIKEN.forms['0'], hiddenAbility: null } } } } }, 'BLAZIKEN', {}, [{ form: '1', share: 0.5 }])
+    expect(pick).toMatchObject({ ability: 'SPEEDBOOST', source: 'mega', value: 0.5 })
+  })
+
+  it('reads starter picks from starters blocks', () => {
+    const chapters = [{ id: 'c0', sections: [{ blocks: [{ type: 'starters', picks: [{ species: 'TORCHIC', ability: 'SPEEDBOOST' }, { species: 'CHIKORITA', ability: null }] }] }] }] as never
+    expect(starterAbilities(chapters)).toEqual({ TORCHIC: 'SPEEDBOOST' })
+  })
+
+  it('matches Mega forms to their stones', () => {
+    expect(megaForms(megaDex, blaziken, 'BLAZIKEN')).toEqual([{ form: '1', stone: 'Blazikenite' }])
+    expect(megaForms(megaDex, blaziken, 'TORCHIC')).toEqual([])
+  })
+
+  it('finds the first chapter mentioning a stone and the share of the story after it', () => {
+    expect(firstMention(['nothing', 'get the Blazikenite here', 'Blazikenite again'], 'Blazikenite')).toBe(1)
+    expect(firstMention(['nothing'], 'Blazikenite')).toBeNull()
+    expect(megaShare(0, 0, 10)).toBeCloseTo(0.8)
+    expect(megaShare(0, 5, 10)).toBeCloseTo(0.4)
+    expect(megaShare(0, 10, 10)).toBe(0)
+    expect(megaShare(0, null, 10)).toBe(0)
   })
 })

@@ -198,7 +198,7 @@ export interface MoveData { name: string; type: Sym; category: string; power: nu
 export interface Learnsets { species: Record<Sym, Record<string, LearnsetForm>>; moves: Record<Sym, MoveData> }
 
 // ranks.json and movesets.json are computed by app/scripts/build-ranks.ts from game data only
-export type Factor = 'stats' | 'moves' | 'bosses' | 'availability'
+export type Factor = 'stats' | 'moves' | 'bosses' | 'availability' | 'abilities'
 
 export interface RankEntry {
   tier: Tier

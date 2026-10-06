@@ -9,7 +9,7 @@ import { TypeChip, useDex, useGame } from '../common'
 import { CaughtToggle, TierBadge } from './bits'
 import { usePokedex } from './context'
 
-const FACTORS: [Factor, string][] = [['stats', 'Stats'], ['moves', 'Moves'], ['bosses', 'Bosses'], ['availability', 'Avail']]
+const FACTORS: [Factor, string][] = [['stats', 'Stats'], ['moves', 'Moves'], ['bosses', 'Bosses'], ['availability', 'Avail'], ['abilities', 'Ability']]
 const STAT_NAMES = ['HP', 'Attack', 'Defense', 'Sp. Atk', 'Sp. Def', 'Speed']
 
 // Side-by-side comparison of up to MAX_COMPARE species. The URL is the source of truth;
