@@ -16,6 +16,8 @@ export interface EventPage {
   warp?: { map: number; x: number; y: number }
   text?: string
   choices?: string[]
+  // Item ball or hidden item (Kernel.pbItemBall): the item SYM it gives
+  item?: string
 }
 export interface MapEvent { id: number; name: string; x: number; y: number; pages: EventPage[] }
 export interface GameMap {

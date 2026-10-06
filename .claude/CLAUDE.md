@@ -22,6 +22,11 @@ See `README.md` for the data pipeline, layout and run commands.
 - Definitions live in `routes/<game>/<section-id>.json` (see README "Route maps"). Author with `node scripts/maps.ts <game> ...` (`check` and `preview` before building). If an upstream text change breaks a route's `match`, update it like a task `match`.
 - `scripts/build-maps.sh <game>` must have run (needs the game zip) or routes are skipped. Map renders in `app/public/maps/` and game files in `out/game/` are local-only; never commit them.
 
+## Hidden item maps
+
+- Screenshot-to-map pairings live in `hidden-maps/<game>.json` (see README "Hidden item maps"); add new ones with `node scripts/apply-hidden-maps.ts <game> --suggest` and review. Checkbox ids stay keyed by screenshot file and letter; never change them.
+- Route maps and hidden items share `app/src/features/route-map/MapCard.tsx`; extend it rather than forking a new map card.
+
 ## Tests
 
 - `bash scripts/test.sh` (override, task and progress-id unit tests + upstream generator tests) and `cd app && yarn test`.

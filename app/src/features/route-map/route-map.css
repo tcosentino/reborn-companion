@@ -1,4 +1,5 @@
-/* Route map card: game map crop with the walking path on top and a numbered legend. Uses the app tokens from styles.css. */
+/* Game map card (MapCard.tsx): map crop with an optional walking path, markers and a legend, plain or checkable.
+   Used by route maps and hidden-item maps. Uses the app tokens from styles.css. */
 .route-map {
   --path: #ffd60a;
   --path-casing: rgba(12, 14, 18, .7);
@@ -14,7 +15,9 @@
 }
 @media (prefers-color-scheme: dark) { .route-map { --marker: #ee5a4e; --marker-ink: #170a09 } }
 
-.rm-head { display: grid; gap: .1rem; padding: .6rem .9rem; background: var(--sunk); border-bottom: 1px solid var(--line) }
+.rm-head { display: flex; align-items: center; gap: .6rem; padding: .6rem .9rem; background: var(--sunk); border-bottom: 1px solid var(--line) }
+.rm-titles { display: grid; gap: .1rem; min-width: 0; margin-right: auto }
+.route-map.is-collapsed .rm-head { border-bottom: 0; padding-block: .5rem }
 .rm-head h3 { font-size: 1rem; margin: 0 }
 
 .rm-spoiler { display: block; width: calc(100% - 1.8rem); margin: .8rem .9rem; padding: .7rem; border: 1px dashed var(--line); border-radius: 8px; background: var(--sunk); color: var(--ink); font: 600 .9rem var(--mono); cursor: pointer }
@@ -35,9 +38,34 @@
 .rm-end { fill: var(--path); stroke: var(--path-casing); stroke-width: 3px }
 .rm-mark circle { fill: var(--marker); stroke: #fff; stroke-width: 3px }
 .rm-mark text { fill: var(--marker-ink); font: 700 16px var(--mono); text-anchor: middle }
+/* Checked off: green and faded, so what is left stands out */
+.rm-mark.done circle { fill: var(--good) }
+.rm-mark.done { opacity: .6 }
 
 .rm-legend { display: flex; flex-wrap: wrap; gap: .35rem 1rem; margin: 0; padding: .6rem .9rem; list-style: none; font-size: .9rem }
 .rm-legend li { display: flex; align-items: center; gap: .4rem }
+/* Legend beside the map, as the old hidden-items card had it; stacked on narrow screens */
+.rm-side { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); align-items: start }
+.rm-side .rm-open { border-right: 1px solid var(--line) }
+.rm-side .rm-checklist { grid-template-columns: 1fr }
+.rm-side .rm-legend { flex-direction: column; align-items: flex-start; gap: .55rem; padding: .8rem .9rem }
+.rm-side .rm-legend li { align-items: flex-start; line-height: 1.3 }
+@media (max-width: 640px) {
+  .rm-side { grid-template-columns: 1fr }
+  .rm-side .rm-open { border-right: 0; border-bottom: 1px solid var(--line) }
+}
+/* Checkable legend: one row per marker, two columns when there is room */
+.rm-checklist { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: .1rem .4rem; margin: 0; padding: .35rem; list-style: none }
+.rm-checklist label { display: flex; align-items: center; gap: .6rem; padding: .4rem .5rem; border-radius: 8px; cursor: pointer }
+.rm-checklist li:hover label, .rm-checklist label:focus-within { background: var(--accent-soft) }
+.rm-checklist input { width: 1.15rem; height: 1.15rem; margin: 0 0 0 auto; flex: none; accent-color: var(--good); cursor: pointer }
+.rm-checklist .rm-num { width: 1.6rem; height: 1.6rem; font-size: .8rem }
+.rm-checklist .done .rm-num { background: var(--good) }
+.rm-text { display: flex; flex-direction: column; gap: .1rem; min-width: 0; line-height: 1.25 }
+.rm-label { font-weight: 600; overflow-wrap: anywhere }
+.rm-label[title] { text-decoration: underline dotted var(--line); text-underline-offset: 4px }
+.rm-checklist .done .rm-label { text-decoration: line-through; color: var(--muted) }
+.route-map .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap }
 .rm-num { display: grid; place-items: center; width: 1.3rem; height: 1.3rem; border-radius: 50%; background: var(--marker); color: var(--marker-ink); font: 700 .72rem var(--mono); flex: none }
 
 .rm-dialog { width: min(100vw - 16px, 1200px); max-width: none; max-height: calc(100vh - 16px); padding: 0; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink) }

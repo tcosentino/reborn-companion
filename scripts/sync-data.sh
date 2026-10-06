@@ -9,6 +9,8 @@ node --no-warnings "$ROOT/scripts/apply-tasks.ts" "$GAME"
 node --no-warnings "$ROOT/scripts/apply-starters.ts" "$GAME"
 # Route maps (routes/<game>/) go after their paragraphs; needs scripts/build-maps.sh, skipped without it
 node --no-warnings "$ROOT/scripts/apply-routes.ts" "$GAME"
+# Hidden-item screenshots redrawn on the game map (hidden-maps/<game>.json); also needs scripts/build-maps.sh
+node --no-warnings "$ROOT/scripts/apply-hidden-maps.ts" "$GAME"
 node --no-warnings "$ROOT/scripts/build-search.ts" "$GAME"
 rm -rf "$ROOT/app/public/data/$GAME"
 mkdir -p "$ROOT/app/public/data"

@@ -72,6 +72,8 @@ infos.each_key do |id|
       warp = cmds.find { |c| c.code == 201 && c.parameters[0] == 0 }&.parameters
       lines = cmds.select { |c| [101, 401].include?(c.code) }.map { |c| clean.(c.parameters[0]) }
       choices = cmds.select { |c| c.code == 102 }.flat_map { |c| c.parameters[0] }
+      # Item balls and hidden items: Kernel.pbItemBall(:ITEM) in a script condition or call
+      ball = cmds.lazy.flat_map(&:parameters).grep(String).map { |s| s[/pbItemBall\(:(\w+)/, 1] }.find(&:itself)
       page = { cond: p.condition.any?, through: p.through, trigger: p.trigger }
       page[:char] = g.character_name unless g.character_name.empty?
       page[:tile] = g.tile_id if g.tile_id.positive?
@@ -82,6 +84,7 @@ infos.each_key do |id|
       page[:warp] = { map: warp[1], x: warp[2], y: warp[3] } if warp
       page[:text] = lines.join(' ').gsub(/\s+/, ' ')[0, 600] unless lines.empty?
       page[:choices] = choices unless choices.empty?
+      page[:item] = ball if ball
       page
     end
     { id: ev.id, name: ev.name, x: ev.x, y: ev.y, pages: pages }

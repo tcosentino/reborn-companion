@@ -3,6 +3,7 @@
 
 import type { TaskBlock } from '../lib/tasks'
 import type { RouteBlock } from '../lib/routes'
+import type { ItemMap } from '../lib/itemMaps'
 import type { StartersBlock } from '../lib/starters'
 
 export type Sym = string
@@ -36,7 +37,8 @@ export interface Section {
 }
 
 export interface ProseBlock { type: 'prose'; markdown: string }
-export interface ImageBlock { type: 'image'; file: string; src: string }
+// `map`: a hidden-items screenshot redrawn from the game map (scripts/apply-hidden-maps.ts)
+export interface ImageBlock { type: 'image'; file: string; src: string; map?: ItemMap }
 
 export interface Trainer {
   name: string

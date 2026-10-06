@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06T01:19:05.886Z",
+ "updated": "2026-10-06T02:12:59.463Z",
  "unpricedModels": [],
  "rows": [
   {
@@ -15,7 +15,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 78898,
    "webSearches": 0,
-   "costUSD": 1.3252647999999996
+   "costUSD": 1.3252647999999996,
+   "costOutput": 0.47666000000000003,
+   "costCacheRead": 0.2173248,
+   "costCacheWrite": 0.6311839999999999
   },
   {
    "session": "032ec96c-4151-445d-bad1-2bba136c7a03",
@@ -30,7 +33,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 102626,
    "webSearches": 0,
-   "costUSD": 2.2970129999999997
+   "costUSD": 2.2970129999999997,
+   "costOutput": 0.5516,
+   "costCacheRead": 0.9240850000000002,
+   "costCacheWrite": 0.821008
   },
   {
    "session": "13b31483-4431-4c37-b9d0-b73eaa92af71",
@@ -45,7 +51,10 @@
    "cacheWrite5m": 37165,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.37251825
+   "costUSD": 0.37251825,
+   "costOutput": 0.07794999999999999,
+   "costCacheRead": 0.062236999999999994,
+   "costCacheWrite": 0.23228125000000002
   },
   {
    "session": "1539afab-2ba3-425d-9166-8bdba683aa1b",
@@ -60,7 +69,10 @@
    "cacheWrite5m": 15047,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.17961125
+   "costUSD": 0.17961125,
+   "costOutput": 0.0452,
+   "costCacheRead": 0.0403275,
+   "costCacheWrite": 0.09404375
   },
   {
    "session": "1a502107-38cf-4f01-9334-29677873d375",
@@ -75,7 +87,10 @@
    "cacheWrite5m": 46284,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.5233880000000001
+   "costUSD": 0.523388,
+   "costOutput": 0.1293,
+   "costCacheRead": 0.10475799999999999,
+   "costCacheWrite": 0.289275
   },
   {
    "session": "27288f51-5071-447e-a7d0-fe32f2025b19",
@@ -90,7 +105,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 63204,
    "webSearches": 0,
-   "costUSD": 1.2311382
+   "costUSD": 1.2311382,
+   "costOutput": 0.19909999999999997,
+   "costCacheRead": 0.5261662,
+   "costCacheWrite": 0.505632
   },
   {
    "session": "281a0701-2dc4-4458-a5ac-593e50c4a0ce",
@@ -105,7 +123,10 @@
    "cacheWrite5m": 16641,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.18837025
+   "costUSD": 0.18837025,
+   "costOutput": 0.034975,
+   "costCacheRead": 0.049344,
+   "costCacheWrite": 0.10400624999999998
   },
   {
    "session": "2a3e335e-424e-440a-a5bf-837e2f6778ff",
@@ -120,7 +141,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 38734,
    "webSearches": 0,
-   "costUSD": 0.6844444
+   "costUSD": 0.6844444,
+   "costOutput": 0.11016,
+   "costCacheRead": 0.26426840000000007,
+   "costCacheWrite": 0.30987200000000004
   },
   {
    "session": "2f75a033-7a3c-4f50-8665-6014bce51353",
@@ -135,7 +159,10 @@
    "cacheWrite5m": 64115,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.65115025
+   "costUSD": 0.6511502499999999,
+   "costOutput": 0.09452499999999998,
+   "costCacheRead": 0.1558565,
+   "costCacheWrite": 0.40071874999999996
   },
   {
    "session": "31e74a85-e6cf-4e96-99b9-1337c69d7b37",
@@ -150,7 +177,10 @@
    "cacheWrite5m": 29984,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.3808605
+   "costUSD": 0.3808605,
+   "costOutput": 0.06299999999999999,
+   "costCacheRead": 0.13040049999999997,
+   "costCacheWrite": 0.1874
   },
   {
    "session": "32bd94ac-adc7-4076-8df6-9718bffb677a",
@@ -165,7 +195,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 48170,
    "webSearches": 0,
-   "costUSD": 0.834812
+   "costUSD": 0.834812,
+   "costOutput": 0.14629999999999999,
+   "costCacheRead": 0.30299999999999994,
+   "costCacheWrite": 0.38536000000000004
   },
   {
    "session": "44cadfc9-348b-40b4-9150-2cf0d47059c1",
@@ -180,7 +213,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 86957,
    "webSearches": 0,
-   "costUSD": 2.210737
+   "costUSD": 2.210737,
+   "costOutput": 0.57878,
+   "costCacheRead": 0.9359250000000001,
+   "costCacheWrite": 0.6956559999999999
   },
   {
    "session": "453781d3-b8bc-47f8-8f67-7fd5361f6863",
@@ -195,7 +231,10 @@
    "cacheWrite5m": 15512,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.2778555
+   "costUSD": 0.2778554999999999,
+   "costOutput": 0.09912499999999999,
+   "costCacheRead": 0.0817255,
+   "costCacheWrite": 0.09694999999999998
   },
   {
    "session": "4a64c2d2-1d86-4ab4-acb4-d59b6150ef7e",
@@ -210,7 +249,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 96505,
    "webSearches": 0,
-   "costUSD": 2.2515794
+   "costUSD": 2.2515794,
+   "costOutput": 0.6032800000000001,
+   "costCacheRead": 0.8759314,
+   "costCacheWrite": 0.7720400000000001
   },
   {
    "session": "4a64c2d2-1d86-4ab4-acb4-d59b6150ef7e",
@@ -218,6 +260,7 @@
    "source": "main",
    "day": "2026-10-05",
    "model": "claude-sonnet-5-5",
+   "subagent": true,
    "requests": 26,
    "input": 52,
    "output": 465,
@@ -225,7 +268,10 @@
    "cacheWrite5m": 165600,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.5282446000000001
+   "costUSD": 0.5282446000000001,
+   "costOutput": 0.0046500000000000005,
+   "costCacheRead": 0.10949060000000001,
+   "costCacheWrite": 0.414
   },
   {
    "session": "502cbd08-189d-4be5-a8ea-b83a734f81ea",
@@ -240,7 +286,10 @@
    "cacheWrite5m": 13424,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.2387395
+   "costUSD": 0.2387395,
+   "costOutput": 0.081275,
+   "costCacheRead": 0.0735095,
+   "costCacheWrite": 0.0839
   },
   {
    "session": "539b9237-ba84-4695-ae21-73c0666705b5",
@@ -248,14 +297,36 @@
    "source": "main",
    "day": "2026-10-05",
    "model": "claude-opus-5-5",
-   "requests": 166,
-   "input": 344,
-   "output": 25787,
-   "cacheRead": 19560742,
-   "cacheWrite5m": 599283,
+   "requests": 42,
+   "input": 96,
+   "output": 24627,
+   "cacheRead": 4797097,
+   "cacheWrite5m": 0,
    "cacheWrite1h": 109209,
    "webSearches": 0,
-   "costUSD": 8.299351400000003
+   "costUSD": 2.3260154,
+   "costOutput": 0.4925399999999999,
+   "costCacheRead": 0.9594194,
+   "costCacheWrite": 0.8736720000000001
+  },
+  {
+   "session": "539b9237-ba84-4695-ae21-73c0666705b5",
+   "title": "Guide/companion usability ideas",
+   "source": "main",
+   "day": "2026-10-05",
+   "model": "claude-opus-5-5",
+   "subagent": true,
+   "requests": 124,
+   "input": 248,
+   "output": 1160,
+   "cacheRead": 14763645,
+   "cacheWrite5m": 599283,
+   "cacheWrite1h": 0,
+   "webSearches": 0,
+   "costUSD": 5.973336000000001,
+   "costOutput": 0.023200000000000012,
+   "costCacheRead": 2.9527290000000006,
+   "costCacheWrite": 2.9964150000000003
   },
   {
    "session": "5ecb6740-db38-4251-b60f-580ed5c9433a",
@@ -270,7 +341,10 @@
    "cacheWrite5m": 6553,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.16702875
+   "costUSD": 0.16702875,
+   "costOutput": 0.04775,
+   "costCacheRead": 0.07826250000000001,
+   "costCacheWrite": 0.04095625
   },
   {
    "session": "5ff6d227-a081-4564-9ef6-a2680092d862",
@@ -285,7 +359,10 @@
    "cacheWrite5m": 51444,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.5472405
+   "costUSD": 0.5472405,
+   "costOutput": 0.1173,
+   "costCacheRead": 0.10837049999999998,
+   "costCacheWrite": 0.321525
   },
   {
    "session": "61c39309-afbb-48c4-a818-75e58aee4fc7",
@@ -300,7 +377,10 @@
    "cacheWrite5m": 29842,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.38466200000000006
+   "costUSD": 0.38466200000000006,
+   "costOutput": 0.06945,
+   "costCacheRead": 0.1286395,
+   "costCacheWrite": 0.1865125
   },
   {
    "session": "62d2181b-ca43-448d-837d-c05e1b174730",
@@ -315,7 +395,10 @@
    "cacheWrite5m": 11729,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.50122025
+   "costUSD": 0.50122025,
+   "costOutput": 0.20609999999999995,
+   "costCacheRead": 0.221749,
+   "costCacheWrite": 0.07330625
   },
   {
    "session": "64d8d8fa-b1ef-4f38-90a5-bbfa0b660d4e",
@@ -330,7 +413,10 @@
    "cacheWrite5m": 54856,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.7991105000000001
+   "costUSD": 0.7991105000000001,
+   "costOutput": 0.1402,
+   "costCacheRead": 0.31598550000000003,
+   "costCacheWrite": 0.34285
   },
   {
    "session": "6524e1cc-9ae1-49bd-89d1-dc6f4cbff06d",
@@ -345,7 +431,10 @@
    "cacheWrite5m": 35805,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.40260424999999994
+   "costUSD": 0.40260425,
+   "costOutput": 0.08729999999999999,
+   "costCacheRead": 0.091473,
+   "costCacheWrite": 0.22378125
   },
   {
    "session": "6b71c52b-e846-4ebc-a1ae-069f0bedafac",
@@ -360,7 +449,10 @@
    "cacheWrite5m": 28487,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.42846775000000004
+   "costUSD": 0.42846775,
+   "costOutput": 0.16637499999999997,
+   "costCacheRead": 0.08399899999999999,
+   "costCacheWrite": 0.17804374999999997
   },
   {
    "session": "720f2b45-9fb8-4e52-aa58-c1a92af52cc1",
@@ -375,7 +467,10 @@
    "cacheWrite5m": 28983,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.46112424999999996
+   "costUSD": 0.46112424999999996,
+   "costOutput": 0.163225,
+   "costCacheRead": 0.11670049999999998,
+   "costCacheWrite": 0.18114375
   },
   {
    "session": "735daa21-6dfa-4711-aa0c-b769871a1a6d",
@@ -390,7 +485,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 31573,
    "webSearches": 0,
-   "costUSD": 0.40871559999999996
+   "costUSD": 0.4087155999999999,
+   "costOutput": 0.058519999999999996,
+   "costCacheRead": 0.0975556,
+   "costCacheWrite": 0.252584
   },
   {
    "session": "74b522df-27b6-4149-adb4-4c3cac3d821d",
@@ -405,7 +503,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 60325,
    "webSearches": 0,
-   "costUSD": 1.6629952
+   "costUSD": 1.6629952,
+   "costOutput": 0.3373199999999999,
+   "costCacheRead": 0.8426912000000002,
+   "costCacheWrite": 0.48260000000000003
   },
   {
    "session": "7df69de8-89b2-4bda-9eaa-38b31f097c32",
@@ -420,7 +521,10 @@
    "cacheWrite5m": 10429,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.15557675
+   "costUSD": 0.15557675,
+   "costOutput": 0.044974999999999994,
+   "costCacheRead": 0.0453755,
+   "costCacheWrite": 0.06518125
   },
   {
    "session": "80b8acc2-e98a-42c6-9b5a-c48d74310e1b",
@@ -435,7 +539,10 @@
    "cacheWrite5m": 8484,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.1425815
+   "costUSD": 0.1425815,
+   "costOutput": 0.04475,
+   "costCacheRead": 0.044761499999999996,
+   "costCacheWrite": 0.053025
   },
   {
    "session": "81cad087-c474-4370-9e0b-9f20e8418668",
@@ -450,7 +557,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 44795,
    "webSearches": 0,
-   "costUSD": 0.7820699999999998
+   "costUSD": 0.7820699999999998,
+   "costOutput": 0.10280000000000002,
+   "costCacheRead": 0.3207499999999999,
+   "costCacheWrite": 0.3583599999999999
   },
   {
    "session": "86d2cb64-b787-40b4-9275-b45b9644d19a",
@@ -465,7 +575,10 @@
    "cacheWrite5m": 28077,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.36408874999999996
+   "costUSD": 0.36408874999999996,
+   "costOutput": 0.07039999999999999,
+   "costCacheRead": 0.1181525,
+   "costCacheWrite": 0.17548125
   },
   {
    "session": "8aa48c34-cbf6-4c4e-9399-2322b803e3fa",
@@ -480,7 +593,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 24659,
    "webSearches": 0,
-   "costUSD": 0.23392600000000002
+   "costUSD": 0.23392599999999997,
+   "costOutput": 0.0138,
+   "costCacheRead": 0.022838,
+   "costCacheWrite": 0.197272
   },
   {
    "session": "8cb9d55d-5531-42f2-9709-730e3adcf0c1",
@@ -495,7 +611,10 @@
    "cacheWrite5m": 30263,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.26207775
+   "costUSD": 0.26207775,
+   "costOutput": 0.034675,
+   "costCacheRead": 0.038214,
+   "costCacheWrite": 0.18914375
   },
   {
    "session": "8e14d651-5cde-462b-a343-c6445c021ca9",
@@ -510,7 +629,10 @@
    "cacheWrite5m": 14727,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.18509675
+   "costUSD": 0.18509675,
+   "costOutput": 0.041875,
+   "costCacheRead": 0.051133,
+   "costCacheWrite": 0.09204375
   },
   {
    "session": "902e7343-500b-43b4-94ad-c6bc067241a8",
@@ -525,7 +647,10 @@
    "cacheWrite5m": 34940,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.362597
+   "costUSD": 0.36259699999999995,
+   "costOutput": 0.074375,
+   "costCacheRead": 0.06979199999999999,
+   "costCacheWrite": 0.21837499999999999
   },
   {
    "session": "927ae9c0-3fe2-4f3d-92d3-3c0c5e7489ad",
@@ -540,7 +665,10 @@
    "cacheWrite5m": 51619,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.5543057499999999
+   "costUSD": 0.5543057499999999,
+   "costOutput": 0.05957499999999999,
+   "costCacheRead": 0.172057,
+   "costCacheWrite": 0.32261875000000007
   },
   {
    "session": "953f6f69-cac0-4788-855b-117cf62bdf70",
@@ -555,7 +683,10 @@
    "cacheWrite5m": 54770,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.497584
+   "costUSD": 0.497584,
+   "costOutput": 0.1026,
+   "costCacheRead": 0.0526315,
+   "costCacheWrite": 0.34231249999999996
   },
   {
    "session": "a6e21348-8963-4940-bb32-024643b80e76",
@@ -570,7 +701,10 @@
    "cacheWrite5m": 10278,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.13942300000000002
+   "costUSD": 0.139423,
+   "costOutput": 0.028624999999999998,
+   "costCacheRead": 0.0465155,
+   "costCacheWrite": 0.0642375
   },
   {
    "session": "abb43fa5-664b-4563-bc6c-3dbff0db8fb6",
@@ -585,7 +719,10 @@
    "cacheWrite5m": 12153,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.20828625
+   "costUSD": 0.20828624999999998,
+   "costOutput": 0.04285,
+   "costCacheRead": 0.08942,
+   "costCacheWrite": 0.07595624999999999
   },
   {
    "session": "add01000-d9af-4e94-8a52-809fc4378c97",
@@ -600,7 +737,10 @@
    "cacheWrite5m": 8240,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.12952349999999999
+   "costUSD": 0.12952349999999999,
+   "costOutput": 0.021874999999999995,
+   "costCacheRead": 0.056098499999999996,
+   "costCacheWrite": 0.05149999999999999
   },
   {
    "session": "afba3e2a-8bdd-4340-8c51-824e8381d761",
@@ -615,7 +755,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 55705,
    "webSearches": 0,
-   "costUSD": 0.9854683999999999
+   "costUSD": 0.9854683999999999,
+   "costOutput": 0.17844000000000002,
+   "costCacheRead": 0.3612204,
+   "costCacheWrite": 0.44564
   },
   {
    "session": "b15d4f60-1b10-4fa5-926f-7a5cdf663add",
@@ -630,7 +773,10 @@
    "cacheWrite5m": 49807,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.48164775
+   "costUSD": 0.48164775,
+   "costOutput": 0.10467499999999998,
+   "costCacheRead": 0.065634,
+   "costCacheWrite": 0.31129375000000004
   },
   {
    "session": "bbe5e55c-3836-44fc-8336-4f08a709b6e0",
@@ -638,6 +784,7 @@
    "source": "main",
    "day": "2026-10-05",
    "model": "claude-haiku-4-5-20251001",
+   "subagent": true,
    "requests": 95,
    "input": 770,
    "output": 268,
@@ -645,7 +792,10 @@
    "cacheWrite5m": 167281,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.8405455499999998
+   "costUSD": 0.8405455499999998,
+   "costOutput": 0.0013400000000000013,
+   "costCacheRead": 0.6293343,
+   "costCacheWrite": 0.20910125000000004
   },
   {
    "session": "bbe5e55c-3836-44fc-8336-4f08a709b6e0",
@@ -653,14 +803,36 @@
    "source": "main",
    "day": "2026-10-05",
    "model": "claude-opus-5-5",
-   "requests": 274,
-   "input": 586,
-   "output": 113846,
-   "cacheRead": 56002802,
-   "cacheWrite5m": 366191,
+   "requests": 143,
+   "input": 324,
+   "output": 111930,
+   "cacheRead": 36933189,
+   "cacheWrite5m": 0,
    "cacheWrite1h": 646767,
    "webSearches": 0,
-   "costUSD": 20.484915400000013
+   "costUSD": 14.800669799999996,
+   "costOutput": 2.2385999999999977,
+   "costCacheRead": 7.386637799999999,
+   "costCacheWrite": 5.174135999999999
+  },
+  {
+   "session": "bbe5e55c-3836-44fc-8336-4f08a709b6e0",
+   "title": "Obsidia Ward UI redesign",
+   "source": "main",
+   "day": "2026-10-05",
+   "model": "claude-opus-5-5",
+   "subagent": true,
+   "requests": 131,
+   "input": 262,
+   "output": 1916,
+   "cacheRead": 19069613,
+   "cacheWrite5m": 366191,
+   "cacheWrite1h": 0,
+   "webSearches": 0,
+   "costUSD": 5.6842456000000015,
+   "costOutput": 0.038320000000000014,
+   "costCacheRead": 3.813922600000001,
+   "costCacheWrite": 1.8309550000000003
   },
   {
    "session": "bbe5e55c-3836-44fc-8336-4f08a709b6e0",
@@ -668,6 +840,7 @@
    "source": "main",
    "day": "2026-10-05",
    "model": "claude-sonnet-5-5",
+   "subagent": true,
    "requests": 179,
    "input": 358,
    "output": 3209,
@@ -675,7 +848,10 @@
    "cacheWrite5m": 745152,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 5.450718199999997
+   "costUSD": 5.450718199999997,
+   "costOutput": 0.03208999999999999,
+   "costCacheRead": 3.555032199999999,
+   "costCacheWrite": 1.862879999999999
   },
   {
    "session": "c2140c97-a116-4f55-8f91-b25fa4db6ea1",
@@ -690,7 +866,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 61058,
    "webSearches": 0,
-   "costUSD": 1.3726327999999999
+   "costUSD": 1.3726327999999999,
+   "costOutput": 0.25984,
+   "costCacheRead": 0.6240488,
+   "costCacheWrite": 0.48846400000000006
   },
   {
    "session": "c4046dd3-1f3e-41c9-bece-a659c0766660",
@@ -705,7 +884,10 @@
    "cacheWrite5m": 48626,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.45284599999999997
+   "costUSD": 0.45284599999999997,
+   "costOutput": 0.07609999999999999,
+   "costCacheRead": 0.0727935,
+   "costCacheWrite": 0.3039125
   },
   {
    "session": "ccc28fc3-cd5d-43c5-8f21-4d37044b55ff",
@@ -720,7 +902,10 @@
    "cacheWrite5m": 24404,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.33653700000000003
+   "costUSD": 0.336537,
+   "costOutput": 0.10635,
+   "costCacheRead": 0.077612,
+   "costCacheWrite": 0.15252500000000002
   },
   {
    "session": "d350732d-c826-4d9b-8396-61cbf869ed09",
@@ -735,7 +920,10 @@
    "cacheWrite5m": 23228,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.15703
+   "costUSD": 0.15703,
+   "costOutput": 0.011824999999999999,
+   "costCacheRead": 0,
+   "costCacheWrite": 0.145175
   },
   {
    "session": "d3b4b154-08d0-4599-9970-e7306c3787ac",
@@ -750,7 +938,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 24547,
    "webSearches": 0,
-   "costUSD": 0.22146800000000003
+   "costUSD": 0.221468,
+   "costOutput": 0.0022199999999999998,
+   "costCacheRead": 0.022856,
+   "costCacheWrite": 0.196376
   },
   {
    "session": "da4441b9-3b83-4cba-89c1-19cd11448c64",
@@ -765,7 +956,10 @@
    "cacheWrite5m": 24721,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.21655924999999998
+   "costUSD": 0.21655924999999995,
+   "costOutput": 0.027399999999999997,
+   "costCacheRead": 0.034608,
+   "costCacheWrite": 0.15450624999999998
   },
   {
    "session": "da4b8e92-9f63-46a7-a83f-01ac9c0520e9",
@@ -780,7 +974,10 @@
    "cacheWrite5m": 27845,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.33797024999999997
+   "costUSD": 0.33797024999999997,
+   "costOutput": 0.08464999999999999,
+   "costCacheRead": 0.07923899999999999,
+   "costCacheWrite": 0.17403125
   },
   {
    "session": "e1953940-bdb8-40b8-ab80-382dacb1d5a4",
@@ -795,7 +992,10 @@
    "cacheWrite5m": 42438,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.591256
+   "costUSD": 0.591256,
+   "costOutput": 0.101725,
+   "costCacheRead": 0.22422349999999996,
+   "costCacheWrite": 0.26523749999999996
   },
   {
    "session": "ec903442-4ab2-4e9e-978c-540814643976",
@@ -810,7 +1010,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 30426,
    "webSearches": 0,
-   "costUSD": 0.3809718000000001
+   "costUSD": 0.3809718000000001,
+   "costOutput": 0.05624,
+   "costCacheRead": 0.08127580000000001,
+   "costCacheWrite": 0.243408
   },
   {
    "session": "efd98429-7e4a-466c-9ab0-b07fdc4d34fa",
@@ -818,6 +1021,7 @@
    "source": "main",
    "day": "2026-10-05",
    "model": "claude-haiku-4-5-20251001",
+   "subagent": true,
    "requests": 11,
    "input": 90,
    "output": 15,
@@ -825,7 +1029,10 @@
    "cacheWrite5m": 59044,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.12098830000000001
+   "costUSD": 0.12098830000000001,
+   "costOutput": 0.000075,
+   "costCacheRead": 0.04701829999999999,
+   "costCacheWrite": 0.07380499999999998
   },
   {
    "session": "efd98429-7e4a-466c-9ab0-b07fdc4d34fa",
@@ -833,14 +1040,36 @@
    "source": "main",
    "day": "2026-10-05",
    "model": "claude-opus-5-5",
-   "requests": 128,
-   "input": 260,
-   "output": 120827,
-   "cacheRead": 22768338,
-   "cacheWrite5m": 89160,
+   "requests": 116,
+   "input": 236,
+   "output": 120554,
+   "cacheRead": 22018537,
+   "cacheWrite5m": 0,
    "cacheWrite1h": 262722,
    "webSearches": 0,
-   "costUSD": 9.518823600000001
+   "costUSD": 8.917507400000002,
+   "costOutput": 2.41108,
+   "costCacheRead": 4.4037074,
+   "costCacheWrite": 2.101775999999999
+  },
+  {
+   "session": "efd98429-7e4a-466c-9ab0-b07fdc4d34fa",
+   "title": "Pokédex tracking and rankings",
+   "source": "main",
+   "day": "2026-10-05",
+   "model": "claude-opus-5-5",
+   "subagent": true,
+   "requests": 12,
+   "input": 24,
+   "output": 273,
+   "cacheRead": 749801,
+   "cacheWrite5m": 89160,
+   "cacheWrite1h": 0,
+   "webSearches": 0,
+   "costUSD": 0.6013162,
+   "costOutput": 0.00546,
+   "costCacheRead": 0.1499602,
+   "costCacheWrite": 0.4458000000000001
   },
   {
    "session": "efd98429-7e4a-466c-9ab0-b07fdc4d34fa",
@@ -848,6 +1077,7 @@
    "source": "main",
    "day": "2026-10-05",
    "model": "claude-sonnet-5-5",
+   "subagent": true,
    "requests": 35,
    "input": 70,
    "output": 613,
@@ -855,7 +1085,10 @@
    "cacheWrite5m": 159997,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.8279593000000001
+   "costUSD": 0.8279592999999998,
+   "costOutput": 0.006129999999999998,
+   "costCacheRead": 0.4216968,
+   "costCacheWrite": 0.3999924999999999
   },
   {
    "session": "f65a874d-f62f-4dda-9277-bfb4feb6b420",
@@ -870,7 +1103,10 @@
    "cacheWrite5m": 17250,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.205569
+   "costUSD": 0.205569,
+   "costOutput": 0.048049999999999995,
+   "costCacheRead": 0.04966149999999999,
+   "costCacheWrite": 0.10781249999999999
   },
   {
    "session": "f82b9157-0714-4fc0-94b5-8bf1cfe73ae7",
@@ -885,7 +1121,10 @@
    "cacheWrite5m": 52899,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.5649687499999999
+   "costUSD": 0.5649687499999999,
+   "costOutput": 0.09185,
+   "costCacheRead": 0.14245,
+   "costCacheWrite": 0.33061874999999996
   },
   {
    "session": "f91ad327-989a-456e-9778-3be217d3dd72",
@@ -900,7 +1139,10 @@
    "cacheWrite5m": 24628,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.26952200000000004
+   "costUSD": 0.26952200000000004,
+   "costOutput": 0.048525,
+   "costCacheRead": 0.06701199999999999,
+   "costCacheWrite": 0.15392499999999995
   },
   {
    "session": "fab2da6f-3ff9-495d-a691-918ad1094dc4",
@@ -915,7 +1157,10 @@
    "cacheWrite5m": 17353,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.24397225
+   "costUSD": 0.24397225,
+   "costOutput": 0.05475,
+   "costCacheRead": 0.080711,
+   "costCacheWrite": 0.10845625
   },
   {
    "session": "fe4a420a-9b25-41e7-acc7-7eeb1895c621",
@@ -930,7 +1175,10 @@
    "cacheWrite5m": 31224,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.44801100000000005
+   "costUSD": 0.44801099999999994,
+   "costOutput": 0.14152499999999998,
+   "costCacheRead": 0.11128099999999999,
+   "costCacheWrite": 0.19515
   },
   {
    "session": "ffde3b38-da65-4896-9eb5-506408a58277",
@@ -945,7 +1193,28 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 35150,
    "webSearches": 0,
-   "costUSD": 0.457339
+   "costUSD": 0.45733899999999994,
+   "costOutput": 0.06328,
+   "costCacheRead": 0.11279499999999999,
+   "costCacheWrite": 0.2812
+  },
+  {
+   "session": "09d4476a-a879-4cbf-a1b4-5c3b06e3c24f",
+   "title": "Torchic tier discrepancy",
+   "source": "main",
+   "day": "2026-10-06",
+   "model": "claude-opus-5-5",
+   "requests": 35,
+   "input": 70,
+   "output": 27247,
+   "cacheRead": 3695126,
+   "cacheWrite5m": 0,
+   "cacheWrite1h": 86228,
+   "webSearches": 0,
+   "costUSD": 1.974069199999999,
+   "costOutput": 0.54494,
+   "costCacheRead": 0.7390251999999999,
+   "costCacheWrite": 0.6898239999999998
   },
   {
    "session": "24589a24-3c2a-4f0e-8c16-6517b9b4515d",
@@ -960,7 +1229,10 @@
    "cacheWrite5m": 61051,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.52885425
+   "costUSD": 0.52885425,
+   "costOutput": 0.09315,
+   "costCacheRead": 0.0540955,
+   "costCacheWrite": 0.38156874999999996
   },
   {
    "session": "27288f51-5071-447e-a7d0-fe32f2025b19",
@@ -975,7 +1247,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 22331,
    "webSearches": 0,
-   "costUSD": 0.6522456000000001
+   "costUSD": 0.6522456,
+   "costOutput": 0.12638,
+   "costCacheRead": 0.3470976,
+   "costCacheWrite": 0.178648
   },
   {
    "session": "2933f268-e1cc-4c00-9625-86bd1a8a3925",
@@ -990,7 +1265,10 @@
    "cacheWrite5m": 36638,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.32161049999999997
+   "costUSD": 0.32161049999999997,
+   "costOutput": 0.051,
+   "costCacheRead": 0.041578,
+   "costCacheWrite": 0.22898749999999998
   },
   {
    "session": "2a3e335e-424e-440a-a5bf-837e2f6778ff",
@@ -1005,7 +1283,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 63184,
    "webSearches": 0,
-   "costUSD": 1.3426086
+   "costUSD": 1.3426086,
+   "costOutput": 0.28075999999999995,
+   "costCacheRead": 0.5561366,
+   "costCacheWrite": 0.505472
   },
   {
    "session": "2e28e88f-ad37-464f-8630-254d8e52c2bc",
@@ -1020,7 +1301,28 @@
    "cacheWrite5m": 25691,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.18764675
+   "costUSD": 0.18764675,
+   "costOutput": 0.014424999999999999,
+   "costCacheRead": 0.012617999999999999,
+   "costCacheWrite": 0.16056875
+  },
+  {
+   "session": "36092706-5f36-4d69-996c-1e53f81065b8",
+   "title": "Review this change for security vulnerabilities.",
+   "source": "main",
+   "day": "2026-10-06",
+   "model": "claude-opus-4-7",
+   "requests": 4,
+   "input": 9,
+   "output": 2080,
+   "cacheRead": 102898,
+   "cacheWrite5m": 39784,
+   "cacheWrite1h": 0,
+   "webSearches": 0,
+   "costUSD": 0.352144,
+   "costOutput": 0.052,
+   "costCacheRead": 0.051448999999999995,
+   "costCacheWrite": 0.24864999999999998
   },
   {
    "session": "4a64c2d2-1d86-4ab4-acb4-d59b6150ef7e",
@@ -1035,7 +1337,46 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 101618,
    "webSearches": 0,
-   "costUSD": 0.8926801999999999
+   "costUSD": 0.8926802,
+   "costOutput": 0.041319999999999996,
+   "costCacheRead": 0.038400199999999995,
+   "costCacheWrite": 0.812944
+  },
+  {
+   "session": "57ae7d6b-21e1-419f-afb5-9624181d2116",
+   "title": "Review this change for security vulnerabilities.",
+   "source": "main",
+   "day": "2026-10-06",
+   "model": "claude-opus-4-7",
+   "requests": 4,
+   "input": 9,
+   "output": 3995,
+   "cacheRead": 216350,
+   "cacheWrite5m": 52698,
+   "cacheWrite1h": 0,
+   "webSearches": 0,
+   "costUSD": 0.5374574999999999,
+   "costOutput": 0.099875,
+   "costCacheRead": 0.108175,
+   "costCacheWrite": 0.32936249999999995
+  },
+  {
+   "session": "57dae8ca-20ff-478e-b0f9-1557a8499fb0",
+   "title": "GitHub repo for project",
+   "source": "main",
+   "day": "2026-10-06",
+   "model": "claude-opus-5-5",
+   "requests": 11,
+   "input": 22,
+   "output": 4185,
+   "cacheRead": 756247,
+   "cacheWrite5m": 0,
+   "cacheWrite1h": 28267,
+   "webSearches": 0,
+   "costUSD": 0.46117340000000007,
+   "costOutput": 0.0837,
+   "costCacheRead": 0.1512494,
+   "costCacheWrite": 0.22613600000000003
   },
   {
    "session": "735daa21-6dfa-4711-aa0c-b769871a1a6d",
@@ -1043,6 +1384,7 @@
    "source": "main",
    "day": "2026-10-06",
    "model": "claude-haiku-4-5-20251001",
+   "subagent": true,
    "requests": 95,
    "input": 780,
    "output": 148,
@@ -1050,7 +1392,10 @@
    "cacheWrite5m": 762735,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 1.4968576499999995
+   "costUSD": 1.4968576499999995,
+   "costOutput": 0.0007400000000000011,
+   "costCacheRead": 0.5419188999999999,
+   "costCacheWrite": 0.9534187500000001
   },
   {
    "session": "735daa21-6dfa-4711-aa0c-b769871a1a6d",
@@ -1065,7 +1410,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 227309,
    "webSearches": 0,
-   "costUSD": 7.453750600000001
+   "costUSD": 7.453750600000001,
+   "costOutput": 1.7048599999999994,
+   "costCacheRead": 3.9295466000000006,
+   "costCacheWrite": 1.8184720000000003
   },
   {
    "session": "735daa21-6dfa-4711-aa0c-b769871a1a6d",
@@ -1073,6 +1421,7 @@
    "source": "main",
    "day": "2026-10-06",
    "model": "claude-sonnet-5-5",
+   "subagent": true,
    "requests": 45,
    "input": 90,
    "output": 3591,
@@ -1080,7 +1429,10 @@
    "cacheWrite5m": 848562,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 2.6499352
+   "costUSD": 2.6499352,
+   "costOutput": 0.03591,
+   "costCacheRead": 0.4924402,
+   "costCacheWrite": 2.1214049999999998
   },
   {
    "session": "7c2a15bf-5533-4b12-b7f5-9385b994f8f1",
@@ -1088,14 +1440,17 @@
    "source": "main",
    "day": "2026-10-06",
    "model": "claude-opus-5-5",
-   "requests": 38,
-   "input": 76,
-   "output": 32132,
-   "cacheRead": 5322179,
+   "requests": 46,
+   "input": 92,
+   "output": 37332,
+   "cacheRead": 6777625,
    "cacheWrite5m": 0,
-   "cacheWrite1h": 129219,
+   "cacheWrite1h": 139856,
    "webSearches": 0,
-   "costUSD": 2.7411318000000007
+   "costUSD": 3.221381,
+   "costOutput": 0.7466399999999999,
+   "costCacheRead": 1.3555249999999994,
+   "costCacheWrite": 1.1188480000000003
   },
   {
    "session": "aaae024d-9c54-48b4-bfcd-29d749eaeee5",
@@ -1110,7 +1465,28 @@
    "cacheWrite5m": 35376,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.3712925
+   "costUSD": 0.3712924999999999,
+   "costOutput": 0.0652,
+   "costCacheRead": 0.0849325,
+   "costCacheWrite": 0.22109999999999996
+  },
+  {
+   "session": "aabd9565-d013-4981-a5a8-d6f7643c9179",
+   "title": "Token usage optimization",
+   "source": "main",
+   "day": "2026-10-06",
+   "model": "claude-opus-5-5",
+   "requests": 38,
+   "input": 76,
+   "output": 32382,
+   "cacheRead": 4579396,
+   "cacheWrite5m": 0,
+   "cacheWrite1h": 104922,
+   "webSearches": 0,
+   "costUSD": 2.4031992000000004,
+   "costOutput": 0.64764,
+   "costCacheRead": 0.9158791999999999,
+   "costCacheWrite": 0.839376
   },
   {
    "session": "acf1e44a-132c-4a64-a379-2e585986e65c",
@@ -1118,14 +1494,36 @@
    "source": "main",
    "day": "2026-10-06",
    "model": "claude-opus-5-5",
-   "requests": 385,
-   "input": 772,
-   "output": 98418,
-   "cacheRead": 42111234,
-   "cacheWrite5m": 1118959,
-   "cacheWrite1h": 203032,
+   "requests": 146,
+   "input": 314,
+   "output": 125914,
+   "cacheRead": 30601098,
+   "cacheWrite5m": 0,
+   "cacheWrite1h": 296645,
    "webSearches": 0,
-   "costUSD": 17.612745800000013
+   "costUSD": 11.012915600000001,
+   "costOutput": 2.5182799999999985,
+   "costCacheRead": 6.120219599999998,
+   "costCacheWrite": 2.3731599999999986
+  },
+  {
+   "session": "acf1e44a-132c-4a64-a379-2e585986e65c",
+   "title": "Pokémon guide path visualization",
+   "source": "main",
+   "day": "2026-10-06",
+   "model": "claude-opus-5-5",
+   "subagent": true,
+   "requests": 882,
+   "input": 1764,
+   "output": 19733,
+   "cacheRead": 116814403,
+   "cacheWrite5m": 2238631,
+   "cacheWrite1h": 0,
+   "webSearches": 0,
+   "costUSD": 34.95775160000002,
+   "costOutput": 0.39465999999999735,
+   "costCacheRead": 23.362880600000025,
+   "costCacheWrite": 11.193155000000008
   },
   {
    "session": "b7c16eb3-6029-47f0-8538-e408b3b6b92a",
@@ -1140,7 +1538,10 @@
    "cacheWrite5m": 43647,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.6817032499999999
+   "costUSD": 0.6817032499999999,
+   "costOutput": 0.071775,
+   "costCacheRead": 0.33703949999999994,
+   "costCacheWrite": 0.27279375
   },
   {
    "session": "b95cc6bb-bb6f-48d1-97b7-4f1194607ef4",
@@ -1155,7 +1556,10 @@
    "cacheWrite5m": 7241,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.16817225
+   "costUSD": 0.16817225,
+   "costOutput": 0.079225,
+   "costCacheRead": 0.04364599999999999,
+   "costCacheWrite": 0.04525625
   },
   {
    "session": "bc2b0783-2838-4b86-b3c6-65fdd750f0c8",
@@ -1170,7 +1574,10 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 51261,
    "webSearches": 0,
-   "costUSD": 0.9846278
+   "costUSD": 0.9846277999999999,
+   "costOutput": 0.13013999999999998,
+   "costCacheRead": 0.44419179999999997,
+   "costCacheWrite": 0.41008799999999995
   },
   {
    "session": "c2140c97-a116-4f55-8f91-b25fa4db6ea1",
@@ -1185,7 +1592,46 @@
    "cacheWrite5m": 0,
    "cacheWrite1h": 71206,
    "webSearches": 0,
-   "costUSD": 0.7205969999999999
+   "costUSD": 0.7205969999999999,
+   "costOutput": 0.028259999999999997,
+   "costCacheRead": 0.12264100000000001,
+   "costCacheWrite": 0.569648
+  },
+  {
+   "session": "e7e52daf-e04c-4b7f-8590-590aaa67b99b",
+   "title": "Waypoints covering meeting people",
+   "source": "main",
+   "day": "2026-10-06",
+   "model": "claude-opus-5-5",
+   "requests": 40,
+   "input": 80,
+   "output": 18944,
+   "cacheRead": 3908411,
+   "cacheWrite5m": 0,
+   "cacheWrite1h": 71492,
+   "webSearches": 0,
+   "costUSD": 1.7328182000000003,
+   "costOutput": 0.37887999999999994,
+   "costCacheRead": 0.7816822000000001,
+   "costCacheWrite": 0.5719359999999999
+  },
+  {
+   "session": "e7f09ea3-67c2-4fd4-bcc5-b80366fc4ff5",
+   "title": "Hidden item maps replacement",
+   "source": "main",
+   "day": "2026-10-06",
+   "model": "claude-opus-5-5",
+   "requests": 99,
+   "input": 198,
+   "output": 69742,
+   "cacheRead": 15047850,
+   "cacheWrite5m": 0,
+   "cacheWrite1h": 176416,
+   "webSearches": 0,
+   "costUSD": 5.81653,
+   "costOutput": 1.3948400000000003,
+   "costCacheRead": 3.00957,
+   "costCacheWrite": 1.411328
   },
   {
    "session": "fd71e0e9-64c5-48de-a654-d7ca9081ae8f",
@@ -1200,7 +1646,10 @@
    "cacheWrite5m": 12327,
    "cacheWrite1h": 0,
    "webSearches": 0,
-   "costUSD": 0.22820625
+   "costUSD": 0.22820625,
+   "costOutput": 0.06675,
+   "costCacheRead": 0.0843575,
+   "costCacheWrite": 0.07704375
   },
   {
    "session": "ffde3b38-da65-4896-9eb5-506408a58277",
@@ -1208,14 +1657,17 @@
    "source": "main",
    "day": "2026-10-06",
    "model": "claude-opus-5-5",
-   "requests": 11,
-   "input": 22,
-   "output": 7356,
-   "cacheRead": 1033355,
+   "requests": 48,
+   "input": 96,
+   "output": 31219,
+   "cacheRead": 6282492,
    "cacheWrite5m": 0,
-   "cacheWrite1h": 73312,
+   "cacheWrite1h": 116911,
    "webSearches": 0,
-   "costUSD": 0.9403750000000001
+   "costUSD": 2.8165504000000006,
+   "costOutput": 0.6243799999999999,
+   "costCacheRead": 1.2564984,
+   "costCacheWrite": 0.9352879999999998
   }
  ]
 }

@@ -179,6 +179,15 @@ Paragraphs with non-obvious walking directions ("head out, and back up past the 
 - **Card**: `app/src/features/route-map/RouteMap.tsx` draws the path and markers as SVG over the crop, with a legend and a click-to-enlarge dialog. It hides itself if the image is missing (a host built without game files). Anchor `route-<id>`.
 - **Authoring**: `node scripts/maps.ts <game> <cmd>` finds maps (`names`), NPCs by dialogue (`find`), doors and NPC coordinates (`map`), renders gridded maps (`grid`), prints a section's paragraphs (`section`), validates (`check`), shows walkable tiles (`reach`) and previews routes (`preview`) into `out/map-previews/`. Events are drawn in their default (pre-story-switch) state, so cutscene actors may need `hide`.
 
+## Hidden item maps
+
+The guide's hidden-item screenshots (`hiddenNNN.png`, hand-marked with red letters) are redrawn on the game's own map with a marker on each item's exact tile, in the same card as route maps. Without the map dump the screenshot is shown instead.
+
+- **Card**: `app/src/features/route-map/MapCard.tsx` is shared by route maps and hidden items: header, map crop with an optional path and markers, click-to-enlarge, and a legend to the right of the map (below it under 640px) that becomes a checklist when marks have `onToggle`. Checked marks turn green on the map. `app/src/features/hidden-items/HiddenItems.tsx` feeds it the lettered entries (`group.ts`), so checkbox ids (`<section>:hiddenNNN.png:<letter>`) are unchanged.
+- **Source**: `hidden-maps/<game>.json`, `{ "<screenshot file>": { map, events: { <letter>: <event id> }, pad? } }`. `scripts/dump-maps.rb` records each item ball and hidden item's `item` (from `Kernel.pbItemBall(:ITEM)`).
+- **Build**: `sync-data.sh` runs `scripts/apply-hidden-maps.ts` after routes. It renders a crop around the markers to `app/public/maps/<game>-items/` (gitignored) and sets `map` on the screenshot's image block (`app/src/lib/itemMaps.ts`). It fails when a paired event no longer gives the letter's item.
+- **Authoring**: `node scripts/apply-hidden-maps.ts <game> --suggest` pairs screenshots missing from the file. `scripts/locate-shots.py` (numpy + Pillow) finds each screenshot on its candidate maps by image matching, then letters go to same-item events inside that footprint. Without Python it falls back to item counts, section name and the tightest cluster. Review the result before committing. The Reborn set (30 screenshots) was suggested this way and spot-checked against the screenshots.
+
 ## Keeping progress safe
 
 Progress (beaten trainers, caught Pokemon, hidden items, prefs, resume spot) lives in the browser's localStorage under `pokeguide:<game>:*`. App updates and rebuilds do not touch it, but three things can:

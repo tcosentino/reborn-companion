@@ -1,4 +1,5 @@
 import type { Block } from '../../data/types'
+import type { ItemMap } from '../../lib/itemMaps'
 
 // Folds a "hiddenNNN.png" map image and its lettered item entries into one synthetic block.
 //
@@ -23,6 +24,8 @@ export interface HiddenItemsBlock {
   // Stable checkbox id prefix: `<scope>:<file>`; the entry id is `<prefix>:<letter>`
   idPrefix: string
   entries: HiddenEntry[]
+  // The screenshot redrawn from the game map, when the build had the map dump (scripts/apply-hidden-maps.ts)
+  map?: ItemMap
 }
 
 export type RenderBlock = Block | HiddenItemsBlock
@@ -95,7 +98,7 @@ export const groupHiddenItems = (blocks: Block[], scope = ''): RenderBlock[] => 
     if (isHiddenMap(b)) {
       const entries = [...(entriesByImage.get(i) ?? [])].sort((x, y) => x.letter.localeCompare(y.letter))
       if (entries.length === 0) return [b]
-      return [{ type: 'hiddenItems', file: b.file, src: b.src, idPrefix: `${scope}:${b.file}`, entries }]
+      return [{ type: 'hiddenItems', file: b.file, src: b.src, idPrefix: `${scope}:${b.file}`, entries, ...(b.map ? { map: b.map } : {}) }]
     }
     if (b.type === 'prose' && rewritten.has(i)) {
       const markdown = rewritten.get(i) as string
