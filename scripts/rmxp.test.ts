@@ -120,3 +120,16 @@ test('warps to other maps block the path unless they are its end', () => {
   assert.deepEqual(findPath(walker(m, tileset), 3, 2, [0, 0], [2, 0]), [[0, 0], [0, 1], [1, 1], [2, 1], [2, 0]])
   assert.deepEqual(findPath(walker(m, tileset), 3, 2, [0, 0], [1, 0]), [[0, 0], [1, 0]])
 })
+
+test('a point on a person stops in front of them, facing them, and the next leg starts there', () => {
+  const npc = { id: 7, name: 'n', x: 3, y: 0, pages: [{ cond: false, through: false, trigger: 0, char: 'trchar001' }] }
+  const m = mapOf(['.....', '.....'], [npc])
+  const r = resolveRoute({ id: 'r', match: 'x', map: 1, points: [{ at: [0, 0], label: 'A' }, { at: [3, 0], label: 'Girl' }, { at: [4, 1], label: 'B' }] }, m, tileset)
+  assert.ok(typeof r !== 'string')
+  assert.deepEqual(r.stops, [{ at: [0, 0] }, { at: [2, 0], face: [1, 0] }, { at: [4, 1] }])
+  assert.ok(!r.path.some(([x, y]) => x === 3 && y === 0))
+  // Hidden people and doors are walked onto as before
+  const hidden = resolveRoute({ id: 'r', match: 'x', map: 1, hide: [7], points: [{ at: [0, 0], label: 'A' }, { at: [3, 0], label: 'B' }] }, m, tileset)
+  assert.ok(typeof hidden !== 'string')
+  assert.deepEqual(hidden.stops[1], { at: [3, 0] })
+})

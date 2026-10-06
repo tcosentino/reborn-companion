@@ -12,7 +12,7 @@ import type { Chapter, GuideIndex } from '../app/src/data/types'
 import { applyRoutes, unapplyRoutes, type RouteBlock, type RouteDef, type Tile } from '../app/src/lib/routes.ts'
 import { writePng } from './png-rgba.ts'
 import {
-  assetsDir, findPath, hasMaps, imageLoader, loadIndex, loadMap, loadTilesets, mapsDir, renderMap, walker,
+  assetsDir, findPath, hasMaps, imageLoader, loadIndex, loadMap, loadTilesets, mapsDir, renderMap, visibleEvents, walker,
   type Box, type GameMap, type MapIndex, type Tileset
 } from './rmxp.ts'
 
@@ -39,8 +39,12 @@ export const validateRouteDefs = (section: string, defs: RouteDef[], maps?: MapI
 
 export interface Built { block: RouteBlock; box: Box; path: Tile[]; map: GameMap; tileset: Tileset }
 
+// Where each point's marker goes. A point on a person stops on the tile in front of them, facing them, so
+// neither the line nor the marker hides who the reader is looking for.
+export interface Stop { at: Tile; face?: Tile }
+
 // Path through every point in order, then a crop around it with `pad` tiles of context (at least 12x8)
-export const resolveRoute = (def: RouteDef, map: GameMap, tileset: Tileset): { path: Tile[]; box: Box } | string => {
+export const resolveRoute = (def: RouteDef, map: GameMap, tileset: Tileset): { path: Tile[]; box: Box; stops: Stop[] } | string => {
   const hide = new Set(def.hide ?? [])
   const w = walker(map, tileset, { hide, surf: !!def.surf })
   const out = map.width, oh = map.height
@@ -48,12 +52,30 @@ export const resolveRoute = (def: RouteDef, map: GameMap, tileset: Tileset): { p
     const [x, y] = p.at
     if (x < 0 || y < 0 || x >= out || y >= oh) return `point (${x},${y}) is outside the ${out}x${oh} map`
   }
-  const path: Tile[] = [def.points[0].at]
+  // Solid characters that are not doors: NPCs, trainers, item balls
+  const people = new Set(visibleEvents(map, hide).filter(({ e, p }) => p.char && !p.through && !e.pages.some(pg => pg.warp)).map(({ e }) => `${e.x},${e.y}`))
+  let from = def.points[0].at
+  const path: Tile[] = [from]
+  const stops: Stop[] = [{ at: from }]
   for (let i = 1; i < def.points.length; i++) {
-    if (def.points[i].direct) { path.push(...line(def.points[i - 1].at, def.points[i].at).slice(1)); continue }
-    const seg = findPath(w, out, oh, def.points[i - 1].at, def.points[i].at)
-    if (!seg) return `no walkable path from (${def.points[i - 1].at}) to (${def.points[i].at})`
-    path.push(...seg.slice(1))
+    const to = def.points[i].at
+    const walk = (a: Tile) => def.points[i].direct ? line(a, to) : findPath(w, out, oh, a, to)
+    let seg = walk(from)
+    // Some people leave once talked to and the way on is through their tile: walk on from where they stood
+    const prev = def.points[i - 1].at
+    if (!seg && from !== prev && (seg = walk(prev))) path.push(prev)
+    if (!seg) return `no walkable path from (${prev}) to (${to})`
+    const leg = seg.slice(1)
+    if (people.has(`${to[0]},${to[1]}`) && leg.length) {
+      leg.pop()
+      const at = leg[leg.length - 1] ?? from
+      stops.push({ at, face: [Math.sign(to[0] - at[0]), Math.sign(to[1] - at[1])] })
+      from = at
+    } else {
+      stops.push({ at: to })
+      from = to
+    }
+    path.push(...leg)
   }
   const pad = def.pad ?? 4
   const xs = path.map(p => p[0]), ys = path.map(p => p[1])
@@ -67,7 +89,7 @@ export const resolveRoute = (def: RouteDef, map: GameMap, tileset: Tileset): { p
   }
   ;[x0, x1] = grow(x0, x1, 12, out)
   ;[y0, y1] = grow(y0, y1, 8, oh)
-  return { path, box: { x: x0, y: y0, w: x1 - x0 + 1, h: y1 - y0 + 1 } }
+  return { path, stops, box: { x: x0, y: y0, w: x1 - x0 + 1, h: y1 - y0 + 1 } }
 }
 
 // Straight 8-connected line between two tiles (Bresenham), so it draws as one unbroken run
@@ -84,13 +106,17 @@ const line = ([x0, y0]: Tile, [x1, y1]: Tile): Tile[] => {
   }
 }
 
-export const routeBlock = (def: RouteDef, map: GameMap, path: Tile[], box: Box, src: string): RouteBlock => {
+export const routeBlock = (def: RouteDef, map: GameMap, path: Tile[], stops: Stop[], box: Box, src: string): RouteBlock => {
   let n = 0
   return {
     type: 'route', id: def.id, ...(def.title ? { title: def.title } : {}), mapName: map.name, src, w: box.w, h: box.h,
     path: path.map(([x, y]) => [x - box.x, y - box.y] as Tile),
     ...(def.spoiler ? { spoiler: true } : {}),
-    marks: def.points.filter(p => p.label && !p.via).map(p => ({ x: p.at[0] - box.x, y: p.at[1] - box.y, n: ++n, label: p.label! }))
+    marks: def.points.flatMap((p, i) => {
+      if (!p.label || p.via) return []
+      const { at: [x, y], face } = stops[i]
+      return [{ x: x - box.x, y: y - box.y, n: ++n, label: p.label, ...(face ? { face } : {}) }]
+    })
   }
 }
 
@@ -126,7 +152,7 @@ const main = (game: string) => {
       writeFileSync(join(imgDir, file), writePng(renderMap(map, tileset, load, r.box, new Set(def.hide ?? []))))
       writeFileSync(stamp, hash)
     }
-    return routeBlock(def, map, r.path, r.box, `maps/${game}/${file}?v=${hash}`)
+    return routeBlock(def, map, r.path, r.stops, r.box, `maps/${game}/${file}?v=${hash}`)
   }
 
   const unseen = new Set(defs.keys())

@@ -35,7 +35,8 @@ export interface RouteDef {
   spoiler?: boolean
 }
 
-export interface RouteMark { x: number; y: number; n: number; label: string }
+// `face`: the stop is in front of a person, in this direction; the marker is drawn clear of their sprite
+export interface RouteMark { x: number; y: number; n: number; label: string; face?: Tile }
 
 export interface RouteBlock {
   type: 'route'
@@ -51,6 +52,18 @@ export interface RouteBlock {
   path: Tile[]
   marks: RouteMark[]
   spoiler?: boolean
+}
+
+// Marker radius in map pixels (tiles are 32), before the card's scale factor k
+export const MARK_R = 14
+
+// A stop in front of a person: slide the marker away from them until it clears their sprite. Character sprites
+// are a tile and a half tall, so someone below the stop reaches up into its tile.
+export const markOffset = (face: Tile | undefined, k: number): Tile => {
+  if (!face) return [0, 0]
+  const r = (MARK_R + 2) * k
+  const d = face[1] > 0 ? r : Math.max(0, r - 16)
+  return [-face[0] * d || 0, -face[1] * d || 0]
 }
 
 interface BlockLike { type: string; markdown?: string }

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import type { RouteBlock } from '../../lib/routes'
-import { pathRuns, routeAnchor } from '../../lib/routes'
+import { MARK_R, markOffset, pathRuns, routeAnchor } from '../../lib/routes'
 import './route-map.css'
 
 const TILE = 32
@@ -24,12 +24,13 @@ const RouteCanvas = ({ b, onError }: { b: RouteBlock; onError?: () => void }) =>
         {runs.map((points, i) => <polyline key={`f${i}`} className="rm-flow" points={points} />)}
         {warpEnds.map(([x, y], i) => <rect key={`w${i}`} className="rm-warp" x={center(x) - 7 * k} y={center(y) - 7 * k} width={14 * k} height={14 * k} rx={3 * k} />)}
         {end && <circle className="rm-end" cx={center(end[0])} cy={center(end[1])} r={6 * k} />}
-        {b.marks.map(m => (
-          <g key={m.n} className="rm-mark" transform={`translate(${center(m.x)} ${center(m.y)}) scale(${k})`}>
-            <circle r={14} />
+        {b.marks.map(m => {
+          const [ox, oy] = markOffset(m.face, k)
+          return <g key={m.n} className="rm-mark" transform={`translate(${center(m.x) + ox} ${center(m.y) + oy}) scale(${k})`}>
+            <circle r={MARK_R} />
             <text dy="0.36em">{m.n}</text>
           </g>
-        ))}
+        })}
       </svg>
     </div>
   )

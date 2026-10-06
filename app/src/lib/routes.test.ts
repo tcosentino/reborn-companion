@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { applyRoutes, pathRuns, unapplyRoutes, type RouteBlock, type RouteDef } from './routes'
+import { applyRoutes, markOffset, pathRuns, unapplyRoutes, type RouteBlock, type RouteDef } from './routes'
 
 const prose = (markdown: string) => ({ type: 'prose', markdown })
 const task = (markdown: string) => ({ type: 'task', markdown })
@@ -49,5 +49,16 @@ describe('unapplyRoutes', () => {
 describe('pathRuns', () => {
   it('breaks the path where it jumps through a warp, keeping diagonal steps joined', () => {
     expect(pathRuns([[0, 0], [1, 0], [5, 5], [6, 6], [6, 7]])).toEqual([[[0, 0], [1, 0]], [[5, 5], [6, 6], [6, 7]]])
+  })
+})
+
+describe('markOffset', () => {
+  it('leaves plain stops alone and slides markers off the person faced', () => {
+    expect(markOffset(undefined, 1)).toEqual([0, 0])
+    // Person above: their tile starts half a tile up, so a small nudge down clears it
+    expect(markOffset([0, -1], 2)).toEqual([0, 16])
+    // Person below: their sprite reaches into the stop's tile, so the marker moves a full radius up
+    expect(markOffset([0, 1], 1)).toEqual([0, -16])
+    expect(markOffset([1, 0], 1)).toEqual([0, 0])
   })
 })

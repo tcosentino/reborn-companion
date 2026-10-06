@@ -170,7 +170,7 @@ switch (cmd) {
       const img = renderMap(m, tilesets[m.tileset], load, r.box, new Set(def.hide ?? []))
       grid(img, r.box)
       pathOverlay(img, r.path, r.box)
-      def.points.forEach(p => { if (!p.via) fillRect(img, (p.at[0] - r.box.x) * 32 + 6, (p.at[1] - r.box.y) * 32 + 6, 20, 20, [220, 38, 38, 255]) })
+      def.points.forEach((p, i) => { if (!p.via) fillRect(img, (r.stops[i].at[0] - r.box.x) * 32 + 6, (r.stops[i].at[1] - r.box.y) * 32 + 6, 20, 20, [220, 38, 38, 255]) })
       console.log(`${def.id}: ${r.path.length - 1} steps, box ${JSON.stringify(r.box)}`)
       save(`${section}--${def.id}.png`, img)
     }
