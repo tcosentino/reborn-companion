@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 // Routes: #/<game>, #/<game>/<sectionId>[/<anchor>], #/<game>/pokedex, #/<game>/pokedex/<SPECIES>
-// and #/<game>/pokedex/compare/<SPECIES>,<SPECIES>,...
+// and #/<game>/pokedex/compare/<SPECIES>,<SPECIES>,...  #/usage (no game) is the build cost page.
 // Reference pages: #/<game>/item/<SYM> and #/<game>/move/<SYM>. They count as Pokedex pages
 // (pokedex: true) so the guide keeps the last section in the sidebar.
 // <anchor> is a block element id inside the section (battle-..., enc-..., shop-..., tutor-...)

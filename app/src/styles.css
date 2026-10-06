@@ -50,6 +50,7 @@ h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-he
 .picker-card:hover { border-color: var(--accent) }
 .picker-card b { font: 600 1.3rem var(--display) }
 .picker-card span { color: var(--muted); font-size: .92rem }
+.picker-foot { margin-top: 2.5rem; color: var(--muted); font-size: .9rem }
 
 /* Shell */
 .shell { display: grid; grid-template-columns: 340px minmax(0, 1fr); min-height: 100vh }

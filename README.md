@@ -200,3 +200,7 @@ Progress (beaten trainers, caught Pokemon, hidden items, prefs, resume spot) liv
 - Hits with several locations show a `+N` chip. Click it or press Right arrow (caret at the end of the input) to list each location with its episode; Left arrow collapses.
 - Shift+Enter, or the Dex/Page button, opens the Pokedex entry for Pokemon and the item/move page for items and moves.
 - Scope prefixes: `t:` trainers, `p:` Pokemon, `i:` items, `m:` moves and TMs, `s:` sections (e.g. `m: iron`). Scoped searches show up to 30 hits per group.
+
+## Token usage
+
+`usage/README.md` tracks what building this project has cost in Claude Code tokens (by model, day, source and session, with estimated API list-price cost). `scripts/token-usage.ts` reads the local transcripts under `~/.claude/projects/` for this repo, `upstream/` and agent worktrees (subagents are billed to their parent session) and merges them into `usage/ledger.json`. Claude Code deletes transcripts after 30 days, so the committed ledger keeps sessions whose transcripts are gone. A Stop hook in `.claude/settings.json` reruns it after every Claude turn; run it by hand with `node scripts/token-usage.ts`. The app shows it at `#/usage` (linked from the game picker): per-chat cost with titles, daily cost and totals, hot-reloaded in dev when the ledger changes. Background calls that never reach the transcript (permission classifier, titles) are not counted, so totals run a few percent below Claude Code's own figure. Add new models to `PRICES` in the script; unknown ones are listed as unpriced.

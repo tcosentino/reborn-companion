@@ -1,0 +1,45 @@
+.usage { max-width: 900px; margin: 0 auto; padding: 2.5rem 16px 4rem }
+.usage .brand { display: inline-block; margin-bottom: 1.5rem }
+.usage h1 { font-size: clamp(2.2rem, 6vw, 3.2rem) }
+.usage h2 { font-size: 1.3rem }
+.usage section { margin-top: 2.5rem }
+
+.usage-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .75rem; margin: 0 }
+.usage-tiles div { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: .9rem 1rem }
+.usage-tiles dt { font: 600 .7rem/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted) }
+.usage-tiles dd { margin: .25rem 0 0; font: 600 1.8rem/1.1 var(--display); font-variant-numeric: tabular-nums }
+
+/* Daily cost: one bar per day, value above, date below */
+.usage-days { list-style: none; margin: 1rem 0 0; padding: 1rem; display: grid; gap: 2px; height: 200px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px }
+.usage-days li { display: grid; grid-template-rows: auto 1fr auto; min-width: 0; text-align: center }
+.usage-day-value { font-size: .75rem; color: var(--muted) }
+.usage-day-track { display: flex; align-items: flex-end; justify-content: center; border-bottom: 1px solid var(--line) }
+.usage-day-bar { width: min(48px, 70%); min-height: 2px; background: var(--accent); border-radius: 4px 4px 0 0 }
+.usage-days li:hover .usage-day-bar { filter: brightness(1.15) }
+.usage-day-label { font-size: .75rem; color: var(--muted); padding-top: .3rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+
+.usage-chats-head { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; justify-content: space-between }
+.usage-sort { display: flex; gap: .25rem }
+.usage-sort button { font: inherit; font-size: .85rem; padding: .3rem .7rem; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink) }
+.usage-sort button[aria-pressed='true'] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent) }
+
+.usage-chats { list-style: none; margin: 1rem 0 0; padding: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 10px }
+.usage-chats li { display: grid; grid-template-columns: minmax(0, 1fr) minmax(80px, 28%) 4.5rem; gap: .9rem; align-items: center;
+  padding: .65rem 1rem; border-top: 1px solid var(--line) }
+.usage-chats li:first-child { border-top: 0 }
+.usage-chats li:hover { background: var(--sunk) }
+.usage-chat-text { display: grid; min-width: 0 }
+.usage-chat-title { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.usage-chat-meta { font-size: .8rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.usage-chat-track { height: 10px }
+.usage-chat-bar { display: block; height: 100%; min-width: 2px; background: var(--accent); border-radius: 0 4px 4px 0 }
+.usage-chat-cost { text-align: right; font-weight: 600 }
+.usage-note { margin-top: 2rem; font-size: .85rem }
+
+@media (max-width: 600px) {
+  .usage-chats li { grid-template-columns: minmax(0, 1fr) 4.5rem; row-gap: .4rem }
+  .usage-chat-track { grid-column: 1 / -1; grid-row: 2 }
+  .usage-chat-title, .usage-chat-meta { white-space: normal }
+}

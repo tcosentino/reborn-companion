@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
 import { DexContext, GameContext } from './components/common'
 import { SectionView } from './components/SectionView'
 import { useAnchorScroll } from './components/palette/anchorScroll'
@@ -24,6 +24,8 @@ import { ResumeCard } from './features/guide-nav/ResumeCard'
 import { BackupControls } from './features/guide-nav/BackupControls'
 import { dexHref, href, useRoute, type Route } from './lib/route'
 
+const UsageView = lazy(() => import('./features/usage/UsageView'))
+
 interface FlatSection { id: string; title: string; chapterId: string; chapterTitle: string; file: string; index: number }
 
 // Sections with a null id are chapter intros; they are addressed by the chapter id
@@ -43,6 +45,7 @@ const GamePicker = () => (
         </a>
       ))}
     </div>
+    <p className="picker-foot"><a href="#/usage">Build cost</a>: Claude Code tokens spent making this guide</p>
   </main>
 )
 
@@ -231,6 +234,7 @@ const GuideView = ({ game, route }: { game: GameConfig; route: Route }) => {
 
 export const App = () => {
   const route = useRoute()
+  if (route.game === 'usage') return <Suspense fallback={<p className="state">Loading...</p>}><UsageView /></Suspense>
   const game = route.game ? gameById(route.game) : undefined
   if (!game) return <GamePicker />
   return <GuideView game={game} route={route} />
