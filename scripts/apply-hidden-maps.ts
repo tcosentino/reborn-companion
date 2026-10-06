@@ -8,8 +8,7 @@
 //   --suggest  pair screenshots missing from hidden-maps/<game>.json automatically (by item, section name and the
 //              tightest cluster of events) and write them to the file for review
 import { spawnSync } from 'node:child_process'
-import { createHash } from 'node:crypto'
-import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import type { Chapter, Dex, GuideIndex, ImageBlock } from '../app/src/data/types'
@@ -17,6 +16,7 @@ import { groupHiddenItems } from '../app/src/features/hidden-items/group.ts'
 import {
   cropBox, itemSyms, rankMaps, suggestHiddenMap, type HiddenMapDef, type ItemMap, type ItemMapCandidate, type Located, type Tile
 } from '../app/src/lib/itemMaps.ts'
+import { pruneRenders, renderCached } from './map-cards.ts'
 import { writePng } from './png-rgba.ts'
 import { assetsDir, hasMaps, imageLoader, loadMap, loadTilesets, mapsDir, renderMap, type GameMap, type Tileset } from './rmxp.ts'
 
@@ -120,7 +120,6 @@ const main = (game: string, suggest: boolean) => {
   const tilesets = ready ? loadTilesets(maps) : {}
   const load = imageLoader(assetsDir(ROOT, game))
   const keep = new Set<string>()
-  if (ready) mkdirSync(imgDir, { recursive: true })
   const build = (file: string, d: HiddenMapDef): ItemMap => {
     const m = mapOf(d.map)
     const marks = Object.entries(d.events).sort(([a], [b]) => a.localeCompare(b)).map(([key, ev]) => {
@@ -130,12 +129,8 @@ const main = (game: string, suggest: boolean) => {
     const box = cropBox(marks.map(k => [k.x, k.y] as Tile), m.width, m.height, d.pad)
     const png = file.replace(/\.\w+$/, '.png')
     keep.add(png)
-    const hash = createHash('sha1').update(JSON.stringify(box)).update(readFileSync(join(maps, `map${d.map}.json`))).digest('hex').slice(0, 10)
-    const stamp = join(imgDir, `${png}.v`)
-    if (!existsSync(join(imgDir, png)) || !existsSync(stamp) || readFileSync(stamp, 'utf8') !== hash) {
-      writeFileSync(join(imgDir, png), writePng(renderMap(m, tilesets[m.tileset], load, box)))
-      writeFileSync(stamp, hash)
-    }
+    const hash = renderCached(imgDir, png, [JSON.stringify(box), readFileSync(join(maps, `map${d.map}.json`))],
+      () => writePng(renderMap(m, tilesets[m.tileset], load, box)))
     return {
       mapName: m.name, src: `maps/${game}-items/${png}?v=${hash}`, w: box.w, h: box.h,
       marks: marks.map(k => ({ key: k.key, x: k.x - box.x, y: k.y - box.y }))
@@ -156,7 +151,7 @@ const main = (game: string, suggest: boolean) => {
     }
     writeFileSync(file, JSON.stringify(chapter))
   }
-  if (usable) readdirSync(imgDir).filter(f => !keep.has(f.replace(/\.v$/, ''))).forEach(f => rmSync(join(imgDir, f)))
+  if (usable) pruneRenders(imgDir, keep)
   if (errors.length) {
     errors.forEach(e => console.error(e))
     process.exit(1)

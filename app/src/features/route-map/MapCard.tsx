@@ -15,8 +15,6 @@ export interface MapMark {
   label: ReactNode
   // Extra legend text under the label (notes, tags)
   detail?: ReactNode
-  // Tooltip on the label
-  hint?: string
   // The stop is in front of a person, in this direction: the marker is drawn clear of their sprite
   face?: Tile
   done?: boolean
@@ -69,7 +67,7 @@ const Legend = ({ marks }: { marks: MapMark[] }) => {
           <label>
             <span className="rm-num" aria-hidden="true">{m.key}</span>
             <span className="rm-text">
-              <span className="rm-label" title={m.hint}><span className="sr-only">{`Marker ${m.key}: `}</span>{m.label}</span>
+              <span className="rm-label"><span className="sr-only">{`Marker ${m.key}: `}</span>{m.label}</span>
               {m.detail}
             </span>
             {m.onToggle && <input type="checkbox" checked={!!m.done} onChange={m.onToggle} />}
@@ -96,10 +94,14 @@ export interface MapCardProps {
   spoiler?: boolean
   // Shown instead when the render is missing (a host built without the game files); nothing by default
   fallback?: ReactNode
+  // With a missing render and no fallback, keep the card with its legend instead of hiding it (checklists)
+  keepLegend?: boolean
+  // Under the map and legend (e.g. a link to the guide's own screenshot)
+  footer?: ReactNode
 }
 
 // Game map card shared by route maps and hidden-item maps: header, map with markers (click to enlarge), legend.
-export const MapCard = ({ id, eyebrow, title, aside, map, marks, className, collapsed, spoiler, fallback = null }: MapCardProps) => {
+export const MapCard = ({ id, eyebrow, title, aside, map, marks, className, collapsed, spoiler, fallback, keepLegend, footer }: MapCardProps) => {
   const [broken, setBroken] = useState(false)
   const dialog = useRef<HTMLDialogElement>(null)
   const [open, setOpen] = useState(false)
@@ -117,7 +119,7 @@ export const MapCard = ({ id, eyebrow, title, aside, map, marks, className, coll
     }
     if (!open && d.open) d.close()
   }, [open, map, marks])
-  if (broken) return <>{fallback}</>
+  if (broken && (fallback !== undefined || !keepLegend)) return <>{fallback ?? null}</>
   const name = typeof title === 'string' ? title : map.mapName
   return (
     <figure className={`route-map${className ? ` ${className}` : ''}${collapsed ? ' is-collapsed' : ''}`} id={id}>
@@ -129,8 +131,8 @@ export const MapCard = ({ id, eyebrow, title, aside, map, marks, className, coll
         {aside}
       </figcaption>
       {/* The legend sits beside the map, below it on narrow screens or when there is nothing to list */}
-      {!collapsed && <div className={`rm-body${revealed && marks.length ? ' rm-side' : ''}`}>
-        {revealed ? (
+      {!collapsed && <div className={`rm-body${revealed && marks.length && !broken ? ' rm-side' : ''}`}>
+        {broken ? null : revealed ? (
           <button type="button" className="rm-open" onClick={() => setOpen(true)} aria-label={`Enlarge map: ${name}`}>
             <MapCanvas m={map} marks={marks} onError={() => setBroken(true)} />
           </button>
@@ -139,6 +141,7 @@ export const MapCard = ({ id, eyebrow, title, aside, map, marks, className, coll
         )}
         {revealed && <Legend marks={marks} />}
       </div>}
+      {!collapsed && footer && <div className="rm-foot">{footer}</div>}
       <dialog ref={dialog} className="rm-dialog" onClose={() => setOpen(false)} onClick={e => { if (e.target === e.currentTarget) setOpen(false) }}>
         <div className="rm-dialog-bar">
           <span>{name}</span>

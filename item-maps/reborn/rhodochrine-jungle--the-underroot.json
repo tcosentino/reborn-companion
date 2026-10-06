@@ -1,0 +1,90 @@
+[
+  {
+    "id": "beryl-bridge",
+    "match": "Enter the Beryl Ward. We can't really explore much",
+    "map": 144,
+    "title": "Hidden on Beryl Bridge",
+    "items": [
+      { "event": 12 },
+      { "event": 13 }
+    ]
+  },
+  {
+    "id": "healing-house-down",
+    "match": "Itemfind here for an *Exp. Candy S* then head down the hill",
+    "map": 150,
+    "title": "From the healing house down to the fire",
+    "image": "rhodo1.png",
+    "items": [
+      { "event": 140 },
+      { "event": 146 },
+      { "event": 44 }
+    ]
+  },
+  {
+    "id": "underroot-entry",
+    "match": "Head to the right first. You'll find a hidden *Chesto Berry* here.",
+    "map": 153,
+    "title": "Underroot: where you fall in",
+    "items": [
+      { "event": 109 },
+      { "event": 100 }
+    ]
+  },
+  {
+    "id": "underroot-west",
+    "match": "Back in the Underroot, go up and grab a hidden *Purple Shard*.",
+    "map": 153,
+    "title": "Underroot: west side",
+    "items": [
+      { "event": 111 },
+      { "event": 108 }
+    ]
+  },
+  {
+    "id": "underroot-north",
+    "match": "Up and to the right you can get a hidden *Energy Root* and *Red Shard*",
+    "map": 153,
+    "title": "Underroot: north side",
+    "items": [
+      { "event": 102 },
+      { "event": 112 },
+      { "event": 113 },
+      { "event": 107 }
+    ]
+  },
+  {
+    "id": "underroot-waterfall",
+    "match": "Still in the Underroot, head down from here and take the stairs downward",
+    "map": 153,
+    "title": "Underroot: down the east side of the waterfall",
+    "items": [
+      { "event": 106 },
+      { "event": 110 },
+      { "event": 101 },
+      { "event": 104 },
+      { "event": 97 }
+    ]
+  },
+  {
+    "id": "underroot-east",
+    "match": "At the first fork, now go to the right.",
+    "map": 153,
+    "title": "Underroot: east forks",
+    "items": [
+      { "event": 105 },
+      { "event": 42 },
+      { "event": 114 }
+    ]
+  },
+  {
+    "id": "beryl-library-outside",
+    "match": "Head out and to the right, and you'll actually pop out in Beryl Ward.",
+    "map": 149,
+    "title": "Outside the Beryl Library",
+    "items": [
+      { "event": 79 },
+      { "event": 80 }
+    ]
+  }
+]

@@ -70,7 +70,7 @@ Skip it when:
 - the direction is trivial: one straight walk, "head to the next area", "go back to the Pokemon Center", or a room you can see all of
 - the paragraph is story or cutscene text, battle commentary or an item list
 - you cannot confidently pin down the map and coordinates. A wrong map is worse than none.
-- the paragraph only lists hidden items (A)(B) next to a `[guide image]` that already shows those spots. Hidden items are not events, so their tiles cannot be looked up.
+- the paragraph only lists hidden items or item balls: those get an item map card instead (`item-maps/AUTHORING.md`).
 
 Typical density is 0-4 routes per section, and many sections get none.
 

@@ -122,3 +122,131 @@ export const cropBox = (tiles: Tile[], width: number, height: number, pad = 3, m
   const [y0, y1] = grow(Math.min(...ys), Math.max(...ys), minH, height)
   return { x: x0, y: y0, w: x1 - x0 + 1, h: y1 - y0 + 1 }
 }
+
+// Item map cards: item balls and hidden items that the guide only lists in prose ("a hidden *Max Revive* behind the
+// third tree"), drawn on the game map as a numbered checklist. Curated in item-maps/<game>/<section-id>.json;
+// scripts/apply-item-maps.ts renders the crop and inserts an `itemMap` block after the matched paragraph.
+
+// One item on a card: the map event that gives it, and an optional legend label (default: the item's name)
+export interface ItemCardItemDef { event: number; label?: string }
+
+// One entry in item-maps/<game>/<section-id>.json. One card covers one map (floors are separate cards).
+export interface ItemCardDef {
+  // Kebab slug, unique within the section. Part of every checkbox id, so never rename it.
+  id: string
+  // Verbatim start of the paragraph the card goes after (whitespace-trimmed)
+  match: string
+  // Game map id (out/maps/<game>/index.json)
+  map: number
+  title?: string
+  // In legend order; markers are numbered 1..n in this order
+  items: ItemCardItemDef[]
+  // Extra tiles of context around the markers (default 3)
+  pad?: number
+  // A plain guide screenshot in the same section that this card supersedes: it is folded into the card
+  image?: string
+}
+
+export interface ItemCardMark {
+  key: string
+  event: number
+  // Item SYM and legend label
+  item: string
+  label: string
+  // No graphic on the map (found with the Itemfinder or by pressing A on the tile)
+  hidden: boolean
+  // Tile in the crop
+  x: number
+  y: number
+}
+
+export interface ItemCardBlock extends ItemMap {
+  type: 'itemMap'
+  // Card slug (anchor `items-<id>`)
+  id: string
+  // Section id, for checkbox ids
+  section: string
+  title?: string
+  marks: ItemCardMark[]
+  // The folded guide screenshot (`image`), linked from the card and shown if the render is missing
+  shot?: { file: string; src: string }
+}
+
+// Checkbox id in the `hidden` checklist, next to the hidden-item screenshot ids
+export const itemCheckId = (section: string, card: string, event: number) => `item:${section}/${card}/${event}`
+export const itemCardAnchor = (slug: string) => `items-${slug}`
+
+// Every item event's checkbox id per card block, in guide order (battles.json `i`, guarded by the progress-id baseline)
+export const itemCardIds = (blocks: { type: string }[]): string[] =>
+  blocks.flatMap(b => b.type === 'itemMap'
+    ? (b as ItemCardBlock).marks.map(m => itemCheckId((b as ItemCardBlock).section, (b as ItemCardBlock).id, m.event))
+    : [])
+
+// A map event that gives an item, as recorded by scripts/dump-maps.rb
+export interface ItemEventInfo { id: number; x: number; y: number; item: string; hidden: boolean }
+
+interface PageLike { item?: string; char?: string; tile?: number }
+
+// The event's item and whether it is hidden (its item page has no graphic), or null when it gives no item
+export const itemEventInfo = (e: { id: number; x: number; y: number; pages: PageLike[] }): ItemEventInfo | null => {
+  const p = e.pages.find(pg => pg.item)
+  return p?.item ? { id: e.id, x: e.x, y: e.y, item: p.item, hidden: !p.char && !p.tile } : null
+}
+
+const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/
+
+// Shape checks that need no map data. `events` (event id -> item info, or null for a non-item event) and `maps`
+// (known map ids) add the data checks when the map dump is present.
+export const validateItemCardDefs = (
+  section: string, defs: ItemCardDef[],
+  data?: { hasMap: (id: number) => boolean; event: (map: number, id: number) => ItemEventInfo | null | undefined }
+): string[] => {
+  const errors: string[] = []
+  if (!Array.isArray(defs)) return [`${section}: file must be a JSON array of cards`]
+  const seen = new Set<string>()
+  for (const d of defs) {
+    const at = `${section}/${d.id}`
+    if (typeof d.id !== 'string' || !SLUG.test(d.id)) errors.push(`${section}: bad card id "${d.id}"`)
+    if (seen.has(d.id)) errors.push(`${section}: duplicate card id "${d.id}"`)
+    seen.add(d.id)
+    if (typeof d.match !== 'string' || !d.match.trim()) errors.push(`${at}: missing match`)
+    if (d.image !== undefined && (typeof d.image !== 'string' || /^hidden\d+\./.test(d.image))) errors.push(`${at}: image must be a plain screenshot file name (hiddenNNN.png belongs in hidden-maps/)`)
+    if (!Number.isInteger(d.map)) { errors.push(`${at}: missing map id`); continue }
+    if (data && !data.hasMap(d.map)) { errors.push(`${at}: no map ${d.map}`); continue }
+    if (!Array.isArray(d.items) || !d.items.length) { errors.push(`${at}: needs at least one item`); continue }
+    const events = new Set<number>()
+    for (const it of d.items) {
+      if (!Number.isInteger(it?.event)) { errors.push(`${at}: every item needs an integer event`); continue }
+      if (events.has(it.event)) errors.push(`${at}: event ${it.event} is listed twice`)
+      events.add(it.event)
+      if (it.label !== undefined && (typeof it.label !== 'string' || !it.label.trim())) errors.push(`${at}: event ${it.event} has an empty label`)
+      if (!data) continue
+      const info = data.event(d.map, it.event)
+      if (info === undefined) errors.push(`${at}: map ${d.map} has no event ${it.event}`)
+      else if (info === null) errors.push(`${at}: event ${it.event} on map ${d.map} is not an item ball or hidden item`)
+    }
+  }
+  return errors
+}
+
+// Card block marks from a def and its events, numbered in def order and made relative to the crop
+export const itemCardMarks = (def: ItemCardDef, events: Map<number, ItemEventInfo>, box: { x: number; y: number }, name: (sym: string) => string): ItemCardMark[] =>
+  def.items.map((it, i) => {
+    const e = events.get(it.event)!
+    return { key: String(i + 1), event: e.id, item: e.item, label: it.label ?? name(e.item), hidden: e.hidden, x: e.x - box.x, y: e.y - box.y }
+  })
+
+// Image blocks a card folds in carry the card's id; unapply clears it (see scripts/apply-item-maps.ts)
+interface ImageLike { type: string; file?: string; itemCard?: string }
+export const foldImages = <B extends ImageLike>(blocks: B[], byFile: Map<string, string>): { blocks: B[]; missing: string[] } => {
+  const found = new Set<string>()
+  const out = blocks.map(b => {
+    if (b.type !== 'image') return b
+    const { itemCard: _, ...rest } = b
+    const card = b.file ? byFile.get(b.file) : undefined
+    if (!card) return rest as B
+    found.add(b.file!)
+    return { ...rest, itemCard: card } as B
+  })
+  return { blocks: out, missing: [...byFile.keys()].filter(f => !found.has(f)) }
+}

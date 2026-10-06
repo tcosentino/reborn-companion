@@ -3,7 +3,7 @@
 
 import type { TaskBlock } from '../lib/tasks'
 import type { RouteBlock } from '../lib/routes'
-import type { ItemMap } from '../lib/itemMaps'
+import type { ItemCardBlock, ItemMap } from '../lib/itemMaps'
 import type { StartersBlock } from '../lib/starters'
 
 export type Sym = string
@@ -38,7 +38,8 @@ export interface Section {
 
 export interface ProseBlock { type: 'prose'; markdown: string }
 // `map`: a hidden-items screenshot redrawn from the game map (scripts/apply-hidden-maps.ts)
-export interface ImageBlock { type: 'image'; file: string; src: string; map?: ItemMap }
+// `itemCard`: the item map card (scripts/apply-item-maps.ts) that folds this screenshot in; it is not shown on its own
+export interface ImageBlock { type: 'image'; file: string; src: string; map?: ItemMap; itemCard?: string }
 
 export interface Trainer {
   name: string
@@ -139,9 +140,9 @@ export interface HtmlBlock { type: 'html'; macro: string; html: string }
 
 export type Block =
   | ProseBlock | ImageBlock | BattleBlock | EncountersBlock | ShopBlock
-  | TutorBlock | PickupBlock | MiningBlock | WildHeldBlock | HtmlBlock | TaskBlock | RouteBlock | StartersBlock
+  | TutorBlock | PickupBlock | MiningBlock | WildHeldBlock | HtmlBlock | TaskBlock | RouteBlock | StartersBlock | ItemCardBlock
 
-export type { TaskBlock, RouteBlock, StartersBlock }
+export type { TaskBlock, RouteBlock, StartersBlock, ItemCardBlock }
 
 export interface SpeciesForm {
   name: string

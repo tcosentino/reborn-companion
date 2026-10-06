@@ -31,6 +31,11 @@ See `README.md` for the data pipeline, layout and run commands.
 
 - Show `ItemSprite` (`app/src/components/dex/ItemSprite.tsx`, by `sym` or by `name`) before every item name in the UI. Icons come from `scripts/build-sprites.ts` (`item-sprites.json`); the component renders nothing when they are not built.
 
+## Item maps
+
+- Cards for items the guide lists only in prose live in `item-maps/<game>/<section-id>.json` (see README "Item maps", authoring steps in `item-maps/AUTHORING.md`). One file per section; one card per map. Validate with `node scripts/maps.ts <game> items-check <section>` and look at `items-preview` before building.
+- Checkbox ids are `item:<section>/<card id>/<event id>` and are in the progress-id baseline: never rename a card `id` or replace an event id once shipped. If an upstream text change breaks a card's `match`, update it like a task `match`.
+
 ## Tests
 
 - `bash scripts/test.sh` (override, task and progress-id unit tests + upstream generator tests) and `cd app && yarn test`.

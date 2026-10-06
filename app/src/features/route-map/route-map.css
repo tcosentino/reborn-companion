@@ -75,3 +75,4 @@
 .rm-dialog-scroll { overflow: auto; max-height: calc(100vh - 70px); background: #000; line-height: 0 }
 .rm-dialog-scroll .rm-canvas { max-height: none }
 .rm-dialog-scroll img { image-rendering: pixelated }
+.rm-foot { padding: .45rem .9rem; border-top: 1px solid var(--line); font-size: .85rem; color: var(--muted) }

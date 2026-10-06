@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import type { Dex } from '../../data/types'
 import { useDex, useGame } from '../../components/common'
 import { ItemSprite } from '../../components/dex/ItemSprite'
+import { DexHover } from '../hovercards/DexHover'
 import { MapCard, type MapMark } from '../route-map/MapCard'
 import { hiddenEntryId, type HiddenEntry, type HiddenItemsBlock } from './group'
 import { useHiddenChecked } from './useHiddenChecked'
@@ -10,15 +11,21 @@ import './hidden-items.css'
 const norm = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '')
 
 const byName = new WeakMap<Dex, Map<string, string>>()
-const describe = (dex: Dex, name: string) => {
-  if (!byName.has(dex)) byName.set(dex, new Map(Object.values(dex.items).map(i => [norm(i.name), i.desc])))
+// The guide names hidden items by display name; the hover card needs the SYM
+const itemSym = (dex: Dex, name: string) => {
+  if (!byName.has(dex)) byName.set(dex, new Map(Object.entries(dex.items).map(([sym, i]) => [norm(i.name), sym])))
   return byName.get(dex)?.get(norm(name))
 }
+
+// Item name with its icon; hovering shows the item card. Not focusable: the row's checkbox is the tab stop.
+export const ItemLabel = ({ sym, name }: { sym?: string; name: string }) => (
+  <DexHover kind="item" sym={sym} focusable={false}><ItemSprite sym={sym} name={name} />{name}</DexHover>
+)
 
 const R = 15
 const C = 2 * Math.PI * R
 
-const Ring = ({ got, total }: { got: number; total: number }) => (
+export const Ring = ({ got, total }: { got: number; total: number }) => (
   <svg className="hi-ring" viewBox="0 0 36 36" aria-hidden="true">
     <circle cx="18" cy="18" r={R} className="hi-ring-bg" />
     <circle cx="18" cy="18" r={R} className="hi-ring-fg" strokeDasharray={`${(got / total) * C} ${C}`} transform="rotate(-90 18 18)" />
@@ -74,8 +81,8 @@ const Screenshot = ({ b, collapsed, p }: { b: HiddenItemsBlock; collapsed?: bool
                   <input type="checkbox" checked={checked} onChange={() => p.toggle(p.ids[i])} />
                   <span className="hi-key" aria-hidden="true">{e.letter}</span>
                   <span className="hi-text">
-                    <span className="hi-name" title={describe(dex, e.name)}>
-                      <span className="sr-only">{`Marker ${e.letter}: `}</span><ItemSprite name={e.name} />{e.name}
+                    <span className="hi-name">
+                      <span className="sr-only">{`Marker ${e.letter}: `}</span><ItemLabel sym={itemSym(dex, e.name)} name={e.name} />
                     </span>
                     <Detail e={e} />
                   </span>
@@ -108,8 +115,7 @@ export const HiddenItems = ({ b, collapsed }: { b: HiddenItemsBlock; collapsed?:
     key: e.letter,
     x: at.get(e.letter)?.x,
     y: at.get(e.letter)?.y,
-    label: <><ItemSprite name={e.name} />{e.name}</>,
-    hint: describe(dex, e.name),
+    label: <ItemLabel sym={itemSym(dex, e.name)} name={e.name} />,
     detail: <Detail e={e} />,
     done: !!done[ids[i]],
     onToggle: () => toggle(ids[i])

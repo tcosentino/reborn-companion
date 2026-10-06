@@ -4,12 +4,12 @@
 // Needs the map dump from scripts/build-maps.sh; without it, route blocks are skipped with a warning.
 //
 // CLI: node scripts/apply-routes.ts <game>
-import { createHash } from 'node:crypto'
-import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import type { Chapter, GuideIndex } from '../app/src/data/types'
 import { applyRoutes, unapplyRoutes, type RouteBlock, type RouteDef, type Tile } from '../app/src/lib/routes.ts'
+import { pruneRenders, readSectionDefs, renderCached } from './map-cards.ts'
 import { writePng } from './png-rgba.ts'
 import {
   assetsDir, findPath, hasMaps, imageLoader, loadIndex, loadMap, loadTilesets, mapsDir, renderMap, visibleEvents, walker,
@@ -125,9 +125,7 @@ const main = (game: string) => {
   const out = join(ROOT, 'out/json', game)
   const maps = mapsDir(ROOT, game)
   const imgDir = join(ROOT, 'app/public/maps', game)
-  const defs = new Map<string, RouteDef[]>(existsSync(dir)
-    ? readdirSync(dir).filter(f => f.endsWith('.json')).map(f => [f.slice(0, -5), JSON.parse(readFileSync(join(dir, f), 'utf8'))])
-    : [])
+  const defs = readSectionDefs<RouteDef>(dir)
   const ready = hasMaps(maps)
   if (!ready && defs.size) console.warn(`apply-routes: no map dump in out/maps/${game} (run scripts/build-maps.sh ${game}); skipping route maps`)
   const index = ready ? loadIndex(maps) : undefined
@@ -136,7 +134,6 @@ const main = (game: string) => {
   const load = imageLoader(assetsDir(ROOT, game))
   const mapCache = new Map<number, GameMap>()
   const keep = new Set<string>()
-  if (ready) mkdirSync(imgDir, { recursive: true })
 
   const build = (section: string, def: RouteDef) => {
     if (!mapCache.has(def.map)) mapCache.set(def.map, loadMap(maps, def.map))
@@ -146,12 +143,8 @@ const main = (game: string) => {
     if (typeof r === 'string') { errors.push(`${section}/${def.id}: ${r}`); return null }
     const file = `${section}--${def.id}.png`
     keep.add(file)
-    const hash = createHash('sha1').update(JSON.stringify([def.hide ?? [], r.box, map.data.length])).update(readFileSync(join(maps, `map${def.map}.json`))).digest('hex').slice(0, 10)
-    const stamp = join(imgDir, `${file}.v`)
-    if (!existsSync(join(imgDir, file)) || !existsSync(stamp) || readFileSync(stamp, 'utf8') !== hash) {
-      writeFileSync(join(imgDir, file), writePng(renderMap(map, tileset, load, r.box, new Set(def.hide ?? []))))
-      writeFileSync(stamp, hash)
-    }
+    const hash = renderCached(imgDir, file, [JSON.stringify([def.hide ?? [], r.box, map.data.length]), readFileSync(join(maps, `map${def.map}.json`))],
+      () => writePng(renderMap(map, tileset, load, r.box, new Set(def.hide ?? []))))
     return routeBlock(def, map, r.path, r.stops, r.box, `maps/${game}/${file}?v=${hash}`)
   }
 
@@ -175,7 +168,7 @@ const main = (game: string) => {
   }
   unseen.forEach(s => errors.push(`routes/${game}/${s}.json: no such section`))
   // Drop renders of routes that no longer exist
-  if (ready && !errors.length) readdirSync(imgDir).filter(f => !keep.has(f.replace(/\.v$/, ''))).forEach(f => rmSync(join(imgDir, f)))
+  if (ready && !errors.length) pruneRenders(imgDir, keep)
   if (errors.length) {
     errors.forEach(e => console.error(e))
     process.exit(1)

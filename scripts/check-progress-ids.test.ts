@@ -15,3 +15,12 @@ test('missingIds reports baseline ids no longer shipped, ignores new ones', () =
 test('battleIds includes walkthrough task ids', () => {
   assert.deepEqual(battleIds({ s: { a: [['A:X:0', 'A']] }, t: { a: [['task:a/x', 'X']] } }), ['A:X:0', 'task:a/x'])
 })
+
+test('battleIds includes item map ids', () => {
+  assert.deepEqual(battleIds({ s: {}, i: { a: ['item:a/x/3', 'item:a/x/1'] } }), ['item:a/x/1', 'item:a/x/3'])
+})
+
+test('missingIds skips item map ids when the build had no map dump', () => {
+  assert.deepEqual(missingIds(['A', 'item:a/x/1'], [], false), ['A'])
+  assert.deepEqual(missingIds(['A', 'item:a/x/1'], [], true), ['A', 'item:a/x/1'])
+})

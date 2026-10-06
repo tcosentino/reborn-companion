@@ -14,6 +14,8 @@ node --no-warnings "$ROOT/scripts/apply-starters.ts" "$GAME"
 node --no-warnings "$ROOT/scripts/apply-routes.ts" "$GAME"
 # Hidden-item screenshots redrawn on the game map (hidden-maps/<game>.json); also needs scripts/build-maps.sh
 node --no-warnings "$ROOT/scripts/apply-hidden-maps.ts" "$GAME"
+# Item map cards (item-maps/<game>/) for items the guide lists only in prose; also needs scripts/build-maps.sh
+node --no-warnings "$ROOT/scripts/apply-item-maps.ts" "$GAME"
 node --no-warnings "$ROOT/scripts/build-search.ts" "$GAME"
 rm -rf "$ROOT/app/public/data/$GAME"
 mkdir -p "$ROOT/app/public/data"

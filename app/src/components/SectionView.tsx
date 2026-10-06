@@ -13,6 +13,7 @@ import { useDex, useGame } from './common'
 import { linkProse, nameMaps } from '../features/hovercards/names'
 import { HiddenItems } from '../features/hidden-items/HiddenItems'
 import { RouteMap } from '../features/route-map/RouteMap'
+import { ItemMapCard } from '../features/hidden-items/ItemMapCard'
 import { groupHiddenItems, type RenderBlock } from '../features/hidden-items/group'
 import { blockAnchors } from './palette/anchors'
 import { useAnchorInView } from '../features/guide-nav/useAnchorInView'
@@ -46,7 +47,8 @@ const BlockView = ({ b, id, done, toggle, onTask, hideDefeated }: {
 }) => {
   switch (b.type) {
     case 'prose': return <Prose md={b.markdown} />
-    case 'image': return <Image src={b.src} file={b.file} />
+    // A screenshot folded into an item map card is shown (linked) by that card instead
+    case 'image': return b.itemCard ? null : <Image src={b.src} file={b.file} />
     case 'battle': return <Battle b={b} done={!!done[battleId(b.trainers.map(t => t.teamId))]} onToggle={toggle} collapsed={hideDefeated} />
     case 'encounters': return <Encounters b={b} id={id} collapsed={hideDefeated} />
     case 'shop': return <Shop b={b} id={id} />
@@ -57,6 +59,7 @@ const BlockView = ({ b, id, done, toggle, onTask, hideDefeated }: {
     case 'hiddenItems': return <HiddenItems b={b} collapsed={hideDefeated} />
     case 'html': return <div className="prose" dangerouslySetInnerHTML={{ __html: b.html }} />
     case 'route': return <RouteMap b={b} />
+    case 'itemMap': return <ItemMapCard b={b} collapsed={hideDefeated} />
     case 'starters': return <Starters b={b} />
     case 'task': return <Task b={b} done={!!done[b.id]} onToggle={onTask} collapsed={hideDefeated}><Prose md={b.markdown} /></Task>
   }

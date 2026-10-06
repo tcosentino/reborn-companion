@@ -81,30 +81,35 @@ export const pathRuns = (path: Tile[]): Tile[][] =>
 
 const paragraphs = (md: string) => md.split('\n\n').map(p => p.trim()).filter(Boolean)
 
-// Undo earlier inserts: route blocks are dropped and the prose they split is joined again
-export const unapplyRoutes = <B extends BlockLike>(blocks: (B | RouteBlock)[]): B[] => {
+// Undo earlier inserts of one block type (route maps, item maps): those blocks are dropped and the prose they split
+// is joined again
+export const unapplyInserted = <B extends BlockLike>(blocks: B[], type: string): B[] => {
   const out: B[] = []
   for (const b of blocks) {
-    if (b.type === 'route') continue
+    if (b.type === type) continue
     const prev = out[out.length - 1]
     if (b.type === 'prose' && prev?.type === 'prose') prev.markdown = `${prev.markdown}\n\n${b.markdown}`
-    else out.push(b.type === 'prose' ? { ...b } as B : b as B)
+    else out.push(b.type === 'prose' ? { ...b } : b)
   }
   return out
 }
 
-// Inserts each built route after the paragraph (or task card) its def matches.
-// Returns the new blocks and the routes whose match found nothing.
-export const applyRoutes = <B extends BlockLike>(blocks: (B | RouteBlock)[], routes: { def: RouteDef; block: RouteBlock }[]) => {
-  const base = unapplyRoutes(blocks)
-  const used = new Set<RouteDef>()
-  const take = (p: string) => routes.filter(r => !used.has(r.def) && p.startsWith(r.def.match.trim()))
+export const unapplyRoutes = <B extends BlockLike>(blocks: (B | RouteBlock)[]): B[] => unapplyInserted(blocks, 'route') as B[]
+
+// Inserts each built block after the paragraph (or task card) its def matches, after undoing earlier inserts of the
+// same type. Returns the new blocks and the defs whose match found nothing.
+export const insertAfterParagraphs = <B extends BlockLike, D extends { match: string }, I extends BlockLike>(
+  blocks: (B | I)[], items: { def: D; block: I }[], type: I['type']
+) => {
+  const base = unapplyInserted(blocks, type) as (B | I)[]
+  const used = new Set<D>()
+  const take = (p: string) => items.filter(r => !used.has(r.def) && p.startsWith(r.def.match.trim()))
     .map(r => { used.add(r.def); return r.block })
-  const out: (B | RouteBlock)[] = []
+  const out: (B | I)[] = []
   for (let i = 0; i < base.length; i++) {
     const b = base[i]
     if (b.type === 'task') {
-      // Task cards sharing a paragraph follow it with an empty markdown; place routes after the whole group
+      // Task cards sharing a paragraph follow it with an empty markdown; place inserts after the whole group
       const hits = b.markdown ? take(b.markdown.trim()) : []
       out.push(b)
       while (hits.length && base[i + 1]?.type === 'task' && !base[i + 1].markdown) out.push(base[++i])
@@ -122,5 +127,10 @@ export const applyRoutes = <B extends BlockLike>(blocks: (B | RouteBlock)[], rou
     }
     if (pending.length) out.push({ ...b, markdown: pending.join('\n\n') })
   }
-  return { blocks: out, missing: routes.filter(r => !used.has(r.def)).map(r => r.def) }
+  return { blocks: out, missing: items.filter(r => !used.has(r.def)).map(r => r.def) }
 }
+
+// Inserts each built route after the paragraph (or task card) its def matches.
+// Returns the new blocks and the routes whose match found nothing.
+export const applyRoutes = <B extends BlockLike>(blocks: (B | RouteBlock)[], routes: { def: RouteDef; block: RouteBlock }[]) =>
+  insertAfterParagraphs<B, RouteDef, RouteBlock>(blocks, routes, 'route')

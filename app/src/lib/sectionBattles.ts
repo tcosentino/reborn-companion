@@ -2,6 +2,7 @@
 // Chapter JSON is lazy-loaded, so the sidebar and resume card read this compact file instead.
 // Only type-erasable TS here: the build script runs under Node's native type stripping.
 import type { Chapter, GuideIndex } from '../data/types'
+import { itemCardIds } from './itemMaps.ts'
 import { taskRefs, type TaskRef } from './tasks.ts'
 
 // [battle id (same key as the progress checklist), "Class Name" label]
@@ -13,6 +14,9 @@ export interface SectionBattles {
   s: Record<string, BattleRef[]>
   // Section id -> its walkthrough tasks (lib/tasks.ts), same [progress key, label] shape. Absent in older files.
   t?: Record<string, TaskRef[]>
+  // Section id -> its item map checkbox ids (lib/itemMaps.ts, `hidden` checklist). Not counted in progress totals,
+  // like hidden-item screenshots; listed so the progress-id baseline guards them. Absent when the build had no map dump.
+  i?: Record<string, string[]>
 }
 
 interface BattleLike {
@@ -37,13 +41,16 @@ export const battleRefs = (blocks: BattleLike[]): BattleRef[] =>
 export const buildSectionBattles = (index: GuideIndex, chapters: Map<string, Chapter>): SectionBattles => {
   const s: Record<string, BattleRef[]> = {}
   const t: Record<string, TaskRef[]> = {}
+  const i: Record<string, string[]> = {}
   for (const c of index.chapters) {
     for (const sec of chapters.get(c.file)?.sections ?? []) {
       const refs = battleRefs(sec.blocks as BattleLike[])
       if (refs.length) s[sec.id ?? c.id] = refs
       const tasks = taskRefs(sec.blocks)
       if (tasks.length) t[sec.id ?? c.id] = tasks
+      const items = itemCardIds(sec.blocks)
+      if (items.length) i[sec.id ?? c.id] = items
     }
   }
-  return { v: 1, s, t }
+  return { v: 1, s, t, ...(Object.keys(i).length ? { i } : {}) }
 }

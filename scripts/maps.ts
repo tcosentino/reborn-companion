@@ -9,12 +9,17 @@
 //   node scripts/maps.ts <game> check <section>          validate routes/<game>/<section>.json without building
 //   node scripts/maps.ts <game> reach <id> <x,y> [x,y,w,h] [hide,ids] [--surf]  ASCII of tiles walkable from x,y
 //                                                         (. reachable, # not, e/E event, W warp, @ start)
+//   node scripts/maps.ts <game> items <id> [x,y,w,h]     item events (hidden items, item balls) + PNG labelled by event id
+//   node scripts/maps.ts <game> items-check <section>    validate item-maps/<game>/<section>.json without building
+//   node scripts/maps.ts <game> items-preview <section> [id]  PNG of a section's item map cards as built, with grid
 //
 // PNGs go to out/map-previews/; the path is printed.
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import type { RouteDef, Tile } from '../app/src/lib/routes.ts'
+import { itemEventInfo, validateItemCardDefs, type ItemCardDef, type ItemEventInfo } from '../app/src/lib/itemMaps.ts'
+import { cardBox, mapData } from './apply-item-maps.ts'
 import { resolveRoute, validateRouteDefs } from './apply-routes.ts'
 import { blank, draw, writePng, type Rgba } from './png-rgba.ts'
 import {
@@ -28,7 +33,7 @@ const dir = mapsDir(ROOT, game ?? '')
 const outDir = join(ROOT, 'out/map-previews')
 
 const usage = () => {
-  console.error(readFileSync(new URL(import.meta.url), 'utf8').split('\n').slice(2, 13).map(l => l.replace(/^\/\/ ?/, '')).join('\n'))
+  console.error(readFileSync(new URL(import.meta.url), 'utf8').split('\n').slice(2, 16).map(l => l.replace(/^\/\/ ?/, '')).join('\n'))
   process.exit(2)
 }
 if (!game || !cmd) usage()
@@ -84,6 +89,14 @@ const pathOverlay = (img: Rgba, path: Tile[], box: Box) => {
     fillRect(img, Math.min(cx, nx) - 3, Math.min(cy, ny) - 3, Math.abs(nx - cx) + 6, Math.abs(ny - cy) + 6, [255, 214, 10, 255])
   })
 }
+// A filled square on a tile with a number in it (event id or marker number)
+const tileMarker = (img: Rgba, box: Box, x: number, y: number, text: string, rgb: number[]) => {
+  const px = (x - box.x) * 32, py = (y - box.y) * 32
+  fillRect(img, px + 1, py + 1, 30, 30, [...rgb, 230])
+  label(img, text, px + Math.max(0, Math.round((32 - (text.length * 8 + 2)) / 2)), py + 9)
+}
+const HIDDEN_RGB = [220, 38, 38], BALL_RGB = [37, 99, 235]
+
 const save = (file: string, img: Rgba) => {
   mkdirSync(outDir, { recursive: true })
   const path = join(outDir, file)
@@ -185,6 +198,7 @@ switch (cmd) {
       else if (b.type === 'battle') console.log(`\n[battle]`)
       else if (b.type === 'image') console.log(`\n[guide image ${b.file}]`)
       else if (b.type === 'route') console.log(`\n[route ${b.id}]`)
+      else if (b.type === 'itemMap') console.log(`\n[item map ${b.id}]`)
     }
     break
   }
@@ -205,6 +219,64 @@ switch (cmd) {
     errors.forEach(e => console.error(e))
     console.log(errors.length ? `${errors.length} problem(s)` : `ok: ${defs.length} route(s)`)
     if (errors.length) process.exitCode = 1
+    break
+  }
+  case 'items': {
+    const m = loadMap(dir, Number(args[0]))
+    const items = m.events.map(itemEventInfo).filter((e): e is ItemEventInfo => !!e)
+    console.log(`map ${m.id} "${m.name}" ${m.width}x${m.height}: ${items.length} item event(s)`)
+    for (const e of items) {
+      const ev = m.events.find(x => x.id === e.id)!
+      console.log(`  ev${e.id}\t(${e.x},${e.y})\t${e.hidden ? 'hidden' : 'ball  '}\t${e.item}${ev.pages.every(p => p.cond) ? ' [conditional]' : ''}`)
+    }
+    if (!items.length) break
+    // Around the items unless a box is given; red squares are hidden items, blue ones item balls, labelled by event id
+    const xs = items.map(e => e.x), ys = items.map(e => e.y)
+    const box = args[1] ? parseBox(args[1], m) : {
+      x: Math.max(0, Math.min(...xs) - 3), y: Math.max(0, Math.min(...ys) - 3),
+      w: Math.min(m.width, Math.max(...xs) + 4) - Math.max(0, Math.min(...xs) - 3), h: Math.min(m.height, Math.max(...ys) + 4) - Math.max(0, Math.min(...ys) - 3)
+    }
+    const img = renderMap(m, tilesets[m.tileset], load, box)
+    grid(img, box)
+    items.filter(e => e.x >= box.x && e.y >= box.y && e.x < box.x + box.w && e.y < box.y + box.h)
+      .forEach(e => tileMarker(img, box, e.x, e.y, String(e.id), e.hidden ? HIDDEN_RGB : BALL_RGB))
+    save(`items-map${m.id}${args[1] ? `-${args[1].replaceAll(',', '_')}` : ''}.png`, img)
+    break
+  }
+  case 'items-check':
+  case 'items-preview': {
+    const [section, only] = args
+    if (!section) usage()
+    const defs: ItemCardDef[] = JSON.parse(readFileSync(join(ROOT, 'item-maps', game, `${section}.json`), 'utf8'))
+    const data = mapData(dir)
+    const errors = validateItemCardDefs(section, defs, data)
+    if (cmd === 'items-check') {
+      const sec = findSection(section)
+      const paras = sec.blocks.flatMap(b => b.markdown && (b.type === 'prose' || b.type === 'task') ? paragraphs(b.markdown) : [])
+      const images = new Set(sec.blocks.flatMap(b => b.type === 'image' && b.file ? [b.file] : []))
+      for (const d of Array.isArray(defs) ? defs : []) {
+        if (typeof d.match === 'string' && !paras.some(p => p.startsWith(d.match.trim()))) errors.push(`${section}/${d.id}: no paragraph starts with "${d.match}"`)
+        if (d.image && !images.has(d.image)) errors.push(`${section}/${d.id}: no guide image ${d.image} in this section`)
+      }
+      errors.forEach(e => console.error(e))
+      console.log(errors.length ? `${errors.length} problem(s)` : `ok: ${defs.length} item map card(s), ${defs.reduce((n, d) => n + d.items.length, 0)} item(s)`)
+      if (errors.length) process.exitCode = 1
+      break
+    }
+    if (errors.length) { errors.forEach(e => console.error(e)); process.exitCode = 1; break }
+    for (const def of defs.filter(d => !only || d.id === only)) {
+      const { map: m, events } = data.get(def.map)
+      const box = cardBox(def, m, events)
+      const img = renderMap(m, tilesets[m.tileset], load, box)
+      grid(img, box)
+      def.items.forEach((it, i) => {
+        const e = events.get(it.event)!
+        tileMarker(img, box, e.x, e.y, String(i + 1), e.hidden ? HIDDEN_RGB : BALL_RGB)
+        console.log(`  ${i + 1}. ev${e.id} (${e.x},${e.y}) ${e.hidden ? 'hidden' : 'ball'} ${e.item}${it.label ? ` "${it.label}"` : ''}`)
+      })
+      console.log(`${def.id}: map ${m.id} "${m.name}", box ${JSON.stringify(box)}`)
+      save(`items-${section}--${def.id}.png`, img)
+    }
     break
   }
   case 'reach': {
