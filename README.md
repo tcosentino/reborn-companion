@@ -86,7 +86,7 @@ pokemon-rebor/
 - [x] Prototype: redesigned Obsidia Ward section as a standalone page ([artifact](https://claude.ai/artifact/GfQd2ALrvCBC9L5fvCuc5K))
 - [x] Cloned upstream repo and mapped its macros and game-file dependencies
 - [x] Obtain Reborn 19.5 `Scripts/` locally (19.5.0 Mac build; live guide uses 19.5.18)
-- [x] JSON emitter for the generator (`upstream` branch `json-export`, golden-tested byte-identical HTML)
+- [x] JSON emitter for the generator (`upstream` branch `json-export`, golden-tested byte-identical HTML against the `content` branch)
 - [x] Scaffold the Vite app (`app/`, multi-game registry in `app/src/games.ts`)
 - [x] Episode views, trainer cards, encounters, shops
 - [x] Search (Cmd+K palette) and progress tracking: whole-guide progress, resume, hide defeated (see "Guide navigation")
@@ -107,7 +107,25 @@ Tests: `bash scripts/test.sh` (override unit tests, generator golden + JSON test
 
 ## Editing guide content
 
-Never edit `upstream/src/_raw/` directly: `upstream/` is gitignored here, its commits only exist locally, and edits make pulling BIGJRA's updates harder. Instead add a section override to `overrides/<game>/`:
+Never edit `upstream/src/_raw/` in the `upstream/` working tree directly: `upstream/` is gitignored here and other sessions may reset it.
+
+`upstream/` has three branches of our own, all pushed to the `fork` remote (`tcosentino/BIGJRA.github.io`) as a backup; push after changing them:
+
+| Branch | Contents |
+| --- | --- |
+| `json-export` | our generator changes (JSON emitter, `WT_RAW_DIR`) on top of BIGJRA `main` |
+| `content` | BIGJRA `main` plus our submitted content PR branches, merged with `--no-ff` |
+| `companion` | `json-export` merged with `content`; this is what `upstream/` has checked out and what builds use |
+
+Factual fixes to the guide (wrong directions, missing steps) go upstream as a PR to `BIGJRA/BIGJRA.github.io` from the fork `tcosentino/BIGJRA.github.io`:
+
+1. In a separate clone of the fork, branch off BIGJRA `main`, edit `src/_raw/<game>/*.md`, push and open the PR.
+2. In `upstream/` (remote `fork`): `git fetch fork <branch>`, merge it into `content`, then merge `content` into `companion`.
+3. `bash scripts/build-baseline.sh` (the golden test baseline is built from `content`), then `bash scripts/build-json.sh && bash scripts/sync-data.sh`.
+
+Once BIGJRA merges a PR, merging `origin/main` into `content` is a no-op for that change. Submitted PRs so far: [#35](https://github.com/BIGJRA/BIGJRA.github.io/pull/35) (Lower Peridot Ward donation guy).
+
+Edits that only make sense in this app, such as `#/` links between sections, go in a section override in `overrides/<game>/` instead:
 
 ```
 ---
