@@ -9,6 +9,7 @@ See `README.md` for the data pipeline, layout and run commands.
 - Factual guide fixes go upstream: PR to `BIGJRA/BIGJRA.github.io` from the fork `tcosentino/BIGJRA.github.io` (remote `fork`), branched off `origin/main` in a separate clone, then merge the PR branch into `content` and `content` into `companion`, and rerun `bash scripts/build-baseline.sh`.
 - App-specific edits (e.g. `#/` links) go in `overrides/<game>/<section-id>.md` with `file:` and `heading:` frontmatter. `scripts/build-json.sh` applies them to a scratch copy (`out/raw/`) before generating.
 - Rebuild with `bash scripts/build-json.sh && bash scripts/sync-data.sh`.
+- Starter recommendations (ability/nature picks) live in `starters/<game>/<section-id>.json`, applied by `scripts/apply-starters.ts`.
 - Link to other sections with `#/<game>/<section-id>` (ids are in `app/public/data/<game>/index.json`).
 
 ## Walkthrough tasks

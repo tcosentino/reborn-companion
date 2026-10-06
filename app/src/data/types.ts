@@ -2,6 +2,7 @@
 // Game-agnostic: any game whose generator emits this schema can be rendered.
 
 import type { TaskBlock } from '../lib/tasks'
+import type { StartersBlock } from '../lib/starters'
 
 export type Sym = string
 
@@ -135,9 +136,9 @@ export interface HtmlBlock { type: 'html'; macro: string; html: string }
 
 export type Block =
   | ProseBlock | ImageBlock | BattleBlock | EncountersBlock | ShopBlock
-  | TutorBlock | PickupBlock | MiningBlock | WildHeldBlock | HtmlBlock | TaskBlock
+  | TutorBlock | PickupBlock | MiningBlock | WildHeldBlock | HtmlBlock | TaskBlock | StartersBlock
 
-export type { TaskBlock }
+export type { TaskBlock, StartersBlock }
 
 export interface SpeciesForm {
   name: string

@@ -160,6 +160,14 @@ Optional catches, side quests and notable NPC items that the guide only mentions
 - **Progress**: ticks live in the normal `progress` checklist as `task:<section>/<id>`, so never rename a task `id`. `battles.json` lists them under `t` (parallel to `s`), the progress-id baseline guards them, and the sidebar, section hero ("tasks done") and On this page counts include them. "Jump to my spot" and the bottom bar still follow battles only. Ticking a catch task also marks its species caught (unticking leaves caught alone).
 - **Card**: `app/src/components/blocks/Task.tsx`, anchor `task-<id>`. Hide defeated also collapses done tasks.
 
+## Starter picker
+
+The Grand Hall's plain list of starter names renders as a card grid instead: one card per starter, grouped by type, with sprite, final form and its types, "worth leveling" tier, every ability (hidden ones tagged HA) and the natures worth soft-resetting for, each with its stat effect.
+
+- **Source**: `starters/<game>/<section-id>.json`, `{ match, title?, picks: [{ species, ability, natures, note }] }`. `match` is the verbatim start of the paragraph the cards replace. `ability` is the SYM to reset for, or `null` when either is fine; `natures` are names, best first. Edit by hand.
+- **Build**: `sync-data.sh` runs `scripts/apply-starters.ts` after tasks. It swaps the paragraph for a `starters` block (`app/src/lib/starters.ts`, which also holds the nature table), is idempotent, and fails on a missing paragraph or a species, ability or nature that is not in `pokedex.json`.
+- **Card**: `app/src/components/blocks/Starters.tsx`, anchor `starters` (e.g. `#/reborn/grand-hall/starters`).
+
 ## Keeping progress safe
 
 Progress (beaten trainers, caught Pokemon, hidden items, prefs, resume spot) lives in the browser's localStorage under `pokeguide:<game>:*`. App updates and rebuilds do not touch it, but three things can:

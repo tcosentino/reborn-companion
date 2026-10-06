@@ -1,0 +1,27 @@
+{
+  "match": "- The Grass types:",
+  "title": "Choose your starter",
+  "picks": [
+    { "species": "BULBASAUR", "ability": "CHLOROPHYLL", "natures": ["Modest", "Timid"], "note": "Chlorophyll doubles Speed in sun. Mega Venusaur gets Thick Fat whichever you pick." },
+    { "species": "CHIKORITA", "ability": null, "natures": ["Bold", "Calm"], "note": "A bulky support with screens and Leech Seed. Leaf Guard rarely matters, so reset for nature only." },
+    { "species": "TREECKO", "ability": "UNBURDEN", "natures": ["Timid", "Naive"], "note": "Unburden doubles Speed once its held item is used. Mega Sceptile gets Lightning Rod." },
+    { "species": "TURTWIG", "ability": "SHELLARMOR", "natures": ["Adamant", "Impish"], "note": "Slow and physical. Shell Armor blocks critical hits, a small edge over Overgrow." },
+    { "species": "SNIVY", "ability": "CONTRARY", "natures": ["Timid", "Modest"], "note": "Contrary turns Leaf Storm into a Special Attack boost. The clearest reset target among the Grass starters." },
+    { "species": "CHESPIN", "ability": "BULLETPROOF", "natures": ["Impish", "Adamant"], "note": "Physical tank. Bulletproof blocks ball and bomb moves such as Shadow Ball and Sludge Bomb." },
+    { "species": "ROWLET", "ability": "LONGREACH", "natures": ["Adamant", "Jolly"], "note": "Physical attacker. Long Reach avoids contact punishers like Rocky Helmet and Rough Skin." },
+    { "species": "CHARMANDER", "ability": null, "natures": ["Timid", "Modest"], "note": "Both Mega Stones override its ability. Solar Power only helps in sun and costs HP. Planning on Mega Charizard X (stone from Episode 14)? Take Jolly or Adamant instead." },
+    { "species": "CYNDAQUIL", "ability": "FLASHFIRE", "natures": ["Timid", "Modest"], "note": "Special attacker. Flash Fire makes it immune to Fire and powers up its own Fire moves." },
+    { "species": "TORCHIC", "ability": "SPEEDBOOST", "natures": ["Adamant", "Jolly"], "note": "Speed Boost raises Speed every turn. The most popular pick in Reborn. Lonely, Naughty, Hasty, Naive and neutral natures are also fine." },
+    { "species": "CHIMCHAR", "ability": "IRONFIST", "natures": ["Jolly", "Adamant"], "note": "Iron Fist powers up Mach Punch, Drain Punch and the elemental punches." },
+    { "species": "TEPIG", "ability": "THICKFAT", "natures": ["Adamant", "Brave"], "note": "Thick Fat Tepig becomes Reckless Emboar, which boosts Flare Blitz and Wild Charge. It is slow, so Speed is the stat to drop." },
+    { "species": "FENNEKIN", "ability": null, "natures": ["Timid", "Modest"], "note": "Fast special attacker. Magician steals items and Blaze boosts Fire moves, so either ability works." },
+    { "species": "LITTEN", "ability": "INTIMIDATE", "natures": ["Adamant", "Careful"], "note": "Intimidate cuts the foe's Attack on entry. One of the strongest picks for the whole game." },
+    { "species": "SQUIRTLE", "ability": null, "natures": ["Modest", "Bold"], "note": "Mega Blastoise gets Mega Launcher regardless. Rain Dish only helps in rain, so Torrent is fine too." },
+    { "species": "TOTODILE", "ability": "SHEERFORCE", "natures": ["Adamant", "Jolly"], "note": "Sheer Force strips side effects for 30% more power on moves like Ice Fang, Crunch and Waterfall." },
+    { "species": "MUDKIP", "ability": "TORRENT", "natures": ["Adamant", "Impish"], "note": "Damp almost never matters, so take Torrent. Water/Ground has a single weakness (Grass). Mega Swampert gets Swift Swim." },
+    { "species": "PIPLUP", "ability": "TORRENT", "natures": ["Modest", "Calm"], "note": "Empoleon attacks specially, so Defiant's Attack boost is wasted. Take Torrent." },
+    { "species": "OSHAWOTT", "ability": "TORRENT", "natures": ["Adamant", "Modest"], "note": "Mixed attacker. Shell Armor only blocks critical hits, so Torrent is the better pick. Choose the nature for the side you plan to use." },
+    { "species": "FROAKIE", "ability": "PROTEAN", "natures": ["Timid", "Naive"], "note": "Protean gives every move the same-type bonus. Fast and frail." },
+    { "species": "POPPLIO", "ability": "LIQUIDVOICE", "natures": ["Modest", "Calm"], "note": "Liquid Voice turns Hyper Voice into a Water move that hits both foes in doubles." }
+  ]
+}

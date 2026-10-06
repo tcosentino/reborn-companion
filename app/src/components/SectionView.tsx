@@ -7,6 +7,7 @@ import { pageItems } from '../lib/guideNav'
 import { taskAnchor } from '../lib/tasks'
 import { Battle } from './blocks/Battle'
 import { Task } from './blocks/Task'
+import { Starters } from './blocks/Starters'
 import { Encounters, Mining, Pickup, Shop, Tutor, WildHeld } from './blocks/Tables'
 import { useDex, useGame } from './common'
 import { linkProse, nameMaps } from '../features/hovercards/names'
@@ -56,6 +57,7 @@ const BlockView = ({ b, id, done, toggle, onTask, hideDefeated }: {
     case 'hiddenItems': return <HiddenItems b={b} collapsed={hideDefeated} />
     case 'html': return <div className="prose" dangerouslySetInnerHTML={{ __html: b.html }} />
     case 'route': return <RouteMap b={b} />
+    case 'starters': return <Starters b={b} />
     case 'task': return <Task b={b} done={!!done[b.id]} onToggle={onTask} collapsed={hideDefeated}><Prose md={b.markdown} /></Task>
   }
 }
