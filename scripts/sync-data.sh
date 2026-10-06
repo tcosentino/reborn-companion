@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 # Build the palette search index and battles.json, then copy generated guide JSON into the app's public data folder.
+# Usage: bash scripts/sync-data.sh <game>
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-GAME="${1:-reborn}"
+source "$ROOT/scripts/env.sh"
+GAME="${1:-}"
+require_game "$GAME"
 # Split curated walkthrough tasks (tasks/<game>/) out of the prose first, so battles.json lists them
 node --no-warnings "$ROOT/scripts/apply-tasks.ts" "$GAME"
 # Starter picker cards (starters/<game>/) replace the paragraph listing the starters

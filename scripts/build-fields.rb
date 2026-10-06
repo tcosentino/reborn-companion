@@ -1,5 +1,5 @@
-# Builds out/json/reborn/fields.json from game-scripts/Reborn/fieldtext.rb.
-# Usage: /opt/homebrew/opt/ruby/bin/ruby scripts/build-fields.rb [json-out-dir]
+# Builds out/json/<game>/fields.json from a game's fieldtext.rb (build.fieldsScript in games/<game>.json).
+# Usage: /opt/homebrew/opt/ruby/bin/ruby scripts/build-fields.rb <fieldtext.rb> <json-out-dir>
 require 'json'
 
 Encoding.default_external = Encoding::UTF_8
@@ -9,9 +9,10 @@ ROOT = File.expand_path('..', __dir__)
 # Inside a git worktree the gitignored game-scripts/ and out/ live in the main checkout.
 MAIN = ENV['POKEMON_REBOR_ROOT'] || File.expand_path('../../..', ROOT)
 find = ->(rel) { [ROOT, MAIN].map { |r| File.join(r, rel) }.find { |p| File.exist?(p) } }
-SRC = find.call('game-scripts/Reborn/fieldtext.rb') or abort 'fieldtext.rb not found'
-# Optional arg: the JSON output dir (default out/json/reborn); dex.json there supplies move/type names.
-OUT_DIR = ARGV[0] || File.dirname(find.call('out/json/reborn/dex.json') || abort('dex.json not found'))
+abort 'usage: build-fields.rb <fieldtext.rb> <json-out-dir>' unless ARGV.length == 2
+# fieldtext.rb is relative to the repo root (or absolute); dex.json in the output dir supplies move/type names.
+SRC = (File.absolute_path?(ARGV[0]) ? ARGV[0] : find.call(ARGV[0])) or abort "#{ARGV[0]} not found"
+OUT_DIR = ARGV[1]
 DEX_PATH = File.join(OUT_DIR, 'dex.json')
 OUT = File.join(OUT_DIR, 'fields.json')
 DEX = JSON.parse(File.read(DEX_PATH))

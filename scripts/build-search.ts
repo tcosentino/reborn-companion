@@ -1,5 +1,5 @@
 // Builds out/json/<game>/search.json, the compact index behind the Cmd+K palette.
-// Usage: node scripts/build-search.ts [game]   (Node >= 23.6 strips TS types natively; tsx also works)
+// Usage: node scripts/build-search.ts <game>   (Node >= 23.6 strips TS types natively; tsx also works)
 import { readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -9,7 +9,11 @@ import { buildSearchIndex } from '../app/src/components/palette/buildIndex.ts'
 import { buildSectionBattles } from '../app/src/lib/sectionBattles.ts'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
-const game = process.argv[2] ?? 'reborn'
+const game = process.argv[2]
+if (!game) {
+  console.error('usage: node scripts/build-search.ts <game>')
+  process.exit(1)
+}
 const dir = join(root, 'out', 'json', game)
 const read = <T>(file: string): T => JSON.parse(readFileSync(join(dir, file), 'utf8'))
 

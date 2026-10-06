@@ -43,7 +43,7 @@ export const SpeciesGrid = ({ list, cap = 48, names, note }: {
         {shown.map(({ sym, extra }) => (
           <li key={sym}>
             <a href={dexHref(game.id, sym)}>
-              <MonSprite species={sym} size="icon" game={game.id} />
+              <MonSprite species={sym} size="icon" />
               <span>{names(sym)}</span>
               {extra && <span className="mono muted small">{extra}</span>}
             </a>

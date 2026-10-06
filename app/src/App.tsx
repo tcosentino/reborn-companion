@@ -180,7 +180,7 @@ const GuideView = ({ game, route }: { game: GameConfig; route: Route }) => {
   }, [current, route.pokedex, route.species, route.compare, route.item, route.move, dexData, game.name])
 
   const err = idx.error ?? dex.error ?? chapter.error
-  if (err) return <main className="state">Could not load the guide. {err}. Run scripts/sync-data.sh to copy the generated data into the app.</main>
+  if (err) return <main className="state">Could not load the guide. {err}. Run scripts/build.sh {game.id} to generate it.</main>
   if (!idx.data || !dex.data || !current) return <main className="state">Loading guide&hellip;</main>
 
   const sectionData = chapter.data?.sections.find(s => (s.id ?? chapter.data?.id) === current.id)

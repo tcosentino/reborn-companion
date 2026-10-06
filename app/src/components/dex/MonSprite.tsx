@@ -1,3 +1,4 @@
+import { useGame } from '../common'
 import { findSprite, spriteUrl, useSpriteManifest } from './sprites'
 import './MonSprite.css'
 
@@ -15,8 +16,6 @@ interface Props {
   size?: MonSpriteSize
   /** Use the shiny front sprite when one exists. Icons are always the normal icon. */
   shiny?: boolean
-  /** Which game's manifest to read. Default 'reborn'. */
-  game?: string
   /** Accessible label; empty by default because the name is normally printed next to the sprite. */
   alt?: string
 }
@@ -26,8 +25,8 @@ interface Props {
  * Crisp (nearest-neighbor), lazy loaded, and falls back to a neutral silhouette when the
  * manifest, species, or image is missing. Reusable in rows, hover cards and the Pokedex.
  */
-export const MonSprite = ({ species, form, size = 'sm', shiny = false, game = 'reborn', alt = '' }: Props) => {
-  const manifest = useSpriteManifest(game)
+export const MonSprite = ({ species, form, size = 'sm', shiny = false, alt = '' }: Props) => {
+  const manifest = useSpriteManifest(useGame().id)
   const entry = manifest ? findSprite(manifest, species, form) : null
   const path = size === 'icon' ? entry?.icon ?? entry?.front : (shiny ? entry?.shiny : undefined) ?? entry?.front ?? entry?.icon
   // Battlers are trimmed to their visible pixels; don't blow small Pokemon up to the full box,

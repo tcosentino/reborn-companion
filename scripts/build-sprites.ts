@@ -1,36 +1,48 @@
-// Extracts Pokemon front sprites (normal + shiny) and party icons from the Reborn zip and
+// Extracts Pokemon front sprites (normal + shiny) and party icons from a game's download zip and
 // writes the sprite manifest. Sprites are local-only (gitignored); never commit them.
 //
 // Usage (node >= 23.6 runs .ts directly; needs `unzip`):
-//   node scripts/build-sprites.ts <spritesOutDir> [zipPath] [dexJsonPath]
-// Defaults: zip ~/Downloads/Reborn-19.5.0-macos.zip, dex out/json/reborn/dex.json (main checkout).
-// <spritesOutDir> is e.g. /abs/main/app/public/sprites/reborn. The manifest is written next to the
-// dex JSON (out/json/reborn/sprites.json) so scripts/sync-data.sh carries it into app/public/data.
+//   node scripts/build-sprites.ts <game> [spritesOutDir] [zipPath] [dexJsonPath]
+// Defaults: sprites to app/public/sprites/<game>, zip and Graphics folder from build.sprites in games/<game>.json,
+// dex from out/json/<game>/dex.json (falling back to the main checkout inside a worktree). The manifest is written
+// next to the dex JSON (out/json/<game>/sprites.json) so scripts/sync-data.sh carries it into app/public/data.
 import { execFileSync } from 'node:child_process'
 import { copyFileSync, existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { homedir, tmpdir } from 'node:os'
 import { dirname, join, resolve } from 'node:path'
 import { alphaBounds, cropPng, type Box } from './png-crop.ts'
+import { loadGame, ROOT } from './game.ts'
 import { battlerSource, iconSource, type Dims, type SpriteSource } from '../app/src/components/dex/spriteMap.ts'
 
 interface DexForm { name?: string }
 interface DexJson { species: Record<string, { name: string; forms: Record<string, DexForm> }> }
 interface ManifestForm { name?: string; front?: string; shiny?: string; icon?: string; frames?: number; w: number; h: number }
 
-const [outArg, zipArg, dexArg] = process.argv.slice(2)
-if (!outArg) {
-  console.error('usage: node scripts/build-sprites.ts <spritesOutDir> [zipPath] [dexJsonPath]')
+const [gameId, outArg, zipArg, dexArg] = process.argv.slice(2)
+if (!gameId) {
+  console.error('usage: node scripts/build-sprites.ts <game> [spritesOutDir] [zipPath] [dexJsonPath]')
   process.exit(1)
 }
-const root = resolve(dirname(new URL(import.meta.url).pathname), '..')
-const mainRoot = '/Users/troycosentino/Claude-Experiments/pokemon-rebor'
-const outDir = resolve(outArg)
-const zip = zipArg ?? join(homedir(), 'Downloads', 'Reborn-19.5.0-macos.zip')
-const dexPath = dexArg ?? [join(root, 'out/json/reborn/dex.json'), join(mainRoot, 'out/json/reborn/dex.json')].find(existsSync)!
+const game = loadGame(gameId)
+if (!game.build.sprites) {
+  console.error(`games/${gameId}.json has no build.sprites; nothing to extract`)
+  process.exit(1)
+}
+// Inside a git worktree the gitignored out/ lives in the main checkout (same rule as build-fields.rb)
+const mainRoot = process.env.POKEMON_REBOR_ROOT ?? resolve(ROOT, '../../..')
+const expandHome = (p: string) => p.replace(/^~(?=\/|$)/, homedir())
+const outDir = resolve(outArg ?? join(ROOT, 'app/public/sprites', gameId))
+const zip = expandHome(zipArg ?? game.build.sprites.zip)
+const dexRel = join('out/json', gameId, 'dex.json')
+const dexPath = dexArg ?? [join(ROOT, dexRel), join(mainRoot, dexRel)].find(existsSync)
+if (!dexPath) {
+  console.error(`${dexRel} not found; run scripts/build-json.sh ${gameId} first`)
+  process.exit(1)
+}
 const manifestPath = join(dirname(dexPath), 'sprites.json')
-const prefix = 'Reborn.app/Contents/Game/Graphics'
+const prefix = game.build.sprites.graphics
 
-const scratch = mkdtempSync(join(tmpdir(), 'reborn-sprites-'))
+const scratch = mkdtempSync(join(tmpdir(), `${gameId}-sprites-`))
 execFileSync('unzip', ['-q', '-o', zip, `${prefix}/Battlers/*`, `${prefix}/Icons/*`, '-d', scratch])
 
 // Width/height straight from the PNG IHDR chunk.
@@ -77,8 +89,9 @@ const dex = JSON.parse(readFileSync(dexPath, 'utf8')) as DexJson
 rmSync(outDir, { recursive: true, force: true })
 const manifest: Record<string, Record<string, ManifestForm>> = {}
 const missing: string[] = []
-const rel = (kind: string, sym: string, form: string) => `sprites/reborn/${kind}/${sym.toLowerCase()}_${form}.png`
-const abs = (p: string) => join(outDir, p.replace('sprites/reborn/', ''))
+const spritePrefix = `sprites/${gameId}/`
+const rel = (kind: string, sym: string, form: string) => `${spritePrefix}${kind}/${sym.toLowerCase()}_${form}.png`
+const abs = (p: string) => join(outDir, p.slice(spritePrefix.length))
 
 for (const [sym, sp] of Object.entries(dex.species)) {
   for (const [formKey, form] of Object.entries(sp.forms)) {

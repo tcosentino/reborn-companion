@@ -6,9 +6,9 @@ See `README.md` for the data pipeline, layout and run commands.
 
 - Never edit `upstream/src/_raw/` in the `upstream/` working tree directly. `upstream/` is gitignored here and other sessions may reset it, discarding uncommitted edits.
 - `upstream/` builds from branch `companion` = `json-export` (generator changes) merged with `content` (BIGJRA `main` + our submitted PR branches). All three are pushed to remote `fork`; push after changing them. See README "Editing guide content".
-- Factual guide fixes go upstream: PR to `BIGJRA/BIGJRA.github.io` from the fork `tcosentino/BIGJRA.github.io` (remote `fork`), branched off `origin/main` in a separate clone, then merge the PR branch into `content` and `content` into `companion`, and rerun `bash scripts/build-baseline.sh`.
+- Factual guide fixes go upstream: PR to `BIGJRA/BIGJRA.github.io` from the fork `tcosentino/BIGJRA.github.io` (remote `fork`), branched off `origin/main` in a separate clone, then merge the PR branch into `content` and `content` into `companion`, and rerun `bash scripts/build-baseline.sh reborn`.
 - App-specific edits (e.g. `#/` links) go in `overrides/<game>/<section-id>.md` with `file:` and `heading:` frontmatter. `scripts/build-json.sh` applies them to a scratch copy (`out/raw/`) before generating.
-- Rebuild with `bash scripts/build-json.sh && bash scripts/sync-data.sh`.
+- Rebuild with `bash scripts/build.sh reborn` (runs `build-json.sh` then `sync-data.sh`). Every build script takes the game id; per-game paths live in `games/<id>.json`.
 - Starter recommendations (ability/nature picks) live in `starters/<game>/<section-id>.json`, applied by `scripts/apply-starters.ts`.
 - Link to other sections with `#/<game>/<section-id>` (ids are in `app/public/data/<game>/index.json`).
 

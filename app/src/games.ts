@@ -1,4 +1,5 @@
-// Registry of games this app can render. Each game's generator output lives in public/data/<id>/.
+// Registry of games this app can render, loaded from the per-game manifests in /games/<id>.json
+// (the build scripts read the same files). Each game's generator output lives in public/data/<id>/.
 export interface GameConfig {
   id: string
   name: string
@@ -8,14 +9,12 @@ export interface GameConfig {
   imageBase: string
 }
 
-export const GAMES: GameConfig[] = [
-  {
-    id: 'reborn',
-    name: 'Pokemon Reborn',
-    tagline: 'Complete walkthrough, episodes 1-19 and postgame',
-    credit: { label: "BIGJRA's Walkthroughs (MIT)", url: 'https://bigjra.github.io/reborn/' },
-    imageBase: 'https://bigjra.github.io'
-  }
-]
+const manifests = import.meta.glob<GameConfig>('../../games/*.json', { eager: true, import: 'default' })
+
+// Keep only the app-facing fields; `build` is for the scripts
+export const toGameConfig = ({ id, name, tagline, credit, imageBase }: GameConfig): GameConfig =>
+  ({ id, name, tagline, credit, imageBase })
+
+export const GAMES: GameConfig[] = Object.values(manifests).map(toGameConfig).sort((a, b) => a.name.localeCompare(b.name))
 
 export const gameById = (id: string) => GAMES.find(g => g.id === id)

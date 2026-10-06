@@ -96,8 +96,8 @@ pokemon-rebor/
 ## Running locally
 
 ```
-bash scripts/build-json.sh      # game-scripts/ -> out/json/reborn/
-bash scripts/sync-data.sh       # builds search.json, then out/json/reborn/ -> app/public/data/reborn/
+bash scripts/build.sh reborn    # build-json.sh (game-scripts/ -> out/json/reborn/) then sync-data.sh (-> app/public/data/reborn/)
+node scripts/build-sprites.ts reborn   # optional: sprites from the game zip named in games/reborn.json
 cd app && yarn && yarn dev      # http://localhost:5174/#/reborn/obsidia-ward
 ```
 
@@ -121,7 +121,7 @@ Factual fixes to the guide (wrong directions, missing steps) go upstream as a PR
 
 1. In a separate clone of the fork, branch off BIGJRA `main`, edit `src/_raw/<game>/*.md`, push and open the PR.
 2. In `upstream/` (remote `fork`): `git fetch fork <branch>`, merge it into `content`, then merge `content` into `companion`.
-3. `bash scripts/build-baseline.sh` (the golden test baseline is built from `content`), then `bash scripts/build-json.sh && bash scripts/sync-data.sh`.
+3. `bash scripts/build-baseline.sh reborn` (the golden test baseline is built from `content`), then `bash scripts/build.sh reborn`.
 
 Once BIGJRA merges a PR, merging `origin/main` into `content` is a no-op for that change. Submitted PRs so far: [#35](https://github.com/BIGJRA/BIGJRA.github.io/pull/35) (Lower Peridot Ward donation guy).
 
@@ -137,7 +137,20 @@ Replacement body for that section (the heading line is kept).
 
 `build-json.sh` copies the raw markdown to `out/raw/`, applies every override (`scripts/apply-overrides.ts`), and points the generator at the copy via `WT_RAW_DIR`. An override replaces everything from its heading to the next heading of the same or higher level, so subsections are replaced too. The build fails if the heading is missing or appears more than once in the file, so upstream renames surface immediately. Links to other sections use `#/<game>/<section-id>`.
 
-Adding another game: produce the same JSON schema (`index.json`, `dex.json`, `chapters/*.json`, see `app/src/data/types.ts`) into `app/public/data/<id>/` and add an entry to `app/src/games.ts`.
+## Game manifests
+
+Each game has one manifest, `games/<id>.json`, read by both the build scripts (`scripts/game.ts`) and the app (`app/src/games.ts`, via `import.meta.glob`). Top-level fields (`name`, `tagline`, `credit`, `imageBase`) drive the app. The `build` block drives the pipeline:
+
+| Key | Used by |
+| --- | --- |
+| `build.generator` | game argument to `upstream/wt_generator.rb` (`reborn`, `rejuv` or `deso`) |
+| `build.rawDir` | raw walkthrough markdown, copied to `out/raw/` before overrides are applied |
+| `build.fieldsScript` | `fieldtext.rb` for `scripts/build-fields.rb`; omit it and `fields.json` is skipped |
+| `build.sprites` | `zip` and in-zip `graphics` folder for `scripts/build-sprites.ts`; omit to skip sprites |
+
+Every script takes the game id as its first argument and has no Reborn default. The shared Ruby environment is in `scripts/env.sh`.
+
+Adding another game: add `games/<id>.json`, then run `bash scripts/build.sh <id>`. A game the upstream generator does not support needs to produce the same JSON schema (`index.json`, `dex.json`, `chapters/*.json`, see `app/src/data/types.ts`) into `out/json/<id>/` some other way.
 
 ## Guide navigation
 

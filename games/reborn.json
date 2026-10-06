@@ -1,0 +1,20 @@
+{
+  "id": "reborn",
+  "name": "Pokemon Reborn",
+  "tagline": "Complete walkthrough, episodes 1-19 and postgame",
+  "credit": { "label": "BIGJRA's Walkthroughs (MIT)", "url": "https://bigjra.github.io/reborn/" },
+  "imageBase": "https://bigjra.github.io",
+  "build": {
+    "generator": "reborn",
+    "rawDir": "upstream/src/_raw/reborn",
+    "fieldsScript": "game-scripts/Reborn/fieldtext.rb",
+    "sprites": {
+      "zip": "~/Downloads/Reborn-19.5.0-macos.zip",
+      "graphics": "Reborn.app/Contents/Game/Graphics"
+    },
+    "maps": {
+      "zip": "~/Downloads/Reborn-19.5.0-macos.zip",
+      "game": "Reborn.app/Contents/Game"
+    }
+  }
+}
