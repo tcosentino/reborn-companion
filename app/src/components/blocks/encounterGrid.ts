@@ -76,3 +76,7 @@ export const buildEncounterGrid = (methods: EncounterMethod[]): EncounterGrid =>
   })
   return { times, groups }
 }
+
+// A method group (or a whole area) counts as complete once every species in it is caught
+export const allCaught = (rows: GridRow[], caught: Record<string, true>) =>
+  rows.length > 0 && rows.every(r => caught[r.species])

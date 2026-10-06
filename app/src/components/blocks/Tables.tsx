@@ -5,7 +5,8 @@ import { MonSprite } from '../dex/MonSprite'
 import { CaughtToggle, TierBadge } from '../pokedex/bits'
 import { usePokedex } from '../pokedex/context'
 import { DexHover } from '../../features/hovercards/DexHover'
-import { buildEncounterGrid } from './encounterGrid'
+import { useCaught } from '../../lib/progress'
+import { allCaught, buildEncounterGrid } from './encounterGrid'
 
 const Ring = ({ rate, color }: { rate: number; color: string }) => {
   const r = 7, c = 2 * Math.PI * r
@@ -25,16 +26,23 @@ const RateCell = ({ rate, color, span }: { rate: number | null; color: string; s
   </td>
 )
 
-export const Encounters = ({ b, id }: { b: EncountersBlock; id?: string }) => {
+// collapsed: "Hide defeated" is on, so a fully caught area (or method group) shrinks like a beaten trainer
+export const Encounters = ({ b, id, collapsed }: { b: EncountersBlock; id?: string; collapsed?: boolean }) => {
   const dex = useDex()
   const game = useGame()
   const pokedex = usePokedex()
+  const { done: caught } = useCaught(game.id)
   const { times, groups } = buildEncounterGrid(b.methods)
   const width = Math.max(times.length, 1)
   const lead = pokedex ? 2 : 1
+  const groupDone = groups.map(g => !!pokedex && allCaught(g.rows, caught))
+  const done = groupDone.length > 0 && groupDone.every(Boolean)
   return (
-    <section className="enc" id={id}>
-      <div className="block-head"><h3>{b.name}</h3><span className="eyebrow">Wild encounters</span></div>
+    <section className={`enc${done ? ' is-done' : ''}${done && collapsed ? ' is-collapsed' : ''}`} id={id}>
+      <div className="block-head">
+        <h3>{b.name}</h3>
+        {done ? <span className="all-caught">All caught</span> : <span className="eyebrow">Wild encounters</span>}
+      </div>
       <div className="enc-scroll">
         <table className="enc-grid">
           <thead>
@@ -43,9 +51,12 @@ export const Encounters = ({ b, id }: { b: EncountersBlock; id?: string }) => {
               {times.length ? times.map(t => <th className="rate" key={t}>{t}</th>) : <th className="rate">Rate</th>}
             </tr>
           </thead>
-          {groups.map(g => (
-            <tbody key={g.method}>
-              <tr className="method"><th colSpan={lead + width}><span className="tag accent">{g.label}</span></th></tr>
+          {groups.map((g, gi) => (
+            <tbody key={g.method} className={groupDone[gi] ? `is-done${collapsed ? ' is-collapsed' : ''}` : undefined}>
+              <tr className="method"><th colSpan={lead + width}>
+                <span className="tag accent">{g.label}</span>
+                {groupDone[gi] && !done && <span className="all-caught small">All caught</span>}
+              </th></tr>
               {g.rows.map(r => {
                 const color = typeVar(dex.species[r.species]?.forms['0']?.types[0] ?? 'NORMAL')
                 return (

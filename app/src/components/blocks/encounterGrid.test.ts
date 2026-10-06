@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { EncounterMethod, EncounterRow } from '../../data/types'
-import { buildEncounterGrid } from './encounterGrid'
+import { allCaught, buildEncounterGrid } from './encounterGrid'
 
 const row = (species: string, rate: number, minLevel = 2, maxLevel = 4, extra: Partial<EncounterRow> = {}): EncounterRow => ({
   species, form: null, displayName: species[0] + species.slice(1).toLowerCase(), firstSeen: false,
@@ -54,5 +54,17 @@ describe('buildEncounterGrid', () => {
       [null, [60], false, '5'],
       ['Alolan Form', [40], true, '5']
     ])
+  })
+})
+
+describe('allCaught', () => {
+  const g = buildEncounterGrid([m('Grass', null, [row('PIDGEY', 50), row('RATTATA', 50)]), m('Fishing-Old', null, [row('MAGIKARP', 100)])])
+  it('is true only when every species in the rows is caught', () => {
+    expect(allCaught(g.groups[0].rows, { PIDGEY: true })).toBe(false)
+    expect(allCaught(g.groups[0].rows, { PIDGEY: true, RATTATA: true })).toBe(true)
+    expect(allCaught(g.groups[1].rows, { MAGIKARP: true })).toBe(true)
+  })
+  it('treats an empty group as not complete', () => {
+    expect(allCaught([], {})).toBe(false)
   })
 })

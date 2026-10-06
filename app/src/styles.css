@@ -200,6 +200,15 @@ figure img { display: block; width: 100%; height: auto }
 .ring { width: 16px; height: 16px; transform: rotate(-90deg); flex: none }
 .ring circle { fill: none; stroke-width: 3 }
 .ring .track { stroke: var(--line) }
+/* Every Pokemon caught: styled like a defeated trainer; "Hide defeated" collapses it */
+.all-caught { font: 600 .8rem var(--mono); color: var(--good); padding: .4rem .65rem; border: 1px solid var(--good); border-radius: 6px; background: var(--sunk); white-space: nowrap }
+.all-caught::before { content: '\2713'; margin-right: .4rem }
+.all-caught.small { font-size: .7rem; padding: .2rem .45rem; margin-left: .5rem }
+.enc.is-done .enc-grid tr, .enc-grid tbody.is-done tr:not(.method) { opacity: .5 }
+.enc.is-collapsed > :not(.block-head) { display: none }
+.enc.is-collapsed .block-head { border-bottom: 0; padding-block: .5rem }
+.enc.is-collapsed .block-head h3 { font-size: .95rem }
+.enc-grid tbody.is-collapsed tr:not(.method) { display: none }
 .ring .fill { stroke-linecap: round }
 .enc { container-type: inline-size }
 @container (max-width: 520px) {

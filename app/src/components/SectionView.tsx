@@ -44,7 +44,7 @@ const BlockView = ({ b, id, done, toggle, hideDefeated }: {
     case 'prose': return <Prose md={b.markdown} />
     case 'image': return <Image src={b.src} file={b.file} />
     case 'battle': return <Battle b={b} done={!!done[battleId(b.trainers.map(t => t.teamId))]} onToggle={toggle} collapsed={hideDefeated} />
-    case 'encounters': return <Encounters b={b} id={id} />
+    case 'encounters': return <Encounters b={b} id={id} collapsed={hideDefeated} />
     case 'shop': return <Shop b={b} id={id} />
     case 'tutor': return <Tutor b={b} id={id} />
     case 'pickup': return <Pickup b={b} />
