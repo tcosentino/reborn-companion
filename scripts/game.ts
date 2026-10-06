@@ -13,8 +13,9 @@ export interface GameBuild {
   rawDir: string
   /** fieldtext.rb relative to the repo root. Omit for games without field effects; fields.json is then skipped. */
   fieldsScript?: string
-  /** Where scripts/build-sprites.ts finds the game's Graphics folder. Omit to skip sprites. */
-  sprites?: { zip: string; graphics: string }
+  /** Where scripts/build-sprites.ts finds the game's Graphics folder. Omit to skip sprites.
+   *  `scripts` is the in-zip folder holding itemtext.rb and movetext.rb; omit to skip item icons. */
+  sprites?: { zip: string; graphics: string; scripts?: string }
   /** Where scripts/build-maps.sh finds the RPG Maker game folder (Data/, Graphics/). Omit to skip route maps. */
   maps?: { zip: string; game: string }
 }

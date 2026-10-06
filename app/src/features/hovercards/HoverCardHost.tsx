@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState, useSyncExternalStore } from 'react'
 import { createPortal } from 'react-dom'
+import { ItemSprite } from '../../components/dex/ItemSprite'
 import { MonSprite } from '../../components/dex/MonSprite'
 import { resolveFormIndex } from '../../components/dex/spriteMap'
 import { StatBars } from '../../components/dex/StatBars'
@@ -102,7 +103,7 @@ const ItemCard = ({ t, dex }: { t: HoverTarget; dex: Dex }) => {
   return (
     <>
       <header className="hc-head hc-compact">
-        <b className="hc-name">{it.name}</b>
+        <b className="hc-name"><ItemSprite sym={t.sym} size="md" />{it.name}</b>
         {it.price != null && <span className="mono muted">{money(it.price)}</span>}
       </header>
       <p className="hc-desc">{it.desc}</p>

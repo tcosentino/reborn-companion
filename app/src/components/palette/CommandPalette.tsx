@@ -5,6 +5,7 @@
 import { useEffect, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent, type ReactNode } from 'react'
 import { dexHref, href, itemHref, moveHref } from '../../lib/route'
 import { TypeChip, money, useDex, useGame } from '../common'
+import { ItemSprite } from '../dex/ItemSprite'
 import { flashAnchor } from './anchorScroll'
 import { OPEN_IN_POKEDEX, buildEntries, chapterShort, entryKey, loadSearchIndex, speciesName, targetOf } from './entries'
 import type { SearchIndex } from './indexTypes'
@@ -103,7 +104,7 @@ const Row = ({ e, idx }: { e: Entry; idx: SearchIndex }) => {
       const price = shops[0]?.[2] ?? (sym ? dex.items[sym]?.price : null)
       return (
         <>
-          <span className="pal-title">{name}{price != null && price !== 0 && <span className="pal-price">{money(price)}</span>}</span>
+          <span className="pal-title"><ItemSprite sym={sym} name={name} />{name}{price != null && price !== 0 && <span className="pal-price">{money(price)}</span>}</span>
           <span className="pal-meta">
             {shops.length > 0 && <>Buy in {place(idx, shops[0][0])}</>}
             {shops.length > 0 && hidden.length > 0 && ' · '}

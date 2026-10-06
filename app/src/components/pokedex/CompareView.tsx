@@ -2,7 +2,8 @@ import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import type { Factor, Sym } from '../../data/types'
 import { loadMovesets, useAsync } from '../../data/load'
 import { leaders, matchupRows, multLabel } from '../../lib/compare'
-import { describeEvolution } from '../../lib/evolution'
+import { describeEvolution, evolutionItem } from '../../lib/evolution'
+import { ItemSprite } from '../dex/ItemSprite'
 import { useChecklist } from '../../lib/progress'
 import { MAX_COMPARE, compareHref, dexHref, href } from '../../lib/route'
 import { TypeChip, useDex, useGame } from '../common'
@@ -167,7 +168,7 @@ export const CompareView = ({ syms }: { syms: Sym[] }) => {
                     : (
                       <ul className="plain">
                         {f.evolutions.slice(0, 3).map((e, i) => (
-                          <li key={i}><a href={dexHref(game.id, e.species)}>{data.dex.species[e.species]?.name}</a> <span className="muted small">{describeEvolution(data.dex, e)}</span></li>
+                          <li key={i}><a href={dexHref(game.id, e.species)}>{data.dex.species[e.species]?.name}</a> <span className="muted small"><ItemSprite sym={evolutionItem(e)} />{describeEvolution(data.dex, e)}</span></li>
                         ))}
                         {f.evolutions.length > 3 && <li className="muted small">+{f.evolutions.length - 3} more</li>}
                       </ul>

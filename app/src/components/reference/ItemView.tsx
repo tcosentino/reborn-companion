@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { useAsync } from '../../data/load'
 import { moveHref } from '../../lib/route'
 import { TypeChip, money, useDex, useGame } from '../common'
+import { ItemSprite } from '../dex/ItemSprite'
 import { loadSearchIndex } from '../palette/entries'
 import { findItem, findMove, itemPlaces, movePlaces } from '../palette/places'
 import { PlacesTable } from './bits'
@@ -33,7 +34,7 @@ export const ItemView = ({ itemKey }: { itemKey: string }) => {
     <article className="section dex-species ref-page">
       <header className="section-hero">
         <span className="eyebrow">{teaches ? 'TM' : 'Item'}</span>
-        <h1>{name}</h1>
+        <h1 className="ref-item-title"><ItemSprite sym={row?.[1] || itemKey} name={name} size="lg" />{name}</h1>
         {info?.price != null && info.price > 0 && <span className="mono muted">Base price {money(info.price)}</span>}
         {info?.desc && <p className="lede ref-desc">{info.desc}</p>}
       </header>

@@ -97,7 +97,7 @@ pokemon-rebor/
 
 ```
 bash scripts/build.sh reborn    # build-json.sh (game-scripts/ -> out/json/reborn/) then sync-data.sh (-> app/public/data/reborn/)
-node scripts/build-sprites.ts reborn   # optional: sprites from the game zip named in games/reborn.json
+node scripts/build-sprites.ts reborn   # optional: Pokemon sprites and item icons from the game zip named in games/reborn.json
 cd app && yarn && yarn dev      # http://localhost:5174/#/reborn/obsidia-ward
 ```
 
@@ -146,7 +146,7 @@ Each game has one manifest, `games/<id>.json`, read by both the build scripts (`
 | `build.generator` | game argument to `upstream/wt_generator.rb` (`reborn`, `rejuv` or `deso`) |
 | `build.rawDir` | raw walkthrough markdown, copied to `out/raw/` before overrides are applied |
 | `build.fieldsScript` | `fieldtext.rb` for `scripts/build-fields.rb`; omit it and `fields.json` is skipped |
-| `build.sprites` | `zip` and in-zip `graphics` folder for `scripts/build-sprites.ts`; omit to skip sprites |
+| `build.sprites` | `zip` and in-zip `graphics` folder for `scripts/build-sprites.ts`; omit to skip sprites. Optional `scripts` (in-zip folder with `itemtext.rb` and `movetext.rb`) adds item icons (`item-sprites.json`, rendered by `ItemSprite`) |
 
 Every script takes the game id as its first argument and has no Reborn default. The shared Ruby environment is in `scripts/env.sh`.
 

@@ -1,5 +1,5 @@
-// Extracts Pokemon front sprites (normal + shiny) and party icons from a game's download zip and
-// writes the sprite manifest. Sprites are local-only (gitignored); never commit them.
+// Extracts Pokemon front sprites (normal + shiny), party icons and item icons from a game's download zip and
+// writes the sprite manifests (sprites.json, item-sprites.json). Sprites are local-only (gitignored); never commit them.
 //
 // Usage (node >= 23.6 runs .ts directly; needs `unzip`):
 //   node scripts/build-sprites.ts <game> [spritesOutDir] [zipPath] [dexJsonPath]
@@ -13,6 +13,7 @@ import { dirname, join, resolve } from 'node:path'
 import { alphaBounds, cropPng, type Box } from './png-crop.ts'
 import { loadGame, ROOT } from './game.ts'
 import { battlerSource, iconSource, type Dims, type SpriteSource } from '../app/src/components/dex/spriteMap.ts'
+import { itemIconSource, parseRubyHash } from '../app/src/components/dex/itemSpriteMap.ts'
 
 interface DexForm { name?: string }
 interface DexJson { species: Record<string, { name: string; forms: Record<string, DexForm> }> }
@@ -40,10 +41,13 @@ if (!dexPath) {
   process.exit(1)
 }
 const manifestPath = join(dirname(dexPath), 'sprites.json')
+const itemManifestPath = join(dirname(dexPath), 'item-sprites.json')
 const prefix = game.build.sprites.graphics
+const scriptsDir = game.build.sprites.scripts
+const itemScripts = scriptsDir ? [`${scriptsDir}/itemtext.rb`, `${scriptsDir}/movetext.rb`] : []
 
 const scratch = mkdtempSync(join(tmpdir(), `${gameId}-sprites-`))
-execFileSync('unzip', ['-q', '-o', zip, `${prefix}/Battlers/*`, `${prefix}/Icons/*`, '-d', scratch])
+execFileSync('unzip', ['-q', '-o', zip, `${prefix}/Battlers/*`, `${prefix}/Icons/*`, ...itemScripts, '-d', scratch])
 
 // Width/height straight from the PNG IHDR chunk.
 const pngDims = (file: string): Dims => {
@@ -130,9 +134,28 @@ for (const [sym, sp] of Object.entries(dex.species)) {
 }
 
 writeFileSync(manifestPath, JSON.stringify(manifest))
+
+// Item icons: { SYM: { name, icon } } for every item in the game's ITEMHASH (48x48, copied as is)
+const itemManifest: Record<string, { name?: string; icon: string }> = {}
+const noItemIcon: string[] = []
+if (scriptsDir) {
+  const ruby = (f: string) => parseRubyHash(readFileSync(join(scratch, scriptsDir, f), 'utf8'))
+  const items = ruby('itemtext.rb')
+  const moves = ruby('movetext.rb')
+  const iconFiles = new Map([...icons.keys()].map(f => [f.toLowerCase(), f]))
+  for (const [sym, item] of Object.entries(items)) {
+    const file = itemIconSource(sym, item, moves, iconFiles)
+    if (!file) { noItemIcon.push(sym); continue }
+    const path = `${spritePrefix}item/${sym.toLowerCase()}.png`
+    emit(iconDir, { file, crop: null }, abs(path))
+    itemManifest[sym] = { name: item.name, icon: path }
+  }
+}
+writeFileSync(itemManifestPath, JSON.stringify(itemManifest))
 rmSync(scratch, { recursive: true, force: true })
 const noFront = Object.entries(manifest).flatMap(([s, fs]) => Object.entries(fs).filter(([, f]) => !f.front).map(([k]) => `${s}:${k}`))
 console.log(`manifest: ${manifestPath} (${Object.keys(manifest).length} species)`)
 console.log(`sprites:  ${outDir}`)
 console.log(`no sprite at all (${missing.length}): ${missing.slice(0, 20).join(' ')}`)
 console.log(`icon only (${noFront.length}): ${noFront.slice(0, 20).join(' ')}`)
+console.log(`items:    ${itemManifestPath} (${Object.keys(itemManifest).length} icons, ${noItemIcon.length} missing: ${noItemIcon.slice(0, 20).join(' ')})`)

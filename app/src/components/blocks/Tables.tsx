@@ -1,6 +1,7 @@
 import type { EncountersBlock, MiningBlock, PickupBlock, ShopBlock, TutorBlock, WildHeldBlock } from '../../data/types'
 import { dexHref } from '../../lib/route'
 import { TypeChip, itemName, money, typeVar, useDex, useGame } from '../common'
+import { ItemSprite } from '../dex/ItemSprite'
 import { MonSprite } from '../dex/MonSprite'
 import { CaughtToggle, TierBadge } from '../pokedex/bits'
 import { usePokedex } from '../pokedex/context'
@@ -95,7 +96,7 @@ export const Shop = ({ b, id }: { b: ShopBlock; id?: string }) => {
         <tbody>
           {b.items.map((it, i) => (
             <tr key={i} className={it.highlight ? 'pick' : ''}>
-              <td><DexHover kind="item" sym={it.item}>{it.name}</DexHover></td>
+              <td><ItemSprite sym={it.item} name={it.name} /><DexHover kind="item" sym={it.item}>{it.name}</DexHover></td>
               <td className="price">{money(it.price)}</td>
             </tr>
           ))}
@@ -138,7 +139,7 @@ export const Pickup = ({ b }: { b: PickupBlock }) => {
         <tbody>
           {b.rows.map((r, i) => (
             <tr key={i}>
-              <td>{itemName(dex, r.item)}</td>
+              <td><ItemSprite sym={r.item} />{itemName(dex, r.item)}</td>
               <td className="mono muted">{r.odds.map(o => `${o.percent}% @ Lv ${o.minLevel}-${o.maxLevel}`).join(', ')}</td>
             </tr>
           ))}
@@ -157,7 +158,7 @@ export const Mining = ({ b }: { b: MiningBlock }) => {
         <tbody>
           {b.rows.map((r, i) => (
             <tr key={i}>
-              <td>{r.items.map(s => itemName(dex, s)).join(', ')}</td>
+              <td>{r.items.map((s, j) => <span key={j}>{j > 0 && ', '}<ItemSprite sym={s} />{itemName(dex, s)}</span>)}</td>
               <td className="price">{r.probability}%</td>
             </tr>
           ))}
@@ -176,7 +177,7 @@ export const WildHeld = ({ b }: { b: WildHeldBlock }) => {
         <tbody>
           {b.rows.map((r, i) => (
             <tr key={i}>
-              <td>{itemName(dex, r.item)}</td>
+              <td><ItemSprite sym={r.item} />{itemName(dex, r.item)}</td>
               <td className="muted">{r.chances.map(c => `${c.percent}%: ${c.pokemon.map(p => p.displayName).join(', ')}`).join(' / ')}</td>
             </tr>
           ))}

@@ -27,6 +27,10 @@ See `README.md` for the data pipeline, layout and run commands.
 - Screenshot-to-map pairings live in `hidden-maps/<game>.json` (see README "Hidden item maps"); add new ones with `node scripts/apply-hidden-maps.ts <game> --suggest` and review. Checkbox ids stay keyed by screenshot file and letter; never change them.
 - Route maps and hidden items share `app/src/features/route-map/MapCard.tsx`; extend it rather than forking a new map card.
 
+## Item icons
+
+- Show `ItemSprite` (`app/src/components/dex/ItemSprite.tsx`, by `sym` or by `name`) before every item name in the UI. Icons come from `scripts/build-sprites.ts` (`item-sprites.json`); the component renders nothing when they are not built.
+
 ## Tests
 
 - `bash scripts/test.sh` (override, task and progress-id unit tests + upstream generator tests) and `cd app && yarn test`.

@@ -2,6 +2,12 @@ import type { Evolution, Pokedex } from '../data/types'
 
 const TIME: Record<string, string> = { Day: 'during the day', Night: 'at night' }
 
+const ITEM_METHODS = new Set(['Item', 'ItemMale', 'ItemFemale', 'TradeItem', 'DayHoldItem', 'NightHoldItem'])
+
+// Item symbol an evolution needs (stone, held item), or null
+export const evolutionItem = (evo: Evolution): string | null =>
+  ITEM_METHODS.has(evo.method) && typeof evo.parameter === 'string' ? evo.parameter : null
+
 // Human-readable evolution condition, e.g. "Level 16", "Use Water Stone", "Trade holding Metal Coat"
 export const describeEvolution = (dex: Pokedex, evo: Evolution): string => {
   const p = evo.parameter

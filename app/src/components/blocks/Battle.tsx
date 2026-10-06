@@ -3,6 +3,7 @@ import { battleId } from '../../lib/route'
 import { teamCoverage, weaknesses } from '../../lib/typechart'
 import { FieldBanner } from '../fields/FieldBanner'
 import { TypeChip, itemName, typeVar, useDex } from '../common'
+import { ItemSprite } from '../dex/ItemSprite'
 import { MonSprite } from '../dex/MonSprite'
 import { StatBars } from '../dex/StatBars'
 import { DexHover } from '../../features/hovercards/DexHover'
@@ -52,7 +53,7 @@ const MonRow = ({ m, owner, showSpread }: { m: PartyMon; owner?: string; showSpr
           {owner && <span className="eyebrow">{owner}'s</span>}
         </div>
         {ability && <span className="ability"><DexHover kind="ability" sym={m.ability!}><b>{ability.name}</b></DexHover></span>}
-        {m.item && <span className="ability">@ <DexHover kind="item" sym={m.item}><b>{itemName(dex, m.item)}</b></DexHover></span>}
+        {m.item && <span className="ability">@ <ItemSprite sym={m.item} /><DexHover kind="item" sym={m.item}><b>{itemName(dex, m.item)}</b></DexHover></span>}
       </div>
       </div>
       <div className="types">

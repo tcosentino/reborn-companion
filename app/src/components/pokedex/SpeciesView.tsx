@@ -2,7 +2,8 @@ import './pokedex.css'
 import { useEffect, useMemo, useState } from 'react'
 import type { Factor, MoveSource, SetMove, Sym } from '../../data/types'
 import { loadMovesets, useAsync } from '../../data/load'
-import { describeEvolution } from '../../lib/evolution'
+import { describeEvolution, evolutionItem } from '../../lib/evolution'
+import { ItemSprite } from '../dex/ItemSprite'
 import { preEvolutionMap } from '../../lib/ranking'
 import { dexHref, href } from '../../lib/route'
 import { TypeChip, useGame } from '../common'
@@ -42,11 +43,11 @@ export const SpeciesView = ({ sym }: { sym: Sym }) => {
   const abilityName = (a: Sym) => data.dex.abilities[a]?.name ?? a
   const from = (pre[sym] ?? []).flatMap(p => {
     const ps = data.dex.species[p]
-    return Object.values(ps.forms).flatMap(pf => pf.evolutions.filter(e => e.species === sym).map(e => ({ sym: p, how: describeEvolution(data.dex, e) })))
+    return Object.values(ps.forms).flatMap(pf => pf.evolutions.filter(e => e.species === sym).map(e => ({ sym: p, how: describeEvolution(data.dex, e), item: evolutionItem(e) })))
   })
-  const into = f.evolutions.map(e => ({ sym: e.species, how: describeEvolution(data.dex, e) }))
+  const into = f.evolutions.map(e => ({ sym: e.species, how: describeEvolution(data.dex, e), item: evolutionItem(e) }))
   // Same target can appear twice (e.g. Leafeon by stone and by location)
-  const uniq = (list: { sym: Sym; how: string }[]) =>
+  const uniq = (list: { sym: Sym; how: string; item: string | null }[]) =>
     list.filter((x, i) => list.findIndex(y => y.sym === x.sym && y.how === x.how) === i)
 
   return (
@@ -158,10 +159,10 @@ export const SpeciesView = ({ sym }: { sym: Sym }) => {
             <div className="block-head"><h3>Evolution</h3></div>
             <ul className="evo">
               {uniq(from).map((e, i) => (
-                <li key={`f${i}`}><span className="eyebrow">From</span><a href={dexHref(game.id, e.sym)}>{data.dex.species[e.sym]?.name}</a><span className="muted">{e.how}</span></li>
+                <li key={`f${i}`}><span className="eyebrow">From</span><a href={dexHref(game.id, e.sym)}>{data.dex.species[e.sym]?.name}</a><span className="muted"><ItemSprite sym={e.item} />{e.how}</span></li>
               ))}
               {uniq(into).map((e, i) => (
-                <li key={`t${i}`}><span className="eyebrow">Into</span><a href={dexHref(game.id, e.sym)}>{data.dex.species[e.sym]?.name}</a><span className="muted">{e.how}</span></li>
+                <li key={`t${i}`}><span className="eyebrow">Into</span><a href={dexHref(game.id, e.sym)}>{data.dex.species[e.sym]?.name}</a><span className="muted"><ItemSprite sym={e.item} />{e.how}</span></li>
               ))}
             </ul>
           </section>

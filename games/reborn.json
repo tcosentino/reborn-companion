@@ -10,7 +10,8 @@
     "fieldsScript": "game-scripts/Reborn/fieldtext.rb",
     "sprites": {
       "zip": "~/Downloads/Reborn-19.5.0-macos.zip",
-      "graphics": "Reborn.app/Contents/Game/Graphics"
+      "graphics": "Reborn.app/Contents/Game/Graphics",
+      "scripts": "Reborn.app/Contents/Game/Scripts/Reborn"
     },
     "maps": {
       "zip": "~/Downloads/Reborn-19.5.0-macos.zip",

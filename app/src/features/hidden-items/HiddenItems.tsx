@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { Dex } from '../../data/types'
 import { useDex, useGame } from '../../components/common'
+import { ItemSprite } from '../../components/dex/ItemSprite'
 import { MapCard, type MapMark } from '../route-map/MapCard'
 import { hiddenEntryId, type HiddenEntry, type HiddenItemsBlock } from './group'
 import { useHiddenChecked } from './useHiddenChecked'
@@ -74,7 +75,7 @@ const Screenshot = ({ b, collapsed, p }: { b: HiddenItemsBlock; collapsed?: bool
                   <span className="hi-key" aria-hidden="true">{e.letter}</span>
                   <span className="hi-text">
                     <span className="hi-name" title={describe(dex, e.name)}>
-                      <span className="sr-only">{`Marker ${e.letter}: `}</span>{e.name}
+                      <span className="sr-only">{`Marker ${e.letter}: `}</span><ItemSprite name={e.name} />{e.name}
                     </span>
                     <Detail e={e} />
                   </span>
@@ -107,7 +108,7 @@ export const HiddenItems = ({ b, collapsed }: { b: HiddenItemsBlock; collapsed?:
     key: e.letter,
     x: at.get(e.letter)?.x,
     y: at.get(e.letter)?.y,
-    label: e.name,
+    label: <><ItemSprite name={e.name} />{e.name}</>,
     hint: describe(dex, e.name),
     detail: <Detail e={e} />,
     done: !!done[ids[i]],
