@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { Chapter, GuideIndex, RankEntry } from '../data/types'
-import { anchorAt, furthestBeaten, mySpot, nextUnbeaten, pageItems, sumTallies, tally } from './guideNav'
+import { anchorAt, caughtTally, furthestBeaten, sectionSpecies, mySpot, nextUnbeaten, pageItems, sumTallies, tally } from './guideNav'
 import { battleRefs, buildSectionBattles, type BattleRef } from './sectionBattles'
 import { catchHere } from './catchHere'
 import { parseSpot } from './progress'
@@ -119,5 +119,26 @@ describe('catchHere', () => {
     }
     const list = catchHere(blocks, { caught: {}, places: s => places[s], sectionOrder: { early: 0, here: 1, later: 2 }, here: 1 })
     expect(list.filter(s => s.lastChance).map(s => s.species)).toEqual(['ABRA'])
+  })
+})
+
+describe('sectionSpecies', () => {
+  const species = {
+    ABRA: { locations: [{ sectionId: 'a' }, { sectionId: 'b' }, { sectionId: 'a' }] },
+    ZUBAT: { locations: [{ sectionId: 'a' }] },
+    MEW: { locations: [] }
+  }
+
+  it('groups species by section without duplicates', () => {
+    const map = sectionSpecies(species)
+    expect(map.a.sort()).toEqual(['ABRA', 'ZUBAT'])
+    expect(map.b).toEqual(['ABRA'])
+    expect(Object.keys(map).sort()).toEqual(['a', 'b'])
+  })
+
+  it('counts each species once across sections', () => {
+    const map = sectionSpecies(species)
+    expect(caughtTally([map.a, map.b, map.missing], { ABRA: true })).toEqual({ beaten: 1, total: 2 })
+    expect(caughtTally([undefined], {})).toEqual({ beaten: 0, total: 0 })
   })
 })

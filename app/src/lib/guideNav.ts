@@ -1,5 +1,6 @@
 // Pure helpers for guide navigation: whole-guide progress, "my spot", the block in view
 // and the "On this page" list. Rendering lives in features/guide-nav/.
+import type { DexLocation, Sym } from '../data/types'
 import type { BattleRef } from './sectionBattles'
 
 export interface Tally { beaten: number; total: number }
@@ -11,6 +12,19 @@ export const tally = (refs: BattleRef[] | undefined, done: Record<string, true>)
 
 export const sumTallies = (ts: Tally[]): Tally =>
   ts.reduce((a, t) => ({ beaten: a.beaten + t.beaten, total: a.total + t.total }), { beaten: 0, total: 0 })
+
+// Section id -> species listed there (encounter tables and shops), from pokedex.json locations
+export const sectionSpecies = (species: Record<Sym, { locations: Pick<DexLocation, 'sectionId'>[] }>): Record<string, Sym[]> => {
+  const out: Record<string, Set<Sym>> = {}
+  for (const [sym, s] of Object.entries(species)) for (const l of s.locations) (out[l.sectionId] ??= new Set()).add(sym)
+  return Object.fromEntries(Object.entries(out).map(([id, set]) => [id, [...set]]))
+}
+
+// Caught out of the distinct species across the given sections (a species listed twice counts once)
+export const caughtTally = (lists: (Sym[] | undefined)[], caught: Record<string, true>): Tally => {
+  const all = new Set(lists.flatMap(l => l ?? []))
+  return { beaten: [...all].filter(s => caught[s]).length, total: all.size }
+}
 
 export const nextUnbeaten = (refs: BattleRef[] | undefined, done: Record<string, true>) =>
   refs?.find(([id]) => !done[id])

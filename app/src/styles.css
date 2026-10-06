@@ -52,7 +52,8 @@ h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-he
 .picker-card span { color: var(--muted); font-size: .92rem }
 
 /* Shell */
-.shell { display: grid; grid-template-columns: 290px minmax(0, 1fr); min-height: 100vh }
+.shell { display: grid; grid-template-columns: 340px minmax(0, 1fr); min-height: 100vh }
+@media (min-width: 1280px) { .shell { grid-template-columns: 380px minmax(0, 1fr) } }
 .sidebar { position: sticky; top: 0; height: 100vh; overflow-y: auto; background: var(--surface); border-right: 1px solid var(--line); padding: 1rem 0 3rem }
 .side-head { padding: 0 1rem .8rem; display: grid; gap: .2rem }
 .brand { font: 700 1.3rem var(--display); color: var(--ink); text-decoration: none }
@@ -67,19 +68,21 @@ h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-he
 /* Whole-guide progress: per-section and per-chapter counts, furthest section, "Jump to my spot" */
 .side-count { flex: none; font: 600 .68rem var(--mono); font-variant-numeric: tabular-nums; color: var(--muted) }
 .side-count.full { color: var(--good) }
+.side-counts { flex: none; display: inline-flex; gap: .5rem }
+.side-slot { min-width: 3.4em; text-align: right }
+.side-count.caught::before { content: ''; display: inline-block; width: .5em; height: .5em; margin-right: .3em; border: 1.5px solid currentColor; border-radius: 50%; background: linear-gradient(currentColor 0 0) center / 100% 1.5px no-repeat; vertical-align: -.02em }
 .sections a.furthest { box-shadow: inset 3px 0 0 var(--good) }
 .sections a.furthest > span:first-child::after { content: ''; display: inline-block; width: .4rem; height: .4rem; margin-left: .4rem; border-radius: 50%; background: var(--good); vertical-align: middle }
 .my-spot { display: grid; margin: 0 1rem .8rem; padding: .45rem .7rem; border: 1px solid var(--good); border-radius: 6px; background: color-mix(in srgb, var(--good) 8%, var(--surface)); color: var(--ink); text-decoration: none; font: 600 .86rem var(--display) }
 .my-spot small { font: 400 .76rem var(--body); color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
 .my-spot:hover { border-color: var(--accent) }
-.side-total { display: flex; justify-content: space-between; align-items: baseline; padding: 0 1rem .4rem }
 
 .content { min-width: 0; padding: 0 clamp(16px, 4vw, 48px) 4rem }
 .section { max-width: 980px; margin: 0 auto }
 
 @media (max-width: 860px) {
   .shell { grid-template-columns: minmax(0, 1fr) }
-  .sidebar { position: fixed; inset: 0 auto 0 0; width: min(320px, 85vw); z-index: 20; transform: translateX(-100%); transition: transform .2s; box-shadow: 0 0 40px rgb(0 0 0 / .25) }
+  .sidebar { position: fixed; inset: 0 auto 0 0; width: min(360px, 90vw); z-index: 20; transform: translateX(-100%); transition: transform .2s; box-shadow: 0 0 40px rgb(0 0 0 / .25) }
   .sidebar.open { transform: none }
   /* The bottom bar (features/guide-nav) replaces the floating buttons; leave room for it */
   .sidebar { padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px)) }

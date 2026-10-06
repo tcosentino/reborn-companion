@@ -13,9 +13,9 @@ import { MoveView } from './components/reference/MoveView'
 import { loadChapter, loadDex, loadIndex, loadPokedex, loadRanks, useAsync } from './data/load'
 import type { GuideIndex } from './data/types'
 import { GAMES, gameById, type GameConfig } from './games'
-import { readLastSection, readLastSpot, useProgress, writeLastSection } from './lib/progress'
+import { readLastSection, readLastSpot, useCaught, useProgress, writeLastSection } from './lib/progress'
 import { loadBattles } from './data/load'
-import { furthestBeaten, mySpot, sumTallies, tally } from './lib/guideNav'
+import { caughtTally, furthestBeaten, mySpot, sectionSpecies, sumTallies, tally } from './lib/guideNav'
 import type { BattleRef } from './lib/sectionBattles'
 import { flashAnchor } from './components/palette/anchorScroll'
 import { BottomBar } from './features/guide-nav/BottomBar'
@@ -45,19 +45,28 @@ const GamePicker = () => (
   </main>
 )
 
-const Count = ({ beaten, total }: { beaten: number; total: number }) => total > 0
-  ? <span className={`side-count${beaten === total ? ' full' : ''}`} aria-label={`${beaten} of ${total} battles won`}>{beaten}/{total}</span>
+const Count = ({ beaten, total, caught }: { beaten: number; total: number; caught?: boolean }) => total > 0
+  ? <span className={`side-count${caught ? ' caught' : ''}${beaten === total ? ' full' : ''}`}
+      title={caught ? 'Pokemon caught' : 'Battles won'} aria-label={`${beaten} of ${total} ${caught ? 'Pokemon caught' : 'battles won'}`}>{beaten}/{total}</span>
   : null
 
-const Sidebar = ({ game, idx, flat, current, open, onClose, inDex, battles }: {
+// Battles won and Pokemon caught, side by side; the slots keep columns aligned when one is missing
+const Counts = ({ battles, caught }: { battles?: { beaten: number; total: number }; caught?: { beaten: number; total: number } }) => (
+  <span className="side-counts">
+    <span className="side-slot">{battles && <Count {...battles} />}</span>
+    <span className="side-slot">{caught && <Count {...caught} caught />}</span>
+  </span>
+)
+
+const Sidebar = ({ game, idx, flat, current, open, onClose, inDex, battles, catchable }: {
   game: GameConfig; idx: GuideIndex; flat: FlatSection[]; current: FlatSection; open: boolean; onClose: () => void; inDex: boolean
-  battles?: Record<string, BattleRef[]>
+  battles?: Record<string, BattleRef[]>; catchable?: Record<string, string[]>
 }) => {
   const { done } = useProgress(game.id)
+  const { done: caught } = useCaught(game.id)
   const order = useMemo(() => flat.map(s => s.id), [flat])
   const furthest = battles ? flat[furthestBeaten(order, battles, done)] : undefined
   const spot = battles ? mySpot(order, battles, done) : null
-  const total = battles ? sumTallies(order.map(id => tally(battles[id], done))) : null
 
   // The current chapter and the one holding your furthest progress start open
   const [expanded, setExpanded] = useState<Set<string>>(() => new Set([current.chapterId]))
@@ -87,22 +96,17 @@ const Sidebar = ({ game, idx, flat, current, open, onClose, inDex, battles }: {
           <small>{flat.find(s => s.id === spot.section)?.title}{spot.label ? ` · ${spot.label}` : ''}</small>
         </a>
       )}
-      {total && total.total > 0 && (
-        <div className="side-total">
-          <span className="eyebrow">Guide progress</span>
-          <Count {...total} />
-        </div>
-      )}
       <ol className="chapters">
         {idx.chapters.map(c => {
           const sections = c.sections.map(s => ({ id: s.id ?? c.id, title: s.title ?? 'Introduction' }))
           const isOpen = expanded.has(c.id)
-          const ct = battles ? sumTallies(sections.map(s => tally(battles[s.id], done))) : null
+          const ct = battles ? sumTallies(sections.map(s => tally(battles[s.id], done))) : undefined
+          const cc = catchable ? caughtTally(sections.map(s => catchable[s.id]), caught) : undefined
           return (
             <li key={c.id} className={c.id === current.chapterId ? 'current' : ''}>
               <button className="chapter-btn" onClick={() => toggleChapter(c.id)} aria-expanded={isOpen}>
                 <span>{c.title}</span>
-                {ct && <Count {...ct} />}
+                <Counts battles={ct} caught={cc} />
               </button>
               {isOpen && (
                 <ol className="sections">
@@ -111,7 +115,7 @@ const Sidebar = ({ game, idx, flat, current, open, onClose, inDex, battles }: {
                       <a href={href(game.id, s.id)} onClick={onClose} aria-current={!inDex && s.id === current.id ? 'page' : undefined}
                         className={s.id === furthest?.id ? 'furthest' : undefined} title={s.id === furthest?.id ? 'Furthest section with a battle won' : undefined}>
                         <span>{s.title}</span>
-                        {battles && <Count {...tally(battles[s.id], done)} />}
+                        <Counts battles={battles && tally(battles[s.id], done)} caught={catchable && caughtTally([catchable[s.id]], caught)} />
                       </a>
                     </li>
                   ))}
@@ -147,6 +151,7 @@ const GuideView = ({ game, route }: { game: GameConfig; route: Route }) => {
   const [menu, setMenu] = useState(false)
   // Per-section battle ids for whole-guide progress; the sidebar shows counts once it arrives
   const battles = useAsync(() => loadBattles(game.id), [game.id])
+  const catchable = useMemo(() => pokedex.data ? sectionSpecies(pokedex.data.species) : undefined, [pokedex.data])
   const order = useMemo(() => Object.fromEntries(flat.map(s => [s.id, s.index])), [flat])
   const titles = useMemo(() => Object.fromEntries(flat.map(s => [s.id, s.title])), [flat])
   // Spot saved by the previous visit: reopening that section without an anchor returns to the saved block
@@ -186,7 +191,7 @@ const GuideView = ({ game, route }: { game: GameConfig; route: Route }) => {
         <PokedexContext.Provider value={dexData}>
           <div className="shell">
             <CommandPalette />
-            <Sidebar game={game} idx={idx.data} flat={flat} current={current} open={menu} onClose={() => setMenu(false)} inDex={route.pokedex} battles={battles.data?.s} />
+            <Sidebar game={game} idx={idx.data} flat={flat} current={current} open={menu} onClose={() => setMenu(false)} inDex={route.pokedex} battles={battles.data?.s} catchable={catchable} />
             <main className="content">
               {route.pokedex && lastSpot && titles[lastSpot.section] && (
                 <div className="guide-return">
