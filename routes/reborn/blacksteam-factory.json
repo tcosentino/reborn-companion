@@ -1,0 +1,145 @@
+[
+  {
+    "id": "1f-front-gate-panel",
+    "match": "Beat the grunts and activate the wall panel in the top right corner.",
+    "map": 10,
+    "title": "1F: Super Potion and the front gate panel",
+    "points": [
+      {
+        "at": [
+          24,
+          3
+        ],
+        "label": "Stairs from B1F"
+      },
+      {
+        "at": [
+          36,
+          3
+        ],
+        "label": "Super Potion"
+      },
+      {
+        "at": [
+          40,
+          2
+        ],
+        "label": "Wall panel (front gate)"
+      },
+      {
+        "at": [
+          45,
+          19
+        ],
+        "label": "Exit to Peridot Ward"
+      }
+    ]
+  },
+  {
+    "id": "1f-stairs-to-2f",
+    "match": "Towards the bottom of the area you'll find more stairs",
+    "map": 10,
+    "title": "1F: down to the stairs up to 2F",
+    "points": [
+      {
+        "at": [
+          40,
+          3
+        ],
+        "label": "Wall panel"
+      },
+      {
+        "at": [
+          24,
+          21
+        ],
+        "label": "Stairs up to 2F"
+      }
+    ]
+  },
+  {
+    "id": "2f-machine-and-panel",
+    "match": "Grab the hidden *Revive* to the left, then go to the right here.",
+    "map": 9,
+    "title": "2F: green-light machine and the lock panel",
+    "points": [
+      {
+        "at": [
+          12,
+          22
+        ],
+        "label": "Stairs from 1F"
+      },
+      {
+        "at": [
+          36,
+          13
+        ],
+        "label": "Machine with green lights"
+      },
+      {
+        "at": [
+          32,
+          1
+        ],
+        "label": "Panel (atrium lock 2)"
+      },
+      {
+        "at": [
+          12,
+          23
+        ],
+        "label": "Stairs back down"
+      }
+    ],
+    "hide": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13
+    ]
+  },
+  {
+    "id": "1f-open-door",
+    "match": "Activate the panel at the top right and go back downstairs.",
+    "map": 10,
+    "title": "1F: the open door on the left",
+    "points": [
+      {
+        "at": [
+          24,
+          22
+        ],
+        "label": "Stairs from 2F"
+      },
+      {
+        "at": [
+          11,
+          20
+        ],
+        "label": "Open door"
+      }
+    ],
+    "hide": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      34
+    ]
+  }
+]

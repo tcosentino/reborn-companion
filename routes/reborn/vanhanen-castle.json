@@ -1,0 +1,38 @@
+[
+  {
+    "id": "labyrinth-to-castle",
+    "match": "You can get the *Chess Board Field Readout* as well as hidden",
+    "map": 292,
+    "title": "Through the labyrinth to the castle",
+    "points": [
+      {
+        "at": [
+          34,
+          0
+        ],
+        "label": "From Route 1"
+      },
+      {
+        "at": [
+          13,
+          36
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          13,
+          33
+        ],
+        "label": "Gate"
+      },
+      {
+        "at": [
+          16,
+          15
+        ],
+        "label": "Vanhanen Castle"
+      }
+    ]
+  }
+]

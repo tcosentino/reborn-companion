@@ -1,0 +1,82 @@
+[
+  {
+    "id": "password-building",
+    "match": "Before continuing, we can actually do one more quick quest.",
+    "map": 414,
+    "title": "Eve's building to the password screen",
+    "points": [
+      {
+        "at": [
+          33,
+          44
+        ],
+        "label": "Eve's building"
+      },
+      {
+        "at": [
+          68,
+          42
+        ],
+        "label": "Password screen building"
+      }
+    ],
+    "hide": [
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      77,
+      78,
+      82,
+      85,
+      86,
+      88,
+      89,
+      91,
+      92,
+      93,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      113,
+      114,
+      115,
+      116,
+      162,
+      163
+    ]
+  },
+  {
+    "id": "jasper-apartment",
+    "match": "Fly over to Jasper Ward and enter the second apartment",
+    "map": 523,
+    "title": "Pokemon Center to the apartment",
+    "points": [
+      {
+        "at": [
+          33,
+          15
+        ],
+        "label": "Pokemon Center"
+      },
+      {
+        "at": [
+          32,
+          31
+        ],
+        "label": "Apartment (second from left)"
+      }
+    ]
+  }
+]

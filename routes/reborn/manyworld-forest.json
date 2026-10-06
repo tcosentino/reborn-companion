@@ -1,0 +1,12 @@
+[
+  {
+    "id": "to-zcell-22",
+    "match": "This map is huge but mostly empty.",
+    "map": 848,
+    "title": "Pond to the bottom-left ZCell",
+    "points": [
+      { "at": [90, 151], "label": "Pond (surface here)" },
+      { "at": [34, 159], "label": "ZCell 22" }
+    ]
+  }
+]

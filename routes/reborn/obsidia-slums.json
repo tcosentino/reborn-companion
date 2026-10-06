@@ -1,0 +1,53 @@
+[
+  {
+    "id": "entrance-to-light-shard",
+    "match": "Grab a *Potion* (A, below) in the trash can to the left and head up.",
+    "map": 85,
+    "title": "Entrance up and left to the Light Shard",
+    "points": [
+      {
+        "at": [
+          49,
+          47
+        ],
+        "label": "Entrance"
+      },
+      {
+        "at": [
+          4,
+          25
+        ],
+        "label": "Light Shard"
+      }
+    ]
+  },
+  {
+    "id": "victoria-and-escalator",
+    "match": "If you talked to Victoria near the park earlier, head up",
+    "map": 85,
+    "title": "Up to Victoria and the B1F escalator",
+    "points": [
+      {
+        "at": [
+          4,
+          26
+        ],
+        "label": "Light Shard"
+      },
+      {
+        "at": [
+          8,
+          9
+        ],
+        "label": "Victoria"
+      },
+      {
+        "at": [
+          12,
+          8
+        ],
+        "label": "Escalator to B1F"
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "telluric-seed-building",
+    "match": "Outside, the building to your right contains a *Telluric Seed*.",
+    "map": 79,
+    "title": "Nightclub to the Telluric Seed building",
+    "points": [
+      { "at": [36, 23], "label": "Nightclub" },
+      { "at": [56, 22], "label": "Telluric Seed building" },
+      { "at": [63, 18], "label": "North Obsidia Alleyway" }
+    ]
+  },
+  {
+    "id": "spyce-restaurant",
+    "match": "Next, enter the Spyce restaurant below and to the right.",
+    "map": 79,
+    "title": "Alleyway to the Spyce restaurant",
+    "points": [
+      { "at": [63, 19], "label": "North Obsidia Alleyway" },
+      { "at": [70, 35], "label": "The Spyce" }
+    ]
+  }
+]

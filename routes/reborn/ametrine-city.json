@@ -1,0 +1,13 @@
+[
+  {
+    "id": "west-to-rotom-house-and-tall-building",
+    "match": "Head west at the next fork.",
+    "map": 439,
+    "title": "West to the Rotom house and the tall building",
+    "points": [
+      { "at": [78, 94], "label": "Old man's building" },
+      { "at": [48, 94], "label": "Rotom house" },
+      { "at": [31, 88], "label": "Tall building (Pidove trade on 2F)" }
+    ]
+  }
+]

@@ -7,6 +7,8 @@ GAME="${1:-reborn}"
 node --no-warnings "$ROOT/scripts/apply-tasks.ts" "$GAME"
 # Starter picker cards (starters/<game>/) replace the paragraph listing the starters
 node --no-warnings "$ROOT/scripts/apply-starters.ts" "$GAME"
+# Route maps (routes/<game>/) go after their paragraphs; needs scripts/build-maps.sh, skipped without it
+node --no-warnings "$ROOT/scripts/apply-routes.ts" "$GAME"
 node --no-warnings "$ROOT/scripts/build-search.ts" "$GAME"
 rm -rf "$ROOT/app/public/data/$GAME"
 mkdir -p "$ROOT/app/public/data"

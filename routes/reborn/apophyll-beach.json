@@ -1,0 +1,59 @@
+[
+  {
+    "id": "academy-courtyard-rooms",
+    "match": "Pick up a hidden *Guard Spec*. Now we are going to enter the six doors",
+    "map": 17,
+    "title": "Academy courtyard: the side rooms",
+    "points": [
+      {
+        "at": [
+          11,
+          25
+        ],
+        "label": "From the front hall"
+      },
+      {
+        "at": [
+          6,
+          15
+        ],
+        "label": "Top left (Black Belt)"
+      },
+      {
+        "at": [
+          6,
+          23
+        ],
+        "label": "Bottom left (TV girl)"
+      },
+      {
+        "at": [
+          16,
+          23
+        ],
+        "label": "Bottom right (unrealtime, Hidden Power)"
+      },
+      {
+        "at": [
+          16,
+          19
+        ],
+        "label": "Middle right (Pure Incense)"
+      },
+      {
+        "at": [
+          16,
+          15
+        ],
+        "label": "Top right (Dudebro, Ashen Beach readout)"
+      },
+      {
+        "at": [
+          11,
+          10
+        ],
+        "label": "Area at the top"
+      }
+    ]
+  }
+]

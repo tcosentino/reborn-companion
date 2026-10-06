@@ -1,0 +1,131 @@
+[
+  {
+    "id": "noel-readout",
+    "match": "Defeat the next Meteor Ace and head up to watch the scene.",
+    "map": 414,
+    "title": "Pokemon Center to Noel's building",
+    "points": [
+      {
+        "at": [
+          59,
+          22
+        ],
+        "label": "Pokemon Center"
+      },
+      {
+        "at": [
+          63,
+          11
+        ],
+        "label": "Noel's building (PULSE Readout 10)"
+      }
+    ],
+    "hide": [
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69
+    ]
+  },
+  {
+    "id": "sigmund-building",
+    "match": "Grab the hidden *Blue Shard* and *Burn Heal* then go up.",
+    "map": 414,
+    "title": "Sigmund's building, then up",
+    "points": [
+      {
+        "at": [
+          27,
+          32
+        ],
+        "label": "Meteor grunt"
+      },
+      {
+        "at": [
+          19,
+          30
+        ],
+        "label": "Sigmund's building (PP Up)"
+      },
+      {
+        "at": [
+          18,
+          22
+        ],
+        "label": "Meteor double battle"
+      }
+    ],
+    "hide": [
+      101,
+      113,
+      114,
+      115,
+      116
+    ]
+  },
+  {
+    "id": "center-then-eve",
+    "match": "Anyways, head to the center of the city next.",
+    "map": 414,
+    "title": "City center, then Eve's building",
+    "points": [
+      {
+        "at": [
+          19,
+          17
+        ],
+        "label": "Zero's building"
+      },
+      {
+        "at": [
+          48,
+          25
+        ],
+        "label": "Scene in the center"
+      },
+      {
+        "at": [
+          33,
+          43
+        ],
+        "label": "Eve's building"
+      }
+    ],
+    "hide": [
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      77,
+      78,
+      82,
+      85,
+      86,
+      88,
+      89,
+      91,
+      92,
+      93,
+      96,
+      97,
+      98,
+      99,
+      101,
+      113,
+      114,
+      115,
+      116,
+      162,
+      163,
+      102
+    ]
+  }
+]

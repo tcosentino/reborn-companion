@@ -1,0 +1,16 @@
+[
+  {
+    "id": "school-2f-rooms",
+    "match": "In the first door upstairs, a guy will give you the *Coin Case*!",
+    "map": 121,
+    "title": "Trainers' School 2F: three rooms and the wall-staring guy",
+    "points": [
+      { "at": [37, 6], "label": "Stairs from 1F" },
+      { "at": [33, 4], "label": "First room (Coin Case)" },
+      { "at": [23, 4], "label": "Next room (Protective Pads)" },
+      { "at": [15, 7], "label": "Third room (Quick Claw)" },
+      { "at": [11, 8], "label": "Talk to the wall-staring guy from the right" },
+      { "at": [8, 7], "label": "Door that opens" }
+    ]
+  }
+]

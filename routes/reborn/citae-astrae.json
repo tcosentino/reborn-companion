@@ -1,0 +1,22 @@
+[
+  {
+    "id": "grand-stairway-b2f-east",
+    "match": "Hey look! We made it to another chunk of the grand stairway",
+    "map": 179,
+    "title": "Across the Grand Stairway to the next room",
+    "points": [
+      { "at": [10, 31], "label": "From the Grand Gate" },
+      { "at": [77, 45], "label": "Next room" }
+    ]
+  },
+  {
+    "id": "up-to-citae-astrae",
+    "match": "Hey look! We made it to another chunk of the grand stairway",
+    "map": 304,
+    "title": "Ladder room to the new area",
+    "points": [
+      { "at": [30, 8], "label": "Bottom of the ladder" },
+      { "at": [12, 6], "label": "Into the new area" }
+    ]
+  }
+]

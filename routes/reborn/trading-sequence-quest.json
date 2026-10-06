@@ -1,0 +1,80 @@
+[
+  {
+    "id": "jasper-ring-girl",
+    "match": "Now, it's time to do something with the Diamond Ring",
+    "map": 523,
+    "title": "Pokemon Center to the top left building",
+    "points": [
+      {
+        "at": [
+          33,
+          15
+        ],
+        "label": "Pokemon Center"
+      },
+      {
+        "at": [
+          19,
+          14
+        ],
+        "label": "Top left building (ring girl)"
+      }
+    ]
+  },
+  {
+    "id": "coral-northern-warehouse",
+    "match": "Fly over to Coral Ward and enter the northern warehouse.",
+    "map": 526,
+    "title": "To the northern warehouse",
+    "points": [
+      {
+        "at": [
+          66,
+          19
+        ],
+        "label": "Pokemon Center"
+      },
+      {
+        "at": [
+          38,
+          9
+        ],
+        "label": "Northern warehouse"
+      }
+    ]
+  },
+  {
+    "id": "jasper-right-building",
+    "match": "Fly over to Jasper once more and attempt to enter",
+    "map": 523,
+    "title": "Pokemon Center to the building on the right",
+    "points": [
+      {
+        "at": [
+          33,
+          15
+        ],
+        "label": "Pokemon Center"
+      },
+      {
+        "at": [
+          74,
+          22
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          77,
+          22
+        ],
+        "label": "Building on the right",
+        "direct": true
+      }
+    ],
+    "hide": [
+      48,
+      49
+    ]
+  }
+]

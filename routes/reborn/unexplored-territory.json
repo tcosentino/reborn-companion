@@ -1,0 +1,119 @@
+[
+  {
+    "id": "anger-florinia",
+    "match": "The Florinia to the left of Latias, across the bridge",
+    "map": 857,
+    "title": "Latias to the first Florinia",
+    "points": [
+      {
+        "at": [
+          44,
+          77
+        ],
+        "label": "Latias"
+      },
+      {
+        "at": [
+          35,
+          77
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          26,
+          77
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          21,
+          66
+        ],
+        "label": "Florinia (Emotion #1)"
+      }
+    ]
+  },
+  {
+    "id": "guilt-florinia-outside",
+    "match": "You'll also be able to help the Florinia in the double-doored building",
+    "map": 857,
+    "title": "To the double-doored building",
+    "points": [
+      {
+        "at": [
+          44,
+          77
+        ],
+        "label": "Latias"
+      },
+      {
+        "at": [
+          54,
+          77
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          57,
+          77
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          65,
+          53
+        ],
+        "label": "Double-doored building"
+      }
+    ]
+  },
+  {
+    "id": "guilt-florinia-inside",
+    "match": "You'll also be able to help the Florinia in the double-doored building",
+    "map": 859,
+    "title": "Upstairs to the second Florinia",
+    "points": [
+      {
+        "at": [
+          57,
+          65
+        ],
+        "label": "Entrance"
+      },
+      {
+        "at": [
+          75,
+          77
+        ],
+        "label": "Florinia upstairs (Emotion #2)"
+      }
+    ]
+  },
+  {
+    "id": "sorrow-florinia",
+    "match": "The bottom right Florinia across some water has the solution:",
+    "map": 857,
+    "title": "Across the water to the third Florinia",
+    "surf": true,
+    "points": [
+      {
+        "at": [
+          65,
+          54
+        ],
+        "label": "Double-doored building"
+      },
+      {
+        "at": [
+          58,
+          81
+        ],
+        "label": "Florinia (Emotion #3)"
+      }
+    ]
+  }
+]

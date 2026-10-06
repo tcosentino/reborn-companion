@@ -1,0 +1,12 @@
+[
+  {
+    "id": "munna-trade-house",
+    "match": "By now hopefully you've been able to evolve your Bidoof",
+    "map": 57,
+    "title": "Mosswater to the Munna trade house",
+    "points": [
+      { "at": [61, 62], "label": "Mosswater Industrial" },
+      { "at": [83, 58], "label": "Trade house (Munna)" }
+    ]
+  }
+]

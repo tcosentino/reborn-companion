@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ringmaster-cotton-candy-samson",
+    "match": "Back outside, talk to the ringmaster in the upper left corner.",
+    "map": 355,
+    "title": "Ringmaster, Cotton Candy, then Samson",
+    "points": [
+      { "at": [50, 20], "label": "Right gate" },
+      { "at": [21, 9], "label": "Ringmaster" },
+      { "at": [48, 24], "label": "Cotton candy vendor" },
+      { "at": [23, 21], "label": "Samson at the High Striker" }
+    ],
+    "hide": [50, 51]
+  },
+  {
+    "id": "big-top-to-bottom-left-building",
+    "match": "Make your way to the bottom left of the circus, grab the hidden",
+    "map": 355,
+    "title": "Big Top to the bottom-left building",
+    "points": [
+      { "at": [30, 13], "label": "Big Top exit" },
+      { "at": [12, 34], "label": "Bottom-left building" }
+    ],
+    "hide": [50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 131, 132, 133, 134]
+  }
+]

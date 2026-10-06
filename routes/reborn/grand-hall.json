@@ -1,0 +1,13 @@
+[
+  {
+    "id": "potion-girl-to-grand-hall",
+    "match": "Proceed to the right into Opal Ward.",
+    "map": 29,
+    "title": "Potion girl, then the Grand Hall",
+    "points": [
+      { "at": [9, 62], "label": "From the train station" },
+      { "at": [27, 64], "label": "Potion girl" },
+      { "at": [34, 48], "label": "Girl at the Grand Hall doors" }
+    ]
+  }
+]

@@ -1,0 +1,199 @@
+[
+  {
+    "id": "magma-shack-and-craudburry",
+    "match": "Make your way to the shack to the right of the flower shop in Lapis Ward. Talk to Maxwell here.",
+    "map": 80,
+    "title": "Maxwell's shack, then Craudburry's house",
+    "points": [
+      {
+        "at": [
+          55,
+          60
+        ],
+        "label": "From North Obsidia (checkpoint)"
+      },
+      {
+        "at": [
+          18,
+          22
+        ],
+        "label": "Shack right of the flower shop"
+      },
+      {
+        "at": [
+          18,
+          61
+        ],
+        "label": "Ms. Craudburry's house"
+      }
+    ]
+  },
+  {
+    "id": "magma-aqua-member",
+    "match": "Head over to the Lapis Ward. To the west of the gym you'll find the Aqua Gang member.",
+    "map": 80,
+    "title": "To the Aqua Gang member",
+    "points": [
+      {
+        "at": [
+          55,
+          60
+        ],
+        "label": "From North Obsidia (checkpoint)"
+      },
+      {
+        "at": [
+          29,
+          16
+        ],
+        "label": "Aqua Gang member"
+      }
+    ]
+  },
+  {
+    "id": "aqua-shack",
+    "match": "Make your way to the shack to the right of the flower shop in Lapis Ward. Talk to Archer here.",
+    "map": 80,
+    "title": "Alleyway to Archer's shack",
+    "points": [
+      {
+        "at": [
+          40,
+          55
+        ],
+        "label": "Lapis Alleyway"
+      },
+      {
+        "at": [
+          18,
+          22
+        ],
+        "label": "Shack right of the flower shop"
+      }
+    ]
+  },
+  {
+    "id": "aqua-craudburry",
+    "match": "Anyways, make your way to Ms. Craudburry's house",
+    "map": 80,
+    "title": "Shack to Ms. Craudburry's house",
+    "points": [
+      {
+        "at": [
+          18,
+          23
+        ],
+        "label": "Archer's shack"
+      },
+      {
+        "at": [
+          19,
+          55
+        ],
+        "label": "Pokemon Center"
+      },
+      {
+        "at": [
+          18,
+          61
+        ],
+        "label": "Ms. Craudburry's house"
+      }
+    ]
+  },
+  {
+    "id": "aqua-aqua-member",
+    "match": "Head over to the Lapis Ward. To the west of the gym you'll find the Aqua Gang member. You'll learn",
+    "map": 80,
+    "title": "To the Aqua Gang member",
+    "points": [
+      {
+        "at": [
+          55,
+          60
+        ],
+        "label": "From North Obsidia (checkpoint)"
+      },
+      {
+        "at": [
+          29,
+          16
+        ],
+        "label": "Aqua Gang member"
+      }
+    ]
+  },
+  {
+    "id": "cycle-shop",
+    "match": "Head outside and try to leave, and the cop will even give you a *Bike Voucher*!",
+    "map": 80,
+    "title": "Craudburry's house to the cycle shop",
+    "points": [
+      {
+        "at": [
+          18,
+          62
+        ],
+        "label": "Ms. Craudburry's house"
+      },
+      {
+        "at": [
+          19,
+          73
+        ],
+        "label": "Lapis Luxury Cycle"
+      }
+    ]
+  },
+  {
+    "id": "zorua-building",
+    "match": "Now that we have our fancy bicycle",
+    "map": 79,
+    "title": "North Obsidia: building left of the alleyway",
+    "points": [
+      {
+        "at": [
+          8,
+          20
+        ],
+        "label": "From Lapis (checkpoint)"
+      },
+      {
+        "at": [
+          56,
+          22
+        ],
+        "label": "Building left of the alleyway (Zorua)"
+      },
+      {
+        "at": [
+          63,
+          18
+        ],
+        "label": "North Obsidia Alleyway"
+      }
+    ],
+    "hide": [
+      23,
+      24,
+      26,
+      27,
+      28,
+      33,
+      34,
+      37,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      52,
+      59,
+      60,
+      72,
+      134,
+      135
+    ]
+  }
+]

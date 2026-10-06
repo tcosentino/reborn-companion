@@ -1,0 +1,14 @@
+[
+  {
+    "id": "bridge-to-bullies",
+    "match": "In the top right, you'll find three bullies.",
+    "map": 29,
+    "title": "Up Opal Bridge to the bullies",
+    "points": [
+      { "at": [37, 61], "label": "Foot of Opal Bridge" },
+      { "at": [40, 61], "via": true },
+      { "at": [45, 56], "via": true, "direct": true },
+      { "at": [51, 25], "label": "Bullies" }
+    ]
+  }
+]

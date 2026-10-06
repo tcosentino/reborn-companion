@@ -1,0 +1,16 @@
+[
+  {
+    "id": "thick-club-and-girder",
+    "match": "Head left, up, and left again. You'll see a new cave entrance here.",
+    "map": 247,
+    "title": "Metal Coat to the cave and the iron girder",
+    "points": [
+      { "at": [76, 64], "label": "Metal Coat" },
+      { "at": [10, 23], "label": "New cave (Thick Club)" },
+      { "at": [17, 11], "via": true },
+      { "at": [18, 11], "label": "Iron girder", "direct": true },
+      { "at": [23, 6], "direct": true },
+      { "at": [23, 5], "label": "Door to the next room", "direct": true }
+    ]
+  }
+]

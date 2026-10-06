@@ -1,0 +1,23 @@
+[
+  {
+    "id": "peridot-corin-lookalike",
+    "match": "Inside the police station, talk to the chief",
+    "map": 522,
+    "title": "Jasper Stairway to the Corin Rouge lookalike",
+    "points": [
+      { "at": [62, 26], "label": "From Jasper Stairway" },
+      { "at": [84, 18], "label": "Igglybuff lady's house" },
+      { "at": [93, 19], "label": "Corin Rouge lookalike" }
+    ]
+  },
+  {
+    "id": "malchous-corin-lookalike",
+    "match": "On the south side of the Forest Park",
+    "map": 533,
+    "title": "To the south side of the Forest Park",
+    "points": [
+      { "at": [98, 41], "label": "From Jasper Ward" },
+      { "at": [58, 51], "label": "Corin Rouge lookalike" }
+    ]
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "id": "seacrest-and-south-alley",
+    "match": "First, head up into the park to the right of the Pokemon Center",
+    "map": 530,
+    "title": "Seacrest's park and the Lower Peridot Alleyway",
+    "points": [
+      { "at": [54, 34], "label": "Pokemon Center" },
+      { "at": [60, 27], "label": "Elder Seacrest" },
+      { "at": [74, 7], "label": "Lower Peridot Alleyway" }
+    ]
+  },
+  {
+    "id": "igglybuff-house",
+    "match": "Head up and enter the house where we once got Igglybuff.",
+    "map": 522,
+    "title": "Market to the Igglybuff lady's house",
+    "points": [
+      { "at": [89, 60], "label": "EV item seller" },
+      { "at": [84, 18], "label": "Igglybuff lady's house" }
+    ]
+  },
+  {
+    "id": "expert-belt-tent",
+    "match": "Outside her house and down, there is an orange tent.",
+    "map": 522,
+    "title": "Down to the NPC under the orange tent",
+    "points": [
+      { "at": [84, 19], "label": "Igglybuff lady's house" },
+      { "at": [88, 27], "label": "NPC under the tent" }
+    ]
+  },
+  {
+    "id": "simon-building",
+    "match": "Enter the building that Simon is in",
+    "map": 522,
+    "title": "To Simon's building",
+    "points": [
+      { "at": [88, 27], "label": "Orange tent" },
+      { "at": [61, 46], "label": "Simon's building" }
+    ]
+  },
+  {
+    "id": "blacksteam-factory",
+    "match": "Enter the former Blacksteam Factory.",
+    "map": 522,
+    "title": "To the former Blacksteam Factory",
+    "points": [
+      { "at": [61, 47], "label": "Simon's building" },
+      { "at": [36, 49], "label": "Blacksteam Shelter" }
+    ]
+  },
+  {
+    "id": "north-peridot-alley",
+    "match": "Enter the North Peridot Alleyway outside.",
+    "map": 522,
+    "title": "Across the tracks to the North Peridot Alley",
+    "points": [
+      { "at": [36, 50], "label": "Blacksteam Shelter" },
+      { "at": [103, 35], "label": "North Peridot Alley" }
+    ]
+  }
+]

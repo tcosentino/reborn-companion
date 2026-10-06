@@ -28,7 +28,7 @@ const readChunks = (png: Buffer): Chunk[] => {
   return chunks
 }
 
-const writeChunk = (type: string, data: Buffer) => {
+export const writeChunk = (type: string, data: Buffer) => {
   const body = Buffer.concat([Buffer.from(type, 'latin1'), data])
   const out = Buffer.alloc(body.length + 8)
   out.writeUInt32BE(data.length, 0)
@@ -48,7 +48,7 @@ const paeth = (a: number, b: number, c: number) => {
 interface Decoded { chunks: Chunk[]; ihdr: Buffer; width: number; height: number; colorType: number; bpp: number; stride: number; px: Buffer }
 
 // Unfiltered pixel bytes of an 8/16-bit, non-interlaced PNG
-const decodePng = (png: Buffer): Decoded => {
+export const decodePng = (png: Buffer): Decoded => {
   const chunks = readChunks(png)
   const ihdr = chunks.find(c => c.type === 'IHDR')!.data
   const width = ihdr.readUInt32BE(0), height = ihdr.readUInt32BE(4)

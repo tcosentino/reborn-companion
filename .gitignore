@@ -13,3 +13,4 @@ app/public/sprites/
 .playwright-mcp/
 app/tsconfig.tsbuildinfo
 backups/
+app/public/maps/

@@ -1,0 +1,192 @@
+[
+  {
+    "id": "igglybuff-house",
+    "match": "Enter the house near the youngsters.",
+    "map": 57,
+    "title": "Fountain to the Igglybuff lady's house",
+    "points": [
+      {
+        "at": [
+          69,
+          23
+        ],
+        "label": "Fountain"
+      },
+      {
+        "at": [
+          64,
+          18
+        ],
+        "label": "Igglybuff lady's house"
+      }
+    ]
+  },
+  {
+    "id": "thieves-house",
+    "match": "Enter the top left house when you're ready for a battle",
+    "map": 57,
+    "title": "Up to the thieves' house",
+    "points": [
+      {
+        "at": [
+          64,
+          19
+        ],
+        "label": "Igglybuff lady's house"
+      },
+      {
+        "at": [
+          71,
+          10
+        ],
+        "label": "Thieves' house"
+      }
+    ]
+  },
+  {
+    "id": "tall-building",
+    "match": "Head down and enter the tall building to your right.",
+    "map": 57,
+    "title": "Across the tracks to the tall building",
+    "points": [
+      {
+        "at": [
+          71,
+          11
+        ],
+        "label": "Thieves' house"
+      },
+      {
+        "at": [
+          80,
+          41
+        ],
+        "label": "Tall building"
+      }
+    ]
+  },
+  {
+    "id": "north-peridot-alley",
+    "match": "Anyways, head to the right from the tall building",
+    "map": 57,
+    "title": "To the North Peridot Alley",
+    "points": [
+      {
+        "at": [
+          80,
+          42
+        ],
+        "label": "Tall building"
+      },
+      {
+        "at": [
+          83,
+          35
+        ],
+        "label": "North Peridot Alley"
+      }
+    ]
+  },
+  {
+    "id": "potion-building",
+    "match": "Head outside. Enter the small building to the left",
+    "map": 57,
+    "title": "Back over the tracks to the Potion",
+    "points": [
+      {
+        "at": [
+          83,
+          36
+        ],
+        "label": "North Peridot Alley"
+      },
+      {
+        "at": [
+          68,
+          43
+        ],
+        "label": "Small building (Potion)"
+      }
+    ]
+  },
+  {
+    "id": "loop-west",
+    "match": "Outside, head straight to the left.",
+    "map": 57,
+    "title": "Clockwise loop: Grubbin/Joltik and Common Candy",
+    "points": [
+      {
+        "at": [
+          68,
+          44
+        ],
+        "label": "Small building (Potion)"
+      },
+      {
+        "at": [
+          60,
+          46
+        ],
+        "label": "Grubbin/Joltik building"
+      },
+      {
+        "at": [
+          41,
+          46
+        ],
+        "label": "Common Candy building"
+      }
+    ]
+  },
+  {
+    "id": "protein-house",
+    "match": "Anyways, a small house up from here contains a *Protein*",
+    "map": 57,
+    "title": "Pokemart to the Protein house",
+    "points": [
+      {
+        "at": [
+          29,
+          47
+        ],
+        "label": "Pokemart"
+      },
+      {
+        "at": [
+          33,
+          38
+        ],
+        "label": "Protein house"
+      }
+    ]
+  },
+  {
+    "id": "common-candy-guy",
+    "match": "In the building up and left from here",
+    "map": 57,
+    "title": "To the Common Candy guy and Snax shop",
+    "points": [
+      {
+        "at": [
+          33,
+          39
+        ],
+        "label": "Protein house"
+      },
+      {
+        "at": [
+          16,
+          30
+        ],
+        "label": "Common Candy guy's building"
+      },
+      {
+        "at": [
+          27,
+          31
+        ],
+        "label": "Snax shop (clear/sunny)"
+      }
+    ]
+  }
+]

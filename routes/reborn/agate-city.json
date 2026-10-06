@@ -1,0 +1,112 @@
+[
+  {
+    "id": "hiker-house-and-litten-trade",
+    "match": "Back in Agate City, starting at the Pokemon Center, head straight to the left",
+    "map": 763,
+    "title": "Pokemon Center to the Hiker and the trade building",
+    "points": [
+      {
+        "at": [
+          46,
+          70
+        ],
+        "label": "Pokemon Center"
+      },
+      {
+        "at": [
+          23,
+          71
+        ],
+        "label": "Hiker's house"
+      },
+      {
+        "at": [
+          16,
+          47
+        ],
+        "label": "Top building (Litten trade)"
+      }
+    ]
+  },
+  {
+    "id": "to-the-apartment-complex",
+    "match": "We'll come back to the next house up and to the right in a bit.",
+    "map": 763,
+    "title": "Past Bee's house to the apartment complex",
+    "points": [
+      {
+        "at": [
+          51,
+          72
+        ],
+        "label": "Quest lady's house"
+      },
+      {
+        "at": [
+          68,
+          58
+        ],
+        "label": "Bee's house (later)"
+      },
+      {
+        "at": [
+          67,
+          43
+        ],
+        "label": "Apartment complex (Oshawott trade)"
+      }
+    ]
+  },
+  {
+    "id": "northeast-climb-and-waterfalls",
+    "match": "Head up from here. Near the gym, you'll find a hidden *Everstone*.",
+    "map": 763,
+    "title": "Rock climb and waterfalls in the northeast",
+    "points": [
+      {
+        "at": [
+          67,
+          44
+        ],
+        "label": "Apartment complex"
+      },
+      {
+        "at": [
+          69,
+          44
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          73,
+          41
+        ],
+        "label": "Rock climb",
+        "direct": true
+      },
+      {
+        "at": [
+          73,
+          38
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          76,
+          37
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          76,
+          11
+        ],
+        "label": "Waterfalls up to Route 4",
+        "direct": true
+      }
+    ]
+  }
+]

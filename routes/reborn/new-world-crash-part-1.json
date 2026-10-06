@@ -1,0 +1,17 @@
+[
+  {
+    "id": "four-meteors",
+    "match": "After the conversation in the middle, follow the narrow paths",
+    "map": 884,
+    "title": "The four corner meteors, then Deoxys",
+    "points": [
+      { "at": [29, 50], "label": "Ciel (middle)" },
+      { "at": [15, 57], "label": "Left meteor" },
+      { "at": [43, 77], "label": "Bottom right meteor" },
+      { "at": [45, 29], "label": "Top right meteor" },
+      { "at": [24, 27], "label": "Top left meteor" },
+      { "at": [35, 15], "label": "Deoxys" }
+    ],
+    "hide": [6, 7, 15, 16]
+  }
+]

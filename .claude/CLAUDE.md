@@ -17,6 +17,11 @@ See `README.md` for the data pipeline, layout and run commands.
 - Task definitions live in `tasks/<game>/<section-id>.json` (see README "Walkthrough tasks"). Never rename a task `id`: it is the saved progress key `task:<section>/<id>` and is in the progress-id baseline.
 - If an upstream text change breaks a task's `match`, `sync-data.sh` fails; update the `match` to the new paragraph start rather than deleting the task.
 
+## Route maps
+
+- Definitions live in `routes/<game>/<section-id>.json` (see README "Route maps"). Author with `node scripts/maps.ts <game> ...` (`check` and `preview` before building). If an upstream text change breaks a route's `match`, update it like a task `match`.
+- `scripts/build-maps.sh <game>` must have run (needs the game zip) or routes are skipped. Map renders in `app/public/maps/` and game files in `out/game/` are local-only; never commit them.
+
 ## Tests
 
 - `bash scripts/test.sh` (override, task and progress-id unit tests + upstream generator tests) and `cd app && yarn test`.

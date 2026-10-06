@@ -1,0 +1,272 @@
+[
+  {
+    "id": "to-the-fifty-dollar-guy",
+    "match": "Next, head right then up as soon as you can.",
+    "map": 37,
+    "title": "Up to the guy asking for change",
+    "points": [
+      {
+        "at": [
+          74,
+          64
+        ],
+        "label": "From Opal Ward"
+      },
+      {
+        "at": [
+          68,
+          40
+        ],
+        "label": "Guy asking for $50"
+      }
+    ],
+    "hide": [
+      30,
+      32,
+      33
+    ]
+  },
+  {
+    "id": "gym-and-gift-box",
+    "match": "You'll find a gym here.",
+    "map": 37,
+    "title": "Past the gym to the Gift Box",
+    "points": [
+      {
+        "at": [
+          68,
+          40
+        ],
+        "label": "Guy asking for $50"
+      },
+      {
+        "at": [
+          64,
+          29
+        ],
+        "label": "Gym (locked)"
+      },
+      {
+        "at": [
+          71,
+          23
+        ],
+        "label": "Gift Box"
+      }
+    ],
+    "hide": [
+      30,
+      32,
+      33
+    ]
+  },
+  {
+    "id": "pokesnax-house",
+    "match": "Go left from this area and enter the first house that you can.",
+    "map": 37,
+    "title": "To the PokeSnax house",
+    "points": [
+      {
+        "at": [
+          46,
+          55
+        ],
+        "label": "Teddiursa spot"
+      },
+      {
+        "at": [
+          38,
+          54
+        ],
+        "label": "PokeSnax house"
+      }
+    ]
+  },
+  {
+    "id": "back-to-minccino-house",
+    "match": "Return to the guy we gave money to",
+    "map": 37,
+    "title": "Back past the change guy to his house",
+    "points": [
+      {
+        "at": [
+          38,
+          55
+        ],
+        "label": "PokeSnax house"
+      },
+      {
+        "at": [
+          68,
+          40
+        ],
+        "label": "Guy asking for $50"
+      },
+      {
+        "at": [
+          58,
+          43
+        ],
+        "label": "House behind him"
+      }
+    ],
+    "hide": [
+      30,
+      32,
+      33
+    ]
+  },
+  {
+    "id": "old-rod-house",
+    "match": "On the left side of the Pokemon Center",
+    "map": 37,
+    "title": "Pokemon Center to the Old Rod house",
+    "points": [
+      {
+        "at": [
+          35,
+          34
+        ],
+        "label": "Pokemon Center"
+      },
+      {
+        "at": [
+          19,
+          44
+        ],
+        "label": "Old Rod house"
+      }
+    ]
+  },
+  {
+    "id": "pool-building",
+    "match": "You can talk to the group below if you'd like",
+    "map": 37,
+    "title": "Old Rod house to the pool building",
+    "points": [
+      {
+        "at": [
+          19,
+          45
+        ],
+        "label": "Old Rod house"
+      },
+      {
+        "at": [
+          38,
+          55
+        ],
+        "label": "PokeSnax house"
+      },
+      {
+        "at": [
+          33,
+          50
+        ],
+        "label": "Pool owner's building"
+      }
+    ]
+  },
+  {
+    "id": "name-rater",
+    "match": "Head out, and back up past the rod guy's house.",
+    "map": 37,
+    "title": "Pool to the Name Rater",
+    "points": [
+      {
+        "at": [
+          33,
+          51
+        ],
+        "label": "Pool owner's house"
+      },
+      {
+        "at": [
+          19,
+          45
+        ],
+        "label": "Rod guy's house"
+      },
+      {
+        "at": [
+          20,
+          32
+        ],
+        "label": "Name Rater's house"
+      }
+    ]
+  },
+  {
+    "id": "seacrest-building",
+    "match": "Enter the building here and talk to the old man for a battle.",
+    "map": 37,
+    "title": "Name Rater to Seacrest's building",
+    "points": [
+      {
+        "at": [
+          20,
+          32
+        ],
+        "label": "Name Rater's house"
+      },
+      {
+        "at": [
+          12,
+          15
+        ],
+        "label": "Seacrest's building"
+      }
+    ]
+  },
+  {
+    "id": "skitty-house",
+    "match": "Back in the main part of the ward, head to the right.",
+    "map": 37,
+    "title": "To the injured Skitty's house",
+    "points": [
+      {
+        "at": [
+          12,
+          16
+        ],
+        "label": "Seacrest's building"
+      },
+      {
+        "at": [
+          33,
+          11
+        ],
+        "label": "Skitty house"
+      }
+    ]
+  },
+  {
+    "id": "delibird-and-kricketot",
+    "match": "Up from here, enter the building on the right.",
+    "map": 37,
+    "title": "Gift Box trade and Kricketot houses",
+    "points": [
+      {
+        "at": [
+          33,
+          12
+        ],
+        "label": "Skitty house"
+      },
+      {
+        "at": [
+          52,
+          11
+        ],
+        "label": "Gift Box owner (Delibird)"
+      },
+      {
+        "at": [
+          68,
+          9
+        ],
+        "label": "Kricketot house"
+      }
+    ]
+  }
+]

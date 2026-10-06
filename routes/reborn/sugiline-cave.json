@@ -1,0 +1,364 @@
+[
+  {
+    "id": "max-elixir-vortex",
+    "match": "On this map you can get a hidden *Elemental Seed*, *Red Shard*",
+    "map": 652,
+    "title": "Ladder to the bottom-left vortex",
+    "points": [
+      {
+        "at": [
+          40,
+          41
+        ],
+        "label": "Ladder up from B1F"
+      },
+      {
+        "at": [
+          16,
+          50
+        ],
+        "label": "Bottom-left vortex (Max Elixir)"
+      }
+    ]
+  },
+  {
+    "id": "vortex-above-pot",
+    "match": "This time, take the vortex up and slightly right from the pot",
+    "map": 652,
+    "title": "Ladder to the vortex above the pot",
+    "points": [
+      {
+        "at": [
+          40,
+          41
+        ],
+        "label": "Ladder up from B1F"
+      },
+      {
+        "at": [
+          25,
+          31
+        ],
+        "label": "Pot (Great Ball)"
+      },
+      {
+        "at": [
+          27,
+          24
+        ],
+        "label": "Vortex up and right of the pot"
+      }
+    ]
+  },
+  {
+    "id": "top-right-vortex",
+    "match": "This time, take the top right vortex",
+    "map": 652,
+    "title": "Ladder to the top-right vortex",
+    "points": [
+      {
+        "at": [
+          40,
+          41
+        ],
+        "label": "Ladder up from B1F"
+      },
+      {
+        "at": [
+          29,
+          30
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          30,
+          24
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          31,
+          11
+        ],
+        "label": "Top-right vortex"
+      }
+    ]
+  },
+  {
+    "id": "top-left-vortex",
+    "match": "Jump in the top left vortex this time.",
+    "map": 652,
+    "title": "Ladder to the top-left vortex",
+    "points": [
+      {
+        "at": [
+          40,
+          41
+        ],
+        "label": "Ladder up from B1F"
+      },
+      {
+        "at": [
+          15,
+          17
+        ],
+        "label": "Top-left vortex"
+      }
+    ]
+  },
+  {
+    "id": "vortex-left-of-pot",
+    "match": "Finally, jump into the vortex on the left side of the pot.",
+    "map": 652,
+    "title": "Ladder to the vortex left of the pot",
+    "points": [
+      {
+        "at": [
+          40,
+          41
+        ],
+        "label": "Ladder up from B1F"
+      },
+      {
+        "at": [
+          25,
+          31
+        ],
+        "label": "Pot"
+      },
+      {
+        "at": [
+          16,
+          33
+        ],
+        "label": "Vortex left of the pot"
+      }
+    ]
+  },
+  {
+    "id": "middle-top-vortex",
+    "match": "In this next room, you can find a hidden *X Speed* and *Dark Gem*.",
+    "map": 653,
+    "title": "Ladder to the middle of the top three vortices",
+    "points": [
+      {
+        "at": [
+          12,
+          31
+        ],
+        "label": "Ladder up from B1F"
+      },
+      {
+        "at": [
+          17,
+          16
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          21,
+          15
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          22,
+          12
+        ],
+        "label": "Middle top vortex (the safe one)"
+      }
+    ]
+  },
+  {
+    "id": "b1f-to-right-ladder",
+    "match": "On B1F, be careful to not fall in again",
+    "map": 658,
+    "title": "Around the vortices to the right ladder",
+    "points": [
+      {
+        "at": [
+          25,
+          13
+        ],
+        "label": "Landing spot"
+      },
+      {
+        "at": [
+          42,
+          14
+        ],
+        "label": "Ladder on the right"
+      }
+    ]
+  },
+  {
+    "id": "to-the-arceus-room",
+    "match": "Grab the hidden *Purple Shard* and proceed into the room on the right.",
+    "map": 653,
+    "title": "Ladder to the room on the right",
+    "points": [
+      {
+        "at": [
+          35,
+          14
+        ],
+        "label": "Ladder up from B1F"
+      },
+      {
+        "at": [
+          50,
+          23
+        ],
+        "label": "Room with the Arceus statue"
+      }
+    ]
+  },
+  {
+    "id": "right-b1f-ladder",
+    "match": "In this room, you can get a hidden *Carbos*, *Pecha Berry*, and *Blue Shard*.",
+    "map": 656,
+    "title": "Past the vortex to the ladder at the top",
+    "points": [
+      {
+        "at": [
+          37,
+          34
+        ],
+        "label": "Landing spot"
+      },
+      {
+        "at": [
+          41,
+          29
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          44,
+          24
+        ],
+        "label": "Ladder at the top"
+      }
+    ]
+  },
+  {
+    "id": "link-stone-vortex",
+    "match": "In this next room, you can find 2 hidden *Elemental Seeds*",
+    "map": 655,
+    "title": "Ladder to the vortex below the cactus",
+    "points": [
+      {
+        "at": [
+          21,
+          48
+        ],
+        "label": "Ladder up from B1F"
+      },
+      {
+        "at": [
+          24,
+          45
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          31,
+          43
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          31,
+          30
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          33,
+          29
+        ],
+        "label": "Vortex below the cactus (Link Stone)"
+      }
+    ]
+  },
+  {
+    "id": "right-middle-top-vortex",
+    "match": "Next, jump into the middle of the top three vortices.",
+    "map": 655,
+    "title": "Ladder to the middle top vortex",
+    "points": [
+      {
+        "at": [
+          21,
+          48
+        ],
+        "label": "Ladder up from B1F"
+      },
+      {
+        "at": [
+          24,
+          45
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          30,
+          43
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          30,
+          19
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          24,
+          19
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          25,
+          14
+        ],
+        "label": "Middle top vortex"
+      }
+    ]
+  },
+  {
+    "id": "right-b1f-to-left-ladder",
+    "match": "Next, jump into the middle of the top three vortices.",
+    "map": 659,
+    "title": "Around the vortices to the left ladder",
+    "points": [
+      {
+        "at": [
+          30,
+          15
+        ],
+        "label": "Landing spot"
+      },
+      {
+        "at": [
+          13,
+          27
+        ],
+        "label": "Ladder to the Arceus statue"
+      }
+    ]
+  }
+]

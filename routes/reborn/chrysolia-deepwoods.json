@@ -1,0 +1,24 @@
+[
+  {
+    "id": "to-the-central-structure",
+    "match": "Once you've finished exploring the woods, head to the large structure in the center.",
+    "map": 840,
+    "title": "Through the woods to the central structure",
+    "points": [
+      {
+        "at": [
+          51,
+          10
+        ],
+        "label": "New World Door"
+      },
+      {
+        "at": [
+          68,
+          88
+        ],
+        "label": "Structure entrance"
+      }
+    ]
+  }
+]

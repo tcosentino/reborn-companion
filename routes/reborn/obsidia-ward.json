@@ -1,0 +1,140 @@
+[
+  {
+    "id": "to-the-pokemon-center",
+    "match": "Outside, head right and up.",
+    "map": 36,
+    "title": "Critical Capture up to the Pokemon Center",
+    "points": [
+      {
+        "at": [
+          26,
+          37
+        ],
+        "label": "Critical Capture"
+      },
+      {
+        "at": [
+          36,
+          24
+        ],
+        "label": "Pokemon Center"
+      }
+    ]
+  },
+  {
+    "id": "castform-house-and-railnet",
+    "match": "Eventually, we will be freeing the real daycare couple!",
+    "map": 36,
+    "title": "Daycare to the Castform trade house and railnet stairs",
+    "points": [
+      {
+        "at": [
+          40,
+          25
+        ],
+        "label": "Daycare"
+      },
+      {
+        "at": [
+          25,
+          23
+        ],
+        "label": "Castform trade house"
+      },
+      {
+        "at": [
+          20,
+          18
+        ],
+        "label": "Building with railnet stairs"
+      }
+    ]
+  },
+  {
+    "id": "back-to-devon",
+    "match": "Head back out and enter the Devon Corp building on the main street.",
+    "map": 36,
+    "title": "Railnet building to Devon Corp",
+    "points": [
+      {
+        "at": [
+          20,
+          19
+        ],
+        "label": "Railnet building"
+      },
+      {
+        "at": [
+          35,
+          36
+        ],
+        "label": "Devon Corp"
+      }
+    ]
+  },
+  {
+    "id": "down-to-south-obsidia",
+    "match": "Head left and down.",
+    "map": 36,
+    "title": "From Florinia down to South Obsidia Ward",
+    "points": [
+      {
+        "at": [
+          58,
+          38
+        ],
+        "label": "Florinia"
+      },
+      {
+        "at": [
+          41,
+          45
+        ],
+        "label": "Trainer"
+      },
+      {
+        "at": [
+          44,
+          54
+        ],
+        "label": "To South Obsidia Ward"
+      }
+    ]
+  },
+  {
+    "id": "lillipup-house-to-slums",
+    "match": "Enter the building here and talk to the guy here.",
+    "map": 81,
+    "title": "Lillipup owner's building, then down to the slums",
+    "points": [
+      {
+        "at": [
+          41,
+          9
+        ],
+        "label": "From Obsidia Ward"
+      },
+      {
+        "at": [
+          46,
+          11
+        ],
+        "label": "Lillipup owner's building"
+      },
+      {
+        "at": [
+          47,
+          42
+        ],
+        "label": "Trainer"
+      },
+      {
+        "at": [
+          59,
+          41
+        ],
+        "label": "Obsidia Slums"
+      }
+    ]
+  }
+]

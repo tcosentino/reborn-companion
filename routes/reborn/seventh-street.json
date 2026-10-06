@@ -1,0 +1,132 @@
+[
+  {
+    "id": "hidden-lab-entrance",
+    "match": "North of the top tutors, you'll see a shadow indicating an entrance.",
+    "map": 324,
+    "title": "Grotto to the hidden lab entrance",
+    "points": [
+      {
+        "at": [
+          39,
+          33
+        ],
+        "label": "Bottom grotto"
+      },
+      {
+        "at": [
+          24,
+          10
+        ],
+        "label": "Shadow above the tutors"
+      },
+      {
+        "at": [
+          22,
+          9
+        ],
+        "label": "Hidden entrance"
+      }
+    ]
+  },
+  {
+    "id": "watering-hole-to-grotto",
+    "match": "On the north side of the main part of seventh, talk to your gang member",
+    "map": 324,
+    "title": "Watering hole to the top grotto",
+    "points": [
+      {
+        "at": [
+          23,
+          9
+        ],
+        "label": "Lab exit"
+      },
+      {
+        "at": [
+          21,
+          14
+        ],
+        "label": "Watering hole"
+      },
+      {
+        "at": [
+          40,
+          12
+        ],
+        "label": "Grotto on the right"
+      }
+    ]
+  },
+  {
+    "id": "door-in-the-wall",
+    "match": "Back outside, a door will be open above you.",
+    "map": 324,
+    "title": "To the opened door",
+    "points": [
+      {
+        "at": [
+          39,
+          12
+        ],
+        "label": "Grotto exit"
+      },
+      {
+        "at": [
+          30,
+          8
+        ],
+        "label": "Opened door (Beryl Wall)"
+      }
+    ],
+    "hide": [
+      51
+    ]
+  },
+  {
+    "id": "candy-thief",
+    "match": "Back outside, a door will be open above you.",
+    "map": 324,
+    "title": "Down to the candy thief",
+    "points": [
+      {
+        "at": [
+          30,
+          9
+        ],
+        "label": "Back from Beryl Wall"
+      },
+      {
+        "at": [
+          8,
+          42
+        ],
+        "label": "Thief"
+      }
+    ],
+    "hide": [
+      51
+    ]
+  },
+  {
+    "id": "piplup-grotto",
+    "match": "Enter the top grotto and give it to a guy to obtain **Piplup**!",
+    "map": 324,
+    "title": "Thief to the top grotto",
+    "points": [
+      {
+        "at": [
+          8,
+          42
+        ],
+        "label": "Thief"
+      },
+      {
+        "at": [
+          40,
+          12
+        ],
+        "label": "Top grotto"
+      }
+    ]
+  }
+]

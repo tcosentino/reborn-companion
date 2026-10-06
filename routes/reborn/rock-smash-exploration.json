@@ -1,0 +1,107 @@
+[
+  {
+    "id": "stairway-mining-kit",
+    "match": "Head over to the Grand Stairway and make your way to B1F.",
+    "map": 178,
+    "title": "B1F: smash through to the Mining Kit room",
+    "points": [
+      {
+        "at": [
+          33,
+          28
+        ],
+        "label": "From the Grand Stairway"
+      },
+      {
+        "at": [
+          40,
+          12
+        ],
+        "label": "Smash rock"
+      },
+      {
+        "at": [
+          35,
+          5
+        ],
+        "label": "Door up (Mining Kit hiker)"
+      }
+    ],
+    "hide": [
+      6
+    ]
+  },
+  {
+    "id": "stairway-solrock-ladder",
+    "match": "Back in the main part of B1F, head to the left and smash the rock",
+    "map": 178,
+    "title": "B1F: left to the ladder behind the rock",
+    "points": [
+      {
+        "at": [
+          35,
+          6
+        ],
+        "label": "Mining Kit room door"
+      },
+      {
+        "at": [
+          20,
+          21
+        ],
+        "label": "Smash rock"
+      },
+      {
+        "at": [
+          20,
+          19
+        ],
+        "label": "Ladder down"
+      }
+    ],
+    "hide": [
+      6,
+      11
+    ]
+  },
+  {
+    "id": "slums-to-railnet",
+    "match": "Exit this area and make your way to the top right corner of the main room",
+    "map": 88,
+    "title": "B1F: right-side room down to the Railnet",
+    "points": [
+      {
+        "at": [
+          48,
+          11
+        ],
+        "label": "Top right escalator"
+      },
+      {
+        "at": [
+          58,
+          16
+        ],
+        "label": "Room on the right"
+      },
+      {
+        "at": [
+          86,
+          24
+        ],
+        "label": "Smash rocks"
+      },
+      {
+        "at": [
+          86,
+          22
+        ],
+        "label": "To the Underground Railnet"
+      }
+    ],
+    "hide": [
+      31,
+      32
+    ]
+  }
+]

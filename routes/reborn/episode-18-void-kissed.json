@@ -1,0 +1,32 @@
+[
+  {
+    "id": "to-hardy-and-rock-climb",
+    "match": "Head out to Route 4. On the east end of the right",
+    "map": 412,
+    "title": "Gatehouse to Hardy at the rock wall",
+    "points": [
+      {
+        "at": [
+          12,
+          18
+        ],
+        "label": "Calcenon gatehouse"
+      },
+      {
+        "at": [
+          59,
+          32
+        ],
+        "label": "Hardy (TMX9 Rock Climb)"
+      }
+    ],
+    "hide": [
+      47,
+      48,
+      49,
+      51,
+      52,
+      54
+    ]
+  }
+]

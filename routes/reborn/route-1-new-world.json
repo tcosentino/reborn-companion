@@ -1,0 +1,13 @@
+[
+  {
+    "id": "north-zcell-and-raikou",
+    "match": "As you climb the stairs, hug the left wall and follow the path.",
+    "map": 834,
+    "title": "Up the left wall to the ZCell and Raikou",
+    "points": [
+      { "at": [93, 84], "label": "New World Door" },
+      { "at": [72, 65], "label": "ZCell 02" },
+      { "at": [92, 26], "label": "Anomaly battle (Raikou)" }
+    ]
+  }
+]

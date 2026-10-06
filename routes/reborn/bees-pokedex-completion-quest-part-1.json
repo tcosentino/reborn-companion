@@ -1,0 +1,12 @@
+[
+  {
+    "id": "to-bees-house",
+    "match": "Fly back to Agate City, this time heading into the small house",
+    "map": 763,
+    "title": "Pokemon Center to Bee's house",
+    "points": [
+      { "at": [46, 70], "label": "Pokemon Center" },
+      { "at": [68, 58], "label": "Bee's house" }
+    ]
+  }
+]

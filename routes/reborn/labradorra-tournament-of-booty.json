@@ -1,0 +1,60 @@
+[
+  {
+    "id": "to-the-arena",
+    "match": "Make preparations for a sequence of battles",
+    "map": 414,
+    "title": "Pokemon Center to the Labradorra Arena",
+    "points": [
+      {
+        "at": [
+          59,
+          22
+        ],
+        "label": "Pokemon Center"
+      },
+      {
+        "at": [
+          45,
+          9
+        ],
+        "label": "Labradorra Arena"
+      }
+    ],
+    "hide": [
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      77,
+      78,
+      82,
+      85,
+      86,
+      88,
+      89,
+      91,
+      92,
+      93,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      113,
+      114,
+      115,
+      116,
+      162,
+      163
+    ]
+  }
+]

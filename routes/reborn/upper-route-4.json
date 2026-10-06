@@ -1,0 +1,14 @@
+[
+  {
+    "id": "climb-to-the-full-restore",
+    "match": "This brings us back to the first map we were on, at a different point.",
+    "map": 710,
+    "title": "Up the left rock climb to the Full Restore",
+    "points": [
+      { "at": [38, 24], "label": "Arrival from the climb down" },
+      { "at": [28, 23], "label": "Rock climb" },
+      { "at": [20, 16], "direct": true },
+      { "at": [20, 12], "label": "Full Restore", "direct": true }
+    ]
+  }
+]

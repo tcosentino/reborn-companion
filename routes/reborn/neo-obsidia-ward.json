@@ -1,0 +1,55 @@
+[
+  {
+    "id": "saffron-street-shops",
+    "match": "Enter the building to the right on Saffron Street.",
+    "map": 520,
+    "title": "Sweet Co. HQ along Saffron Street",
+    "points": [
+      { "at": [19, 9], "label": "Sweet Co. HQ" },
+      { "at": [38, 15], "label": "Silph building" },
+      { "at": [49, 14], "label": "Medicine Market" },
+      { "at": [60, 15], "label": "Department Store" }
+    ]
+  },
+  {
+    "id": "daycare",
+    "match": "Enter the Obsidia Daycare.",
+    "map": 520,
+    "title": "Department Store to the Daycare",
+    "points": [
+      { "at": [60, 16], "label": "Department Store" },
+      { "at": [40, 24], "label": "Obsidia Daycare" }
+    ]
+  },
+  {
+    "id": "salon-and-critical-capture",
+    "match": "Inside the Cafe Salon, you can pick up",
+    "map": 520,
+    "title": "Daycare to the Cafe Salon and Critical Capture",
+    "points": [
+      { "at": [40, 25], "label": "Obsidia Daycare" },
+      { "at": [20, 36], "label": "Cafe Salon" },
+      { "at": [26, 36], "label": "Critical Capture" }
+    ]
+  },
+  {
+    "id": "sweet-kiss",
+    "match": "Enter the Sweet Kiss Candy store.",
+    "map": 520,
+    "title": "Critical Capture to Sweet Kiss",
+    "points": [
+      { "at": [26, 37], "label": "Critical Capture" },
+      { "at": [43, 36], "label": "Sweet Kiss Candy Shop" }
+    ]
+  },
+  {
+    "id": "obsidia-alleyway",
+    "match": "Enter the Obsidia Alleyway next.",
+    "map": 520,
+    "title": "Sweet Kiss to the Obsidia Alleyway",
+    "points": [
+      { "at": [43, 37], "label": "Sweet Kiss Candy Shop" },
+      { "at": [17, 53], "label": "Obsidia Alleyway" }
+    ]
+  }
+]

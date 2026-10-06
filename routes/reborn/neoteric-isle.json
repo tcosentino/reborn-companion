@@ -1,0 +1,165 @@
+[
+  {
+    "id": "n-lunarizer-and-zcell-67",
+    "match": "Our final Ultra Beast is located here! Anyways, at the first fork",
+    "map": 511,
+    "title": "Down to the water for the N-Lunarizer",
+    "points": [
+      {
+        "at": [
+          39,
+          62
+        ],
+        "label": "Entrance from Tanzan Mountain"
+      },
+      {
+        "at": [
+          36,
+          55
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          31,
+          55
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          30,
+          48
+        ],
+        "label": "Up the pier"
+      },
+      {
+        "at": [
+          43,
+          92
+        ],
+        "label": "First fork"
+      },
+      {
+        "at": [
+          59,
+          97
+        ],
+        "label": "Stairs down to the water"
+      },
+      {
+        "at": [
+          59,
+          102
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          46,
+          102
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          44,
+          100
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          43,
+          99
+        ],
+        "label": "N-Lunarizer"
+      },
+      {
+        "at": [
+          42,
+          100
+        ],
+        "label": "ZCell 67"
+      }
+    ],
+    "hide": [
+      37,
+      38,
+      39,
+      40
+    ]
+  },
+  {
+    "id": "zcell-68",
+    "match": "Continuing on the path, you'll see another:",
+    "map": 511,
+    "title": "Up the path to ZCell 68",
+    "points": [
+      {
+        "at": [
+          43,
+          92
+        ],
+        "label": "First fork"
+      },
+      {
+        "at": [
+          54,
+          80
+        ],
+        "label": "Passage up"
+      },
+      {
+        "at": [
+          52,
+          36
+        ],
+        "label": "ZCell 68"
+      }
+    ]
+  },
+  {
+    "id": "zcell-69",
+    "match": "There is one more outside - follow the path",
+    "map": 511,
+    "title": "Around the left of the tower to ZCell 69",
+    "points": [
+      {
+        "at": [
+          52,
+          36
+        ],
+        "label": "ZCell 68"
+      },
+      {
+        "at": [
+          20,
+          36
+        ],
+        "label": "First tall tower"
+      },
+      {
+        "at": [
+          13,
+          39
+        ],
+        "label": "Stairs down"
+      },
+      {
+        "at": [
+          11,
+          41
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          66,
+          32
+        ],
+        "label": "ZCell 69"
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "catching-charm-sapphire",
+    "match": "Anyways, the first thing we're going to do is grab the fourth Catching Charm.",
+    "map": 901,
+    "title": "Entrance to the Catching Charm: Sapphire",
+    "points": [
+      { "at": [5, 47], "label": "Entrance" },
+      { "at": [24, 2], "label": "Catching Charm: Sapphire" }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "to-the-basement-building",
+    "match": "Fly over to Agate City, and enter the building below the gym.",
+    "map": 763,
+    "title": "Pokemon Center to the building below the gym",
+    "points": [
+      { "at": [46, 70], "label": "Pokemon Center" },
+      { "at": [34, 42], "label": "Building below the gym" }
+    ]
+  }
+]

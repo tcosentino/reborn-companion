@@ -1,0 +1,133 @@
+[
+  {
+    "id": "to-the-tall-building",
+    "match": "Talk to the girl with the colorful hair in front of the very tall building",
+    "map": 80,
+    "title": "Checkpoint to the very tall building",
+    "points": [
+      {
+        "at": [
+          55,
+          60
+        ],
+        "label": "From North Obsidia (checkpoint)"
+      },
+      {
+        "at": [
+          30,
+          55
+        ],
+        "label": "Very tall building"
+      }
+    ]
+  },
+  {
+    "id": "to-the-top",
+    "match": "Make your way to the very top of the area to talk to the purple haired girl",
+    "map": 80,
+    "title": "Up to the top of the ward",
+    "points": [
+      {
+        "at": [
+          30,
+          55
+        ],
+        "label": "Very tall building"
+      },
+      {
+        "at": [
+          22,
+          40
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          37,
+          9
+        ],
+        "label": "Purple haired girl and red haired guy"
+      }
+    ]
+  },
+  {
+    "id": "pledge-tutor",
+    "match": "Enter the building in the middle of the top row of buildings",
+    "map": 80,
+    "title": "To the Pledge move tutor",
+    "points": [
+      {
+        "at": [
+          37,
+          9
+        ],
+        "label": "Top of the ward"
+      },
+      {
+        "at": [
+          27,
+          10
+        ],
+        "label": "Pledge tutor building"
+      }
+    ]
+  },
+  {
+    "id": "flower-shop",
+    "match": "Enter the flower shop on the left side of the ward.",
+    "map": 80,
+    "title": "To the Sweet Scent Flower Shop",
+    "points": [
+      {
+        "at": [
+          27,
+          11
+        ],
+        "label": "Pledge tutor building"
+      },
+      {
+        "at": [
+          13,
+          19
+        ],
+        "label": "Flower shop"
+      }
+    ]
+  },
+  {
+    "id": "frustration-hail-sticker",
+    "match": "Enter a small house on the left side of the ward",
+    "map": 80,
+    "title": "TM21 house, Pokemart, Drifloon sticker",
+    "points": [
+      {
+        "at": [
+          14,
+          19
+        ],
+        "label": "Flower shop"
+      },
+      {
+        "at": [
+          18,
+          22
+        ],
+        "label": "Small house (TM21 Frustration)"
+      },
+      {
+        "at": [
+          30,
+          22
+        ],
+        "label": "Pokemart (TM07 Hail)"
+      },
+      {
+        "at": [
+          34,
+          23
+        ],
+        "label": "Mom's building (Drifloon sticker)"
+      }
+    ]
+  }
+]

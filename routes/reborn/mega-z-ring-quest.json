@@ -1,0 +1,12 @@
+[
+  {
+    "id": "loudred-girl",
+    "match": "Head to Jasper Ward and take the Loudred out of the PC.",
+    "map": 523,
+    "title": "Pokemon Center to the bottom left building",
+    "points": [
+      { "at": [33, 15], "label": "Pokemon Center" },
+      { "at": [19, 31], "label": "Bottom left building (Lillin)" }
+    ]
+  }
+]

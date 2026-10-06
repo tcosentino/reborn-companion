@@ -1,0 +1,26 @@
+[
+  {
+    "id": "to-zcell-25",
+    "match": "Hug the left side to reach:",
+    "map": 866,
+    "title": "Up the left side to ZCell 25",
+    "points": [
+      { "at": [82, 41], "label": "Ring from the engine room" },
+      { "at": [78, 20], "via": true },
+      { "at": [73, 24], "direct": true },
+      { "at": [60, 28], "label": "ZCell 25" }
+    ]
+  },
+  {
+    "id": "to-the-hilltop",
+    "match": "Head to the top of the hill once you're ready.",
+    "map": 866,
+    "title": "To the top of the hill",
+    "points": [
+      { "at": [60, 28], "label": "ZCell 25" },
+      { "at": [73, 24], "via": true },
+      { "at": [78, 20], "direct": true },
+      { "at": [85, 15], "label": "Hilltop battle" }
+    ]
+  }
+]

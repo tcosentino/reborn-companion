@@ -1,0 +1,721 @@
+[
+  {
+    "id": "tile-puzzle-1",
+    "match": "Enter Charlotte's gym when you are ready.",
+    "map": 419,
+    "title": "Solution to the first tile puzzle",
+    "points": [
+      {
+        "at": [
+          9,
+          55
+        ],
+        "label": "Puzzle 1 start"
+      },
+      {
+        "at": [
+          9,
+          53
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          7,
+          53
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          7,
+          50
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          8,
+          50
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          8,
+          51
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          9,
+          51
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          9,
+          52
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          10,
+          52
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          10,
+          53
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          11,
+          53
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          11,
+          51
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          10,
+          51
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          10,
+          50
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          9,
+          50
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          9,
+          49
+        ],
+        "direct": true,
+        "label": "Stairs up"
+      }
+    ],
+    "pad": 2,
+    "spoiler": true
+  },
+  {
+    "id": "tile-puzzle-2",
+    "match": "Enter Charlotte's gym when you are ready.",
+    "map": 419,
+    "title": "Solution to the second tile puzzle",
+    "points": [
+      {
+        "at": [
+          9,
+          44
+        ],
+        "label": "Puzzle 2 start"
+      },
+      {
+        "at": [
+          9,
+          42
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          10,
+          42
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          10,
+          41
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          12,
+          41
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          12,
+          42
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          13,
+          42
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          13,
+          38
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          11,
+          38
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          11,
+          39
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          12,
+          39
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          12,
+          40
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          10,
+          40
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          10,
+          39
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          9,
+          39
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          9,
+          41
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          8,
+          41
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          8,
+          40
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          7,
+          40
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          7,
+          42
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          5,
+          42
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          5,
+          41
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          6,
+          41
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          6,
+          39
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          5,
+          39
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          5,
+          38
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          9,
+          38
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          9,
+          37
+        ],
+        "direct": true,
+        "label": "Stairs up"
+      }
+    ],
+    "pad": 2,
+    "spoiler": true
+  },
+  {
+    "id": "tile-puzzle-3",
+    "match": "Enter Charlotte's gym when you are ready.",
+    "map": 419,
+    "title": "Solution to the third tile puzzle",
+    "points": [
+      {
+        "at": [
+          9,
+          32
+        ],
+        "label": "Puzzle 3 start"
+      },
+      {
+        "at": [
+          9,
+          30
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          8,
+          30
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          8,
+          29
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          6,
+          29
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          6,
+          30
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          4,
+          30
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          4,
+          29
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          5,
+          29
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          5,
+          28
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          4,
+          28
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          4,
+          27
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          5,
+          27
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          5,
+          25
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          4,
+          25
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          4,
+          23
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          7,
+          23
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          7,
+          25
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          6,
+          25
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          6,
+          26
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          7,
+          26
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          7,
+          28
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          8,
+          28
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          8,
+          27
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          9,
+          27
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          9,
+          28
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          10,
+          28
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          10,
+          30
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          11,
+          30
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          11,
+          29
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          12,
+          29
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          12,
+          28
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          13,
+          28
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          13,
+          30
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          14,
+          30
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          14,
+          27
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          11,
+          27
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          11,
+          26
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          9,
+          26
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          9,
+          25
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          8,
+          25
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          8,
+          24
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          10,
+          24
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          10,
+          25
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          12,
+          25
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          12,
+          26
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          14,
+          26
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          14,
+          23
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          13,
+          23
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          13,
+          24
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          12,
+          24
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          12,
+          23
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          9,
+          23
+        ],
+        "direct": true
+      },
+      {
+        "at": [
+          9,
+          22
+        ],
+        "direct": true,
+        "label": "Stairs up"
+      }
+    ],
+    "pad": 2,
+    "spoiler": true
+  }
+]

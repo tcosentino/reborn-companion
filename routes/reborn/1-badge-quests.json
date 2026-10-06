@@ -1,0 +1,36 @@
+[
+  {
+    "id": "onix-hiker",
+    "match": "Nearby you'll find a hiker.",
+    "map": 37,
+    "title": "Numel spot to the hiker and the Whismur lot",
+    "points": [
+      {
+        "at": [
+          35,
+          69
+        ],
+        "label": "Numel spot"
+      },
+      {
+        "at": [
+          45,
+          65
+        ],
+        "label": "Hiker"
+      },
+      {
+        "at": [
+          57,
+          52
+        ],
+        "label": "Whismur house (lot owner)"
+      }
+    ],
+    "hide": [
+      30,
+      32,
+      33
+    ]
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "id": "to-the-barrier",
+    "match": "Head into Tanzan Mountain and go to the right as soon as you can.",
+    "map": 231,
+    "title": "Tanzan Mountain to the Meteor barrier",
+    "points": [
+      {
+        "at": [
+          40,
+          79
+        ],
+        "label": "From the Chrysolia Region"
+      },
+      {
+        "at": [
+          63,
+          42
+        ],
+        "label": "Laura or Saphira at the barrier"
+      },
+      {
+        "at": [
+          64,
+          41
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          64,
+          38
+        ],
+        "via": true,
+        "direct": true
+      },
+      {
+        "at": [
+          67,
+          32
+        ],
+        "label": "Cave past the barrier"
+      }
+    ],
+    "hide": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ]
+  }
+]

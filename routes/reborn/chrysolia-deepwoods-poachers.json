@@ -1,0 +1,46 @@
+[
+  {
+    "id": "to-the-first-poacher",
+    "match": "Enter the New World Door at the bottom to return to the Chrysolia Deepwoods.",
+    "map": 840,
+    "title": "Arclight up to the first poacher",
+    "points": [
+      {
+        "at": [
+          37,
+          72
+        ],
+        "label": "Arclight"
+      },
+      {
+        "at": [
+          38,
+          46
+        ],
+        "label": "Poacher 1 (Shinx cage)"
+      }
+    ]
+  },
+  {
+    "id": "to-the-commissioner",
+    "match": "Head to the top right corner once you're ready to fight the Commissioner.",
+    "map": 840,
+    "title": "Bridge to the Commissioner",
+    "points": [
+      {
+        "at": [
+          136,
+          68
+        ],
+        "label": "Poacher 3 (bridge)"
+      },
+      {
+        "at": [
+          167,
+          32
+        ],
+        "label": "Commissioner"
+      }
+    ]
+  }
+]

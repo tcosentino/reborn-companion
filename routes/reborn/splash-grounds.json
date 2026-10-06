@@ -1,0 +1,38 @@
+[
+  {
+    "id": "first-room-and-side-door",
+    "match": "Grab the *Relic Copper* in the first room.",
+    "map": 862,
+    "title": "First room to the small side door",
+    "points": [
+      { "at": [120, 18], "label": "Entrance to the first room" },
+      { "at": [118, 11], "label": "Relic Copper" },
+      { "at": [124, 6], "label": "Small door right of the large one" }
+    ]
+  },
+  {
+    "id": "side-room-zcell",
+    "match": "Grab the *Relic Copper* in the first room.",
+    "map": 862,
+    "title": "Side room relics and ZCell 30",
+    "points": [
+      { "at": [144, 58], "label": "From the small door" },
+      { "at": [149, 56], "label": "Relic item" },
+      { "at": [141, 43], "label": "Relic item" },
+      { "at": [156, 42], "label": "ZCell 30" }
+    ]
+  },
+  {
+    "id": "large-door-and-gems",
+    "match": "Back in the entrance room, enter the large door",
+    "map": 862,
+    "title": "Relics, Manaphy Gems and the gem door",
+    "points": [
+      { "at": [18, 96], "label": "From the large door" },
+      { "at": [22, 88], "label": "Relic Copper" },
+      { "at": [15, 84], "label": "Manaphy Gems (dais)" },
+      { "at": [9, 74], "label": "Relic Copper" },
+      { "at": [12, 73], "label": "Gem door at the top" }
+    ]
+  }
+]

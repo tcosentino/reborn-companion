@@ -1,0 +1,21 @@
+[
+  {
+    "id": "celestinine-2f-ice-puzzle",
+    "match": "Cross the ice puzzle to get to the left.",
+    "map": 430,
+    "title": "Sliding across the ice to the left",
+    "points": [
+      { "at": [94, 49], "label": "Ladder from 1F" },
+      { "at": [91, 46], "label": "Stairs onto the ice" },
+      { "at": [91, 36], "direct": true },
+      { "at": [87, 36], "direct": true },
+      { "at": [87, 45], "direct": true },
+      { "at": [83, 45], "direct": true },
+      { "at": [83, 37], "direct": true },
+      { "at": [82, 37], "direct": true },
+      { "at": [82, 44], "direct": true },
+      { "at": [72, 44], "direct": true, "label": "Left side of the ice" }
+    ],
+    "pad": 3
+  }
+]

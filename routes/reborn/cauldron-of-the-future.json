@@ -1,0 +1,12 @@
+[
+  {
+    "id": "zcell-63",
+    "match": "Follow the path to the left to find:",
+    "map": 876,
+    "title": "Adrienn to ZCell 63",
+    "points": [
+      { "at": [34, 28], "label": "Adrienn" },
+      { "at": [4, 15], "label": "ZCell 63" }
+    ]
+  }
+]

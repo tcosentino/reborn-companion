@@ -1,0 +1,13 @@
+[
+  {
+    "id": "elekid-trade-house",
+    "match": "In a building to the right of the gym you can trade",
+    "map": 413,
+    "title": "Pokemon Center to the Elekid trade house",
+    "points": [
+      { "at": [45, 28], "label": "Pokemon Center" },
+      { "at": [72, 25], "via": true },
+      { "at": [46, 14], "label": "Elekid trade house" }
+    ]
+  }
+]

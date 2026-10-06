@@ -1,0 +1,182 @@
+[
+  {
+    "id": "floor-1-terminals",
+    "match": "Enter the next room and talk with Ace.",
+    "map": 71,
+    "title": "1F: the four code terminals (3179)",
+    "points": [
+      {
+        "at": [
+          47,
+          35
+        ],
+        "label": "From the entrance"
+      },
+      {
+        "at": [
+          24,
+          31
+        ],
+        "label": "Terminal XX7X"
+      },
+      {
+        "at": [
+          23,
+          8
+        ],
+        "label": "Terminal X1XX"
+      },
+      {
+        "at": [
+          50,
+          7
+        ],
+        "label": "Terminal 3XXX"
+      },
+      {
+        "at": [
+          66,
+          6
+        ],
+        "label": "Terminal XXX9"
+      },
+      {
+        "at": [
+          50,
+          16
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          47,
+          28
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          60,
+          30
+        ],
+        "label": "Elevator keypad"
+      }
+    ],
+    "hide": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73
+    ]
+  },
+  {
+    "id": "floor-2-terminals",
+    "match": "On the second floor, Rini will start us off",
+    "map": 71,
+    "title": "2F: Data Chip and the code terminals (4862)",
+    "hide": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73
+    ],
+    "points": [
+      {
+        "at": [
+          89,
+          27
+        ],
+        "label": "Rini (elevator landing)"
+      },
+      {
+        "at": [
+          94,
+          28
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          94,
+          44
+        ],
+        "label": "Data Chip"
+      },
+      {
+        "at": [
+          89,
+          6
+        ],
+        "label": "Terminal XXX2"
+      },
+      {
+        "at": [
+          18,
+          48
+        ],
+        "label": "Terminal X8XX"
+      },
+      {
+        "at": [
+          5,
+          25
+        ],
+        "label": "Terminal 4XXX"
+      },
+      {
+        "at": [
+          36,
+          4
+        ],
+        "label": "Paralyze Heal"
+      },
+      {
+        "at": [
+          41,
+          2
+        ],
+        "label": "Security keypad"
+      }
+    ]
+  }
+]

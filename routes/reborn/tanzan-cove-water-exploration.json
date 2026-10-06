@@ -1,0 +1,15 @@
+[
+  {
+    "id": "surf-to-the-cave",
+    "match": "For now, surf onto the lake, and head towards the left side",
+    "map": 232,
+    "title": "Surf from the fisherman to the cave",
+    "points": [
+      { "at": [51, 51], "label": "Fisherman" },
+      { "at": [48, 51], "via": true, "direct": true },
+      { "at": [25, 43], "via": true, "direct": true },
+      { "at": [23, 43], "label": "Land on the left landmass", "direct": true },
+      { "at": [12, 42], "label": "Cave" }
+    ]
+  }
+]

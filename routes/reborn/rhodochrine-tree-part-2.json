@@ -1,0 +1,16 @@
+[
+  {
+    "id": "diancite",
+    "match": "Talk to Heather at the base of the tree and accept her offer",
+    "map": 889,
+    "title": "Up, left and under the waterfall to the Diancite",
+    "points": [
+      { "at": [45, 45], "label": "Drop-off from Heather" },
+      { "at": [33, 40], "label": "Where the barrier was" },
+      { "at": [36, 32], "label": "Waterfall" },
+      { "at": [40, 32], "direct": true },
+      { "at": [47, 29], "label": "Diancite" }
+    ],
+    "hide": [10, 11, 12, 13, 14, 15, 16, 17, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+  }
+]

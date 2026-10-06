@@ -1,0 +1,99 @@
+[
+  {
+    "id": "kadabra-girl-apartment",
+    "match": "You'll notice that everything is chaos here, teleporting like crazy.",
+    "map": 271,
+    "title": "Forest entrance to the Kadabra girl's apartment",
+    "points": [
+      {
+        "at": [
+          13,
+          47
+        ],
+        "label": "From Chrysolia Forest"
+      },
+      {
+        "at": [
+          14,
+          32
+        ],
+        "label": "Kadabra girl's apartment"
+      }
+    ]
+  },
+  {
+    "id": "good-rod-house",
+    "match": "Down from here, there's a tree in front of a house.",
+    "map": 271,
+    "title": "Down to the house behind the tree",
+    "points": [
+      {
+        "at": [
+          14,
+          33
+        ],
+        "label": "Kadabra girl's apartment"
+      },
+      {
+        "at": [
+          14,
+          40
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          12,
+          40
+        ],
+        "via": true,
+        "direct": true
+      },
+      {
+        "at": [
+          12,
+          39
+        ],
+        "label": "House behind the tree (bed, Good Rod)",
+        "direct": true
+      }
+    ]
+  },
+  {
+    "id": "tall-apartments",
+    "match": "Enter the left tall apartment building.",
+    "map": 271,
+    "title": "The two tall apartment buildings",
+    "points": [
+      {
+        "at": [
+          12,
+          40
+        ],
+        "label": "Good Rod house"
+      },
+      {
+        "at": [
+          14,
+          40
+        ],
+        "via": true,
+        "direct": true
+      },
+      {
+        "at": [
+          31,
+          23
+        ],
+        "label": "Left tall apartment (table)"
+      },
+      {
+        "at": [
+          36,
+          23
+        ],
+        "label": "Right building (trades, Eeveelution lady)"
+      }
+    ]
+  }
+]

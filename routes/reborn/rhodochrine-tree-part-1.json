@@ -1,0 +1,12 @@
+[
+  {
+    "id": "zcell-57",
+    "match": "Go to the left all the way to what appears like a dead end",
+    "map": 889,
+    "title": "Left to ZCell 57",
+    "points": [
+      { "at": [45, 44], "label": "Top of the tree" },
+      { "at": [16, 49], "label": "ZCell 57" }
+    ]
+  }
+]

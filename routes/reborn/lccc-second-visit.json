@@ -1,0 +1,251 @@
+[
+  {
+    "id": "to-lccc-building",
+    "match": "With that quest out of the way, fly on back to Labradorra City.",
+    "map": 414,
+    "title": "Pokemon Center to the LCCC building",
+    "points": [
+      {
+        "at": [
+          59,
+          22
+        ],
+        "label": "Pokemon Center"
+      },
+      {
+        "at": [
+          16,
+          35
+        ],
+        "label": "LCCC building"
+      }
+    ],
+    "hide": [
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      77,
+      78,
+      82,
+      85,
+      86,
+      88,
+      89,
+      91,
+      92,
+      93,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      113,
+      114,
+      115,
+      116,
+      162,
+      163
+    ]
+  },
+  {
+    "id": "forks-to-data-chip",
+    "match": "At the first fork, head up to get a hidden *Elixir*",
+    "map": 775,
+    "title": "Up the first fork, then down the second",
+    "points": [
+      {
+        "at": [
+          4,
+          5
+        ],
+        "label": "Ladder down"
+      },
+      {
+        "at": [
+          38,
+          28
+        ],
+        "label": "First fork"
+      },
+      {
+        "at": [
+          47,
+          17
+        ],
+        "label": "Elixir and Fairy Gems room"
+      },
+      {
+        "at": [
+          46,
+          29
+        ],
+        "label": "Second fork"
+      },
+      {
+        "at": [
+          58,
+          45
+        ],
+        "label": "Data Chip computer"
+      }
+    ]
+  },
+  {
+    "id": "right-to-pulse",
+    "match": "Head back down to the LCCC, this time, going right",
+    "map": 775,
+    "title": "Right at the four-way junction to the PULSE",
+    "points": [
+      {
+        "at": [
+          58,
+          28
+        ],
+        "label": "Four-way junction"
+      },
+      {
+        "at": [
+          87,
+          16
+        ],
+        "via": true
+      },
+      {
+        "at": [
+          88,
+          4
+        ],
+        "label": "PULSE fight"
+      }
+    ],
+    "hide": [
+      36
+    ]
+  },
+  {
+    "id": "eve-readout",
+    "match": "Once you defeat this harrowing PULSE fight",
+    "map": 414,
+    "title": "LCCC exit to Eve's building",
+    "points": [
+      {
+        "at": [
+          16,
+          36
+        ],
+        "label": "LCCC building"
+      },
+      {
+        "at": [
+          33,
+          43
+        ],
+        "label": "Eve's building (PULSE Readout 9)"
+      }
+    ],
+    "hide": [
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      77,
+      78,
+      82,
+      85,
+      86,
+      88,
+      89,
+      91,
+      92,
+      93,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      113,
+      114,
+      115,
+      116,
+      162,
+      163
+    ]
+  },
+  {
+    "id": "orphanage-key",
+    "match": "Enter the building up and right from the LCCC",
+    "map": 414,
+    "title": "To the building Sigmund fled",
+    "points": [
+      {
+        "at": [
+          33,
+          44
+        ],
+        "label": "Eve's building"
+      },
+      {
+        "at": [
+          19,
+          30
+        ],
+        "label": "Orphanage Key building"
+      }
+    ],
+    "hide": [
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      77,
+      78,
+      82,
+      85,
+      86,
+      88,
+      89,
+      91,
+      92,
+      93,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      113,
+      114,
+      115,
+      116,
+      162,
+      163
+    ]
+  }
+]

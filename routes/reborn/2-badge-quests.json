@@ -1,0 +1,12 @@
+[
+  {
+    "id": "makuhita",
+    "match": "Head left and take the elevator down to B1F.",
+    "map": 88,
+    "title": "Elevator to the Makuhita",
+    "points": [
+      { "at": [25, 24], "label": "Elevator" },
+      { "at": [5, 7], "label": "Makuhita" }
+    ]
+  }
+]

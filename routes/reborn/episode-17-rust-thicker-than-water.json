@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hiker-choice-item",
+    "match": "Head down to the Lower Peridot Ward.",
+    "map": 530,
+    "title": "To the Hiker southeast of the Pokemon Center",
+    "points": [
+      { "at": [45, 8], "label": "From Peridot Ward" },
+      { "at": [74, 48], "label": "Hiker (clear days)" }
+    ]
+  }
+]

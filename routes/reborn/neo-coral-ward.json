@@ -1,0 +1,12 @@
+[
+  {
+    "id": "slowpoke-tail-fisherman",
+    "match": "Talk to one of the fisherman at the bottom of Coral Ward",
+    "map": 526,
+    "title": "Danielle's building to the Slowpoke Tail fisherman",
+    "points": [
+      { "at": [55, 10], "label": "Danielle's building" },
+      { "at": [31, 26], "label": "Slowpoke Tail fisherman" }
+    ]
+  }
+]

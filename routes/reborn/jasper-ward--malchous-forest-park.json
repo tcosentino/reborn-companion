@@ -1,0 +1,46 @@
+[
+  {
+    "id": "grunt-to-building",
+    "match": "To the left, grab a hidden *Super Potion*.",
+    "map": 130,
+    "title": "Meteor Grunt back left to the building",
+    "points": [
+      {
+        "at": [
+          67,
+          33
+        ],
+        "label": "Meteor Grunt"
+      },
+      {
+        "at": [
+          32,
+          31
+        ],
+        "label": "Building entrance"
+      }
+    ]
+  },
+  {
+    "id": "to-forest-park",
+    "match": "Head to the left into the Forest Park.",
+    "map": 130,
+    "title": "Out the bottom to Malchous Forest Park",
+    "points": [
+      {
+        "at": [
+          19,
+          31
+        ],
+        "label": "Building's bottom exit"
+      },
+      {
+        "at": [
+          8,
+          35
+        ],
+        "label": "Malchous Forest Park"
+      }
+    ]
+  }
+]

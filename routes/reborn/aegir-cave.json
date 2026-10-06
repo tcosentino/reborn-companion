@@ -1,0 +1,24 @@
+[
+  {
+    "id": "to-bennett-and-serra",
+    "match": "Head to the left and talk to Bennett and Serra.",
+    "map": 849,
+    "title": "Entrance to Bennett and Serra",
+    "points": [
+      {
+        "at": [
+          59,
+          37
+        ],
+        "label": "New World Door"
+      },
+      {
+        "at": [
+          30,
+          18
+        ],
+        "label": "Bennett and Serra"
+      }
+    ]
+  }
+]

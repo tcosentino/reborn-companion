@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nosepass-trade-house",
+    "match": "In a house below, there is an in-game trade.",
+    "map": 97,
+    "title": "Danielle's apartment to the trade house",
+    "points": [
+      { "at": [40, 10], "label": "Danielle's apartment" },
+      { "at": [48, 17], "label": "Trade house (Watchog for Nosepass)" }
+    ]
+  }
+]

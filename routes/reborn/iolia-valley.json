@@ -1,0 +1,12 @@
+[
+  {
+    "id": "labyrinth-to-iolia-valley",
+    "match": "Head over to Vanhanen Labyrinth. Hidden behind the big tree",
+    "map": 292,
+    "title": "Through the labyrinth to the hidden entrance",
+    "points": [
+      { "at": [34, 0], "label": "From Route 1" },
+      { "at": [44, 8], "label": "Iolia Valley entrance (behind the tree)" }
+    ]
+  }
+]
