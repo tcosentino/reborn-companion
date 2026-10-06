@@ -11,6 +11,7 @@ import { Encounters, Mining, Pickup, Shop, Tutor, WildHeld } from './blocks/Tabl
 import { useDex, useGame } from './common'
 import { linkProse, nameMaps } from '../features/hovercards/names'
 import { HiddenItems } from '../features/hidden-items/HiddenItems'
+import { RouteMap } from '../features/route-map/RouteMap'
 import { groupHiddenItems, type RenderBlock } from '../features/hidden-items/group'
 import { blockAnchors } from './palette/anchors'
 import { useAnchorInView } from '../features/guide-nav/useAnchorInView'
@@ -52,8 +53,9 @@ const BlockView = ({ b, id, done, toggle, onTask, hideDefeated }: {
     case 'pickup': return <Pickup b={b} />
     case 'mining': return <Mining b={b} />
     case 'wildHeld': return <WildHeld b={b} />
-    case 'hiddenItems': return <HiddenItems b={b} />
+    case 'hiddenItems': return <HiddenItems b={b} collapsed={hideDefeated} />
     case 'html': return <div className="prose" dangerouslySetInnerHTML={{ __html: b.html }} />
+    case 'route': return <RouteMap b={b} />
     case 'task': return <Task b={b} done={!!done[b.id]} onToggle={onTask} collapsed={hideDefeated}><Prose md={b.markdown} /></Task>
   }
 }

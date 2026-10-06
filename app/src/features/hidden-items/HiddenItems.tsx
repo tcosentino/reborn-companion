@@ -37,7 +37,8 @@ const Lightbox = ({ url, alt, onClose }: { url: string; alt: string; onClose: ()
   )
 }
 
-export const HiddenItems = ({ b }: { b: HiddenItemsBlock }) => {
+// collapsed: "Hide defeated" is on, so a fully collected card shrinks to its header row
+export const HiddenItems = ({ b, collapsed }: { b: HiddenItemsBlock; collapsed?: boolean }) => {
   const game = useGame()
   const dex = useDex()
   const { done, toggle } = useHiddenChecked(game.id)
@@ -48,12 +49,12 @@ export const HiddenItems = ({ b }: { b: HiddenItemsBlock }) => {
   const complete = got === b.entries.length
 
   return (
-    <section className={`hi-card${complete ? ' complete' : ''}`} aria-label="Hidden items">
+    <section className={`hi-card${complete ? ' complete' : ''}${complete && collapsed ? ' is-collapsed' : ''}`} aria-label="Hidden items">
       <header className="hi-head">
         <Ring got={got} total={b.entries.length} />
         <h3>Hidden items</h3>
         <span className="hi-count mono" aria-live="polite">{got} / {b.entries.length}</span>
-        {complete && <span className="hi-done">All collected</span>}
+        {complete && <span className="all-caught">All collected</span>}
       </header>
       <div className="hi-body">
         <button type="button" className="hi-map" onClick={() => setZoom(true)} aria-label={`Zoom map ${b.file}`}>
