@@ -1,5 +1,11 @@
 [
   {
+    "id": "good-rod",
+    "kind": "item",
+    "title": "Get the Good Rod from the house with the moving tree",
+    "match": "Down from here, there's a tree in front of"
+  },
+  {
     "id": "fossil-revivals",
     "kind": "catch",
     "title": "Revive fossils for Omanyte, Kabuto, Lileep, Anorith, Cranidos, Shieldon",
@@ -9,7 +15,8 @@
       "KABUTO",
       "LILEEP",
       "ANORITH",
-      "CRANIDOS"
+      "CRANIDOS",
+      "SHIELDON"
     ]
   },
   {
@@ -20,5 +27,17 @@
     "species": [
       "VANILLITE"
     ]
+  },
+  {
+    "id": "eevium-z",
+    "kind": "item",
+    "title": "Get Eevium-Z in the Spinel museum upstairs",
+    "match": "Anyways, head down and out of the door upstairs"
+  },
+  {
+    "id": "kadabra-furniture-exp-all",
+    "kind": "quest",
+    "title": "Return all of the Kadabra girl's furniture for the Exp. All",
+    "match": "With that, we should now have all of the"
   }
 ]

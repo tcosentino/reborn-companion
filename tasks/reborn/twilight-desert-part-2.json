@@ -1,5 +1,11 @@
 [
   {
+    "id": "beast-balls",
+    "kind": "item",
+    "title": "Get two Beast Balls from Terra (50+ cells)",
+    "match": "Head into the main building and talk to Terra"
+  },
+  {
     "id": "zygarde-50-percent",
     "kind": "catch",
     "title": "Create Zygarde 50% form",
@@ -12,7 +18,7 @@
     "id": "zygarde-100-percent",
     "kind": "catch",
     "title": "Obtain Zygarde 100% form",
-    "match": "Either by fighting or by simply walking,",
+    "match": "Once you win, or if you skipped the fight,",
     "species": [
       "ZYGARDE"
     ]

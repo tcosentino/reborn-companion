@@ -10,5 +10,11 @@
     "kind": "quest",
     "title": "Return Igglybuff for items",
     "match": "Head up and enter the house where we once"
+  },
+  {
+    "id": "expert-belt-tent",
+    "kind": "item",
+    "title": "Get Expert Belt from NPC under orange tent",
+    "match": "Outside her house and down, there is an orange"
   }
 ]

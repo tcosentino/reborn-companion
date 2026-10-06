@@ -3,9 +3,15 @@
     "id": "exeggutor-alola",
     "kind": "catch",
     "title": "Catch Exeggutor-Alola in desert",
-    "match": "- In the top left corner up on a hill, you",
+    "match": "You'll also find many stationary **Exeggutor-Alola**",
     "species": [
       "EXEGGUTOR"
     ]
+  },
+  {
+    "id": "dragonium-z",
+    "kind": "item",
+    "title": "Beat Exeggutor-Alola in the pot for Dragonium-Z",
+    "match": "You can pet Leafeon here for the Eeveelution"
   }
 ]

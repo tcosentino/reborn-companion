@@ -1,14 +1,5 @@
 [
   {
-    "id": "mothim-evolution",
-    "kind": "catch",
-    "title": "Evolve male Burmy to Mothim",
-    "match": "Grab your Male Burmy from the PC and level",
-    "species": [
-      "MOTHIM"
-    ]
-  },
-  {
     "id": "bruxish-mothim-trade",
     "kind": "catch",
     "title": "Trade Mothim for Bruxish with NPC in Chrysolia",
@@ -18,10 +9,19 @@
     ]
   },
   {
+    "id": "remoraid-fountain",
+    "kind": "catch",
+    "title": "Catch Remoraid at the teleported fountain",
+    "match": "Down from here, you'll find the teleported",
+    "species": [
+      "REMORAID"
+    ]
+  },
+  {
     "id": "houndour-gang-mascot",
     "kind": "catch",
     "title": "Get gang mascot Houndour from other gang alleyway",
-    "match": "Once you return to Reborn City via the railnet,",
+    "match": "If you joined Aqua Gang, head over to North",
     "species": [
       "HOUNDOUR"
     ]

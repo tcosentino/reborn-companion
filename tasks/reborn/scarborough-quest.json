@@ -17,13 +17,13 @@
   {
     "id": "ribbon-collar-lottie",
     "kind": "item",
-    "title": "Give ribbon collar to Lottie",
+    "title": "Give Ribbon Collar to Lottie for Eevee Sticker",
     "match": "Fly over to Jasper Ward and enter the second"
   },
   {
     "id": "trade-beverages-tms",
     "kind": "quest",
-    "title": "Trade beverages for Thunder TMs",
+    "title": "Trade 3 drinks for TM25, TM14 and TM38",
     "match": "In exchange for a Fresh Water, Soda Pop,"
   }
 ]

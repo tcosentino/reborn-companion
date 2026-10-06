@@ -8,7 +8,25 @@
   {
     "id": "lucky-egg-arclight",
     "kind": "item",
-    "title": "Obtain Lucky Egg from DJ Arclight",
+    "title": "Buy all stolen Pokemon for Lucky Egg",
     "match": "Anyways, exit this area. Once you buy all"
+  },
+  {
+    "id": "type-null-nadira",
+    "kind": "catch",
+    "title": "Catch Type: Null (Carvanha, Unfezant, Luxray quest)",
+    "match": "First, you'll need to bring her a Carvanha.",
+    "species": [
+      "TYPENULL"
+    ]
+  },
+  {
+    "id": "piplup-rare-candy-quest",
+    "kind": "catch",
+    "title": "Return the stolen Rare Candy to get Piplup",
+    "match": "Enter the top grotto and give it to a guy",
+    "species": [
+      "PIPLUP"
+    ]
   }
 ]

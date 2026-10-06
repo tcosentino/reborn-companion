@@ -3,13 +3,13 @@
     "id": "fund-restoration",
     "kind": "quest",
     "title": "Fund a restoration project",
-    "match": "As soon as you fully fund a project, you"
+    "match": "We can only choose to fund one right now,"
   },
   {
     "id": "lopunnite",
     "kind": "item",
     "title": "Obtain Lopunnite in Grand Hall",
-    "match": "**Relationship Point Choices**:\n- Talk to"
+    "match": "If you enter the room at the very top and"
   },
   {
     "id": "goomy",
@@ -23,37 +23,58 @@
   {
     "id": "waterium-z",
     "kind": "item",
-    "title": "Receive Waterium-Z from quest",
+    "title": "Help Sandy to receive Waterium-Z",
     "match": "With that out of the way, return to the Grand"
   },
   {
     "id": "togepi-egg",
     "kind": "catch",
-    "title": "Obtain Togepi egg through trade",
+    "title": "Trade Probopass for a Togepi egg",
     "match": "The Kingsbury Station though? It brings us",
     "species": [
       "TOGEPI"
     ]
   },
   {
+    "id": "weakness-policy",
+    "kind": "item",
+    "title": "Get Weakness Policy at Kingsbury Station",
+    "match": "The Kingsbury Station though? It brings us"
+  },
+  {
     "id": "firium-z",
     "kind": "item",
-    "title": "Receive Firium-Z from quest",
+    "title": "Clear the Railnet quest for Firium-Z",
     "match": "Return to the guy in the Grand Hall basement"
+  },
+  {
+    "id": "chikorita-roof",
+    "kind": "catch",
+    "title": "Catch Chikorita on the Nature Center roof",
+    "match": "Inside the building, you can get a *Toxic",
+    "species": [
+      "CHIKORITA"
+    ]
   },
   {
     "id": "chimchar-egg",
     "kind": "catch",
-    "title": "Obtain Chimchar egg through trade",
+    "title": "Trade Carnivine for a Chimchar egg",
     "match": "In front of the building, a person will offer",
     "species": [
       "CHIMCHAR"
     ]
   },
   {
+    "id": "rocky-helmet",
+    "kind": "item",
+    "title": "Get Rocky Helmet from the Azurine nature guy",
+    "match": "Down the ledge and across the water, talk"
+  },
+  {
     "id": "grassium-z",
     "kind": "item",
-    "title": "Donate Pokemon to get Grassium-Z",
+    "title": "Donate Lurantis and Simisage for Grassium-Z",
     "match": "A lady on the left will give us 2 *Leaf Stones*"
   }
 ]

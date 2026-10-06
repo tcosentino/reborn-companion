@@ -19,5 +19,14 @@
     "species": [
       "HOOH"
     ]
+  },
+  {
+    "id": "lugia",
+    "kind": "catch",
+    "title": "Catch Lugia after the Anomaly battle",
+    "match": "Win, and you can catch **Lugia**! Accept",
+    "species": [
+      "LUGIA"
+    ]
   }
 ]

@@ -9,6 +9,12 @@
     ]
   },
   {
+    "id": "wailmer-pail",
+    "kind": "item",
+    "title": "Get the Wailmer Pail from the flower shop",
+    "match": "Enter the flower shop on the left side of"
+  },
+  {
     "id": "drifloon-sticker-rescue",
     "kind": "item",
     "title": "Get Department Store Sticker: Drifloon by saving kid",

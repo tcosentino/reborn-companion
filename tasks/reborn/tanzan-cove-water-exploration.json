@@ -1,5 +1,11 @@
 [
   {
+    "id": "super-rod",
+    "kind": "item",
+    "title": "Get the Super Rod from the Tanzan Cove fisherman",
+    "match": "Return to the surface and talk to the fisherman"
+  },
+  {
     "id": "simon-whiscash-donation",
     "kind": "quest",
     "title": "Donate 3 Whiscash for Simon's quest",

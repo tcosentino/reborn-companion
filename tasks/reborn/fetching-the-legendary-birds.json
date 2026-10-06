@@ -18,9 +18,12 @@
     ]
   },
   {
-    "id": "fetching-the-legendary-birds-4",
-    "kind": "quest",
-    "title": "As of Gen VII, 9",
-    "match": "As of Gen VII, 9.6% of all Pokemon were legendaries..."
+    "id": "moltres",
+    "kind": "catch",
+    "title": "Catch Moltres atop Pyrous Mountain",
+    "match": "Finally, fly over to Apophyll Academy, and",
+    "species": [
+      "MOLTRES"
+    ]
   }
 ]

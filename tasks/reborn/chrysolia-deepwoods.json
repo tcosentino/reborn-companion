@@ -6,6 +6,12 @@
     "match": "Talk to Nyu in the Nightclub and accept his"
   },
   {
+    "id": "reveal-glass",
+    "kind": "item",
+    "title": "Grab the Reveal Glass after Smeargle's first 6 steps",
+    "match": "Follow the arrows to the statue to the right"
+  },
+  {
     "id": "regigigas",
     "kind": "catch",
     "title": "Catch Regigigas after New World puzzle",

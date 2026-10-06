@@ -1,9 +1,18 @@
 [
   {
+    "id": "flabebe-floral-charm",
+    "kind": "catch",
+    "title": "Catch Flabebe with the Floral Charm",
+    "match": "Anyways, lather the Honey tree closest to",
+    "species": [
+      "FLABEBE"
+    ]
+  },
+  {
     "id": "heracross-or-pinsir",
     "kind": "catch",
     "title": "Catch Heracross or Pinsir (one choice)",
-    "match": "Anyways, lather the Honey tree closest to",
+    "match": "Here, you can grab a *Razor Claw* and *TM40",
     "species": [
       "HERACROSS",
       "PINSIR"

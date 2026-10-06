@@ -18,6 +18,24 @@
     ]
   },
   {
+    "id": "sunkern-trade",
+    "kind": "catch",
+    "title": "Trade Sunkern for Carbink, Mime Jr., Cryogonal or Furfrou",
+    "match": "Grab a hidden *Blue Shard* as you make your",
+    "species": [
+      "CARBINK",
+      "MIMEJR",
+      "CRYOGONAL",
+      "FURFROU"
+    ]
+  },
+  {
+    "id": "exp-share",
+    "kind": "item",
+    "title": "Get the Exp. Share from the Sunkern trade",
+    "match": "Grab a hidden *Blue Shard* as you make your"
+  },
+  {
     "id": "tropius-sunny",
     "kind": "catch",
     "title": "Catch Tropius on sunny day",

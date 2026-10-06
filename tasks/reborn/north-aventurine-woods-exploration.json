@@ -6,6 +6,12 @@
     "match": "Down from here, you'll find a hidden *Mental"
   },
   {
+    "id": "pikanium-z",
+    "kind": "item",
+    "title": "Get Pikanium-Z near the berry soil",
+    "match": "Grab the hidden *Dire Hit* and *Big Mushroom*."
+  },
+  {
     "id": "candy-trade-honeys",
     "kind": "quest",
     "title": "Trade candy or ice cream for Honeys",

@@ -6,6 +6,12 @@
     "match": "Talk to Ringmaster and accept the quest."
   },
   {
+    "id": "genesect-drives",
+    "kind": "item",
+    "title": "Win the Shock, Chill, Burn and Douse Drives",
+    "match": "You'll get the *Burn Drive* once you win."
+  },
+  {
     "id": "genesect",
     "kind": "catch",
     "title": "Catch Genesect after drive puzzle",

@@ -4,5 +4,11 @@
     "kind": "quest",
     "title": "Solve magic square puzzle",
     "match": "Back in the main room, time for one of the"
+  },
+  {
+    "id": "manectite-code",
+    "kind": "item",
+    "title": "Give Agate lady code 139749 for Manectite",
+    "match": "Head on back to Agate City, and enter the"
   }
 ]

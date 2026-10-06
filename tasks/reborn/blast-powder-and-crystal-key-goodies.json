@@ -12,7 +12,10 @@
     "id": "tyrunt-jaw-fossil",
     "kind": "catch",
     "title": "Revive Jaw Fossil for Tyrunt",
-    "match": "While we're nearby, head over to Spinel Town."
+    "match": "While we're nearby, head over to Spinel Town.",
+    "species": [
+      "TYRUNT"
+    ]
   },
   {
     "id": "axew-egg",
@@ -22,6 +25,18 @@
     "species": [
       "AXEW"
     ]
+  },
+  {
+    "id": "ampharosite-underroot",
+    "kind": "item",
+    "title": "Get Ampharosite and Meadow Plate in Underroot",
+    "match": "Ok, with those out of the way, head to the"
+  },
+  {
+    "id": "ghostium-z-power-plant",
+    "kind": "item",
+    "title": "Get Ghostium-Z at the Yureyu Power Plant",
+    "match": "Head over to the Yureyu Abandoned Power Plant"
   },
   {
     "id": "rotom-power-plant",

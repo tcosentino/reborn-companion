@@ -1,0 +1,20 @@
+[
+  {
+    "id": "houndour-magma-reward",
+    "kind": "catch",
+    "title": "Get Houndour from Maxwell after the Aqua hideout fight",
+    "match": "Anyways, return to Maxwell at your alleyway",
+    "species": [
+      "HOUNDOUR"
+    ]
+  },
+  {
+    "id": "carvanha-aqua-reward",
+    "kind": "catch",
+    "title": "Get Carvanha from Archer after the Magma hideout fight",
+    "match": "Anyways, return to Archer at your alleyway",
+    "species": [
+      "CARVANHA"
+    ]
+  }
+]

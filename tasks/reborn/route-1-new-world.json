@@ -1,11 +1,5 @@
 [
   {
-    "id": "route-1-new-world-visit-0",
-    "kind": "quest",
-    "title": "Head back to the Nightclub",
-    "match": "Head back to the Nightclub. Talk to Randall"
-  },
-  {
     "id": "entei",
     "kind": "catch",
     "title": "Catch Entei",

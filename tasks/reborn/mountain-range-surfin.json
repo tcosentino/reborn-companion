@@ -13,5 +13,11 @@
     "species": [
       "SALANDIT"
     ]
+  },
+  {
+    "id": "aerodactylite-cave",
+    "kind": "item",
+    "title": "Get Aerodactylite from the Crustle cave",
+    "match": "Inside this cave you can get an *Elemental"
   }
 ]

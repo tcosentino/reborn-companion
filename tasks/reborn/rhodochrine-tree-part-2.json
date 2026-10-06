@@ -6,6 +6,12 @@
     "match": "With 100% Zygarde in your party, talk to"
   },
   {
+    "id": "diancite",
+    "kind": "item",
+    "title": "Find the Diancite behind the waterfall",
+    "match": "Talk to Heather at the base of the tree and"
+  },
+  {
     "id": "xerneas",
     "kind": "catch",
     "title": "Catch Xerneas",

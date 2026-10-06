@@ -16,5 +16,11 @@
     "species": [
       "ONIX"
     ]
+  },
+  {
+    "id": "rainbow-field-readout",
+    "kind": "item",
+    "title": "Get the Rainbow Field Readout",
+    "match": "Next, enter the Grand Hall. The Common Candy"
   }
 ]

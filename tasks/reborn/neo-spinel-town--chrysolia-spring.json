@@ -9,5 +9,11 @@
       "TIRTOUGA",
       "AERODACTYL"
     ]
+  },
+  {
+    "id": "cameruptite",
+    "kind": "item",
+    "title": "Get Cameruptite in the Chrysolia Spring sauna",
+    "match": "Inside the sauna, if you want, you can blow"
   }
 ]

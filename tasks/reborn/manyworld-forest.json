@@ -1,5 +1,11 @@
 [
   {
+    "id": "tapunium-z",
+    "kind": "item",
+    "title": "Grab the Tapunium-Z across the platforms",
+    "match": "Down from here, you can hop across some platforms"
+  },
+  {
     "id": "celebi-obtain",
     "kind": "catch",
     "title": "Obtain Celebi after time travel quest",

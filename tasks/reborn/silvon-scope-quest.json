@@ -1,5 +1,11 @@
 [
   {
+    "id": "silvon-scope",
+    "kind": "item",
+    "title": "Obtain the Silvon Scope from the Silph lady",
+    "match": "Exit Devon and enter the Silph building."
+  },
+  {
     "id": "treecko",
     "kind": "catch",
     "title": "Catch Treecko at Underroot",

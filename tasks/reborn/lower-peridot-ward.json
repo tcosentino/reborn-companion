@@ -1,11 +1,5 @@
 [
   {
-    "id": "pay-man-150",
-    "kind": "quest",
-    "title": "Pay the man $150 total",
-    "match": "A rock on the left side will contain a hidden"
-  },
-  {
     "id": "blitzle-thunderstorm",
     "kind": "catch",
     "title": "Catch Blitzle in thunderstorm",
@@ -13,6 +7,12 @@
     "species": [
       "BLITZLE"
     ]
+  },
+  {
+    "id": "pokesnax",
+    "kind": "item",
+    "title": "Get PokeSnax from the house",
+    "match": "Go left from this area and enter the first"
   },
   {
     "id": "gulpin-whismur-snax",
@@ -43,8 +43,14 @@
   {
     "id": "sea-incense",
     "kind": "item",
-    "title": "Obtain Sea Incense from trainer",
+    "title": "Get Sea Incense from the pool",
     "match": "If you win, he'll let you into his pool,"
+  },
+  {
+    "id": "rose-incense",
+    "kind": "item",
+    "title": "Get Rose Incense from the Peridot trainer",
+    "match": "Once you beat her, talk to her again for"
   },
   {
     "id": "delibird-gift-box",
@@ -62,6 +68,25 @@
     "match": "Up from here, enter the building on the right.",
     "species": [
       "KRICKETOT"
+    ]
+  },
+  {
+    "id": "tynamo-thunderstorm",
+    "kind": "catch",
+    "title": "Catch Tynamo from the beam in a thunderstorm",
+    "match": "During thunderstorms specifically, you'll",
+    "species": [
+      "TYNAMO"
+    ]
+  },
+  {
+    "id": "pansear-panpour-rain",
+    "kind": "catch",
+    "title": "Catch Pansear or Panpour in the rain",
+    "match": "When the weather is rainy, you'll find **Pansear**",
+    "species": [
+      "PANSEAR",
+      "PANPOUR"
     ]
   }
 ]

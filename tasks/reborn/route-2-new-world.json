@@ -1,11 +1,5 @@
 [
   {
-    "id": "route-2-new-world-talk-0",
-    "kind": "quest",
-    "title": "Back in the Nightclub, talk to Zero and accept his quest",
-    "match": "Back in the Nightclub, talk to Zero and accept"
-  },
-  {
     "id": "regirock",
     "kind": "catch",
     "title": "Catch Regirock",

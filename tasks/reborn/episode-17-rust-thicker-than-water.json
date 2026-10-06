@@ -1,0 +1,14 @@
+[
+  {
+    "id": "safety-goggles",
+    "kind": "item",
+    "title": "Get Safety Goggles from the Police Chief",
+    "match": "Head into Jasper Ward now to talk to the"
+  },
+  {
+    "id": "hiker-choice-item",
+    "kind": "item",
+    "title": "Get Choice Band or Choice Specs from the Hiker",
+    "match": "Head down to the Lower Peridot Ward. On a"
+  }
+]

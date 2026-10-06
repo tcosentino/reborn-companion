@@ -9,6 +9,12 @@
     ]
   },
   {
+    "id": "mining-kit",
+    "kind": "item",
+    "title": "Get the Mining Kit from the hiker at Grand Stairway",
+    "match": "Head over to the Grand Stairway and make"
+  },
+  {
     "id": "solrock-stairway",
     "kind": "catch",
     "title": "Catch Solrock at Grand Stairway (random event)",
@@ -29,8 +35,8 @@
   {
     "id": "scraggy-obsidia-slums",
     "kind": "catch",
-    "title": "Catch Scraggy from Obsidia Slums puzzle",
-    "match": "Next, we're going to head on over to the",
+    "title": "Beat the Pangoro puzzle in the Slums to get Scraggy",
+    "match": "Once you've defeated the third in the middle,",
     "species": [
       "SCRAGGY"
     ]
@@ -53,7 +59,7 @@
   {
     "id": "nuzleaf-jungle",
     "kind": "catch",
-    "title": "Catch Nuzleaf at Rhodochrine Jungle with bug move",
+    "title": "Beat Shiftry on a windy day to get Nuzleaf",
     "match": "Just gotta find a way to hit Shiftry with",
     "species": [
       "NUZLEAF"
@@ -67,8 +73,7 @@
     "species": [
       "BALTOY",
       "ELGYEM",
-      "GOLETT",
-      "NATU"
+      "GOLETT"
     ]
   },
   {
@@ -77,26 +82,17 @@
     "title": "Catch Natu from totem pole on clear day",
     "match": "The totem at the top here also has Pokemon",
     "species": [
-      "BALTOY",
-      "ELGYEM",
-      "GOLETT",
       "NATU"
     ]
   },
   {
     "id": "croagunk-citrine",
     "kind": "catch",
-    "title": "Talk to Croagunk at Citrine Mountain to recruit it",
-    "match": "### Smashin' at Citrine Mountain",
+    "title": "Get Croagunk at Citrine Mountain with the Silver Ring",
+    "match": "1. Start by going to the right. You'll find",
     "species": [
       "CROAGUNK"
     ]
-  },
-  {
-    "id": "smoochum-citrine-battle",
-    "kind": "catch",
-    "title": "Defeat and catch Smoochum at Citrine Mountain",
-    "match": "### Smashin' at Citrine Mountain"
   },
   {
     "id": "amaura-ice-heal",
@@ -104,8 +100,16 @@
     "title": "Catch Amaura at Citrine Mountain with Ice Heal",
     "match": "1. Start by going to the right. You'll find",
     "species": [
-      "AMAURA",
-      "CROAGUNK"
+      "AMAURA"
+    ]
+  },
+  {
+    "id": "smoochum-citrine-battle",
+    "kind": "catch",
+    "title": "Beat Smoochum in the Citrine Mountain cave to get it",
+    "match": "This looks like quite the intimidating battle",
+    "species": [
+      "SMOOCHUM"
     ]
   }
 ]

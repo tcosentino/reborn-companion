@@ -1,8 +1,65 @@
 [
   {
-    "id": "victory-road-talk-7",
+    "id": "tyranitarite",
+    "kind": "item",
+    "title": "Get Tyranitarite in the first rail puzzle room",
+    "match": "- Jump into the lower minecart (11) to reach"
+  },
+  {
+    "id": "kommonium-z",
+    "kind": "item",
+    "title": "Get Kommonium-Z",
+    "match": "Back at the fork, go left (orange), picking"
+  },
+  {
+    "id": "gengarite",
+    "kind": "item",
+    "title": "Get Gengarite over the machines",
+    "match": "Grab a hidden *X Attack* in here. If you"
+  },
+  {
+    "id": "metagrossite",
+    "kind": "item",
+    "title": "Get Metagrossite",
+    "match": "When you reach a fork, go down the rocks"
+  },
+  {
+    "id": "taka-chatot",
+    "kind": "catch",
+    "title": "Get Taka's Chatot (Reshiram route)",
+    "match": "At the bridge, on Zekrom route, you'll see",
+    "species": [
+      "CHATOT"
+    ]
+  },
+  {
+    "id": "lucarionite",
+    "kind": "item",
+    "title": "Get Lucarionite in the Fire & Ice side area",
+    "match": "Down and left, a new path will be opened"
+  },
+  {
+    "id": "salamencite",
+    "kind": "item",
+    "title": "Get Salamencite in the Amethyst Chamber",
+    "match": "Towards the top of the room, you can follow"
+  },
+  {
+    "id": "new-world-field-readout",
+    "kind": "item",
+    "title": "Get New World Field Readout",
+    "match": "In the outside area in which you emerge,"
+  },
+  {
+    "id": "spirit-rewards",
     "kind": "quest",
-    "title": "Anyways, to progress the story, talk to the machine in the u",
-    "match": "Anyways, to progress the story, talk to the"
+    "title": "Defeat spirits and collect rewards from Azer",
+    "match": "|Reward"
+  },
+  {
+    "id": "exp-all",
+    "kind": "item",
+    "title": "Get Exp. All for catching all spirits",
+    "match": "You'll also get the *Exp. All* for catching"
   }
 ]

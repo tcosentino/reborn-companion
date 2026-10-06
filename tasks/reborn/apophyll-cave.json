@@ -2,10 +2,10 @@
   {
     "id": "shieldon-ledian-trade",
     "kind": "catch",
-    "title": "Trade Ledian for Shieldon with NPC",
+    "title": "Trade Ledian for Shieldon with the NPC",
     "match": "The NPC in the top right will do an in-game",
     "species": [
-      "LEDIAN"
+      "SHIELDON"
     ]
   }
 ]

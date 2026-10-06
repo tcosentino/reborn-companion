@@ -1,5 +1,17 @@
 [
   {
+    "id": "cover-fossil-tile-puzzle",
+    "kind": "item",
+    "title": "Win the Cover Fossil from the tile puzzle",
+    "match": "Winning will reward you a *Cover Fossil*."
+  },
+  {
+    "id": "plume-fossil-tile-puzzle",
+    "kind": "item",
+    "title": "Win the Plume Fossil from the tile puzzle",
+    "match": "Winning will reward you a *Plume Fossil*."
+  },
+  {
     "id": "timburr-tile-puzzle",
     "kind": "catch",
     "title": "Win Timburr from tile puzzle",

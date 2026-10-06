@@ -27,9 +27,21 @@
     ]
   },
   {
+    "id": "snorlium-z",
+    "kind": "item",
+    "title": "Get Snorlium-Z in Ametrine Mountain B1F",
+    "match": "In this large room you can get an *Exp. Candy"
+  },
+  {
+    "id": "abomasite",
+    "kind": "item",
+    "title": "Get Abomasite in the hidden alcove room",
+    "match": "Enter the hidden alcove door in the lower"
+  },
+  {
     "id": "skuntank-silver-ring",
     "kind": "catch",
-    "title": "Catch Skuntank with Silver Ring",
+    "title": "Catch Corey's Skuntank (needs Silver Ring)",
     "match": "With the Silver Ring in hand, we can catch",
     "species": [
       "SKUNTANK"
@@ -38,7 +50,7 @@
   {
     "id": "mareanie-encounter",
     "kind": "catch",
-    "title": "Catch Mareanie in mountain",
+    "title": "Catch Corey's Mareanie in Citrine Mountain 3F",
     "match": "Make your way to Citrine Mountain 2F by climbing",
     "species": [
       "MAREANIE"

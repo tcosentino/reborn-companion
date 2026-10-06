@@ -9,12 +9,6 @@
     ]
   },
   {
-    "id": "clean-library",
-    "kind": "quest",
-    "title": "Clean up Beryl Library",
-    "match": "Next, head to the Beryl Library. Talk to"
-  },
-  {
     "id": "soul-candle",
     "kind": "item",
     "title": "Obtain Soul Candle",
@@ -28,12 +22,6 @@
     "species": [
       "PUMPKABOO"
     ]
-  },
-  {
-    "id": "help-bullied-kid",
-    "kind": "quest",
-    "title": "Defeat bullies to help kid",
-    "match": "Defeat them, and the kid will head back to"
   },
   {
     "id": "growlithe-police",

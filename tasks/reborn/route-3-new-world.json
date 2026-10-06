@@ -1,11 +1,5 @@
 [
   {
-    "id": "route-3-new-world-talk-0",
-    "kind": "quest",
-    "title": "Talk to Sandy and accept her quest to check out Route 3",
-    "match": "Talk to Sandy and accept her quest to check"
-  },
-  {
     "id": "virizion-cobalion",
     "kind": "catch",
     "title": "Catch Virizion and Cobalion",
@@ -13,6 +7,15 @@
     "species": [
       "VIRIZION",
       "COBALION"
+    ]
+  },
+  {
+    "id": "terrakion",
+    "kind": "catch",
+    "title": "Catch Terrakion in Sapphire Cave",
+    "match": "Head outside of the New World. Make your",
+    "species": [
+      "TERRAKION"
     ]
   },
   {

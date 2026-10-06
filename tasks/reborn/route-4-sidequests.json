@@ -2,7 +2,7 @@
   {
     "id": "hiker-snax-quest-route-4",
     "kind": "quest",
-    "title": "Give PokeSnax to Hiker's Pokemon",
-    "match": "Once you defeat him, he will let his Pokemon"
+    "title": "Feed PokeSnax to Hiker's Altaria and Golem",
+    "match": "Once you've done these things, give snax"
   }
 ]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "azelf",
+    "kind": "catch",
+    "title": "Catch Azelf",
+    "match": "Fly to Coral Ward, then go west. Head left",
+    "species": [
+      "AZELF"
+    ]
+  },
+  {
+    "id": "uxie",
+    "kind": "catch",
+    "title": "Catch Uxie",
+    "match": "From here, retrace your steps until you reach",
+    "species": [
+      "UXIE"
+    ]
+  },
+  {
+    "id": "mesprit",
+    "kind": "catch",
+    "title": "Catch Mesprit in Apophyll Cave",
+    "match": "Surface, and fly to Apophyll Academy. From",
+    "species": [
+      "MESPRIT"
+    ]
+  }
+]

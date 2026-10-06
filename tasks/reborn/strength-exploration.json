@@ -35,10 +35,9 @@
   {
     "id": "chikorita-chimecho-trade",
     "kind": "catch",
-    "title": "Get Chikorita by showing Chimecho to NPC at Azurine",
+    "title": "Evolve Chingling to Chimecho and show it for Chikorita",
     "match": "Exit and take the boat to Azurine Island.",
     "species": [
-      "CHIMECHO",
       "CHIKORITA"
     ]
   }

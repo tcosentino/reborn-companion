@@ -18,9 +18,15 @@
     ]
   },
   {
+    "id": "bicycle-bike-voucher",
+    "kind": "item",
+    "title": "Get the Bike Voucher and trade it for the Bicycle",
+    "match": "Head outside and try to leave, and the cop"
+  },
+  {
     "id": "zorua-rooftop-encounters",
     "kind": "catch",
-    "title": "Catch Zorua from three rooftop locations",
+    "title": "Follow Corey across three wards to catch Zorua",
     "match": "Now that we have our fancy bicycle, we can",
     "species": [
       "ZORUA"

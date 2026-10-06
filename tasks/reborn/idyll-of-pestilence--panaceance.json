@@ -6,6 +6,12 @@
     "match": "Accept Zero's quest, then head over to the"
   },
   {
+    "id": "soul-dew",
+    "kind": "item",
+    "title": "Climb the waterfall for the Soul Dew",
+    "match": "Head to the top left corner next, with all"
+  },
+  {
     "id": "shaymin",
     "kind": "catch",
     "title": "Catch Shaymin after purification battle",

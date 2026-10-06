@@ -1,5 +1,54 @@
 [
   {
+    "id": "electrike-mightyena",
+    "kind": "catch",
+    "title": "Rescue Electrike from Mightyena at night",
+    "match": "At night, you'll see two Mightyena's bullying",
+    "species": [
+      "ELECTRIKE"
+    ]
+  },
+  {
+    "id": "minun-plusle-snax",
+    "kind": "catch",
+    "title": "Catch Minun and Plusle with PokeSnax",
+    "match": "To the left of the area, a **Minun** or a",
+    "species": [
+      "MINUN",
+      "PLUSLE"
+    ]
+  },
+  {
+    "id": "litleo-railnet",
+    "kind": "catch",
+    "title": "Defeat the strong Pokemon for Litleo",
+    "match": "If you're able to defeat this thing, you'll",
+    "species": [
+      "LITLEO"
+    ]
+  },
+  {
+    "id": "warehouse-key",
+    "kind": "item",
+    "title": "Get the Warehouse Key",
+    "match": "Cut wiggly trees #8 and #9. Follow the blue"
+  },
+  {
+    "id": "ability-capsule-kid",
+    "kind": "item",
+    "title": "Find the lost kid for an Ability Capsule",
+    "match": "Next, head south from Obsidia Park to re-enter"
+  },
+  {
+    "id": "castform-trade",
+    "kind": "catch",
+    "title": "Trade Furret for Castform",
+    "match": "If you're interested in a trade, evolve Sentret",
+    "species": [
+      "CASTFORM"
+    ]
+  },
+  {
     "id": "glameow-salon",
     "kind": "catch",
     "title": "Obtain Glameow from salon",

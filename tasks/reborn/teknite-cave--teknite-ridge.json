@@ -1,5 +1,11 @@
 [
   {
+    "id": "buginium-z",
+    "kind": "item",
+    "title": "Obtain Buginium-Z in Teknite Cave",
+    "match": "Surf to a hidden *Repel* unless Taka is with"
+  },
+  {
     "id": "rowlet-egg",
     "kind": "catch",
     "title": "Obtain Rowlet egg from Teknite Ridge",

@@ -2,7 +2,7 @@
   {
     "id": "vanhanen-castle-new-world-2",
     "kind": "quest",
-    "title": "She will give us our first of many legendary quests: we're w",
+    "title": "Complete the Vanhanen Castle legendary quest",
     "match": "She will give us our first of many legendary"
   },
   {
@@ -13,5 +13,17 @@
     "species": [
       "CRESSELIA"
     ]
+  },
+  {
+    "id": "gather-cube",
+    "kind": "item",
+    "title": "Get Gather Cube from Luna",
+    "match": "Luna will give us the *Gather Cube* afte"
+  },
+  {
+    "id": "beast-balls",
+    "kind": "item",
+    "title": "Show Florinia an Ultra Beast for 5 Beast Balls",
+    "match": "While you're here, more NPC's will have returned"
   }
 ]

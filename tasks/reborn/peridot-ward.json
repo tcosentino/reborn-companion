@@ -27,6 +27,25 @@
     ]
   },
   {
+    "id": "igglybuff-quest",
+    "kind": "catch",
+    "title": "Defeat the grunts to get Igglybuff",
+    "match": "Once you do, you can get **Igglybuff**! It's",
+    "species": [
+      "IGGLYBUFF"
+    ]
+  },
+  {
+    "id": "grubbin-joltik-snax",
+    "kind": "catch",
+    "title": "Catch Grubbin or Joltik at night with PokeSnax",
+    "match": "Outside, head straight to the left. We will",
+    "species": [
+      "GRUBBIN",
+      "JOLTIK"
+    ]
+  },
+  {
     "id": "teddiursa-multiple-locations",
     "kind": "catch",
     "title": "Find and battle Teddiursa",

@@ -4,5 +4,11 @@
     "kind": "quest",
     "title": "Accept Randall's Triskeline Toybox quest",
     "match": "Accept Randall's quest. Fly over to the Tanzan"
+  },
+  {
+    "id": "mewnium-z",
+    "kind": "item",
+    "title": "Open the chest for the Mewnium-Z",
+    "match": "You can actually open the two pink-and-blue"
   }
 ]

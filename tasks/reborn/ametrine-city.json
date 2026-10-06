@@ -13,5 +13,23 @@
     "species": [
       "RIOLU"
     ]
+  },
+  {
+    "id": "banettite-floral-charm",
+    "kind": "item",
+    "title": "Give Floral Charm to girl for Banettite",
+    "match": "Before we leave Ametrine City, enter the"
+  },
+  {
+    "id": "charizardite-x-gym",
+    "kind": "item",
+    "title": "Get Charizardite X in Charlotte's secret room",
+    "match": "You can also head into Charlotte's gym -"
+  },
+  {
+    "id": "shiny-charm",
+    "kind": "item",
+    "title": "Get the Shiny Charm in Calcenon house bedroom",
+    "match": "Enter the house to the left of the gym if"
   }
 ]

@@ -1,5 +1,17 @@
 [
   {
+    "id": "primarium-z",
+    "kind": "item",
+    "title": "Get Primarium-Z in Faeward Apartments house 7",
+    "match": "Inside the top house (7) you can get a *Relic"
+  },
+  {
+    "id": "glalitite",
+    "kind": "item",
+    "title": "Unlock S9 building for Glalitite",
+    "match": "On this map you can get a hidden *Green Shard*,"
+  },
+  {
     "id": "mudkip-antidote",
     "kind": "catch",
     "title": "Catch Mudkip using antidote",
@@ -7,5 +19,23 @@
     "species": [
       "MUDKIP"
     ]
+  },
+  {
+    "id": "altarianite",
+    "kind": "item",
+    "title": "Dive 2x2 spot for Altarianite",
+    "match": "Make your way all the way to the bottom left"
+  },
+  {
+    "id": "aloraichium-z-audinite",
+    "kind": "item",
+    "title": "Freeze the water for Aloraichium-Z and Audinite",
+    "match": "Enter the cave once it freezes over and you"
+  },
+  {
+    "id": "beedrillite",
+    "kind": "item",
+    "title": "Open the F10 building for Beedrillite",
+    "match": "There is one more thing we can do in these"
   }
 ]

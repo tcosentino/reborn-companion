@@ -1,0 +1,11 @@
+[
+  {
+    "id": "murkrow-windy-night",
+    "kind": "catch",
+    "title": "Catch Murkrow in Lapis Alleyway on a windy night",
+    "match": "Head over to the Lapis Alleyway during a",
+    "species": [
+      "MURKROW"
+    ]
+  }
+]

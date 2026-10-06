@@ -1,5 +1,11 @@
 [
   {
+    "id": "ace-mint",
+    "kind": "item",
+    "title": "Get a Mint of your choice from Ace",
+    "match": "Talk to Ace and tell them your favorite nature,"
+  },
+  {
     "id": "ditto-cage-puzzle",
     "kind": "catch",
     "title": "Catch Ditto from factory cage puzzle",

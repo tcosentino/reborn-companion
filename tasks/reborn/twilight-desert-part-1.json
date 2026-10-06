@@ -3,7 +3,7 @@
     "id": "marcello-desert-quest",
     "kind": "quest",
     "title": "Accept Marcello's quest in Twilight Desert",
-    "match": "**ZCell 05: Twilight Desert**"
+    "match": "First, talk to Marcello on the left for a"
   },
   {
     "id": "zygarde-10-percent",

@@ -29,7 +29,7 @@
   {
     "id": "deino-subseven-sanctum",
     "kind": "catch",
-    "title": "Battle and catch Deino",
+    "title": "Summon Deino with 3 Dark Materials at Sanctum",
     "match": "Talk to the summoning table for a battle",
     "species": [
       "DEINO"

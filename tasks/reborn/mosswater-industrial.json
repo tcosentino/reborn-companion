@@ -1,0 +1,14 @@
+[
+  {
+    "id": "factory-field-readout",
+    "kind": "item",
+    "title": "Get the Factory Field Readout",
+    "match": "Go to the factory area where we first met"
+  },
+  {
+    "id": "painkiller-quest",
+    "kind": "quest",
+    "title": "Recover the stolen painkillers for Exp. Candy S",
+    "match": "Head down and talk to the purple haired guy"
+  }
+]

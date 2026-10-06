@@ -6,6 +6,12 @@
     "match": "Talk to Aster in the Nightclub and agree"
   },
   {
+    "id": "prison-bottle",
+    "kind": "item",
+    "title": "Climb the rightmost waterfall for the Prison Bottle",
+    "match": "You can also climb the rightmost waterfall"
+  },
+  {
     "id": "diancie",
     "kind": "catch",
     "title": "Catch Diancie after Crystal Aegislash battle",
@@ -13,5 +19,11 @@
     "species": [
       "DIANCIE"
     ]
+  },
+  {
+    "id": "griseous-orb",
+    "kind": "item",
+    "title": "Take the Griseous Orb after catching Diancie",
+    "match": "Afterwards, you'll be able to fight and catch"
   }
 ]

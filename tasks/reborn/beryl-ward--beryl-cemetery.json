@@ -1,5 +1,11 @@
 [
   {
+    "id": "magnetic-lure",
+    "kind": "item",
+    "title": "Buy the Magnetic Lure for $5000",
+    "match": "Before we do anything else, talk to the backpacker"
+  },
+  {
     "id": "helioptile-snax",
     "kind": "catch",
     "title": "Obtain Helioptile with PokeSnax on sunny day",

@@ -4,6 +4,7 @@ import { taskAnchor } from '../../lib/tasks'
 import { dexHref } from '../../lib/route'
 import { MonSprite } from '../dex/MonSprite'
 import { useDex, useGame } from '../common'
+import { usePokedex } from '../pokedex/context'
 
 const KIND_LABEL: Record<TaskKind, string> = { catch: 'Catch', quest: 'Side quest', item: 'Get item' }
 
@@ -14,8 +15,11 @@ export const Task = ({ b, done, onToggle, collapsed, children }: {
   b: TaskBlock; done: boolean; onToggle: (b: TaskBlock) => void; collapsed?: boolean; children: ReactNode
 }) => {
   const dex = useDex()
+  const pokedex = usePokedex()
   const game = useGame()
-  const species = (b.species ?? []).filter(s => dex.species[s])
+  // dex.json only has species that appear in battles and tables; gifts like Smoochum may only be in pokedex.json
+  const name = (s: string) => dex.species[s]?.name ?? pokedex?.dex.species[s]?.name ?? s
+  const species = b.species ?? []
   return (
     <article className={`task k-${b.kind}${done ? ' is-done' : ''}${done && collapsed ? ' is-collapsed' : ''}${b.markdown ? '' : ' is-sibling'}`} id={taskAnchor(b.slug)}>
       <div className="task-head">
@@ -29,8 +33,8 @@ export const Task = ({ b, done, onToggle, collapsed, children }: {
         {species.length > 0 && (
           <div className="task-mons">
             {species.map(s => (
-              <a key={s} href={dexHref(game.id, s)} title={dex.species[s].name}>
-                <MonSprite species={s} size="icon" alt={dex.species[s].name} />
+              <a key={s} href={dexHref(game.id, s)} title={name(s)}>
+                <MonSprite species={s} size="icon" alt={name(s)} />
               </a>
             ))}
           </div>

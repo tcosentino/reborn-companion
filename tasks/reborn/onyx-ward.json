@@ -20,6 +20,12 @@
     "match": "In the first door upstairs, a guy will give"
   },
   {
+    "id": "desert-field-readout",
+    "kind": "item",
+    "title": "Get the Desert Field Readout",
+    "match": "Head upstairs to grab the *Desert Field"
+  },
+  {
     "id": "pichu-snax",
     "kind": "catch",
     "title": "Obtain Pichu with PokeSnax",

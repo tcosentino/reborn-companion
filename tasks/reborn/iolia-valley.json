@@ -1,0 +1,29 @@
+[
+  {
+    "id": "green-crystal-key",
+    "kind": "item",
+    "title": "Pick up the Green Crystal Key",
+    "match": "Exit at the bottom. In the next area, grab"
+  },
+  {
+    "id": "blue-crystal-key",
+    "kind": "item",
+    "title": "Pick up the Blue Crystal Key",
+    "match": "Go down from here and use the red key to"
+  },
+  {
+    "id": "purple-crystal-key",
+    "kind": "item",
+    "title": "Pick up the Purple Crystal Key",
+    "match": "Grab the *Purple Crystal Key*! Talk to the"
+  },
+  {
+    "id": "sableye-dark-crystal",
+    "kind": "catch",
+    "title": "Catch Sableye by making a Dark Crystal Cavern",
+    "match": "Head up and right from here, and enter the",
+    "species": [
+      "SABLEYE"
+    ]
+  }
+]
