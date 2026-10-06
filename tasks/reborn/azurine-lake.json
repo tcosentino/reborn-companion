@@ -1,0 +1,11 @@
+[
+  {
+    "id": "mudkip-antidote",
+    "kind": "catch",
+    "title": "Catch Mudkip using antidote",
+    "match": "In the top right corner, enter an unlocked",
+    "species": [
+      "MUDKIP"
+    ]
+  }
+]

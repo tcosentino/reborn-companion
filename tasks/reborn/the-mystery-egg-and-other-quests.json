@@ -1,0 +1,72 @@
+[
+  {
+    "id": "skrelp-silver-ring",
+    "kind": "catch",
+    "title": "Obtain Skrelp with Silver Ring",
+    "match": "First, after the events at the bridge, enter",
+    "species": [
+      "SKRELP"
+    ]
+  },
+  {
+    "id": "clean-library",
+    "kind": "quest",
+    "title": "Clean up Beryl Library",
+    "match": "Next, head to the Beryl Library. Talk to"
+  },
+  {
+    "id": "soul-candle",
+    "kind": "item",
+    "title": "Obtain Soul Candle",
+    "match": "Next, head to the Beryl Library. Talk to"
+  },
+  {
+    "id": "pumpkaboo-cemetery",
+    "kind": "catch",
+    "title": "Obtain Pumpkaboo with Soul Candle",
+    "match": "Head on over to the Beryl Cemetery at night.",
+    "species": [
+      "PUMPKABOO"
+    ]
+  },
+  {
+    "id": "help-bullied-kid",
+    "kind": "quest",
+    "title": "Defeat bullies to help kid",
+    "match": "Defeat them, and the kid will head back to"
+  },
+  {
+    "id": "growlithe-police",
+    "kind": "catch",
+    "title": "Obtain Growlithe from police",
+    "match": "Next, it's time for the big one. Head back",
+    "species": [
+      "GROWLITHE"
+    ]
+  },
+  {
+    "id": "mystery-egg",
+    "kind": "catch",
+    "title": "Breed Growlithe for Mystery Egg",
+    "match": "The Mystery Egg can actually hatch to be",
+    "species": [
+      "AZURILL",
+      "MAREANIE",
+      "STARYU",
+      "TOGEPI",
+      "SNEASEL",
+      "SHROOMISH",
+      "GASTLY",
+      "AXEW",
+      "PAWNIARD",
+      "LITWICK",
+      "TRAPINCH",
+      "COTTONEE",
+      "VULPIX",
+      "ELEKID",
+      "STARLY",
+      "ROCKRUFF",
+      "LARVESTA"
+    ]
+  }
+]

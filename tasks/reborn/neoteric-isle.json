@@ -1,0 +1,24 @@
+[
+  {
+    "id": "n-lunarizer",
+    "kind": "item",
+    "title": "Obtain N-Lunarizer",
+    "match": "Our final Ultra Beast is located here! Anyways,"
+  },
+  {
+    "id": "n-solarizer",
+    "kind": "item",
+    "title": "Obtain N-Solarizer",
+    "match": "Head up and talk to Fern, then enter the"
+  },
+  {
+    "id": "mew-mewtwo",
+    "kind": "catch",
+    "title": "Catch Mew and Mewtwo",
+    "match": "Once you regain control, talk to **Mew**",
+    "species": [
+      "MEW",
+      "MEWTWO"
+    ]
+  }
+]

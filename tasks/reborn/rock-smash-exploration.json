@@ -1,0 +1,111 @@
+[
+  {
+    "id": "porygon-data-chip",
+    "kind": "catch",
+    "title": "Catch Porygon in Onyx Ward using Data Chip",
+    "match": "Head over to the Onyx Ward next. Inside one",
+    "species": [
+      "PORYGON"
+    ]
+  },
+  {
+    "id": "solrock-stairway",
+    "kind": "catch",
+    "title": "Catch Solrock at Grand Stairway (random event)",
+    "match": "Back in the main part of B1F, head to the",
+    "species": [
+      "SOLROCK"
+    ]
+  },
+  {
+    "id": "lunatone-stairway",
+    "kind": "catch",
+    "title": "Catch Lunatone at Grand Stairway (if Solrock not caught)",
+    "match": "Make your way back to the part with the sequence",
+    "species": [
+      "LUNATONE"
+    ]
+  },
+  {
+    "id": "scraggy-obsidia-slums",
+    "kind": "catch",
+    "title": "Catch Scraggy from Obsidia Slums puzzle",
+    "match": "Next, we're going to head on over to the",
+    "species": [
+      "SCRAGGY"
+    ]
+  },
+  {
+    "id": "aron-sticker-rescue",
+    "kind": "item",
+    "title": "Get Department Store Sticker: Aron for saving Grunts",
+    "match": "Head all the way back through the railnet"
+  },
+  {
+    "id": "nidorina-silver-ring",
+    "kind": "catch",
+    "title": "Catch Nidorina at Beryl Cave with Silver Ring",
+    "match": "On B1F, you'll find a hidden *Green Shard*,",
+    "species": [
+      "NIDORINA"
+    ]
+  },
+  {
+    "id": "nuzleaf-jungle",
+    "kind": "catch",
+    "title": "Catch Nuzleaf at Rhodochrine Jungle with bug move",
+    "match": "Just gotta find a way to hit Shiftry with",
+    "species": [
+      "NUZLEAF"
+    ]
+  },
+  {
+    "id": "baltoy-elgyem-golett-totem",
+    "kind": "catch",
+    "title": "Catch Baltoy, Elgyem, and Golett from totem pole sequence",
+    "match": "The totem at the top here also has Pokemon",
+    "species": [
+      "BALTOY",
+      "ELGYEM",
+      "GOLETT",
+      "NATU"
+    ]
+  },
+  {
+    "id": "natu-totem",
+    "kind": "catch",
+    "title": "Catch Natu from totem pole on clear day",
+    "match": "The totem at the top here also has Pokemon",
+    "species": [
+      "BALTOY",
+      "ELGYEM",
+      "GOLETT",
+      "NATU"
+    ]
+  },
+  {
+    "id": "croagunk-citrine",
+    "kind": "catch",
+    "title": "Talk to Croagunk at Citrine Mountain to recruit it",
+    "match": "### Smashin' at Citrine Mountain",
+    "species": [
+      "CROAGUNK"
+    ]
+  },
+  {
+    "id": "smoochum-citrine-battle",
+    "kind": "catch",
+    "title": "Defeat and catch Smoochum at Citrine Mountain",
+    "match": "### Smashin' at Citrine Mountain"
+  },
+  {
+    "id": "amaura-ice-heal",
+    "kind": "catch",
+    "title": "Catch Amaura at Citrine Mountain with Ice Heal",
+    "match": "1. Start by going to the right. You'll find",
+    "species": [
+      "AMAURA",
+      "CROAGUNK"
+    ]
+  }
+]

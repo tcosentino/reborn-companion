@@ -1,4 +1,4 @@
-// Guards saved progress across rebuilds. Ticked battles are stored by battle id (lib/route.ts battleId), so a
+// Guards saved progress across rebuilds. Ticked battles and tasks are stored by id (lib/route.ts battleId), so a
 // generator or content change that renames or drops an id silently orphans those ticks in every browser.
 // The committed baseline progress-ids/<game>.json lists every battle id ever shipped; a rebuild that loses one fails.
 //
@@ -10,10 +10,10 @@ import { fileURLToPath } from 'node:url'
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 
-type Battles = { s: Record<string, [string, string][]> }
+type Battles = { s: Record<string, [string, string][]>; t?: Record<string, [string, string][]> }
 
 export const battleIds = (battles: Battles): string[] =>
-  [...new Set(Object.values(battles.s).flatMap(list => list.map(([id]) => id)))].sort()
+  [...new Set([...Object.values(battles.s), ...Object.values(battles.t ?? {})].flatMap(list => list.map(([id]) => id)))].sort()
 
 export const missingIds = (baseline: string[], current: string[]): string[] => {
   const have = new Set(current)
@@ -36,7 +36,7 @@ const main = (game: string, accept: boolean) => {
   const next = accept ? current : [...new Set([...baseline, ...current])].sort()
   mkdirSync(join(ROOT, 'progress-ids'), { recursive: true })
   writeFileSync(file, JSON.stringify(next, null, 1) + '\n')
-  console.log(`progress ids ok for ${game} (${current.length} battles)`)
+  console.log(`progress ids ok for ${game} (${current.length} battles and tasks)`)
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {

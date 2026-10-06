@@ -1,0 +1,20 @@
+[
+  {
+    "id": "gastly-robot-battle",
+    "kind": "catch",
+    "title": "Battle and catch Gastly",
+    "match": "Once you win, a **Gastly** will pop out of",
+    "species": [
+      "GASTLY"
+    ]
+  },
+  {
+    "id": "bagon-revive-trade",
+    "kind": "catch",
+    "title": "Trade Revive for Bagon",
+    "match": "Pick up the *Ultra Potion* and hidden *Liechi",
+    "species": [
+      "BAGON"
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "id": "onyx-egg-daycare",
+    "kind": "catch",
+    "title": "Obtain egg from daycare",
+    "match": "The bottom left building is the Move Relearner",
+    "species": [
+      "CLAUNCHER",
+      "SEEL",
+      "REMORAID",
+      "SPHEAL",
+      "CLAMPERL",
+      "FRILLISH"
+    ]
+  },
+  {
+    "id": "coin-case",
+    "kind": "item",
+    "title": "Obtain Coin Case",
+    "match": "In the first door upstairs, a guy will give"
+  },
+  {
+    "id": "pichu-snax",
+    "kind": "catch",
+    "title": "Obtain Pichu with PokeSnax",
+    "match": "When the weather is clear up here, you can",
+    "species": [
+      "PICHU"
+    ]
+  },
+  {
+    "id": "zangoose-alley",
+    "kind": "catch",
+    "title": "Catch Zangoose in alley at night",
+    "match": "Whichever you go to at the right time, you'll",
+    "species": [
+      "ZANGOOSE"
+    ]
+  },
+  {
+    "id": "lillipup-quest",
+    "kind": "catch",
+    "title": "Find Lillipup multiple times",
+    "match": "Once you find it, head back to the Onyx Ward.",
+    "species": [
+      "LILLIPUP"
+    ]
+  }
+]

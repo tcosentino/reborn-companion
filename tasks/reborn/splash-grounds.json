@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ringmaster-splash-quest",
+    "kind": "quest",
+    "title": "Accept Ringmaster's Splash Grounds quest",
+    "match": "Talk to the Ringmaster in the Nightclub and"
+  },
+  {
+    "id": "manaphy",
+    "kind": "catch",
+    "title": "Catch Manaphy after underwater battle",
+    "match": "A tricky fight - one that fully utilizes",
+    "species": [
+      "MANAPHY"
+    ]
+  }
+]

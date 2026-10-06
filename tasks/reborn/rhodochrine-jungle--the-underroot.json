@@ -1,0 +1,56 @@
+[
+  {
+    "id": "drifloon-windy",
+    "kind": "catch",
+    "title": "Catch Drifloon in windy weather",
+    "match": "While it is windy, at the end of the bridge",
+    "species": [
+      "DRIFLOON"
+    ]
+  },
+  {
+    "id": "farfetchd-fossil-trade",
+    "kind": "catch",
+    "title": "Catch Farfetch'd for fossil trade",
+    "match": "Catch a Ledian for an in-game trade later,",
+    "species": [
+      "FARFETCHD"
+    ]
+  },
+  {
+    "id": "tropius-sunny",
+    "kind": "catch",
+    "title": "Catch Tropius on sunny day",
+    "match": "You'll find a hidden *Calcium* here. Head",
+    "species": [
+      "TROPIUS"
+    ]
+  },
+  {
+    "id": "taillow-underroot",
+    "kind": "catch",
+    "title": "Obtain Taillow",
+    "match": "Head to the right first. You'll find a hidden",
+    "species": [
+      "TAILLOW"
+    ]
+  },
+  {
+    "id": "stantler-underroot",
+    "kind": "catch",
+    "title": "Obtain Stantler",
+    "match": "Back in the Underroot, take the path up from",
+    "species": [
+      "STANTLER"
+    ]
+  },
+  {
+    "id": "seviper-stationary",
+    "kind": "catch",
+    "title": "Obtain stationary Seviper",
+    "match": "Back in the Underroot, go up and grab a hidden",
+    "species": [
+      "SEVIPER"
+    ]
+  }
+]

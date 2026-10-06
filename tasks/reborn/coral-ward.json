@@ -1,0 +1,26 @@
+[
+  {
+    "id": "misty-terrain-readout",
+    "kind": "item",
+    "title": "Complete quiz for Misty Terrain Readout",
+    "match": "As a reward for completing the quiz you'll"
+  },
+  {
+    "id": "nosepass-trade",
+    "kind": "catch",
+    "title": "Trade Watchog for Nosepass",
+    "match": "In a house below, there is an in-game trade.",
+    "species": [
+      "NOSEPASS"
+    ]
+  },
+  {
+    "id": "lotad-snax-rain",
+    "kind": "catch",
+    "title": "Obtain Lotad with PokeSnax in rain",
+    "match": "On the dock, if it is raining and you have",
+    "species": [
+      "LOTAD"
+    ]
+  }
+]

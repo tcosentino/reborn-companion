@@ -1,0 +1,18 @@
+[
+  {
+    "id": "solrock-lunatone-second",
+    "kind": "catch",
+    "title": "Catch Solrock or Lunatone at Tanzan Mountain (the other one)",
+    "match": "On the left as you walk in, you'll see whichever",
+    "species": [
+      "SOLROCK",
+      "LUNATONE"
+    ]
+  },
+  {
+    "id": "family-picture-quest",
+    "kind": "item",
+    "title": "Get Family Picture from Belrose Manse bookshelf",
+    "match": "To the left you can see something glowing"
+  }
+]

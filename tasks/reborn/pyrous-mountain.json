@@ -1,0 +1,29 @@
+[
+  {
+    "id": "magcargo-mountain",
+    "kind": "catch",
+    "title": "Catch Magcargo by smashing pillars",
+    "match": "You can also find Magcargo by smashing the",
+    "species": [
+      "MAGCARGO"
+    ]
+  },
+  {
+    "id": "turtonator-lava",
+    "kind": "catch",
+    "title": "Catch Turtonator at Pyrous Mountain (random event)",
+    "match": "Grab a hidden *Red Shard* and drain the lava.",
+    "species": [
+      "TURTONATOR"
+    ]
+  },
+  {
+    "id": "heatmor-lava-pool",
+    "kind": "catch",
+    "title": "Catch Heatmor at Pyrous Mountain (if Turtonator not caught)",
+    "match": "Back on B1F, you'll see that the lava has",
+    "species": [
+      "HEATMOR"
+    ]
+  }
+]

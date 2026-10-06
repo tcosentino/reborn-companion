@@ -1,0 +1,18 @@
+[
+  {
+    "id": "nyu-unexplored-quest",
+    "kind": "quest",
+    "title": "Accept Nyu's Unexplored Territory quest",
+    "match": "Talk to Nyu in the Nightclub and accept his"
+  },
+  {
+    "id": "latias-latios",
+    "kind": "catch",
+    "title": "Obtain Latias and Latios after emotion puzzles",
+    "match": "With that, Florinia will have some revelations",
+    "species": [
+      "LATIAS",
+      "LATIOS"
+    ]
+  }
+]

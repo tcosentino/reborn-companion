@@ -1,0 +1,35 @@
+[
+  {
+    "id": "route-2-new-world-talk-0",
+    "kind": "quest",
+    "title": "Back in the Nightclub, talk to Zero and accept his quest",
+    "match": "Back in the Nightclub, talk to Zero and accept"
+  },
+  {
+    "id": "regirock",
+    "kind": "catch",
+    "title": "Catch Regirock",
+    "match": "With that out of the way, we'll be free to",
+    "species": [
+      "REGIROCK"
+    ]
+  },
+  {
+    "id": "regice",
+    "kind": "catch",
+    "title": "Catch Regice",
+    "match": "Head in to catch **Regice**.",
+    "species": [
+      "REGICE"
+    ]
+  },
+  {
+    "id": "registeel",
+    "kind": "catch",
+    "title": "Catch Registeel",
+    "match": "Make your way to the right side of the main",
+    "species": [
+      "REGISTEEL"
+    ]
+  }
+]

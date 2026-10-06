@@ -1,0 +1,11 @@
+[
+  {
+    "id": "rowlet-egg",
+    "kind": "catch",
+    "title": "Obtain Rowlet egg from Teknite Ridge",
+    "match": "Hop back to the central landmass, this time",
+    "species": [
+      "ROWLET"
+    ]
+  }
+]

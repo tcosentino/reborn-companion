@@ -1,0 +1,17 @@
+[
+  {
+    "id": "gang-ametrine-quest",
+    "kind": "quest",
+    "title": "Accept gang leader's Ametrine Core quest",
+    "match": "Talk to your gang leader and accept the quest."
+  },
+  {
+    "id": "heatran",
+    "kind": "catch",
+    "title": "Catch Heatran after core puzzle battles",
+    "match": "Once you win, you can catch **Heatran**!",
+    "species": [
+      "HEATRAN"
+    ]
+  }
+]

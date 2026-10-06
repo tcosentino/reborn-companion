@@ -1,10 +1,12 @@
 import { marked } from 'marked'
 import { useCallback, useEffect, useMemo, useRef } from 'react'
-import type { BattleBlock, Section } from '../data/types'
+import type { BattleBlock, Section, TaskBlock } from '../data/types'
 import { battleId, href } from '../lib/route'
-import { usePrefs, useProgress, writeLastSection } from '../lib/progress'
+import { useCaught, usePrefs, useProgress, writeLastSection } from '../lib/progress'
 import { pageItems } from '../lib/guideNav'
+import { taskAnchor } from '../lib/tasks'
 import { Battle } from './blocks/Battle'
+import { Task } from './blocks/Task'
 import { Encounters, Mining, Pickup, Shop, Tutor, WildHeld } from './blocks/Tables'
 import { useDex, useGame } from './common'
 import { linkProse, nameMaps } from '../features/hovercards/names'
@@ -37,8 +39,8 @@ const Image = ({ src, file }: { src: string; file: string }) => {
   )
 }
 
-const BlockView = ({ b, id, done, toggle, hideDefeated }: {
-  b: RenderBlock; id?: string; done: Record<string, true>; toggle: (id: string) => void; hideDefeated: boolean
+const BlockView = ({ b, id, done, toggle, onTask, hideDefeated }: {
+  b: RenderBlock; id?: string; done: Record<string, true>; toggle: (id: string) => void; onTask: (b: TaskBlock) => void; hideDefeated: boolean
 }) => {
   switch (b.type) {
     case 'prose': return <Prose md={b.markdown} />
@@ -52,6 +54,7 @@ const BlockView = ({ b, id, done, toggle, hideDefeated }: {
     case 'wildHeld': return <WildHeld b={b} />
     case 'hiddenItems': return <HiddenItems b={b} />
     case 'html': return <div className="prose" dangerouslySetInnerHTML={{ __html: b.html }} />
+    case 'task': return <Task b={b} done={!!done[b.id]} onToggle={onTask} collapsed={hideDefeated}><Prose md={b.markdown} /></Task>
   }
 }
 
@@ -79,6 +82,8 @@ export const SectionView = ({ section, sectionKey, chapterTitle, prev, next, sec
   const hideDefeated = !!prefs.hideDefeated
   const battles = section.blocks.filter((b): b is BattleBlock => b.type === 'battle' && !b.partner)
   const beaten = battles.filter(b => done[battleId(b.trainers.map(t => t.teamId))]).length
+  const tasks = section.blocks.filter((b): b is TaskBlock => b.type === 'task')
+  const tasksDone = tasks.filter(b => done[b.id]).length
   const nextUp = battles.find(b => !done[battleId(b.trainers.map(t => t.teamId))])
   const counts = section.blocks.reduce<Record<string, number>>((acc, b) => ({ ...acc, [b.type]: (acc[b.type] ?? 0) + 1 }), {})
   const blocks = useMemo(() => groupHiddenItems(section.blocks, section.id ?? ''), [section])
@@ -86,7 +91,7 @@ export const SectionView = ({ section, sectionKey, chapterTitle, prev, next, sec
   // Anchors only depend on battle/encounter/shop/tutor blocks, which grouping leaves untouched
   const anchors = useMemo(() => blockAnchors(blocks), [blocks])
   const ids = useMemo(() => anchors.filter((a): a is string => !!a), [anchors])
-  const inView = useAnchorInView(ids, `${beaten}|${hideDefeated}`)
+  const inView = useAnchorInView(ids, `${beaten}|${tasksDone}|${hideDefeated}`)
   const items = pageItems(blocks, anchors, done)
 
   useEffect(() => {
@@ -98,6 +103,14 @@ export const SectionView = ({ section, sectionKey, chapterTitle, prev, next, sec
     toggle(id)
     if (track) writeLastSection(game.id, sectionKey, `battle-${id}`)
   }, [toggle, track, game.id, sectionKey])
+
+  // Ticking a catch task also marks its species caught; unticking leaves the caught list alone
+  const { done: caught, toggle: toggleCaught } = useCaught(game.id)
+  const onTask = useCallback((b: TaskBlock) => {
+    if (!done[b.id] && b.kind === 'catch') (b.species ?? []).filter(s => !caught[s]).forEach(toggleCaught)
+    toggle(b.id)
+    if (track) writeLastSection(game.id, sectionKey, taskAnchor(b.slug))
+  }, [done, caught, toggle, toggleCaught, track, game.id, sectionKey])
 
   const nextId = nextUp && battleId(nextUp.trainers.map(t => t.teamId))
   const jump = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -114,6 +127,7 @@ export const SectionView = ({ section, sectionKey, chapterTitle, prev, next, sec
         <h1>{section.title ?? chapterTitle}</h1>
         <div className="stats">
           {battles.length > 0 && <div className="stat"><b>{beaten}/{battles.length}</b><span>battles won</span></div>}
+          {tasks.length > 0 && <div className="stat"><b>{tasksDone}/{tasks.length}</b><span>tasks done</span></div>}
           {levels.length > 0 && <div className="stat"><b>Lv {Math.min(...levels)}&ndash;{Math.max(...levels)}</b><span>enemy range</span></div>}
           {counts.encounters && <div className="stat"><b>{counts.encounters}</b><span>encounter tables</span></div>}
           {counts.shop && <div className="stat"><b>{counts.shop}</b><span>shops</span></div>}
@@ -125,7 +139,7 @@ export const SectionView = ({ section, sectionKey, chapterTitle, prev, next, sec
             <i style={{ width: `${(beaten / battles.length) * 100}%` }} />
           </div>
         )}
-        {battles.length > 0 && (
+        {(battles.length > 0 || tasks.length > 0) && (
           <div className="hero-row">
             {nextUp && nextId && (
               <a className="next-up" href={`#battle-${nextId}`} onClick={e => { e.preventDefault(); jump(`battle-${nextId}`) }}>
@@ -142,7 +156,7 @@ export const SectionView = ({ section, sectionKey, chapterTitle, prev, next, sec
       <OnThisPage items={items} current={inView.current} />
 
       <div className="blocks">
-        {blocks.map((b, i) => <BlockView key={i} b={b} id={anchors[i] ?? undefined} done={done} toggle={onToggle} hideDefeated={hideDefeated} />)}
+        {blocks.map((b, i) => <BlockView key={i} b={b} id={anchors[i] ?? undefined} done={done} toggle={onToggle} onTask={onTask} hideDefeated={hideDefeated} />)}
       </div>
 
       <nav className="pager">

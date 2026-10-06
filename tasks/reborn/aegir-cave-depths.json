@@ -1,0 +1,17 @@
+[
+  {
+    "id": "aster-depths-quest",
+    "kind": "quest",
+    "title": "Accept Aster's Aegir Cave Depths quest",
+    "match": "Talk to Aster in the Nightclub and agree"
+  },
+  {
+    "id": "diancie",
+    "kind": "catch",
+    "title": "Catch Diancie after Crystal Aegislash battle",
+    "match": "These two don't make up a massive team, but",
+    "species": [
+      "DIANCIE"
+    ]
+  }
+]

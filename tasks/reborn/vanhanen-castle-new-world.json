@@ -1,0 +1,17 @@
+[
+  {
+    "id": "vanhanen-castle-new-world-2",
+    "kind": "quest",
+    "title": "She will give us our first of many legendary quests: we're w",
+    "match": "She will give us our first of many legendary"
+  },
+  {
+    "id": "cresselia",
+    "kind": "catch",
+    "title": "Catch Cresselia",
+    "match": "Once you win, you'll be immediately thrown",
+    "species": [
+      "CRESSELIA"
+    ]
+  }
+]

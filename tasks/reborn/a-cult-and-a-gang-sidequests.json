@@ -1,0 +1,17 @@
+[
+  {
+    "id": "litwick-soul-candle",
+    "kind": "catch",
+    "title": "Catch Litwick with Soul Candle",
+    "match": "There are a few sidequests we can take care",
+    "species": [
+      "LITWICK"
+    ]
+  },
+  {
+    "id": "farfetch-fossil-trade",
+    "kind": "quest",
+    "title": "Trade Farfetch'd for Sail or Jaw Fossil",
+    "match": "Back in seventh, the house in the bottom"
+  }
+]

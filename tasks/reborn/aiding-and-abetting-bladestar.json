@@ -1,0 +1,26 @@
+[
+  {
+    "id": "danielle-bladestar-quest",
+    "kind": "quest",
+    "title": "Accept Danielle's Bladestar quest",
+    "match": "Finally, talk to Danielle in the Nightclub"
+  },
+  {
+    "id": "magearna",
+    "kind": "catch",
+    "title": "Catch Magearna after anomaly battle",
+    "match": "Afterwards, you'll be able to catch **Ma",
+    "species": [
+      "MAGEARNA"
+    ]
+  },
+  {
+    "id": "aevian-misdreavus",
+    "kind": "catch",
+    "title": "Get Aevian Misdreavus from Eve",
+    "match": "Head back to the nightclub. If you talk to",
+    "species": [
+      "MISDREAVUS"
+    ]
+  }
+]

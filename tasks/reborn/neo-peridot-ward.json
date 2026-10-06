@@ -1,0 +1,14 @@
+[
+  {
+    "id": "mulch-seacrest-quest",
+    "kind": "quest",
+    "title": "Collect four Mulch types for Elder Seacrest",
+    "match": "First, head up into the park to the right"
+  },
+  {
+    "id": "igglybuff-return-quest",
+    "kind": "quest",
+    "title": "Return Igglybuff for items",
+    "match": "Head up and enter the house where we once"
+  }
+]

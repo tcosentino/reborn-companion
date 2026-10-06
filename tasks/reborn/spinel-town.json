@@ -1,0 +1,24 @@
+[
+  {
+    "id": "fossil-revivals",
+    "kind": "catch",
+    "title": "Revive fossils for Omanyte, Kabuto, Lileep, Anorith, Cranidos, Shieldon",
+    "match": "Enter the museum. Unfortunately every time",
+    "species": [
+      "OMANYTE",
+      "KABUTO",
+      "LILEEP",
+      "ANORITH",
+      "CRANIDOS"
+    ]
+  },
+  {
+    "id": "vanillite-ice-cream",
+    "kind": "catch",
+    "title": "Get Vanillite from ice cream vending machine",
+    "match": "Anyways, head down and out of the door upstairs",
+    "species": [
+      "VANILLITE"
+    ]
+  }
+]

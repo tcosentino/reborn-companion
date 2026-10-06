@@ -1,0 +1,17 @@
+[
+  {
+    "id": "spyce-chef-quest",
+    "kind": "quest",
+    "title": "Gather ingredients for Spyce chef",
+    "match": "Enter the Spyce restaurant on the right."
+  },
+  {
+    "id": "ralts-corrupted-ball",
+    "kind": "catch",
+    "title": "Exchange Corrupted Poke Ball for Ralts",
+    "match": "Talk to the other person in here and he will",
+    "species": [
+      "RALTS"
+    ]
+  }
+]

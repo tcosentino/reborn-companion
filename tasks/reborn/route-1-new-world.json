@@ -1,0 +1,35 @@
+[
+  {
+    "id": "route-1-new-world-visit-0",
+    "kind": "quest",
+    "title": "Head back to the Nightclub",
+    "match": "Head back to the Nightclub. Talk to Randall"
+  },
+  {
+    "id": "entei",
+    "kind": "catch",
+    "title": "Catch Entei",
+    "match": "You can catch **Entei** afterwards.",
+    "species": [
+      "ENTEI"
+    ]
+  },
+  {
+    "id": "suicune",
+    "kind": "catch",
+    "title": "Catch Suicune",
+    "match": "Once you win, you'll be able to battle and",
+    "species": [
+      "SUICUNE"
+    ]
+  },
+  {
+    "id": "raikou",
+    "kind": "catch",
+    "title": "Catch Raikou",
+    "match": "Once you win, you can battle and catch *",
+    "species": [
+      "RAIKOU"
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "spritzee-puzzle",
+    "kind": "catch",
+    "title": "Catch Spritzee from flower shop puzzle",
+    "match": "Enter the flower shop on the left side of",
+    "species": [
+      "SPRITZEE"
+    ]
+  },
+  {
+    "id": "drifloon-sticker-rescue",
+    "kind": "item",
+    "title": "Get Department Store Sticker: Drifloon by saving kid",
+    "match": "Enter a small house on the left side of the"
+  }
+]

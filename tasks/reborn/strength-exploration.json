@@ -1,0 +1,45 @@
+[
+  {
+    "id": "misdreavus-grave",
+    "kind": "catch",
+    "title": "Defeat and catch Misdreavus at Byxbysion grave",
+    "match": "Next, we're gonna return to Byxbysion Wasteland.",
+    "species": [
+      "MISDREAVUS"
+    ]
+  },
+  {
+    "id": "squirtle-fountain",
+    "kind": "catch",
+    "title": "Catch Squirtle at fountain on rainy days",
+    "match": "Here, you can find an *Exp. Candy L*, *TM12",
+    "species": [
+      "SQUIRTLE"
+    ]
+  },
+  {
+    "id": "data-chip-squirtle",
+    "kind": "item",
+    "title": "Get Data Chip by showing Squirtle to NPC",
+    "match": "Return to the wasteland proper, and enter"
+  },
+  {
+    "id": "tepig-mountain",
+    "kind": "catch",
+    "title": "Catch Tepig at Pyrous Mountain",
+    "match": "Next, take the boat to Apophyll. Head inside",
+    "species": [
+      "TEPIG"
+    ]
+  },
+  {
+    "id": "chikorita-chimecho-trade",
+    "kind": "catch",
+    "title": "Get Chikorita by showing Chimecho to NPC at Azurine",
+    "match": "Exit and take the boat to Azurine Island.",
+    "species": [
+      "CHIMECHO",
+      "CHIKORITA"
+    ]
+  }
+]

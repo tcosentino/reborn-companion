@@ -1,0 +1,17 @@
+[
+  {
+    "id": "marcello-desert-quest",
+    "kind": "quest",
+    "title": "Accept Marcello's quest in Twilight Desert",
+    "match": "**ZCell 05: Twilight Desert**"
+  },
+  {
+    "id": "zygarde-10-percent",
+    "kind": "catch",
+    "title": "Merge 10 Zygarde cells into Zygarde 10%",
+    "match": "Talk to the machine on the right, and you'll",
+    "species": [
+      "ZYGARDE"
+    ]
+  }
+]

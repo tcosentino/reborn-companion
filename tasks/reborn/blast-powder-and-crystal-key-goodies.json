@@ -1,0 +1,35 @@
+[
+  {
+    "id": "dhelmise-canister",
+    "kind": "catch",
+    "title": "Battle Dhelmise at cave canister",
+    "match": "Once you finish this puzzle and emerge on",
+    "species": [
+      "DHELMISE"
+    ]
+  },
+  {
+    "id": "tyrunt-jaw-fossil",
+    "kind": "catch",
+    "title": "Revive Jaw Fossil for Tyrunt",
+    "match": "While we're nearby, head over to Spinel Town."
+  },
+  {
+    "id": "axew-egg",
+    "kind": "catch",
+    "title": "Obtain Axew egg in Underroot",
+    "match": "Ok, with those out of the way, head to the",
+    "species": [
+      "AXEW"
+    ]
+  },
+  {
+    "id": "rotom-power-plant",
+    "kind": "catch",
+    "title": "Battle Rotom at Yureyu Power Plant",
+    "match": "Each of the Poke Balls in this room is an",
+    "species": [
+      "ROTOM"
+    ]
+  }
+]

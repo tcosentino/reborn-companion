@@ -1,0 +1,13 @@
+[
+  {
+    "id": "fossil-revival",
+    "kind": "catch",
+    "title": "Revive fossil Pokemon (Archen/Tirtouga)",
+    "match": "We also got a couple fossils while we were",
+    "species": [
+      "ARCHEN",
+      "TIRTOUGA",
+      "AERODACTYL"
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "nyu-deepwoods-quest",
+    "kind": "quest",
+    "title": "Accept Nyu's quest at the Nightclub",
+    "match": "Talk to Nyu in the Nightclub and accept his"
+  },
+  {
+    "id": "regigigas",
+    "kind": "catch",
+    "title": "Catch Regigigas after New World puzzle",
+    "match": "Afterwards, you'll be challenged to a battle,",
+    "species": [
+      "REGIGIGAS"
+    ]
+  }
+]

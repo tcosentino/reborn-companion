@@ -1,0 +1,26 @@
+[
+  {
+    "id": "treecko",
+    "kind": "catch",
+    "title": "Catch Treecko at Underroot",
+    "match": "Past here you can get a hidden *Repel* as",
+    "species": [
+      "TREECKO"
+    ]
+  },
+  {
+    "id": "catching-charm-amethyst",
+    "kind": "item",
+    "title": "Obtain Catching Charm: Amethyst",
+    "match": "Enter the secret door here to get *TM30 Shadow"
+  },
+  {
+    "id": "absol",
+    "kind": "catch",
+    "title": "Catch Ame's Absol",
+    "match": "One more quick thing if you'd like: Fly on",
+    "species": [
+      "ABSOL"
+    ]
+  }
+]

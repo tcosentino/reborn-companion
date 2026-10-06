@@ -1,0 +1,29 @@
+[
+  {
+    "id": "swampertite-password",
+    "kind": "item",
+    "title": "Input password 2368 for Swampertite",
+    "match": "As a reward for inputting it, we can get"
+  },
+  {
+    "id": "sylveon-password",
+    "kind": "catch",
+    "title": "Input password 3862 for Sylveon",
+    "match": "For inputting this one, we'll get a Sylveon,",
+    "species": [
+      "SYLVEON"
+    ]
+  },
+  {
+    "id": "ribbon-collar-lottie",
+    "kind": "item",
+    "title": "Give ribbon collar to Lottie",
+    "match": "Fly over to Jasper Ward and enter the second"
+  },
+  {
+    "id": "trade-beverages-tms",
+    "kind": "quest",
+    "title": "Trade beverages for Thunder TMs",
+    "match": "In exchange for a Fresh Water, Soda Pop,"
+  }
+]

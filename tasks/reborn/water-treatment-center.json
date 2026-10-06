@@ -1,0 +1,11 @@
+[
+  {
+    "id": "fennekin-puzzle",
+    "kind": "catch",
+    "title": "Catch Fennekin after defeating Electrode",
+    "match": "Enter this new room in the top right corner,",
+    "species": [
+      "FENNEKIN"
+    ]
+  }
+]

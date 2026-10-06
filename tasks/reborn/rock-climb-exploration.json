@@ -1,0 +1,38 @@
+[
+  {
+    "id": "jangmo-o-egg",
+    "kind": "catch",
+    "title": "Get Jangmo-o egg at Teknite Ridge",
+    "match": "By hopping across some rocks to the top left",
+    "species": [
+      "JANGMOO"
+    ]
+  },
+  {
+    "id": "larvesta-dark-crystal-cavern",
+    "kind": "catch",
+    "title": "Battle and catch Larvesta",
+    "match": "A fight against one strong Pokemon! Pick",
+    "species": [
+      "LARVESTA"
+    ]
+  },
+  {
+    "id": "larvitar-tanzan-depths",
+    "kind": "catch",
+    "title": "Battle and catch Larvitar",
+    "match": "Pick up the *Amplifield Rock*, *Adamant Mint*,",
+    "species": [
+      "LARVITAR"
+    ]
+  },
+  {
+    "id": "deino-subseven-sanctum",
+    "kind": "catch",
+    "title": "Battle and catch Deino",
+    "match": "Talk to the summoning table for a battle",
+    "species": [
+      "DEINO"
+    ]
+  }
+]

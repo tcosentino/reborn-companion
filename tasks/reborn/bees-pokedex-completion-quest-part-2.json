@@ -1,0 +1,11 @@
+[
+  {
+    "id": "poipole-pokedex",
+    "kind": "catch",
+    "title": "Get Poipole at 731 caught Pokemon",
+    "match": "|Pokemon Caught |Reward         |\n|-----",
+    "species": [
+      "POIPOLE"
+    ]
+  }
+]

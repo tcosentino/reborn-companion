@@ -1,0 +1,17 @@
+[
+  {
+    "id": "cass-final-quest",
+    "kind": "quest",
+    "title": "Accept Cass's final quest",
+    "match": "Accept the final quest at the Nightclub with"
+  },
+  {
+    "id": "darkrai-endgame",
+    "kind": "catch",
+    "title": "Obtain Darkrai after Iolia Valley quest",
+    "match": "Head back up and talk to Shiv again. With",
+    "species": [
+      "DARKRAI"
+    ]
+  }
+]

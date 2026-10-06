@@ -1,0 +1,23 @@
+[
+  {
+    "id": "oran-berry-moomoo-milk",
+    "kind": "quest",
+    "title": "Trade Oran Berry for Moomoo Milk",
+    "match": "Hidden to the left are a *Green Shard* and"
+  },
+  {
+    "id": "honeys-nature-center",
+    "kind": "item",
+    "title": "Receive 8 Honeys from Nature Center",
+    "match": "Someone on the first floor will give us 8"
+  },
+  {
+    "id": "tyrogue-dunsparce-trade",
+    "kind": "catch",
+    "title": "Trade Dunsparce for Tyrogue and Electirizer",
+    "match": "Someone on the first floor will give us 8",
+    "species": [
+      "TYROGUE"
+    ]
+  }
+]

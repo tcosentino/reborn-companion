@@ -1,0 +1,59 @@
+[
+  {
+    "id": "fund-restoration",
+    "kind": "quest",
+    "title": "Fund a restoration project",
+    "match": "As soon as you fully fund a project, you"
+  },
+  {
+    "id": "lopunnite",
+    "kind": "item",
+    "title": "Obtain Lopunnite in Grand Hall",
+    "match": "**Relationship Point Choices**:\n- Talk to"
+  },
+  {
+    "id": "goomy",
+    "kind": "catch",
+    "title": "Catch Goomy in Water Grid",
+    "match": "Talk to the computer in this area to get",
+    "species": [
+      "GOOMY"
+    ]
+  },
+  {
+    "id": "waterium-z",
+    "kind": "item",
+    "title": "Receive Waterium-Z from quest",
+    "match": "With that out of the way, return to the Grand"
+  },
+  {
+    "id": "togepi-egg",
+    "kind": "catch",
+    "title": "Obtain Togepi egg through trade",
+    "match": "The Kingsbury Station though? It brings us",
+    "species": [
+      "TOGEPI"
+    ]
+  },
+  {
+    "id": "firium-z",
+    "kind": "item",
+    "title": "Receive Firium-Z from quest",
+    "match": "Return to the guy in the Grand Hall basement"
+  },
+  {
+    "id": "chimchar-egg",
+    "kind": "catch",
+    "title": "Obtain Chimchar egg through trade",
+    "match": "In front of the building, a person will offer",
+    "species": [
+      "CHIMCHAR"
+    ]
+  },
+  {
+    "id": "grassium-z",
+    "kind": "item",
+    "title": "Donate Pokemon to get Grassium-Z",
+    "match": "A lady on the left will give us 2 *Leaf Stones*"
+  }
+]

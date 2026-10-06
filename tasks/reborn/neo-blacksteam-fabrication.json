@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ringmaster-blacksteam-quest",
+    "kind": "quest",
+    "title": "Accept Ringmaster's Neo Blacksteam quest",
+    "match": "Talk to Ringmaster and accept the quest."
+  },
+  {
+    "id": "genesect",
+    "kind": "catch",
+    "title": "Catch Genesect after drive puzzle",
+    "match": "Make your way back to the center. Remove",
+    "species": [
+      "GENESECT"
+    ]
+  }
+]

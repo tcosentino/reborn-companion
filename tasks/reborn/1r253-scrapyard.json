@@ -1,0 +1,17 @@
+[
+  {
+    "id": "houndoominite",
+    "kind": "item",
+    "title": "Obtain Houndoominite from Stephoscope",
+    "match": "In a train car at the top of the area you"
+  },
+  {
+    "id": "gyarados",
+    "kind": "catch",
+    "title": "Defeat Corin Rouge for Gyarados",
+    "match": "By defeating him we can finally get our hands",
+    "species": [
+      "GYARADOS"
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "honey-tree-leaf-stone-tm",
+    "kind": "item",
+    "title": "Get Leaf Stone and TM86 from Honey tree",
+    "match": "Down from here, you'll find a hidden *Mental"
+  },
+  {
+    "id": "candy-trade-honeys",
+    "kind": "quest",
+    "title": "Trade candy or ice cream for Honeys",
+    "match": "Talk to the guy upstairs - he will tell us"
+  }
+]

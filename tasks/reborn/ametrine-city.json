@@ -1,0 +1,17 @@
+[
+  {
+    "id": "pidove-old-amber",
+    "kind": "item",
+    "title": "Trade Pidove for Old Amber",
+    "match": "Head west at the next fork. You can get a"
+  },
+  {
+    "id": "riolu-egg",
+    "kind": "catch",
+    "title": "Obtain Riolu from egg",
+    "match": "It can sweep you if you're not prepared,",
+    "species": [
+      "RIOLU"
+    ]
+  }
+]

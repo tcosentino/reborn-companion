@@ -1,0 +1,21 @@
+[
+  {
+    "id": "cacnea-maractus-egg",
+    "kind": "catch",
+    "title": "Get egg containing Cacnea or Maractus",
+    "match": "Go up, right, and down. You'll notice a single",
+    "species": [
+      "CACNEA",
+      "MARACTUS"
+    ]
+  },
+  {
+    "id": "eevee-ill-fated-doll",
+    "kind": "catch",
+    "title": "Get Eevee and Ill-Fated Doll from railcave secret",
+    "match": "Inside the railcave, there are two secret",
+    "species": [
+      "EEVEE"
+    ]
+  }
+]

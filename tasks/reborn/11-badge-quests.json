@@ -1,0 +1,20 @@
+[
+  {
+    "id": "magmarizer-magby-trade",
+    "kind": "catch",
+    "title": "Trade Magmarizer for Magby",
+    "match": "Inside, you can get *4 Exp. Candy XL*, a",
+    "species": [
+      "MAGBY"
+    ]
+  },
+  {
+    "id": "turtwig-puzzle",
+    "kind": "catch",
+    "title": "Solve Fifteen Puzzle to catch Turtwig",
+    "match": "For winning you'll get a **Turtwig!**",
+    "species": [
+      "TURTWIG"
+    ]
+  }
+]

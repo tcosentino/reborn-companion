@@ -1,0 +1,14 @@
+[
+  {
+    "id": "ruby-ring",
+    "kind": "item",
+    "title": "Get Ruby Ring",
+    "match": "Once you win, you'll get the *Ruby Ring*."
+  },
+  {
+    "id": "reborn-elite-four-champion-8",
+    "kind": "quest",
+    "title": "Perhaps you could just change the field altogether: Sun will",
+    "match": "Perhaps you could just change the field altogether:"
+  }
+]

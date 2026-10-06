@@ -1,0 +1,11 @@
+[
+  {
+    "id": "arceus",
+    "kind": "catch",
+    "title": "Catch Arceus",
+    "match": "In either case, you can now catch **Arceus**,",
+    "species": [
+      "ARCEUS"
+    ]
+  }
+]

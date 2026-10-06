@@ -1,0 +1,13 @@
+[
+  {
+    "id": "mystery-egg-slums",
+    "kind": "catch",
+    "title": "Obtain abandoned egg",
+    "match": "Immediately up and to the right, you'll find",
+    "species": [
+      "BRONZOR",
+      "DUCKLETT",
+      "DROWZEE"
+    ]
+  }
+]

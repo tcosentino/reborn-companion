@@ -1,0 +1,48 @@
+[
+  {
+    "id": "mothim-evolution",
+    "kind": "catch",
+    "title": "Evolve male Burmy to Mothim",
+    "match": "Grab your Male Burmy from the PC and level",
+    "species": [
+      "MOTHIM"
+    ]
+  },
+  {
+    "id": "bruxish-mothim-trade",
+    "kind": "catch",
+    "title": "Trade Mothim for Bruxish with NPC in Chrysolia",
+    "match": "Return to Chrysolia Forest - you'll have",
+    "species": [
+      "BRUXISH"
+    ]
+  },
+  {
+    "id": "houndour-gang-mascot",
+    "kind": "catch",
+    "title": "Get gang mascot Houndour from other gang alleyway",
+    "match": "Once you return to Reborn City via the railnet,",
+    "species": [
+      "HOUNDOUR"
+    ]
+  },
+  {
+    "id": "darumaka-luvdisc-trade",
+    "kind": "catch",
+    "title": "Trade Luvdisc for Darumaka at Apophyll",
+    "match": "Take the Coral Ward boat to Apophyll. Grab",
+    "species": [
+      "DARUMAKA"
+    ]
+  },
+  {
+    "id": "archen-tirtouga-fossil",
+    "kind": "catch",
+    "title": "Revive fossil for Archen or Tirtouga at Spinel Museum",
+    "match": "Finally, head all the way back through the",
+    "species": [
+      "ARCHEN",
+      "TIRTOUGA"
+    ]
+  }
+]

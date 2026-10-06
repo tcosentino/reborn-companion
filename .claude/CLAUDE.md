@@ -9,9 +9,14 @@ See `README.md` for the data pipeline, layout and run commands.
 - Rebuild with `bash scripts/build-json.sh && bash scripts/sync-data.sh`.
 - Link to other sections with `#/<game>/<section-id>` (ids are in `app/public/data/<game>/index.json`).
 
+## Walkthrough tasks
+
+- Task definitions live in `tasks/<game>/<section-id>.json` (see README "Walkthrough tasks"). Never rename a task `id`: it is the saved progress key `task:<section>/<id>` and is in the progress-id baseline.
+- If an upstream text change breaks a task's `match`, `sync-data.sh` fails; update the `match` to the new paragraph start rather than deleting the task.
+
 ## Tests
 
-- `bash scripts/test.sh` (override unit tests + upstream generator tests) and `cd app && yarn test`.
+- `bash scripts/test.sh` (override, task and progress-id unit tests + upstream generator tests) and `cd app && yarn test`.
 
 ## Progress data
 

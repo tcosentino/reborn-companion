@@ -1,0 +1,27 @@
+[
+  {
+    "id": "route-3-new-world-talk-0",
+    "kind": "quest",
+    "title": "Talk to Sandy and accept her quest to check out Route 3",
+    "match": "Talk to Sandy and accept her quest to check"
+  },
+  {
+    "id": "virizion-cobalion",
+    "kind": "catch",
+    "title": "Catch Virizion and Cobalion",
+    "match": "With the battle done, two of the three will",
+    "species": [
+      "VIRIZION",
+      "COBALION"
+    ]
+  },
+  {
+    "id": "keldeo",
+    "kind": "catch",
+    "title": "Catch Keldeo",
+    "match": "Afterwards, you'll be able to battle and",
+    "species": [
+      "KELDEO"
+    ]
+  }
+]

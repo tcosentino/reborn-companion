@@ -1,0 +1,17 @@
+[
+  {
+    "id": "smeargle-poacher-quest",
+    "kind": "quest",
+    "title": "Accept Smeargle's poacher quest",
+    "match": "Next, talk to Smeargle to get a new quest."
+  },
+  {
+    "id": "zeraora",
+    "kind": "catch",
+    "title": "Catch Zeraora after defeating Commissioner",
+    "match": "Nothing too crazy here, though there is a",
+    "species": [
+      "ZERAORA"
+    ]
+  }
+]

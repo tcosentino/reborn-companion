@@ -1,0 +1,11 @@
+[
+  {
+    "id": "ditto-cage-puzzle",
+    "kind": "catch",
+    "title": "Catch Ditto from factory cage puzzle",
+    "match": "With that, we'll be plunked into a cage with",
+    "species": [
+      "DITTO"
+    ]
+  }
+]

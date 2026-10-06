@@ -1,0 +1,17 @@
+[
+  {
+    "id": "zero-idyll-quest",
+    "kind": "quest",
+    "title": "Accept Zero's Idyll quest",
+    "match": "Accept Zero's quest, then head over to the"
+  },
+  {
+    "id": "shaymin",
+    "kind": "catch",
+    "title": "Catch Shaymin after purification battle",
+    "match": "Talk to the nearby **Shaymin** once you're",
+    "species": [
+      "SHAYMIN"
+    ]
+  }
+]

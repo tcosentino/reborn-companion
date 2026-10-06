@@ -1,0 +1,15 @@
+[
+  {
+    "id": "celesteela-cosmog-evolutions",
+    "kind": "catch",
+    "title": "Catch Celesteela and Cosmog, evolve Cosmog",
+    "match": "Pretty sweet - we can catch Celesteela now,",
+    "species": [
+      "CELESTEELA",
+      "COSMOG",
+      "COSMOEM",
+      "SOLGALEO",
+      "LUNALA"
+    ]
+  }
+]

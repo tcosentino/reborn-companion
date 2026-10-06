@@ -1,0 +1,26 @@
+[
+  {
+    "id": "comfey-quest",
+    "kind": "catch",
+    "title": "Obtain Comfey after battle",
+    "match": "After the scenes have concluded, you can",
+    "species": [
+      "COMFEY"
+    ]
+  },
+  {
+    "id": "rainbow-scent",
+    "kind": "quest",
+    "title": "Complete Rainbow Scent quest",
+    "match": "Completing this quest rewards you with the"
+  },
+  {
+    "id": "petilil-quest-reward",
+    "kind": "catch",
+    "title": "Obtain Petilil as quest reward",
+    "match": "Completing this quest rewards you with the",
+    "species": [
+      "PETILIL"
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "pyukumuku-beach",
+    "kind": "catch",
+    "title": "Catch Pyukumuku on Apophyll Beach",
+    "match": "You can also catch **Pyukumuku** chilling",
+    "species": [
+      "PYUKUMUKU"
+    ]
+  },
+  {
+    "id": "corsola-storm",
+    "kind": "catch",
+    "title": "Catch Corsola on western beach during storm",
+    "match": "If it is storming, you can find a **Corsola**",
+    "species": [
+      "CORSOLA"
+    ]
+  },
+  {
+    "id": "steal-tv-academy",
+    "kind": "quest",
+    "title": "Steal girl's TV from academy building",
+    "match": "Pick up a hidden *Guard Spec*. Now we are"
+  },
+  {
+    "id": "meditite-roof",
+    "kind": "catch",
+    "title": "Catch Meditite from academy roof",
+    "match": "Head out the door on the bottom right, then",
+    "species": [
+      "MEDITITE"
+    ]
+  }
+]

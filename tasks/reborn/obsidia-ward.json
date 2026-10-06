@@ -1,0 +1,26 @@
+[
+  {
+    "id": "soothe-bell",
+    "kind": "item",
+    "title": "Obtain Soothe Bell",
+    "match": "A lady on the right will ask to see a Pokemon"
+  },
+  {
+    "id": "swirlix-puzzle",
+    "kind": "catch",
+    "title": "Complete puzzle to obtain Swirlix",
+    "match": "The next building in line is the Sweet Kiss",
+    "species": [
+      "SWIRLIX"
+    ]
+  },
+  {
+    "id": "vanillite-ice-cream",
+    "kind": "catch",
+    "title": "Buy Vanilla Ice Cream to catch Vanillite",
+    "match": "At the top, a kid really wants some Vanilla",
+    "species": [
+      "VANILLITE"
+    ]
+  }
+]

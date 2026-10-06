@@ -1,0 +1,19 @@
+[
+  {
+    "id": "reshiram-zekrom-kyurem",
+    "kind": "catch",
+    "title": "Catch Reshiram, Zekrom, and Kyurem",
+    "match": "Once you win, three doors will open. Inside",
+    "species": [
+      "RESHIRAM",
+      "ZEKROM",
+      "KYUREM"
+    ]
+  },
+  {
+    "id": "red-card",
+    "kind": "item",
+    "title": "Get Red Card from Ace",
+    "match": "Talking to them again, you can get a *Red"
+  }
+]

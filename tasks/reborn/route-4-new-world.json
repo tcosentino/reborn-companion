@@ -1,0 +1,19 @@
+[
+  {
+    "id": "route-4-new-world-talk-0",
+    "kind": "quest",
+    "title": "Talk to Aster and accept his quest to head over to Route 4 v",
+    "match": "Talk to Aster and accept his quest to head"
+  },
+  {
+    "id": "tornadus-thundurus-landorus",
+    "kind": "catch",
+    "title": "Catch Tornadus and Thundurus and Landorus",
+    "match": "Once you defeat this team, the three will",
+    "species": [
+      "TORNADUS",
+      "THUNDURUS",
+      "LANDORUS"
+    ]
+  }
+]

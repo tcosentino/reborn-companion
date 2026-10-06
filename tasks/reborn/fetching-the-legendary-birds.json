@@ -1,0 +1,26 @@
+[
+  {
+    "id": "articuno",
+    "kind": "catch",
+    "title": "Catch Articuno",
+    "match": "Fly over to Ametrine City, then climb the",
+    "species": [
+      "ARTICUNO"
+    ]
+  },
+  {
+    "id": "zapdos",
+    "kind": "catch",
+    "title": "Catch Zapdos",
+    "match": "Fly over to Beryl Ward, and go across the",
+    "species": [
+      "ZAPDOS"
+    ]
+  },
+  {
+    "id": "fetching-the-legendary-birds-4",
+    "kind": "quest",
+    "title": "As of Gen VII, 9",
+    "match": "As of Gen VII, 9.6% of all Pokemon were legendaries..."
+  }
+]

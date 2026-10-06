@@ -1,0 +1,11 @@
+[
+  {
+    "id": "deoxys",
+    "kind": "catch",
+    "title": "Catch Deoxys",
+    "match": "Once you win, you can catch **Deoxys**!",
+    "species": [
+      "DEOXYS"
+    ]
+  }
+]

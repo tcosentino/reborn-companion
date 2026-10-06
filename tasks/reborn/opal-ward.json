@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pachirisu-zigzagoon-bullies",
+    "kind": "catch",
+    "title": "Defeat bullies for Pachirisu or Zigzagoon",
+    "match": "When you win, you'll get **Pachirisu** or",
+    "species": [
+      "PACHIRISU",
+      "ZIGZAGOON"
+    ]
+  }
+]

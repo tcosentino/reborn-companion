@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tm100-confide",
+    "kind": "item",
+    "title": "Obtain TM100 Confide",
+    "match": "First, head to the room containing the nurse"
+  },
+  {
+    "id": "itemfinder",
+    "kind": "item",
+    "title": "Obtain Itemfinder",
+    "match": "Head into the Obsidia Slums. Nearby where"
+  },
+  {
+    "id": "makuhita-snax",
+    "kind": "catch",
+    "title": "Catch Makuhita with PokeSnax",
+    "match": "Head left and take the elevator down to B1F.",
+    "species": [
+      "MAKUHITA"
+    ]
+  },
+  {
+    "id": "deep-sea-item",
+    "kind": "item",
+    "title": "Obtain Deep Sea Tooth or Scale",
+    "match": "Back in Opal Ward, specifically if you randomly"
+  },
+  {
+    "id": "snubbull-stufful-gift",
+    "kind": "catch",
+    "title": "Obtain Snubbull or Stufful",
+    "match": "Finally, head to the apartment in the top",
+    "species": [
+      "SNUBBULL",
+      "STUFFUL"
+    ]
+  }
+]

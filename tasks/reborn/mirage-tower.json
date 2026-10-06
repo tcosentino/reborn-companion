@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mimikyu",
+    "kind": "catch",
+    "title": "Catch Mimikyu in Mirage Tower",
+    "match": "Towards the top of the area, you'll notice",
+    "species": [
+      "MIMIKYU"
+    ]
+  },
+  {
+    "id": "honedge",
+    "kind": "catch",
+    "title": "Catch Honedge at Mirage Tower",
+    "match": "Following this path will lead us to the top",
+    "species": [
+      "HONEDGE"
+    ]
+  },
+  {
+    "id": "normalium-z",
+    "kind": "item",
+    "title": "Obtain Normalium-Z at Mirage Tower",
+    "match": "Following this path will lead us to the top"
+  }
+]

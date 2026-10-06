@@ -1,0 +1,14 @@
+[
+  {
+    "id": "return-stolen-pokemon",
+    "kind": "quest",
+    "title": "Return stolen Pokemon to original owners",
+    "match": "There is a sidequest later with a fantastic"
+  },
+  {
+    "id": "lucky-egg-arclight",
+    "kind": "item",
+    "title": "Obtain Lucky Egg from DJ Arclight",
+    "match": "Anyways, exit this area. Once you buy all"
+  }
+]

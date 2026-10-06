@@ -1,0 +1,26 @@
+[
+  {
+    "id": "zygarde-50-percent",
+    "kind": "catch",
+    "title": "Create Zygarde 50% form",
+    "match": "Either by fighting or by simply walking,",
+    "species": [
+      "ZYGARDE"
+    ]
+  },
+  {
+    "id": "zygarde-100-percent",
+    "kind": "catch",
+    "title": "Obtain Zygarde 100% form",
+    "match": "Either by fighting or by simply walking,",
+    "species": [
+      "ZYGARDE"
+    ]
+  },
+  {
+    "id": "dna-splicers",
+    "kind": "item",
+    "title": "Obtain DNA Splicers",
+    "match": "Head back to the right to pick up the *DNA"
+  }
+]

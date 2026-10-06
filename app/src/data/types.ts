@@ -1,6 +1,8 @@
 // Shapes of the JSON emitted by the walkthrough generator (`wt_generator.rb --json`).
 // Game-agnostic: any game whose generator emits this schema can be rendered.
 
+import type { TaskBlock } from '../lib/tasks'
+
 export type Sym = string
 
 export interface GuideIndex {
@@ -133,7 +135,9 @@ export interface HtmlBlock { type: 'html'; macro: string; html: string }
 
 export type Block =
   | ProseBlock | ImageBlock | BattleBlock | EncountersBlock | ShopBlock
-  | TutorBlock | PickupBlock | MiningBlock | WildHeldBlock | HtmlBlock
+  | TutorBlock | PickupBlock | MiningBlock | WildHeldBlock | HtmlBlock | TaskBlock
+
+export type { TaskBlock }
 
 export interface SpeciesForm {
   name: string

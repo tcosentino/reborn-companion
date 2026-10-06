@@ -1,0 +1,17 @@
+[
+  {
+    "id": "zero-train-quest",
+    "kind": "quest",
+    "title": "Accept Zero's train heist quest",
+    "match": "Next, talk to Zero in the Nightclub and accept"
+  },
+  {
+    "id": "hoopa",
+    "kind": "catch",
+    "title": "Obtain Hoopa after train gauntlet",
+    "match": "You'll also be given **Hoopa**! Walk on back",
+    "species": [
+      "HOOPA"
+    ]
+  }
+]

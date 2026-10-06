@@ -10,6 +10,10 @@ export const tally = (refs: BattleRef[] | undefined, done: Record<string, true>)
   total: refs?.length ?? 0
 })
 
+// A section's checklist entries for whole-guide progress: its battles, then its walkthrough tasks
+export const progressRefs = (battles: Record<string, BattleRef[]>, tasks: Record<string, BattleRef[]> | undefined, id: string): BattleRef[] | undefined =>
+  tasks?.[id] ? [...(battles[id] ?? []), ...tasks[id]] : battles[id]
+
 export const sumTallies = (ts: Tally[]): Tally =>
   ts.reduce((a, t) => ({ beaten: a.beaten + t.beaten, total: a.total + t.total }), { beaten: 0, total: 0 })
 
@@ -49,21 +53,23 @@ export const mySpot = (order: string[], battles: Record<string, BattleRef[]>, do
 export const anchorAt = (tops: [string, number][], line: number): string | null =>
   tops.reduce<string | null>((cur, [id, top]) => top <= line ? id : cur, null)
 
-export type PageKind = 'battle' | 'encounters' | 'shop' | 'tutor'
+export type PageKind = 'battle' | 'encounters' | 'shop' | 'tutor' | 'task'
 
 export interface PageItem { id: string; kind: PageKind; label: string; beaten?: boolean }
 
 interface PageBlock {
   type: string
   partner?: boolean
+  // Task blocks: progress key
+  id?: string
   name?: string
   title?: string
   trainers?: { name: string; title: string; teamId: [string, string, number] }[]
 }
 
-const KINDS = new Set(['battle', 'encounters', 'shop', 'tutor'])
+const KINDS = new Set(['battle', 'encounters', 'shop', 'tutor', 'task'])
 
-// One entry per anchored block, in page order. Partner battles have no beaten state.
+// One entry per anchored block, in page order. Partner battles have no beaten state; tasks use it for done.
 export const pageItems = (blocks: PageBlock[], anchors: (string | null)[], done: Record<string, true>): PageItem[] =>
   blocks.flatMap<PageItem>((b, i) => {
     const id = anchors[i]
@@ -73,5 +79,6 @@ export const pageItems = (blocks: PageBlock[], anchors: (string | null)[], done:
       const label = (b.trainers ?? []).map(t => `${t.title} ${t.name}`).join(' & ')
       return [{ id, kind, label: b.partner ? `Partner: ${label}` : label, beaten: b.partner ? undefined : !!done[id.slice('battle-'.length)] }]
     }
+    if (kind === 'task') return [{ id, kind, label: b.title ?? '', beaten: !!(b.id && done[b.id]) }]
     return [{ id, kind, label: b.name ?? b.title ?? '' }]
   })

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "simon-kiki-quest",
+    "kind": "quest",
+    "title": "Accept Simon's Kiki quest",
+    "match": "Accept Simon's quest and fly over to Apophyll"
+  },
+  {
+    "id": "marshadow",
+    "kind": "catch",
+    "title": "Catch Marshadow at Apophyll Academy",
+    "match": "Head into the back room once you're done",
+    "species": [
+      "MARSHADOW"
+    ]
+  }
+]

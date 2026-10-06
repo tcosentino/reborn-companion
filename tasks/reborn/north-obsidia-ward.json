@@ -1,0 +1,14 @@
+[
+  {
+    "id": "tm17-protect",
+    "kind": "item",
+    "title": "Obtain TM17 Protect",
+    "match": "Finding this last item will put us in front"
+  },
+  {
+    "id": "full-incense",
+    "kind": "item",
+    "title": "Obtain Full Incense",
+    "match": "Next, enter the Spyce restaurant below and"
+  }
+]

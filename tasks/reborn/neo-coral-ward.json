@@ -1,0 +1,11 @@
+[
+  {
+    "id": "popplio-underwater-battle",
+    "kind": "catch",
+    "title": "Catch Popplio after underwater battle",
+    "match": "Once you win, you'll get **Popplio**! Beyond,",
+    "species": [
+      "POPPLIO"
+    ]
+  }
+]

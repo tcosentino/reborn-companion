@@ -120,6 +120,29 @@ figure img { display: block; width: 100%; height: auto }
 .tag.accent { background: var(--accent-soft); border-color: transparent; color: var(--accent) }
 .tag.warn, .tag.field { background: var(--warn-soft); border-color: transparent; color: var(--warn) }
 
+/* Walkthrough task (lib/tasks.ts): a checkable card around the paragraph that describes it */
+.task { max-width: 760px; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--good); border-radius: 10px; scroll-margin-top: 16px }
+.task.k-quest { border-left-color: var(--accent) }
+.task.k-item { border-left-color: var(--warn) }
+.task-head { display: flex; align-items: center; gap: .75rem; padding: .7rem 1rem .4rem }
+.task-check { display: grid; place-items: center; flex: none; width: 1.9rem; height: 1.9rem; border: 1px solid var(--line); border-radius: 6px; background: var(--sunk); cursor: pointer }
+.task-check input { width: 1.1rem; height: 1.1rem; margin: 0; accent-color: var(--good); cursor: pointer }
+.task-name { display: grid; gap: .1rem; min-width: 0; margin-right: auto }
+.task-name h3 { margin: 0; font: 600 1.05rem/1.3 var(--display) }
+.task-mons { display: flex; gap: .15rem; flex: none }
+.task-mons a { display: block; line-height: 0 }
+.task-body { padding: 0 1rem .8rem calc(1rem + 1.9rem + .75rem); font-size: .95rem }
+.task.is-done { border-left-color: var(--line) }
+.task.is-done .task-check { border-color: var(--good) }
+.task.is-done .task-name h3 { text-decoration: line-through; text-decoration-color: var(--muted); color: var(--muted) }
+.task.is-done .task-body { opacity: .55 }
+.task.is-collapsed .task-body { display: none }
+/* Extra tasks from the same paragraph tuck under the card that holds its text */
+.task.is-sibling { margin-top: -.7rem }
+.task.is-sibling .task-head { padding-block: .5rem }
+.task.is-collapsed .task-head { padding-block: .45rem }
+@media (max-width: 560px) { .task-body { padding-left: 1rem } }
+
 /* Trainer */
 .trainer { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; scroll-margin-top: 16px }
 .tr-head { display: flex; flex-wrap: wrap; gap: .6rem 1rem; align-items: center; padding: .85rem 1rem; border-bottom: 1px solid var(--line) }

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "qwilfish-munchlax-trade",
+    "kind": "catch",
+    "title": "Trade Qwilfish for Munchlax",
+    "match": "Inside the Pokemon Center, a person will",
+    "species": [
+      "MUNCHLAX"
+    ]
+  },
+  {
+    "id": "electirizer-elekid-trade",
+    "kind": "catch",
+    "title": "Trade Electirizer for Elekid",
+    "match": "In a building to the right of the gym you",
+    "species": [
+      "ELEKID"
+    ]
+  }
+]

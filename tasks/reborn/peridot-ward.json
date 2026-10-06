@@ -1,0 +1,38 @@
+[
+  {
+    "id": "skitty-gift",
+    "kind": "catch",
+    "title": "Obtain Skitty",
+    "match": "Choosing to save this Oran Berry for the",
+    "species": [
+      "SKITTY"
+    ]
+  },
+  {
+    "id": "surskit-rain",
+    "kind": "catch",
+    "title": "Battle Surskit during rain",
+    "match": "Talk to the fountain while it is raining",
+    "species": [
+      "SURSKIT"
+    ]
+  },
+  {
+    "id": "budew-rose-incense",
+    "kind": "catch",
+    "title": "Obtain Budew with Rose Incense",
+    "match": "Up from here, when the weather is clear or",
+    "species": [
+      "BUDEW"
+    ]
+  },
+  {
+    "id": "teddiursa-multiple-locations",
+    "kind": "catch",
+    "title": "Find and battle Teddiursa",
+    "match": "**Teddiursa** will then battle you.",
+    "species": [
+      "TEDDIURSA"
+    ]
+  }
+]

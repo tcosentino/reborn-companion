@@ -1,0 +1,17 @@
+[
+  {
+    "id": "rock-tomb-indra",
+    "kind": "item",
+    "title": "Defeat Clown Indra for TM39 Rock Tomb",
+    "match": "\ud83c\udd71\ufe0findra. Once you win against his super sketchy"
+  },
+  {
+    "id": "salandit-cave",
+    "kind": "catch",
+    "title": "Battle Salandit in Celestinine Cascade",
+    "match": "Inside this cave you can get an *Elemental",
+    "species": [
+      "SALANDIT"
+    ]
+  }
+]

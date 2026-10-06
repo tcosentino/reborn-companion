@@ -1,0 +1,11 @@
+[
+  {
+    "id": "spiritomb-odd-keystone",
+    "kind": "catch",
+    "title": "Catch Spiritomb using Odd Keystone in secret room",
+    "match": "Inside the room to the left, you can use",
+    "species": [
+      "SPIRITOMB"
+    ]
+  }
+]

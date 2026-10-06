@@ -1,0 +1,11 @@
+[
+  {
+    "id": "helioptile-snax",
+    "kind": "catch",
+    "title": "Obtain Helioptile with PokeSnax on sunny day",
+    "match": "Enter the building up and to the left from",
+    "species": [
+      "HELIOPTILE"
+    ]
+  }
+]

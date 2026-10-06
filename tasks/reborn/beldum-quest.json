@@ -1,0 +1,11 @@
+[
+  {
+    "id": "beldum-level-1",
+    "kind": "catch",
+    "title": "Catch level 1 Beldum in cave",
+    "match": "From here, climb the ledges up and to the",
+    "species": [
+      "BELDUM"
+    ]
+  }
+]

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { Chapter, GuideIndex, RankEntry } from '../data/types'
-import { anchorAt, caughtTally, furthestBeaten, sectionSpecies, mySpot, nextUnbeaten, pageItems, sumTallies, tally } from './guideNav'
+import { anchorAt, caughtTally, furthestBeaten, sectionSpecies, mySpot, nextUnbeaten, pageItems, progressRefs, sumTallies, tally } from './guideNav'
 import { battleRefs, buildSectionBattles, type BattleRef } from './sectionBattles'
 import { catchHere } from './catchHere'
 import { parseSpot } from './progress'
@@ -27,7 +27,15 @@ describe('sectionBattles', () => {
       { id: null, title: null, blocks: [{ type: 'battle', partner: false, trainers: [tr('Cain')] }] },
       { id: 'quiet', title: 'Quiet', blocks: [{ type: 'prose', markdown: '' }] }
     ] } as unknown as Chapter
-    expect(buildSectionBattles(index, new Map([['ep1.json', ch]]))).toEqual({ v: 1, s: { ep1: [['Cain:YOUNGSTER:0', 'Youngster Cain']] } })
+    expect(buildSectionBattles(index, new Map([['ep1.json', ch]]))).toEqual({ v: 1, s: { ep1: [['Cain:YOUNGSTER:0', 'Youngster Cain']] }, t: {} })
+  })
+
+  it('lists walkthrough tasks per section next to battles', () => {
+    const index = { chapters: [{ id: 'ep1', title: 'Ep 1', file: 'ep1.json', sections: [] }] } as unknown as GuideIndex
+    const ch = { id: 'ep1', title: 'Ep 1', sections: [
+      { id: 'yard', title: 'Yard', blocks: [{ type: 'task', id: 'task:yard/gulpin', slug: 'gulpin', kind: 'catch', title: 'Catch Gulpin', markdown: '' }] }
+    ] } as unknown as Chapter
+    expect(buildSectionBattles(index, new Map([['ep1.json', ch]]))).toEqual({ v: 1, s: {}, t: { yard: [['task:yard/gulpin', 'Catch Gulpin']] } })
   })
 })
 
@@ -45,6 +53,14 @@ describe('progress helpers', () => {
     expect(tally(undefined, done)).toEqual({ beaten: 0, total: 0 })
     expect(sumTallies(order.map(id => tally(battles[id], done)))).toEqual({ beaten: 2, total: 4 })
     expect(nextUnbeaten(battles.a, done)).toEqual(['a2', 'A2'])
+  })
+
+  it('counts tasks with battles for a section tally', () => {
+    const tasks: Record<string, BattleRef[]> = { a: [['task:a/x', 'X']], b: [['task:b/y', 'Y']] }
+    expect(progressRefs(battles, tasks, 'a')).toEqual([['a1', 'A1'], ['a2', 'A2'], ['task:a/x', 'X']])
+    expect(progressRefs(battles, tasks, 'b')).toEqual([['task:b/y', 'Y']])
+    expect(progressRefs(battles, undefined, 'c')).toEqual([['c1', 'C1']])
+    expect(tally(progressRefs(battles, tasks, 'a'), { 'task:a/x': true })).toEqual({ beaten: 1, total: 3 })
   })
 
   it('finds the furthest section with progress and the next battle from there', () => {
@@ -80,15 +96,17 @@ describe('pageItems', () => {
       { type: 'battle', partner: true, trainers: [tr('Ally', 'Partner')] },
       { type: 'encounters', name: 'Route 1' },
       { type: 'shop', title: 'Mart' },
-      { type: 'tutor', title: 'Tutor' }
+      { type: 'tutor', title: 'Tutor' },
+      { type: 'task', id: 'task:s/gulpin', title: 'Catch Gulpin' }
     ]
-    const anchors = [null, 'battle-Joey:YOUNGSTER:0', 'battle-Ally:PARTNER:0', 'enc-route-1', 'shop-mart', 'tutor-tutor']
-    expect(pageItems(blocks, anchors, { 'Joey:YOUNGSTER:0': true })).toEqual([
+    const anchors = [null, 'battle-Joey:YOUNGSTER:0', 'battle-Ally:PARTNER:0', 'enc-route-1', 'shop-mart', 'tutor-tutor', 'task-gulpin']
+    expect(pageItems(blocks, anchors, { 'Joey:YOUNGSTER:0': true, 'task:s/gulpin': true })).toEqual([
       { id: 'battle-Joey:YOUNGSTER:0', kind: 'battle', label: 'Youngster Joey', beaten: true },
       { id: 'battle-Ally:PARTNER:0', kind: 'battle', label: 'Partner: Partner Ally', beaten: undefined },
       { id: 'enc-route-1', kind: 'encounters', label: 'Route 1' },
       { id: 'shop-mart', kind: 'shop', label: 'Mart' },
-      { id: 'tutor-tutor', kind: 'tutor', label: 'Tutor' }
+      { id: 'tutor-tutor', kind: 'tutor', label: 'Tutor' },
+      { id: 'task-gulpin', kind: 'task', label: 'Catch Gulpin', beaten: true }
     ])
   })
 })

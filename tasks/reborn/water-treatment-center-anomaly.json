@@ -1,0 +1,17 @@
+[
+  {
+    "id": "smeargle-treatment-quest",
+    "kind": "quest",
+    "title": "Accept Smeargle's Water Treatment Center quest",
+    "match": "Talk to Smeargle and accept the quest. Head"
+  },
+  {
+    "id": "darkrai-treatment",
+    "kind": "catch",
+    "title": "Catch Darkrai after treatment anomaly",
+    "match": "Once you win, you'll be able to catch **Darkrai**,",
+    "species": [
+      "DARKRAI"
+    ]
+  }
+]

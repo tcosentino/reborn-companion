@@ -1,0 +1,47 @@
+[
+  {
+    "id": "sneasel-rock-smash",
+    "kind": "catch",
+    "title": "Catch Sneasel by rock smashing",
+    "match": "From here, make your way to the waterfall",
+    "species": [
+      "SNEASEL"
+    ]
+  },
+  {
+    "id": "totodile-encounter",
+    "kind": "catch",
+    "title": "Catch Totodile jumping in air",
+    "match": "In this next room, go left across the ice.",
+    "species": [
+      "TOTODILE"
+    ]
+  },
+  {
+    "id": "lapras-friday",
+    "kind": "catch",
+    "title": "Catch Lapras on Fridays",
+    "match": "In this large room you can get an *Exp. Candy",
+    "species": [
+      "LAPRAS"
+    ]
+  },
+  {
+    "id": "skuntank-silver-ring",
+    "kind": "catch",
+    "title": "Catch Skuntank with Silver Ring",
+    "match": "With the Silver Ring in hand, we can catch",
+    "species": [
+      "SKUNTANK"
+    ]
+  },
+  {
+    "id": "mareanie-encounter",
+    "kind": "catch",
+    "title": "Catch Mareanie in mountain",
+    "match": "Make your way to Citrine Mountain 2F by climbing",
+    "species": [
+      "MAREANIE"
+    ]
+  }
+]

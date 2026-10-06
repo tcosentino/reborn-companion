@@ -1,0 +1,67 @@
+[
+  {
+    "id": "pay-man-150",
+    "kind": "quest",
+    "title": "Pay the man $150 total",
+    "match": "A rock on the left side will contain a hidden"
+  },
+  {
+    "id": "blitzle-thunderstorm",
+    "kind": "catch",
+    "title": "Catch Blitzle in thunderstorm",
+    "match": "Also, specifically when the weather is thunderstorming,",
+    "species": [
+      "BLITZLE"
+    ]
+  },
+  {
+    "id": "gulpin-whismur-snax",
+    "kind": "catch",
+    "title": "Catch Gulpin and Whismur with PokeSnax",
+    "match": "With the PokeSnax in our bag, we can talk",
+    "species": [
+      "GULPIN",
+      "WHISMUR"
+    ]
+  },
+  {
+    "id": "minccino-espurr-snax",
+    "kind": "catch",
+    "title": "Catch Minccino or Espurr with PokeSnax",
+    "match": "Return to the guy we gave money to, by the",
+    "species": [
+      "MINCCINO",
+      "ESPURR"
+    ]
+  },
+  {
+    "id": "old-rod",
+    "kind": "item",
+    "title": "Obtain the Old Rod",
+    "match": "On the left side of the Pokemon Center, you"
+  },
+  {
+    "id": "sea-incense",
+    "kind": "item",
+    "title": "Obtain Sea Incense from trainer",
+    "match": "If you win, he'll let you into his pool,"
+  },
+  {
+    "id": "delibird-gift-box",
+    "kind": "catch",
+    "title": "Trade Gift Box for Delibird",
+    "match": "Up from here, enter the building on the right.",
+    "species": [
+      "DELIBIRD"
+    ]
+  },
+  {
+    "id": "kricketot-gift",
+    "kind": "catch",
+    "title": "Obtain ailing Kricketot",
+    "match": "Up from here, enter the building on the right.",
+    "species": [
+      "KRICKETOT"
+    ]
+  }
+]

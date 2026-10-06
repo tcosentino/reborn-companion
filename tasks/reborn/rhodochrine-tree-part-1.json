@@ -1,0 +1,8 @@
+[
+  {
+    "id": "nyu-tree-quest",
+    "kind": "quest",
+    "title": "Accept Nyu's Rhodochrine Tree quest",
+    "match": "Accept Nyu's quest in the Nightclub, then"
+  }
+]

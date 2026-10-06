@@ -11,3 +11,7 @@ test('missingIds reports baseline ids no longer shipped, ignores new ones', () =
   assert.deepEqual(missingIds(['A', 'B'], ['A', 'C']), ['B'])
   assert.deepEqual(missingIds([], ['A']), [])
 })
+
+test('battleIds includes walkthrough task ids', () => {
+  assert.deepEqual(battleIds({ s: { a: [['A:X:0', 'A']] }, t: { a: [['task:a/x', 'X']] } }), ['A:X:0', 'task:a/x'])
+})

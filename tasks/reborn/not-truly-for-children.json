@@ -1,0 +1,17 @@
+[
+  {
+    "id": "jirachi",
+    "kind": "catch",
+    "title": "Catch Jirachi after Psychic Terrain battle",
+    "match": "Once you win, you'll be able to catch **",
+    "species": [
+      "JIRACHI"
+    ]
+  },
+  {
+    "id": "zero-children-quest",
+    "kind": "quest",
+    "title": "Accept Zero's Not Truly For Children quest",
+    "match": "**ZCell 33: Not Truly For Children**"
+  }
+]

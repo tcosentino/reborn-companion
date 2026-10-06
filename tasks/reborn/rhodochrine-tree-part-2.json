@@ -1,0 +1,32 @@
+[
+  {
+    "id": "6iv-ditto",
+    "kind": "item",
+    "title": "Get 6IV Ditto from Shelly (50+ cells)",
+    "match": "With 100% Zygarde in your party, talk to"
+  },
+  {
+    "id": "xerneas",
+    "kind": "catch",
+    "title": "Catch Xerneas",
+    "match": "Once you win, Noel will give you **Xerne",
+    "species": [
+      "XERNEAS"
+    ]
+  },
+  {
+    "id": "yveltal",
+    "kind": "catch",
+    "title": "Catch Yveltal",
+    "match": "Once you win, you can catch **Yveltal**.",
+    "species": [
+      "YVELTAL"
+    ]
+  },
+  {
+    "id": "mewtwonite",
+    "kind": "item",
+    "title": "Get Mewtwonite X and Y from Eclipse",
+    "match": "Once you win, accept the fast travel request"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "glameow-salon",
+    "kind": "catch",
+    "title": "Obtain Glameow from salon",
+    "match": "Take another visit to the Central Salon and",
+    "species": [
+      "GLAMEOW"
+    ]
+  },
+  {
+    "id": "bounsweet-glameow",
+    "kind": "catch",
+    "title": "Battle for Bounsweet with Glameow",
+    "match": "If you're able to win, you'll get **Boun",
+    "species": [
+      "BOUNSWEET"
+    ]
+  },
+  {
+    "id": "free-daycare-couple",
+    "kind": "quest",
+    "title": "Free daycare couple from warehouse",
+    "match": "The warehouse key we got earlier works on"
+  },
+  {
+    "id": "spoink-warehouse",
+    "kind": "catch",
+    "title": "Obtain Spoink from warehouse",
+    "match": "The second warehouse contains a *Macho Brace*",
+    "species": [
+      "SPOINK"
+    ]
+  },
+  {
+    "id": "happiny-warehouse",
+    "kind": "catch",
+    "title": "Obtain Happiny from warehouse",
+    "match": "The second warehouse contains a *Macho Brace*",
+    "species": [
+      "HAPPINY"
+    ]
+  }
+]

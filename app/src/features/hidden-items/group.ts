@@ -76,7 +76,8 @@ export const groupHiddenItems = (blocks: Block[], scope = ''): RenderBlock[] => 
   const rewritten = new Map<number, string>()
 
   blocks.forEach((b, i) => {
-    if (b.type !== 'prose') return
+    // Task blocks (lifted prose paragraphs) are scanned too, but their text is never rewritten
+    if (b.type !== 'prose' && b.type !== 'task') return
     const { found, kept } = scanProse(b.markdown, i)
     if (found.length === 0) return
     const target = [...imageIdx].reverse().find(k => k < i) ?? imageIdx.find(k => k > i)
@@ -87,7 +88,7 @@ export const groupHiddenItems = (blocks: Block[], scope = ''): RenderBlock[] => 
       if (!dup) list.push(f.entry)
       else if (f.absorbed) Object.assign(dup, f.entry)
     })
-    if (found.some(f => f.absorbed)) rewritten.set(i, tidy(kept))
+    if (b.type === 'prose' && found.some(f => f.absorbed)) rewritten.set(i, tidy(kept))
   })
 
   return blocks.flatMap<RenderBlock>((b, i) => {

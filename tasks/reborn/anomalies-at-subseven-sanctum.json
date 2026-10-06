@@ -1,0 +1,26 @@
+[
+  {
+    "id": "danielle-sanctum-quest",
+    "kind": "quest",
+    "title": "Accept Danielle's Subseven Sanctum quest",
+    "match": "Accept Danielle's quest. Make your way to"
+  },
+  {
+    "id": "palkia",
+    "kind": "catch",
+    "title": "Catch Palkia at Subseven Sanctum",
+    "match": "Afterwards, you can catch **Palkia**!",
+    "species": [
+      "PALKIA"
+    ]
+  },
+  {
+    "id": "dialga",
+    "kind": "catch",
+    "title": "Catch Dialga at Subseven Sanctum",
+    "match": "Catch **Dialga** once you win!",
+    "species": [
+      "DIALGA"
+    ]
+  }
+]

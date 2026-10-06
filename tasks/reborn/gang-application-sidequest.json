@@ -1,0 +1,20 @@
+[
+  {
+    "id": "oshawott",
+    "kind": "catch",
+    "title": "Obtain Oshawott from Magma Gang",
+    "match": "Note that if you haven't fixed the slums",
+    "species": [
+      "OSHAWOTT"
+    ]
+  },
+  {
+    "id": "litten",
+    "kind": "catch",
+    "title": "Obtain Litten from Aqua Gang",
+    "match": "For completing this quest, you'll be given",
+    "species": [
+      "LITTEN"
+    ]
+  }
+]

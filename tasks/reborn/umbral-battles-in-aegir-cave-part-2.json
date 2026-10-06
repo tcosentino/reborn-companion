@@ -1,0 +1,22 @@
+[
+  {
+    "id": "kyogre-or-groudon-1",
+    "kind": "catch",
+    "title": "Catch Kyogre or Groudon (route dependent)",
+    "match": "Once you win, you can catch **Kyogre**/**Groudon**,",
+    "species": [
+      "KYOGRE",
+      "GROUDON"
+    ]
+  },
+  {
+    "id": "groudon-or-kyogre-2",
+    "kind": "catch",
+    "title": "Catch the other legendary (route dependent)",
+    "match": "Head into the New World via surfing up the",
+    "species": [
+      "KYOGRE",
+      "GROUDON"
+    ]
+  }
+]

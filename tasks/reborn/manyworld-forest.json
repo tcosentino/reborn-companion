@@ -1,0 +1,11 @@
+[
+  {
+    "id": "celebi-obtain",
+    "kind": "catch",
+    "title": "Obtain Celebi after time travel quest",
+    "match": "Talk to Shelly once you're done here. You'll",
+    "species": [
+      "CELEBI"
+    ]
+  }
+]

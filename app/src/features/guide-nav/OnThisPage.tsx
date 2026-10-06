@@ -3,7 +3,7 @@ import { flashAnchor } from '../../components/palette/anchorScroll'
 import type { PageItem, PageKind } from '../../lib/guideNav'
 import './guide-nav.css'
 
-const KIND_LABEL: Record<PageKind, string> = { battle: 'VS', encounters: 'Wild', shop: 'Shop', tutor: 'Tutor' }
+const KIND_LABEL: Record<PageKind, string> = { battle: 'VS', encounters: 'Wild', shop: 'Shop', tutor: 'Tutor', task: 'Task' }
 
 // Sticky "On this page" dropdown: jump to any battle, encounter table, shop or tutor in the section
 export const OnThisPage = ({ items, current }: { items: PageItem[]; current: string | null }) => {

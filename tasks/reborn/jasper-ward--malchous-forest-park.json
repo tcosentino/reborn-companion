@@ -1,0 +1,32 @@
+[
+  {
+    "id": "emolga-clear-day",
+    "kind": "catch",
+    "title": "Catch Emolga on clear morning or day",
+    "match": "Exit through the top right, where you'll",
+    "species": [
+      "EMOLGA"
+    ]
+  },
+  {
+    "id": "forest-park-egg",
+    "kind": "catch",
+    "title": "Obtain egg from forest",
+    "match": "Down from here you'll find some stairs leading",
+    "species": [
+      "DEERLING",
+      "SKIDDO",
+      "GIRAFARIG",
+      "NINCADA"
+    ]
+  },
+  {
+    "id": "mareep-snax",
+    "kind": "catch",
+    "title": "Obtain Mareep with PokeSnax",
+    "match": "Outside, you can now grab a *Paralyze Heal*",
+    "species": [
+      "MAREEP"
+    ]
+  }
+]

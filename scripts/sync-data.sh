@@ -3,6 +3,8 @@
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 GAME="${1:-reborn}"
+# Split curated walkthrough tasks (tasks/<game>/) out of the prose first, so battles.json lists them
+node --no-warnings "$ROOT/scripts/apply-tasks.ts" "$GAME"
 node --no-warnings "$ROOT/scripts/build-search.ts" "$GAME"
 rm -rf "$ROOT/app/public/data/$GAME"
 mkdir -p "$ROOT/app/public/data"

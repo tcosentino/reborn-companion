@@ -1,0 +1,20 @@
+[
+  {
+    "id": "numel-snax-rain",
+    "kind": "catch",
+    "title": "Obtain Numel with PokeSnax in rain",
+    "match": "Head nearby the train station in Lower Peridot.",
+    "species": [
+      "NUMEL"
+    ]
+  },
+  {
+    "id": "onix-hiker-quest",
+    "kind": "catch",
+    "title": "Follow hiker to obtain Onix",
+    "match": "Nearby you'll find a hiker. Talk to him,",
+    "species": [
+      "ONIX"
+    ]
+  }
+]

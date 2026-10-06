@@ -1,0 +1,11 @@
+[
+  {
+    "id": "volcanion",
+    "kind": "catch",
+    "title": "Catch Volcanion after anomaly battle",
+    "match": "After winning, you'll be able to fight **Volcanion**.",
+    "species": [
+      "VOLCANION"
+    ]
+  }
+]

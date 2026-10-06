@@ -1,0 +1,20 @@
+[
+  {
+    "id": "litten-basculin-trade",
+    "kind": "catch",
+    "title": "Trade Basculin for Litten (Magma)",
+    "match": "Back in Agate City, starting at the Pokemon",
+    "species": [
+      "LITTEN"
+    ]
+  },
+  {
+    "id": "oshawott-oranguru-trade",
+    "kind": "catch",
+    "title": "Trade Oranguru for Oshawott (Aqua)",
+    "match": "We'll come back to the next house up and",
+    "species": [
+      "OSHAWOTT"
+    ]
+  }
+]

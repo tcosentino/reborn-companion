@@ -1,0 +1,11 @@
+[
+  {
+    "id": "froakie-pokedex",
+    "kind": "catch",
+    "title": "Get Froakie at 200+ caught Pokemon",
+    "match": "|Pokemon Caught |Reward         |\n|-----",
+    "species": [
+      "FROAKIE"
+    ]
+  }
+]

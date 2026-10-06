@@ -1,0 +1,53 @@
+[
+  {
+    "id": "timburr-tile-puzzle",
+    "kind": "catch",
+    "title": "Win Timburr from tile puzzle",
+    "match": "Once you win, you'll get a **Timburr**!",
+    "species": [
+      "TIMBURR"
+    ]
+  },
+  {
+    "id": "clefairy-high-striker",
+    "kind": "catch",
+    "title": "Win Clefairy from High Striker",
+    "match": "|High Striker Reward  |Chance |\n|---------------",
+    "species": [
+      "CLEFAIRY"
+    ]
+  },
+  {
+    "id": "poke-doll-field-readout",
+    "kind": "quest",
+    "title": "Give Poke Doll for Big Top Field Readout",
+    "match": "Once you get a Poke Doll, give it to a child"
+  },
+  {
+    "id": "shoal-shell-bell",
+    "kind": "quest",
+    "title": "Trade 4 Shoal Salts and 4 Shells for Bell",
+    "match": "Enter the gate on the right side that we"
+  },
+  {
+    "id": "vulpix-stunfisk-trade",
+    "kind": "catch",
+    "title": "Trade Stunfisk for Vulpix",
+    "match": "Enter the gate on the right side that we",
+    "species": [
+      "VULPIX"
+    ]
+  },
+  {
+    "id": "powder-vial-aya",
+    "kind": "item",
+    "title": "Obtain Powder Vial from Aya",
+    "match": "Head in to the Big Top, and talk to Aya on"
+  },
+  {
+    "id": "give-items-sticker",
+    "kind": "quest",
+    "title": "Give 3 items to child for Clefairy Sticker",
+    "match": "Make your way to the bottom left of the circus,"
+  }
+]

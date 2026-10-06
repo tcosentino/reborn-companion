@@ -101,7 +101,7 @@ bash scripts/sync-data.sh       # builds search.json, then out/json/reborn/ -> a
 cd app && yarn && yarn dev      # http://localhost:5174/#/reborn/obsidia-ward
 ```
 
-`sync-data.sh` runs `node scripts/build-search.ts` (Node >= 23.6, native TS type stripping) to write `out/json/<game>/search.json`, the compact index behind the Cmd+K palette (`app/src/components/palette/`). Palette deep links use `#/<game>/<section>/<anchor>`, where the anchor is a block id such as `battle-<teamIds>`, `enc-<slug>`, `shop-<slug>` or `tutor-<slug>`. The same script writes `battles.json` (each section's non-partner battle ids and labels, about 12 KB gzipped), which drives whole-guide progress without loading every chapter.
+`sync-data.sh` runs `node scripts/build-search.ts` (Node >= 23.6, native TS type stripping) to write `out/json/<game>/search.json`, the compact index behind the Cmd+K palette (`app/src/components/palette/`). Palette deep links use `#/<game>/<section>/<anchor>`, where the anchor is a block id such as `battle-<teamIds>`, `enc-<slug>`, `shop-<slug>` or `tutor-<slug>`. The same script writes `battles.json` (each section's non-partner battle ids and labels, about 12 KB gzipped), which drives whole-guide progress without loading every chapter. It also lists each section's walkthrough tasks under `t` (see "Walkthrough tasks").
 
 Tests: `bash scripts/test.sh` (override unit tests, generator golden + JSON tests) and `cd app && yarn test`.
 
@@ -132,6 +132,15 @@ Lives in `app/src/features/guide-nav/` with pure logic in `app/src/lib/guideNav.
 - **Hide defeated**: collapses beaten trainer cards to their header row (`pokeguide:<game>:prefs`).
 - **Catch here**: a header chip, "N species here, M not caught", expands into the section's wild species (deduplicated, sorted by tier then new-to-dex) with one-tap caught toggles. "Last listed here" flags species that no later encounter table or walkthrough mention lists (evolutions and unlisted gifts are not considered).
 - **Phone bottom bar** (under 860px): Contents, previous/next section, Search, and a center button that jumps to the next unbeaten trainer, or marks it beaten once it is on screen. It replaces the floating Contents and search buttons.
+
+## Walkthrough tasks
+
+Optional catches, side quests and notable NPC items that the guide only mentions in prose ("talk to the northernmost dumpster to catch Gulpin") render as checkable task cards and count toward progress.
+
+- **Source**: `tasks/<game>/<section-id>.json`, one array per section of `{ id, kind, title, match, species? }`. `kind` is `catch`, `quest` or `item`; `match` is the verbatim start of the paragraph the task covers; `species` (catch only) holds dex SYMs. The Reborn set (297 tasks in 128 sections) was drafted by Haiku subagents reading each section's prose, then validated against the data (paragraph snapping, species lookup). Edit these files by hand.
+- **Build**: `sync-data.sh` runs `scripts/apply-tasks.ts` first, which lifts each matched paragraph out of its prose block into a `task` block (`app/src/lib/tasks.ts`). It is idempotent (earlier splits are undone first) and fails when a `match` finds no paragraph, two different matches overlap, or a file names an unknown section. Several tasks can share one paragraph by using the identical `match`; the first card carries the text.
+- **Progress**: ticks live in the normal `progress` checklist as `task:<section>/<id>`, so never rename a task `id`. `battles.json` lists them under `t` (parallel to `s`), the progress-id baseline guards them, and the sidebar, section hero ("tasks done") and On this page counts include them. "Jump to my spot" and the bottom bar still follow battles only. Ticking a catch task also marks its species caught (unticking leaves caught alone).
+- **Card**: `app/src/components/blocks/Task.tsx`, anchor `task-<id>`. Hide defeated also collapses done tasks.
 
 ## Keeping progress safe
 

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "seacrest-tabula-quest",
+    "kind": "quest",
+    "title": "Accept Seacrest's Tabula Rasa quest",
+    "match": "Talk to Seacrest in the Nightclub and accept"
+  },
+  {
+    "id": "tapu-koko",
+    "kind": "catch",
+    "title": "Catch Tapu Koko on Electric Terrain",
+    "match": "Catch **Tapu Koko** once you win!",
+    "species": [
+      "TAPUKOKO"
+    ]
+  },
+  {
+    "id": "tapu-fini",
+    "kind": "catch",
+    "title": "Catch Tapu Fini on Misty Terrain",
+    "match": "A decent team on a not-too-terrifying Field.",
+    "species": [
+      "TAPUFINI"
+    ]
+  },
+  {
+    "id": "tapu-bulu",
+    "kind": "catch",
+    "title": "Catch Tapu Bulu on Grassy Terrain",
+    "match": "Gengar likes to use Sludge Wave, transforming",
+    "species": [
+      "TAPUBULU"
+    ]
+  },
+  {
+    "id": "tapu-lele",
+    "kind": "catch",
+    "title": "Catch Tapu Lele on Psychic Terrain",
+    "match": "Catch **Tapu Lele** once you're done, then",
+    "species": [
+      "TAPULELE"
+    ]
+  }
+]

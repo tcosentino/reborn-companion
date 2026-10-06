@@ -1,0 +1,29 @@
+[
+  {
+    "id": "buizel-magma-route",
+    "kind": "catch",
+    "title": "Catch Buizel from Ms. Craudburry's house (Magma route)",
+    "match": "Make your way to the shack to the right of the flower shop in Lapis Ward. Talk to Maxwell here. Then",
+    "species": [
+      "BUIZEL"
+    ]
+  },
+  {
+    "id": "ponyta-aqua-route",
+    "kind": "catch",
+    "title": "Catch Ponyta from Ms. Craudburry's house (Aqua route)",
+    "match": "Anyways, make your way to Ms. Craudburry's",
+    "species": [
+      "PONYTA"
+    ]
+  },
+  {
+    "id": "zorua-rooftop-encounters",
+    "kind": "catch",
+    "title": "Catch Zorua from three rooftop locations",
+    "match": "Now that we have our fancy bicycle, we can",
+    "species": [
+      "ZORUA"
+    ]
+  }
+]

@@ -22,6 +22,18 @@
         "5199"
       ],
       "port": 5199
+    },
+    {
+      "name": "app-scratch-2",
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": [
+        "--cwd",
+        "app",
+        "dev",
+        "--port",
+        "5201"
+      ],
+      "port": 5201
     }
   ]
 }

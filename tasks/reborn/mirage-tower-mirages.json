@@ -1,0 +1,23 @@
+[
+  {
+    "id": "solganium-z",
+    "kind": "item",
+    "title": "Obtain Solganium-Z from puzzle",
+    "match": "You can also get the *Solganium-Z* here."
+  },
+  {
+    "id": "latiasite-latiosite",
+    "kind": "item",
+    "title": "Obtain Latiasite and Latiosite",
+    "match": "Once you succeed, you'll get the *Latiasite*"
+  },
+  {
+    "id": "hooh",
+    "kind": "catch",
+    "title": "Catch Ho-oh",
+    "match": "Afterwards, you'll be able to catch **Ho-oh**,",
+    "species": [
+      "HOOH"
+    ]
+  }
+]

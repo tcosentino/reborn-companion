@@ -1,0 +1,23 @@
+[
+  {
+    "id": "marshadium-z",
+    "kind": "item",
+    "title": "Obtain Marshadium-Z from puzzle",
+    "match": "The second room introduces a new wrinkle"
+  },
+  {
+    "id": "lustrous-adamant-orbs",
+    "kind": "item",
+    "title": "Obtain Lustrous and Adamant Orbs",
+    "match": "With that taken care of, use the only available"
+  },
+  {
+    "id": "giratina",
+    "kind": "catch",
+    "title": "Catch Giratina",
+    "match": "Catch **Giratina** next.",
+    "species": [
+      "GIRATINA"
+    ]
+  }
+]

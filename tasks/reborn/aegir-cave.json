@@ -1,0 +1,14 @@
+[
+  {
+    "id": "randall-aegir-quest",
+    "kind": "quest",
+    "title": "Accept Randall's quest for Aegir Cave",
+    "match": "Talk to Randall in the Nightclub, and accept"
+  },
+  {
+    "id": "bennett-ingredients",
+    "kind": "quest",
+    "title": "Gather 7 ingredients for Bennett",
+    "match": "Head to the left and talk to Bennett and"
+  }
+]

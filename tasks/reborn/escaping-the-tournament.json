@@ -1,0 +1,14 @@
+[
+  {
+    "id": "choice-scarf",
+    "kind": "item",
+    "title": "Get Choice Scarf",
+    "match": "Some routes have a scene that plays here."
+  },
+  {
+    "id": "spirit-tracker",
+    "kind": "item",
+    "title": "Get Spirit Tracker",
+    "match": "Fly back to Victory Road. Inside the Pokemon"
+  }
+]

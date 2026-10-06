@@ -1,0 +1,11 @@
+[
+  {
+    "id": "torchic-egg",
+    "kind": "catch",
+    "title": "Get Torchic egg from Murmina",
+    "match": "Follow the path from here and grab the *Charizardite",
+    "species": [
+      "TORCHIC"
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "id": "gible",
+    "kind": "catch",
+    "title": "Catch Gible in Sugiline Ruin",
+    "match": "You can also interact with the basins around",
+    "species": [
+      "GIBLE"
+    ]
+  }
+]
