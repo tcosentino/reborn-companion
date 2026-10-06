@@ -3,7 +3,7 @@ import { mkdirSync, mkdtempSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { test } from 'node:test'
-import { costOf, merge, report, scan, transcriptDirs, type Row } from './token-usage.ts'
+import { costOf, costParts, merge, report, scan, transcriptDirs, type Row } from './token-usage.ts'
 
 const ROOT = '/Users/me/repo'
 const S1 = '11111111-1111-1111-1111-111111111111'
@@ -22,6 +22,13 @@ test('costOf strips date suffixes, doubles fast mode and returns undefined for u
   assert.equal(costOf('claude-haiku-4-5-20251001', { input_tokens: 1e6 }), 1)
   assert.equal(costOf('claude-opus-5-5', { output_tokens: 1e6, speed: 'fast' }), 40)
   assert.equal(costOf('claude-mystery', { input_tokens: 1 }), undefined)
+})
+
+test('costParts splits a response into output, cache read and cache write cost', () => {
+  const c = costParts('claude-opus-5-5', { input_tokens: 1e6, output_tokens: 1e6, cache_read_input_tokens: 1e6,
+    cache_creation_input_tokens: 2e6, cache_creation: { ephemeral_1h_input_tokens: 1e6, ephemeral_5m_input_tokens: 1e6 } })!
+  const rounded = Object.fromEntries(Object.entries(c).map(([k, v]) => [k, Number(v.toFixed(6))]))
+  assert.deepEqual(rounded, { input: 4, output: 20, cacheRead: 0.2, cacheWrite: 13, web: 0 })
 })
 
 test('transcriptDirs picks the repo, its subdirs and worktrees but not sibling repos', () => {
@@ -48,14 +55,17 @@ test('scan dedupes repeated request ids, bills subagents to the parent and reads
   assert.equal(opus.requests, 2)
   assert.equal(opus.output, 200)
   assert.equal(opus.title, 'Do things')
+  assert.equal(opus.subagent, undefined)
+  assert.equal(opus.costOutput.toFixed(4), '0.0040')
   const haiku = rows.find(r => r.model.startsWith('claude-haiku'))!
   assert.equal(haiku.session, S1)
   assert.equal(haiku.source, 'main')
+  assert.equal(haiku.subagent, true)
 })
 
 const row = (session: string, costUSD: number, title = ''): Row => ({
   session, title, source: 'main', day: '2026-10-05', model: 'claude-opus-5-5', requests: 1, input: 0, output: 0,
-  cacheRead: 0, cacheWrite5m: 0, cacheWrite1h: 0, webSearches: 0, costUSD
+  cacheRead: 0, cacheWrite5m: 0, cacheWrite1h: 0, webSearches: 0, costUSD, costOutput: costUSD, costCacheRead: 0, costCacheWrite: 0
 })
 
 test('merge keeps sessions whose transcripts are gone and replaces live ones', () => {
@@ -68,4 +78,6 @@ test('report totals and running cost', () => {
   const md = report({ updated: 'now', unpricedModels: [], rows: [row(S1, 1.5), { ...row(S2, 2), day: '2026-10-06' }] })
   assert.match(md, /\*\*\$3\.50\*\* across \*\*2\*\* sessions/)
   assert.match(md, /\| 2026-10-06 \| \$2\.00 \| \$3\.50 \|/)
+  assert.match(md, /\| Output \| \$3\.50 \| 100% \|/)
+  assert.match(md, /\| main thread \|/)
 })

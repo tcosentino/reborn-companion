@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { chats, days, modelLabel, totals, usd, type UsageRow } from './usage'
+import { chats, costSplit, days, threads, modelLabel, totals, usd, type UsageRow } from './usage'
 
 const row = (session: string, day: string, model: string, costUSD: number, title = ''): UsageRow => ({
   session, title, source: 'main', day, model, requests: 2, input: 1, output: 10, cacheRead: 100,
@@ -31,6 +31,25 @@ describe('usage', () => {
       { day: '2026-10-05', costUSD: 3, cumulativeUSD: 3 },
       { day: '2026-10-06', costUSD: 0.5, cumulativeUSD: 3.5 }
     ])
+  })
+
+  it('averages main-thread context per chat and sums subagent cost', () => {
+    const sub = { ...row('a', '2026-10-05', 'claude-haiku-4-5-20251001', 0.25), subagent: true as const, cacheRead: 9000 }
+    const a = chats([...rows, sub]).find(c => c.session === 'a')!
+    expect(a.subagentUSD).toBe(0.25)
+    expect(a.avgContext).toBe(53)
+  })
+
+  it('splits main thread from subagents', () => {
+    const t = threads([...rows, { ...row('a', '2026-10-05', 'claude-sonnet-5-5', 1), subagent: true }])
+    expect(t.main).toMatchObject({ costUSD: 3.5, requests: 6, avgContext: 53 })
+    expect(t.subagents).toMatchObject({ costUSD: 1, requests: 2 })
+    expect(threads(rows).subagents.avgContext).toBe(0)
+  })
+
+  it('splits cost by component, putting unsplit rows in other', () => {
+    const split = costSplit([...rows, { ...row('c', '2026-10-06', 'claude-opus-5-5', 4), costOutput: 1, costCacheRead: 2, costCacheWrite: 0.5 }])
+    expect(split).toEqual({ cacheRead: 2, cacheWrite: 0.5, output: 1, other: 4 })
   })
 
   it('totals and formats', () => {

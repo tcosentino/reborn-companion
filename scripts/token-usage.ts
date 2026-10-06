@@ -38,35 +38,54 @@ export interface Tally {
   cacheWrite1h: number
   webSearches: number
   costUSD: number
+  /** costUSD split by what was billed; input and web search make up the remainder */
+  costOutput: number
+  costCacheRead: number
+  costCacheWrite: number
 }
 
-/** One session's usage on one UTC day for one model. */
+/** One session's usage on one UTC day for one model, main thread or subagents. */
 export interface Row extends Tally {
   session: string
   title: string
   source: string
   day: string
   model: string
+  /** Set on rows tallied from subagent transcripts (billed to the parent session) */
+  subagent?: true
 }
 
 export interface Ledger { updated: string; unpricedModels: string[]; rows: Row[] }
 
 const emptyTally = (): Tally =>
-  ({ requests: 0, input: 0, output: 0, cacheRead: 0, cacheWrite5m: 0, cacheWrite1h: 0, webSearches: 0, costUSD: 0 })
+  ({ requests: 0, input: 0, output: 0, cacheRead: 0, cacheWrite5m: 0, cacheWrite1h: 0, webSearches: 0, costUSD: 0,
+    costOutput: 0, costCacheRead: 0, costCacheWrite: 0 })
 
 export const priceFor = (model: string): Price | undefined =>
   PRICES[model] ?? PRICES[model.replace(/-\d{8}$/, '')]
 
-/** Cost of one API response's usage block, or undefined for an unknown model. */
-export const costOf = (model: string, u: any): number | undefined => {
+export interface CostParts { input: number; output: number; cacheRead: number; cacheWrite: number; web: number }
+
+/** USD cost of one API response's usage block by component, or undefined for an unknown model. */
+export const costParts = (model: string, u: any): CostParts | undefined => {
   const p = priceFor(model)
   if (!p) return undefined
-  const fast = u.speed === 'fast' ? 2 : 1
+  const k = (u.speed === 'fast' ? 2 : 1) / 1e6
   const w1h = u.cache_creation?.ephemeral_1h_input_tokens ?? 0
   const w5m = u.cache_creation?.ephemeral_5m_input_tokens ?? (u.cache_creation_input_tokens ?? 0) - w1h
-  const tokens = (u.input_tokens ?? 0) * p.input + (u.output_tokens ?? 0) * p.output +
-    (u.cache_read_input_tokens ?? 0) * p.cacheRead + w5m * p.input * 1.25 + w1h * p.input * 2
-  return (tokens * fast) / 1e6 + (u.server_tool_use?.web_search_requests ?? 0) * WEB_SEARCH_USD
+  return {
+    input: (u.input_tokens ?? 0) * p.input * k,
+    output: (u.output_tokens ?? 0) * p.output * k,
+    cacheRead: (u.cache_read_input_tokens ?? 0) * p.cacheRead * k,
+    cacheWrite: (w5m * 1.25 + w1h * 2) * p.input * k,
+    web: (u.server_tool_use?.web_search_requests ?? 0) * WEB_SEARCH_USD
+  }
+}
+
+/** Cost of one API response's usage block, or undefined for an unknown model. */
+export const costOf = (model: string, u: any): number | undefined => {
+  const c = costParts(model, u)
+  return c && c.input + c.output + c.cacheRead + c.cacheWrite + c.web
 }
 
 /** Transcript directories belonging to this repo: the repo itself, its subdirs (upstream/) and agent worktrees. */
@@ -136,9 +155,9 @@ export const scan = (dirs: string[], root: string): { rows: Row[]; unpriced: Set
       const session = sub ? fileSession : (e.sessionId ?? fileSession)
       const model = e.message.model
       const day = (e.timestamp ?? '').slice(0, 10)
-      const id = `${session}|${day}|${model}`
-      const row = buckets.get(id) ??
-        { session, title: '', source: sourceOf(dir, root), day, model, ...emptyTally() }
+      const id = `${session}|${day}|${model}|${sub ? 'sub' : ''}`
+      const row: Row = buckets.get(id) ??
+        { session, title: '', source: sourceOf(dir, root), day, model, ...(sub ? { subagent: true } : {}), ...emptyTally() }
       const w1h = u.cache_creation?.ephemeral_1h_input_tokens ?? 0
       row.requests++
       row.input += u.input_tokens ?? 0
@@ -147,9 +166,14 @@ export const scan = (dirs: string[], root: string): { rows: Row[]; unpriced: Set
       row.cacheWrite1h += w1h
       row.cacheWrite5m += (u.cache_creation_input_tokens ?? 0) - w1h
       row.webSearches += u.server_tool_use?.web_search_requests ?? 0
-      const cost = costOf(model, u)
-      if (cost === undefined) unpriced.add(model)
-      else row.costUSD += cost
+      const c = costParts(model, u)
+      if (!c) unpriced.add(model)
+      else {
+        row.costUSD += c.input + c.output + c.cacheRead + c.cacheWrite + c.web
+        row.costOutput += c.output
+        row.costCacheRead += c.cacheRead
+        row.costCacheWrite += c.cacheWrite
+      }
       buckets.set(id, row)
     }
   }
@@ -164,14 +188,16 @@ export const merge = (prev: Row[], next: Row[]): Row[] => {
   return [
     ...prev.filter(r => !live.has(r.session)),
     ...next.map(r => ({ ...r, title: r.title || prevTitles.get(r.session) || '' }))
-  ].sort((a, b) => a.day.localeCompare(b.day) || a.session.localeCompare(b.session) || a.model.localeCompare(b.model))
+  ].sort((a, b) => a.day.localeCompare(b.day) || a.session.localeCompare(b.session) || a.model.localeCompare(b.model) ||
+    Number(!!a.subagent) - Number(!!b.subagent))
 }
 
 const add = (a: Tally, b: Tally): Tally => ({
   requests: a.requests + b.requests, input: a.input + b.input, output: a.output + b.output,
   cacheRead: a.cacheRead + b.cacheRead, cacheWrite5m: a.cacheWrite5m + b.cacheWrite5m,
   cacheWrite1h: a.cacheWrite1h + b.cacheWrite1h, webSearches: a.webSearches + b.webSearches,
-  costUSD: a.costUSD + b.costUSD
+  costUSD: a.costUSD + b.costUSD, costOutput: (a.costOutput ?? 0) + (b.costOutput ?? 0),
+  costCacheRead: (a.costCacheRead ?? 0) + (b.costCacheRead ?? 0), costCacheWrite: (a.costCacheWrite ?? 0) + (b.costCacheWrite ?? 0)
 })
 
 const groupBy = (rows: Row[], key: (r: Row) => string): [string, Tally][] => {
@@ -204,6 +230,9 @@ export const report = (ledger: Ledger): string => {
   const days = groupBy(rows, r => r.day).sort((a, b) => a[0].localeCompare(b[0]))
   const models = groupBy(rows, r => r.model).sort((a, b) => b[1].costUSD - a[1].costUSD)
   const sources = groupBy(rows, r => r.source).sort((a, b) => b[1].costUSD - a[1].costUSD)
+  const threads = groupBy(rows, r => r.subagent ? 'subagents' : 'main thread').sort((a, b) => b[1].costUSD - a[1].costUSD)
+  const pct = (x: number) => `${total.costUSD ? Math.round((x / total.costUSD) * 100) : 0}%`
+  const other = total.costUSD - total.costOutput - total.costCacheRead - total.costCacheWrite
   const titleOf = new Map(rows.map(r => [r.session, r.title]))
   const dayOf = new Map<string, string>()
   for (const r of rows) if (!dayOf.has(r.session)) dayOf.set(r.session, r.day)
@@ -222,6 +251,19 @@ export const report = (ledger: Ledger): string => {
     `**${usd(total.costUSD)}** across **${sessions}** sessions, **${n(total.requests)}** API requests, **${n(totalTokens(total))}** tokens ` +
       `(${n(total.output)} output, ${n(total.cacheRead)} cache reads).`,
     ...(ledger.unpricedModels.length ? ['', `Unpriced models (tokens counted, cost excluded): ${ledger.unpricedModels.join(', ')}`] : []),
+    '',
+    '## Where the cost goes',
+    '',
+    '| Part | Est. cost | Share |',
+    '|---|--:|--:|',
+    `| Cache reads | ${usd(total.costCacheRead)} | ${pct(total.costCacheRead)} |`,
+    `| Cache writes | ${usd(total.costCacheWrite)} | ${pct(total.costCacheWrite)} |`,
+    `| Output | ${usd(total.costOutput)} | ${pct(total.costOutput)} |`,
+    `| Input and web search | ${usd(other)} | ${pct(other)} |`,
+    '',
+    '## By thread',
+    '',
+    table('Thread', threads),
     '',
     '## By model',
     '',
