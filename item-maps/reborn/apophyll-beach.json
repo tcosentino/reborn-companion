@@ -1,0 +1,104 @@
+[
+  {
+    "id": "wave-incense",
+    "match": "As soon as you enter, go straight left and weave between the hills",
+    "map": 16,
+    "title": "Wave Incense by the hills",
+    "items": [
+      { "event": 2 }
+    ]
+  },
+  {
+    "id": "beach-south",
+    "match": "Hidden along this part of the beach you can find a *Green Shard*",
+    "map": 18,
+    "title": "Hidden along the beach (south)",
+    "items": [
+      { "event": 20 },
+      { "event": 21 },
+      { "event": 15 },
+      { "event": 11 },
+      { "event": 10 },
+      { "event": 18 },
+      { "event": 19 },
+      { "event": 16 },
+      { "event": 14 },
+      { "event": 17 }
+    ]
+  },
+  {
+    "id": "beach-north",
+    "match": "Hidden along this part of the beach you can find a *Green Shard*",
+    "map": 15,
+    "title": "Hidden along the beach (north)",
+    "items": [
+      { "event": 6 },
+      { "event": 9 },
+      { "event": 10 },
+      { "event": 5 },
+      { "event": 7 }
+    ]
+  },
+  {
+    "id": "academy-outside",
+    "match": "You'll enter the Apophyll Academy map by going to the left at the top.",
+    "map": 17,
+    "title": "Around the academy",
+    "items": [
+      { "event": 45 },
+      { "event": 19 },
+      { "event": 46 },
+      { "event": 47 },
+      { "event": 14 }
+    ]
+  },
+  {
+    "id": "training-grounds",
+    "match": "You'll find hidden *Red Shard*, *Hyper Potion*, *Great Ball*",
+    "map": 16,
+    "title": "Training grounds",
+    "items": [
+      { "event": 27 },
+      { "event": 25 },
+      { "event": 1 },
+      { "event": 26 }
+    ]
+  },
+  {
+    "id": "western-beach-south",
+    "match": "On the western beach, you can find hidden items:",
+    "map": 20,
+    "title": "Western beach (lower)",
+    "items": [
+      { "event": 5 },
+      { "event": 10 },
+      { "event": 9 },
+      { "event": 8 },
+      { "event": 11 },
+      { "event": 12 }
+    ]
+  },
+  {
+    "id": "western-beach-north",
+    "match": "On the western beach, you can find hidden items:",
+    "map": 19,
+    "title": "Western beach (upper)",
+    "items": [
+      { "event": 11 },
+      { "event": 13 },
+      { "event": 12 },
+      { "event": 4 },
+      { "event": 14 },
+      { "event": 5 }
+    ]
+  },
+  {
+    "id": "academy-courtyard",
+    "match": "Pick up a hidden *Guard Spec*.",
+    "map": 17,
+    "title": "Academy courtyard",
+    "items": [
+      { "event": 44 }
+    ]
+  }
+]

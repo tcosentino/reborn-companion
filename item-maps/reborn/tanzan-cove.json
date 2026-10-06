@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tanzan-mountain",
+    "match": "On this map, you'll find hidden *X Speed*, *PokeSnax*, *Hyper Potion*",
+    "map": 231,
+    "title": "Tanzan Mountain",
+    "items": [
+      { "event": 73 },
+      { "event": 81 },
+      { "event": 24 },
+      { "event": 82 },
+      { "event": 85 },
+      { "event": 25 },
+      { "event": 83 },
+      { "event": 84 },
+      { "event": 87 },
+      { "event": 23 },
+      { "event": 86 },
+      { "event": 91 }
+    ]
+  },
+  {
+    "id": "tanzan-cove",
+    "match": "In this area you can find a hidden *Escape Rope*, *Green Shard*",
+    "map": 232,
+    "title": "Tanzan Cove",
+    "items": [
+      { "event": 2 },
+      { "event": 30 },
+      { "event": 31 },
+      { "event": 32 },
+      { "event": 33 },
+      { "event": 34 },
+      { "event": 36 },
+      { "event": 9 },
+      { "event": 35 }
+    ]
+  }
+]

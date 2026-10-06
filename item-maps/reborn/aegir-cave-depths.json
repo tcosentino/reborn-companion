@@ -1,0 +1,201 @@
+[
+  {
+    "id": "lake",
+    "match": "Grab a hidden *Rawst Berry*, then surf to the left",
+    "map": 860,
+    "title": "Aegir Cave Depths: the lake",
+    "items": [
+      {
+        "event": 75
+      }
+    ]
+  },
+  {
+    "id": "prison-bottle",
+    "match": "You can also climb the rightmost waterfall",
+    "map": 860,
+    "title": "Prison Bottle by the rightmost waterfall",
+    "items": [
+      {
+        "event": 144
+      }
+    ]
+  },
+  {
+    "id": "first-floor",
+    "match": "Grab the hidden *Dusk Ball*, *Fairy Gem*, *Max Potion*",
+    "map": 860,
+    "title": "Below the first waterfall",
+    "items": [
+      {
+        "event": 81
+      },
+      {
+        "event": 76
+      },
+      {
+        "event": 77
+      },
+      {
+        "event": 80
+      },
+      {
+        "event": 78
+      }
+    ]
+  },
+  {
+    "id": "ascent-floor-1",
+    "match": "This floor has a hidden *Rock Gem* and *Super Repel*.",
+    "map": 860,
+    "title": "Ascent: first ladder floor",
+    "items": [
+      {
+        "event": 85
+      },
+      {
+        "event": 83
+      }
+    ]
+  },
+  {
+    "id": "ascent-floor-2",
+    "match": "This floor has a hidden *Rock Gem* and *Super Repel*.",
+    "map": 860,
+    "title": "Ascent: second floor",
+    "items": [
+      {
+        "event": 86
+      }
+    ]
+  },
+  {
+    "id": "ascent-floor-3",
+    "match": "This floor has a hidden *Rock Gem* and *Super Repel*.",
+    "map": 860,
+    "title": "Ascent: third floor",
+    "items": [
+      {
+        "event": 69
+      },
+      {
+        "event": 90
+      },
+      {
+        "event": 93
+      }
+    ]
+  },
+  {
+    "id": "ascent-floor-4",
+    "match": "This floor has a hidden *Rock Gem* and *Super Repel*.",
+    "map": 860,
+    "title": "Ascent: top floor before the door",
+    "items": [
+      {
+        "event": 95
+      },
+      {
+        "event": 97
+      }
+    ]
+  },
+  {
+    "id": "descent-top",
+    "match": "You can get a hidden *Max Potion* and *Ultra Ball* on the top floor.",
+    "map": 860,
+    "title": "Descent: top floor",
+    "items": [
+      {
+        "event": 96
+      },
+      {
+        "event": 98
+      }
+    ]
+  },
+  {
+    "id": "descent-middle",
+    "match": "You can get a hidden *Max Potion* and *Ultra Ball* on the top floor.",
+    "map": 860,
+    "title": "Descent: next floor",
+    "items": [
+      {
+        "event": 94
+      },
+      {
+        "event": 92
+      },
+      {
+        "event": 91
+      }
+    ]
+  },
+  {
+    "id": "descent-great-ball",
+    "match": "You can get a hidden *Max Potion* and *Ultra Ball* on the top floor.",
+    "map": 860,
+    "title": "Descent: by the waterfall ladder",
+    "items": [
+      {
+        "event": 88
+      }
+    ]
+  },
+  {
+    "id": "zcell-29-up",
+    "match": "Climb back up and use the ladder on the other side of the waterfall",
+    "map": 860,
+    "title": "ZCell 29 area: upper floors",
+    "items": [
+      {
+        "event": 70
+      },
+      {
+        "event": 87
+      },
+      {
+        "event": 89
+      }
+    ]
+  },
+  {
+    "id": "zcell-29-lower",
+    "match": "Climb back up and use the ladder on the other side of the waterfall",
+    "map": 860,
+    "title": "ZCell 29 area: lower floors",
+    "items": [
+      {
+        "event": 82
+      },
+      {
+        "event": 84
+      }
+    ]
+  },
+  {
+    "id": "zcell-29-lowest",
+    "match": "Climb back up and use the ladder on the other side of the waterfall",
+    "map": 860,
+    "title": "ZCell 29 area: lowest level",
+    "items": [
+      {
+        "event": 79
+      }
+    ]
+  },
+  {
+    "id": "light-shard-room",
+    "match": "In the next room, use the Light Shard and grab the hidden",
+    "map": 860,
+    "title": "The room past the Light Shard",
+    "items": [
+      {
+        "event": 99
+      },
+      {
+        "event": 100
+      }
+    ]
+  }
+]

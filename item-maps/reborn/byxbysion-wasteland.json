@@ -1,0 +1,105 @@
+[
+  {
+    "id": "first-area",
+    "match": "In this first area you can find 2 hidden *Blue Shards*",
+    "map": 209,
+    "title": "Byxbysion Wasteland: the first area",
+    "items": [
+      { "event": 269 },
+      { "event": 272 },
+      { "event": 268 },
+      { "event": 238 },
+      { "event": 270 },
+      { "event": 271 }
+    ]
+  },
+  {
+    "id": "first-area-ledge",
+    "match": "In this first area you can find 2 hidden *Blue Shards*",
+    "map": 209,
+    "title": "Byxbysion Wasteland: the ledge and slide",
+    "items": [
+      { "event": 275 },
+      { "event": 276 },
+      { "event": 287 },
+      { "event": 286 }
+    ]
+  },
+  {
+    "id": "upper-platform",
+    "match": "Enter the building and emerge at the top. On this upper platform",
+    "map": 209,
+    "title": "Byxbysion Wasteland: the upper platform",
+    "items": [
+      { "event": 288 },
+      { "event": 292 },
+      { "event": 209 },
+      { "event": 293 },
+      { "event": 237 },
+      { "event": 291 }
+    ]
+  },
+  {
+    "id": "cotton-candy-cave",
+    "match": "Enter the building and emerge at the top. On this upper platform",
+    "map": 209,
+    "title": "Byxbysion Wasteland: out of the cave",
+    "items": [
+      { "event": 78 }
+    ]
+  },
+  {
+    "id": "right-slide",
+    "match": "Take the slide to the right now. You can find hidden *X Defend*",
+    "map": 209,
+    "title": "Byxbysion Wasteland: past the right slide",
+    "items": [
+      { "event": 303 },
+      { "event": 299 },
+      { "event": 42 },
+      { "event": 306 },
+      { "event": 301 },
+      { "event": 300 },
+      { "event": 304 },
+      { "event": 240 },
+      { "event": 305 },
+      { "event": 307 }
+    ]
+  },
+  {
+    "id": "right-slide-west",
+    "match": "Take the slide to the right now. You can find hidden *X Defend*",
+    "map": 209,
+    "title": "Byxbysion Wasteland: Black Sludge and the west ledge",
+    "items": [
+      { "event": 36 },
+      { "event": 295 },
+      { "event": 296 }
+    ]
+  },
+  {
+    "id": "lax-incense-slides",
+    "match": "Talk to the screen beyond them to unlock a door down and to the right.",
+    "map": 209,
+    "title": "Byxbysion Wasteland: down the slides",
+    "items": [
+      { "event": 38 },
+      { "event": 316 },
+      { "event": 314 },
+      { "event": 313 },
+      { "event": 241 }
+    ]
+  },
+  {
+    "id": "top-right",
+    "match": "In the top right corner of the area, you can find hidden *Ground Gem*",
+    "map": 209,
+    "title": "Byxbysion Wasteland: top right corner",
+    "items": [
+      { "event": 322 },
+      { "event": 324 },
+      { "event": 242 },
+      { "event": 325 }
+    ]
+  }
+]

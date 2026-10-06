@@ -1,0 +1,93 @@
+[
+  {
+    "id": "stairs-top",
+    "match": "You can find a hidden *Rock Gem* on the stairs.",
+    "map": 177,
+    "title": "Grand Stairway: first area",
+    "items": [
+      { "event": 6 }
+    ]
+  },
+  {
+    "id": "b1f-ghost-gem",
+    "match": "On this floor you'll find a hidden *Ghost Gem*.",
+    "map": 178,
+    "title": "B1F: Ghost Gem",
+    "items": [
+      { "event": 23 }
+    ]
+  },
+  {
+    "id": "b2f-first-ledges",
+    "match": "Pick up a hidden *Red Shard* and a *Dire Hit* to the right.",
+    "map": 179,
+    "title": "B2F: right of the entrance",
+    "items": [
+      { "event": 30 },
+      { "event": 13 },
+      { "event": 43 }
+    ]
+  },
+  {
+    "id": "b2f-right-path",
+    "match": "Down from here there are essentially four paths we can take",
+    "map": 179,
+    "title": "B2F: rightmost ledge path",
+    "items": [
+      { "event": 38 }
+    ]
+  },
+  {
+    "id": "b3f-star-piece",
+    "match": "Down from here there are essentially four paths we can take",
+    "map": 180,
+    "title": "B3F: next room",
+    "items": [
+      { "event": 27 }
+    ]
+  },
+  {
+    "id": "crystal-ladder-b2f",
+    "match": "Once you do so, you can grab the *Crystal Cavern Field Readout*.",
+    "map": 179,
+    "title": "B2F: up the ladder from the crystal room",
+    "items": [
+      { "event": 36 },
+      { "event": 46 },
+      { "event": 47 }
+    ]
+  },
+  {
+    "id": "crystal-ladder-b1f",
+    "match": "Once you do so, you can grab the *Crystal Cavern Field Readout*.",
+    "map": 178,
+    "title": "B1F: the next ladder up",
+    "items": [
+      { "event": 25 },
+      { "event": 26 },
+      { "event": 21 }
+    ]
+  },
+  {
+    "id": "left-ladder-b1f",
+    "match": "You'll notice that we're back on B1F, so head back down the ladder below",
+    "map": 178,
+    "title": "B1F: upstairs on the far left",
+    "items": [
+      { "event": 22 }
+    ]
+  },
+  {
+    "id": "second-path",
+    "match": "Head down to the sequence of ledges again.",
+    "map": 179,
+    "title": "B2F: second path from the left",
+    "items": [
+      { "event": 42 },
+      { "event": 23 },
+      { "event": 37 },
+      { "event": 39 },
+      { "event": 28 }
+    ]
+  }
+]

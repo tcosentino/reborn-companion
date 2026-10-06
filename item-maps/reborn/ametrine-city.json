@@ -1,0 +1,136 @@
+[
+  {
+    "id": "lower-east-forks",
+    "match": "Hidden here you'll find a *Purple Shard*, *Resist Wing*, *X Attack*, and *Ether*",
+    "map": 439,
+    "title": "Lower east: forks and cliffside",
+    "items": [
+      { "event": 53 },
+      { "event": 29 },
+      { "event": 54 },
+      { "event": 28 },
+      { "event": 56 },
+      { "event": 30 },
+      { "event": 27 },
+      { "event": 55 },
+      { "event": 31 }
+    ]
+  },
+  {
+    "id": "west-fork",
+    "match": "Head west at the next fork. You can get a hidden *Ether* around here.",
+    "map": 439,
+    "title": "West fork",
+    "items": [
+      { "event": 37 }
+    ]
+  },
+  {
+    "id": "south-city",
+    "match": "Back at the main village fork, go down. In the south side of the city",
+    "map": 439,
+    "title": "South side of the city",
+    "items": [
+      { "event": 32 },
+      { "event": 46 },
+      { "event": 51 },
+      { "event": 34 },
+      { "event": 50 },
+      { "event": 33 },
+      { "event": 167 },
+      { "event": 35 },
+      { "event": 52 },
+      { "event": 36 }
+    ]
+  },
+  {
+    "id": "mountain-6f",
+    "match": "Enter the secret passage and follow the path! On 6F you can find a hidden *Iron*.",
+    "map": 440,
+    "title": "Ametrine Mountain 6F",
+    "items": [
+      { "event": 3 }
+    ]
+  },
+  {
+    "id": "flying-gem",
+    "match": "Head outside and pick up the hidden *Flying Gem*.",
+    "map": 439,
+    "title": "Flying Gem outside",
+    "items": [
+      { "event": 74 }
+    ]
+  },
+  {
+    "id": "climb-west",
+    "match": "Grab a hidden *Red Shard*, *Dire Hit*, and *Repel* as you climb.",
+    "map": 439,
+    "title": "The climb up the west side",
+    "items": [
+      { "event": 57 },
+      { "event": 38 },
+      { "event": 39 },
+      { "event": 188 }
+    ]
+  },
+  {
+    "id": "red-hots",
+    "match": "Beat the grunts and continue. Pick up the hidden *Red-Hots* and *Swift Wing*",
+    "map": 439,
+    "title": "Past the grunts",
+    "items": [
+      { "event": 47 },
+      { "event": 40 }
+    ]
+  },
+  {
+    "id": "cliff-loop",
+    "match": "You'll see another fork, one path leading you around a narrow cliff",
+    "map": 439,
+    "title": "The cliff loop",
+    "items": [
+      { "event": 45 },
+      { "event": 191 }
+    ]
+  },
+  {
+    "id": "main-path",
+    "match": "Continue down the main path, picking up the hidden *Ice Heal*",
+    "map": 439,
+    "title": "Along the main path",
+    "items": [
+      { "event": 48 },
+      { "event": 41 },
+      { "event": 43 },
+      { "event": 42 }
+    ]
+  },
+  {
+    "id": "atop-7f",
+    "match": "Inside this cave you can get a hidden *PP Up* and an *Ultra Potion* upstairs.",
+    "map": 441,
+    "title": "Ametrine Mountain 7F",
+    "items": [
+      { "event": 3 }
+    ]
+  },
+  {
+    "id": "atop-8f",
+    "match": "Inside this cave you can get a hidden *PP Up* and an *Ultra Potion* upstairs.",
+    "map": 442,
+    "title": "Ametrine Mountain 8F",
+    "items": [
+      { "event": 3 }
+    ]
+  },
+  {
+    "id": "summit",
+    "match": "Emerge into the outside once more, pick up the *Common Candy* and *Shoal Shell*",
+    "map": 439,
+    "title": "Near the summit",
+    "items": [
+      { "event": 49 },
+      { "event": 160 }
+    ]
+  }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "id": "woods-8s-7s",
+    "match": "Inside, grab the hidden *Revive* then use the Honey tree (Q)",
+    "map": 284,
+    "title": "8S and 7S",
+    "items": [
+      { "event": 62 },
+      { "event": 64 }
+    ]
+  },
+  {
+    "id": "woods-1s",
+    "match": "Grab a hidden *Clever Wing* then go up the ledge and follow the path.",
+    "map": 283,
+    "title": "1S",
+    "items": [
+      { "event": 129 }
+    ]
+  },
+  {
+    "id": "woods-2s-max-repel",
+    "match": "Up the ledge to the right you'll find a hidden *Max Repel*.",
+    "map": 283,
+    "title": "2S: up the right ledge",
+    "items": [
+      { "event": 130 }
+    ]
+  },
+  {
+    "id": "woods-2s-3s-fork",
+    "match": "This time, go down at the first fork.",
+    "map": 283,
+    "title": "2S: down at the first fork, then 3S",
+    "items": [
+      { "event": 2 },
+      { "event": 128 },
+      { "event": 131 }
+    ]
+  },
+  {
+    "id": "woods-3s-purple-shard",
+    "match": "Go up the ledge at the bottom, use the Honey tree (K) and fight Pinsir.",
+    "map": 283,
+    "title": "3S: past tree K",
+    "items": [
+      { "event": 132 }
+    ]
+  },
+  {
+    "id": "woods-4s",
+    "match": "Anyways, lather the Honey tree closest to you (N) and fight Pinsir",
+    "map": 282,
+    "title": "4S",
+    "items": [
+      { "event": 129 },
+      { "event": 130 },
+      { "event": 128 }
+    ]
+  },
+  {
+    "id": "woods-3s-new-path",
+    "match": "Get a Tauros mount and reenter 3S, this time, going down",
+    "map": 282,
+    "title": "3S: the newly opened path",
+    "items": [
+      { "event": 137 },
+      { "event": 136 }
+    ]
+  },
+  {
+    "id": "woods-3s-right-path",
+    "match": "Follow the path to the right and up. You'll find a hidden *Purple Shard*",
+    "map": 282,
+    "title": "3S: right and up",
+    "items": [
+      { "event": 124 },
+      { "event": 127 }
+    ]
+  },
+  {
+    "id": "woods-3s-left-fork",
+    "match": "Follow the path to the right and up. You'll find a hidden *Purple Shard*",
+    "map": 282,
+    "title": "3S: left at the fork",
+    "items": [
+      { "event": 133 },
+      { "event": 126 },
+      { "event": 122 }
+    ]
+  },
+  {
+    "id": "woods-8s-fire-gem",
+    "match": "Grab the hidden *Fire Gem*. Down the ledge you'll finally see",
+    "map": 284,
+    "title": "Fire Gem and PP Up",
+    "items": [
+      { "event": 63 },
+      { "event": 60 }
+    ]
+  },
+  {
+    "id": "woods-8s-grass",
+    "match": "Here, you can grab a *Razor Claw* and *TM40 Aerial Ace*",
+    "map": 284,
+    "title": "The final grass patch",
+    "items": [
+      { "event": 68 },
+      { "event": 61 },
+      { "event": 69 }
+    ]
+  }
+]

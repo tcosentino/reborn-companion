@@ -1,0 +1,900 @@
+[
+  {
+    "id": "first-room",
+    "match": "In the first room, you can get a hidden *Hyper Potion*, *HP Up*, and *Big Nugget*.",
+    "map": 783,
+    "title": "First room",
+    "items": [
+      {
+        "event": 11
+      },
+      {
+        "event": 10
+      },
+      {
+        "event": 9
+      }
+    ]
+  },
+  {
+    "id": "hub-protein",
+    "match": "Head up the stairs to the right and pick up the hidden *Protein*.",
+    "map": 784,
+    "title": "Hub room: the stairs on the right",
+    "items": [
+      {
+        "event": 147
+      }
+    ]
+  },
+  {
+    "id": "puzzle1-room-outsides",
+    "match": "Around the outsides of this room, you can find a hidden *Ice Gem* and *Blue Shard*.",
+    "map": 785,
+    "title": "Around the first puzzle room",
+    "items": [
+      {
+        "event": 57
+      },
+      {
+        "event": 56
+      }
+    ]
+  },
+  {
+    "id": "puzzle1-x-sp-atk",
+    "match": "Once you finish, talk to Cal and show him the solution.",
+    "map": 785,
+    "title": "After the first puzzle",
+    "items": [
+      {
+        "event": 58
+      }
+    ]
+  },
+  {
+    "id": "mines-revive",
+    "match": "Jump into this minecart (1) to proceed to the main part of this room",
+    "map": 786,
+    "title": "Mines: Revive",
+    "items": [
+      {
+        "event": 104
+      }
+    ]
+  },
+  {
+    "id": "mines-super-repel",
+    "match": "- Jump into the minecart (3) towards the bottom left of the area.",
+    "map": 786,
+    "title": "Mines: Super Repel",
+    "items": [
+      {
+        "event": 105
+      }
+    ]
+  },
+  {
+    "id": "mines-tyranitarite",
+    "match": "- Jump into the lower minecart (11) to reach the next area.",
+    "map": 786,
+    "title": "Mines: Green Shard and Tyranitarite",
+    "items": [
+      {
+        "event": 106
+      },
+      {
+        "event": 110
+      }
+    ]
+  },
+  {
+    "id": "hub-synthetic-seed",
+    "match": "We'll be back in the main room from here.",
+    "map": 784,
+    "title": "Hub room: rocks on the way down",
+    "items": [
+      {
+        "event": 145
+      }
+    ]
+  },
+  {
+    "id": "hub-ultra-potion",
+    "match": "Follow the opened path downward, pushing a boulder one tile right",
+    "map": 784,
+    "title": "Hub room: bottom left",
+    "items": [
+      {
+        "event": 149
+      }
+    ]
+  },
+  {
+    "id": "pillar-calcium",
+    "match": "Talk to Charlotte, then head up. You can find a hidden *Calcium* here.",
+    "map": 788,
+    "title": "Charlotte's room: Calcium",
+    "items": [
+      {
+        "event": 57
+      }
+    ]
+  },
+  {
+    "id": "pillar-pp-all",
+    "match": "Go right and down from the map and follow this path (blue).",
+    "map": 788,
+    "title": "Charlotte's room: PP All",
+    "items": [
+      {
+        "event": 64
+      }
+    ]
+  },
+  {
+    "id": "pillar-blue-shard",
+    "match": "Up and left from the map, you'll see another rock climb path fork.",
+    "map": 788,
+    "title": "Charlotte's room: Blue Shard",
+    "items": [
+      {
+        "event": 59
+      }
+    ]
+  },
+  {
+    "id": "pillar-kommonium",
+    "match": "Back at the fork, go left (orange), picking up the hidden *Swift Wing*",
+    "map": 788,
+    "title": "Charlotte's room: Swift Wing and Kommonium-Z",
+    "items": [
+      {
+        "event": 58
+      },
+      {
+        "event": 65
+      }
+    ]
+  },
+  {
+    "id": "pillar-heart-scale",
+    "match": "Back at the fork, cross the tracks (red).",
+    "map": 788,
+    "title": "Charlotte's room: Heart Scale",
+    "items": [
+      {
+        "event": 60
+      }
+    ]
+  },
+  {
+    "id": "pillar-se-electric-gem",
+    "match": "- Push the nearby boulder up and out of the way. You can grab a hidden *Electric Gem*",
+    "map": 786,
+    "title": "Southeast basement",
+    "items": [
+      {
+        "event": 108
+      },
+      {
+        "event": 107
+      }
+    ]
+  },
+  {
+    "id": "pillar-sw-blue-shard",
+    "match": "In the bottom left, you can get a hidden *Blue Shard* by Rock Climb.",
+    "map": 784,
+    "title": "Southwest room: Blue Shard",
+    "items": [
+      {
+        "event": 146
+      }
+    ]
+  },
+  {
+    "id": "pillar-ne-max-repel",
+    "match": "- Jump in the cart and flip the nearby lever. Jump in the cart to the left.",
+    "map": 784,
+    "title": "Northeast room: Max Repel",
+    "items": [
+      {
+        "event": 148
+      }
+    ]
+  },
+  {
+    "id": "puzzle2-purple-shard",
+    "match": "Make your way down two rooms, to the large room where Icicles rained down.",
+    "map": 812,
+    "title": "Icicle room: Purple Shard",
+    "items": [
+      {
+        "event": 145
+      }
+    ]
+  },
+  {
+    "id": "puzzle2-room",
+    "match": "There is a hidden *Max Potion* and *Green Shard* in this room.",
+    "map": 789,
+    "title": "Second puzzle room",
+    "items": [
+      {
+        "event": 66
+      },
+      {
+        "event": 67
+      }
+    ]
+  },
+  {
+    "id": "puzzle2-muscle-wing",
+    "match": "Grab the hidden *Muscle Wing* in the bottom right corner",
+    "map": 789,
+    "title": "Second puzzle room: Muscle Wing",
+    "items": [
+      {
+        "event": 65
+      }
+    ]
+  },
+  {
+    "id": "arrow-room-path",
+    "match": "Grab the hidden *Muscle Wing* in the bottom right corner",
+    "map": 813,
+    "title": "Arrow room: along the boulder path",
+    "items": [
+      {
+        "event": 114
+      },
+      {
+        "event": 107
+      },
+      {
+        "event": 108
+      }
+    ]
+  },
+  {
+    "id": "arrow-room-green-shard",
+    "match": "You'll need to push boulders along the path into specific places",
+    "map": 813,
+    "title": "Arrow room: Green Shard",
+    "items": [
+      {
+        "event": 104
+      }
+    ]
+  },
+  {
+    "id": "rail-start",
+    "match": "Pick up the hidden *Red-Hots* and *Fire Gem* in this area.",
+    "map": 790,
+    "title": "Final rail puzzle: start",
+    "items": [
+      {
+        "event": 61
+      },
+      {
+        "event": 60
+      }
+    ]
+  },
+  {
+    "id": "rail-puzzle",
+    "match": "- Jump into the railcart on the bottom (1).",
+    "map": 790,
+    "title": "Final rail puzzle: Red Shards and PP Up",
+    "items": [
+      {
+        "event": 56
+      },
+      {
+        "event": 59
+      },
+      {
+        "event": 66
+      }
+    ]
+  },
+  {
+    "id": "gem-room-elemental-seed",
+    "match": "The next room I will call the \"central gem room\".",
+    "map": 791,
+    "title": "Central gem room: first visit",
+    "items": [
+      {
+        "event": 47
+      },
+      {
+        "event": 43
+      }
+    ]
+  },
+  {
+    "id": "sapphire-b3f-chewing-gum",
+    "match": "Grab the hidden *Chewing Gum*.",
+    "map": 800,
+    "title": "Sapphire B3F: Chewing Gum",
+    "items": [
+      {
+        "event": 47
+      }
+    ]
+  },
+  {
+    "id": "sapphire-b3f-cheri",
+    "match": "Use the Blue Crystal Key atop the central hill",
+    "map": 800,
+    "title": "Sapphire B3F: Cheri Berry",
+    "items": [
+      {
+        "event": 46
+      }
+    ]
+  },
+  {
+    "id": "emerald-b3f",
+    "match": "Pick up the hidden *Green Shard* and *Cotton Candy*",
+    "map": 801,
+    "title": "Emerald B3F",
+    "items": [
+      {
+        "event": 40
+      },
+      {
+        "event": 41
+      }
+    ]
+  },
+  {
+    "id": "gem-room-hyper-potion",
+    "match": "Grab a hidden *Hyper Potion*, then use Strength",
+    "map": 791,
+    "title": "Central gem room: Hyper Potion and Red Shard",
+    "items": [
+      {
+        "event": 46
+      },
+      {
+        "event": 44
+      }
+    ]
+  },
+  {
+    "id": "ruby-b3f-zinc",
+    "match": "Use the Red Crystal Key and follow the path. You can get a hidden *Zinc*",
+    "map": 799,
+    "title": "Ruby B3F: Zinc",
+    "items": [
+      {
+        "event": 40
+      }
+    ]
+  },
+  {
+    "id": "amethyst-b3f",
+    "match": "Grab the hidden *Telluric Seed* and *Fairy Gem*",
+    "map": 802,
+    "title": "Amethyst B3F",
+    "items": [
+      {
+        "event": 38
+      },
+      {
+        "event": 39
+      }
+    ]
+  },
+  {
+    "id": "gem-room-swift-wing",
+    "match": "Back in the central gem room, push the boulder into place",
+    "map": 791,
+    "title": "Central gem room: Swift Wing",
+    "items": [
+      {
+        "event": 45
+      }
+    ]
+  },
+  {
+    "id": "rail-final-items",
+    "match": "We're back in the room with the massive rail puzzle",
+    "map": 790,
+    "title": "Final rail room: back through the path",
+    "items": [
+      {
+        "event": 58
+      },
+      {
+        "event": 57
+      },
+      {
+        "event": 55
+      },
+      {
+        "event": 62
+      }
+    ]
+  },
+  {
+    "id": "arrow-room-upper-red-shard",
+    "match": "We'll find ourselves on an upper path of the room where Fern tried",
+    "map": 813,
+    "title": "Arrow room: upper path",
+    "items": [
+      {
+        "event": 103
+      }
+    ]
+  },
+  {
+    "id": "charous-ice-heal",
+    "match": "We'll find ourselves in Charous Mountain.",
+    "map": 792,
+    "title": "Charous Mountain: Ice Heal",
+    "items": [
+      {
+        "event": 89
+      }
+    ]
+  },
+  {
+    "id": "charous-2f",
+    "match": "Enter the next room and grab the hidden *Magical Seed*.",
+    "map": 793,
+    "title": "Charous Mountain 2F",
+    "items": [
+      {
+        "event": 85
+      },
+      {
+        "event": 84
+      },
+      {
+        "event": 29
+      }
+    ]
+  },
+  {
+    "id": "charous-elemental-seed",
+    "match": "Grab the hidden *Elemental Seed*. At the fork, go down",
+    "map": 792,
+    "title": "Charous Mountain: Elemental Seed and Calcium",
+    "items": [
+      {
+        "event": 87
+      },
+      {
+        "event": 88
+      }
+    ]
+  },
+  {
+    "id": "charous-max-ether",
+    "match": "Continue along the path from here. Grab the hidden *Max Ether*",
+    "map": 792,
+    "title": "Charous Mountain: Max Ether",
+    "items": [
+      {
+        "event": 86
+      }
+    ]
+  },
+  {
+    "id": "charous-path-ultra-potion",
+    "match": "Another mostly linear path. At the fork, go left",
+    "map": 794,
+    "title": "Charous Path: Ultra Potion",
+    "items": [
+      {
+        "event": 106
+      }
+    ]
+  },
+  {
+    "id": "charous-path-ultra-ball",
+    "match": "Back at the fork, go up and left. Grab a hidden *Ultra Ball*",
+    "map": 794,
+    "title": "Charous Path: Ultra Ball",
+    "items": [
+      {
+        "event": 105
+      }
+    ]
+  },
+  {
+    "id": "machine-room",
+    "match": "Grab a hidden *X Attack* in here.",
+    "map": 795,
+    "title": "Machine room",
+    "items": [
+      {
+        "event": 100
+      },
+      {
+        "event": 102
+      }
+    ]
+  },
+  {
+    "id": "machine-room-max-revive",
+    "match": "Grab the hidden *Max Revive* beyond the gate",
+    "map": 795,
+    "title": "Machine room: Max Revive",
+    "items": [
+      {
+        "event": 96
+      }
+    ]
+  },
+  {
+    "id": "stalactite-synthetic-seed",
+    "match": "We'll find ourselves back in the previous hub room where Fern is",
+    "map": 813,
+    "title": "Hub room, highest level: Synthetic Seed",
+    "items": [
+      {
+        "event": 102
+      }
+    ]
+  },
+  {
+    "id": "stalactite-dusk-ball",
+    "match": "Head down from here, and you'll find yourself in the left side",
+    "map": 813,
+    "title": "Hub room: Dusk Ball and Magical Seed",
+    "items": [
+      {
+        "event": 106
+      },
+      {
+        "event": 105
+      }
+    ]
+  },
+  {
+    "id": "stalactite-muscle-wing",
+    "match": "Make your way back to the center of the room and continue climbing rocks",
+    "map": 813,
+    "title": "Hub room: Muscle Wing",
+    "items": [
+      {
+        "event": 109
+      }
+    ]
+  },
+  {
+    "id": "charous-path-metagrossite",
+    "match": "When you reach a fork, go down the rocks to get the *Metagrossite*!",
+    "map": 794,
+    "title": "Charous Path: Metagrossite",
+    "items": [
+      {
+        "event": 108
+      },
+      {
+        "event": 102
+      },
+      {
+        "event": 103
+      }
+    ]
+  },
+  {
+    "id": "charous-path-purple-shard",
+    "match": "At the bridge, on Zekrom route",
+    "map": 794,
+    "title": "Charous Path: Purple Shard",
+    "items": [
+      {
+        "event": 104
+      }
+    ]
+  },
+  {
+    "id": "seven-gem-room",
+    "match": "I'll call this room the 7-gem puzzle room.",
+    "map": 796,
+    "title": "7-gem puzzle room",
+    "items": [
+      {
+        "event": 67
+      },
+      {
+        "event": 68
+      },
+      {
+        "event": 66
+      }
+    ]
+  },
+  {
+    "id": "fire-ice-start",
+    "match": "Grab the hidden *Burn Heal* and *Fairy Gem* in the starting area.",
+    "map": 797,
+    "title": "Fire and Ice room: start",
+    "items": [
+      {
+        "event": 40
+      },
+      {
+        "event": 41
+      }
+    ]
+  },
+  {
+    "id": "fire-ice-ice-heal",
+    "match": "Down and left, a new path will be opened up.",
+    "map": 797,
+    "title": "Fire and Ice room: Ice Heal and Lucarionite",
+    "items": [
+      {
+        "event": 42
+      },
+      {
+        "event": 44
+      }
+    ]
+  },
+  {
+    "id": "fire-ice-tiny-mushroom",
+    "match": "Use the Red Crystal Key and go up. Grab the hidden *Tiny Mushroom*.",
+    "map": 799,
+    "title": "Ruby B3F: Tiny Mushroom",
+    "items": [
+      {
+        "event": 39
+      }
+    ]
+  },
+  {
+    "id": "ruby-b4f-hp-up",
+    "match": "Pick up the hidden *HP Up* here.",
+    "map": 803,
+    "title": "Ruby B4F: HP Up",
+    "items": [
+      {
+        "event": 75
+      }
+    ]
+  },
+  {
+    "id": "ruby-b4f-puzzle",
+    "match": "- Up and left, activate another crystal (8).",
+    "map": 803,
+    "title": "Ruby B4F: Dragon Gem, Escape Rope, Purple Shard",
+    "items": [
+      {
+        "event": 73
+      },
+      {
+        "event": 72
+      },
+      {
+        "event": 74
+      }
+    ]
+  },
+  {
+    "id": "ruby-b5f",
+    "match": "After winning, you'll be free to explore this room.",
+    "map": 807,
+    "title": "Ruby B5F: Big Nugget",
+    "items": [
+      {
+        "event": 20
+      }
+    ]
+  },
+  {
+    "id": "sapphire-b3f-max-ether",
+    "match": "Use one of the three conveniently placed Light Shards",
+    "map": 800,
+    "title": "Sapphire B3F: Max Ether",
+    "items": [
+      {
+        "event": 45
+      }
+    ]
+  },
+  {
+    "id": "sapphire-b4f-magical-seed",
+    "match": "Grab the hidden *Magical Seed* then enter the next ice puzzle.",
+    "map": 804,
+    "title": "Sapphire B4F: Magical Seed",
+    "items": [
+      {
+        "event": 48
+      }
+    ]
+  },
+  {
+    "id": "sapphire-b4f-blue-shard",
+    "match": "Head right, picking up the hidden *Blue Shard*.",
+    "map": 804,
+    "title": "Sapphire B4F: Blue Shard",
+    "items": [
+      {
+        "event": 46
+      }
+    ]
+  },
+  {
+    "id": "sapphire-b4f-guard-spec",
+    "match": "- L U L D R D R U L, activate the crystal (1)",
+    "map": 804,
+    "title": "Sapphire B4F: Guard Spec",
+    "items": [
+      {
+        "event": 47
+      }
+    ]
+  },
+  {
+    "id": "sapphire-b5f",
+    "match": "Grab the hidden *Heart Scale* and *Protein* as well as",
+    "map": 808,
+    "title": "Sapphire B5F",
+    "items": [
+      {
+        "event": 22
+      },
+      {
+        "event": 23
+      }
+    ]
+  },
+  {
+    "id": "emerald-b3f-max-elixir",
+    "match": "Grab the hidden *Max Elixir* and exit at the bottom.",
+    "map": 801,
+    "title": "Emerald B3F: Max Elixir",
+    "items": [
+      {
+        "event": 42
+      }
+    ]
+  },
+  {
+    "id": "emerald-b4f-start",
+    "match": "In this next room, pick up the hidden *Repel* and *Ultra Ball*.",
+    "map": 805,
+    "title": "Emerald B4F: Repel and Ultra Ball",
+    "items": [
+      {
+        "event": 124
+      },
+      {
+        "event": 107
+      }
+    ]
+  },
+  {
+    "id": "emerald-b4f-genius-wing",
+    "match": "Head to the middle of the room and climb down, then activate the Green Crystal.",
+    "map": 805,
+    "title": "Emerald B4F: Genius Wing",
+    "items": [
+      {
+        "event": 108
+      }
+    ]
+  },
+  {
+    "id": "emerald-b4f-grass-gem",
+    "match": "With that out of the way, now is a great chance to use the Light Shard!",
+    "map": 805,
+    "title": "Emerald B4F: Grass Gem",
+    "items": [
+      {
+        "event": 101
+      }
+    ]
+  },
+  {
+    "id": "emerald-b5f",
+    "match": "Grab the hidden *Max Repel*, *Magical Seed*, *Green Shard*",
+    "map": 809,
+    "title": "Emerald B5F",
+    "items": [
+      {
+        "event": 49
+      },
+      {
+        "event": 50
+      },
+      {
+        "event": 51
+      }
+    ]
+  },
+  {
+    "id": "amethyst-b3f-max-ether",
+    "match": "Finally, head over to the Amethyst room in the bottom right corner.",
+    "map": 802,
+    "title": "Amethyst B3F: Max Ether",
+    "items": [
+      {
+        "event": 37
+      }
+    ]
+  },
+  {
+    "id": "amethyst-b4f-calcium",
+    "match": "Grab the hidden *Calcium* near the start",
+    "map": 806,
+    "title": "Amethyst B4F: Calcium",
+    "items": [
+      {
+        "event": 75
+      }
+    ]
+  },
+  {
+    "id": "amethyst-b4f-protein",
+    "match": "Once you exit the room at the bottom successfully",
+    "map": 806,
+    "title": "Amethyst B4F: Protein and Carbos",
+    "items": [
+      {
+        "event": 76
+      },
+      {
+        "event": 77
+      }
+    ]
+  },
+  {
+    "id": "amethyst-b5f",
+    "match": "Pick up the hidden *PP Up*, *Max Revive*, *Hyper Potion*",
+    "map": 810,
+    "title": "Amethyst B5F",
+    "items": [
+      {
+        "event": 22
+      },
+      {
+        "event": 20
+      },
+      {
+        "event": 23
+      }
+    ]
+  },
+  {
+    "id": "final-full-heal",
+    "match": "Enter the next room and pick up the hidden *Full Heal*.",
+    "map": 798,
+    "title": "Final rooms: Full Heal",
+    "items": [
+      {
+        "event": 29
+      }
+    ]
+  },
+  {
+    "id": "final-ultra-potion",
+    "match": "Once you win, proceed to the right.",
+    "map": 798,
+    "title": "Final rooms: Ultra Potion",
+    "items": [
+      {
+        "event": 28
+      }
+    ]
+  },
+  {
+    "id": "final-blue-shard",
+    "match": "Make your way to the exit, grabbing the final hidden item",
+    "map": 798,
+    "title": "Final rooms: Blue Shard",
+    "items": [
+      {
+        "event": 30
+      }
+    ]
+  }
+]

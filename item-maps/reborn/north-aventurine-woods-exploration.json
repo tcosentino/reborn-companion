@@ -1,0 +1,123 @@
+[
+  {
+    "id": "3n-entrance",
+    "match": "Go up and you'll find a hidden *Paralyze Heal* and a *Potion*.",
+    "map": 288,
+    "title": "North of 3N",
+    "items": [
+      { "event": 88 },
+      { "event": 89 }
+    ]
+  },
+  {
+    "id": "honey-tree-b",
+    "match": "Down from here, you'll find a hidden *Mental Herb* and another honey tree (B).",
+    "map": 288,
+    "title": "Hidden by honey tree B",
+    "items": [
+      { "event": 85 }
+    ]
+  },
+  {
+    "id": "3n-ledge",
+    "match": "Down from here, you'll find a hidden *Mental Herb* and another honey tree (B).",
+    "map": 288,
+    "title": "Past tree A and up the ledge",
+    "items": [
+      { "event": 84 },
+      { "event": 91 }
+    ]
+  },
+  {
+    "id": "celestinine-ice-puzzle",
+    "match": "Grab the hidden *Ether* and *Repel*, then make your way to the ice puzzle.",
+    "map": 434,
+    "title": "Celestinine Mountain: before the ice puzzle",
+    "items": [
+      { "event": 2 },
+      { "event": 5 }
+    ]
+  },
+  {
+    "id": "celestinine-downstairs",
+    "match": "Pick up an *Ice Stone* up here as well as a hidden *Potion*.",
+    "map": 387,
+    "title": "Celestinine Mountain: below the ice puzzle",
+    "items": [
+      { "event": 31 },
+      { "event": 25 },
+      { "event": 40 }
+    ]
+  },
+  {
+    "id": "4n-west",
+    "match": "Grab the hidden *Dire Hit* and *Big Mushroom*.",
+    "map": 289,
+    "title": "West of 4N",
+    "items": [
+      { "event": 94 },
+      { "event": 99 }
+    ]
+  },
+  {
+    "id": "4n-building",
+    "match": "Grab the hidden *Dire Hit* and *Big Mushroom*.",
+    "map": 289,
+    "title": "Outside the building north of 4N",
+    "items": [
+      { "event": 104 },
+      { "event": 98 }
+    ]
+  },
+  {
+    "id": "honey-tree-d",
+    "match": "Back outside, go down then right. You'll see another Honey tree (D)",
+    "map": 289,
+    "title": "By honey tree D",
+    "items": [
+      { "event": 95 }
+    ]
+  },
+  {
+    "id": "5n",
+    "match": "Hop on a Tauros, and enter 5N to the right. Pick up the hidden *Red Shard*",
+    "map": 289,
+    "title": "Inside 5N",
+    "items": [
+      { "event": 96 }
+    ]
+  },
+  {
+    "id": "7n-entrance",
+    "match": "To the right, 6N will spit us back out onto Route 1, so enter 7N to the east.",
+    "map": 289,
+    "title": "Inside 7N",
+    "items": [
+      { "event": 102 }
+    ]
+  },
+  {
+    "id": "7n-ledge",
+    "match": "Head back out to Route 1, and pick up a Tauros mount. Head right back in to 7N",
+    "map": 289,
+    "title": "Top of 7N",
+    "items": [
+      { "event": 103 },
+      { "event": 106 },
+      { "event": 101 }
+    ]
+  },
+  {
+    "id": "4n-north",
+    "match": "Finally, head back to Route 1, pick up a Tauros mount",
+    "map": 289,
+    "title": "North of 4N",
+    "items": [
+      { "event": 111 },
+      { "event": 109 },
+      { "event": 110 },
+      { "event": 100 },
+      { "event": 97 }
+    ]
+  }
+]

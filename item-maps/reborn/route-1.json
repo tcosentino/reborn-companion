@@ -1,0 +1,171 @@
+[
+  {
+    "id": "east-levels",
+    "match": "Start by going left. Before hopping up or down any edges",
+    "map": 286,
+    "title": "Route 1: east end and the next level",
+    "items": [
+      { "event": 75 },
+      { "event": 74 },
+      { "event": 73 },
+      { "event": 72 }
+    ]
+  },
+  {
+    "id": "west-levels",
+    "match": "Head down the ledge to the left. On this level, you'll find hidden",
+    "map": 286,
+    "title": "Route 1: west levels",
+    "items": [
+      { "event": 70 },
+      { "event": 71 },
+      { "event": 69 },
+      { "event": 68 }
+    ]
+  },
+  {
+    "id": "building-north",
+    "match": "Hidden to the left are a *Green Shard* and *Great Ball*.",
+    "map": 290,
+    "title": "Route 1: near the building",
+    "items": [
+      { "event": 119 },
+      { "event": 118 },
+      { "event": 108 },
+      { "event": 117 },
+      { "event": 109 }
+    ]
+  },
+  {
+    "id": "building-inside",
+    "match": "Someone on the first floor will give us 8 *Honeys*.",
+    "map": 294,
+    "title": "Inside the building",
+    "items": [
+      { "event": 26 }
+    ]
+  },
+  {
+    "id": "south-ledges",
+    "match": "Back outside, head down the ledge here. You'll find a hidden *Dragon Gem*.",
+    "map": 290,
+    "title": "Route 1: down the first ledges",
+    "items": [
+      { "event": 110 },
+      { "event": 26 },
+      { "event": 116 }
+    ]
+  },
+  {
+    "id": "south-middle",
+    "match": "You can find hidden *Ice Heal* and *PokeSnax* here.",
+    "map": 290,
+    "title": "Route 1: Ice Heal and PokeSnax",
+    "items": [
+      { "event": 111 },
+      { "event": 112 }
+    ]
+  },
+  {
+    "id": "south-bottom",
+    "match": "You can find hidden *Ice Heal* and *PokeSnax* here.",
+    "map": 290,
+    "title": "Route 1: bottom level",
+    "items": [
+      { "event": 113 },
+      { "event": 114 },
+      { "event": 115 }
+    ]
+  },
+  {
+    "id": "second-ledge-east",
+    "match": "You can find an *Exp. Candy L* as well as 2 hidden",
+    "map": 285,
+    "title": "Route 1: first ledge east",
+    "items": [
+      { "event": 47 },
+      { "event": 74, "label": "Green Shard (north)" },
+      { "event": 73, "label": "Green Shard (south)" },
+      { "event": 75 }
+    ]
+  },
+  {
+    "id": "third-ledge-east",
+    "match": "On the next ledge to the right you'll find a *Great Ball*",
+    "map": 285,
+    "title": "Route 1: next ledge east",
+    "items": [
+      { "event": 78 },
+      { "event": 76 },
+      { "event": 77 }
+    ]
+  },
+  {
+    "id": "three-ledges",
+    "match": "To the right you'll need to use the bottom of three ledges",
+    "map": 287,
+    "title": "Route 1: above the three ledges",
+    "items": [
+      { "event": 46 },
+      { "event": 45 }
+    ]
+  },
+  {
+    "id": "down-ledge",
+    "match": "You can find hidden *Chewing Gum*, *Telluric Seed*",
+    "map": 287,
+    "title": "Route 1: below the downward ledge",
+    "items": [
+      { "event": 47 },
+      { "event": 50 },
+      { "event": 48 },
+      { "event": 51 },
+      { "event": 49 }
+    ]
+  },
+  {
+    "id": "next-hill",
+    "match": "On the next hill you can get a hidden *PokeSnax*",
+    "map": 287,
+    "title": "Route 1: the next hill",
+    "items": [
+      { "event": 54 },
+      { "event": 52 }
+    ]
+  },
+  {
+    "id": "upper-west",
+    "match": "Grab the hidden *Poke Ball* to the right.",
+    "map": 291,
+    "title": "Route 1: west of the last hills",
+    "items": [
+      { "event": 28 },
+      { "event": 29 },
+      { "event": 30 },
+      { "event": 31 },
+      { "event": 32 }
+    ]
+  },
+  {
+    "id": "upper-east",
+    "match": "Grab the hidden *Ghost Gem*, 2 *Purple Shards*",
+    "map": 291,
+    "title": "Route 1: east hill",
+    "items": [
+      { "event": 35 },
+      { "event": 34, "label": "Purple Shard (north)" },
+      { "event": 33, "label": "Purple Shard (south)" },
+      { "event": 36 },
+      { "event": 8 }
+    ]
+  },
+  {
+    "id": "walled-off",
+    "match": "With that out of the way, dismount off your Tauros",
+    "map": 287,
+    "title": "Route 1: the walled-off area",
+    "items": [
+      { "event": 53 }
+    ]
+  }
+]

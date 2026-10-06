@@ -1,0 +1,109 @@
+[
+  {
+    "id": "first-islands",
+    "match": "The first island has a *Potion* and hidden *Pretty Wing*.",
+    "map": 206,
+    "title": "The first islands",
+    "items": [
+      { "event": 36 },
+      { "event": 62 },
+      { "event": 37 },
+      { "event": 63 },
+      { "event": 61 },
+      { "event": 2 }
+    ]
+  },
+  {
+    "id": "past-the-tree",
+    "match": "Cut the tree and go right. Before going down the ledge",
+    "map": 206,
+    "title": "Past the tree, above the ledge",
+    "items": [
+      { "event": 33 },
+      { "event": 64 },
+      { "event": 65 },
+      { "event": 3 },
+      { "event": 9 },
+      { "event": 66 }
+    ]
+  },
+  {
+    "id": "second-island",
+    "match": "On the next island to the right, you can find a hidden *Green Shard*",
+    "map": 206,
+    "title": "The next island to the right",
+    "items": [
+      { "event": 67 },
+      { "event": 4 },
+      { "event": 68 },
+      { "event": 69 },
+      { "event": 10 }
+    ]
+  },
+  {
+    "id": "green-shard-island",
+    "match": "Back up from here, cross to the right. You can find a hidden *Green Shard*",
+    "map": 206,
+    "title": "East island and the Thunderstone",
+    "items": [
+      { "event": 70 },
+      { "event": 11 }
+    ]
+  },
+  {
+    "id": "east-ledge",
+    "match": "Head down the ledge on the east island. You can find a hidden *Swift Wing*",
+    "map": 206,
+    "title": "Down the east ledge",
+    "items": [
+      { "event": 71 },
+      { "event": 5 }
+    ]
+  },
+  {
+    "id": "landing-south",
+    "match": "You can head down as soon as you touch land to get a *Miracle Seed*.",
+    "map": 206,
+    "title": "South landing",
+    "items": [
+      { "event": 35 },
+      { "event": 73 },
+      { "event": 72 },
+      { "event": 34 }
+    ]
+  },
+  {
+    "id": "ivy-dusk-ball",
+    "match": "You can head down as soon as you touch land to get a *Miracle Seed*.",
+    "map": 206,
+    "title": "Hidden Dusk Ball down the ivy",
+    "items": [
+      { "event": 12 }
+    ]
+  },
+  {
+    "id": "west-of-battle",
+    "match": "Left from here you'll grab a hidden *Potion*, *Tiny Mushroom*, *Ether*",
+    "map": 206,
+    "title": "Left of the battle",
+    "items": [
+      { "event": 74 },
+      { "event": 6 },
+      { "event": 75 },
+      { "event": 76 },
+      { "event": 7 }
+    ]
+  },
+  {
+    "id": "south-to-building",
+    "match": "Left from here you'll grab a hidden *Potion*, *Tiny Mushroom*, *Ether*",
+    "map": 206,
+    "title": "Down to the building",
+    "items": [
+      { "event": 48 },
+      { "event": 77 },
+      { "event": 8 },
+      { "event": 78 }
+    ]
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "id": "start-telluric-seed",
+    "match": "If you go up from here you'll find a hidden *Telluric Seed*",
+    "map": 358,
+    "title": "Route 2 start",
+    "items": [
+      { "event": 6 }
+    ]
+  },
+  {
+    "id": "link-stone",
+    "match": "Grab some more sleep powder then head to the bottom right corner",
+    "map": 358,
+    "title": "Link Stone on the cliffside",
+    "items": [
+      { "event": 348 }
+    ]
+  },
+  {
+    "id": "ability-capsule",
+    "match": "Climb onto the white rock via the stairs then go right for a hidden *Ability Capsule*.",
+    "map": 358,
+    "title": "Ability Capsule on the white rock",
+    "items": [
+      { "event": 66 }
+    ]
+  },
+  {
+    "id": "ultra-potion-green-shard",
+    "match": "Climb up the stairs to the right. You'll find a hidden *Ultra Potion* and *Green Shard*.",
+    "map": 358,
+    "title": "Ultra Potion and Green Shard",
+    "items": [
+      { "event": 248 },
+      { "event": 246 }
+    ]
+  },
+  {
+    "id": "top-of-route",
+    "match": "Hop across Crustle to go left at the top. Pick up *TM58 Sky Drop*",
+    "map": 358,
+    "title": "Top of the first rock area",
+    "items": [
+      { "event": 7 },
+      { "event": 40 },
+      { "event": 242 },
+      { "event": 278 }
+    ]
+  },
+  {
+    "id": "guard-spec-full-heal",
+    "match": "Pick up the hidden *Guard Spec.* and *Full Heal*.",
+    "map": 358,
+    "title": "Guard Spec and Full Heal",
+    "items": [
+      { "event": 336 },
+      { "event": 65 }
+    ]
+  },
+  {
+    "id": "second-guard-spec",
+    "match": "Pick up another hidden *Guard Spec.* Down the nearby stairs",
+    "map": 358,
+    "title": "Second Guard Spec",
+    "items": [
+      { "event": 406 }
+    ]
+  },
+  {
+    "id": "gate-east",
+    "match": "To the right from here, go down and grab hidden *X Sp. Atk* and *Revive*.",
+    "map": 360,
+    "title": "East of the shortcut gate",
+    "items": [
+      { "event": 311 },
+      { "event": 27 }
+    ]
+  },
+  {
+    "id": "below-gate",
+    "match": "Grab a hidden *Ultra Ball* then hop across some rocks",
+    "map": 360,
+    "title": "Below the gate",
+    "items": [
+      { "event": 13 },
+      { "event": 133 },
+      { "event": 14 }
+    ]
+  },
+  {
+    "id": "blue-shard",
+    "match": "Snag the *Blue Shard* to the left, then get some sleep powder",
+    "map": 360,
+    "title": "Blue Shard",
+    "items": [
+      { "event": 59 }
+    ]
+  },
+  {
+    "id": "west-telluric-red-shard",
+    "match": "Grab a hidden *Telluric Seed* and *Red Shard*, and go down the stairs",
+    "map": 360,
+    "title": "West side",
+    "items": [
+      { "event": 60 },
+      { "event": 211 }
+    ]
+  },
+  {
+    "id": "lower-red-shard",
+    "match": "Go down the stairs here, then pick up a hidden *Red Shard*",
+    "map": 360,
+    "title": "Red Shard by the green tree",
+    "items": [
+      { "event": 210 }
+    ]
+  },
+  {
+    "id": "cave-items",
+    "match": "Grab the hidden *Swift Wing, Big Mushroom, Fire Stone*, and *Paralyze Heal*",
+    "map": 360,
+    "title": "Swift Wing, Big Mushroom, Fire Stone, Paralyze Heal",
+    "items": [
+      { "event": 85 },
+      { "event": 149 },
+      { "event": 150 },
+      { "event": 148 }
+    ]
+  },
+  {
+    "id": "red-shard-ground-gem",
+    "match": "Pick up the hidden *Red Shard* and return onto the top of the rocks.",
+    "map": 360,
+    "title": "Red Shard and Ground Gem",
+    "items": [
+      { "event": 52 },
+      { "event": 48 }
+    ]
+  },
+  {
+    "id": "south-end",
+    "match": "Grab the hidden *Super Repel* then hop over the Crustles",
+    "map": 360,
+    "title": "Super Repel and Flying Gem",
+    "items": [
+      { "event": 55 },
+      { "event": 56 }
+    ]
+  },
+  {
+    "id": "celestinine-cascade-east",
+    "match": "In this area, you'll find hidden *Carbos*, *Great Ball*",
+    "map": 359,
+    "title": "Celestinine Cascade East",
+    "items": [
+      { "event": 18 },
+      { "event": 22 },
+      { "event": 17 },
+      { "event": 23 },
+      { "event": 25 },
+      { "event": 14 },
+      { "event": 13 },
+      { "event": 12 },
+      { "event": 10 },
+      { "event": 11 },
+      { "event": 9 }
+    ]
+  }
+]

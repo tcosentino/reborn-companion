@@ -1,0 +1,299 @@
+[
+  {
+    "id": "ametrine-3f",
+    "match": "Enter Ametrine Mountain 2F via the Route 3 entrance.",
+    "map": 366,
+    "title": "Ametrine Mountain 3F",
+    "items": [
+      { "event": 21 },
+      { "event": 27 },
+      { "event": 29 }
+    ]
+  },
+  {
+    "id": "ametrine-4f",
+    "match": "At the top you can grab a hidden *Escape Rope*.",
+    "map": 373,
+    "title": "Ametrine Mountain 4F",
+    "items": [
+      { "event": 17 }
+    ]
+  },
+  {
+    "id": "ametrine-1f-right",
+    "match": "From here, make your way to the waterfall down and left",
+    "map": 375,
+    "title": "Ametrine Mountain 1F: to the right",
+    "items": [
+      { "event": 19 },
+      { "event": 15 },
+      { "event": 23 }
+    ]
+  },
+  {
+    "id": "ametrine-1f-ice",
+    "match": "Surf down the waterfall to the left, then pick up a hidden *Full Heal*",
+    "map": 375,
+    "title": "Ametrine Mountain 1F: ice and boulder",
+    "items": [
+      { "event": 14 },
+      { "event": 17 },
+      { "event": 13 },
+      { "event": 20 }
+    ]
+  },
+  {
+    "id": "ametrine-1f-underwater",
+    "match": "You'll find a hidden *Blue Shard* in the first room.",
+    "map": 389,
+    "title": "Ametrine Mountain 1F underwater: first room",
+    "items": [
+      { "event": 1 }
+    ]
+  },
+  {
+    "id": "ametrine-alcove-1",
+    "match": "You'll find a hidden *Blue Shard* in the first room.",
+    "map": 393,
+    "title": "Underwater alcove: Antidote and Red Shard",
+    "items": [
+      { "event": 5 },
+      { "event": 4 }
+    ]
+  },
+  {
+    "id": "ametrine-b1f",
+    "match": "Grab a hidden *Full Heal* and *Health Wing* then proceed to the ice.",
+    "map": 376,
+    "title": "Ametrine Mountain B1F",
+    "items": [
+      { "event": 10 },
+      { "event": 11 },
+      { "event": 12 }
+    ]
+  },
+  {
+    "id": "ametrine-b2f-west",
+    "match": "In this next room, go left across the ice.",
+    "map": 377,
+    "title": "Ametrine Mountain B2F: across the ice",
+    "items": [
+      { "event": 19 },
+      { "event": 20 }
+    ]
+  },
+  {
+    "id": "ametrine-b2f-ice",
+    "match": "Back at the ice puzzle in the room, go up this time.",
+    "map": 377,
+    "title": "Ametrine Mountain B2F: up the ice",
+    "items": [
+      { "event": 18 },
+      { "event": 15 }
+    ]
+  },
+  {
+    "id": "ametrine-b2f-underwater",
+    "match": "Back at the ice puzzle in the room, go up this time.",
+    "map": 394,
+    "title": "Ametrine Mountain B2F underwater",
+    "items": [
+      { "event": 2 }
+    ]
+  },
+  {
+    "id": "ametrine-b3f-alcove",
+    "match": "Back at the ice puzzle in the room, go up this time.",
+    "map": 395,
+    "title": "Hidden alcove room",
+    "items": [
+      { "event": 4 },
+      { "event": 2 }
+    ]
+  },
+  {
+    "id": "ametrine-b3f",
+    "match": "You can get a hidden *Pearl* and *Red Shard* in the next room",
+    "map": 378,
+    "title": "Ametrine Mountain B3F",
+    "items": [
+      { "event": 2 },
+      { "event": 3 },
+      { "event": 7 },
+      { "event": 6 }
+    ]
+  },
+  {
+    "id": "ametrine-b1f-top-left",
+    "match": "This time, cross the ice to the top left.",
+    "map": 376,
+    "title": "Ametrine Mountain B1F: top left",
+    "items": [
+      { "event": 13 }
+    ]
+  },
+  {
+    "id": "ametrine-b1f-underwater",
+    "match": "This time, cross the ice to the top left.",
+    "map": 393,
+    "title": "Ametrine Mountain B1F underwater",
+    "items": [
+      { "event": 8 },
+      { "event": 6 },
+      { "event": 7 },
+      { "event": 2 }
+    ]
+  },
+  {
+    "id": "ametrine-large-room",
+    "match": "In this large room you can get an *Exp. Candy XL*",
+    "map": 402,
+    "title": "Large underwater room",
+    "items": [
+      { "event": 7 },
+      { "event": 8 },
+      { "event": 5 }
+    ]
+  },
+  {
+    "id": "ametrine-large-room-south",
+    "match": "In this large room you can get an *Exp. Candy XL*",
+    "map": 402,
+    "title": "Large underwater room, south",
+    "items": [
+      { "event": 6 },
+      { "event": 4 }
+    ]
+  },
+  {
+    "id": "ametrine-lower-left-room",
+    "match": "Enter the hidden alcove door in the lower left side.",
+    "map": 403,
+    "title": "Lower left alcove room",
+    "items": [
+      { "event": 3 },
+      { "event": 2 },
+      { "event": 4 }
+    ]
+  },
+  {
+    "id": "celestinine-b1f-repel",
+    "match": "From here, go down the waterfall in the bottom right to reach B1F.",
+    "map": 386,
+    "title": "Celestinine Mountain B1F: the split",
+    "items": [
+      { "event": 13 }
+    ]
+  },
+  {
+    "id": "celestinine-b1f-underwater",
+    "match": "Underwater, pick up a hidden *Ultra Ball*",
+    "map": 399,
+    "title": "Celestinine Mountain B1F underwater",
+    "items": [
+      { "event": 3 },
+      { "event": 5 },
+      { "event": 1 },
+      { "event": 2 }
+    ]
+  },
+  {
+    "id": "celestinine-b1f-tm47",
+    "match": "Underwater, pick up a hidden *Ultra Ball*",
+    "map": 386,
+    "title": "Celestinine Mountain B1F: bottom left",
+    "items": [
+      { "event": 14 }
+    ]
+  },
+  {
+    "id": "celestinine-b1f-ppup",
+    "match": "Go down this time. Pick up a hidden *PP Up*",
+    "map": 386,
+    "title": "Celestinine Mountain B1F: up and left",
+    "items": [
+      { "event": 3 }
+    ]
+  },
+  {
+    "id": "celestinine-b2f",
+    "match": "Go down this time. Pick up a hidden *PP Up*",
+    "map": 387,
+    "title": "Celestinine Mountain B2F: right corner",
+    "items": [
+      { "event": 30 }
+    ]
+  },
+  {
+    "id": "celestinine-3f",
+    "match": "On this floor, you'll need to push boulders into the dead ends",
+    "map": 385,
+    "title": "Celestinine Mountain 3F",
+    "items": [
+      { "event": 21 },
+      { "event": 13 },
+      { "event": 20 }
+    ]
+  },
+  {
+    "id": "celestinine-4f",
+    "match": "We can fish up an ugly fish on this floor!",
+    "map": 396,
+    "title": "Celestinine Mountain 4F",
+    "items": [
+      { "event": 7 },
+      { "event": 8 },
+      { "event": 6 },
+      { "event": 14 },
+      { "event": 16 },
+      { "event": 13 },
+      { "event": 15 }
+    ]
+  },
+  {
+    "id": "citrine-1f",
+    "match": "Backtrack all the way to Celestinine 1F.",
+    "map": 381,
+    "title": "Citrine Mountain 1F",
+    "items": [
+      { "event": 17 },
+      { "event": 21 },
+      { "event": 16 }
+    ]
+  },
+  {
+    "id": "citrine-1f-silver-card",
+    "match": "With the Silver Ring in hand, we can catch Corey's",
+    "map": 381,
+    "title": "Citrine Mountain 1F: behind Skuntank",
+    "items": [
+      { "event": 1 }
+    ]
+  },
+  {
+    "id": "citrine-2f",
+    "match": "Make your way to Citrine Mountain 2F by climbing the ladder",
+    "map": 382,
+    "title": "Citrine Mountain 2F",
+    "items": [
+      { "event": 58 },
+      { "event": 70 }
+    ]
+  },
+  {
+    "id": "citrine-3f",
+    "match": "Make your way to Citrine Mountain 2F by climbing the ladder",
+    "map": 383,
+    "title": "Citrine Mountain 3F",
+    "items": [
+      { "event": 19 },
+      { "event": 13 },
+      { "event": 14 },
+      { "event": 15 },
+      { "event": 10 },
+      { "event": 9 },
+      { "event": 8 },
+      { "event": 11 }
+    ]
+  }
+]
