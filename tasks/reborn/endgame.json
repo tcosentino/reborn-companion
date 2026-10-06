@@ -7,11 +7,8 @@
   },
   {
     "id": "darkrai-endgame",
-    "kind": "catch",
-    "title": "Obtain Darkrai after Iolia Valley quest",
-    "match": "Head back up and talk to Shiv again. With",
-    "species": [
-      "DARKRAI"
-    ]
+    "kind": "quest",
+    "title": "Talk to Shiv for the dream Darkrai (not kept; caught later at the Water Treatment Center)",
+    "match": "Head back up and talk to Shiv again. With"
   }
 ]

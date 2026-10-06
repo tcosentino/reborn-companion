@@ -123,7 +123,7 @@ Factual fixes to the guide (wrong directions, missing steps) go upstream as a PR
 2. In `upstream/` (remote `fork`): `git fetch fork <branch>`, merge it into `content`, then merge `content` into `companion`.
 3. `bash scripts/build-baseline.sh reborn` (the golden test baseline is built from `content`), then `bash scripts/build.sh reborn`.
 
-Once BIGJRA merges a PR, merging `origin/main` into `content` is a no-op for that change. Submitted PRs so far: [#35](https://github.com/BIGJRA/BIGJRA.github.io/pull/35) (Lower Peridot Ward donation guy).
+Once BIGJRA merges a PR, merging `origin/main` into `content` is a no-op for that change. Submitted PRs so far: [#35](https://github.com/BIGJRA/BIGJRA.github.io/pull/35) (Lower Peridot Ward donation guy), [#36](https://github.com/BIGJRA/BIGJRA.github.io/pull/36) (Tranquill level), [#37](https://github.com/BIGJRA/BIGJRA.github.io/pull/37) (Noel seeds), [#38](https://github.com/BIGJRA/BIGJRA.github.io/pull/38) (Freeze-Dry vs Salazzle), [#39](https://github.com/BIGJRA/BIGJRA.github.io/pull/39) (Ep 1 hidden abilities), [#40](https://github.com/BIGJRA/BIGJRA.github.io/pull/40) (free Sweet Heart), [#41](https://github.com/BIGJRA/BIGJRA.github.io/pull/41) (dream Darkrai), [#42](https://github.com/BIGJRA/BIGJRA.github.io/pull/42) (Blastoise mega route), [#43](https://github.com/BIGJRA/BIGJRA.github.io/pull/43) (Darkinium Z holder).
 
 Edits that only make sense in this app, such as `#/` links between sections, go in a section override in `overrides/<game>/` instead:
 
