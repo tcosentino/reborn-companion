@@ -1,5 +1,6 @@
-import { useMemo, useState } from 'react'
-import type { GuideIndex, Tier } from '../../data/types'
+import { useEffect, useMemo, useState } from 'react'
+import type { GuideIndex } from '../../data/types'
+import { defaultFilters, readFilters, writeFilters, type DexFilters } from '../../lib/dexFilters'
 import { useCaught } from '../../lib/progress'
 import { TIERS, TIER_LABEL, bst } from '../../lib/ranking'
 import { dexHref, href } from '../../lib/route'
@@ -7,22 +8,19 @@ import { TypeChip, useGame } from '../common'
 import { CaughtToggle, CompareToggle, CompareTray, TierBadge } from './bits'
 import { firstChapter, usePokedex } from './context'
 
-type CaughtFilter = 'all' | 'caught' | 'missing'
-type Sort = 'num' | 'tier' | 'first'
-
 interface Props { idx: GuideIndex; defaultChapter: string | null }
 
 export const PokedexView = ({ idx, defaultChapter }: Props) => {
   const game = useGame()
   const data = usePokedex()
   const { done } = useCaught(game.id)
-  const [q, setQ] = useState('')
-  const [type, setType] = useState('')
-  const [tier, setTier] = useState<Tier | ''>('')
-  const [caught, setCaught] = useState<CaughtFilter>('all')
-  // '' = every species, including ones the guide's encounter tables never list
-  const [upTo, setUpTo] = useState(defaultChapter ?? '')
-  const [sort, setSort] = useState<Sort>('num')
+  // Filters persist per game, so leaving the Pokedex and coming back keeps them
+  const [filters, setFilters] = useState(() =>
+    readFilters(game.id, defaultFilters(defaultChapter), idx.chapters.map(c => c.id)))
+  useEffect(() => { writeFilters(game.id, filters) }, [game.id, filters])
+  const set = <K extends keyof DexFilters>(k: K) => (v: DexFilters[K]) => setFilters(f => ({ ...f, [k]: v }))
+  // upTo '' = every species, including ones the guide's encounter tables never list
+  const { q, type, tier, caught, upTo, sort } = filters
 
   const rows = useMemo(() => {
     if (!data) return []
@@ -71,25 +69,25 @@ export const PokedexView = ({ idx, defaultChapter }: Props) => {
       </header>
 
       <div className="dex-controls">
-        <input type="search" className="search" placeholder="Name or number" value={q} onChange={e => setQ(e.target.value)} aria-label="Search Pokemon" />
-        <select value={upTo} onChange={e => setUpTo(e.target.value)} aria-label="Available by">
+        <input type="search" className="search" placeholder="Name or number" value={q} onChange={e => set('q')(e.target.value)} aria-label="Search Pokemon" />
+        <select value={upTo} onChange={e => set('upTo')(e.target.value)} aria-label="Available by">
           <option value="">All species</option>
           {idx.chapters.map(c => <option key={c.id} value={c.id}>Found by {c.title}</option>)}
         </select>
-        <select value={type} onChange={e => setType(e.target.value)} aria-label="Type">
+        <select value={type} onChange={e => set('type')(e.target.value)} aria-label="Type">
           <option value="">Any type</option>
           {allTypes.map(t => <option key={t} value={t}>{t.charAt(0) + t.slice(1).toLowerCase()}</option>)}
         </select>
-        <select value={tier} onChange={e => setTier(e.target.value as Tier | '')} aria-label="Tier">
+        <select value={tier} onChange={e => set('tier')(e.target.value as DexFilters['tier'])} aria-label="Tier">
           <option value="">Any tier</option>
           {TIERS.map(t => <option key={t} value={t}>{t}: {TIER_LABEL[t]}</option>)}
         </select>
-        <select value={caught} onChange={e => setCaught(e.target.value as CaughtFilter)} aria-label="Caught">
+        <select value={caught} onChange={e => set('caught')(e.target.value as DexFilters['caught'])} aria-label="Caught">
           <option value="all">Caught or not</option>
           <option value="missing">Not caught</option>
           <option value="caught">Caught</option>
         </select>
-        <select value={sort} onChange={e => setSort(e.target.value as Sort)} aria-label="Sort">
+        <select value={sort} onChange={e => set('sort')(e.target.value as DexFilters['sort'])} aria-label="Sort">
           <option value="num">Sort: Dex number</option>
           <option value="tier">Sort: Best first</option>
           <option value="first">Sort: Earliest available</option>
