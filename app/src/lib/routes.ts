@@ -13,6 +13,8 @@ export interface RoutePointDef {
   label?: string
   via?: boolean
   direct?: boolean
+  // Marker number to show instead of the running count (spots that follow a numbered list in the guide)
+  n?: number
 }
 
 // One entry in routes/<game>/<section-id>.json
@@ -33,6 +35,8 @@ export interface RouteDef {
   pad?: number
   // A puzzle solution: the map stays covered until the reader asks to see it
   spoiler?: boolean
+  // Places to look rather than a walk: every point is a labelled marker and no path is drawn (one point is enough)
+  spots?: boolean
 }
 
 // `face`: the stop is in front of a person, in this direction; the marker is drawn clear of their sprite

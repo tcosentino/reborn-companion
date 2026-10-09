@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import { defaultPage, findPath, tilePassable, walker, type GameMap, type Tileset } from './rmxp.ts'
-import { resolveRoute, validateRouteDefs } from './apply-routes.ts'
+import { resolveRoute, routeBlock, validateRouteDefs } from './apply-routes.ts'
 import { blank, draw, readPng, writePng } from './png-rgba.ts'
 
 // Tiles: 384 floor, 385 wall (all directions blocked), 386 fence that blocks leaving/entering upward
@@ -69,6 +69,19 @@ test('validateRouteDefs checks ids, maps and points', () => {
   assert.deepEqual(validateRouteDefs('s', [ok], { 1: { name: 'm', parent: 0 } }), [])
   const errors = validateRouteDefs('s', [{ ...ok, id: 'Bad' }, { ...ok, map: 2 }, { ...ok, id: 'c', points: [ok.points[0]] }], { 1: { name: 'm', parent: 0 } })
   assert.equal(errors.length, 3)
+})
+
+test('spots mark places without a walk and keep list numbers', () => {
+  const walled = mapOf(Array(20).fill('#'.repeat(30)))
+  const def = { id: 'r', match: 'x', map: 1, spots: true, points: [{ at: [5, 5] as [number, number], n: 3, label: 'A' }, { at: [20, 10] as [number, number], n: 7, label: 'B' }] }
+  const r = resolveRoute(def, walled, tileset)
+  assert.ok(typeof r !== 'string')
+  assert.deepEqual(r.path, [])
+  assert.deepEqual(r.box, { x: 1, y: 1, w: 24, h: 14 })
+  assert.deepEqual(routeBlock(def, walled, r.path, r.stops, r.box, 'p').marks.map(m => [m.n, m.x, m.y]), [[3, 4, 4], [7, 19, 9]])
+  const one = { ...def, points: [def.points[0]] }
+  assert.deepEqual(validateRouteDefs('s', [one], { 1: { name: 'm', parent: 0 } }), [])
+  assert.equal(validateRouteDefs('s', [{ ...one, points: [{ at: [0, 0] as [number, number] }] }], { 1: { name: 'm', parent: 0 } }).length, 1)
 })
 
 test('png round trip and additive blending', () => {

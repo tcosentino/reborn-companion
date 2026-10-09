@@ -30,8 +30,9 @@ export const validateRouteDefs = (section: string, defs: RouteDef[], maps?: MapI
     if (!d.match?.trim()) errors.push(`${at}: missing match`)
     if (!Number.isInteger(d.map)) errors.push(`${at}: missing map id`)
     else if (maps && !maps[d.map]) errors.push(`${at}: no map ${d.map}`)
-    if (!Array.isArray(d.points) || d.points.length < 2) errors.push(`${at}: needs at least two points`)
+    if (!Array.isArray(d.points) || d.points.length < (d.spots ? 1 : 2)) errors.push(`${at}: needs at least ${d.spots ? 'one point' : 'two points'}`)
     else if (d.points.some(p => !Array.isArray(p.at) || p.at.length !== 2 || !p.at.every(Number.isInteger))) errors.push(`${at}: every point needs at: [x, y]`)
+    else if (d.spots && d.points.some(p => !p.label)) errors.push(`${at}: every spot needs a label`)
     else if (!d.points[0].label || !d.points[d.points.length - 1].label) errors.push(`${at}: first and last points need a label`)
   }
   return errors
@@ -53,6 +54,8 @@ export const resolveRoute = (def: RouteDef, map: GameMap, tileset: Tileset): { p
     if (x < 0 || y < 0 || x >= out || y >= oh) return `point (${x},${y}) is outside the ${out}x${oh} map`
   }
   // Solid characters that are not doors: NPCs, trainers, item balls
+  // Spots: markers only, no walk between them; the crop frames the points
+  if (def.spots) return { path: [], stops: def.points.map(p => ({ at: p.at })), box: cropAround(def.points.map(p => p.at), def.pad ?? 4, out, oh) }
   const people = new Set(visibleEvents(map, hide).filter(({ e, p }) => p.char && !p.through && !e.pages.some(pg => pg.warp)).map(({ e }) => `${e.x},${e.y}`))
   let from = def.points[0].at
   const path: Tile[] = [from]
@@ -77,8 +80,12 @@ export const resolveRoute = (def: RouteDef, map: GameMap, tileset: Tileset): { p
     }
     path.push(...leg)
   }
-  const pad = def.pad ?? 4
-  const xs = path.map(p => p[0]), ys = path.map(p => p[1])
+  return { path, stops, box: cropAround(path, def.pad ?? 4, out, oh) }
+}
+
+// Crop around the tiles with `pad` tiles of context, at least 12x8 and inside the map
+const cropAround = (tiles: Tile[], pad: number, out: number, oh: number): Box => {
+  const xs = tiles.map(p => p[0]), ys = tiles.map(p => p[1])
   let x0 = Math.min(...xs) - pad, x1 = Math.max(...xs) + pad, y0 = Math.min(...ys) - pad, y1 = Math.max(...ys) + pad
   const grow = (lo: number, hi: number, min: number, size: number): [number, number] => {
     const need = Math.max(0, min - (hi - lo + 1))
@@ -89,7 +96,7 @@ export const resolveRoute = (def: RouteDef, map: GameMap, tileset: Tileset): { p
   }
   ;[x0, x1] = grow(x0, x1, 12, out)
   ;[y0, y1] = grow(y0, y1, 8, oh)
-  return { path, stops, box: { x: x0, y: y0, w: x1 - x0 + 1, h: y1 - y0 + 1 } }
+  return { x: x0, y: y0, w: x1 - x0 + 1, h: y1 - y0 + 1 }
 }
 
 // Straight 8-connected line between two tiles (Bresenham), so it draws as one unbroken run
@@ -115,7 +122,8 @@ export const routeBlock = (def: RouteDef, map: GameMap, path: Tile[], stops: Sto
     marks: def.points.flatMap((p, i) => {
       if (!p.label || p.via) return []
       const { at: [x, y], face } = stops[i]
-      return [{ x: x - box.x, y: y - box.y, n: ++n, label: p.label, ...(face ? { face } : {}) }]
+      n++
+      return [{ x: x - box.x, y: y - box.y, n: p.n ?? n, label: p.label, ...(face ? { face } : {}) }]
     })
   }
 }

@@ -55,6 +55,7 @@ Movement follows the game's rules (`scripts/rmxp.ts`):
 - `surf`: optional; `true` makes water walkable for the whole route.
 - `hide`: optional event ids left out of the render and pathing. Events are drawn in their default (pre-story) state, so cutscene actors and police lines may appear or block. Hide them when they are gone at this point in the story.
 - `pad`: optional context tiles around the path (default 4).
+- `spots`: optional; `true` for places to look rather than a walk (e.g. a roaming Pokemon's possible locations). Every point needs a `label` and becomes a marker, no path is drawn, and one point is enough. Give points `"n"` to show the guide's own list numbers instead of 1..n.
 - `spoiler`: optional; `true` for puzzle solutions the guide hides behind a spoiler. The map stays covered until the reader taps "Show solution".
 - JSON uses 2-space indentation.
 

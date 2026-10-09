@@ -184,7 +184,7 @@ switch (cmd) {
       grid(img, r.box)
       pathOverlay(img, r.path, r.box)
       def.points.forEach((p, i) => { if (!p.via) fillRect(img, (r.stops[i].at[0] - r.box.x) * 32 + 6, (r.stops[i].at[1] - r.box.y) * 32 + 6, 20, 20, [220, 38, 38, 255]) })
-      console.log(`${def.id}: ${r.path.length - 1} steps, box ${JSON.stringify(r.box)}`)
+      console.log(`${def.id}: ${def.spots ? `${def.points.length} spots` : `${r.path.length - 1} steps`}, box ${JSON.stringify(r.box)}`)
       save(`${section}--${def.id}.png`, img)
     }
     break

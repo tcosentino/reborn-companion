@@ -188,5 +188,94 @@
         "label": "Snax shop (clear/sunny)"
       }
     ]
+  },
+  {
+    "id": "teddiursa-lower-peridot",
+    "match": "1. Nearby the train station, where we started the game.",
+    "map": 37,
+    "title": "Teddiursa spots in Lower Peridot",
+    "spots": true,
+    "points": [
+      {
+        "at": [
+          23,
+          68
+        ],
+        "n": 1,
+        "label": "Nearby the train station"
+      },
+      {
+        "at": [
+          61,
+          46
+        ],
+        "n": 6,
+        "label": "Near the Gulpin dumpster"
+      }
+    ],
+    "hide": [
+      1,
+      30,
+      32,
+      33
+    ]
+  },
+  {
+    "id": "teddiursa-opal-bridge",
+    "match": "1. Nearby the train station, where we started the game.",
+    "map": 40,
+    "title": "Teddiursa spot under the Opal Bridge",
+    "spots": true,
+    "points": [
+      {
+        "at": [
+          5,
+          6
+        ],
+        "n": 2,
+        "label": "Under the Opal Bridge, by Pansear"
+      }
+    ]
+  },
+  {
+    "id": "teddiursa-peridot",
+    "match": "1. Nearby the train station, where we started the game.",
+    "map": 57,
+    "title": "Teddiursa spots in Peridot Ward",
+    "spots": true,
+    "points": [
+      {
+        "at": [
+          60,
+          53
+        ],
+        "n": 3,
+        "label": "Above Mosswater Industrial"
+      },
+      {
+        "at": [
+          35,
+          43
+        ],
+        "n": 4,
+        "label": "Next to the Pokemart"
+      },
+      {
+        "at": [
+          63,
+          28
+        ],
+        "n": 5,
+        "label": "By the Calcium rock near the fountain"
+      },
+      {
+        "at": [
+          67,
+          81
+        ],
+        "n": 7,
+        "label": "Bottom left of Seacrest's garden"
+      }
+    ]
   }
 ]
