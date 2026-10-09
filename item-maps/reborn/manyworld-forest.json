@@ -1,0 +1,23 @@
+[
+  {
+    "id": "manyworld-pool-items",
+    "match": "You can also find a hidden *Max Revive*",
+    "map": 869,
+    "title": "Manyworld Pool underwater",
+    "items": [
+      { "event": 7 },
+      { "event": 6 },
+      { "event": 8 }
+    ]
+  },
+  {
+    "id": "manyworld-tapunium-ash",
+    "match": "Down from here, you can hop across some platforms",
+    "map": 848,
+    "title": "Tapunium-Z and Sacred Ash",
+    "items": [
+      { "event": 76 },
+      { "event": 73 }
+    ]
+  }
+]

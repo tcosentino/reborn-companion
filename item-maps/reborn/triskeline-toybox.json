@@ -1,0 +1,34 @@
+[
+  {
+    "id": "toybox-cave-items",
+    "match": "In this cave, you'll find a hidden *Green Shard*",
+    "map": 875,
+    "title": "Deepwoods Cave hidden items",
+    "items": [
+      { "event": 5 },
+      { "event": 6 },
+      { "event": 3 },
+      { "event": 4 },
+      { "event": 8 },
+      { "event": 2 }
+    ]
+  },
+  {
+    "id": "toybox-cave-dusk-ball",
+    "match": "In this cave, you'll find a hidden *Green Shard*",
+    "map": 875,
+    "title": "Halfway up the stairs",
+    "items": [
+      { "event": 7 }
+    ]
+  },
+  {
+    "id": "toybox-normal-gem",
+    "match": "Follow the path out of the cave and into the Deepwoods.",
+    "map": 840,
+    "title": "Deepwoods: Normal Gem",
+    "items": [
+      { "event": 145 }
+    ]
+  }
+]

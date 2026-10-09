@@ -1,0 +1,51 @@
+[
+  {
+    "id": "circus-to-ferris-wheel",
+    "match": "Talk to Cass in the Nightclub, then fly over to the Agate Circus.",
+    "map": 355,
+    "title": "Agate Circus: the Ferris Wheel area",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [43, 8], "label": "Way up to the Ferris Wheel area" }
+    ]
+  },
+  {
+    "id": "ferris-places",
+    "match": "Grab the hidden *Beast Ball* to the left.",
+    "map": 867,
+    "title": "Ferris Wheel area: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [28, 30], "label": "Entrance from the circus" },
+      { "at": [12, 21], "label": "Novelty Pokeball seller (left)" },
+      { "at": [29, 18], "label": "Ringmaster (sign-up and pairings)" },
+      { "at": [31, 21], "label": "Cass (in the crowd)" },
+      { "at": [48, 17], "label": "Battle Wheel entrance" }
+    ]
+  },
+  {
+    "id": "ferris-glaceon",
+    "match": "Finally, the last match is with Cass.",
+    "map": 732,
+    "title": "Glass Workstation: the Glaceon to pet",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [72, 19], "label": "Glaceon (pet it)" }
+    ]
+  },
+  {
+    "id": "ferris-battle-wheel",
+    "match": "Talk to the Ringmaster once you're done, and Meloetta will run over",
+    "map": 867,
+    "title": "Ringmaster and the Battle Wheel",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [29, 18], "label": "Ringmaster" },
+      { "at": [48, 17], "label": "Battle Wheel entrance" }
+    ]
+  }
+]

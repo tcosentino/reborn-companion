@@ -1,0 +1,66 @@
+[
+  {
+    "id": "core-lit-door",
+    "match": "Talk to your gang leader and accept the quest.",
+    "map": 388,
+    "title": "Celestinine Mountain B3F: the lit-up door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [16, 8], "label": "Lit-up door to the Ametrine Core" }
+    ]
+  },
+  {
+    "id": "core-entry-room",
+    "match": "Talk to Cal at the entrance, then surf to the right across two ponds.",
+    "map": 870,
+    "title": "Entry room: Cal, Blake and the rocks",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [130, 72], "label": "Cal at the entrance" },
+      { "at": [161, 53], "label": "Rock to Smash (1), right across two ponds" },
+      { "at": [130, 32], "label": "Cal (center, up)" },
+      { "at": [129, 30], "label": "Second rock to smash" },
+      { "at": [141, 9], "label": "Rock to Smash (12), top of the room" },
+      { "at": [127, 7], "label": "Exit at the top" }
+    ]
+  },
+  {
+    "id": "core-blake",
+    "match": "Talk to Blake to make it cold.",
+    "map": 870,
+    "title": "Blake and Walrein (cold side)",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [35, 33], "label": "Blake (talk to make it cold)" }
+    ]
+  },
+  {
+    "id": "core-middle-room",
+    "match": "In this room, another puzzle awaits.",
+    "map": 872,
+    "title": "Middle room: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [87, 57], "label": "You arrive here" },
+      { "at": [90, 52], "label": "Cal (make it hot)" },
+      { "at": [88, 27], "label": "Rock to Smash (6)" },
+      { "at": [85, 8], "label": "Ladder down at the top" }
+    ]
+  },
+  {
+    "id": "core-back-room",
+    "match": "Follow the path from here. Time for a battle!",
+    "map": 873,
+    "title": "Back room: path to Heatran",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [25, 50], "label": "You arrive here" },
+      { "at": [17, 11], "label": "Heatran (battle at the top)" }
+    ]
+  }
+]

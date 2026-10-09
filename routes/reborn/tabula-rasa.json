@@ -1,0 +1,51 @@
+[
+  {
+    "id": "tabula-ruby-room",
+    "match": "You'll learn about electricity sizzling through the air.",
+    "map": 855,
+    "title": "Ruby Room (Electric Terrain)",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [30, 45], "label": "You arrive here (New World Door)" },
+      { "at": [41, 74], "label": "ZCell 32" },
+      { "at": [39, 78], "label": "Tapu Koko (after the Unown fight)" }
+    ]
+  },
+  {
+    "id": "tabula-sapphire-room",
+    "match": "Next is the Sapphire Room",
+    "map": 855,
+    "title": "Sapphire Room (Misty Terrain)",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [29, 289], "label": "Warp back to the hub" },
+      { "at": [38, 284], "label": "Tapu Fini" }
+    ]
+  },
+  {
+    "id": "tabula-emerald-room",
+    "match": "Next is Emerald.",
+    "map": 855,
+    "title": "Emerald Room (Grassy Terrain)",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [31, 228], "label": "Warp back to the hub" },
+      { "at": [31, 197], "label": "Tapu Bulu" }
+    ]
+  },
+  {
+    "id": "tabula-amethyst-room",
+    "match": "Finally, go to Amethyst and transform the field to Psychic Terrain.",
+    "map": 855,
+    "title": "Amethyst Room (Psychic Terrain)",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [31, 167], "label": "Warp back to the hub" },
+      { "at": [30, 143], "label": "Tapu Lele" }
+    ]
+  }
+]

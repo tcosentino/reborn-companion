@@ -8,5 +8,81 @@
       { "at": [90, 151], "label": "Pond (surface here)" },
       { "at": [34, 159], "label": "ZCell 22" }
     ]
+  },
+  {
+    "id": "manyworld-agate-dive",
+    "match": "Next, we're going to talk to Simon.",
+    "map": 741,
+    "title": "Agate City: where Lin got her Relic Stone",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [46, 15], "label": "Lin and the Relic Stone (dive here)" },
+      { "at": [48, 11], "label": "Door down to the pool" }
+    ]
+  },
+  {
+    "id": "manyworld-pool-zcell",
+    "match": "Hidden right behind the door is:",
+    "map": 869,
+    "title": "Manyworld Pool: behind the New World Door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [101, 22], "label": "New World Door" },
+      { "at": [102, 20], "label": "ZCell 21 (right behind the door)" }
+    ]
+  },
+  {
+    "id": "manyworld-forest-places",
+    "match": "Towards the top of the area, you'll be able to hop across",
+    "map": 848,
+    "title": "Manyworld Forest: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [53, 11], "label": "Celebi (needs the Fresh Water)" },
+      { "at": [54, 8], "label": "New World Door to the Pokemon League" },
+      { "at": [61, 54], "label": "Fresh Water (center, Anna Route)" },
+      { "at": [12, 58], "label": "ZCell 23 (left)" },
+      { "at": [87, 25], "label": "ZCell 24 (far right, moving platform)" }
+    ]
+  },
+  {
+    "id": "manyworld-celebi-water",
+    "match": "Back in the middle, go up.",
+    "map": 848,
+    "title": "Up to Celebi with the Fresh Water",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [61, 54], "label": "Fresh Water (center)" },
+      { "at": [53, 11], "label": "Celebi (pour the water on it)" }
+    ]
+  },
+  {
+    "id": "manyworld-league-door",
+    "match": "Climb through the New World Door to emerge next to the Pokemon League.",
+    "map": 814,
+    "title": "Charous Mountain: next to the Pokemon League",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [49, 33], "label": "You arrive here (New World Door)" },
+      { "at": [51, 33], "label": "Taka or Elias (Fresh Water)" },
+      { "at": [53, 32], "label": "Pokemon League (Charous Hall)" }
+    ]
+  },
+  {
+    "id": "manyworld-celebi-back",
+    "match": "Give the Fresh Water to Celebi.",
+    "map": 848,
+    "title": "Back to Celebi in the forest",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [53, 11], "label": "Celebi (give the Fresh Water)" },
+      { "at": [54, 8], "label": "New World Door (back through to the League)" }
+    ]
   }
 ]

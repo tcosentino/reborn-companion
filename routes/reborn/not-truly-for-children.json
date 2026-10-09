@@ -1,0 +1,13 @@
+[
+  {
+    "id": "ntfc-zcell-33",
+    "match": "**ZCell 33: Not Truly For Children**",
+    "map": 854,
+    "title": "ZCell 33",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [119, 119], "label": "ZCell 33" }
+    ]
+  }
+]

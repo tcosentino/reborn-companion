@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ferris-beast-ball",
+    "match": "Grab the hidden *Beast Ball* to the left.",
+    "map": 867,
+    "title": "Left of the Ferris Wheel area",
+    "items": [
+      { "event": 16 },
+      { "event": 70 }
+    ]
+  },
+  {
+    "id": "ferris-crowd-items",
+    "match": "Once the crowd clears, you can pick up a hidden *Full Restore*",
+    "map": 867,
+    "title": "Ferris Wheel crowd area",
+    "items": [
+      { "event": 17 },
+      { "event": 20 },
+      { "event": 19 }
+    ]
+  },
+  {
+    "id": "ferris-max-revive",
+    "match": "Nothing crazy here, just be careful of the Kommo-o sweep.",
+    "map": 867,
+    "title": "After the first fight",
+    "items": [
+      { "event": 18 }
+    ]
+  }
+]

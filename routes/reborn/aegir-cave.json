@@ -5,20 +5,100 @@
     "map": 849,
     "title": "Entrance to Bennett and Serra",
     "points": [
-      {
-        "at": [
-          59,
-          37
-        ],
-        "label": "New World Door"
-      },
-      {
-        "at": [
-          30,
-          18
-        ],
-        "label": "Bennett and Serra"
-      }
+      { "at": [59, 37], "label": "New World Door" },
+      { "at": [30, 18], "label": "Bennett and Serra" }
+    ]
+  },
+  {
+    "id": "vr-puzzle-room",
+    "match": "Enter Victory Road, then follow Victini up.",
+    "map": 785,
+    "title": "Victory Road: the puzzle room and the way on",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [25, 75], "label": "Bennett (logic puzzle 5)" },
+      { "at": [13, 60], "label": "Hidden Exp. Candy XL" },
+      { "at": [17, 51], "label": "New World Door" }
+    ]
+  },
+  {
+    "id": "vr-new-world",
+    "match": "Follow the path to the next area.",
+    "map": 852,
+    "title": "New World (Victory Road): follow the path down",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [54, 8], "label": "Arrive from the New World Door" },
+      { "at": [4, 96], "label": "Exit to Aegir Cave" }
+    ]
+  },
+  {
+    "id": "aegir-upper-places",
+    "match": "Head to the left and talk to Bennett and Serra.",
+    "map": 849,
+    "title": "Aegir Cave upper level: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [59, 37], "label": "Door back to Victory Road" },
+      { "at": [30, 18], "label": "Bennett and Serra (Victini above)" },
+      { "at": [24, 13], "label": "Hole above Bennett" },
+      { "at": [17, 10], "label": "Ladder up (top left)" },
+      { "at": [34, 63], "label": "ZCell 17 (bottom)" }
+    ]
+  },
+  {
+    "id": "aegir-lower-places",
+    "match": "Time to wander around the area looking for these things.",
+    "map": 850,
+    "title": "Aegir Cave lower level: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [23, 51], "label": "Tree with the Sweet Apple" },
+      { "at": [64, 46], "label": "Tree with the Tart Apple" },
+      { "at": [60, 71], "label": "Serra (near the bottom of the lake)" },
+      { "at": [18, 9], "label": "Ladder up to Bennett (top left)" },
+      { "at": [30, 30], "label": "ZCell 18 (by the pillars)" },
+      { "at": [26, 46], "label": "ZCell 19 (up the waterfall)" },
+      { "at": [64, 13], "label": "Stick (top right, up the ladder)" }
+    ]
+  },
+  {
+    "id": "aegir-back-to-bennett",
+    "match": "Return to the bottom floor and take the ladder up, in the top left.",
+    "map": 849,
+    "title": "Back to Bennett and the hole above him",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [17, 10], "label": "Ladder arrives here (top left)" },
+      { "at": [30, 18], "label": "Bennett" },
+      { "at": [24, 13], "label": "Hole above Bennett" }
+    ]
+  },
+  {
+    "id": "aegir-zcell-20",
+    "match": "Back down on the large lake, dive down.",
+    "map": 851,
+    "title": "Underwater: the cave with ZCell 20",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [17, 104], "label": "ZCell 20 (cave, bottom left)" }
+    ]
+  },
+  {
+    "id": "aegir-return-bennett-end",
+    "match": "Surface, then talk to Serra near the bottom of the lake.",
+    "map": 849,
+    "title": "Return to Bennett and Victini",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [30, 18], "label": "Bennett (talk to Victini here)" }
     ]
   }
 ]

@@ -5,9 +5,7 @@
     "map": 860,
     "title": "Aegir Cave Depths: the lake",
     "items": [
-      {
-        "event": 75
-      }
+      { "event": 75 }
     ]
   },
   {
@@ -16,9 +14,7 @@
     "map": 860,
     "title": "Prison Bottle by the rightmost waterfall",
     "items": [
-      {
-        "event": 144
-      }
+      { "event": 144 }
     ]
   },
   {
@@ -27,21 +23,11 @@
     "map": 860,
     "title": "Below the first waterfall",
     "items": [
-      {
-        "event": 81
-      },
-      {
-        "event": 76
-      },
-      {
-        "event": 77
-      },
-      {
-        "event": 80
-      },
-      {
-        "event": 78
-      }
+      { "event": 81 },
+      { "event": 76 },
+      { "event": 77 },
+      { "event": 80 },
+      { "event": 78 }
     ]
   },
   {
@@ -50,12 +36,8 @@
     "map": 860,
     "title": "Ascent: first ladder floor",
     "items": [
-      {
-        "event": 85
-      },
-      {
-        "event": 83
-      }
+      { "event": 85 },
+      { "event": 83 }
     ]
   },
   {
@@ -64,9 +46,7 @@
     "map": 860,
     "title": "Ascent: second floor",
     "items": [
-      {
-        "event": 86
-      }
+      { "event": 86 }
     ]
   },
   {
@@ -75,15 +55,9 @@
     "map": 860,
     "title": "Ascent: third floor",
     "items": [
-      {
-        "event": 69
-      },
-      {
-        "event": 90
-      },
-      {
-        "event": 93
-      }
+      { "event": 69 },
+      { "event": 90 },
+      { "event": 93 }
     ]
   },
   {
@@ -92,12 +66,8 @@
     "map": 860,
     "title": "Ascent: top floor before the door",
     "items": [
-      {
-        "event": 95
-      },
-      {
-        "event": 97
-      }
+      { "event": 95 },
+      { "event": 97 }
     ]
   },
   {
@@ -106,12 +76,8 @@
     "map": 860,
     "title": "Descent: top floor",
     "items": [
-      {
-        "event": 96
-      },
-      {
-        "event": 98
-      }
+      { "event": 96 },
+      { "event": 98 }
     ]
   },
   {
@@ -120,15 +86,9 @@
     "map": 860,
     "title": "Descent: next floor",
     "items": [
-      {
-        "event": 94
-      },
-      {
-        "event": 92
-      },
-      {
-        "event": 91
-      }
+      { "event": 94 },
+      { "event": 92 },
+      { "event": 91 }
     ]
   },
   {
@@ -137,9 +97,7 @@
     "map": 860,
     "title": "Descent: by the waterfall ladder",
     "items": [
-      {
-        "event": 88
-      }
+      { "event": 88 }
     ]
   },
   {
@@ -148,15 +106,9 @@
     "map": 860,
     "title": "ZCell 29 area: upper floors",
     "items": [
-      {
-        "event": 70
-      },
-      {
-        "event": 87
-      },
-      {
-        "event": 89
-      }
+      { "event": 70 },
+      { "event": 87 },
+      { "event": 89 }
     ]
   },
   {
@@ -165,12 +117,8 @@
     "map": 860,
     "title": "ZCell 29 area: lower floors",
     "items": [
-      {
-        "event": 82
-      },
-      {
-        "event": 84
-      }
+      { "event": 82 },
+      { "event": 84 }
     ]
   },
   {
@@ -179,9 +127,7 @@
     "map": 860,
     "title": "ZCell 29 area: lowest level",
     "items": [
-      {
-        "event": 79
-      }
+      { "event": 79 }
     ]
   },
   {
@@ -190,12 +136,8 @@
     "map": 860,
     "title": "The room past the Light Shard",
     "items": [
-      {
-        "event": 99
-      },
-      {
-        "event": 100
-      }
+      { "event": 99 },
+      { "event": 100 }
     ]
   }
 ]

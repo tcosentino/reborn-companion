@@ -1,0 +1,45 @@
+[
+  {
+    "id": "splash-first-room",
+    "match": "Grab the *Relic Copper* in the first room.",
+    "map": 862,
+    "title": "First room",
+    "items": [
+      { "event": 159 }
+    ]
+  },
+  {
+    "id": "splash-side-room",
+    "match": "Grab the *Relic Copper* in the first room.",
+    "map": 862,
+    "title": "Side room behind the small door",
+    "items": [
+      { "event": 157 },
+      { "event": 156 }
+    ]
+  },
+  {
+    "id": "splash-dais-room",
+    "match": "Back in the entrance room, enter the large door",
+    "map": 862,
+    "title": "Next room and the Manaphy Gem dais",
+    "items": [
+      { "event": 153 },
+      { "event": 117 },
+      { "event": 118 },
+      { "event": 119 },
+      { "event": 164 }
+    ]
+  },
+  {
+    "id": "splash-final-room",
+    "match": "The path from here contains a *Relic Copper*",
+    "map": 862,
+    "title": "Final room before Manaphy",
+    "items": [
+      { "event": 152 },
+      { "event": 60 },
+      { "event": 151 }
+    ]
+  }
+]

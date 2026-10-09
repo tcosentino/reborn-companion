@@ -5,20 +5,8 @@
     "map": 840,
     "title": "Arclight up to the first poacher",
     "points": [
-      {
-        "at": [
-          37,
-          72
-        ],
-        "label": "Arclight"
-      },
-      {
-        "at": [
-          38,
-          46
-        ],
-        "label": "Poacher 1 (Shinx cage)"
-      }
+      { "at": [37, 72], "label": "Arclight" },
+      { "at": [38, 46], "label": "Poacher 1 (Shinx cage)" }
     ]
   },
   {
@@ -27,20 +15,121 @@
     "map": 840,
     "title": "Bridge to the Commissioner",
     "points": [
-      {
-        "at": [
-          136,
-          68
-        ],
-        "label": "Poacher 3 (bridge)"
-      },
-      {
-        "at": [
-          167,
-          32
-        ],
-        "label": "Commissioner"
-      }
+      { "at": [136, 68], "label": "Poacher 3 (bridge)" },
+      { "at": [167, 32], "label": "Commissioner" }
+    ]
+  },
+  {
+    "id": "poachers-spinel-exit",
+    "match": "Next, talk to Smeargle to get a new quest.",
+    "map": 271,
+    "title": "Spinel Town: the way into the forest",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [45, 14], "label": "Pokemon Center (fly here)" },
+      { "at": [13, 48], "label": "Forest entrance (bottom left)" }
+    ]
+  },
+  {
+    "id": "poachers-forest-railcave",
+    "match": "Next, talk to Smeargle to get a new quest.",
+    "map": 234,
+    "title": "Chrysolia Forest: the Lost Railcave",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [45, 8], "label": "From Spinel Town" },
+      { "at": [99, 19], "label": "Lost Railcave entrance" }
+    ]
+  },
+  {
+    "id": "poachers-railcave-rooms",
+    "match": "In each room, enter the door that has two rocks closest to it.",
+    "map": 251,
+    "title": "Lost Railcave: puzzle rooms",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [14, 15], "label": "Arrive from the forest" },
+      { "at": [8, 11], "label": "Side door (west)" },
+      { "at": [20, 11], "label": "Side door (east)" },
+      { "at": [14, 6], "label": "Door up to Arclight's room" }
+    ]
+  },
+  {
+    "id": "poachers-railcave-arclight",
+    "match": "In each room, enter the door that has two rocks closest to it.",
+    "map": 252,
+    "title": "Lost Railcave: Arclight and the New World Door",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [10, 15], "label": "Arrive from the puzzle rooms" },
+      { "at": [27, 14], "label": "Arclight (conversation)" },
+      { "at": [49, 6], "label": "New World Door (next path)" }
+    ]
+  },
+  {
+    "id": "poachers-new-world-start",
+    "match": "Make your way to the top right side of the area.",
+    "map": 847,
+    "title": "New World: the first landmass",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [25, 11], "label": "Arrive (New World Door)" },
+      { "at": [29, 8], "label": "Breslin and Arclight" },
+      { "at": [4, 43], "label": "ZCell 15 (bottom left)" }
+    ]
+  },
+  {
+    "id": "poachers-new-world-pillars",
+    "match": "Activate pillars on these islands, then follow the paths they create.",
+    "map": 847,
+    "title": "New World: pillars and the Max Repel",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [81, 63], "label": "Tall pillar on the central hill" },
+      { "at": [59, 84], "label": "Pillar (Pokemon box quip)" },
+      { "at": [60, 124], "label": "Max Repel (island at the bottom)" },
+      { "at": [12, 146], "label": "Pillar (far bottom left)" }
+    ]
+  },
+  {
+    "id": "poachers-new-world-exit",
+    "match": "Once the pillar is activated, cross the bridge to the right",
+    "map": 847,
+    "title": "New World: ZCell 16 and the way out",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [138, 70], "label": "ZCell 16 (top right corner)" },
+      { "at": [134, 116], "label": "New World Door back to the Deepwoods (bottom)" }
+    ]
+  },
+  {
+    "id": "poachers-second-poacher",
+    "match": "The second can be found where the Reveal Glass was",
+    "map": 840,
+    "title": "Second poacher (top right of the structure)",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [125, 46], "label": "Where the Reveal Glass was" },
+      { "at": [123, 44], "label": "Poacher 2 (Pichu cage)" }
+    ]
+  },
+  {
+    "id": "poachers-third-poacher",
+    "match": "The third can be found on top of the bridge",
+    "map": 840,
+    "title": "Third poacher (on the bridge)",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [136, 68], "label": "Poacher 3 (Geodude cage, on the bridge)" }
     ]
   }
 ]

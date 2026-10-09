@@ -22,5 +22,168 @@
       { "at": [78, 20], "direct": true },
       { "at": [85, 15], "label": "Hilltop battle" }
     ]
+  },
+  {
+    "id": "heist-peridot-station",
+    "match": "Next, talk to Zero in the Nightclub and accept his quest.",
+    "map": 530,
+    "title": "Lower Peridot Ward: the train station",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [45, 66], "label": "Grandview Station entrance" }
+    ]
+  },
+  {
+    "id": "heist-station",
+    "match": "Next, talk to Zero in the Nightclub and accept his quest.",
+    "map": 591,
+    "title": "Grandview Station: Adrienn at the top",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [6, 24], "label": "Entrance from Peridot" },
+      { "at": [5, 5], "label": "Adrienn (top of the station, boards the train)" }
+    ]
+  },
+  {
+    "id": "heist-train-rear",
+    "match": "After talking to the chief, feel free to talk to the other passengers",
+    "map": 858,
+    "title": "Train, rear cars: where you start",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [146, 9], "label": "The chief (you arrive here)" },
+      { "at": [152, 9], "label": "Emptied storage cart" },
+      { "at": [100, 11], "label": "Julia (passenger)" },
+      { "at": [102, 11], "label": "Maxwell (passenger)" }
+    ]
+  },
+  {
+    "id": "heist-train-middle",
+    "match": "After talking to the chief, feel free to talk to the other passengers",
+    "map": 858,
+    "title": "Train, middle cars: more passengers",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [77, 7], "label": "Eustace (passenger)" },
+      { "at": [57, 7], "label": "Sandy (passenger)" },
+      { "at": [52, 11], "label": "John (passenger)" }
+    ]
+  },
+  {
+    "id": "heist-train-front",
+    "match": "After talking to the chief, feel free to talk to the other passengers",
+    "map": 858,
+    "title": "Train, front cars: engine room and Craudburry",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [31, 7], "label": "Craudburry (passenger)" },
+      { "at": [7, 8], "label": "Conductor (front of the train)" },
+      { "at": [8, 9], "label": "The chief returns here" }
+    ]
+  },
+  {
+    "id": "heist-accuse",
+    "match": "You can now accuse one of the culprits.",
+    "map": 858,
+    "title": "Accusing a culprit: the suspects' car",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [31, 8], "label": "Sandy" },
+      { "at": [32, 8], "label": "John" },
+      { "at": [33, 8], "label": "Craudburry" },
+      { "at": [34, 8], "label": "Eustace" },
+      { "at": [35, 8], "label": "Maxwell" },
+      { "at": [36, 8], "label": "Julia" },
+      { "at": [8, 9], "label": "The chief (talk here to accuse)" }
+    ]
+  },
+  {
+    "id": "heist-engine-ring",
+    "match": "Whether you win the gauntlet or choose a different option",
+    "map": 858,
+    "title": "Engine room: the ring",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [11, 7], "label": "Ring in the engine room" }
+    ]
+  },
+  {
+    "id": "heist-portal-up",
+    "match": "Another New World field 12v6.",
+    "map": 866,
+    "title": "Jump through the portal at the top of the hill",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [85, 15], "label": "Hilltop battle spot" },
+      { "at": [87, 2], "label": "Portal" }
+    ]
+  },
+  {
+    "id": "heist-route4-portal",
+    "match": "Jump through the portal. You'll find yourself back in the Route 4 New World",
+    "map": 836,
+    "title": "Route 4 New World: path to Corin-Rouge's portal",
+    "points": [
+      { "at": [64, 79], "label": "You arrive here" },
+      { "at": [62, 67], "label": "Portal up top (Corin-Rouge)" }
+    ],
+    "spots": true,
+    "pad": 8
+  },
+  {
+    "id": "heist-vanhanen-portal",
+    "match": "You'll next find yourself in the Vanhanen Castle New World",
+    "map": 831,
+    "title": "Vanhanen Castle New World: straight up to the portal",
+    "points": [
+      { "at": [32, 34], "label": "You arrive here" },
+      { "at": [24, 16], "label": "Portal" }
+    ],
+    "spots": true,
+    "pad": 8
+  },
+  {
+    "id": "heist-route2-ring",
+    "match": "You'll next find yourself in the Vanhanen Castle New World",
+    "map": 825,
+    "title": "Route 2 New World: left at the fork to the door",
+    "points": [
+      { "at": [74, 109], "label": "You arrive here" },
+      { "at": [5, 116], "label": "Door on the left (to the next ring)" }
+    ],
+    "spots": true,
+    "pad": 8
+  },
+  {
+    "id": "heist-last-ring",
+    "match": "PULSE 2 Mega Garchomp, Unaware Quagsire",
+    "map": 866,
+    "title": "Back through the ring to the train",
+    "points": [
+      { "at": [4, 5], "label": "You arrive here" },
+      { "at": [42, 40], "label": "Ring back to the train station" }
+    ],
+    "spots": true,
+    "pad": 8
+  },
+  {
+    "id": "heist-station-group",
+    "match": "Back in the train station, talk with the group here.",
+    "map": 591,
+    "title": "Grandview Station: the group",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [1, 10], "label": "You arrive here" },
+      { "at": [1, 11], "label": "The group (Adrienn and Terra)" }
+    ]
   }
 ]

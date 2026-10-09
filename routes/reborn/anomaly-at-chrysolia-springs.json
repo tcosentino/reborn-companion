@@ -1,0 +1,51 @@
+[
+  {
+    "id": "spinel-town-forest-exit",
+    "match": "Talk to your gang leader on the right side",
+    "map": 271,
+    "title": "Spinel Town: the way into the forest",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [45, 14], "label": "Pokemon Center (fly here)" },
+      { "at": [13, 48], "label": "Forest entrance (bottom left)" }
+    ]
+  },
+  {
+    "id": "forest-to-springs",
+    "match": "Talk to your gang leader on the right side",
+    "map": 234,
+    "title": "Chrysolia Forest: the Springs entrance",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [45, 8], "label": "From Spinel Town" },
+      { "at": [25, 11], "label": "Chrysolia Springs (left side)" }
+    ]
+  },
+  {
+    "id": "springs-1f",
+    "match": "Surf across, push the boulder out of the way",
+    "map": 238,
+    "title": "Chrysolia Spring 1F: surf to the boulder",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [33, 61], "label": "Entrance from the forest" },
+      { "at": [35, 25], "label": "Boulder to push aside" },
+      { "at": [36, 25], "label": "Hole down to the basement" }
+    ]
+  },
+  {
+    "id": "springs-b1f",
+    "match": "Surf across, push the boulder out of the way",
+    "map": 545,
+    "title": "Chrysolia Spring B1F: head up to Volcanion",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [31, 30], "label": "Where you land" },
+      { "at": [30, 15], "label": "Volcanion (anomaly fight, up top)" }
+    ]
+  }
+]

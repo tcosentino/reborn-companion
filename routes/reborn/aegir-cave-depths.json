@@ -1,0 +1,80 @@
+[
+  {
+    "id": "depths-crack-of-light",
+    "match": "When you're in Aegir Cave, make your way down onto the lake and dive down.",
+    "map": 850,
+    "title": "Aegir Cave: the crack of light",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [39, 111], "label": "Crack of light (enter and surface)" }
+    ]
+  },
+  {
+    "id": "depths-arrival-zcell-28",
+    "match": "Grab a hidden *Rawst Berry*, then surf to the left and climb the waterfall to reach:",
+    "map": 860,
+    "title": "Aegir Cave Depths: arrival and ZCell 28",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [24, 26], "label": "You surface here" },
+      { "at": [26, 13], "label": "ZCell 28 (up the left waterfall)" }
+    ]
+  },
+  {
+    "id": "depths-new-world-door",
+    "match": "This floor has a hidden *Rock Gem* and *Super Repel*.",
+    "map": 860,
+    "title": "Top of the ascent: the New World Door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [124, 12], "label": "New World Door at the end" }
+    ]
+  },
+  {
+    "id": "depths-back-from-new-world",
+    "match": "Talk to the earring at the top, then exit back to the Aegir Cave Depths",
+    "map": 860,
+    "title": "Back from the New World: where you start the descent",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [124, 13], "label": "You return here" }
+    ]
+  },
+  {
+    "id": "depths-zcell-29",
+    "match": "**ZCell 29: Aegir Cave Depths**",
+    "map": 860,
+    "title": "Aegir Cave Depths: ZCell 29",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [115, 60], "label": "ZCell 29 (below the Great Ball ladder)" }
+    ]
+  },
+  {
+    "id": "depths-pal-fight",
+    "match": "Climb back up and use the ladder on the other side of the waterfall",
+    "map": 860,
+    "title": "Lowest level: your pal",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [107, 121], "label": "Cain (the fight, lowest level)" }
+    ]
+  },
+  {
+    "id": "depths-diancie",
+    "match": "Afterwards, you'll be able to fight and catch **Diancie**.",
+    "map": 860,
+    "title": "Diancie and the Griseous Orb",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [68, 11], "label": "Diancie (Griseous Orb behind it)" }
+    ]
+  }
+]

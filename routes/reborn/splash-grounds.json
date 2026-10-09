@@ -34,5 +34,38 @@
       { "at": [9, 74], "label": "Relic Copper" },
       { "at": [12, 73], "label": "Gem door at the top" }
     ]
+  },
+  {
+    "id": "splash-new-world-door",
+    "match": "Head into the New World Door.",
+    "map": 863,
+    "title": "Underwater: the New World Door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [38, 21], "label": "New World Door" }
+    ]
+  },
+  {
+    "id": "splash-zcell-31",
+    "match": "**ZCell 31: Splash Zone**",
+    "map": 862,
+    "title": "Splash Grounds: ZCell 31",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [43, 100], "label": "ZCell 31 (along the right-hand fork)" }
+    ]
+  },
+  {
+    "id": "splash-manaphy",
+    "match": "The path from here contains a *Relic Copper*",
+    "map": 862,
+    "title": "The final room: Manaphy at the top",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [13, 8], "label": "Manaphy (fight and catch)" }
+    ]
   }
 ]

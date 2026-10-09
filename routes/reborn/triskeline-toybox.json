@@ -1,0 +1,140 @@
+[
+  {
+    "id": "toybox-entrance",
+    "match": "Welcome to the Triskeline Toybox.",
+    "map": 874,
+    "title": "Triskeline Toybox: where you start",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [41, 85], "label": "New World Door (you arrive here)" }
+    ]
+  },
+  {
+    "id": "toybox-zcell-34",
+    "match": "**ZCell 34: Triskeline Toybox**",
+    "map": 874,
+    "title": "ZCell 34 (three sets of stairs up)",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [39, 35], "label": "ZCell 34" }
+    ]
+  },
+  {
+    "id": "toybox-zcell-35",
+    "match": "**ZCell 35: Triskeline Toybox**",
+    "map": 874,
+    "title": "ZCell 35 (to the right)",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [54, 27], "label": "ZCell 35" }
+    ]
+  },
+  {
+    "id": "toybox-zcell-36",
+    "match": "**ZCell 36: Triskeline Toybox**",
+    "map": 874,
+    "title": "ZCell 36 (down across the pink balls)",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [57, 55], "label": "ZCell 36" }
+    ]
+  },
+  {
+    "id": "toybox-zcell-37",
+    "match": "**ZCell 37: Triskeline Toybox**",
+    "map": 874,
+    "title": "ZCell 37 (far left)",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [13, 56], "label": "ZCell 37" }
+    ]
+  },
+  {
+    "id": "toybox-zcell-38",
+    "match": "**ZCell 38: Triskeline Toybox**",
+    "map": 874,
+    "title": "ZCell 38 (up from the chests)",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [8, 38], "label": "ZCell 38" }
+    ]
+  },
+  {
+    "id": "toybox-zcell-39",
+    "match": "**ZCell 39: Triskeline Toybox**",
+    "map": 874,
+    "title": "ZCell 39 (across the pink balls)",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [15, 24], "label": "ZCell 39" }
+    ]
+  },
+  {
+    "id": "toybox-anomaly-fight",
+    "match": "A decently tough fight on the Starlight Arena",
+    "map": 874,
+    "title": "The anomaly fight spot (Lapras plush, up top)",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [24, 11], "label": "Anomaly fight and Mew (top)" }
+    ]
+  },
+  {
+    "id": "toybox-mew-hunt",
+    "match": "You can first find it in the bottom left side of the area",
+    "map": 874,
+    "title": "Chasing Mew",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [8, 51], "label": "A: Mew as Cubone (bottom left)" },
+      { "at": [49, 31], "label": "B: Mew as the middle Jigglypuff (right side)" },
+      { "at": [49, 60], "label": "C: Mew as Chikorita (table near the entrance)" },
+      { "at": [24, 11], "label": "Finally: back at the anomaly fight, talk to Mew" },
+      { "at": [22, 9], "label": "New World Door" }
+    ]
+  },
+  {
+    "id": "toybox-cave-entry",
+    "match": "In this cave, you'll find a hidden *Green Shard*",
+    "map": 875,
+    "title": "Deepwoods Cave: arrival and exit",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [24, 15], "label": "You arrive here" },
+      { "at": [69, 45], "label": "Cave exit to the Deepwoods" }
+    ]
+  },
+  {
+    "id": "toybox-zcell-40",
+    "match": "**ZCell 40: Chrysolia Deepwoods Cave**",
+    "map": 875,
+    "title": "ZCell 40",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [14, 32], "label": "ZCell 40" }
+    ]
+  },
+  {
+    "id": "toybox-fern-cage",
+    "match": "Follow the path out of the cave and into the Deepwoods.",
+    "map": 840,
+    "title": "Deepwoods: out of the cave to Fern's cage",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [131, 111], "label": "Cave exit (you arrive here)" },
+      { "at": [135, 66], "label": "Fern in the cage (lever above it)" }
+    ]
+  }
+]

@@ -5,34 +5,10 @@
     "map": 857,
     "title": "Latias to the first Florinia",
     "points": [
-      {
-        "at": [
-          44,
-          77
-        ],
-        "label": "Latias"
-      },
-      {
-        "at": [
-          35,
-          77
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          26,
-          77
-        ],
-        "direct": true
-      },
-      {
-        "at": [
-          21,
-          66
-        ],
-        "label": "Florinia (Emotion #1)"
-      }
+      { "at": [44, 77], "label": "Latias" },
+      { "at": [35, 77], "via": true },
+      { "at": [26, 77], "direct": true },
+      { "at": [21, 66], "label": "Florinia (Emotion #1)" }
     ]
   },
   {
@@ -41,34 +17,10 @@
     "map": 857,
     "title": "To the double-doored building",
     "points": [
-      {
-        "at": [
-          44,
-          77
-        ],
-        "label": "Latias"
-      },
-      {
-        "at": [
-          54,
-          77
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          57,
-          77
-        ],
-        "direct": true
-      },
-      {
-        "at": [
-          65,
-          53
-        ],
-        "label": "Double-doored building"
-      }
+      { "at": [44, 77], "label": "Latias" },
+      { "at": [54, 77], "via": true },
+      { "at": [57, 77], "direct": true },
+      { "at": [65, 53], "label": "Double-doored building" }
     ]
   },
   {
@@ -77,20 +29,8 @@
     "map": 859,
     "title": "Upstairs to the second Florinia",
     "points": [
-      {
-        "at": [
-          57,
-          65
-        ],
-        "label": "Entrance"
-      },
-      {
-        "at": [
-          75,
-          77
-        ],
-        "label": "Florinia upstairs (Emotion #2)"
-      }
+      { "at": [57, 65], "label": "Entrance" },
+      { "at": [75, 77], "label": "Florinia upstairs (Emotion #2)" }
     ]
   },
   {
@@ -100,20 +40,113 @@
     "title": "Across the water to the third Florinia",
     "surf": true,
     "points": [
-      {
-        "at": [
-          65,
-          54
-        ],
-        "label": "Double-doored building"
-      },
-      {
-        "at": [
-          58,
-          81
-        ],
-        "label": "Florinia (Emotion #3)"
-      }
+      { "at": [65, 54], "label": "Double-doored building" },
+      { "at": [58, 81], "label": "Florinia (Emotion #3)" }
+    ]
+  },
+  {
+    "id": "unexplored-new-world-door",
+    "match": "Once you cross the B2F ice puzzle",
+    "map": 403,
+    "title": "Ametrine Mountain B3F: the New World Door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [13, 17], "label": "New World Door (end of the path)" }
+    ]
+  },
+  {
+    "id": "unexplored-arrival-area",
+    "match": "Go down and weasel your way between some rocks to find:",
+    "map": 857,
+    "title": "Unexplored Territory: arrival area",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [17, 107], "label": "ZCell 26 (between the rocks)" },
+      { "at": [48, 125], "label": "Florinia (your ally for the battle)" },
+      { "at": [46, 123], "label": "Latias and Latios" }
+    ]
+  },
+  {
+    "id": "unexplored-town-latias",
+    "match": "Once you succeed, head north across the water and talk to Latias again.",
+    "map": 857,
+    "title": "The town: Latias to the north",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [44, 76], "label": "Latias (translation key quest)" }
+    ]
+  },
+  {
+    "id": "unexplored-zcell-27",
+    "match": "By the way, in the bottom left corner, you can find:",
+    "map": 857,
+    "title": "Unexplored Territory: ZCell 27",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [31, 212], "label": "ZCell 27 (bottom left corner)" }
+    ]
+  },
+  {
+    "id": "unexplored-next-area",
+    "match": "With all three solved, you can proceed to the next area",
+    "map": 857,
+    "title": "The gate left of Latias",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [44, 76], "label": "Latias" },
+      { "at": [42, 76], "label": "Gate to the next area (left of Latias)" }
+    ]
+  },
+  {
+    "id": "unexplored-joy-florinia",
+    "match": "The Florinia to the bottom right of Latias:",
+    "map": 857,
+    "title": "Florinia to the bottom right of Latias",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [43, 67], "label": "Florinia (Emotion #4)" }
+    ]
+  },
+  {
+    "id": "unexplored-passion-florinia",
+    "match": "At the top of the large building in the top left corner",
+    "map": 857,
+    "title": "Large building, top left",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [20, 14], "label": "Florinia at the top (Emotion #5)" }
+    ]
+  },
+  {
+    "id": "unexplored-forest-room",
+    "match": "Inside this forest-like room, we can diagnose another emotion:",
+    "map": 859,
+    "title": "Forest room: Florinia",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [30, 81], "label": "Room entrance" },
+      { "at": [7, 82], "label": "Florinia (Emotion #6)" }
+    ]
+  },
+  {
+    "id": "unexplored-final-florinia",
+    "match": "Back outside, a new gate will open to the right.",
+    "map": 857,
+    "title": "Up the new path to the last Florinia",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [66, 33], "label": "Latias (new clues)" },
+      { "at": [69, 12], "label": "Florinia at the top (Emotion #7)" },
+      { "at": [70, 15], "label": "Latios (joins you)" }
     ]
   }
 ]

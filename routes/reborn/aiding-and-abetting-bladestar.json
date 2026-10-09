@@ -1,0 +1,48 @@
+[
+  {
+    "id": "bladestar-workstation-door",
+    "match": "Anyways, fly over to Agate and make your way to the Glass Workstation.",
+    "map": 715,
+    "title": "Route 4: the Glass Workstation",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [39, 15], "label": "Glass Workstation entrance" }
+    ]
+  },
+  {
+    "id": "bladestar-ametrine-house",
+    "match": "Once you win, she'll head to Ametrine City",
+    "map": 439,
+    "title": "Ametrine City: Lumi and Eve's former house",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [34, 108], "label": "Former house of Lumi and Eve (haunted house)" }
+    ]
+  },
+  {
+    "id": "bladestar-flora-hof",
+    "match": "Talk to Flora in front of PULSE Abra",
+    "map": 821,
+    "title": "Champion room: Flora and the Hall of Fame",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [11, 44], "label": "Flora (in front of PULSE Abra)" },
+      { "at": [11, 5], "label": "Back room: Hall of Fame machine" }
+    ]
+  },
+  {
+    "id": "bladestar-back-room",
+    "match": "Climb the convenient ladder to grab an *Exp. Candy XL*",
+    "map": 735,
+    "title": "Glass Workstation back room: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [10, 9], "label": "Exp. Candy XL" },
+      { "at": [59, 18], "label": "Magearna (anomaly fight, up on the right)" }
+    ]
+  }
+]
