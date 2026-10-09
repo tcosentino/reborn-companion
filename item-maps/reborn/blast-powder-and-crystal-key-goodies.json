@@ -1,0 +1,68 @@
+[
+  {
+    "id": "chrysolia-pass-hyper-potion",
+    "match": "Pick up a hidden *Hyper Potion* and *Normal Gem*",
+    "map": 274,
+    "title": "Hidden Hyper Potion on the Chrysolia Pass",
+    "items": [
+      { "event": 2 }
+    ]
+  },
+  {
+    "id": "byxbysion-cave-2f-rope",
+    "match": "Pick up a hidden *Hyper Potion* and *Normal Gem*",
+    "map": 276,
+    "title": "Escape Rope",
+    "items": [
+      { "event": 7 }
+    ]
+  },
+  {
+    "id": "wasteland-wall-cave",
+    "match": "Once you finish this puzzle and emerge on top of the wall",
+    "map": 280,
+    "title": "Hidden cave: Toxic Orb and Yureyu Key",
+    "items": [
+      { "event": 18 },
+      { "event": 17 }
+    ]
+  },
+  {
+    "id": "byxbysion-dawn-stone",
+    "match": "The next two have a very high time-taken to value-of-reward ratio",
+    "map": 221,
+    "title": "Dawn Stone behind the rock (Mr. Bigglesworth room)",
+    "items": [
+      { "event": 4 }
+    ]
+  },
+  {
+    "id": "apophyll-max-revive",
+    "match": "Secondly, take the boat to Apophyll Beach and enter Apophyll Cave.",
+    "map": 30,
+    "title": "Max Revive behind the rock (left side)",
+    "items": [
+      { "event": 21 }
+    ]
+  },
+  {
+    "id": "underroot-green-crystal",
+    "match": "Ok, with those out of the way, head to the Underroot in Beryl.",
+    "map": 153,
+    "title": "Ampharosite and Meadow Plate",
+    "items": [
+      { "event": 150 },
+      { "event": 131 }
+    ]
+  },
+  {
+    "id": "yureyu-top-items",
+    "match": "Head over to the Yureyu Abandoned Power Plant where we once fought Shade.",
+    "map": 281,
+    "title": "Magnet and Ghostium-Z",
+    "items": [
+      { "event": 13 },
+      { "event": 35 }
+    ]
+  }
+]

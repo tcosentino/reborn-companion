@@ -18,5 +18,88 @@
       { "at": [30, 8], "label": "Bottom of the ladder" },
       { "at": [12, 6], "label": "Into the new area" }
     ]
+  },
+  {
+    "id": "grand-gate-places",
+    "match": "Once you enter, you'll see El run to the left.",
+    "map": 302,
+    "title": "Grand Gate: places in this section",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [11, 17], "label": "Radomus (talk to him to jump down)" },
+      { "at": [10, 42], "label": "Ladder down to the Grand Stairway" }
+    ]
+  },
+  {
+    "id": "citae-places",
+    "match": "After a scene, you'll be free to explore.",
+    "map": 305,
+    "title": "Citae Astrae: places in this section",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [24, 26], "label": "Radomus (arrival scene)" },
+      { "at": [23, 19], "label": "The building (Ruby Ring door inside)" },
+      { "at": [23, 31], "label": "Ladder back down to the Grand Stairway" }
+    ]
+  },
+  {
+    "id": "building-first-room",
+    "match": "Enter the building here. We can use our Ruby Ring to access a door.",
+    "map": 307,
+    "title": "Building: first room",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [8, 14], "label": "Door out to Citae Astrae" },
+      { "at": [13, 2], "label": "Door opened with the Ruby Ring (first logic puzzle)" }
+    ]
+  },
+  {
+    "id": "adrienn-room",
+    "match": "After the puzzle, go through the teleporter.",
+    "map": 309,
+    "title": "Adrienn's room",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [10, 10], "label": "Adrienn (ring choice)" },
+      { "at": [9, 3], "label": "Door back down" }
+    ]
+  },
+  {
+    "id": "rooftop-places",
+    "match": "Use the Light Shard (or wait till we catch a few Pokemon) and head out.",
+    "map": 306,
+    "title": "Rooftop: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [32, 27], "label": "El and Gardevoir at the top (battle)" },
+      { "at": [33, 27], "label": "Door out to the Grand Gate" }
+    ]
+  },
+  {
+    "id": "coral-adrienn",
+    "match": "With that, agree to leave together.",
+    "map": 97,
+    "title": "Coral Ward: Adrienn",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [42, 19], "label": "Adrienn (talk to her here)" }
+    ]
+  },
+  {
+    "id": "sweet-kiss-door",
+    "match": "Not that you should spend your money on them, but the Sweet Kiss",
+    "map": 36,
+    "title": "Obsidia Ward: Sweet Kiss",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [43, 36], "label": "Sweet Kiss Candy Shop" }
+    ]
   }
 ]

@@ -1,0 +1,31 @@
+[
+  {
+    "id": "circus-hidden",
+    "match": "Hidden around the circus, you'll find 3 *Blue Shards*",
+    "map": 355,
+    "title": "Hidden items around the Circus",
+    "pad": 2,
+    "items": [
+      { "event": 92 },
+      { "event": 93 },
+      { "event": 94 },
+      { "event": 95 },
+      { "event": 96 },
+      { "event": 98 },
+      { "event": 99 },
+      { "event": 100 },
+      { "event": 101 },
+      { "event": 102 },
+      { "event": 103 }
+    ]
+  },
+  {
+    "id": "circus-fighting-gem",
+    "match": "Make your way to the bottom left of the circus, grab the hidden",
+    "map": 355,
+    "title": "Hidden Fighting Gem (bottom left)",
+    "items": [
+      { "event": 97 }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "agate-entrance",
+    "match": "Exit Luna's gym.",
+    "map": 297,
+    "title": "Agate City entrance (the point of no return)",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [25, 12], "label": "Agate City checkpoint entrance" }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "labyrinth-escape",
+    "match": "After everything goes dark, head out of the gym.",
+    "map": 292,
+    "title": "Vanhanen Labyrinth: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [15, 15], "label": "Castle gym door (you exit here)" },
+      { "at": [9, 39], "label": "Grunt on the left (Radomus in disguise)" },
+      { "at": [34, 0], "label": "Exit north to Route 1 (hop on the circling Tauros)" }
+    ]
+  }
+]

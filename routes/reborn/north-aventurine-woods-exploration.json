@@ -1,0 +1,88 @@
+[
+  {
+    "id": "route1-nature-center",
+    "match": "Once you're ready, head to the Route 1 Nature Center",
+    "map": 290,
+    "title": "Route 1: the Nature Center",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [20, 18], "label": "Route 1 Nature Center (grab a Tauros mount, then go right)" }
+    ]
+  },
+  {
+    "id": "route1-entrances-1n-3n",
+    "match": "Enter 1N, the first entrance to the forest that you see.",
+    "map": 286,
+    "title": "Route 1: entrances 1N to 3N",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [30, 10], "label": "1N (first entrance, leads to 2N)" },
+      { "at": [59, 10], "label": "2N" },
+      { "at": [76, 10], "label": "3N" }
+    ]
+  },
+  {
+    "id": "woods-1n-3n-places",
+    "match": "Enter 1N, the first entrance to the forest that you see.",
+    "map": 288,
+    "title": "North Aventurine Woods (west half): places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [15, 52], "label": "1N (spits you out at 2N)" },
+      { "at": [26, 52], "label": "2N" },
+      { "at": [34, 52], "label": "3N (go up from here)" },
+      { "at": [57, 28], "label": "Honey tree A (Pinsir and Heracross)" },
+      { "at": [55, 38], "label": "Honey tree B (Leaf Stone, TM86 Grass Knot)" },
+      { "at": [26, 18], "label": "Honey tree C (shortcut, reached from 4N)" },
+      { "at": [12, 18], "label": "Celestinine Mountain entrance" },
+      { "at": [33, 41], "label": "Red and White flower tile (sends you back to Route 1)" }
+    ]
+  },
+  {
+    "id": "route1-entrance-4n",
+    "match": "Grab a Tauros mount and head east from 3N in search for 4N.",
+    "map": 285,
+    "title": "Route 1: entrance 4N",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [66, 8], "label": "4N" }
+    ]
+  },
+  {
+    "id": "woods-4n-7n-places",
+    "match": "Grab a Tauros mount and head east from 3N in search for 4N.",
+    "map": 289,
+    "title": "North Aventurine Woods (east half): places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [23, 52], "label": "4N" },
+      { "at": [35, 10], "label": "Building (Pikachu tutor, PC administrator upstairs)" },
+      { "at": [40, 7], "label": "Pikanium-Z" },
+      { "at": [37, 44], "label": "Honey tree D" },
+      { "at": [49, 52], "label": "5N" },
+      { "at": [57, 44], "label": "Conversation scene (Titania)" },
+      { "at": [63, 52], "label": "6N (spits you out onto Route 1)" },
+      { "at": [80, 52], "label": "7N" },
+      { "at": [59, 26], "label": "Honey tree E (log to the left)" },
+      { "at": [89, 18], "label": "Honey tree F (log)" }
+    ]
+  },
+  {
+    "id": "route1-entrances-5n-7n",
+    "match": "Hop on a Tauros, and enter 5N to the right.",
+    "map": 287,
+    "title": "Route 1: entrances 5N to 7N",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [8, 12], "label": "5N" },
+      { "at": [34, 12], "label": "6N (spits you out onto Route 1)" },
+      { "at": [69, 12], "label": "7N" }
+    ]
+  }
+]

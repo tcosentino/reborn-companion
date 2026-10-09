@@ -1,0 +1,71 @@
+[
+  {
+    "id": "cage",
+    "match": "You'll be moved to a cage.",
+    "map": 331,
+    "title": "The cage: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [15, 5], "label": "Green book (read it)" },
+      { "at": [11, 5], "label": "Cage with Klefki (opens the door)" },
+      { "at": [7, 2], "label": "Stairs out to the stealth maze" }
+    ]
+  },
+  {
+    "id": "stealth-maze",
+    "match": "Head out once Klefki opens the door.",
+    "map": 330,
+    "title": "Stealth maze: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [24, 38], "label": "Start (stairs from the cage)" },
+      { "at": [49, 20], "label": "Door on the right side (Spell Tag room)" },
+      { "at": [0, 20], "label": "Locked door on the left" },
+      { "at": [25, 0], "label": "Stairs at the top (guards leave)" }
+    ]
+  },
+  {
+    "id": "book-room",
+    "match": "Enter the door on the right side while traversing the maze.",
+    "map": 332,
+    "title": "Book room: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [2, 7], "label": "Door back to the maze" },
+      { "at": [12, 3], "label": "Spell Tag" },
+      { "at": [10, 6], "label": "Holy Field Readout" }
+    ]
+  },
+  {
+    "id": "statue-room",
+    "match": "In the next room, there are grunts to fight.",
+    "map": 329,
+    "title": "Statue room: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [25, 68], "label": "Stairs in from the maze" },
+      { "at": [19, 41], "label": "Blue statue (guarded)" },
+      { "at": [31, 41], "label": "Red statue (guarded)" },
+      { "at": [19, 47], "label": "Green statue (guarded)" },
+      { "at": [31, 47], "label": "Purple statue (guarded)" },
+      { "at": [25, 28], "label": "Ace's boss fight (middle, up from the bottom)" },
+      { "at": [25, 2], "label": "Exit up to the Beryl Wall" }
+    ]
+  },
+  {
+    "id": "beryl-wall-outside",
+    "match": "Back outside in the Beryl Wall, another conversation will occur.",
+    "map": 328,
+    "title": "Beryl Wall: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [5, 29], "label": "Subseven Sanctum door (you come out here)" },
+      { "at": [5, 22], "label": "Door to Route 1 (Tauros shortcut to Vanhanen Labyrinth)" }
+    ]
+  }
+]

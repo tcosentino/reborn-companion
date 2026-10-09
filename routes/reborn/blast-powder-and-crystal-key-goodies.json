@@ -1,0 +1,85 @@
+[
+  {
+    "id": "luna-room-warp",
+    "match": "There should now be a purple warp in Luna's room",
+    "map": 345,
+    "title": "Luna's room: the purple warp",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [20, 33], "label": "Purple warp to the entrance of Iolia Valley" }
+    ]
+  },
+  {
+    "id": "tanzan-east-door",
+    "match": "Head out of Iolia Valley and make your way through South Aventurine Woods",
+    "map": 272,
+    "title": "Tanzan Mountain: the room Saphira burst out of",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [11, 7], "label": "Entrance from South Aventurine Woods" },
+      { "at": [24, 38], "label": "Room Saphira burst out of (go right into it)" }
+    ]
+  },
+  {
+    "id": "tanzan-east-room",
+    "match": "Head out of Iolia Valley and make your way through South Aventurine Woods",
+    "map": 273,
+    "title": "Tanzan Mountain east room",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [9, 13], "label": "Door in from the Tanzan Mountain" },
+      { "at": [19, 15], "label": "Crystal (use the green key to open a new pathway)" },
+      { "at": [25, 34], "label": "Exit onto the Chrysolia Pass" }
+    ]
+  },
+  {
+    "id": "wasteland-wall-top",
+    "match": "Once you finish this puzzle and emerge on top of the wall",
+    "map": 278,
+    "title": "Top of the Wasteland Wall",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [39, 10], "label": "Inverse Field Readout" },
+      { "at": [96, 7], "label": "Hidden cave entrance behind the canister" }
+    ]
+  },
+  {
+    "id": "yureyu-backroom-places",
+    "match": "Head over to the Yureyu Abandoned Power Plant where we once fought Shade.",
+    "map": 281,
+    "title": "Yureyu back room: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [3, 8], "label": "Door in from the factory (other side)" },
+      { "at": [14, 4], "label": "Electrode Poke Balls (defeat them all, then the monitor at the top for Rotom)" },
+      { "at": [16, 37], "label": "Door in from the top of the plant (Yureyu Key)" }
+    ]
+  },
+  {
+    "id": "beryl-cemetery-simon",
+    "match": "While we're in the Beryl area, head over to the Beryl Cemetery.",
+    "map": 152,
+    "title": "Beryl Cemetery: Simon",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [16, 22], "label": "Simon (talk to him)" }
+    ]
+  },
+  {
+    "id": "peridot-simon-building",
+    "match": "While we're in the Beryl area, head over to the Beryl Cemetery.",
+    "map": 57,
+    "title": "Peridot Ward: the building right of the Pokemart",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [41, 46], "label": "Building where Simon waits (right of the Peridot Ward Pokemart)" }
+    ]
+  }
+]

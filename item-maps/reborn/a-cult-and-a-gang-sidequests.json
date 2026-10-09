@@ -1,0 +1,12 @@
+[
+  {
+    "id": "maxwell-x-attack",
+    "match": "You'll also notice that since Maxwell is gone from the North Obsidia Ward",
+    "map": 165,
+    "title": "Hidden X Attack behind Maxwell",
+    "pad": 6,
+    "items": [
+      { "event": 36, "label": "X Attack (behind Maxwell's spot)" }
+    ]
+  }
+]

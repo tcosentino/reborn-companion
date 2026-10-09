@@ -1,0 +1,107 @@
+[
+  {
+    "id": "route1-entrances-7s-8s",
+    "match": "Head east on Route 1 and enter 8S in the above map",
+    "map": 287,
+    "title": "Route 1: entrances 7S and 8S",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [19, 42], "label": "7S" },
+      { "at": [59, 42], "label": "8S (dismount to enter)" }
+    ]
+  },
+  {
+    "id": "woods-8s-7s-places",
+    "match": "Inside, grab the hidden *Revive* then use the Honey tree (Q)",
+    "map": 284,
+    "title": "South Aventurine Woods (8S and 7S): places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [36, 7], "label": "8S (you enter here)" },
+      { "at": [21, 31], "label": "Honey tree Q (use it twice)" },
+      { "at": [16, 7], "label": "7S" }
+    ]
+  },
+  {
+    "id": "route1-nature-center-heal",
+    "match": "Enter 1S on the far west side of Route 1.",
+    "map": 290,
+    "title": "Route 1: the Nature Center (heal)",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [20, 18], "label": "Route 1 Nature Center (heal if you like)" }
+    ]
+  },
+  {
+    "id": "route1-entrances-1s-3s",
+    "match": "Enter 1S on the far west side of Route 1.",
+    "map": 286,
+    "title": "Route 1: entrances 1S to 3S",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [11, 39], "label": "1S (far west)" },
+      { "at": [34, 39], "label": "2S" },
+      { "at": [72, 39], "label": "3S" }
+    ]
+  },
+  {
+    "id": "woods-1s-3s-places",
+    "match": "Grab a hidden *Clever Wing* then go up the ledge and follow the path.",
+    "map": 283,
+    "title": "South Aventurine Woods (1S to 3S): places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [12, 6], "label": "1S" },
+      { "at": [26, 6], "label": "2S (emerge onto Route 1)" },
+      { "at": [55, 6], "label": "3S" },
+      { "at": [29, 18], "label": "Honey tree G (beat Pinsir)" },
+      { "at": [39, 22], "label": "Honey tree I (below the Max Repel ledge)" },
+      { "at": [61, 37], "label": "Honey tree K (beat Pinsir)" }
+    ]
+  },
+  {
+    "id": "route1-entrances-4s-6s",
+    "match": "Next, we'll be entering 4S",
+    "map": 285,
+    "title": "Route 1: entrances 4S to 6S",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [9, 40], "label": "4S (where we fought Fern)" },
+      { "at": [59, 40], "label": "5S (do not go down the ledge to it)" },
+      { "at": [76, 40], "label": "6S" }
+    ]
+  },
+  {
+    "id": "woods-4s-6s-places",
+    "match": "Anyways, lather the Honey tree closest to you (N)",
+    "map": 282,
+    "title": "South Aventurine Woods (4S to 6S): places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [12, 7], "label": "4S" },
+      { "at": [38, 7], "label": "5S" },
+      { "at": [52, 7], "label": "6S" },
+      { "at": [26, 18], "label": "Honey tree N (closest to you, beat Pinsir)" },
+      { "at": [19, 43], "label": "Honey tree L (nearest Tanzan)" },
+      { "at": [17, 52], "label": "Exit toward Tanzan Mountain" }
+    ]
+  },
+  {
+    "id": "nature-center-specs",
+    "match": "Return to the Route 1 Nature Center and talk to the guy",
+    "map": 294,
+    "title": "Nature Center: the man who lost his specs",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [18, 32], "label": "Man on the second floor (give him the Tech Glasses)" }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "iolia-east-cave",
+    "match": "Thanks to the Dark Pulse TM, you can now transform the field",
+    "map": 333,
+    "title": "Iolia Valley: the eastern cave",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [46, 22], "label": "Cave on the eastern side (transform the field for Sableye)" }
+    ]
+  },
+  {
+    "id": "seventh-medicine-woman",
+    "match": "Next, make your way to Seventh Street.",
+    "map": 324,
+    "title": "7th Street: the woman who needs medicine",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [23, 28], "label": "Woman pleading for medicine (give Oddishweed, get the Chespin egg)" }
+    ]
+  },
+  {
+    "id": "agate-checkpoint-outside",
+    "match": "Once you're all set, make your way to the Agate City checkpoint",
+    "map": 297,
+    "title": "Agate City checkpoint",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [25, 12], "label": "Checkpoint door (talk to Cain inside)" }
+    ]
+  },
+  {
+    "id": "agate-checkpoint-inside",
+    "match": "Once you're all set, make your way to the Agate City checkpoint",
+    "map": 298,
+    "title": "Checkpoint inside: Cain",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [8, 8], "label": "Cain (talk to him)" },
+      { "at": [8, 1], "label": "Exit at the top to Agate City" }
+    ]
+  }
+]

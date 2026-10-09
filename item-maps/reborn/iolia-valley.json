@@ -1,0 +1,57 @@
+[
+  {
+    "id": "valley-first-area",
+    "match": "In this first area you can find a hidden *Ultra Ball*",
+    "map": 333,
+    "title": "Iolia Valley: first area",
+    "items": [
+      { "event": 57 },
+      { "event": 58 },
+      { "event": 60 },
+      { "event": 61 }
+    ]
+  },
+  {
+    "id": "valley-green-key-area",
+    "match": "Exit at the bottom. In the next area, grab the hidden *Purple Shard*",
+    "map": 334,
+    "title": "Next area: Purple, Green and Blue Shard",
+    "items": [
+      { "event": 12 },
+      { "event": 13 },
+      { "event": 11 }
+    ]
+  },
+  {
+    "id": "valley-ice-bridge-path",
+    "match": "On the other side of the water, go up first, then follow the path",
+    "map": 335,
+    "title": "North path and south path shards",
+    "items": [
+      { "event": 53 },
+      { "event": 55 },
+      { "event": 51 },
+      { "event": 98 }
+    ]
+  },
+  {
+    "id": "valley-purple-key-exit",
+    "match": "Grab the *Purple Crystal Key*! Talk to the nearby purple crystal",
+    "map": 335,
+    "title": "Red-Hots and X Sp. Atk outside the new exit",
+    "items": [
+      { "event": 56 },
+      { "event": 94 }
+    ]
+  },
+  {
+    "id": "valley-mutated-cave",
+    "match": "Back outside, make your way to the entrance to the valley once more.",
+    "map": 335,
+    "title": "Dusk Stone and Rawst Berry",
+    "items": [
+      { "event": 160 },
+      { "event": 52 }
+    ]
+  }
+]

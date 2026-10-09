@@ -68,5 +68,14 @@
       { "event": 8 },
       { "event": 7 }
     ]
+  },
+  {
+    "id": "amethyst-exp-candy-xl",
+    "match": "After the puzzle, go through the teleporter.",
+    "map": 311,
+    "title": "Exp. Candy XL through the purple teleporter",
+    "items": [
+      { "event": 5 }
+    ]
   }
 ]

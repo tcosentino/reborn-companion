@@ -22,5 +22,54 @@
       { "at": [12, 34], "label": "Bottom-left building" }
     ],
     "hide": [50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 131, 132, 133, 134]
+  },
+  {
+    "id": "circus-places",
+    "match": "After our first introduction to Terra in Agate City",
+    "map": 355,
+    "title": "Agate Circus: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [51, 20], "label": "Gate we came in through (right side)" },
+      { "at": [37, 25], "label": "Healing machine" },
+      { "at": [30, 12], "label": "Big Top entrance" },
+      { "at": [23, 21], "label": "High Striker (Samson)" },
+      { "at": [26, 20], "label": "Tile puzzle: Timburr (Purple Shard)" },
+      { "at": [42, 36], "label": "Tile puzzle: Cover Fossil (Green Shard)" },
+      { "at": [12, 29], "label": "Tile puzzle: Plume Fossil (Red Shard)" },
+      { "at": [34, 36], "label": "Ability Capsule seller" },
+      { "at": [18, 36], "label": "Nickname changer" },
+      { "at": [16, 17], "label": "Move tutors (left side)" },
+      { "at": [50, 35], "label": "Move Relearner (bottom right)" },
+      { "at": [38, 36], "label": "Child who wants a Poke Doll (below the healing machine)" },
+      { "at": [30, 26], "label": "Ice cream vendor (Blue Moon Ice Cream)" }
+    ]
+  },
+  {
+    "id": "gate-upstairs",
+    "match": "Enter the gate on the right side that we came in from.",
+    "map": 365,
+    "title": "Gate upstairs: Shell Bell girl and the riddle clown",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [3, 7], "label": "Door in from the circus" },
+      { "at": [6, 4], "label": "Stairs up" },
+      { "at": [12, 19], "label": "Girl (Shell Bell)" },
+      { "at": [14, 20], "label": "Clown with the riddle (Vulpix trade)" }
+    ]
+  },
+  {
+    "id": "big-top-aya",
+    "match": "Head in to the Big Top, and talk to Aya on the couch.",
+    "map": 357,
+    "title": "Big Top: Aya",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [4, 10], "label": "Door in" },
+      { "at": [14, 6], "label": "Aya (on the couch)" }
+    ]
   }
 ]

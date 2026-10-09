@@ -1,0 +1,90 @@
+[
+  {
+    "id": "entrance-hall",
+    "match": "After talking to the group at the entrance, go up two rooms.",
+    "map": 293,
+    "title": "Castle entrance: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [8, 31], "label": "Group at the entrance (talk first)" },
+      { "at": [9, 29], "label": "Door up to the chess rooms" }
+    ]
+  },
+  {
+    "id": "room-1-puzzle-1",
+    "match": "After talking to the group at the entrance, go up two rooms.",
+    "map": 313,
+    "title": "Room 1 (Radomus, puzzle #1): places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [9, 19], "label": "Door in from the entrance" },
+      { "at": [9, 3], "label": "Radomus (explains the puzzle)" },
+      { "at": [1, 16], "label": "Room on the left (Psychic Memory, Elias)" },
+      { "at": [10, 15], "label": "Chess Puzzle #1 board" },
+      { "at": [9, 5], "label": "Door up to room 2" }
+    ]
+  },
+  {
+    "id": "left-room-elias",
+    "match": "After talking to the group at the entrance, go up two rooms.",
+    "map": 314,
+    "title": "Left room: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [1, 10], "label": "Psychic Memory" },
+      { "at": [1, 9], "label": "Elias (puzzle details)" },
+      { "at": [19, 8], "label": "Screen (your chess piece ranks)" }
+    ]
+  },
+  {
+    "id": "room-2",
+    "match": "Move on to the next room. Note that the Bishops",
+    "map": 316,
+    "title": "Room 2 (puzzle #2)",
+    "spots": true,
+    "pad": 2,
+    "points": [
+      { "at": [9, 19], "label": "Door in from room 1" },
+      { "at": [9, 5], "label": "Door up to room 3" }
+    ]
+  },
+  {
+    "id": "room-3",
+    "match": "Enter room 3. Luna's trick can help us out here.",
+    "map": 317,
+    "title": "Room 3 (puzzle #3)",
+    "spots": true,
+    "pad": 2,
+    "points": [
+      { "at": [9, 19], "label": "Door in from room 2" },
+      { "at": [9, 5], "label": "Door up to room 4" }
+    ]
+  },
+  {
+    "id": "room-4",
+    "match": "Enter room 4. This is a harder one",
+    "map": 318,
+    "title": "Room 4 (puzzle #4)",
+    "spots": true,
+    "pad": 2,
+    "points": [
+      { "at": [9, 19], "label": "Door in from room 3" },
+      { "at": [9, 5], "label": "Door up to the gym battle room" }
+    ]
+  },
+  {
+    "id": "radomus-room",
+    "match": "Head up and into the next room when you are ready for your gym battle.",
+    "map": 315,
+    "title": "Radomus' battle room",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [9, 33], "label": "Door in from room 4" },
+      { "at": [9, 4], "label": "Radomus (gym battle)" }
+    ]
+  }
+]

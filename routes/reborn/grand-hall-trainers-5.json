@@ -1,0 +1,14 @@
+[
+  {
+    "id": "tauros-shortcut",
+    "match": "With that out of the way, you can use the Tauros shortcut",
+    "map": 290,
+    "title": "Route 1: Tauros shortcut north of the Grand Gate",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [24, 97], "label": "Grand Gate (door)" },
+      { "at": [16, 84], "label": "Tauros (shortcut to Vanhanen Castle)" }
+    ]
+  }
+]

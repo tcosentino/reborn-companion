@@ -1,0 +1,120 @@
+[
+  {
+    "id": "beryl-wall-sanctum-door",
+    "match": "There are a few sidequests we can take care of in and around Seventh.",
+    "map": 328,
+    "title": "Beryl Wall: the way back into the Sanctum",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [5, 29], "label": "Subseven Sanctum door" }
+    ]
+  },
+  {
+    "id": "sanctum-pentagram",
+    "match": "There are a few sidequests we can take care of in and around Seventh.",
+    "map": 329,
+    "title": "Subseven Sanctum: the pentagram",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [26, 35], "label": "Pentagram (Litwick, with a Soul Candle)" }
+    ]
+  },
+  {
+    "id": "seventh-places",
+    "match": "Back in seventh, the house in the bottom left corner will now be unlocked.",
+    "map": 324,
+    "title": "7th Street: places in this section",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [11, 34], "label": "House in the bottom left (Twitch Plays Pokemon cultist)" },
+      { "at": [28, 30], "label": "Psychologist (walk south from here)" },
+      { "at": [24, 37], "label": "Pokemon sellers (Madame Craudburry storms off)" },
+      { "at": [5, 30], "label": "Exit to Lapis Ward (left side)" },
+      { "at": [6, 8], "label": "Exit to Lapis Ward (top left)" }
+    ]
+  },
+  {
+    "id": "lapis-craudburry-house",
+    "match": "Head to Ms. Craudburry's house in Lapis.",
+    "map": 80,
+    "title": "Lapis Ward: Ms. Craudburry's house",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [18, 61], "label": "Ms. Craudburry's house" }
+    ]
+  },
+  {
+    "id": "magma-outside-house",
+    "match": "Head outside, and talk to Maxwell. He will give us *TM11 Sunny Day*.",
+    "map": 80,
+    "title": "Outside Ms. Craudburry's house",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [24, 61], "label": "Maxwell (outside the house)" },
+      { "at": [18, 61], "label": "Ms. Craudburry's house" }
+    ]
+  },
+  {
+    "id": "magma-bottom-grotto-door",
+    "match": "Head outside, and talk to Maxwell. He will give us *TM11 Sunny Day*.",
+    "map": 324,
+    "title": "Back to the bottom grotto",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [40, 33], "label": "Bottom grotto (door)" }
+    ]
+  },
+  {
+    "id": "magma-bottom-grotto",
+    "match": "Head outside, and talk to Maxwell. He will give us *TM11 Sunny Day*.",
+    "map": 325,
+    "title": "Bottom grotto: Archer",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [30, 19], "label": "Door in from 7th Street" },
+      { "at": [33, 10], "label": "Archer (battle)" }
+    ]
+  },
+  {
+    "id": "aqua-outside-house",
+    "match": "Head outside, and talk to Archer. He will give us *TM18 Rain Dance*.",
+    "map": 80,
+    "title": "Outside Ms. Craudburry's house",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [24, 61], "label": "Archer (outside the house)" },
+      { "at": [18, 61], "label": "Ms. Craudburry's house" }
+    ]
+  },
+  {
+    "id": "aqua-bottom-grotto-door",
+    "match": "Head outside, and talk to Archer. He will give us *TM18 Rain Dance*.",
+    "map": 324,
+    "title": "Back to the bottom grotto",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [40, 33], "label": "Bottom grotto (door)" }
+    ]
+  },
+  {
+    "id": "aqua-bottom-grotto",
+    "match": "Head outside, and talk to Archer. He will give us *TM18 Rain Dance*.",
+    "map": 325,
+    "title": "Bottom grotto: Maxwell",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [30, 19], "label": "Door in from 7th Street" },
+      { "at": [33, 10], "label": "Maxwell (battle)" }
+    ]
+  }
+]

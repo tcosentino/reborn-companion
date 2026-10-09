@@ -5,27 +5,9 @@
     "map": 324,
     "title": "Grotto to the hidden lab entrance",
     "points": [
-      {
-        "at": [
-          39,
-          33
-        ],
-        "label": "Bottom grotto"
-      },
-      {
-        "at": [
-          24,
-          10
-        ],
-        "label": "Shadow above the tutors"
-      },
-      {
-        "at": [
-          22,
-          9
-        ],
-        "label": "Hidden entrance"
-      }
+      { "at": [39, 33], "label": "Bottom grotto" },
+      { "at": [24, 10], "label": "Shadow above the tutors" },
+      { "at": [22, 9], "label": "Hidden entrance" }
     ]
   },
   {
@@ -34,27 +16,9 @@
     "map": 324,
     "title": "Watering hole to the top grotto",
     "points": [
-      {
-        "at": [
-          23,
-          9
-        ],
-        "label": "Lab exit"
-      },
-      {
-        "at": [
-          21,
-          14
-        ],
-        "label": "Watering hole"
-      },
-      {
-        "at": [
-          40,
-          12
-        ],
-        "label": "Grotto on the right"
-      }
+      { "at": [23, 9], "label": "Lab exit" },
+      { "at": [21, 14], "label": "Watering hole" },
+      { "at": [40, 12], "label": "Grotto on the right" }
     ]
   },
   {
@@ -63,24 +27,10 @@
     "map": 324,
     "title": "To the opened door",
     "points": [
-      {
-        "at": [
-          39,
-          12
-        ],
-        "label": "Grotto exit"
-      },
-      {
-        "at": [
-          30,
-          8
-        ],
-        "label": "Opened door (Beryl Wall)"
-      }
+      { "at": [39, 12], "label": "Grotto exit" },
+      { "at": [30, 8], "label": "Opened door (Beryl Wall)" }
     ],
-    "hide": [
-      51
-    ]
+    "hide": [51]
   },
   {
     "id": "candy-thief",
@@ -88,24 +38,10 @@
     "map": 324,
     "title": "Down to the candy thief",
     "points": [
-      {
-        "at": [
-          30,
-          9
-        ],
-        "label": "Back from Beryl Wall"
-      },
-      {
-        "at": [
-          8,
-          42
-        ],
-        "label": "Thief"
-      }
+      { "at": [30, 9], "label": "Back from Beryl Wall" },
+      { "at": [8, 42], "label": "Thief" }
     ],
-    "hide": [
-      51
-    ]
+    "hide": [51]
   },
   {
     "id": "piplup-grotto",
@@ -113,20 +49,42 @@
     "map": 324,
     "title": "Thief to the top grotto",
     "points": [
-      {
-        "at": [
-          8,
-          42
-        ],
-        "label": "Thief"
-      },
-      {
-        "at": [
-          40,
-          12
-        ],
-        "label": "Top grotto"
-      }
+      { "at": [8, 42], "label": "Thief" },
+      { "at": [40, 12], "label": "Top grotto" }
+    ]
+  },
+  {
+    "id": "seventh-places",
+    "match": "Wander around the area and defeat all the trainers.",
+    "map": 324,
+    "title": "7th Street: places in this section",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [6, 8], "label": "Exit to Lapis Ward (Aqua Gang house)" },
+      { "at": [5, 30], "label": "Exit to Lapis Ward (Magma Gang house)" },
+      { "at": [21, 14], "label": "Watering hole (healing point and PC)" },
+      { "at": [13, 15], "label": "Ability Capsule salesperson" },
+      { "at": [23, 13], "label": "Move tutors (top)" },
+      { "at": [25, 27], "label": "Seller of random stuff (data chips, Magnet Powder)" },
+      { "at": [10, 40], "label": "Seller in the bottom left (Soul Candle, Stick)" },
+      { "at": [18, 40], "label": "Gang member selling Blast Powder" },
+      { "at": [31, 42], "label": "Cage area: Pokemon trader" },
+      { "at": [25, 44], "label": "DJ Arclight (after buying all)" },
+      { "at": [28, 30], "label": "Pokemon Psychologist's house" },
+      { "at": [40, 33], "label": "Grotto on the right" }
+    ]
+  },
+  {
+    "id": "hidden-lab-inside",
+    "match": "North of the top tutors, you'll see a shadow indicating an entrance.",
+    "map": 637,
+    "title": "Hidden lab: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [8, 4], "label": "Green machine (Synthetic Seed)" },
+      { "at": [4, 9], "label": "Researcher on the left (battle, sidequest)" }
     ]
   }
 ]

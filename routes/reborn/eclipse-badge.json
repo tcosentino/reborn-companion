@@ -1,0 +1,36 @@
+[
+  {
+    "id": "luna-warp-door",
+    "match": "Return to the Iolia Valley and take the warp to Luna's room.",
+    "map": 337,
+    "title": "Iolia Valley entrance hall: the warp to Luna's room",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [12, 10], "label": "Warp to Luna's room" }
+    ]
+  },
+  {
+    "id": "luna-room",
+    "match": "Return to the Iolia Valley and take the warp to Luna's room.",
+    "map": 345,
+    "title": "Luna's room",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [20, 33], "label": "Warp in from the valley entrance hall" },
+      { "at": [15, 33], "label": "Luna" }
+    ]
+  },
+  {
+    "id": "luna-battle-room",
+    "match": "Return to the Iolia Valley and take the warp to Luna's room.",
+    "map": 350,
+    "title": "Luna's gym room",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [14, 20], "label": "Luna (gym battle)" }
+    ]
+  }
+]
