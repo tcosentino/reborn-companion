@@ -3,18 +3,16 @@ import { multiplier } from '../typechart.ts'
 import { SPEED_ABILITY, abilityValue } from './abilities.ts'
 import { ancestors, buildMoveset, statsOf } from './moves.ts'
 
-// Data-only "worth leveling" tiers. Five factors, each a percentile among fully evolved species:
+// Data-only power tiers. Four factors, each a percentile among fully evolved species:
 //   stats         offense-weighted base stats, blended toward the Mega form for the part of the story
 //                 after its Mega Stone is obtainable
 //   moves         strength of the recommended set (best STAB) plus its type coverage
-//   bosses        how the recommended set and typing fare against main-story boss Pokemon
-//                 from the chapter the line becomes catchable onwards; weaknesses count for less
-//                 when it outspeeds the boss or runs a setup move
-//   availability  how early the line can be caught according to the guide's encounter tables
+//   bosses        how the recommended set and typing fare against main-story boss Pokemon;
+//                 weaknesses count for less when it outspeeds the boss or runs a setup move
 //   abilities     best ability it can realistically have (see abilities.ts)
 // Pre-evolutions take the tier of their best final form.
 
-export const WEIGHTS: Record<Factor, number> = { stats: 0.25, moves: 0.2, bosses: 0.25, availability: 0.15, abilities: 0.15 }
+export const WEIGHTS: Record<Factor, number> = { stats: 0.3, moves: 0.25, bosses: 0.3, abilities: 0.15 }
 
 // Hidden abilities need a lucky encounter or a reset, so they count for less unless the guide's
 // starter picker recommends resetting for one
@@ -47,17 +45,6 @@ export const bossMons = (idx: GuideIndex, chapters: Chapter[], pokedex: Pokedex)
         const form = s?.forms[String(mon.form ?? 0)] ?? s?.forms['0']
         return form ? [{ types: form.types, spe: form.baseStats[5], chapter: order[ch.id] ?? 0 }] : []
       }))
-}
-
-// Earliest chapter index where the species or any pre-evolution is in an encounter table or shop,
-// or bolded in the guide's prose (gifts, eggs, static encounters)
-export const availableFrom = (pokedex: Pokedex, order: Record<string, number>, sym: Sym): number | null => {
-  const line = [sym, ...ancestors(pokedex, sym)]
-  const chapters = line
-    .flatMap(s => [...(pokedex.species[s]?.locations ?? []), ...(pokedex.species[s]?.mentions ?? [])])
-    .map(l => order[l.chapterId])
-    .filter(c => c != null)
-  return chapters.length ? Math.min(...chapters) : null
 }
 
 // Abilities that work against the user (Truant, Slow Start, Defeatist, Stall), read from their descriptions
@@ -117,10 +104,10 @@ export const firstMention = (chapterText: string[], text: string): number | null
   return i < 0 ? null : i
 }
 
-// Share of the main story (from when the line is catchable) spent with the Mega available, capped
-export const megaShare = (avail: number | null, stone: number | null, mainChapters: number): number => {
-  if (avail == null || stone == null || stone >= mainChapters || avail >= mainChapters) return 0
-  return MEGA_MAX_SHARE * (mainChapters - Math.max(stone, avail)) / (mainChapters - avail)
+// Share of the main story spent with the Mega Stone obtainable, capped
+export const megaShare = (stone: number | null, mainChapters: number): number => {
+  if (stone == null || stone >= mainChapters) return 0
+  return MEGA_MAX_SHARE * (mainChapters - stone) / mainChapters
 }
 
 // Ability the guide's starter picker recommends resetting for, keyed by starter species
@@ -155,20 +142,19 @@ const tradeEvolved = (pokedex: Pokedex, sym: Sym) =>
   ancestors(pokedex, sym).some(p => Object.values(pokedex.species[p].forms)
     .some(f => f.evolutions.some(e => /Trade/.test(e.method) && (e.species === sym || ancestors(pokedex, sym).includes(e.species)))))
 
-interface Raw { stats: number; moves: number; bosses: number; availability: number | null; abilities: number; hit: number; weak: number; avail: number | null; ability: AbilityPick | null; mega: { stone: string; chapter: number; share: number } | null }
+interface Raw { stats: number; moves: number; bosses: number; abilities: number; hit: number; weak: number; ability: AbilityPick | null; mega: { stone: string; chapter: number; share: number } | null }
 
-interface Ctx { dex: Dex; pokedex: Pokedex; bosses: BossMon[]; order: Record<string, number>; mainChapters: number; chapterText: string[]; starter: Record<Sym, Sym> }
+interface Ctx { dex: Dex; pokedex: Pokedex; bosses: BossMon[]; mainChapters: number; chapterText: string[]; starter: Record<Sym, Sym> }
 
-const rawFor = ({ dex, pokedex, bosses, order, mainChapters, chapterText, starter }: Ctx, set: Moveset | null, sym: Sym): Raw => {
+const rawFor = ({ dex, pokedex, bosses, mainChapters, chapterText, starter }: Ctx, set: Moveset | null, sym: Sym): Raw => {
   const s = statsOf(pokedex, sym)
   const forms = pokedex.species[sym].forms
   const types = forms['0'].types
-  const avail = availableFrom(pokedex, order, sym)
 
   // Best Mega, blended in for the share of the story it is usable
   const megas = megaForms(dex, pokedex, sym).map(m => {
     const chapter = firstMention(chapterText, m.stone)
-    return { ...m, chapter, share: megaShare(avail, chapter, mainChapters), score: statScore(forms[m.form].baseStats) }
+    return { ...m, chapter, share: megaShare(chapter, mainChapters), score: statScore(forms[m.form].baseStats) }
   }).sort((a, b) => b.share * b.score - a.share * a.score)
   const mega = megas[0]?.share ? megas[0] : null
   const base = statScore(forms['0'].baseStats)
@@ -185,14 +171,10 @@ const rawFor = ({ dex, pokedex, bosses, order, mainChapters, chapterText, starte
   const anyBest = Math.max(0, ...attacks.map(m => (m.power ?? 0) * ((m.accuracy ?? 100) / 100) * statFor(m.category) / 100))
   const moves = (1.5 * stabBest + anyBest) * (1 + (set?.coverage.length ?? 0) / 18)
 
-  // Postgame-only lines face no main-story bosses; judge their matchups against all of them
-  // (lateness is already captured by availability)
-  const later = bosses.filter(b => avail == null || b.chapter >= avail)
-  const faced = later.length ? later : bosses
   let hit = 0
   let weak = 0
   let score = 0
-  for (const b of faced) {
+  for (const b of bosses) {
     const best = Math.max(0, ...attacks.map(m => multiplier(dex, m.type, b.types) * (types.includes(m.type) ? 1.5 : 1)))
     const worst = Math.max(...b.types.map(t => multiplier(dex, t, types)))
     if (best >= 2) hit++
@@ -202,13 +184,10 @@ const rawFor = ({ dex, pokedex, bosses, order, mainChapters, chapterText, starte
     score += (best >= 3 ? 1 : best >= 2 ? 0.8 : best >= 1.5 ? 0.45 : best >= 1 ? 0.3 : 0) -
       (worst >= 4 ? 0.6 : worst >= 2 ? 0.35 : 0) * exposure + (worst === 0 ? 0.3 : worst <= 0.5 ? 0.15 : 0)
   }
-  const n = Math.max(faced.length, 1)
-
-  // Never obtainable in the guide scores 0; postgame-only barely above
-  const availability = avail == null ? 0 : avail >= mainChapters ? 0.05 : 1 - avail / mainChapters
+  const n = Math.max(bosses.length, 1)
 
   return {
-    stats, moves, bosses: score / n, availability, abilities: ability?.value ?? 0, hit: hit / n, weak: weak / n, avail, ability,
+    stats, moves, bosses: score / n, abilities: ability?.value ?? 0, hit: hit / n, weak: weak / n, ability,
     mega: mega ? { stone: mega.stone, chapter: mega.chapter!, share: mega.share } : null
   }
 }
@@ -234,11 +213,10 @@ export interface RankInput {
 }
 
 export const computeRanks = ({ dex, pokedex, learnsets, idx, chapters }: RankInput) => {
-  const order = Object.fromEntries(idx.chapters.map((c, i) => [c.id, i]))
   const mainChapters = idx.chapters.filter(c => c.id.startsWith('episode-')).length
   const bosses = bossMons(idx, chapters, pokedex)
   const ctx: Ctx = {
-    dex, pokedex, bosses, order, mainChapters,
+    dex, pokedex, bosses, mainChapters,
     chapterText: idx.chapters.map(c => JSON.stringify(chapters.find(ch => ch.id === c.id) ?? '')),
     starter: starterAbilities(chapters)
   }
@@ -252,21 +230,15 @@ export const computeRanks = ({ dex, pokedex, learnsets, idx, chapters }: RankInp
 
   const finals = syms.filter(s => finalForms(pokedex, s).length === 1 && finalForms(pokedex, s)[0] === s)
   const raw = finals.map(s => rawFor(ctx, movesets[s] ?? null, s))
-  const pct: Record<Factor, (number | null)[]> = {
+  const pct: Record<Factor, number[]> = {
     stats: percentiles(raw.map(r => r.stats)),
     moves: percentiles(raw.map(r => r.moves)),
     bosses: percentiles(raw.map(r => r.bosses)),
-    abilities: percentiles(raw.map(r => r.abilities)),
-    availability: (() => {
-      const known = raw.flatMap(r => (r.availability == null ? [] : [r.availability]))
-      const p = percentiles(known)
-      let i = 0
-      return raw.map(r => (r.availability == null ? null : p[i++]))
-    })()
+    abilities: percentiles(raw.map(r => r.abilities))
   }
   const composite = finals.map((s, i) => {
     const total = (Object.keys(WEIGHTS) as Factor[])
-      .reduce((sum, f) => sum + WEIGHTS[f] * (pct[f][i] ?? 50), 0)
+      .reduce((sum, f) => sum + WEIGHTS[f] * pct[f][i], 0)
     return total * friction(pokedex, s) * (hinderedByAbility(pokedex, s) ? 0.6 : 1)
   })
   const scores = percentiles(composite)
@@ -274,30 +246,25 @@ export const computeRanks = ({ dex, pokedex, learnsets, idx, chapters }: RankInp
   const finalEntry: Record<Sym, RankEntry> = {}
   finals.forEach((sym, i) => {
     const r = raw[i]
-    const f = Object.fromEntries((Object.keys(WEIGHTS) as Factor[]).map(k => [k, pct[k][i]])) as Record<Factor, number | null>
+    const f = Object.fromEntries((Object.keys(WEIGHTS) as Factor[]).map(k => [k, pct[k][i]])) as Record<Factor, number>
     const st = pokedex.species[sym].forms['0'].baseStats
     const topStats = st.map((v, j) => [STAT_NAMES[j], v] as const).sort((a, b) => b[1] - a[1]).slice(0, 2)
     const set = movesets[sym]
     const stab = set?.moves.find(m => m.category !== 'status' && pokedex.species[sym].forms['0'].types.includes(m.type))
-    const chapterTitle = r.avail != null ? idx.chapters[r.avail].title : null
 
     const good: string[] = []
     const bad: string[] = []
-    if ((f.stats ?? 0) >= 70) good.push(`Strong stats: ${topStats.map(([n, v]) => `${n} ${v}`).join(', ')}`)
-    if ((f.stats ?? 100) <= 30) bad.push(`Low base stats (total ${st.reduce((a, b) => a + b, 0)})`)
-    if ((f.moves ?? 0) >= 70 && stab) good.push(`Strong moves: ${stab.name} (${stab.power}), super-effective on ${set.coverage.length} types`)
-    if ((f.moves ?? 100) <= 30) bad.push(set ? `Thin movepool: covers ${set.coverage.length} types` : 'Almost no damaging moves')
+    if (f.stats >= 70) good.push(`Strong stats: ${topStats.map(([n, v]) => `${n} ${v}`).join(', ')}`)
+    if (f.stats <= 30) bad.push(`Low base stats (total ${st.reduce((a, b) => a + b, 0)})`)
+    if (f.moves >= 70 && stab) good.push(`Strong moves: ${stab.name} (${stab.power}), super-effective on ${set.coverage.length} types`)
+    if (f.moves <= 30) bad.push(set ? `Thin movepool: covers ${set.coverage.length} types` : 'Almost no damaging moves')
     if (r.ability && r.ability.value >= 0.6) {
       const name = pokedex.abilities[r.ability.ability]?.name ?? r.ability.ability
       good.push(r.ability.source === 'mega' ? `Mega ability: ${name}` : r.ability.source === 'hidden' ? `Strong hidden ability: ${name}` : `Strong ability: ${name}`)
     }
     if (r.mega && r.mega.share >= 0.2) good.push(`Mega Evolves from ${idx.chapters[r.mega.chapter].title} (${r.mega.stone})`)
-    if ((f.bosses ?? 0) >= 70) good.push(`Hits ${Math.round(r.hit * 100)}% of later boss Pokemon super-effectively`)
-    if ((f.bosses ?? 100) <= 30) bad.push(`Struggles against bosses: weak to ${Math.round(r.weak * 100)}% of them`)
-    if (chapterTitle && (f.availability ?? 0) >= 70) good.push(`Catchable early: ${chapterTitle}`)
-    if (chapterTitle && r.avail != null && r.avail < mainChapters && (f.availability ?? 100) <= 30) bad.push(`Only catchable late: ${chapterTitle}`)
-    if (r.avail == null) bad.push('Not obtainable anywhere in the guide')
-    else if (r.avail >= mainChapters) bad.push(`Postgame only: ${chapterTitle}`)
+    if (f.bosses >= 70) good.push(`Hits ${Math.round(r.hit * 100)}% of boss Pokemon super-effectively`)
+    if (f.bosses <= 30) bad.push(`Struggles against bosses: weak to ${Math.round(r.weak * 100)}% of them`)
     if (friction(pokedex, sym) < 1) bad.push(tradeEvolved(pokedex, sym) ? 'Trade evolution: needs a Link Stone' : 'Evolves at level 50 or later')
     if (hinderedByAbility(pokedex, sym)) bad.push(`Held back by its ability: ${pokedex.species[sym].forms['0'].abilities.map(a => pokedex.abilities[a]?.name ?? a).join(', ')}`)
 
@@ -326,7 +293,7 @@ export const computeRanks = ({ dex, pokedex, learnsets, idx, chapters }: RankInp
   return {
     ranks: {
       generatedAt: new Date().toISOString(),
-      method: 'Percentiles among fully evolved species of stats including Mega forms once their stone is obtainable (25%), moveset strength and coverage (20%), matchups against main-story boss Pokemon adjusted for speed and setup (25%), how early the line is catchable (15%) and best ability (15%), reduced for trade or level 50+ evolutions. S top 5%, A next 15%, B next 30%, C next 30%, D bottom 20%.',
+      method: 'Percentiles among fully evolved species of stats including Mega forms once their stone is obtainable (30%), moveset strength and coverage (25%), matchups against main-story boss Pokemon adjusted for speed and setup (30%) and best ability (15%), reduced for trade or level 50+ evolutions. S top 5%, A next 15%, B next 30%, C next 30%, D bottom 20%.',
       species
     },
     movesets: { generatedAt: new Date().toISOString(), species: movesets }

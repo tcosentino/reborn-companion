@@ -12,7 +12,7 @@ import { CaughtToggle, CompareToggle, CompareTray, TierBadge } from './bits'
 import { usePokedex } from './context'
 import { SpeciesGuideLists } from './SpeciesGuideLists'
 
-const FACTORS: [Factor, string][] = [['stats', 'Stats'], ['moves', 'Movepool'], ['bosses', 'Boss matchups'], ['availability', 'Availability'], ['abilities', 'Ability']]
+const FACTORS: [Factor, string][] = [['stats', 'Stats'], ['moves', 'Movepool'], ['bosses', 'Boss matchups'], ['abilities', 'Ability']]
 
 const learnLabel = (m: SetMove) => {
   const how: Record<MoveSource, string> = {

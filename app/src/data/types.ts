@@ -201,7 +201,7 @@ export interface MoveData { name: string; type: Sym; category: string; power: nu
 export interface Learnsets { species: Record<Sym, Record<string, LearnsetForm>>; moves: Record<Sym, MoveData> }
 
 // ranks.json and movesets.json are computed by app/scripts/build-ranks.ts from game data only
-export type Factor = 'stats' | 'moves' | 'bosses' | 'availability' | 'abilities'
+export type Factor = 'stats' | 'moves' | 'bosses' | 'abilities'
 
 export interface RankEntry {
   tier: Tier
@@ -209,8 +209,8 @@ export interface RankEntry {
   score: number
   // Final form this rating comes from, when it is not the species itself
   via?: Sym
-  // 0-100 percentiles; availability is null when the guide never lists the line
-  factors: Record<Factor, number | null>
+  // 0-100 percentiles
+  factors: Record<Factor, number>
   note: string
   reasons: { good: string[]; bad: string[] }
 }

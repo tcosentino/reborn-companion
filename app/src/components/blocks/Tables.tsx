@@ -83,7 +83,7 @@ export const Encounters = ({ b, id, collapsed }: { b: EncountersBlock; id?: stri
           ))}
         </table>
       </div>
-      <p className="legend-note"><span className="new-dot" /> First place this Pokemon appears in the guide{pokedex && <>. Tick the box when caught; the letter is how worth leveling it is (S best, D skip).</>}</p>
+      <p className="legend-note"><span className="new-dot" /> First place this Pokemon appears in the guide{pokedex && <>. Tick the box when caught; the letter is its power tier (S best, D weakest).</>}</p>
     </section>
   )
 }

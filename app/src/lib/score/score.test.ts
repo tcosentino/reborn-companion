@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import type { Dex, Learnsets, MoveData, Pokedex } from '../../data/types'
 import { boostsStat, buildMoveset, isUsableAttack, learnable, moveValue, roleOf } from './moves'
 import { ABILITY_VALUE, DEFAULT_ABILITY, abilityValue } from './abilities'
-import { HIDDEN_ABILITY_CREDIT, availableFrom, bestAbility, finalForms, firstMention, hinderedByAbility, isMajorTrainer, megaForms, megaShare, starterAbilities, tierFor } from './rank'
+import { HIDDEN_ABILITY_CREDIT, bestAbility, finalForms, firstMention, hinderedByAbility, isMajorTrainer, megaForms, megaShare, starterAbilities, tierFor } from './rank'
 
 const move = (name: string, type: string, category: string, power: number | null, desc = '', accuracy = 100): MoveData =>
   ({ name, type, category, power, accuracy, pp: 10, desc })
@@ -132,12 +132,6 @@ describe('rank helpers', () => {
     expect(isMajorTrainer({ name: 'Geoff', trainerType: 'MeteorGrunt' })).toBe(false)
   })
 
-  it('takes availability from the earliest table or prose mention in the line', () => {
-    const order = { c0: 0, c1: 1, c2: 2 }
-    expect(availableFrom(pokedex, order, 'CHARIZARD')).toBe(0)
-    expect(availableFrom(pokedex, order, 'SLAKING')).toBeNull()
-  })
-
   it('finds final forms and hindering abilities', () => {
     expect(finalForms(pokedex, 'CHARMANDER')).toEqual(['CHARIZARD'])
     expect(hinderedByAbility(pokedex, 'SLAKING')).toBe(true)
@@ -194,9 +188,9 @@ describe('abilities and megas', () => {
   it('finds the first chapter mentioning a stone and the share of the story after it', () => {
     expect(firstMention(['nothing', 'get the Blazikenite here', 'Blazikenite again'], 'Blazikenite')).toBe(1)
     expect(firstMention(['nothing'], 'Blazikenite')).toBeNull()
-    expect(megaShare(0, 0, 10)).toBeCloseTo(0.8)
-    expect(megaShare(0, 5, 10)).toBeCloseTo(0.4)
-    expect(megaShare(0, 10, 10)).toBe(0)
-    expect(megaShare(0, null, 10)).toBe(0)
+    expect(megaShare(0, 10)).toBeCloseTo(0.8)
+    expect(megaShare(5, 10)).toBeCloseTo(0.4)
+    expect(megaShare(10, 10)).toBe(0)
+    expect(megaShare(null, 10)).toBe(0)
   })
 })
