@@ -1,0 +1,37 @@
+[
+  {
+    "id": "castle-grounds",
+    "match": "On the next map, you can find a hidden *Green Shard*",
+    "map": 697,
+    "title": "Hidden items before the castle",
+    "pad": 4,
+    "items": [
+      { "event": 26 },
+      { "event": 27 }
+    ]
+  },
+  {
+    "id": "belly-first",
+    "match": "Grab the hidden *Super Potion*, *Ultra Potion*, and non-hidden",
+    "map": 701,
+    "title": "Belly of the Beast: before the fight",
+    "pad": 4,
+    "items": [
+      { "event": 10 },
+      { "event": 12 },
+      { "event": 9 }
+    ]
+  },
+  {
+    "id": "belly-beyond",
+    "match": "Pick up the hidden *Health Wing*, *Revive*, and *Lava Cookie*",
+    "map": 701,
+    "title": "Belly of the Beast: beyond the dragon",
+    "pad": 4,
+    "items": [
+      { "event": 11 },
+      { "event": 13 },
+      { "event": 14 }
+    ]
+  }
+]

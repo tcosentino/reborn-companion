@@ -1,0 +1,26 @@
+[
+  {
+    "id": "grand-hall-door",
+    "match": "With 16 badges in hand, we can finally complete",
+    "map": 38,
+    "title": "Grand Hall: the way to the offices",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [19, 4], "label": "Door to the Grand Hall offices (top of the hall)" }
+    ]
+  },
+  {
+    "id": "grand-hall-adrienn",
+    "match": "With 16 badges in hand, we can finally complete",
+    "map": 764,
+    "title": "Grand Hall offices: Adrienn",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [19, 3], "label": "Where you come in" },
+      { "at": [15, 8], "label": "Adrienn (fund the project)" },
+      { "at": [12, 2], "label": "Director's Office" }
+    ]
+  }
+]

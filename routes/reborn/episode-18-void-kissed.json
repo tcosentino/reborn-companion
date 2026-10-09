@@ -5,28 +5,46 @@
     "map": 412,
     "title": "Gatehouse to Hardy at the rock wall",
     "points": [
-      {
-        "at": [
-          12,
-          18
-        ],
-        "label": "Calcenon gatehouse"
-      },
-      {
-        "at": [
-          59,
-          32
-        ],
-        "label": "Hardy (TMX9 Rock Climb)"
-      }
+      { "at": [12, 18], "label": "Calcenon gatehouse" },
+      { "at": [59, 32], "label": "Hardy (TMX9 Rock Climb)" }
     ],
-    "hide": [
-      47,
-      48,
-      49,
-      51,
-      52,
-      54
+    "hide": [47, 48, 49, 51, 52, 54]
+  },
+  {
+    "id": "calcenon-places",
+    "match": "Head over to Calcenon City, then enter",
+    "map": 413,
+    "title": "Calcenon City: apartment and checkpoint",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [28, 31], "label": "Apartment building (Hardy and the others inside)" },
+      { "at": [78, 26], "label": "Checkpoint gatehouse (east exit toward Route 4)" }
+    ]
+  },
+  {
+    "id": "apartment-inside",
+    "match": "Head over to Calcenon City, then enter",
+    "map": 417,
+    "title": "The apartment: where Hardy is",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [11, 28], "label": "Door (where you come in)" },
+      { "at": [11, 27], "label": "Hardy (just inside)" }
+    ]
+  },
+  {
+    "id": "gatehouse-places",
+    "match": "Head out towards Route 4. In the gatehouse, talk to Charlotte",
+    "map": 418,
+    "title": "Calcenon Checkpoint gatehouse",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [16, 7], "label": "Door back into Calcenon City" },
+      { "at": [23, 8], "label": "Charlotte" },
+      { "at": [29, 7], "label": "Exit to Route 4" }
     ]
   }
 ]

@@ -1,0 +1,64 @@
+[
+  {
+    "id": "mansion-door",
+    "match": "With that out of the way, we can pretty much head right",
+    "map": 359,
+    "title": "Celestinine Cascade: Fiore Mansion door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [22, 17], "label": "Fiore Mansion (front door)" }
+    ]
+  },
+  {
+    "id": "mansion-inside",
+    "match": "With that out of the way, we can pretty much head right",
+    "map": 508,
+    "title": "Fiore Mansion: places",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [15, 23], "label": "Front door (from the Cascade)" },
+      { "at": [10, 8], "label": "Julia (gym advice)" },
+      { "at": [7, 17], "label": "Vaporeon, Cirrus (pet it)" },
+      { "at": [10, 5], "label": "Door to the gym room (at the back)" }
+    ]
+  },
+  {
+    "id": "gym-lobby",
+    "match": "Unfortunately this gym's layout is super confusing",
+    "map": 678,
+    "title": "Fiore Gym: the water lobby",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [29, 51], "label": "Door in from the mansion (you start here)" },
+      { "at": [28, 48], "label": "Victoria (gym telephone)" },
+      { "at": [31, 48], "label": "Door to the gym room (arena)" }
+    ]
+  },
+  {
+    "id": "arena-amaria-r",
+    "match": "Surface in the gym room, then talk to Amaria.",
+    "map": 679,
+    "title": "Gym room: Amaria and the warp",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [24, 33], "label": "Warp back to the front of the gym" },
+      { "at": [24, 22], "label": "Amaria (talk to her)" }
+    ]
+  },
+  {
+    "id": "arena-amaria-z",
+    "match": "Surface in the gym room, then talk to Titania.",
+    "map": 679,
+    "title": "Gym room: Titania and the warp",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [24, 33], "label": "Warp back to the front of the gym" },
+      { "at": [24, 22], "label": "Titania (talk to her)" }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "kanaya",
+    "match": "Since the last time we made progress on this quest",
+    "map": 764,
+    "title": "Grand Hall: Kanaya",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [26, 124], "label": "Kanaya (starter egg donations)" },
+      { "at": [27, 125], "label": "Kanaya's notebook (list of eggs)" }
+    ]
+  }
+]

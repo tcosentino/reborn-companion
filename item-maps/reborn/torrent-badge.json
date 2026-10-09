@@ -1,0 +1,124 @@
+[
+  {
+    "id": "r-heart-scale",
+    "match": "Unfortunately this gym's layout is super confusing",
+    "map": 678,
+    "title": "Heart Scale (hidden)",
+    "pad": 4,
+    "items": [
+      { "event": 8 }
+    ]
+  },
+  {
+    "id": "z-heart-scale",
+    "match": "Surface in the gym room, then talk to Titania.",
+    "map": 678,
+    "title": "Heart Scale (hidden)",
+    "pad": 4,
+    "items": [
+      { "event": 8 }
+    ]
+  },
+  {
+    "id": "r-full-restore-ultra-potion",
+    "match": "This time, head right at the underwater fork. When you surface, you can get a hidden *Full Restore*. The path from here is linear. When you surface next, you can get a hidden *Ultra Potion* on the left. Continuing, when you encounter a fork, go down instead of left. Amaria #1",
+    "map": 678,
+    "title": "Full Restore and Ultra Potion",
+    "pad": 6,
+    "items": [
+      { "event": 11 },
+      { "event": 10 }
+    ]
+  },
+  {
+    "id": "z-full-restore-ultra-potion",
+    "match": "This time, head right at the underwater fork. When you surface, you can get a hidden *Full Restore*. The path from here is linear. When you surface next, you can get a hidden *Ultra Potion* on the left. Continuing, when you encounter a fork, go down instead of left. Enter the next room.",
+    "map": 678,
+    "title": "Full Restore and Ultra Potion",
+    "pad": 6,
+    "items": [
+      { "event": 11 },
+      { "event": 10 }
+    ]
+  },
+  {
+    "id": "r-elemental-seed",
+    "match": "Continue into the next room in the bottom right. Going right at the fork will lead you to an *Elemental Seed*.",
+    "map": 680,
+    "title": "Elemental Seed",
+    "pad": 5,
+    "items": [
+      { "event": 42 }
+    ]
+  },
+  {
+    "id": "z-elemental-seed",
+    "match": "Continue into the next room in the bottom right. Going right at the fork will lead you to an *Elemental Seed*. Follow the path through, surfacing. Continue to follow the path at the next dive spot. At the fork, go left instead of right. The next room",
+    "map": 680,
+    "title": "Elemental Seed",
+    "pad": 5,
+    "items": [
+      { "event": 42 }
+    ]
+  },
+  {
+    "id": "r-max-revive",
+    "match": "Exit this next room at the top and surface to get a *Max Revive*.",
+    "map": 678,
+    "title": "Max Revive",
+    "pad": 5,
+    "items": [
+      { "event": 4 }
+    ]
+  },
+  {
+    "id": "z-max-revive",
+    "match": "Exit this room at the top and surface to get a *Max Revive*.",
+    "map": 678,
+    "title": "Max Revive",
+    "pad": 5,
+    "items": [
+      { "event": 4 }
+    ]
+  },
+  {
+    "id": "r-slowbronite",
+    "match": "Go left at the first fork to reach the *Slowbronite*!",
+    "map": 680,
+    "title": "Slowbronite",
+    "pad": 5,
+    "items": [
+      { "event": 43 }
+    ]
+  },
+  {
+    "id": "r-ability-capsule",
+    "match": "Go left at the first fork to reach the *Slowbronite*!",
+    "map": 678,
+    "title": "Ability Capsule (base of the waterfall)",
+    "pad": 5,
+    "items": [
+      { "event": 9 }
+    ]
+  },
+  {
+    "id": "z-slowbronite",
+    "match": "Go left at the first fork to reach the *Slowbronite*! Back at the fork head straight up, and then left as soon as you can to surface. There's a hidden *Ability Capsule* at the base of the waterfall. Grab it, then head back up the waterfall and dive down into the room we were just in. In the northeast",
+    "map": 680,
+    "title": "Slowbronite",
+    "pad": 5,
+    "items": [
+      { "event": 43 }
+    ]
+  },
+  {
+    "id": "z-ability-capsule",
+    "match": "Go left at the first fork to reach the *Slowbronite*! Back at the fork head straight up, and then left as soon as you can to surface. There's a hidden *Ability Capsule* at the base of the waterfall. Grab it, then head back up the waterfall and dive down into the room we were just in. In the northeast",
+    "map": 678,
+    "title": "Ability Capsule (base of the waterfall)",
+    "pad": 5,
+    "items": [
+      { "event": 9 }
+    ]
+  }
+]

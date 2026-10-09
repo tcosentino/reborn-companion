@@ -1,0 +1,117 @@
+[
+  {
+    "id": "yard-hilltop",
+    "match": "Head up and enter the nearby train (3)",
+    "map": 663,
+    "title": "Scrapyard: hilltop items",
+    "pad": 4,
+    "items": [
+      { "event": 170 },
+      { "event": 17 }
+    ]
+  },
+  {
+    "id": "new-map-items",
+    "match": "Grab the hidden *Dire Hit* and *Synthetic Seed* on the map.",
+    "map": 692,
+    "title": "Scrapyard: second map items",
+    "pad": 3,
+    "items": [
+      { "event": 93 },
+      { "event": 92 },
+      { "event": 1 }
+    ]
+  },
+  {
+    "id": "new-map-mushroom",
+    "match": "Grab the hidden *Big Mushroom* and enter the nearby train car.",
+    "map": 692,
+    "title": "Big Mushroom",
+    "items": [
+      { "event": 94 }
+    ]
+  },
+  {
+    "id": "train-town-items",
+    "match": "Around this area, you can pick up a *Max Repel*",
+    "map": 693,
+    "title": "Train Town items",
+    "pad": 2,
+    "items": [
+      { "event": 44 },
+      { "event": 20 },
+      { "event": 21 },
+      { "event": 22 },
+      { "event": 23 },
+      { "event": 26 },
+      { "event": 25 },
+      { "event": 24 },
+      { "event": 27 }
+    ]
+  },
+  {
+    "id": "next-area-items",
+    "match": "Make your way out of the Train Town via the train car",
+    "map": 691,
+    "title": "Next area: hidden X items",
+    "pad": 4,
+    "items": [
+      { "event": 5 },
+      { "event": 6 }
+    ]
+  },
+  {
+    "id": "east-amulet",
+    "match": "Down and right from here you can find the *Amulet Coin*",
+    "map": 691,
+    "title": "Amulet Coin and Blue Shard",
+    "pad": 4,
+    "items": [
+      { "event": 1 },
+      { "event": 7 }
+    ]
+  },
+  {
+    "id": "west-repel",
+    "match": "Down and right from here you can find the *Amulet Coin*",
+    "map": 691,
+    "title": "Max Repel, Heart Scale and Green Shard",
+    "pad": 4,
+    "items": [
+      { "event": 16 },
+      { "event": 8 },
+      { "event": 9 }
+    ]
+  },
+  {
+    "id": "pit-items",
+    "match": "Down and right from here you can find the *Amulet Coin*",
+    "map": 663,
+    "title": "Exp. Candy XL and Star Piece in the pit",
+    "pad": 4,
+    "items": [
+      { "event": 172 },
+      { "event": 18 }
+    ]
+  },
+  {
+    "id": "roost",
+    "match": "Down and right from here you can find the *Amulet Coin*",
+    "map": 663,
+    "title": "TM19 Roost",
+    "pad": 4,
+    "items": [
+      { "event": 16 }
+    ]
+  },
+  {
+    "id": "max-elixir",
+    "match": "Next, head down from here, then left as soon as you're able.",
+    "map": 663,
+    "title": "Max Elixir (top left corner)",
+    "pad": 4,
+    "items": [
+      { "event": 15 }
+    ]
+  }
+]

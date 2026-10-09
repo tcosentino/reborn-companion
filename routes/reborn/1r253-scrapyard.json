@@ -1,0 +1,105 @@
+[
+  {
+    "id": "desert-train-car",
+    "match": "At the bottom right of this map but before you enter",
+    "map": 687,
+    "title": "Northwestern Tourmaline Desert: train car entrance",
+    "spots": true,
+    "pad": 12,
+    "points": [
+      { "at": [70, 153], "label": "Train car entrance (bottom right, before the Greater Tourmaline map)" }
+    ]
+  },
+  {
+    "id": "yard-start-and-exits",
+    "match": "Towards the bottom of the area you'll see a green train (1)",
+    "map": 663,
+    "title": "Scrapyard: where you start and the way out",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [18, 52], "label": "Where you arrive (from the train cars)" },
+      { "at": [55, 77], "label": "Train car entrance back to the desert (bottom)" },
+      { "at": [82, 78], "label": "Train car entrance back to the desert (bottom)" },
+      { "at": [97, 77], "label": "Train car entrance back to the desert (bottom right)" }
+    ]
+  },
+  {
+    "id": "yard-trains",
+    "match": "Towards the bottom of the area you'll see a green train (1)",
+    "map": 663,
+    "title": "Scrapyard: the numbered trains",
+    "spots": true,
+    "pad": 12,
+    "points": [
+      { "at": [31, 67], "label": "Train (1), green with an open door", "n": 1 },
+      { "at": [33, 34], "label": "Train (2), top left", "n": 2 },
+      { "at": [83, 61], "label": "Train (3)", "n": 3 },
+      { "at": [56, 66], "label": "Train (4)", "n": 4 },
+      { "at": [64, 68], "label": "Train (5)", "n": 5 },
+      { "at": [56, 45], "label": "Train (6)", "n": 6 },
+      { "at": [108, 60], "label": "Train (7), far right", "n": 7 },
+      { "at": [42, 67], "label": "Train (8), vertical", "n": 8 }
+    ]
+  },
+  {
+    "id": "yard-rocks",
+    "match": "So, use this train (1) to go forward",
+    "map": 663,
+    "title": "Scrapyard: Rock Smash rocks in front of trains",
+    "spots": true,
+    "pad": 12,
+    "points": [
+      { "at": [35, 34], "label": "Rock in front of train (2)" },
+      { "at": [106, 60], "label": "Rock in front of train (7)" },
+      { "at": [55, 63], "label": "Rock in front of train (4)" },
+      { "at": [64, 65], "label": "Rock in front of train (5)" },
+      { "at": [54, 45], "label": "Rock in front of train (6)" }
+    ]
+  },
+  {
+    "id": "yard-new-map",
+    "match": "Grab the hidden *Dire Hit* and *Synthetic Seed* on the map.",
+    "map": 692,
+    "title": "Scrapyard: new map with trains (9) to (11)",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [27, 60], "label": "Train (9), horizontal, bottom left (arrive here)", "n": 9 },
+      { "at": [50, 20], "label": "Train (11), vertical, top right", "n": 11 },
+      { "at": [31, 24], "label": "Dire Hit (hidden)" },
+      { "at": [35, 14], "label": "Synthetic Seed (hidden)" },
+      { "at": [15, 47], "label": "3 Exp. Candy XL (far southwest)" },
+      { "at": [46, 44], "label": "Big Mushroom (hidden)" },
+      { "at": [53, 44], "label": "Train car door out of this map" }
+    ]
+  },
+  {
+    "id": "train-town-places",
+    "match": "This area, sometimes referred to as Train Town",
+    "map": 693,
+    "title": "Train Town: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [26, 63], "label": "Train car at the bottom (way out)" },
+      { "at": [42, 55], "label": "Train car on the bottom right (Taka rests here)" },
+      { "at": [22, 57], "label": "Europa" },
+      { "at": [21, 53], "label": "Bottom-left train car (warp to Mirage Tower)" },
+      { "at": [42, 33], "label": "Train car on the upper right (Bouffalant Bill, healing machine)" },
+      { "at": [32, 20], "label": "Train car at the top (PC, Stephoscope)" },
+      { "at": [42, 44], "label": "Corin Rouge (east side)" }
+    ]
+  },
+  {
+    "id": "yard-east-side",
+    "match": "Make your way out of the Train Town via the train car",
+    "map": 691,
+    "title": "Scrapyard: next area",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [60, 14], "label": "Train car entrance in the top right corner (continues the story)" }
+    ]
+  }
+]

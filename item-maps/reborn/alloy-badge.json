@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tower-rare-candy",
+    "match": "Before starting the battle, you can jump into the blue hole",
+    "map": 699,
+    "title": "Rare Candy on the way back to the gym",
+    "pad": 4,
+    "items": [
+      { "event": 23 }
+    ]
+  }
+]

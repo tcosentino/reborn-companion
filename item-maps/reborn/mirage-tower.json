@@ -1,0 +1,42 @@
+[
+  {
+    "id": "basement-spiral",
+    "match": "This is a dark, mazelike room.",
+    "map": 669,
+    "title": "Mirage Tower B1F: hidden items",
+    "image": "mirage_b1f.png",
+    "pad": 2,
+    "items": [
+      { "event": 3 },
+      { "event": 4 },
+      { "event": 9 },
+      { "event": 10 },
+      { "event": 5 },
+      { "event": 12 },
+      { "event": 6 },
+      { "event": 11 },
+      { "event": 8 },
+      { "event": 7 }
+    ]
+  },
+  {
+    "id": "basement-mimikyu",
+    "match": "Towards the top of the area, you'll notice a **Mimikyu**",
+    "map": 669,
+    "title": "Near Mimikyu",
+    "items": [
+      { "event": 13 },
+      { "event": 14 }
+    ]
+  },
+  {
+    "id": "tower-top-items",
+    "match": "Following this path will lead us to the top of Mirage Tower!",
+    "map": 677,
+    "title": "Top of Mirage Tower",
+    "items": [
+      { "event": 22 },
+      { "event": 27 }
+    ]
+  }
+]

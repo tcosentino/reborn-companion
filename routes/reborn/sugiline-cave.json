@@ -5,20 +5,8 @@
     "map": 652,
     "title": "Ladder to the bottom-left vortex",
     "points": [
-      {
-        "at": [
-          40,
-          41
-        ],
-        "label": "Ladder up from B1F"
-      },
-      {
-        "at": [
-          16,
-          50
-        ],
-        "label": "Bottom-left vortex (Max Elixir)"
-      }
+      { "at": [40, 41], "label": "Ladder up from B1F" },
+      { "at": [16, 50], "label": "Bottom-left vortex (Max Elixir)" }
     ]
   },
   {
@@ -27,27 +15,9 @@
     "map": 652,
     "title": "Ladder to the vortex above the pot",
     "points": [
-      {
-        "at": [
-          40,
-          41
-        ],
-        "label": "Ladder up from B1F"
-      },
-      {
-        "at": [
-          25,
-          31
-        ],
-        "label": "Pot (Great Ball)"
-      },
-      {
-        "at": [
-          27,
-          24
-        ],
-        "label": "Vortex up and right of the pot"
-      }
+      { "at": [40, 41], "label": "Ladder up from B1F" },
+      { "at": [25, 31], "label": "Pot (Great Ball)" },
+      { "at": [27, 24], "label": "Vortex up and right of the pot" }
     ]
   },
   {
@@ -56,34 +26,10 @@
     "map": 652,
     "title": "Ladder to the top-right vortex",
     "points": [
-      {
-        "at": [
-          40,
-          41
-        ],
-        "label": "Ladder up from B1F"
-      },
-      {
-        "at": [
-          29,
-          30
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          30,
-          24
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          31,
-          11
-        ],
-        "label": "Top-right vortex"
-      }
+      { "at": [40, 41], "label": "Ladder up from B1F" },
+      { "at": [29, 30], "via": true },
+      { "at": [30, 24], "via": true },
+      { "at": [31, 11], "label": "Top-right vortex" }
     ]
   },
   {
@@ -92,20 +38,8 @@
     "map": 652,
     "title": "Ladder to the top-left vortex",
     "points": [
-      {
-        "at": [
-          40,
-          41
-        ],
-        "label": "Ladder up from B1F"
-      },
-      {
-        "at": [
-          15,
-          17
-        ],
-        "label": "Top-left vortex"
-      }
+      { "at": [40, 41], "label": "Ladder up from B1F" },
+      { "at": [15, 17], "label": "Top-left vortex" }
     ]
   },
   {
@@ -114,27 +48,9 @@
     "map": 652,
     "title": "Ladder to the vortex left of the pot",
     "points": [
-      {
-        "at": [
-          40,
-          41
-        ],
-        "label": "Ladder up from B1F"
-      },
-      {
-        "at": [
-          25,
-          31
-        ],
-        "label": "Pot"
-      },
-      {
-        "at": [
-          16,
-          33
-        ],
-        "label": "Vortex left of the pot"
-      }
+      { "at": [40, 41], "label": "Ladder up from B1F" },
+      { "at": [25, 31], "label": "Pot" },
+      { "at": [16, 33], "label": "Vortex left of the pot" }
     ]
   },
   {
@@ -143,34 +59,10 @@
     "map": 653,
     "title": "Ladder to the middle of the top three vortices",
     "points": [
-      {
-        "at": [
-          12,
-          31
-        ],
-        "label": "Ladder up from B1F"
-      },
-      {
-        "at": [
-          17,
-          16
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          21,
-          15
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          22,
-          12
-        ],
-        "label": "Middle top vortex (the safe one)"
-      }
+      { "at": [12, 31], "label": "Ladder up from B1F" },
+      { "at": [17, 16], "via": true },
+      { "at": [21, 15], "via": true },
+      { "at": [22, 12], "label": "Middle top vortex (the safe one)" }
     ]
   },
   {
@@ -179,20 +71,8 @@
     "map": 658,
     "title": "Around the vortices to the right ladder",
     "points": [
-      {
-        "at": [
-          25,
-          13
-        ],
-        "label": "Landing spot"
-      },
-      {
-        "at": [
-          42,
-          14
-        ],
-        "label": "Ladder on the right"
-      }
+      { "at": [25, 13], "label": "Landing spot" },
+      { "at": [42, 14], "label": "Ladder on the right" }
     ]
   },
   {
@@ -201,20 +81,8 @@
     "map": 653,
     "title": "Ladder to the room on the right",
     "points": [
-      {
-        "at": [
-          35,
-          14
-        ],
-        "label": "Ladder up from B1F"
-      },
-      {
-        "at": [
-          50,
-          23
-        ],
-        "label": "Room with the Arceus statue"
-      }
+      { "at": [35, 14], "label": "Ladder up from B1F" },
+      { "at": [50, 23], "label": "Room with the Arceus statue" }
     ]
   },
   {
@@ -223,27 +91,9 @@
     "map": 656,
     "title": "Past the vortex to the ladder at the top",
     "points": [
-      {
-        "at": [
-          37,
-          34
-        ],
-        "label": "Landing spot"
-      },
-      {
-        "at": [
-          41,
-          29
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          44,
-          24
-        ],
-        "label": "Ladder at the top"
-      }
+      { "at": [37, 34], "label": "Landing spot" },
+      { "at": [41, 29], "via": true },
+      { "at": [44, 24], "label": "Ladder at the top" }
     ]
   },
   {
@@ -252,41 +102,11 @@
     "map": 655,
     "title": "Ladder to the vortex below the cactus",
     "points": [
-      {
-        "at": [
-          21,
-          48
-        ],
-        "label": "Ladder up from B1F"
-      },
-      {
-        "at": [
-          24,
-          45
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          31,
-          43
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          31,
-          30
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          33,
-          29
-        ],
-        "label": "Vortex below the cactus (Link Stone)"
-      }
+      { "at": [21, 48], "label": "Ladder up from B1F" },
+      { "at": [24, 45], "via": true },
+      { "at": [31, 43], "via": true },
+      { "at": [31, 30], "via": true },
+      { "at": [33, 29], "label": "Vortex below the cactus (Link Stone)" }
     ]
   },
   {
@@ -295,48 +115,12 @@
     "map": 655,
     "title": "Ladder to the middle top vortex",
     "points": [
-      {
-        "at": [
-          21,
-          48
-        ],
-        "label": "Ladder up from B1F"
-      },
-      {
-        "at": [
-          24,
-          45
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          30,
-          43
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          30,
-          19
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          24,
-          19
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          25,
-          14
-        ],
-        "label": "Middle top vortex"
-      }
+      { "at": [21, 48], "label": "Ladder up from B1F" },
+      { "at": [24, 45], "via": true },
+      { "at": [30, 43], "via": true },
+      { "at": [30, 19], "via": true },
+      { "at": [24, 19], "via": true },
+      { "at": [25, 14], "label": "Middle top vortex" }
     ]
   },
   {
@@ -345,20 +129,117 @@
     "map": 659,
     "title": "Around the vortices to the left ladder",
     "points": [
-      {
-        "at": [
-          30,
-          15
-        ],
-        "label": "Landing spot"
-      },
-      {
-        "at": [
-          13,
-          27
-        ],
-        "label": "Ladder to the Arceus statue"
-      }
+      { "at": [30, 15], "label": "Landing spot" },
+      { "at": [13, 27], "label": "Ladder to the Arceus statue" }
+    ]
+  },
+  {
+    "id": "desert-entrance",
+    "match": "Next, I'll take us to the Sugiline Cave.",
+    "map": 694,
+    "title": "Tourmaline Desert: Sugiline Cave entrance",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [168, 130], "label": "Sugiline Cave: massive opening in a dune (east side)" }
+    ]
+  },
+  {
+    "id": "entry-room-places",
+    "match": "Essentially Sugiline Cave has two floors",
+    "map": 651,
+    "title": "Sugiline Cave entrance room: the vortices",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [34, 44], "label": "Cave entrance (from the desert)" },
+      { "at": [14, 40], "label": "Bottom-left vortex (first, to B1F)" },
+      { "at": [54, 22], "label": "Bottom-right vortex (right side of the room)" },
+      { "at": [36, 25], "label": "Vortex straight up from the entrance" },
+      { "at": [21, 11], "label": "Vortex at the very top of the room" }
+    ]
+  },
+  {
+    "id": "entry-room-bottom-right",
+    "match": "Next, step into the bottom right vortex in the entry room.",
+    "map": 651,
+    "title": "Back in the entry room: bottom right vortex",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [34, 44], "label": "Cave entrance" },
+      { "at": [54, 22], "label": "Bottom-right vortex" }
+    ]
+  },
+  {
+    "id": "entry-room-top-vortex",
+    "match": "Next, enter the vortex at the very top of the entrance room.",
+    "map": 651,
+    "title": "Back in the entry room: vortex at the very top",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [34, 44], "label": "Cave entrance" },
+      { "at": [21, 11], "label": "Vortex at the very top of the room" }
+    ]
+  },
+  {
+    "id": "entry-room-straight-up",
+    "match": "Finally, hop down the vortex straight up from the cave's entrance.",
+    "map": 651,
+    "title": "Back in the entry room: vortex straight up",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [34, 44], "label": "Cave entrance" },
+      { "at": [36, 25], "label": "Vortex straight up from the entrance" }
+    ]
+  },
+  {
+    "id": "garchomp-room",
+    "match": "In the next room, grab a hidden *Genius Wing*",
+    "map": 654,
+    "title": "Garchomp statue room",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [33, 46], "label": "Where you come in" },
+      { "at": [24, 40], "label": "Genius Wing (hidden)" },
+      { "at": [15, 12], "label": "Exp. Candy XL (hidden)" },
+      { "at": [18, 10], "label": "Door to the next room (Sugiline Ruin)" }
+    ]
+  },
+  {
+    "id": "ruin-places",
+    "match": "Explore this room. You can find 2 hidden *Red Shards*",
+    "map": 661,
+    "title": "Sugiline Ruin: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [52, 59], "label": "Where you enter the ruin" },
+      { "at": [54, 10], "label": "TM71 Stone Edge (at the top)" },
+      { "at": [57, 10], "label": "Arceus statue at the top (talk to it)" }
+    ]
+  },
+  {
+    "id": "ruin-b1f-basins",
+    "match": "You can also interact with the basins around the area",
+    "map": 662,
+    "title": "Sugiline Ruin B1F: ladder and basins",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [27, 10], "label": "Ladder up (back to the ruin)" },
+      { "at": [22, 15], "label": "Basin (feed PokeSnax)" },
+      { "at": [44, 17], "label": "Basin (feed PokeSnax)" },
+      { "at": [75, 20], "label": "Basin (feed PokeSnax)" },
+      { "at": [15, 34], "label": "Basin (feed PokeSnax)" },
+      { "at": [49, 33], "label": "Basin (feed PokeSnax)" },
+      { "at": [78, 34], "label": "Basin (feed PokeSnax)" },
+      { "at": [16, 56], "label": "Basin (feed PokeSnax)" },
+      { "at": [48, 51], "label": "Basin (feed PokeSnax)" },
+      { "at": [71, 50], "label": "Basin (feed PokeSnax)" }
     ]
   }
 ]

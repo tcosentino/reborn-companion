@@ -1,0 +1,103 @@
+[
+  {
+    "id": "desert-entrance",
+    "match": "Next, we're going to take a trip to the Teknite Cave",
+    "map": 687,
+    "title": "Tourmaline Desert: Teknite Cave entrance",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [29, 21], "label": "Teknite Cave entrance (northwest corner of the desert)" }
+    ]
+  },
+  {
+    "id": "cave-1f-places",
+    "match": "In the first room, grab the hidden *Tamato Berry*",
+    "map": 638,
+    "title": "Teknite Cave 1F",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [18, 15], "label": "Cave entrance (from the desert)" },
+      { "at": [14, 12], "label": "Tamato Berry (hidden)" },
+      { "at": [15, 7], "label": "Stairs to 2F" }
+    ]
+  },
+  {
+    "id": "cave-2f-places",
+    "match": "In the first room, grab the hidden *Tamato Berry*",
+    "map": 639,
+    "title": "Teknite Cave 2F",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [19, 19], "label": "Stairs down to 1F" },
+      { "at": [15, 11], "label": "Mountain Field Readout" },
+      { "at": [21, 12], "label": "Dawn Stone" },
+      { "at": [19, 10], "label": "Magical Seed (hidden)" },
+      { "at": [7, 15], "label": "Shimmering stones (red crystal after the field changes)" },
+      { "at": [15, 10], "label": "Stairs up to 3F" }
+    ]
+  },
+  {
+    "id": "cave-4f-places",
+    "match": "Switch to Crystal Cavern, then remove the obstacle.",
+    "map": 641,
+    "title": "Teknite Cave 4F: exits",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [15, 33], "label": "Stairs down to 3F (arrival; the bottom-left room back to 3F)" },
+      { "at": [12, 11], "label": "Top-left exit (to Teknite Ridge)" },
+      { "at": [30, 11], "label": "Top-right exit (to the Tailwind ridge)" }
+    ]
+  },
+  {
+    "id": "cave-4f-east-places",
+    "match": "Surf to a hidden *Repel* unless Taka is with you.",
+    "map": 644,
+    "title": "Teknite Cave 4F (east side): places",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [20, 14], "label": "Buginium-Z" },
+      { "at": [27, 19], "label": "Blue Shard (hidden)" },
+      { "at": [25, 21], "label": "Door back to the lake room" },
+      { "at": [9, 7], "label": "Top-left exit (to the second Teknite Ridge map)" }
+    ]
+  },
+  {
+    "id": "back-to-4f-top-left",
+    "match": "Pushing the strength boulders out of the way, hop across",
+    "map": 641,
+    "title": "Back on 4F: the top left exit",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [12, 11], "label": "Top-left exit (to the boulder ridge)" }
+    ]
+  },
+  {
+    "id": "back-to-4f-up-right",
+    "match": "Return to the 4F map with branching paths",
+    "map": 641,
+    "title": "Back on 4F: up and right",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [30, 11], "label": "Top-right exit (to the Tailwind ridge)" }
+    ]
+  },
+  {
+    "id": "ridge-rowlet-egg",
+    "match": "Hop back to the central landmass",
+    "map": 642,
+    "title": "Teknite Ridge: Rowlet egg",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [15, 57], "label": "Cave entrance (where you arrive)" },
+      { "at": [45, 15], "label": "Rowlet egg (nest at the top of the hill)" }
+    ]
+  }
+]

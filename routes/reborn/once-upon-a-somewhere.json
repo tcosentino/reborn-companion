@@ -1,0 +1,81 @@
+[
+  {
+    "id": "maze-stairs",
+    "match": "It seems like this first map is an infinite maze",
+    "map": 696,
+    "title": "The maze: where the stairs are",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [49, 25], "label": "Stairs up out of the maze" }
+    ]
+  },
+  {
+    "id": "castle-approach",
+    "match": "On the next map, you can find a hidden *Green Shard*",
+    "map": 697,
+    "title": "Next map: castle entrance",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [30, 64], "label": "Where you arrive (stairs)" },
+      { "at": [14, 39], "label": "Green Shard (hidden)" },
+      { "at": [27, 13], "label": "Sitrus Berry (hidden)" },
+      { "at": [23, 8], "label": "Castle entrance" }
+    ]
+  },
+  {
+    "id": "castle-places",
+    "match": "On the next map, you can find a hidden *Green Shard*",
+    "map": 698,
+    "title": "Castle at Wit's End: places",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [9, 78], "label": "Castle entrance (Knights fight you inside)" },
+      { "at": [9, 94], "label": "Door to the tower" }
+    ]
+  },
+  {
+    "id": "tower-floors",
+    "match": "You'll wake up in a tower.",
+    "map": 699,
+    "title": "The tower: placards and the window",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [6, 73], "label": "Placard (bottom floor, where you wake up)" },
+      { "at": [6, 51], "label": "Placard" },
+      { "at": [6, 30], "label": "Placard" },
+      { "at": [6, 8], "label": "Placard (top floor)" },
+      { "at": [6, 66], "label": "Pile of books leading out of the window" }
+    ]
+  },
+  {
+    "id": "outside-tower",
+    "match": "On the exterior of the tower, climb the vines.",
+    "map": 700,
+    "title": "Outside the tower: places",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [17, 58], "label": "Where you climb out (vines)" },
+      { "at": [12, 28], "label": "Dragon's Den Field Readout (top left)" },
+      { "at": [44, 23], "label": "Titania (talks to you as you head right)" },
+      { "at": [59, 18], "label": "Entrance to the Belly of the Beast" }
+    ]
+  },
+  {
+    "id": "belly-places",
+    "match": "Grab the hidden *Super Potion*, *Ultra Potion*, and non-hidden",
+    "map": 701,
+    "title": "Belly of the Beast: places",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [10, 123], "label": "Where you enter" },
+      { "at": [26, 86], "label": "Dragon battle" },
+      { "at": [24, 14], "label": "Exit up to Titania's arena" }
+    ]
+  }
+]

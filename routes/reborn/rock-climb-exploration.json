@@ -1,0 +1,59 @@
+[
+  {
+    "id": "azurine-nature-center",
+    "match": "I'll start with some easy ones. Fly over to Azurine Island.",
+    "map": 586,
+    "title": "Azurine Island: the nature center",
+    "spots": true,
+    "pad": 12,
+    "points": [
+      { "at": [49, 74], "label": "Azurine Nature Center (surf up from here)" }
+    ]
+  },
+  {
+    "id": "beryl-ward-door",
+    "match": "Fly over to the Beryl Ward, and enter the Beryl Cave.",
+    "map": 151,
+    "title": "Beryl Ward: Beryl Cave entrance",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [10, 6], "label": "Beryl Cave entrance" }
+    ]
+  },
+  {
+    "id": "tanzan-cove-main",
+    "match": "Fly over to the Tanzan Cove and enter the main part of Tanzan Mountain.",
+    "map": 232,
+    "title": "Tanzan Cove: the main mountain entrance",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [18, 68], "label": "Tanzan Mountain entrance (main part)" }
+    ]
+  },
+  {
+    "id": "tanzan-cove-surf",
+    "match": "Use an Escape Rope or Dig to save time",
+    "map": 232,
+    "title": "Tanzan Cove: the entrance across the water",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [12, 42], "label": "Tanzan Mountain entrance across the cove (surf)" }
+    ]
+  },
+  {
+    "id": "luna-gym",
+    "match": "Make your way to the east side of Route 1",
+    "map": 345,
+    "title": "Luna's gym",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [15, 38], "label": "Gym entrance" },
+      { "at": [15, 33], "label": "Luna" },
+      { "at": [15, 14], "label": "Dark Material item (top area of the room)" }
+    ]
+  }
+]

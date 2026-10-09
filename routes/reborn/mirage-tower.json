@@ -1,0 +1,74 @@
+[
+  {
+    "id": "mirrors-overview",
+    "match": "To reach the basement, you'll need to smash every mirror",
+    "map": 668,
+    "title": "Mirage Tower: mirrors and entrance",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [13, 34], "label": "Tower entrance (from the desert)" },
+      { "at": [4, 17], "label": "Mirrors along the top wall: left end (Rock Smash all)" },
+      { "at": [16, 13], "label": "Mirrors along the top wall: middle" },
+      { "at": [23, 17], "label": "Mirrors along the top wall: right end" }
+    ]
+  },
+  {
+    "id": "mimikyu-spot",
+    "match": "Towards the top of the area, you'll notice a **Mimikyu**",
+    "map": 669,
+    "title": "Mimikyu at the top of the basement",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [45, 11], "label": "Mimikyu (battle and catch)" }
+    ]
+  },
+  {
+    "id": "back-to-the-tower-proper",
+    "match": "Return to the Mirage Tower proper.",
+    "map": 707,
+    "title": "Mirage Tower: back on the main floor",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [13, 34], "label": "Tower entrance (from the desert)" },
+      { "at": [16, 13], "label": "Smashed mirrors (way down to the basement)" },
+      { "at": [11, 10], "label": "Stairs up to the block puzzles" }
+    ]
+  },
+  {
+    "id": "desert-to-tower-top",
+    "match": "Although you might be tempted to head back into the tower",
+    "map": 675,
+    "title": "Down the path to the top of the tower",
+    "points": [
+      { "at": [37, 23], "label": "Tower exit (back in the desert)" },
+      { "at": [41, 91], "label": "Path down to the tower top" }
+    ]
+  },
+  {
+    "id": "path-to-tower-top",
+    "match": "Following this path will lead us to the top of Mirage Tower!",
+    "map": 676,
+    "title": "Path to the top of the tower",
+    "points": [
+      { "at": [26, 23], "label": "Start" },
+      { "at": [25, 54], "label": "Stairs to the top" }
+    ]
+  },
+  {
+    "id": "tower-top-places",
+    "match": "Following this path will lead us to the top of Mirage Tower!",
+    "map": 677,
+    "title": "Top of Mirage Tower: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [13, 34], "label": "Where the path arrives" },
+      { "at": [6, 17], "label": "Normalium-Z" },
+      { "at": [20, 17], "label": "TM04 Calm Mind" },
+      { "at": [13, 14], "label": "Honedge (sheathed in the platform)" }
+    ]
+  }
+]

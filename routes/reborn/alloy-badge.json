@@ -1,0 +1,39 @@
+[
+  {
+    "id": "arena-places",
+    "match": "Before starting the battle, you can jump into the blue hole",
+    "map": 702,
+    "title": "Titania's arena: places",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [24, 33], "label": "Where you enter" },
+      { "at": [24, 17], "label": "Titania (gym leader)" },
+      { "at": [24, 11], "label": "Blue hole at the top (shortcut to Train Town)" }
+    ]
+  },
+  {
+    "id": "shortcut-to-train-town",
+    "match": "Before starting the battle, you can jump into the blue hole",
+    "map": 698,
+    "title": "The shortcut: left to Train Town",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [42, 100], "label": "Where the blue hole drops you" },
+      { "at": [31, 100], "label": "Train car to Train Town (go left)" },
+      { "at": [38, 97], "label": "Hole up (returns to the tower)" }
+    ]
+  },
+  {
+    "id": "pit-at-the-top",
+    "match": "Jump down the pit at the top and go left",
+    "map": 702,
+    "title": "Back out of the arena: the pit at the top",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [24, 11], "label": "Pit at the top (then go left to Train Town)" }
+    ]
+  }
+]

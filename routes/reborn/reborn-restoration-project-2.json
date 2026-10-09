@@ -1,0 +1,51 @@
+[
+  {
+    "id": "nightclub-arclight",
+    "match": "If you haven't yet gotten the Mega-Z Ring",
+    "map": 826,
+    "title": "Nightclub: Arclight and Jolteon",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [10, 12], "label": "Nightclub entrance (from North Obsidia Ward)" },
+      { "at": [12, 5], "label": "Arclight (Mega-Z Ring quest)" },
+      { "at": [13, 5], "label": "Jolteon (pet it)" }
+    ]
+  },
+  {
+    "id": "mosswater-tutor",
+    "match": "Now that we've defeated Titania, there is one more move tutor",
+    "map": 522,
+    "title": "Peridot Ward: Mosswater Market",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [83, 55], "label": "Mosswater Move Tutor (Max and Myles)" },
+      { "at": [88, 64], "label": "Mosswater Market sign" }
+    ]
+  },
+  {
+    "id": "grand-hall-door",
+    "match": "Head over to the Grand Hall.",
+    "map": 38,
+    "title": "Grand Hall: the way to the offices",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [19, 4], "label": "Door to the Grand Hall offices (top of the hall)" }
+    ]
+  },
+  {
+    "id": "grand-hall-adrienn",
+    "match": "Head over to the Grand Hall.",
+    "map": 764,
+    "title": "Grand Hall offices: Adrienn",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [19, 3], "label": "Where you come in" },
+      { "at": [15, 8], "label": "Adrienn (fund the project)" },
+      { "at": [12, 2], "label": "Director's Office" }
+    ]
+  }
+]
