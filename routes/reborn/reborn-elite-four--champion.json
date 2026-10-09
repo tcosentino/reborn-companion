@@ -1,0 +1,14 @@
+[
+  {
+    "id": "charous-hall-entrance",
+    "match": "Enter the Charous Hall, to the right of the Pokemon Center.",
+    "map": 814,
+    "title": "Charous Mountain: Pokemon Center and Charous Hall",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [42, 30], "label": "Pokemon Center" },
+      { "at": [53, 32], "label": "Charous Hall entrance (to the right of the Pokemon Center)" }
+    ]
+  }
+]

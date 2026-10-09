@@ -1,0 +1,36 @@
+[
+  {
+    "id": "seacrest-nightclub",
+    "match": "Back in the Nightclub, talk to Seacrest, and accept the quest.",
+    "map": 827,
+    "title": "Nightclub: Seacrest",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [50, 8], "label": "Seacrest (Umbral quest)" }
+    ]
+  },
+  {
+    "id": "castle-door-again",
+    "match": "Back in the Nightclub, talk to Seacrest, and accept the quest.",
+    "map": 293,
+    "title": "Vanhanen Castle: the New World Door",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [9, 24], "label": "New World Door (second level)" }
+    ]
+  },
+  {
+    "id": "chess-hall",
+    "match": "Back in the Nightclub, talk to Seacrest, and accept the quest.",
+    "map": 832,
+    "title": "Vanhanen Castle: the chess hall",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [33, 28], "label": "Entrance from the New World hub" },
+      { "at": [33, 16], "label": "Chess board (Umbral battle)" }
+    ]
+  }
+]

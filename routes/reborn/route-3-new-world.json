@@ -1,0 +1,96 @@
+[
+  {
+    "id": "sandy-nightclub",
+    "match": "Talk to Sandy and accept her quest to check out Route 3.",
+    "map": 827,
+    "title": "Nightclub: Sandy",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [48, 6], "label": "Sandy (Route 3 quest)" }
+    ]
+  },
+  {
+    "id": "ruby-cave-door",
+    "match": "Fly over to Calcenon, then go down the stairs and right onto the route.",
+    "map": 405,
+    "title": "Route 3: first cave (Ruby Cave)",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [22, 6], "label": "New World Door" }
+    ]
+  },
+  {
+    "id": "nw3-arena",
+    "match": "Head up and talk to the Ringmaster.",
+    "map": 835,
+    "title": "New World (Route 3): Ringmaster and Virizion",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [61, 73], "label": "Entrance (from the Ruby Cave)" },
+      { "at": [62, 21], "label": "Ringmaster (head up)" },
+      { "at": [23, 52], "label": "Virizion runs left to here" }
+    ]
+  },
+  {
+    "id": "nw3-catch",
+    "match": "With the battle done, two of the three will run off",
+    "map": 835,
+    "title": "Catch Virizion and Cobalion",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [11, 41], "label": "Virizion (grassy area to the left)" },
+      { "at": [87, 32], "label": "Cobalion (right side of the area)" }
+    ]
+  },
+  {
+    "id": "terrakion",
+    "match": "Head outside of the New World. Make your way through the Route 3 Cave system",
+    "map": 409,
+    "title": "Sapphire Cave: Terrakion",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [19, 6], "label": "Terrakion (up some rocks)" }
+    ]
+  },
+  {
+    "id": "ruby-cave-return",
+    "match": "But wait, there's more! Return to the New World Door in the Ruby Cave",
+    "map": 405,
+    "title": "Ruby Cave: New World Door",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [22, 6], "label": "New World Door" }
+    ]
+  },
+  {
+    "id": "ringmaster-top",
+    "match": "But wait, there's more! Return to the New World Door in the Ruby Cave",
+    "map": 835,
+    "title": "Ringmaster at the top of the area",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [61, 73], "label": "Entrance (from the Ruby Cave)" },
+      { "at": [62, 17], "label": "Ringmaster (top of the area)" },
+      { "at": [62, 15], "label": "Door to the next area" }
+    ]
+  },
+  {
+    "id": "nw3-back",
+    "match": "Head up when you're ready for one heck of a battle.",
+    "map": 839,
+    "title": "New World (Route 3 Back)",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [11, 50], "label": "Entrance" },
+      { "at": [11, 11], "label": "Head up for the battle (Keldeo)" }
+    ]
+  }
+]

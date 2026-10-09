@@ -1,0 +1,31 @@
+[
+  {
+    "id": "deepwoods-west",
+    "match": "On this map, you can find a hidden *Purple Shard*",
+    "map": 840,
+    "title": "Deepwoods west: hidden items",
+    "items": [
+      { "event": 136 },
+      { "event": 137 },
+      { "event": 138 },
+      { "event": 149 },
+      { "event": 174 },
+      { "event": 139 },
+      { "event": 140 }
+    ]
+  },
+  {
+    "id": "deepwoods-east",
+    "match": "On this map, you can find a hidden *Purple Shard*",
+    "map": 840,
+    "title": "Deepwoods east: hidden items",
+    "items": [
+      { "event": 141 },
+      { "event": 142 },
+      { "event": 143 },
+      { "event": 147 },
+      { "event": 144 },
+      { "event": 146 }
+    ]
+  }
+]

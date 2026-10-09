@@ -9,5 +9,77 @@
       { "at": [72, 65], "label": "ZCell 02" },
       { "at": [92, 26], "label": "Anomaly battle (Raikou)" }
     ]
+  },
+  {
+    "id": "randall-nightclub",
+    "match": "Head back to the Nightclub. Talk to Randall this time",
+    "map": 827,
+    "title": "Nightclub: Randall",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [46, 6], "label": "Randall (Route 1 quest)" }
+    ]
+  },
+  {
+    "id": "nature-center",
+    "match": "Fly over to the Route 1 Nature Center, and talk to Sandy outside.",
+    "map": 290,
+    "title": "Route 1: Nature Center and Sandy",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [23, 18], "label": "Sandy (outside the Nature Center)" },
+      { "at": [20, 18], "label": "Nature Center door (stairs inside to the roof)" },
+      { "at": [19, 10], "label": "New World Door (roof)" }
+    ]
+  },
+  {
+    "id": "entei-path",
+    "match": "Only Unown in Entei's realm?",
+    "map": 833,
+    "title": "Route 1 West: to Entei",
+    "points": [
+      { "at": [8, 126], "label": "New World Door (from the roof)" },
+      { "at": [12, 6], "label": "Entei" }
+    ],
+    "spots": true,
+    "pad": 6
+  },
+  {
+    "id": "south-woods-door",
+    "match": "Anyways, use a Tauros to follow the long path",
+    "map": 282,
+    "title": "South Aventurine Woods: New World Door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [33, 46], "label": "New World Door (southeast)" }
+    ]
+  },
+  {
+    "id": "south-new-world",
+    "match": "Surf up. While you're going up, hug the right wall.",
+    "map": 834,
+    "title": "Route 1 South: Max Revive, ZCell 01, Suicune",
+    "points": [
+      { "at": [20, 85], "label": "New World Door (entrance)" },
+      { "at": [46, 39], "label": "Max Revive" },
+      { "at": [45, 38], "label": "ZCell 01" },
+      { "at": [24, 15], "label": "Anomaly battle (Suicune)" }
+    ],
+    "spots": true,
+    "pad": 4
+  },
+  {
+    "id": "north-woods-door",
+    "match": "Towards the east side of Route 1, grab a Tauros",
+    "map": 289,
+    "title": "North Aventurine Woods: New World Door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [57, 9], "label": "New World Door (up the ledge)" }
+    ]
   }
 ]

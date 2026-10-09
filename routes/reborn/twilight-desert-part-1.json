@@ -1,0 +1,79 @@
+[
+  {
+    "id": "marcello-nightclub",
+    "match": "First, talk to Marcello on the left for a new quest.",
+    "map": 827,
+    "title": "Nightclub: Marcello",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [39, 8], "label": "Marcello (quest and Lemonade)" }
+    ]
+  },
+  {
+    "id": "grandview-station",
+    "match": "Make your way to the Grandview Station, then head to the desert.",
+    "map": 530,
+    "title": "Lower Peridot Ward: Grandview Station",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [45, 66], "label": "Grandview Station" }
+    ]
+  },
+  {
+    "id": "desert-door",
+    "match": "Make your way to the Grandview Station, then head to the desert.",
+    "map": 694,
+    "title": "Tourmaline Desert: the New World Door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [77, 255], "label": "Arrival from the train station" },
+      { "at": [121, 243], "label": "New World Door (up a few tiles, then right)" }
+    ]
+  },
+  {
+    "id": "twilight-overview",
+    "match": "This map actually loops back onto itself from its west and east ends",
+    "map": 841,
+    "title": "Twilight Desert: entrance, cells and factory doors",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [68, 109], "label": "Entrance (New World Door)" },
+      { "at": [93, 94], "label": "Zygarde Cell" },
+      { "at": [148, 93], "label": "Zygarde Cell" },
+      { "at": [109, 60], "label": "Zygarde Cell" },
+      { "at": [141, 57], "label": "Zygarde Cell" },
+      { "at": [38, 55], "label": "Zygarde Cell (left of the palm tree)" },
+      { "at": [44, 55], "label": "Zygarde Cell (right of the palm tree)" },
+      { "at": [121, 45], "label": "Zygarde Cell" },
+      { "at": [136, 48], "label": "Zygarde Cell" },
+      { "at": [174, 31], "label": "Zygarde Cell" },
+      { "at": [10, 31], "label": "Zygarde Cell" },
+      { "at": [47, 18], "label": "Door alpha" },
+      { "at": [75, 20], "label": "Door beta" },
+      { "at": [117, 26], "label": "Door gamma" },
+      { "at": [155, 20], "label": "Door delta" }
+    ]
+  },
+  {
+    "id": "twilight-factory",
+    "match": "From here, continue going around the loop until you see an open door",
+    "map": 846,
+    "title": "Twilight Factory: machines and Florinia",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [8, 9], "label": "Door alpha (Cell Imprints monitors)" },
+      { "at": [8, 3], "label": "Cell Imprints monitor" },
+      { "at": [17, 48], "label": "Door gamma (Negative Imprints screens)" },
+      { "at": [16, 29], "label": "Door delta" },
+      { "at": [22, 23], "label": "Merge machine (Zygarde 10%)" },
+      { "at": [21, 23], "label": "Deconstruct machine" },
+      { "at": [51, 49], "label": "Door beta" },
+      { "at": [55, 39], "label": "Florinia" }
+    ]
+  }
+]

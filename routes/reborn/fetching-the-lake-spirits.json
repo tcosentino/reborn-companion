@@ -1,0 +1,46 @@
+[
+  {
+    "id": "seacrest-nightclub",
+    "match": "Back in the Nightclub, talk to Seacrest.",
+    "map": 827,
+    "title": "Nightclub: Seacrest",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [50, 8], "label": "Seacrest" }
+    ]
+  },
+  {
+    "id": "azelf",
+    "match": "Fly to Coral Ward, then go west.",
+    "map": 567,
+    "title": "Azelf",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [98, 40], "label": "Azelf" }
+    ]
+  },
+  {
+    "id": "uxie",
+    "match": "From here, retrace your steps until you reach the sandbar.",
+    "map": 553,
+    "title": "Uxie",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [76, 13], "label": "Uxie (top right corner)" }
+    ]
+  },
+  {
+    "id": "mesprit",
+    "match": "Surface, and fly to Apophyll Academy.",
+    "map": 605,
+    "title": "Mesprit",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [19, 59], "label": "Mesprit" }
+    ]
+  }
+]

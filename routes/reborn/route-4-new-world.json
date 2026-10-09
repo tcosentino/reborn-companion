@@ -1,0 +1,107 @@
+[
+  {
+    "id": "aster-nightclub",
+    "match": "Talk to Aster and accept his quest",
+    "map": 827,
+    "title": "Nightclub: Aster",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [44, 6], "label": "Aster (Route 4 quest)" }
+    ]
+  },
+  {
+    "id": "purple-door",
+    "match": "Climb the rocks, then at the fork go up.",
+    "map": 710,
+    "title": "Route 4: Purple Zone door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [31, 22], "label": "New World Door (Purple Zone)" }
+    ]
+  },
+  {
+    "id": "purple-zone",
+    "match": "Follow the path up, and down, taking ladders A, B, C, D.",
+    "map": 836,
+    "title": "Purple Zone: entrance and ZCell 03",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [58, 95], "label": "New World Door (entrance)" },
+      { "at": [95, 87], "label": "ZCell 03" }
+    ]
+  },
+  {
+    "id": "orbs-upper",
+    "match": "You'll reach a fork here: go to the left, follow the ladders E, F, G",
+    "map": 837,
+    "title": "Upper level: the three orbs",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [39, 61], "label": "Purple Zone orb" },
+      { "at": [57, 58], "label": "Gray Zone orb" },
+      { "at": [25, 58], "label": "Blue Zone orb" }
+    ]
+  },
+  {
+    "id": "gray-door",
+    "match": "Back on Route 4, make your way past the first lake map",
+    "map": 722,
+    "title": "Route 4: Gray Zone door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [18, 10], "label": "New World Door (Gray Zone, down the rocks)" }
+    ]
+  },
+  {
+    "id": "gray-zone",
+    "match": "Follow the path, then climb the ladder L.",
+    "map": 836,
+    "title": "Gray Zone: entrance",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [177, 52], "label": "New World Door (entrance)" }
+    ]
+  },
+  {
+    "id": "blue-door",
+    "match": "Back on Route 4, make your way to the map containing the Glass Workstation.",
+    "map": 742,
+    "title": "Route 4: Blue Zone door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [12, 20], "label": "New World Door (Blue Zone, past the waterfall)" }
+    ]
+  },
+  {
+    "id": "blue-zone",
+    "match": "This map is the simplest of the three:",
+    "map": 836,
+    "title": "Blue Zone: entrance",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [10, 40], "label": "New World Door (entrance)" }
+    ]
+  },
+  {
+    "id": "legendary-platform",
+    "match": "Head up, and cross the bridge to the right.",
+    "map": 837,
+    "title": "Top of the Blue Zone: the legendary platform",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [38, 26], "label": "Anomaly battle (Tornadus, Thundurus, Landorus)" },
+      { "at": [56, 27], "label": "Tornadus" },
+      { "at": [20, 22], "label": "Thundurus" },
+      { "at": [38, 9], "label": "Landorus" }
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "id": "nightclub-door",
+    "match": "Head over to North Obsidia Ward",
+    "map": 79,
+    "title": "North Obsidia Ward: the Nightclub",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [36, 22], "label": "Nightclub entrance" }
+    ]
+  },
+  {
+    "id": "nightclub-interior",
+    "match": "Once you talk to Arclight, you'll be free to move around.",
+    "map": 827,
+    "title": "Nightclub: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [25, 12], "label": "Arclight (DJ)" },
+      { "at": [22, 9], "label": "Light switch (left of the nerd)" },
+      { "at": [24, 10], "label": "Nerd (records movesets)" },
+      { "at": [8, 6], "label": "Battle Pavilion door" },
+      { "at": [9, 6], "label": "Battle Palace door" },
+      { "at": [10, 6], "label": "Battle Factory door" },
+      { "at": [1, 9], "label": "BP Store" },
+      { "at": [24, 32], "label": "Exit to North Obsidia Ward" }
+    ]
+  }
+]

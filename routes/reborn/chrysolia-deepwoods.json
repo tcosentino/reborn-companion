@@ -5,20 +5,82 @@
     "map": 840,
     "title": "Through the woods to the central structure",
     "points": [
-      {
-        "at": [
-          51,
-          10
-        ],
-        "label": "New World Door"
-      },
-      {
-        "at": [
-          68,
-          88
-        ],
-        "label": "Structure entrance"
-      }
+      { "at": [51, 10], "label": "New World Door" },
+      { "at": [68, 88], "label": "Structure entrance" }
+    ]
+  },
+  {
+    "id": "nyu-nightclub",
+    "match": "Talk to Nyu in the Nightclub and accept his quest.",
+    "map": 827,
+    "title": "Nightclub: Nyu",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [42, 6], "label": "Nyu (Deepwoods quest)" }
+    ]
+  },
+  {
+    "id": "forest-door",
+    "match": "Fly over to Spinel Town, then make your way to the train",
+    "map": 234,
+    "title": "Chrysolia Forest: New World Door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [55, 54], "label": "New World Door (to the right)" }
+    ]
+  },
+  {
+    "id": "nw-forest",
+    "match": "The rest of the Ultra Beasts are wild-only in this game",
+    "map": 838,
+    "title": "New World (Chrysolia Forest): follow the path",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [22, 26], "label": "Entrance" },
+      { "at": [91, 27], "label": "New World Door on the other side" }
+    ]
+  },
+  {
+    "id": "deepwoods-overview",
+    "match": "There are also some trainers on this map:",
+    "map": 840,
+    "title": "Chrysolia Deepwoods: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [51, 10], "label": "Entrance (New World Door)" },
+      { "at": [136, 49], "label": "Trainer (seasoned Trainer)" },
+      { "at": [144, 86], "label": "Trainer (time and a half)" },
+      { "at": [68, 88], "label": "Central structure entrance" }
+    ]
+  },
+  {
+    "id": "structure-inside",
+    "match": "Follow the arrows to the statue to the right and press the button.",
+    "map": 840,
+    "title": "Central structure: Smeargle, Reveal Glass, top door",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [68, 86], "label": "Smeargle (instructions)" },
+      { "at": [104, 34], "label": "New World Door at the top" },
+      { "at": [125, 46], "label": "Reveal Glass (far top right corner)" }
+    ]
+  },
+  {
+    "id": "nw-regigigas",
+    "match": "Once you succeed at solving Smeargle's helpful instructions",
+    "map": 838,
+    "title": "New World (Chrysolia Forest): ZCell 04 and Regigigas",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [52, 71], "label": "Entrance (door from the structure)" },
+      { "at": [71, 37], "label": "ZCell 04" },
+      { "at": [54, 37], "label": "Anomaly battle (Regigigas), head up" }
     ]
   }
 ]

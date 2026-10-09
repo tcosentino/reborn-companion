@@ -1,0 +1,66 @@
+[
+  {
+    "id": "cass-nightclub",
+    "match": "On the right side of the room, talk to Cass.",
+    "map": 827,
+    "title": "Nightclub: Cass",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [50, 14], "label": "Cass (right side of the room)" }
+    ]
+  },
+  {
+    "id": "castle-new-world-door",
+    "match": "Fly over to Vanhanen Castle and go in.",
+    "map": 293,
+    "title": "Vanhanen Castle: the New World Door",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [9, 10], "label": "Where we fought Cain" },
+      { "at": [9, 24], "label": "New World Door (second level)" }
+    ]
+  },
+  {
+    "id": "new-world-hub",
+    "match": "Enter the door in the top right, follow the path, and talk to the orb.",
+    "map": 831,
+    "title": "New World hub: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [17, 61], "label": "Entrance from Vanhanen Castle" },
+      { "at": [57, 14], "label": "Top right door" },
+      { "at": [5, 14], "label": "Top left door" },
+      { "at": [58, 39], "label": "Bottom right door (Shiinotic)" },
+      { "at": [35, 9], "label": "Door at the top of the hub (opens later)" },
+      { "at": [58, 57], "label": "Wild Cresselia" }
+    ]
+  },
+  {
+    "id": "new-world-rooms",
+    "match": "Enter the door in the top right, follow the path, and talk to the orb.",
+    "map": 832,
+    "title": "Vanhanen rooms: Shiinotic and orbs",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [10, 9], "label": "Shiinotic (Noel)" },
+      { "at": [5, 8], "label": "Orb" },
+      { "at": [13, 34], "label": "Shiinotic (Serra)" },
+      { "at": [13, 36], "label": "Orb" }
+    ]
+  },
+  {
+    "id": "florinia-nightclub",
+    "match": "While you're here, more NPC's will have returned",
+    "map": 827,
+    "title": "Nightclub: Florinia",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [17, 19], "label": "Florinia (show her an Ultra Beast)" }
+    ]
+  }
+]

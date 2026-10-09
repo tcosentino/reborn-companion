@@ -1,0 +1,29 @@
+[
+  {
+    "id": "pavilion-doors",
+    "match": "The Battle Tower and Battle Factory modes work similarly to canon",
+    "map": 827,
+    "title": "Nightclub: battle facilities",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [8, 6], "label": "Battle Pavilion (Tower)" },
+      { "at": [9, 6], "label": "Battle Palace" },
+      { "at": [10, 6], "label": "Battle Factory" },
+      { "at": [3, 6], "label": "Attendant (Pavilion and Factory)" },
+      { "at": [1, 9], "label": "BP Store" }
+    ]
+  },
+  {
+    "id": "theme-teams-stations",
+    "match": "Theme Teams allows you to fight the game's NPCs",
+    "map": 827,
+    "title": "Nightclub: Theme Teams and Mix N' Match",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [19, 12], "label": "Theme Teams (Cassbot)" },
+      { "at": [21, 14], "label": "Mix N' Match station" }
+    ]
+  }
+]

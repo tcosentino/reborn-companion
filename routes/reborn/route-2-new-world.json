@@ -1,0 +1,135 @@
+[
+  {
+    "id": "zero-nightclub",
+    "match": "Back in the Nightclub, talk to Zero and accept his quest.",
+    "map": 827,
+    "title": "Nightclub: Zero",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [50, 10], "label": "Zero (Route 2 quest)" }
+    ]
+  },
+  {
+    "id": "route-2-cave-door",
+    "match": "Back in the Nightclub, talk to Zero and accept his quest.",
+    "map": 636,
+    "title": "Route 2 cave: New World Door",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [13, 8], "label": "New World Door (in the cave)" }
+    ]
+  },
+  {
+    "id": "nw2-entrance-hall",
+    "match": "Talk to Amaria inside to the right.",
+    "map": 825,
+    "title": "New World (Route 2): entrance and first hall",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [29, 114], "label": "New World Door (entrance)" },
+      { "at": [59, 90], "label": "Amaria (right side of the hall)" },
+      { "at": [37, 88], "label": "Braille tablets (Simon Says)" },
+      { "at": [48, 87], "label": "Door that opens after Simon Says" }
+    ]
+  },
+  {
+    "id": "coral-ward-apartment",
+    "match": "Fly over to Coral Ward, and enter the apartment on the upper side.",
+    "map": 97,
+    "title": "Coral Ward: Danielle's apartment",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [40, 9], "label": "Apartment (upper side), Danielle inside" }
+    ]
+  },
+  {
+    "id": "nw2-main-room",
+    "match": "With that out of the way, we'll be free to explore from here",
+    "map": 825,
+    "title": "New World (Route 2): main room and the three paths",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [37, 61], "label": "Danielle (main room)" },
+      { "at": [37, 48], "label": "Fork" },
+      { "at": [37, 46], "label": "Regirock, Regice, Registeel (fled inward)" }
+    ]
+  },
+  {
+    "id": "nw2-left-room",
+    "match": "With that out of the way, we'll be free to explore from here",
+    "map": 825,
+    "title": "Left path: braille tablet and Danielle",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [6, 63], "label": "Braille tablet (left)" },
+      { "at": [12, 64], "label": "Danielle (Simon Says, boulders)" },
+      { "at": [9, 61], "label": "Door that opens" }
+    ]
+  },
+  {
+    "id": "nw2-regirock",
+    "match": "With that out of the way, we'll be free to explore from here",
+    "map": 825,
+    "title": "Regirock",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [6, 102], "label": "Regirock" }
+    ]
+  },
+  {
+    "id": "nw2-up-room",
+    "match": "Back out in the main room, go up at the fork.",
+    "map": 825,
+    "title": "Up path: braille tablet, Danielle and the ice",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [25, 22], "label": "Ice slide puzzle" },
+      { "at": [31, 23], "label": "Braille tablet (up)" },
+      { "at": [30, 24], "label": "Danielle" },
+      { "at": [25, 17], "label": "Door that opens" }
+    ]
+  },
+  {
+    "id": "nw2-regice",
+    "match": "Head in to catch **Regice**.",
+    "map": 825,
+    "title": "Regice",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [50, 107], "label": "Regice" }
+    ]
+  },
+  {
+    "id": "nw2-right-room",
+    "match": "Make your way to the right side of the main room now",
+    "map": 825,
+    "title": "Right path: braille tablet and Danielle",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [67, 26], "label": "Braille tablet (right)" },
+      { "at": [66, 27], "label": "Danielle (Danielle Says)" },
+      { "at": [72, 23], "label": "Door that opens" }
+    ]
+  },
+  {
+    "id": "nw2-registeel",
+    "match": "Make your way to the right side of the main room now",
+    "map": 825,
+    "title": "Registeel",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [73, 107], "label": "Registeel" }
+    ]
+  }
+]

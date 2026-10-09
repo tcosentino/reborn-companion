@@ -1,0 +1,57 @@
+[
+  {
+    "id": "cass-counter",
+    "match": "Talk to Cass behind the counter once more.",
+    "map": 827,
+    "title": "Nightclub: Cass",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [50, 14], "label": "Cass (behind the counter)" }
+    ]
+  },
+  {
+    "id": "articuno",
+    "match": "Fly over to Ametrine City, then climb the mountain.",
+    "map": 439,
+    "title": "Ametrine City: Articuno",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [81, 17], "label": "Articuno (where we fought Blake)" }
+    ]
+  },
+  {
+    "id": "zapdos",
+    "match": "Fly over to Beryl Ward, and go across the bridge to the east.",
+    "map": 197,
+    "title": "Yureyu Power Plant: Zapdos",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [9, 6], "label": "Zapdos" }
+    ]
+  },
+  {
+    "id": "moltres",
+    "match": "Finally, fly over to Apophyll Academy, and climb Pyrous Mountain.",
+    "map": 27,
+    "title": "Pyrous Mountain: Moltres",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [18, 8], "label": "Moltres (top of the volcano)" }
+    ]
+  },
+  {
+    "id": "lumi",
+    "match": "Return to the Nightclub. If you want, get Articuno",
+    "map": 827,
+    "title": "Nightclub: Lumi",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [22, 24], "label": "Lumi" }
+    ]
+  }
+]
