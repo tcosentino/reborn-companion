@@ -5,57 +5,10 @@
     "map": 414,
     "title": "Eve's building to the password screen",
     "points": [
-      {
-        "at": [
-          33,
-          44
-        ],
-        "label": "Eve's building"
-      },
-      {
-        "at": [
-          68,
-          42
-        ],
-        "label": "Password screen building"
-      }
+      { "at": [33, 44], "label": "Eve's building" },
+      { "at": [68, 42], "label": "Password screen building" }
     ],
-    "hide": [
-      62,
-      63,
-      64,
-      65,
-      66,
-      67,
-      68,
-      69,
-      70,
-      71,
-      72,
-      73,
-      77,
-      78,
-      82,
-      85,
-      86,
-      88,
-      89,
-      91,
-      92,
-      93,
-      96,
-      97,
-      98,
-      99,
-      101,
-      102,
-      113,
-      114,
-      115,
-      116,
-      162,
-      163
-    ]
+    "hide": [62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 77, 78, 82, 85, 86, 88, 89, 91, 92, 93, 96, 97, 98, 99, 101, 102, 113, 114, 115, 116, 162, 163]
   },
   {
     "id": "jasper-apartment",
@@ -63,20 +16,44 @@
     "map": 523,
     "title": "Pokemon Center to the apartment",
     "points": [
-      {
-        "at": [
-          33,
-          15
-        ],
-        "label": "Pokemon Center"
-      },
-      {
-        "at": [
-          32,
-          31
-        ],
-        "label": "Apartment (second from left)"
-      }
+      { "at": [33, 15], "label": "Pokemon Center" },
+      { "at": [32, 31], "label": "Apartment (second from left)" }
+    ]
+  },
+  {
+    "id": "jasper-lobby",
+    "match": "Fly over to Jasper Ward and enter the second apartment",
+    "map": 535,
+    "title": "Apartment lobby: attendant",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [10, 12], "label": "Entrance" },
+      { "at": [8, 6], "label": "Attendant (access to the upper floors)" },
+      { "at": [8, 21], "label": "Apt. 2 door (second floor, goes to the Gardevoir room)" }
+    ]
+  },
+  {
+    "id": "jasper-top-floor",
+    "match": "Fly over to Jasper Ward and enter the second apartment",
+    "map": 535,
+    "title": "Top floor: Fairium-Z",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [5, 82], "label": "Fairium-Z (top floor)" }
+    ]
+  },
+  {
+    "id": "jasper-apt-2",
+    "match": "Fly over to Jasper Ward and enter the second apartment",
+    "map": 535,
+    "title": "Apt. 2: Gardevoir and Lottie",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [7, 101], "label": "Gardevoir (Apt. 2)" },
+      { "at": [6, 94], "label": "Lottie (give the Ribbon Collar)" }
     ]
   }
 ]

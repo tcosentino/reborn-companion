@@ -1,0 +1,14 @@
+[
+  {
+    "id": "bees-house-spots",
+    "match": "Fly back over to Agate City once you've gotten all 731 Pokemon so far.",
+    "map": 763,
+    "title": "Agate City: Bee's house",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [46, 70], "label": "Pokemon Center (fly here)" },
+      { "at": [68, 58], "label": "Bee's house (small house, east side)" }
+    ]
+  }
+]

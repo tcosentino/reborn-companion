@@ -1,0 +1,133 @@
+[
+  {
+    "id": "pillar-overview",
+    "match": "Talk to Charlotte, then head up.",
+    "map": 788,
+    "title": "Pillar area: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [20, 70], "label": "Entry door (from the mine below)" },
+      { "at": [27, 67], "label": "Charlotte's room" },
+      { "at": [58, 36], "label": "Top minecart (U)" },
+      { "at": [56, 38], "label": "Left minecart (L)" },
+      { "at": [60, 38], "label": "Right minecart (R)" },
+      { "at": [58, 40], "label": "Bottom minecart" }
+    ]
+  },
+  {
+    "id": "pillar-four-carts",
+    "match": "Return to the center of the room, and make your way to the right.",
+    "map": 788,
+    "title": "The four minecarts",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [58, 36], "label": "Top minecart (U)" },
+      { "at": [56, 38], "label": "Left minecart (L)" },
+      { "at": [60, 38], "label": "Right minecart (R)" },
+      { "at": [58, 40], "label": "Bottom minecart" }
+    ]
+  },
+  {
+    "id": "back-to-charlotte-1",
+    "match": "That's it for this portion - head up and return to Charlotte's room.",
+    "map": 788,
+    "title": "Back to Charlotte's room and the carts",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [27, 67], "label": "Charlotte's room" },
+      { "at": [56, 38], "label": "Left minecart (L)" }
+    ]
+  },
+  {
+    "id": "back-to-charlotte-2",
+    "match": "Make your way back to Charlotte's room and choose a new minecart:",
+    "map": 788,
+    "title": "Back to Charlotte's room: take the right cart",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [27, 67], "label": "Charlotte's room" },
+      { "at": [60, 38], "label": "Right minecart (R)" }
+    ]
+  },
+  {
+    "id": "back-to-charlotte-3",
+    "match": "One more path to go down: take the top minecart (U) in Charlotte's room.",
+    "map": 788,
+    "title": "Charlotte's room: take the top cart",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [27, 67], "label": "Charlotte's room" },
+      { "at": [58, 36], "label": "Top minecart (U)" }
+    ]
+  },
+  {
+    "id": "central-gem-room-overview",
+    "match": "The next room I will call the \"central gem room\".",
+    "map": 791,
+    "title": "Central gem room: the four chambers",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [36, 29], "label": "Entrance (from the rail room)" },
+      { "at": [15, 12], "label": "Sapphire chamber (top left)" },
+      { "at": [53, 10], "label": "Ruby chamber (top right)" },
+      { "at": [13, 42], "label": "Emerald chamber (bottom left)" },
+      { "at": [49, 51], "label": "Amethyst chamber (bottom right)" },
+      { "at": [32, 14], "label": "Warp tile back to the 7-gem room (appears later)" }
+    ]
+  },
+  {
+    "id": "seven-gem-entry",
+    "match": "I'll call this room the 7-gem puzzle room.",
+    "map": 796,
+    "title": "7-gem room: entry and side area",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [25, 110], "label": "Entrance (from Charous Path)" },
+      { "at": [40, 96], "label": "Side path to the Fire & Ice area (climb the rocks)" }
+    ]
+  },
+  {
+    "id": "seven-gem-florinia",
+    "match": "Step on the panel towards the top and talk to Florinia.",
+    "map": 796,
+    "title": "7-gem room: Florinia and the warp tile",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [25, 18], "label": "Panel and Florinia (top)" },
+      { "at": [26, 46], "label": "Warp tile to the central gem room" }
+    ]
+  },
+  {
+    "id": "star-slots",
+    "match": "Back in the central gem room, take the warp back to Florinia.",
+    "map": 796,
+    "title": "Star slots and the way on",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [25, 22], "label": "Star slots (place 7 of the 12 stars)" },
+      { "at": [25, 11], "label": "Door on to the final room" }
+    ]
+  },
+  {
+    "id": "victory-road-exit",
+    "match": "In the outside area in which you emerge, hug the bottom wall",
+    "map": 814,
+    "title": "Charous Mountain: out of Victory Road",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [19, 11], "label": "Where you emerge" },
+      { "at": [28, 52], "label": "New World Field Readout (hug the bottom wall)" },
+      { "at": [42, 30], "label": "Pokemon Center (girl behind the counter, Elite Four info)" }
+    ]
+  }
+]

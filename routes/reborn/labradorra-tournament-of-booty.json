@@ -5,56 +5,38 @@
     "map": 414,
     "title": "Pokemon Center to the Labradorra Arena",
     "points": [
-      {
-        "at": [
-          59,
-          22
-        ],
-        "label": "Pokemon Center"
-      },
-      {
-        "at": [
-          45,
-          9
-        ],
-        "label": "Labradorra Arena"
-      }
+      { "at": [59, 22], "label": "Pokemon Center" },
+      { "at": [45, 9], "label": "Labradorra Arena" }
     ],
-    "hide": [
-      62,
-      63,
-      64,
-      65,
-      66,
-      67,
-      68,
-      69,
-      70,
-      71,
-      72,
-      73,
-      77,
-      78,
-      82,
-      85,
-      86,
-      88,
-      89,
-      91,
-      92,
-      93,
-      96,
-      97,
-      98,
-      99,
-      101,
-      102,
-      113,
-      114,
-      115,
-      116,
-      162,
-      163
+    "hide": [62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 77, 78, 82, 85, 86, 88, 89, 91, 92, 93, 96, 97, 98, 99, 101, 102, 113, 114, 115, 116, 162, 163]
+  },
+  {
+    "id": "arena-lobby",
+    "match": "After a scene explaining what we're in for",
+    "map": 768,
+    "title": "Arena lobby: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [41, 33], "label": "Entrance (to Labradorra City)" },
+      { "at": [40, 28], "label": "Victoria" },
+      { "at": [31, 21], "label": "Titania" },
+      { "at": [65, 15], "label": "Noel" },
+      { "at": [30, 16], "label": "Vending machines, left (drinks, Common Candy)" },
+      { "at": [52, 16], "label": "Vending machines, right" },
+      { "at": [24, 44], "label": "Left door (to the fights)" },
+      { "at": [66, 42], "label": "Right door (to the fights)" }
+    ]
+  },
+  {
+    "id": "saphira-gym-door",
+    "match": "Once you've finished both fights, make your way further into the tournament",
+    "map": 778,
+    "title": "Saphira's gym opens",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [1, 14], "label": "Saphira's gym (door on the left)" }
     ]
   }
 ]

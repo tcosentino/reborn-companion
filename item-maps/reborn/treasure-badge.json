@@ -1,0 +1,14 @@
+[
+  {
+    "id": "saphira-gym-hidden",
+    "match": "Enter Saphira's gym to the left, and talk to her in the corner.",
+    "map": 779,
+    "title": "Saphira's gym: hidden items",
+    "pad": 4,
+    "items": [
+      { "event": 70 },
+      { "event": 71 },
+      { "event": 72 }
+    ]
+  }
+]

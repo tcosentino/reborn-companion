@@ -1,0 +1,20 @@
+[
+  {
+    "id": "agate-gym-overview",
+    "match": "Enter the Agate City gym and defeat the three trainers on the right side.",
+    "map": 739,
+    "title": "Agate Gym: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [11, 57], "label": "Gym entrance" },
+      { "at": [15, 49], "label": "Trainer 1" },
+      { "at": [19, 27], "label": "Trainer 2" },
+      { "at": [20, 7], "label": "Trainer 3" },
+      { "at": [2, 8], "label": "Guide guy, top left (talk, say Help)" },
+      { "at": [14, 45], "label": "Bottom block row (turn blocks, bottom to top)" },
+      { "at": [14, 10], "label": "Top block row" },
+      { "at": [11, 4], "label": "Newly opened door to Hardy's arena" }
+    ]
+  }
+]

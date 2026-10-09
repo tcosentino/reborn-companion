@@ -1,0 +1,37 @@
+[
+  {
+    "id": "lobby-florinia-exit",
+    "match": "Talk to Florinia back in the lobby, in the top right corner.",
+    "map": 768,
+    "title": "Arena lobby: Florinia and the exit",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [70, 11], "label": "Florinia (top right corner of the lobby)" },
+      { "at": [29, 9], "label": "Exit path (top left)" }
+    ]
+  },
+  {
+    "id": "sylveon-spot",
+    "match": "Some routes have a scene that plays here.",
+    "map": 535,
+    "title": "Jasper apartments: the Sylveon to pet",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [109, 96], "label": "Sylveon (last of the Eeveelutions, Jasper apartment complex)" }
+    ]
+  },
+  {
+    "id": "vr-pokemon-center",
+    "match": "Fly back to Victory Road.",
+    "map": 781,
+    "title": "Victory Road Pokemon Center",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [33, 22], "label": "Pokemon Center (NPC inside gives the Spirit Tracker)" },
+      { "at": [23, 9], "label": "Entrance to Victory Road" }
+    ]
+  }
+]

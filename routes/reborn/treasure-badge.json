@@ -1,0 +1,27 @@
+[
+  {
+    "id": "saphira-gym-overview",
+    "match": "Enter Saphira's gym to the left, and talk to her in the corner.",
+    "map": 779,
+    "title": "Saphira's gym: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [40, 81], "label": "Gym entrance (from the arena, to the left)" },
+      { "at": [12, 82], "label": "Saphira, in the corner" },
+      { "at": [27, 43], "label": "The chest (talk to it, defend it)" }
+    ]
+  },
+  {
+    "id": "saphira-gym-top",
+    "match": "Once you beat it, the path to Saphira will open.",
+    "map": 780,
+    "title": "Saphira's gym: top and chest",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [16, 11], "label": "Saphira (final gym battle, top)" },
+      { "at": [27, 43], "label": "The chest (Treasure Badge, TM02 Dragon Claw)" }
+    ]
+  }
+]

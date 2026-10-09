@@ -5,57 +5,10 @@
     "map": 414,
     "title": "Pokemon Center to the LCCC building",
     "points": [
-      {
-        "at": [
-          59,
-          22
-        ],
-        "label": "Pokemon Center"
-      },
-      {
-        "at": [
-          16,
-          35
-        ],
-        "label": "LCCC building"
-      }
+      { "at": [59, 22], "label": "Pokemon Center" },
+      { "at": [16, 35], "label": "LCCC building" }
     ],
-    "hide": [
-      62,
-      63,
-      64,
-      65,
-      66,
-      67,
-      68,
-      69,
-      70,
-      71,
-      72,
-      73,
-      77,
-      78,
-      82,
-      85,
-      86,
-      88,
-      89,
-      91,
-      92,
-      93,
-      96,
-      97,
-      98,
-      99,
-      101,
-      102,
-      113,
-      114,
-      115,
-      116,
-      162,
-      163
-    ]
+    "hide": [62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 77, 78, 82, 85, 86, 88, 89, 91, 92, 93, 96, 97, 98, 99, 101, 102, 113, 114, 115, 116, 162, 163]
   },
   {
     "id": "forks-to-data-chip",
@@ -63,41 +16,11 @@
     "map": 775,
     "title": "Up the first fork, then down the second",
     "points": [
-      {
-        "at": [
-          4,
-          5
-        ],
-        "label": "Ladder down"
-      },
-      {
-        "at": [
-          38,
-          28
-        ],
-        "label": "First fork"
-      },
-      {
-        "at": [
-          47,
-          17
-        ],
-        "label": "Elixir and Fairy Gems room"
-      },
-      {
-        "at": [
-          46,
-          29
-        ],
-        "label": "Second fork"
-      },
-      {
-        "at": [
-          58,
-          45
-        ],
-        "label": "Data Chip computer"
-      }
+      { "at": [4, 5], "label": "Ladder down" },
+      { "at": [38, 28], "label": "First fork" },
+      { "at": [47, 17], "label": "Elixir and Fairy Gems room" },
+      { "at": [46, 29], "label": "Second fork" },
+      { "at": [58, 45], "label": "Data Chip computer" }
     ]
   },
   {
@@ -106,31 +29,11 @@
     "map": 775,
     "title": "Right at the four-way junction to the PULSE",
     "points": [
-      {
-        "at": [
-          58,
-          28
-        ],
-        "label": "Four-way junction"
-      },
-      {
-        "at": [
-          87,
-          16
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          88,
-          4
-        ],
-        "label": "PULSE fight"
-      }
+      { "at": [58, 28], "label": "Four-way junction" },
+      { "at": [87, 16], "via": true },
+      { "at": [88, 4], "label": "PULSE fight" }
     ],
-    "hide": [
-      36
-    ]
+    "hide": [36]
   },
   {
     "id": "eve-readout",
@@ -138,57 +41,10 @@
     "map": 414,
     "title": "LCCC exit to Eve's building",
     "points": [
-      {
-        "at": [
-          16,
-          36
-        ],
-        "label": "LCCC building"
-      },
-      {
-        "at": [
-          33,
-          43
-        ],
-        "label": "Eve's building (PULSE Readout 9)"
-      }
+      { "at": [16, 36], "label": "LCCC building" },
+      { "at": [33, 43], "label": "Eve's building (PULSE Readout 9)" }
     ],
-    "hide": [
-      62,
-      63,
-      64,
-      65,
-      66,
-      67,
-      68,
-      69,
-      70,
-      71,
-      72,
-      73,
-      77,
-      78,
-      82,
-      85,
-      86,
-      88,
-      89,
-      91,
-      92,
-      93,
-      96,
-      97,
-      98,
-      99,
-      101,
-      102,
-      113,
-      114,
-      115,
-      116,
-      162,
-      163
-    ]
+    "hide": [62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 77, 78, 82, 85, 86, 88, 89, 91, 92, 93, 96, 97, 98, 99, 101, 102, 113, 114, 115, 116, 162, 163]
   },
   {
     "id": "orphanage-key",
@@ -196,56 +52,69 @@
     "map": 414,
     "title": "To the building Sigmund fled",
     "points": [
-      {
-        "at": [
-          33,
-          44
-        ],
-        "label": "Eve's building"
-      },
-      {
-        "at": [
-          19,
-          30
-        ],
-        "label": "Orphanage Key building"
-      }
+      { "at": [33, 44], "label": "Eve's building" },
+      { "at": [19, 30], "label": "Orphanage Key building" }
     ],
-    "hide": [
-      62,
-      63,
-      64,
-      65,
-      66,
-      67,
-      68,
-      69,
-      70,
-      71,
-      72,
-      73,
-      77,
-      78,
-      82,
-      85,
-      86,
-      88,
-      89,
-      91,
-      92,
-      93,
-      96,
-      97,
-      98,
-      99,
-      101,
-      102,
-      113,
-      114,
-      115,
-      116,
-      162,
-      163
+    "hide": [62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 77, 78, 82, 85, 86, 88, 89, 91, 92, 93, 96, 97, 98, 99, 101, 102, 113, 114, 115, 116, 162, 163]
+  },
+  {
+    "id": "lccc-junction-spots",
+    "match": "Back in the main hallway, proceed to the right until you come to a four-way junction.",
+    "map": 775,
+    "title": "LCCC: junction and Calcenon side",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [58, 28], "label": "Four-way junction" },
+      { "at": [58, 21], "label": "Hidden Oran Berry (up from the junction)" },
+      { "at": [94, 39], "label": "Path down to the Calcenon side of the LCCC" }
+    ]
+  },
+  {
+    "id": "lccc-calcenon-side",
+    "match": "Back in the main hallway, proceed to the right until you come to a four-way junction.",
+    "map": 406,
+    "title": "Calcenon side of the LCCC: ladder up",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [8, 14], "label": "Arrival from the Labradorra side" },
+      { "at": [16, 0], "label": "Ladder up to Calcenon City" }
+    ]
+  },
+  {
+    "id": "lccc-charizardite",
+    "match": "Back in the main hallway, proceed to the right until you come to a four-way junction.",
+    "map": 417,
+    "title": "Calcenon City: Charizardite Y and the shortcut",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [13, 65], "label": "Top of the ladder" },
+      { "at": [11, 64], "label": "Charizardite Y" },
+      { "at": [11, 57], "label": "Door that opens the shortcut to Calcenon City" }
+    ]
+  },
+  {
+    "id": "lapis-orphanage-door",
+    "match": "Flying over to the Lapis Ward, you can now access the Orphanage once again.",
+    "map": 524,
+    "title": "Lapis Ward: the Orphanage",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [30, 59], "label": "Dr. Connal's Orphanage" }
+    ]
+  },
+  {
+    "id": "orphanage-alakazite",
+    "match": "Flying over to the Lapis Ward, you can now access the Orphanage once again.",
+    "map": 195,
+    "title": "Orphanage top floor: Alakazite",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [6, 4], "label": "Alakazite" }
     ]
   }
 ]

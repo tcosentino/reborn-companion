@@ -5,31 +5,10 @@
     "map": 414,
     "title": "Pokemon Center to Noel's building",
     "points": [
-      {
-        "at": [
-          59,
-          22
-        ],
-        "label": "Pokemon Center"
-      },
-      {
-        "at": [
-          63,
-          11
-        ],
-        "label": "Noel's building (PULSE Readout 10)"
-      }
+      { "at": [59, 22], "label": "Pokemon Center" },
+      { "at": [63, 11], "label": "Noel's building (PULSE Readout 10)" }
     ],
-    "hide": [
-      62,
-      63,
-      64,
-      65,
-      66,
-      67,
-      68,
-      69
-    ]
+    "hide": [62, 63, 64, 65, 66, 67, 68, 69]
   },
   {
     "id": "sigmund-building",
@@ -37,35 +16,11 @@
     "map": 414,
     "title": "Sigmund's building, then up",
     "points": [
-      {
-        "at": [
-          27,
-          32
-        ],
-        "label": "Meteor grunt"
-      },
-      {
-        "at": [
-          19,
-          30
-        ],
-        "label": "Sigmund's building (PP Up)"
-      },
-      {
-        "at": [
-          18,
-          22
-        ],
-        "label": "Meteor double battle"
-      }
+      { "at": [27, 32], "label": "Meteor grunt" },
+      { "at": [19, 30], "label": "Sigmund's building (PP Up)" },
+      { "at": [18, 22], "label": "Meteor double battle" }
     ],
-    "hide": [
-      101,
-      113,
-      114,
-      115,
-      116
-    ]
+    "hide": [101, 113, 114, 115, 116]
   },
   {
     "id": "center-then-eve",
@@ -73,59 +28,73 @@
     "map": 414,
     "title": "City center, then Eve's building",
     "points": [
-      {
-        "at": [
-          19,
-          17
-        ],
-        "label": "Zero's building"
-      },
-      {
-        "at": [
-          48,
-          25
-        ],
-        "label": "Scene in the center"
-      },
-      {
-        "at": [
-          33,
-          43
-        ],
-        "label": "Eve's building"
-      }
+      { "at": [19, 17], "label": "Zero's building" },
+      { "at": [48, 25], "label": "Scene in the center" },
+      { "at": [33, 43], "label": "Eve's building" }
     ],
-    "hide": [
-      62,
-      63,
-      64,
-      65,
-      66,
-      67,
-      68,
-      69,
-      77,
-      78,
-      82,
-      85,
-      86,
-      88,
-      89,
-      91,
-      92,
-      93,
-      96,
-      97,
-      98,
-      99,
-      101,
-      113,
-      114,
-      115,
-      116,
-      162,
-      163,
-      102
+    "hide": [62, 63, 64, 65, 66, 67, 68, 69, 77, 78, 82, 85, 86, 88, 89, 91, 92, 93, 96, 97, 98, 99, 101, 113, 114, 115, 116, 162, 163, 102]
+  },
+  {
+    "id": "calcenon-people",
+    "match": "Fly over to Calcenon City.",
+    "map": 413,
+    "title": "Calcenon City: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [45, 27], "label": "Pokemon Center (fly here)" },
+      { "at": [19, 25], "label": "Hardy (west side)" },
+      { "at": [21, 28], "label": "Bennett (west side)" },
+      { "at": [28, 31], "label": "Story apartment door (Charlotte inside)" },
+      { "at": [27, 32], "label": "Julia" },
+      { "at": [26, 32], "label": "Amaria (Reshiram route)" },
+      { "at": [24, 13], "label": "Cal" },
+      { "at": [56, 14], "label": "Noel" },
+      { "at": [8, 22], "label": "West gate to Labradorra City" }
+    ]
+  },
+  {
+    "id": "labradorra-overview",
+    "match": "Grab the hidden *Health Wing*, *Potion*, and *Nugget* here.",
+    "map": 414,
+    "title": "Labradorra City: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [84, 36], "label": "Arrival from Calcenon" },
+      { "at": [59, 22], "label": "Pokemon Center" },
+      { "at": [63, 11], "label": "Noel's building (PULSE Readout 10)" },
+      { "at": [43, 35], "label": "Building with Victoria's double battle (bottom left)" },
+      { "at": [19, 30], "label": "Sigmund's building (green case, PP Up)" },
+      { "at": [19, 16], "label": "Zero's building (ladder up)" },
+      { "at": [21, 25], "label": "Taka and Solaris (Zekrom route)" },
+      { "at": [45, 24], "label": "City center (scene)" },
+      { "at": [33, 43], "label": "Eve's building (bottom left)" }
+    ]
+  },
+  {
+    "id": "victoria-building",
+    "match": "In the bottom left side of the city, a newly-opened path",
+    "map": 774,
+    "title": "Victoria's building: inside",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [9, 20], "label": "Entrance" },
+      { "at": [9, 10], "label": "Victoria (double battle partner)" },
+      { "at": [9, 5], "label": "Back of the building (Solaris)" }
+    ]
+  },
+  {
+    "id": "taka-solaris-back",
+    "match": "Back outside, talk to Taka and Solaris down from here",
+    "map": 414,
+    "title": "Taka and Solaris, below Zero's building",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [19, 16], "label": "Zero's building" },
+      { "at": [21, 25], "label": "Taka and Solaris" }
     ]
   }
 ]

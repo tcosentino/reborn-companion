@@ -5,15 +5,9 @@
     "map": 783,
     "title": "First room",
     "items": [
-      {
-        "event": 11
-      },
-      {
-        "event": 10
-      },
-      {
-        "event": 9
-      }
+      { "event": 11 },
+      { "event": 10 },
+      { "event": 9 }
     ]
   },
   {
@@ -22,9 +16,7 @@
     "map": 784,
     "title": "Hub room: the stairs on the right",
     "items": [
-      {
-        "event": 147
-      }
+      { "event": 147 }
     ]
   },
   {
@@ -33,12 +25,8 @@
     "map": 785,
     "title": "Around the first puzzle room",
     "items": [
-      {
-        "event": 57
-      },
-      {
-        "event": 56
-      }
+      { "event": 57 },
+      { "event": 56 }
     ]
   },
   {
@@ -47,9 +35,7 @@
     "map": 785,
     "title": "After the first puzzle",
     "items": [
-      {
-        "event": 58
-      }
+      { "event": 58 }
     ]
   },
   {
@@ -58,9 +44,7 @@
     "map": 786,
     "title": "Mines: Revive",
     "items": [
-      {
-        "event": 104
-      }
+      { "event": 104 }
     ]
   },
   {
@@ -69,9 +53,7 @@
     "map": 786,
     "title": "Mines: Super Repel",
     "items": [
-      {
-        "event": 105
-      }
+      { "event": 105 }
     ]
   },
   {
@@ -80,12 +62,8 @@
     "map": 786,
     "title": "Mines: Green Shard and Tyranitarite",
     "items": [
-      {
-        "event": 106
-      },
-      {
-        "event": 110
-      }
+      { "event": 106 },
+      { "event": 110 }
     ]
   },
   {
@@ -94,9 +72,7 @@
     "map": 784,
     "title": "Hub room: rocks on the way down",
     "items": [
-      {
-        "event": 145
-      }
+      { "event": 145 }
     ]
   },
   {
@@ -105,9 +81,7 @@
     "map": 784,
     "title": "Hub room: bottom left",
     "items": [
-      {
-        "event": 149
-      }
+      { "event": 149 }
     ]
   },
   {
@@ -116,9 +90,7 @@
     "map": 788,
     "title": "Charlotte's room: Calcium",
     "items": [
-      {
-        "event": 57
-      }
+      { "event": 57 }
     ]
   },
   {
@@ -127,9 +99,7 @@
     "map": 788,
     "title": "Charlotte's room: PP All",
     "items": [
-      {
-        "event": 64
-      }
+      { "event": 64 }
     ]
   },
   {
@@ -138,9 +108,7 @@
     "map": 788,
     "title": "Charlotte's room: Blue Shard",
     "items": [
-      {
-        "event": 59
-      }
+      { "event": 59 }
     ]
   },
   {
@@ -149,12 +117,8 @@
     "map": 788,
     "title": "Charlotte's room: Swift Wing and Kommonium-Z",
     "items": [
-      {
-        "event": 58
-      },
-      {
-        "event": 65
-      }
+      { "event": 58 },
+      { "event": 65 }
     ]
   },
   {
@@ -163,9 +127,7 @@
     "map": 788,
     "title": "Charlotte's room: Heart Scale",
     "items": [
-      {
-        "event": 60
-      }
+      { "event": 60 }
     ]
   },
   {
@@ -174,12 +136,8 @@
     "map": 786,
     "title": "Southeast basement",
     "items": [
-      {
-        "event": 108
-      },
-      {
-        "event": 107
-      }
+      { "event": 108 },
+      { "event": 107 }
     ]
   },
   {
@@ -188,9 +146,7 @@
     "map": 784,
     "title": "Southwest room: Blue Shard",
     "items": [
-      {
-        "event": 146
-      }
+      { "event": 146 }
     ]
   },
   {
@@ -199,9 +155,7 @@
     "map": 784,
     "title": "Northeast room: Max Repel",
     "items": [
-      {
-        "event": 148
-      }
+      { "event": 148 }
     ]
   },
   {
@@ -210,9 +164,7 @@
     "map": 812,
     "title": "Icicle room: Purple Shard",
     "items": [
-      {
-        "event": 145
-      }
+      { "event": 145 }
     ]
   },
   {
@@ -221,12 +173,8 @@
     "map": 789,
     "title": "Second puzzle room",
     "items": [
-      {
-        "event": 66
-      },
-      {
-        "event": 67
-      }
+      { "event": 66 },
+      { "event": 67 }
     ]
   },
   {
@@ -235,9 +183,7 @@
     "map": 789,
     "title": "Second puzzle room: Muscle Wing",
     "items": [
-      {
-        "event": 65
-      }
+      { "event": 65 }
     ]
   },
   {
@@ -246,15 +192,9 @@
     "map": 813,
     "title": "Arrow room: along the boulder path",
     "items": [
-      {
-        "event": 114
-      },
-      {
-        "event": 107
-      },
-      {
-        "event": 108
-      }
+      { "event": 114 },
+      { "event": 107 },
+      { "event": 108 }
     ]
   },
   {
@@ -263,9 +203,7 @@
     "map": 813,
     "title": "Arrow room: Green Shard",
     "items": [
-      {
-        "event": 104
-      }
+      { "event": 104 }
     ]
   },
   {
@@ -274,12 +212,8 @@
     "map": 790,
     "title": "Final rail puzzle: start",
     "items": [
-      {
-        "event": 61
-      },
-      {
-        "event": 60
-      }
+      { "event": 61 },
+      { "event": 60 }
     ]
   },
   {
@@ -288,15 +222,9 @@
     "map": 790,
     "title": "Final rail puzzle: Red Shards and PP Up",
     "items": [
-      {
-        "event": 56
-      },
-      {
-        "event": 59
-      },
-      {
-        "event": 66
-      }
+      { "event": 56 },
+      { "event": 59 },
+      { "event": 66 }
     ]
   },
   {
@@ -305,12 +233,8 @@
     "map": 791,
     "title": "Central gem room: first visit",
     "items": [
-      {
-        "event": 47
-      },
-      {
-        "event": 43
-      }
+      { "event": 47 },
+      { "event": 43 }
     ]
   },
   {
@@ -319,9 +243,7 @@
     "map": 800,
     "title": "Sapphire B3F: Chewing Gum",
     "items": [
-      {
-        "event": 47
-      }
+      { "event": 47 }
     ]
   },
   {
@@ -330,9 +252,7 @@
     "map": 800,
     "title": "Sapphire B3F: Cheri Berry",
     "items": [
-      {
-        "event": 46
-      }
+      { "event": 46 }
     ]
   },
   {
@@ -341,12 +261,8 @@
     "map": 801,
     "title": "Emerald B3F",
     "items": [
-      {
-        "event": 40
-      },
-      {
-        "event": 41
-      }
+      { "event": 40 },
+      { "event": 41 }
     ]
   },
   {
@@ -355,12 +271,8 @@
     "map": 791,
     "title": "Central gem room: Hyper Potion and Red Shard",
     "items": [
-      {
-        "event": 46
-      },
-      {
-        "event": 44
-      }
+      { "event": 46 },
+      { "event": 44 }
     ]
   },
   {
@@ -369,9 +281,7 @@
     "map": 799,
     "title": "Ruby B3F: Zinc",
     "items": [
-      {
-        "event": 40
-      }
+      { "event": 40 }
     ]
   },
   {
@@ -380,12 +290,8 @@
     "map": 802,
     "title": "Amethyst B3F",
     "items": [
-      {
-        "event": 38
-      },
-      {
-        "event": 39
-      }
+      { "event": 38 },
+      { "event": 39 }
     ]
   },
   {
@@ -394,9 +300,7 @@
     "map": 791,
     "title": "Central gem room: Swift Wing",
     "items": [
-      {
-        "event": 45
-      }
+      { "event": 45 }
     ]
   },
   {
@@ -405,18 +309,10 @@
     "map": 790,
     "title": "Final rail room: back through the path",
     "items": [
-      {
-        "event": 58
-      },
-      {
-        "event": 57
-      },
-      {
-        "event": 55
-      },
-      {
-        "event": 62
-      }
+      { "event": 58 },
+      { "event": 57 },
+      { "event": 55 },
+      { "event": 62 }
     ]
   },
   {
@@ -425,9 +321,7 @@
     "map": 813,
     "title": "Arrow room: upper path",
     "items": [
-      {
-        "event": 103
-      }
+      { "event": 103 }
     ]
   },
   {
@@ -436,9 +330,7 @@
     "map": 792,
     "title": "Charous Mountain: Ice Heal",
     "items": [
-      {
-        "event": 89
-      }
+      { "event": 89 }
     ]
   },
   {
@@ -447,15 +339,9 @@
     "map": 793,
     "title": "Charous Mountain 2F",
     "items": [
-      {
-        "event": 85
-      },
-      {
-        "event": 84
-      },
-      {
-        "event": 29
-      }
+      { "event": 85 },
+      { "event": 84 },
+      { "event": 29 }
     ]
   },
   {
@@ -464,12 +350,8 @@
     "map": 792,
     "title": "Charous Mountain: Elemental Seed and Calcium",
     "items": [
-      {
-        "event": 87
-      },
-      {
-        "event": 88
-      }
+      { "event": 87 },
+      { "event": 88 }
     ]
   },
   {
@@ -478,9 +360,7 @@
     "map": 792,
     "title": "Charous Mountain: Max Ether",
     "items": [
-      {
-        "event": 86
-      }
+      { "event": 86 }
     ]
   },
   {
@@ -489,9 +369,7 @@
     "map": 794,
     "title": "Charous Path: Ultra Potion",
     "items": [
-      {
-        "event": 106
-      }
+      { "event": 106 }
     ]
   },
   {
@@ -500,9 +378,7 @@
     "map": 794,
     "title": "Charous Path: Ultra Ball",
     "items": [
-      {
-        "event": 105
-      }
+      { "event": 105 }
     ]
   },
   {
@@ -511,12 +387,8 @@
     "map": 795,
     "title": "Machine room",
     "items": [
-      {
-        "event": 100
-      },
-      {
-        "event": 102
-      }
+      { "event": 100 },
+      { "event": 102 }
     ]
   },
   {
@@ -525,9 +397,7 @@
     "map": 795,
     "title": "Machine room: Max Revive",
     "items": [
-      {
-        "event": 96
-      }
+      { "event": 96 }
     ]
   },
   {
@@ -536,9 +406,7 @@
     "map": 813,
     "title": "Hub room, highest level: Synthetic Seed",
     "items": [
-      {
-        "event": 102
-      }
+      { "event": 102 }
     ]
   },
   {
@@ -547,12 +415,8 @@
     "map": 813,
     "title": "Hub room: Dusk Ball and Magical Seed",
     "items": [
-      {
-        "event": 106
-      },
-      {
-        "event": 105
-      }
+      { "event": 106 },
+      { "event": 105 }
     ]
   },
   {
@@ -561,9 +425,7 @@
     "map": 813,
     "title": "Hub room: Muscle Wing",
     "items": [
-      {
-        "event": 109
-      }
+      { "event": 109 }
     ]
   },
   {
@@ -572,15 +434,9 @@
     "map": 794,
     "title": "Charous Path: Metagrossite",
     "items": [
-      {
-        "event": 108
-      },
-      {
-        "event": 102
-      },
-      {
-        "event": 103
-      }
+      { "event": 108 },
+      { "event": 102 },
+      { "event": 103 }
     ]
   },
   {
@@ -589,9 +445,7 @@
     "map": 794,
     "title": "Charous Path: Purple Shard",
     "items": [
-      {
-        "event": 104
-      }
+      { "event": 104 }
     ]
   },
   {
@@ -600,15 +454,9 @@
     "map": 796,
     "title": "7-gem puzzle room",
     "items": [
-      {
-        "event": 67
-      },
-      {
-        "event": 68
-      },
-      {
-        "event": 66
-      }
+      { "event": 67 },
+      { "event": 68 },
+      { "event": 66 }
     ]
   },
   {
@@ -617,12 +465,8 @@
     "map": 797,
     "title": "Fire and Ice room: start",
     "items": [
-      {
-        "event": 40
-      },
-      {
-        "event": 41
-      }
+      { "event": 40 },
+      { "event": 41 }
     ]
   },
   {
@@ -631,9 +475,7 @@
     "map": 797,
     "title": "Fire and Ice room: Glitter Balls",
     "items": [
-      {
-        "event": 47
-      }
+      { "event": 47 }
     ]
   },
   {
@@ -642,12 +484,8 @@
     "map": 797,
     "title": "Fire and Ice room: Ice Heal and Lucarionite",
     "items": [
-      {
-        "event": 42
-      },
-      {
-        "event": 44
-      }
+      { "event": 42 },
+      { "event": 44 }
     ]
   },
   {
@@ -656,9 +494,7 @@
     "map": 799,
     "title": "Ruby B3F: Tiny Mushroom",
     "items": [
-      {
-        "event": 39
-      }
+      { "event": 39 }
     ]
   },
   {
@@ -667,9 +503,7 @@
     "map": 803,
     "title": "Ruby B4F: HP Up",
     "items": [
-      {
-        "event": 75
-      }
+      { "event": 75 }
     ]
   },
   {
@@ -678,18 +512,10 @@
     "map": 803,
     "title": "Ruby B4F: Dragon Gem, Escape Rope, Purple Shard",
     "items": [
-      {
-        "event": 78
-      },
-      {
-        "event": 73
-      },
-      {
-        "event": 72
-      },
-      {
-        "event": 74
-      }
+      { "event": 78 },
+      { "event": 73 },
+      { "event": 72 },
+      { "event": 74 }
     ]
   },
   {
@@ -698,9 +524,7 @@
     "map": 807,
     "title": "Ruby B5F: Big Nugget",
     "items": [
-      {
-        "event": 20
-      }
+      { "event": 20 }
     ]
   },
   {
@@ -709,9 +533,7 @@
     "map": 800,
     "title": "Sapphire B3F: Max Ether",
     "items": [
-      {
-        "event": 45
-      }
+      { "event": 45 }
     ]
   },
   {
@@ -720,9 +542,7 @@
     "map": 804,
     "title": "Sapphire B4F: Magical Seed",
     "items": [
-      {
-        "event": 48
-      }
+      { "event": 48 }
     ]
   },
   {
@@ -731,9 +551,7 @@
     "map": 804,
     "title": "Sapphire B4F: Blue Shard",
     "items": [
-      {
-        "event": 46
-      }
+      { "event": 46 }
     ]
   },
   {
@@ -742,9 +560,7 @@
     "map": 804,
     "title": "Sapphire B4F: Guard Spec",
     "items": [
-      {
-        "event": 47
-      }
+      { "event": 47 }
     ]
   },
   {
@@ -753,12 +569,8 @@
     "map": 808,
     "title": "Sapphire B5F",
     "items": [
-      {
-        "event": 22
-      },
-      {
-        "event": 23
-      }
+      { "event": 22 },
+      { "event": 23 }
     ]
   },
   {
@@ -767,9 +579,7 @@
     "map": 801,
     "title": "Emerald B3F: Max Elixir",
     "items": [
-      {
-        "event": 42
-      }
+      { "event": 42 }
     ]
   },
   {
@@ -778,12 +588,8 @@
     "map": 805,
     "title": "Emerald B4F: Repel and Ultra Ball",
     "items": [
-      {
-        "event": 124
-      },
-      {
-        "event": 107
-      }
+      { "event": 124 },
+      { "event": 107 }
     ]
   },
   {
@@ -792,9 +598,7 @@
     "map": 805,
     "title": "Emerald B4F: Genius Wing",
     "items": [
-      {
-        "event": 108
-      }
+      { "event": 108 }
     ]
   },
   {
@@ -803,9 +607,7 @@
     "map": 805,
     "title": "Emerald B4F: Grass Gem",
     "items": [
-      {
-        "event": 101
-      }
+      { "event": 101 }
     ]
   },
   {
@@ -814,15 +616,9 @@
     "map": 809,
     "title": "Emerald B5F",
     "items": [
-      {
-        "event": 49
-      },
-      {
-        "event": 50
-      },
-      {
-        "event": 51
-      }
+      { "event": 49 },
+      { "event": 50 },
+      { "event": 51 }
     ]
   },
   {
@@ -831,9 +627,7 @@
     "map": 802,
     "title": "Amethyst B3F: Max Ether",
     "items": [
-      {
-        "event": 37
-      }
+      { "event": 37 }
     ]
   },
   {
@@ -842,9 +636,7 @@
     "map": 806,
     "title": "Amethyst B4F: Calcium",
     "items": [
-      {
-        "event": 75
-      }
+      { "event": 75 }
     ]
   },
   {
@@ -853,12 +645,8 @@
     "map": 806,
     "title": "Amethyst B4F: Protein and Carbos",
     "items": [
-      {
-        "event": 76
-      },
-      {
-        "event": 77
-      }
+      { "event": 76 },
+      { "event": 77 }
     ]
   },
   {
@@ -867,9 +655,7 @@
     "map": 806,
     "title": "Amethyst B4F: Salamencite",
     "items": [
-      {
-        "event": 79
-      }
+      { "event": 79 }
     ]
   },
   {
@@ -878,15 +664,9 @@
     "map": 810,
     "title": "Amethyst B5F",
     "items": [
-      {
-        "event": 22
-      },
-      {
-        "event": 20
-      },
-      {
-        "event": 23
-      }
+      { "event": 22 },
+      { "event": 20 },
+      { "event": 23 }
     ]
   },
   {
@@ -895,9 +675,7 @@
     "map": 798,
     "title": "Final rooms: Full Heal",
     "items": [
-      {
-        "event": 29
-      }
+      { "event": 29 }
     ]
   },
   {
@@ -906,9 +684,7 @@
     "map": 798,
     "title": "Final rooms: Ultra Potion",
     "items": [
-      {
-        "event": 28
-      }
+      { "event": 28 }
     ]
   },
   {
@@ -917,9 +693,7 @@
     "map": 798,
     "title": "Final rooms: Blue Shard",
     "items": [
-      {
-        "event": 30
-      }
+      { "event": 30 }
     ]
   }
 ]

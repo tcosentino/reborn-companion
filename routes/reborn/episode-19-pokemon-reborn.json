@@ -1,0 +1,14 @@
+[
+  {
+    "id": "mosswater-market-elder",
+    "match": "Now that we've defeated Hardy, there is one final move tutor",
+    "map": 522,
+    "title": "Mosswater Market: the final move tutor",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [83, 55], "label": "Max and Myles (earlier tutors, same market)" },
+      { "at": [78, 61], "label": "Elder, final move tutor (Mosswater Market)" }
+    ]
+  }
+]
