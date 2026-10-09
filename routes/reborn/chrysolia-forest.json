@@ -1,0 +1,123 @@
+[
+  {
+    "id": "region-to-forest",
+    "match": "Make your way back through Tanzan Mountain and exit at the bottom.",
+    "map": 230,
+    "title": "Chrysolia Region: from Tanzan Mountain to the forest",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [18, 5], "label": "Tanzan Mountain (you exit here)" },
+      { "at": [31, 27], "label": "Forest entrance (bottom right)" }
+    ]
+  },
+  {
+    "id": "forest-west",
+    "match": "Make your way forward and follow the path up and around to the left.",
+    "map": 234,
+    "title": "Chrysolia Forest: entrance and the hidden cave",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [8, 27], "label": "Forest entrance" },
+      { "at": [25, 11], "label": "Cave behind the tree (Chrysolia Spring)" }
+    ]
+  },
+  {
+    "id": "forest-south-places",
+    "match": "Go up, right, and down. You'll notice a single tree blocking",
+    "map": 234,
+    "title": "Chrysolia Forest: the train and the researcher",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [34, 57], "label": "Train on the left (pick up the egg)" },
+      { "at": [56, 55], "label": "Researcher to the right (Grassy Terrain Readout)" }
+    ]
+  },
+  {
+    "id": "railcave-room",
+    "match": "Inside the railcave, there are two secret paths to goodies.",
+    "map": 251,
+    "title": "Lost Railcave: the repeating room",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [14, 16], "label": "Cave entrance (bottom)" },
+      { "at": [14, 6], "label": "Top door" },
+      { "at": [8, 11], "label": "Left door" },
+      { "at": [20, 11], "label": "Right door" }
+    ]
+  },
+  {
+    "id": "railcave-eevee-room",
+    "match": "Inside the railcave, there are two secret paths to goodies.",
+    "map": 252,
+    "title": "Lost Railcave: the Eevee room",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [11, 9], "label": "Eevee" },
+      { "at": [12, 10], "label": "Captain's Log" }
+    ]
+  },
+  {
+    "id": "railcave-rock-room",
+    "match": "Back in the main area of the railcave, you'll notice that each room contains three rocks.",
+    "map": 252,
+    "title": "Lost Railcave: the goodies room",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [25, 14], "label": "Hidden Ability Capsule" },
+      { "at": [29, 13], "label": "Psychic Terrain Field Readout" },
+      { "at": [25, 10], "label": "TM32 Double Team" }
+    ]
+  },
+  {
+    "id": "forest-railcave-entrance",
+    "match": "In the bottom right part of the forest you'll see a lone tree",
+    "map": 234,
+    "title": "Chrysolia Forest: the Lost Railcave",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [99, 19], "label": "Lost Railcave entrance (behind the lone tree)" }
+    ]
+  },
+  {
+    "id": "forest-clearing-door",
+    "match": "Here you'll find a hidden *Ability Capsule*.",
+    "map": 234,
+    "title": "Chrysolia Forest: the clearing",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [70, 22], "label": "Clearing entrance (Mossy Rock)" }
+    ]
+  },
+  {
+    "id": "clearing-places",
+    "match": "You'll find a hidden *Elemental Seed* as well as the *Burning Field Readout*",
+    "map": 465,
+    "title": "The clearing: Mossy Rock and readout",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [10, 13], "label": "Burning Field Readout" },
+      { "at": [12, 10], "label": "Mossy Rock (Leafeon)" },
+      { "at": [10, 6], "label": "Exit back to the forest" }
+    ]
+  },
+  {
+    "id": "forest-to-spinel",
+    "match": "Continue your circles by going up and left.",
+    "map": 234,
+    "title": "Chrysolia Forest: the way into Spinel Town",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [45, 7], "label": "Spinel Town (clearing, top right)" }
+    ]
+  }
+]

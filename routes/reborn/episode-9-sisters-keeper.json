@@ -1,0 +1,13 @@
+[
+  {
+    "id": "voclain-roof-door",
+    "match": "Now that the Pokemart is gone from the roof",
+    "map": 239,
+    "title": "Voclain Estate: upstairs to the roof",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [11, 39], "label": "Door out to the roof" }
+    ]
+  }
+]

@@ -12,5 +12,108 @@
       { "at": [23, 6], "direct": true },
       { "at": [23, 5], "label": "Door to the next room", "direct": true }
     ]
+  },
+  {
+    "id": "mountain-left-door",
+    "match": "Enter Tanzan Mountain and this time go to the left.",
+    "map": 231,
+    "title": "Tanzan Mountain: the left side",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [40, 80], "label": "Entrance" },
+      { "at": [13, 9], "label": "Door up to the next room (Saphira)" }
+    ]
+  },
+  {
+    "id": "saphira-room",
+    "match": "Enter Tanzan Mountain and this time go to the left.",
+    "map": 272,
+    "title": "Tanzan Mountain: Saphira's room",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [16, 42], "label": "Saphira (Ruby Ring, Amethyst Pendant)" },
+      { "at": [15, 55], "label": "Door in from the left side" }
+    ]
+  },
+  {
+    "id": "meteor-base-door",
+    "match": "Make your way back to the meteor base on the right side",
+    "map": 231,
+    "title": "Tanzan Mountain: the Meteor Base door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [67, 32], "label": "Door to the Meteor Base area" }
+    ]
+  },
+  {
+    "id": "first-room-door",
+    "match": "Make your way back to the meteor base on the right side",
+    "map": 244,
+    "title": "Meteor Base area: door to the first room",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [12, 11], "label": "Where you arrive" },
+      { "at": [46, 22], "label": "Door to the first room (right of the base)" }
+    ]
+  },
+  {
+    "id": "first-room-exit",
+    "match": "Make your way back to the meteor base on the right side",
+    "map": 261,
+    "title": "The first room: exit at the bottom left",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [11, 23], "label": "Exit (bottom left)" }
+    ]
+  },
+  {
+    "id": "steelix-tunnel-arrival",
+    "match": "Make your way back to the meteor base on the right side",
+    "map": 247,
+    "title": "Tanzan Depths: Steelix's tunnel",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [38, 64], "label": "Where you arrive" }
+    ]
+  },
+  {
+    "id": "thick-club-cave-rocks",
+    "match": "Head left, up, and left again.",
+    "map": 259,
+    "title": "The new cave",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [40, 10], "label": "Cave entrance" },
+      { "at": [17, 26], "label": "Mining rocks (five in the cave)" }
+    ]
+  },
+  {
+    "id": "beam-room-arrival",
+    "match": "Here you can grab an *Upgrade*.",
+    "map": 260,
+    "title": "Tanzan Depths (Across the Beam)",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [37, 38], "label": "Door in from the iron girder" }
+    ]
+  },
+  {
+    "id": "saphira-jewelry-area",
+    "match": "That's all for Tanzan Depths for now",
+    "map": 272,
+    "title": "Back to where Saphira gave you the jewelry",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [16, 42], "label": "Where you got the jewelry (go up from here)" }
+    ]
   }
 ]

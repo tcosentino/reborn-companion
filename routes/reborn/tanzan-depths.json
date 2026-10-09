@@ -1,0 +1,63 @@
+[
+  {
+    "id": "depths-laura",
+    "match": "If Saphira was abducted, you'll be here with Laura.",
+    "map": 257,
+    "title": "Tanzan Depths: Laura and the way out",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [28, 11], "label": "Laura (if Saphira was abducted)" },
+      { "at": [11, 10], "label": "Exit (head out and up)" }
+    ]
+  },
+  {
+    "id": "depths-steelix-cave",
+    "match": "You'll see some dialogue. Head down from here",
+    "map": 247,
+    "title": "Tanzan Depths: the Steelix cave",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [16, 52], "label": "Where you arrive" },
+      { "at": [73, 66], "label": "Saphira (watch out for Steelix)" },
+      { "at": [82, 74], "label": "Mega Steelix" },
+      { "at": [74, 62], "label": "Way out to Tanzan Mountain" }
+    ]
+  },
+  {
+    "id": "depths-back-to-base",
+    "match": "Once you emerge, make your way back into the base and head to the back room.",
+    "map": 244,
+    "title": "Tanzan Mountain: back into the base",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [46, 23], "label": "Where you emerge from the Depths" },
+      { "at": [40, 20], "label": "Meteor Base door" }
+    ]
+  },
+  {
+    "id": "depths-back-room",
+    "match": "Once you emerge, make your way back into the base and head to the back room.",
+    "map": 245,
+    "title": "Meteor Base: the back room",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [3, 18], "label": "Door in from the project room (at the top)" }
+    ]
+  },
+  {
+    "id": "depths-to-manse",
+    "match": "Head all the way back to Tanzan Cove and talk to Anna inside.",
+    "map": 232,
+    "title": "Tanzan Cove: back to Belrose Manse",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [12, 42], "label": "Arrival from Tanzan Mountain" },
+      { "at": [10, 12], "label": "Belrose Manse (Anna inside, gym battle)" }
+    ]
+  }
+]

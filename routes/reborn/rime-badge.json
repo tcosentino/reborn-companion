@@ -1,0 +1,41 @@
+[
+  {
+    "id": "rime-voclain-door",
+    "match": "Return to Voclain Estate.",
+    "map": 271,
+    "title": "Spinel Town: Voclain Estate",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [56, 8], "label": "Voclain Estate" }
+    ]
+  },
+  {
+    "id": "rime-gym-door",
+    "match": "Return to Voclain Estate.",
+    "map": 239,
+    "title": "Voclain Estate: the room at the back",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [11, 17], "label": "Entrance" },
+      { "at": [11, 3], "label": "Room towards the back (gym)" }
+    ]
+  },
+  {
+    "id": "rime-mirror-rooms",
+    "match": "For each of the three puzzle rooms (so, a max of +3)",
+    "map": 506,
+    "title": "Mirror Arena: the three puzzle rooms",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [8, 67], "label": "Gym entrance" },
+      { "at": [8, 59], "label": "Puzzle room 1" },
+      { "at": [8, 43], "label": "Puzzle room 2" },
+      { "at": [8, 27], "label": "Puzzle room 3 (save before)" },
+      { "at": [8, 30], "label": "Bennett" },
+      { "at": [9, 19], "label": "Door to the gym arena" }
+    ]
+  }
+]

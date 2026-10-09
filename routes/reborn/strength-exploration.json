@@ -1,0 +1,92 @@
+[
+  {
+    "id": "citrine-boulder",
+    "match": "Go down and right (1).",
+    "map": 382,
+    "title": "Citrine Mountain 2F: the boulder",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [45, 26], "label": "Strength boulder (push it down from the top)" }
+    ]
+  },
+  {
+    "id": "cemetery-victoria",
+    "match": "Make your way west to the Beryl Cemetery.",
+    "map": 152,
+    "title": "Beryl Cemetery: Victoria",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [8, 23], "label": "Victoria (down from the entrance)" }
+    ]
+  },
+  {
+    "id": "wasteland-grave",
+    "match": "Next, we're gonna return to Byxbysion Wasteland.",
+    "map": 209,
+    "title": "Byxbysion Wasteland: the grave",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [32, 27], "label": "Grave in the cave (Misdreavus)" }
+    ]
+  },
+  {
+    "id": "wasteland-squirtle",
+    "match": "Back outside in the wasteland, make your way to the tunnels area",
+    "map": 209,
+    "title": "Byxbysion Wasteland: the Squirtle fountain",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [7, 55], "label": "Fountain (Squirtle on rainy days)" }
+    ]
+  },
+  {
+    "id": "pyrous-2f-tepig",
+    "match": "Next, take the boat to Apophyll.",
+    "map": 201,
+    "title": "Pyrous Mountain 2F: first Tepig",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [20, 20], "label": "Tepig (flees)" }
+    ]
+  },
+  {
+    "id": "pyrous-b1f-tepig",
+    "match": "Next, take the boat to Apophyll.",
+    "map": 35,
+    "title": "Pyrous Mountain B1F: boulder and Tepig",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [53, 20], "label": "Boulder to move" },
+      { "at": [61, 13], "label": "Tepig (flees again)" }
+    ]
+  },
+  {
+    "id": "pyrous-peak-tepig",
+    "match": "Next, take the boat to Apophyll.",
+    "map": 27,
+    "title": "Pyrous Mountain peak: Tepig",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [18, 10], "label": "Tepig (catchable)" }
+    ]
+  },
+  {
+    "id": "observation-facility-guy",
+    "match": "Exit and take the boat to Azurine Island.",
+    "map": 207,
+    "title": "Observation Facility: the Chimecho guy",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [10, 12], "label": "Entrance (from Azurine Island)" },
+      { "at": [5, 7], "label": "Guy (show him Chimecho for Chikorita)" }
+    ]
+  }
+]

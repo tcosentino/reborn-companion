@@ -1,0 +1,73 @@
+[
+  {
+    "id": "railnet-y-door",
+    "match": "With that out of the way, head into the Underground Railnet",
+    "map": 196,
+    "title": "Underground Railnet: the door with the Y",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [28, 5], "label": "Door with the Y" }
+    ]
+  },
+  {
+    "id": "y-room-stairs",
+    "match": "With that out of the way, head into the Underground Railnet",
+    "map": 225,
+    "title": "The Y room: stairs up",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [3, 12], "label": "Door in from the railnet" },
+      { "at": [1, 2], "label": "Stairs up" }
+    ]
+  },
+  {
+    "id": "y-room-upstairs",
+    "match": "With that out of the way, head into the Underground Railnet",
+    "map": 226,
+    "title": "Upstairs: the way outside",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [11, 8], "label": "Exit outside" }
+    ]
+  },
+  {
+    "id": "obsidia-yureyu-doors",
+    "match": "With that out of the way, head into the Underground Railnet",
+    "map": 36,
+    "title": "Obsidia Ward: outside the Y room and Yureyu",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [28, 11], "label": "Door you come out of" },
+      { "at": [18, 8], "label": "Yureyu building" }
+    ]
+  },
+  {
+    "id": "yureyu-entrance-floor",
+    "match": "You'll be partnered with Cain.",
+    "map": 227,
+    "title": "Yureyu: the ground floor",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [9, 79], "label": "Entrance (exit to Obsidia Ward)" },
+      { "at": [8, 78], "label": "Cain (your partner)" }
+    ]
+  },
+  {
+    "id": "yureyu-sigmund-floor",
+    "match": "Once we reach the floor that Sigmund is on",
+    "map": 227,
+    "title": "Yureyu: Sigmund's floor (top)",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [8, 6], "label": "Sigmund" },
+      { "at": [9, 8], "label": "Heather" },
+      { "at": [37, 6], "label": "Back door to the Underground Railnet" }
+    ]
+  }
+]

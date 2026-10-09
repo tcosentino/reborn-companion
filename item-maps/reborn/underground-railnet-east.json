@@ -1,0 +1,53 @@
+[
+  {
+    "id": "railnet-east-north",
+    "match": "This room is pretty huge - scattered around you can find",
+    "map": 228,
+    "title": "Railnet East: north part",
+    "items": [
+      { "event": 199 },
+      { "event": 200 },
+      { "event": 201 },
+      { "event": 202 },
+      { "event": 212 },
+      { "event": 203 },
+      { "event": 204 }
+    ]
+  },
+  {
+    "id": "railnet-east-middle",
+    "match": "This room is pretty huge - scattered around you can find",
+    "map": 228,
+    "title": "Railnet East: middle part",
+    "items": [
+      { "event": 211 },
+      { "event": 205 },
+      { "event": 210 },
+      { "event": 209 },
+      { "event": 206 }
+    ]
+  },
+  {
+    "id": "railnet-east-south",
+    "match": "This room is pretty huge - scattered around you can find",
+    "map": 228,
+    "title": "Railnet East: south part",
+    "items": [
+      { "event": 208 },
+      { "event": 207 },
+      { "event": 238 }
+    ]
+  },
+  {
+    "id": "railnet-east-smash-walls",
+    "match": "You can also find a bunch more of those shallow walls",
+    "map": 368,
+    "title": "Behind the Rock Smash walls",
+    "items": [
+      { "event": 12 },
+      { "event": 6 },
+      { "event": 7 },
+      { "event": 5 }
+    ]
+  }
+]

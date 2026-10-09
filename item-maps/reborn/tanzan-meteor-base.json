@@ -1,0 +1,31 @@
+[
+  {
+    "id": "barrier-room-items",
+    "match": "The next room contains a hidden *Green Shard*",
+    "map": 244,
+    "title": "Tanzan Mountain: the room past the barrier",
+    "items": [
+      { "event": 22 },
+      { "event": 21 },
+      { "event": 20 }
+    ]
+  },
+  {
+    "id": "base-exp-candy-l",
+    "match": "Continue down. You'll see a purple tile",
+    "map": 255,
+    "title": "Meteor Base: Exp. Candy L",
+    "items": [
+      { "event": 41 }
+    ]
+  },
+  {
+    "id": "base-revive",
+    "match": "Nothing else to do above, so head back down.",
+    "map": 254,
+    "title": "Meteor Base: Revive",
+    "items": [
+      { "event": 40 }
+    ]
+  }
+]

@@ -5,51 +5,85 @@
     "map": 231,
     "title": "Tanzan Mountain to the Meteor barrier",
     "points": [
-      {
-        "at": [
-          40,
-          79
-        ],
-        "label": "From the Chrysolia Region"
-      },
-      {
-        "at": [
-          63,
-          42
-        ],
-        "label": "Laura or Saphira at the barrier"
-      },
-      {
-        "at": [
-          64,
-          41
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          64,
-          38
-        ],
-        "via": true,
-        "direct": true
-      },
-      {
-        "at": [
-          67,
-          32
-        ],
-        "label": "Cave past the barrier"
-      }
+      { "at": [40, 79], "label": "From the Chrysolia Region" },
+      { "at": [63, 42], "label": "Laura or Saphira at the barrier" },
+      { "at": [64, 41], "via": true },
+      { "at": [64, 38], "via": true, "direct": true },
+      { "at": [67, 32], "label": "Cave past the barrier" }
     ],
-    "hide": [
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19
+    "hide": [13, 14, 15, 16, 17, 18, 19]
+  },
+  {
+    "id": "base-entrance",
+    "match": "The next room contains a hidden *Green Shard*",
+    "map": 244,
+    "title": "Tanzan Mountain: the base entrance",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [12, 11], "label": "From Tanzan Mountain (the barrier room)" },
+      { "at": [40, 20], "label": "Meteor Base door" }
+    ]
+  },
+  {
+    "id": "base-first-hall",
+    "match": "There will be a lot of these rotary thingies all over the base.",
+    "map": 246,
+    "title": "Meteor Base: first hall",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [9, 14], "label": "Base entrance" },
+      { "at": [9, 4], "label": "Door at the top (up into the room)" }
+    ]
+  },
+  {
+    "id": "base-cages",
+    "match": "If anyone except Saphira was abducted earlier",
+    "map": 254,
+    "title": "Meteor Base: the prison cells",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [66, 16], "label": "Cages (Noel, Anna, Charlotte, Shelly, Laura)" }
+    ]
+  },
+  {
+    "id": "base-pulse-readout",
+    "match": "Grab *PULSE Readout 7* and return to the previous room.",
+    "map": 255,
+    "title": "Meteor Base: PULSE Readout 7",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [55, 5], "label": "PULSE Readout 7" },
+      { "at": [54, 18], "label": "Door back down to the previous room" }
+    ]
+  },
+  {
+    "id": "base-saphira-room",
+    "match": "Nothing else to do above, so head back down.",
+    "map": 254,
+    "title": "Meteor Base: Saphira",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [40, 6], "label": "Saphira (two grunts)" }
+    ]
+  },
+  {
+    "id": "base-project-room",
+    "match": "Talk to the grunts and scientists up here",
+    "map": 254,
+    "title": "Meteor Base: the project room",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [10, 9], "label": "Simon (starts a sidequest)" },
+      { "at": [18, 8], "label": "Computer (Project room lock A)" },
+      { "at": [4, 2], "label": "Computer (Project room lock B)" },
+      { "at": [6, 8], "label": "Computer (shortcut in the bottom-left corner)" },
+      { "at": [13, 2], "label": "Door at the top" }
     ]
   }
 ]

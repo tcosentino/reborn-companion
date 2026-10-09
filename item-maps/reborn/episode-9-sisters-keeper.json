@@ -1,0 +1,11 @@
+[
+  {
+    "id": "roof-mirror-lure",
+    "match": "Now that the Pokemart is gone from the roof",
+    "map": 510,
+    "title": "The roof: Mirror Lure",
+    "items": [
+      { "event": 5 }
+    ]
+  }
+]

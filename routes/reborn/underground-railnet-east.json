@@ -1,0 +1,65 @@
+[
+  {
+    "id": "railnet-east-entry",
+    "match": "Back on the ground floor, head east to enter another part of the railnet.",
+    "map": 228,
+    "title": "Railnet East: where you come in",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [0, 3], "label": "Entrance from the Y building (west end)" }
+    ]
+  },
+  {
+    "id": "railnet-east-smash-doors",
+    "match": "You can also find a bunch more of those shallow walls",
+    "map": 228,
+    "title": "Railnet East: Rock Smash walls and the gate",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [43, 2], "label": "Rock Smash wall (House Key)" },
+      { "at": [30, 14], "label": "Rock Smash wall (Iron Ball)" },
+      { "at": [15, 37], "label": "Rock Smash wall (Corrupted Poke Ball)" },
+      { "at": [44, 49], "label": "Rock Smash wall (TM44 Rest)" },
+      { "at": [11, 14], "label": "Gate on the left (shortcut to the Aron room)" }
+    ]
+  },
+  {
+    "id": "railnet-east-shelly",
+    "match": "Talk to Shelly on the right side of the area",
+    "map": 228,
+    "title": "Railnet East: Shelly on the right side",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [53, 28], "label": "Shelly and the others (right side)" },
+      { "at": [59, 27], "label": "Exit area to connect the train to" }
+    ]
+  },
+  {
+    "id": "railnet-east-train",
+    "match": "Talk to Shelly on the right side of the area",
+    "map": 228,
+    "title": "Railnet East: the train",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [20, 75], "label": "Train (bottom of the map)" },
+      { "at": [25, 73], "label": "Noel (checks your track layout)" }
+    ]
+  },
+  {
+    "id": "railnet-train-inside",
+    "match": "Talk to Noel when you have the correct layout.",
+    "map": 761,
+    "title": "Inside the train",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [5, 5], "label": "Door out" },
+      { "at": [5, 9], "label": "Shelly" },
+      { "at": [12, 8], "label": "Charlotte (captain)" }
+    ]
+  }
+]

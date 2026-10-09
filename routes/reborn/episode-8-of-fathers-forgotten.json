@@ -1,0 +1,24 @@
+[
+  {
+    "id": "wasteland-cain-exit",
+    "match": "Make your way all the way back out of the Wasteland.",
+    "map": 209,
+    "title": "Byxbysion Wasteland: Cain near the exit",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [11, 28], "label": "Cain (near the exit)" }
+    ]
+  },
+  {
+    "id": "south-obsidia-cal",
+    "match": "Return to South Obsidia Ward.",
+    "map": 81,
+    "title": "South Obsidia Ward: Cal",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [70, 31], "label": "Cal" }
+    ]
+  }
+]

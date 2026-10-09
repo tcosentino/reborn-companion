@@ -1,0 +1,24 @@
+[
+  {
+    "id": "manse-kitchen",
+    "match": "If you chose to stay downstairs the Twins will be captured.",
+    "map": 233,
+    "title": "Belrose Manse: the kitchen",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [32, 22], "label": "The group in the kitchen (to the right of the hall)" }
+    ]
+  },
+  {
+    "id": "manse-saphira-downstairs",
+    "match": "If you go upstairs, this results in Laura being captured.",
+    "map": 233,
+    "title": "Belrose Manse: Saphira downstairs",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [9, 8], "label": "Saphira (main hall, downstairs)" }
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "spring-1f-entrance",
+    "match": "More importantly, you'll find a *Mystic Water* and hidden *Link Stone* inside.",
+    "map": 238,
+    "title": "Chrysolia Spring 1F: just inside",
+    "pad": 6,
+    "items": [
+      { "event": 2 },
+      { "event": 4 }
+    ]
+  },
+  {
+    "id": "forest-south",
+    "match": "Go up, right, and down. You'll notice a single tree blocking",
+    "map": 234,
+    "title": "Chrysolia Forest: south path",
+    "items": [
+      { "event": 36 },
+      { "event": 3 },
+      { "event": 6 },
+      { "event": 47 },
+      { "event": 54 }
+    ]
+  },
+  {
+    "id": "forest-ability-capsule",
+    "match": "Here you'll find a hidden *Ability Capsule*.",
+    "map": 234,
+    "title": "Chrysolia Forest: east path",
+    "items": [
+      { "event": 18 }
+    ]
+  },
+  {
+    "id": "railcave-doll",
+    "match": "Inside the railcave, there are two secret paths to goodies.",
+    "map": 252,
+    "title": "Lost Railcave: Eevee room",
+    "items": [
+      { "event": 17 }
+    ]
+  },
+  {
+    "id": "railcave-goodies",
+    "match": "Back in the main area of the railcave, you'll notice that each room contains three rocks.",
+    "map": 252,
+    "title": "Lost Railcave: goodies room",
+    "items": [
+      { "event": 8 },
+      { "event": 10 }
+    ]
+  },
+  {
+    "id": "clearing-items",
+    "match": "You'll find a hidden *Elemental Seed* as well as the *Burning Field Readout*",
+    "map": 465,
+    "title": "Chrysolia Forest clearing",
+    "items": [
+      { "event": 6 },
+      { "event": 8 },
+      { "event": 7 }
+    ]
+  }
+]

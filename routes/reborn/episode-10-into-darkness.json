@@ -1,0 +1,14 @@
+[
+  {
+    "id": "manse-crew",
+    "match": "Back inside, talk to the crew here.",
+    "map": 233,
+    "title": "Belrose Manse: Laura and Noel",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [9, 3], "label": "Laura on the couch (main hall)" },
+      { "at": [30, 6], "label": "Noel (stairs room)" }
+    ]
+  }
+]

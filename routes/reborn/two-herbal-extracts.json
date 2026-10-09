@@ -1,0 +1,39 @@
+[
+  {
+    "id": "region-pokemart",
+    "match": "Make your way out of Spinel Town, through the woods, and head back towards Tanzan Mountain.",
+    "map": 230,
+    "title": "Chrysolia Region: the Pokemart and Tanzan Mountain",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [31, 27], "label": "From Chrysolia Forest" },
+      { "at": [23, 11], "label": "Pokemart (second vendor sells the Herbal Extract)" },
+      { "at": [18, 5], "label": "Tanzan Mountain entrance" }
+    ]
+  },
+  {
+    "id": "manse-upstairs-anna",
+    "match": "Anyways, head to Belrose Manse and go upstairs.",
+    "map": 233,
+    "title": "Belrose Manse upstairs: Anna's room",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [1, 20], "label": "Stairs (up from the hall)" },
+      { "at": [4, 28], "label": "Anna in bed (give her the Herbal Extract)" }
+    ]
+  },
+  {
+    "id": "forest-bench-lady",
+    "match": "Head over to the Chrysolia Forest and go up.",
+    "map": 234,
+    "title": "Chrysolia Forest: the lady from the bench",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [9, 27], "label": "Forest entrance (from the Region)" },
+      { "at": [16, 15], "label": "Lady from the Spinel bench (give her the Herbal Extract)" }
+    ]
+  }
+]

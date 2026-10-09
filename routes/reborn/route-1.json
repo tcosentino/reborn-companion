@@ -1,0 +1,88 @@
+[
+  {
+    "id": "south-woods-exits",
+    "match": "We actually start in the South Aventurine Woods, however.",
+    "map": 282,
+    "title": "South Aventurine Woods: the way up to Route 1",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [17, 52], "label": "From Tanzan Mountain (you start here)" },
+      { "at": [12, 7], "label": "Exit up to Route 1 (west)" },
+      { "at": [38, 7], "label": "Exit up to Route 1 (middle)" },
+      { "at": [52, 7], "label": "Exit up to Route 1 (east)" }
+    ]
+  },
+  {
+    "id": "fern-fight",
+    "match": "It's almost like Fern was just waiting on the very edge",
+    "map": 285,
+    "title": "Route 1: Fern at the west edge",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [9, 40], "label": "Where you enter Route 1 from the woods" },
+      { "at": [2, 30], "label": "Fern" }
+    ]
+  },
+  {
+    "id": "nature-center-door",
+    "match": "Anyways, head inside the building here.",
+    "map": 290,
+    "title": "Route 1: the Nature Center and the Miltank",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [20, 18], "label": "Nature Center door" },
+      { "at": [24, 18], "label": "Miltank (Oran Berry for Moomoo Milk)" },
+      { "at": [30, 15], "label": "Miltank (Oran Berry for Moomoo Milk)" }
+    ]
+  },
+  {
+    "id": "nature-center-inside",
+    "match": "Anyways, head inside the building here.",
+    "map": 294,
+    "title": "Nature Center: who is where",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [8, 7], "label": "Honey (8 Honeys)" },
+      { "at": [12, 24], "label": "Password (allfieldapp)" },
+      { "at": [18, 32], "label": "Man who lost his glasses" },
+      { "at": [6, 43], "label": "Dunsparce for Tyrogue trade" }
+    ]
+  },
+  {
+    "id": "flareon-pet",
+    "match": "You can find an *Exp. Candy L* as well as 2 hidden",
+    "map": 285,
+    "title": "Route 1: Flareon",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [31, 16], "label": "Flareon (pet it)" }
+    ]
+  },
+  {
+    "id": "bottom-gate",
+    "match": "You'll notice inside the gate at the bottom we can't do anything",
+    "map": 290,
+    "title": "Route 1: the gate at the bottom",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [24, 97], "label": "Gate at the bottom (nothing to do)" }
+    ]
+  },
+  {
+    "id": "back-to-fern",
+    "match": "You'll notice inside the gate at the bottom we can't do anything",
+    "map": 285,
+    "title": "Back to where you fought Fern",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [2, 30], "label": "Where you fought Fern" }
+    ]
+  }
+]

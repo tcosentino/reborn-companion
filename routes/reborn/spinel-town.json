@@ -5,20 +5,8 @@
     "map": 271,
     "title": "Forest entrance to the Kadabra girl's apartment",
     "points": [
-      {
-        "at": [
-          13,
-          47
-        ],
-        "label": "From Chrysolia Forest"
-      },
-      {
-        "at": [
-          14,
-          32
-        ],
-        "label": "Kadabra girl's apartment"
-      }
+      { "at": [13, 47], "label": "From Chrysolia Forest" },
+      { "at": [14, 32], "label": "Kadabra girl's apartment" }
     ]
   },
   {
@@ -27,36 +15,10 @@
     "map": 271,
     "title": "Down to the house behind the tree",
     "points": [
-      {
-        "at": [
-          14,
-          33
-        ],
-        "label": "Kadabra girl's apartment"
-      },
-      {
-        "at": [
-          14,
-          40
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          12,
-          40
-        ],
-        "via": true,
-        "direct": true
-      },
-      {
-        "at": [
-          12,
-          39
-        ],
-        "label": "House behind the tree (bed, Good Rod)",
-        "direct": true
-      }
+      { "at": [14, 33], "label": "Kadabra girl's apartment" },
+      { "at": [14, 40], "via": true },
+      { "at": [12, 40], "via": true, "direct": true },
+      { "at": [12, 39], "label": "House behind the tree (bed, Good Rod)", "direct": true }
     ]
   },
   {
@@ -65,35 +27,177 @@
     "map": 271,
     "title": "The two tall apartment buildings",
     "points": [
-      {
-        "at": [
-          12,
-          40
-        ],
-        "label": "Good Rod house"
-      },
-      {
-        "at": [
-          14,
-          40
-        ],
-        "via": true,
-        "direct": true
-      },
-      {
-        "at": [
-          31,
-          23
-        ],
-        "label": "Left tall apartment (table)"
-      },
-      {
-        "at": [
-          36,
-          23
-        ],
-        "label": "Right building (trades, Eeveelution lady)"
-      }
+      { "at": [12, 40], "label": "Good Rod house" },
+      { "at": [14, 40], "via": true, "direct": true },
+      { "at": [31, 23], "label": "Left tall apartment (table)" },
+      { "at": [36, 23], "label": "Right building (trades, Eeveelution lady)" }
+    ]
+  },
+  {
+    "id": "spinel-fountain-mart",
+    "match": "Down from here, there's a tree in front of a house.",
+    "map": 271,
+    "title": "Spinel Town: fountain and Pokemart",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [29, 28], "label": "Fountain (disappears as you approach)" },
+      { "at": [27, 24], "label": "Pokemart (teleports away)" }
+    ]
+  },
+  {
+    "id": "tall-left-inside",
+    "match": "Enter the left tall apartment building.",
+    "map": 242,
+    "title": "Left tall apartment: inside",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [5, 24], "label": "Door out to town" },
+      { "at": [8, 18], "label": "Kadabra girl's table" }
+    ]
+  },
+  {
+    "id": "tall-right-inside",
+    "match": "Enter the left tall apartment building.",
+    "map": 242,
+    "title": "Right building: inside",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [23, 24], "label": "Door out to town" },
+      { "at": [19, 20], "label": "Trade: Shelmet / Karrablast for evolutions" },
+      { "at": [27, 21], "label": "Eeveelution lady (pet sidequest)" }
+    ]
+  },
+  {
+    "id": "spinel-bench-house",
+    "match": "Talk to a lady sitting on the bench, and she will completely disappear.",
+    "map": 271,
+    "title": "Spinel Town: house that disappears and the Pokemon Center",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [37, 30], "label": "House that disappears (first chair beyond it)" },
+      { "at": [45, 14], "label": "Pokemon Center (guy gives the password)" }
+    ]
+  },
+  {
+    "id": "spinel-museum-door",
+    "match": "Enter the museum.",
+    "map": 271,
+    "title": "Spinel Town: the museum",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [39, 19], "label": "Museum entrance ($500)" }
+    ]
+  },
+  {
+    "id": "museum-ground-floor",
+    "match": "Enter the museum.",
+    "map": 241,
+    "title": "Spinel Museum: ground floor",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [37, 24], "label": "Entrance (exit to town)" },
+      { "at": [10, 18], "label": "Door up to the fossil lab (upstairs)" }
+    ]
+  },
+  {
+    "id": "museum-fossil-lab",
+    "match": "Enter the museum.",
+    "map": 242,
+    "title": "Spinel Museum upstairs: the fossil lab",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [1, 50], "label": "Stairs back down to the museum" },
+      { "at": [17, 54], "label": "Scientist (revives fossils)" },
+      { "at": [3, 59], "label": "Door out of the lab" }
+    ]
+  },
+  {
+    "id": "museum-balcony-doors",
+    "match": "Anyways, head down and out of the door upstairs here",
+    "map": 271,
+    "title": "Outside the museum: the two upstairs doors",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [35, 15], "label": "Door out of the fossil lab" },
+      { "at": [36, 18], "label": "Door to the Eevium-Z room" }
+    ]
+  },
+  {
+    "id": "eevium-room-places",
+    "match": "Anyways, head down and out of the door upstairs here",
+    "map": 242,
+    "title": "The Eevium-Z room",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [22, 5], "label": "Eevium-Z" },
+      { "at": [24, 2], "label": "Ice cream machine (Vanillite)" }
+    ]
+  },
+  {
+    "id": "museum-night-grunts",
+    "match": "In the downstairs area of the museum at night,",
+    "map": 241,
+    "title": "Spinel Museum: the Meteor grunts",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [16, 22], "label": "Meteor grunts (at night)" },
+      { "at": [30, 19], "label": "Trash can (Luxury Ball, to the right)" }
+    ]
+  },
+  {
+    "id": "spinel-voclain-door",
+    "match": "Outside, attempt to enter the Voclain Estate in the top right corner.",
+    "map": 271,
+    "title": "Spinel Town: Voclain Estate",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [56, 8], "label": "Voclain Estate (top right corner)" }
+    ]
+  },
+  {
+    "id": "voclain-foyer",
+    "match": "Outside, attempt to enter the Voclain Estate in the top right corner.",
+    "map": 239,
+    "title": "Voclain Estate: entrance hall",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [11, 17], "label": "Entrance (exit to town)" },
+      { "at": [9, 7], "label": "Bennett (talk to him first)" },
+      { "at": [11, 7], "label": "Serra" }
+    ]
+  },
+  {
+    "id": "voclain-readout",
+    "match": "In the upstairs rooms, you can find *Silk Scarf*",
+    "map": 239,
+    "title": "Voclain Estate upstairs: Mirror Arena Readout",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [21, 72], "label": "Mirror Arena Field Readout" }
+    ]
+  },
+  {
+    "id": "spinel-exp-all-girl",
+    "match": "With that, we should now have all of the furniture back",
+    "map": 271,
+    "title": "Spinel Town: back to the Kadabra girl",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [45, 14], "label": "Pokemon Center (the Kadabra girl, Exp. All)" }
     ]
   }
 ]

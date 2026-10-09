@@ -5,34 +5,59 @@
     "map": 292,
     "title": "Through the labyrinth to the castle",
     "points": [
-      {
-        "at": [
-          34,
-          0
-        ],
-        "label": "From Route 1"
-      },
-      {
-        "at": [
-          13,
-          36
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          13,
-          33
-        ],
-        "label": "Gate"
-      },
-      {
-        "at": [
-          16,
-          15
-        ],
-        "label": "Vanhanen Castle"
-      }
+      { "at": [34, 0], "label": "From Route 1" },
+      { "at": [13, 36], "via": true },
+      { "at": [13, 33], "label": "Gate" },
+      { "at": [16, 15], "label": "Vanhanen Castle" }
+    ]
+  },
+  {
+    "id": "castle-hall",
+    "match": "Heal and prep your team, then enter the next room.",
+    "map": 293,
+    "title": "Vanhanen Castle: the hall",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [9, 12], "label": "Castle entrance (exit to the labyrinth)" },
+      { "at": [9, 7], "label": "Luna" },
+      { "at": [8, 30], "label": "Umbreon (pet it now)" }
+    ]
+  },
+  {
+    "id": "castle-gym-room",
+    "match": "Anyways, talk to Luna.",
+    "map": 313,
+    "title": "Vanhanen Castle: the chess room",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [10, 20], "label": "Door in from the hall" },
+      { "at": [9, 3], "label": "Luna (chess battle)" }
+    ]
+  },
+  {
+    "id": "castle-radomus-cain",
+    "match": "Head back out and talk to Radomus and Cain again.",
+    "map": 293,
+    "title": "Vanhanen Castle: Radomus and Cain",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [9, 10], "label": "Radomus and Cain" },
+      { "at": [9, 12], "label": "Exit via the labyrinth" }
+    ]
+  },
+  {
+    "id": "grand-stairway-door",
+    "match": "Head back out and talk to Radomus and Cain again.",
+    "map": 79,
+    "title": "North Obsidia Ward: the Grand Stairway",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [26, 7], "label": "Grand Gate (from Route 1)" },
+      { "at": [25, 20], "label": "Grand Stairway (empty earlier)" }
     ]
   }
 ]

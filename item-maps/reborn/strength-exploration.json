@@ -1,0 +1,34 @@
+[
+  {
+    "id": "citrine-2f-goodies",
+    "match": "Go down and right (1).",
+    "map": 382,
+    "title": "Citrine Mountain 2F: past the ice path",
+    "items": [
+      { "event": 76 },
+      { "event": 63 },
+      { "event": 84 }
+    ]
+  },
+  {
+    "id": "wasteland-fountain-area",
+    "match": "Here, you can find an *Exp. Candy L*",
+    "map": 209,
+    "title": "Byxbysion Wasteland: the fountain area",
+    "items": [
+      { "event": 88 },
+      { "event": 51 },
+      { "event": 61 },
+      { "event": 279 }
+    ]
+  },
+  {
+    "id": "pyrous-b1f-tm37",
+    "match": "Next, take the boat to Apophyll.",
+    "map": 35,
+    "title": "Pyrous Mountain B1F: TM37",
+    "items": [
+      { "event": 9 }
+    ]
+  }
+]

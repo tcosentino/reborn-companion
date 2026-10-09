@@ -1,0 +1,73 @@
+[
+  {
+    "id": "mountain-left-items",
+    "match": "Enter Tanzan Mountain and this time go to the left.",
+    "map": 231,
+    "title": "Tanzan Mountain: the left path",
+    "items": [
+      { "event": 89 },
+      { "event": 88 },
+      { "event": 90 }
+    ]
+  },
+  {
+    "id": "saphira-room-xspatk",
+    "match": "Enter Tanzan Mountain and this time go to the left.",
+    "map": 272,
+    "title": "Tanzan Mountain: X Sp. Atk",
+    "items": [
+      { "event": 30 }
+    ]
+  },
+  {
+    "id": "saphira-room-items",
+    "match": "There are also hidden *Ice Heal*, *Red Shard*, and *Revive* in this room.",
+    "map": 272,
+    "title": "Saphira's room",
+    "items": [
+      { "event": 31 },
+      { "event": 32 },
+      { "event": 33 }
+    ]
+  },
+  {
+    "id": "first-room-items",
+    "match": "Make your way back to the meteor base on the right side",
+    "map": 261,
+    "title": "The first room",
+    "items": [
+      { "event": 8 },
+      { "event": 9 },
+      { "event": 10 },
+      { "event": 7 },
+      { "event": 11 }
+    ]
+  },
+  {
+    "id": "metal-coat",
+    "match": "Make your way back to the meteor base on the right side",
+    "map": 247,
+    "title": "Steelix's tunnel: Metal Coat",
+    "items": [
+      { "event": 29 }
+    ]
+  },
+  {
+    "id": "thick-club",
+    "match": "Head left, up, and left again.",
+    "map": 259,
+    "title": "The new cave: Thick Club",
+    "items": [
+      { "event": 7 }
+    ]
+  },
+  {
+    "id": "upgrade",
+    "match": "Here you can grab an *Upgrade*.",
+    "map": 260,
+    "title": "Across the Beam: Upgrade",
+    "items": [
+      { "event": 2 }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "hideout-gym-door",
+    "match": "Enter the gym room, save, and talk to Aya.",
+    "map": 223,
+    "title": "Wasteland Hideout: the gym room door",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [12, 20], "label": "Entrance (from the Wasteland)" },
+      { "at": [0, 17], "label": "Door to the gym room" }
+    ]
+  },
+  {
+    "id": "hideout-aya",
+    "match": "Enter the gym room, save, and talk to Aya.",
+    "map": 224,
+    "title": "Gym room: Aya",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [24, 14], "label": "Door back out" },
+      { "at": [19, 13], "label": "Aya" }
+    ]
+  }
+]

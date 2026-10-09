@@ -1,0 +1,51 @@
+[
+  {
+    "id": "mountain-entrance-solrock",
+    "match": "On the left as you walk in, you'll see",
+    "map": 231,
+    "title": "Tanzan Mountain: entrance and Solrock / Lunatone",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [40, 80], "label": "Entrance from Chrysolia Region" },
+      { "at": [30, 66], "label": "Solrock / Lunatone (left of the entrance)" }
+    ]
+  },
+  {
+    "id": "mountain-charlotte-exit",
+    "match": "Talk to Charlotte then emerge at the top into Tanzan Cove.",
+    "map": 231,
+    "title": "Tanzan Mountain: Charlotte and the way up to the Cove",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [35, 27], "label": "Charlotte" },
+      { "at": [28, 8], "label": "Exit up to Tanzan Cove" }
+    ]
+  },
+  {
+    "id": "cove-places",
+    "match": "Enter the house at the top.",
+    "map": 232,
+    "title": "Tanzan Cove: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [12, 42], "label": "Arrival from Tanzan Mountain" },
+      { "at": [10, 12], "label": "Belrose Manse (the house at the top)" }
+    ]
+  },
+  {
+    "id": "manse-bookshelf",
+    "match": "To the left you can see something glowing in a bookshelf.",
+    "map": 233,
+    "title": "Belrose Manse: the glowing bookshelf",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [9, 12], "label": "Front door" },
+      { "at": [10, 8], "label": "Anna, Noel, Laura (talk to everyone)" },
+      { "at": [1, 8], "label": "Glowing bookshelf (Family Picture)" }
+    ]
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "id": "forest-teleported-house",
+    "match": "Return to Chrysolia Forest - you'll have to basically do the circles in reverse",
+    "map": 234,
+    "title": "Chrysolia Forest: the house that teleported",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [35, 16], "label": "House that teleported (Mothim for Bruxish trade)" }
+    ]
+  },
+  {
+    "id": "mountain-grunts",
+    "match": "Return to Tanzan Mountain. Inside, you'll find the grunts from earlier.",
+    "map": 231,
+    "title": "Tanzan Mountain: the Meteor grunts",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [44, 48], "label": "Meteor grunts from the museum" }
+    ]
+  },
+  {
+    "id": "onyx-key-girl",
+    "match": "Head on over to Onyx Ward and return the House Key",
+    "map": 115,
+    "title": "Onyx Ward: the girl who lost her key",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [21, 39], "label": "Girl on the west side (House Key, Move Relearner)" },
+      { "at": [23, 38], "label": "Move Relearner's house" }
+    ]
+  },
+  {
+    "id": "beryl-cave-door",
+    "match": "Now that we've found the second Ill-Fated Doll",
+    "map": 151,
+    "title": "Beryl Ward: the Beryl Cave",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [10, 6], "label": "Beryl Cave entrance" }
+    ]
+  },
+  {
+    "id": "jungle-totem",
+    "match": "Now that we've found the second Ill-Fated Doll",
+    "map": 150,
+    "title": "Rhodochrine Jungle: the totem",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [73, 27], "label": "Totem (Ill-Fated Doll reacts)" }
+    ]
+  },
+  {
+    "id": "academy-trade",
+    "match": "Take the Coral Ward boat to Apophyll.",
+    "map": 17,
+    "title": "Apophyll Academy: the Luvdisc trade",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [20, 6], "label": "Trader on the outer right wall (Luvdisc for Darumaka)" }
+    ]
+  },
+  {
+    "id": "museum-curator",
+    "match": "Finally, head all the way back through the railnet and the forest to Spinel Town.",
+    "map": 241,
+    "title": "Spinel Museum: the curator",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [37, 24], "label": "Museum entrance" },
+      { "at": [12, 22], "label": "Curator (Plume or Cover Fossil)" }
+    ]
+  }
+]

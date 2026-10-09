@@ -1,0 +1,41 @@
+[
+  {
+    "id": "railnet-top",
+    "match": "With that out of the way, head into the Underground Railnet",
+    "map": 196,
+    "title": "Underground Railnet: the top",
+    "items": [
+      { "event": 52 },
+      { "event": 49 }
+    ]
+  },
+  {
+    "id": "y-room",
+    "match": "With that out of the way, head into the Underground Railnet",
+    "map": 225,
+    "title": "The Y room",
+    "items": [
+      { "event": 22 },
+      { "event": 23 }
+    ]
+  },
+  {
+    "id": "y-room-upstairs",
+    "match": "With that out of the way, head into the Underground Railnet",
+    "map": 226,
+    "title": "Upstairs",
+    "items": [
+      { "event": 4 }
+    ]
+  },
+  {
+    "id": "outside-y-room",
+    "match": "With that out of the way, head into the Underground Railnet",
+    "map": 36,
+    "title": "Outside: north of the Y room",
+    "items": [
+      { "event": 239 },
+      { "event": 71 }
+    ]
+  }
+]

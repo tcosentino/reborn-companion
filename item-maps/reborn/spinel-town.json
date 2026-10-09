@@ -1,0 +1,41 @@
+[
+  {
+    "id": "good-rod-house-inside",
+    "match": "Down from here, there's a tree in front of a house.",
+    "map": 242,
+    "title": "The Good Rod house",
+    "items": [
+      { "event": 16 }
+    ]
+  },
+  {
+    "id": "eevium-z-room",
+    "match": "Anyways, head down and out of the door upstairs here",
+    "map": 242,
+    "title": "Eevium-Z room",
+    "items": [
+      { "event": 59 }
+    ]
+  },
+  {
+    "id": "museum-luxury-ball",
+    "match": "In the downstairs area of the museum at night,",
+    "map": 241,
+    "title": "Spinel Museum: trash can",
+    "items": [
+      { "event": 9 }
+    ]
+  },
+  {
+    "id": "voclain-upstairs",
+    "match": "In the upstairs rooms, you can find *Silk Scarf*",
+    "map": 239,
+    "title": "Voclain Estate upstairs rooms",
+    "items": [
+      { "event": 23 },
+      { "event": 37 },
+      { "event": 36 },
+      { "event": 21 }
+    ]
+  }
+]
