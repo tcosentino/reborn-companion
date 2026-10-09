@@ -15,11 +15,16 @@ All are `node --no-warnings scripts/maps.ts reborn <command>`:
 | Command | Use |
 | --- | --- |
 | `section <section>` | The section's paragraphs in order, with `[guide image file]`, `[encounters map N: name]`, `[route id]` and `[item map id]` markers. Encounter markers give the map id of an area. |
-| `names <text>` | Maps by name (e.g. `names Underroot`). Interiors and floors are separate maps. |
+| `names <text> [--limit N]` | Maps by name (e.g. `names Underroot`; 30 shown by default, then an "N more" line). Interiors and floors are separate maps. |
+| `find <text> [mapId...] [--limit N]` | Events whose dialogue or name contains the text. |
+| `map <mapId> --brief` | Doors, NPCs, signs and item events only; `[conditional]` marks events hidden in the default state. |
+| `warps <mapId>` | Warps out of and into a map, grouped by the other map (for multi-floor buildings). |
+| `cards <section>` | Existing route cards, item cards and hidden-item screenshots for the section, so you see what is already covered. |
+| `fmt <section>` | Rewrites the section's route and item-map files in the compact house style (one item per line). Content-preserving. |
 | `items <mapId> [x,y,w,h]` | Every item event on the map: `ev<id> (x,y) hidden/ball ITEMSYM`, plus a gridded PNG in `out/map-previews/items-map<id>.png` with each event id on its tile (red = hidden, blue = item ball). On big maps pass a box of about 40x40 tiles so the labels stay legible. |
 | `grid <mapId> [x,y,w,h]` | Plain gridded map PNG, for orientation. |
-| `items-check <section>` | Validates your file: ids, match text against the paragraphs, map ids, that every event exists and gives an item, and that `image` is in the section. |
-| `items-preview <section> [cardId]` | Renders each card as it will be built (numbered markers in file order) to `out/map-previews/items-<section>--<id>.png` and prints the items. |
+| `items-check <section>` | Validates your file: ids, match text against the paragraphs, map ids, that every event exists and gives an item, and that `image` is in the section. Prints a note and exits 0 when the section has no file. |
+| `items-preview <section> [cardId]` | Renders each card as it will be built (numbered markers in file order) to `out/map-previews/items-<section>--<id>.png` and prints the numbered legend (`n: evID (x,y) kind ITEM`). |
 
 Read PNGs with the Read tool. The guide's own screenshots are in `upstream/src/assets/images/reborn/<file>` (read-only).
 

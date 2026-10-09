@@ -1,8 +1,9 @@
 // Map finder for authoring routes/<game>/*.json. Needs scripts/build-maps.sh.
 //
-//   node scripts/maps.ts <game> names <text>             maps whose name contains text
-//   node scripts/maps.ts <game> find <text> [mapId...]   events whose dialogue or name contains text
-//   node scripts/maps.ts <game> map <id>                 doors/warps, NPCs, signs and items on a map
+//   node scripts/maps.ts <game> names <text> [--limit N]   maps whose name contains text (default 30 shown)
+//   node scripts/maps.ts <game> find <text> [mapId...] [--limit N]  events whose dialogue or name contains text
+//   node scripts/maps.ts <game> map <id> [--brief]       doors/warps, NPCs, signs and items on a map (brief: no filler)
+//   node scripts/maps.ts <game> warps <id>               warps out of a map by destination, and warps into it
 //   node scripts/maps.ts <game> grid <id> [x,y,w,h]      PNG of the map (or a box) with a coordinate grid
 //   node scripts/maps.ts <game> preview <section> [id]   PNG of a section's routes as built, with grid
 //   node scripts/maps.ts <game> section <section>        the section's paragraphs, plus map ids of its encounter tables
@@ -13,14 +14,18 @@
 //   node scripts/maps.ts <game> items-check <section>    validate item-maps/<game>/<section>.json without building
 //   node scripts/maps.ts <game> items-preview <section> [id]  PNG of a section's item map cards as built, with grid
 //
+//   node scripts/maps.ts <game> cards <section>          existing route / item cards and hidden-item screenshots of a section
+//   node scripts/maps.ts <game> fmt <section|--all>      rewrite routes/ and item-maps/ files in the compact house style
+//
 // PNGs go to out/map-previews/; the path is printed.
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import type { RouteDef, Tile } from '../app/src/lib/routes.ts'
 import { itemEventInfo, validateItemCardDefs, type ItemCardDef, type ItemEventInfo } from '../app/src/lib/itemMaps.ts'
 import { cardBox, mapData } from './apply-item-maps.ts'
 import { resolveRoute, validateRouteDefs } from './apply-routes.ts'
+import { compactJson } from './json-format.ts'
 import { blank, draw, writePng, type Rgba } from './png-rgba.ts'
 import {
   assetsDir, defaultPage, imageLoader, reachable, visibleEvents, walker, loadIndex, loadMap, loadTilesets, mapsDir, renderMap,
@@ -33,7 +38,7 @@ const dir = mapsDir(ROOT, game ?? '')
 const outDir = join(ROOT, 'out/map-previews')
 
 const usage = () => {
-  console.error(readFileSync(new URL(import.meta.url), 'utf8').split('\n').slice(2, 16).map(l => l.replace(/^\/\/ ?/, '')).join('\n'))
+  console.error(readFileSync(new URL(import.meta.url), 'utf8').split('\n').slice(2, 22).map(l => l.replace(/^\/\/ ?/, '')).join('\n'))
   process.exit(2)
 }
 if (!game || !cmd) usage()
@@ -110,8 +115,26 @@ const vanishes = (e: GameMap['events'][number]) => {
   return !!p && !!(p.char || p.tile) && e.pages.some(pg => pg.cond && !pg.char && !pg.tile)
 }
 
-const describe = (m: GameMap) => {
-  console.log(`map ${m.id} "${m.name}" ${m.width}x${m.height} (parent: ${name(index[m.id]?.parent)})`)
+// Not visible in the default state: the first page is conditional, or page 1 has no graphic but a later page has one
+const conditionalEv = (e: GameMap['events'][number]) =>
+  !!e.pages[0]?.cond || (!e.pages[0]?.char && !e.pages[0]?.tile && e.pages.slice(1).some(pg => pg.char || pg.tile))
+
+const describe = (m: GameMap, brief = false) => {
+  console.log(`map ${m.id} "${m.name}" ${m.width}x${m.height} (parent: ${name(index[m.id]?.parent)})${brief ? ' [brief]' : ''}`)
+  if (brief) {
+    for (const e of m.events) {
+      const p = defaultPage(e) ?? e.pages[0]
+      const warp = e.pages.find(pg => pg.warp)?.warp
+      const item = itemEventInfo(e)
+      const text = e.pages.map(pg => pg.text).find(Boolean)
+      const tag = conditionalEv(e) ? ' [conditional]' : ''
+      if (warp) console.log(`  ev${e.id} (${e.x},${e.y}) door -> map ${warp.map} "${name(warp.map)}" (${warp.x},${warp.y})${tag}`)
+      else if (item) console.log(`  ev${e.id} (${e.x},${e.y}) ${item.hidden ? 'hidden' : 'ball'} ${item.item}${tag}`)
+      else if (p.char) console.log(`  ev${e.id} (${e.x},${e.y}) npc ${p.char}${tag}${text ? `: ${snip(text, 70)}` : ''}`)
+      else if (!p.tile && text) console.log(`  ev${e.id} (${e.x},${e.y}) sign${tag}: ${snip(text, 70)}`)
+    }
+    return
+  }
   for (const e of m.events) {
     const p = defaultPage(e) ?? e.pages[0]
     const warp = e.pages.find(pg => pg.warp)?.warp
@@ -144,26 +167,64 @@ const findSection = (id: string): SectionJson => {
   throw new Error(`no section ${id}`)
 }
 
+// Parsed JSON, or null when the file does not exist
+const readDefs = <T>(file: string): T | null => existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) as T : null
+// `--limit N` anywhere in args (default 30); returns the remaining args
+const takeLimit = (a: string[]) => {
+  const i = a.indexOf('--limit')
+  const limit = i >= 0 ? Number(a[i + 1]) || 30 : 30
+  return { limit, rest: i >= 0 ? a.filter((_, j) => j !== i && j !== i + 1) : a }
+}
+const more = (shown: number, total: number) => { if (total > shown) console.log(`${total - shown} more (raise with --limit N)`) }
+
 const load = imageLoader(assetsDir(ROOT, game))
 const tilesets = loadTilesets(dir)
 
 switch (cmd) {
   case 'names': {
-    const q = args.join(' ').toLowerCase()
-    Object.entries(index).filter(([, i]) => i.name.toLowerCase().includes(q)).forEach(([id, i]) => console.log(`${id}\t${i.name}\t(parent ${i.parent} ${name(i.parent)})`))
+    const { limit, rest } = takeLimit(args)
+    const q = rest.join(' ').toLowerCase()
+    const hits = Object.entries(index).filter(([, i]) => i.name.toLowerCase().includes(q))
+    hits.slice(0, limit).forEach(([id, i]) => console.log(`${id}\t${i.name}\t(parent ${i.parent} ${name(i.parent)})`))
+    more(limit, hits.length)
     break
   }
   case 'find': {
-    const [text, ...ids] = args
+    const { limit, rest } = takeLimit(args)
+    const [text, ...ids] = rest
     const q = text.toLowerCase()
     const maps = ids.length ? ids.map(id => loadMap(dir, Number(id))) : allMaps()
+    let total = 0
     for (const m of maps) for (const e of m.events) {
       const hit = e.pages.find(p => p.text?.toLowerCase().includes(q) || p.choices?.some(c => c.toLowerCase().includes(q)))
-      if (hit || e.name.toLowerCase().includes(q)) console.log(`map ${m.id} "${m.name}" ev${e.id} (${e.x},${e.y}): ${snip(hit?.text ?? e.name, 160)}`)
+      if (!hit && !e.name.toLowerCase().includes(q)) continue
+      if (total++ < limit) console.log(`map ${m.id} "${m.name}" ev${e.id} (${e.x},${e.y}): ${snip(hit?.text ?? e.name, 160)}`)
     }
+    more(limit, total)
     break
   }
-  case 'map': describe(loadMap(dir, Number(args[0]))); break
+  case 'map': describe(loadMap(dir, Number(args[0])), args.includes('--brief')); break
+  case 'warps': {
+    const id = Number(args[0])
+    const m = loadMap(dir, id)
+    console.log(`map ${m.id} "${m.name}": warps out`)
+    const out = new Map<number, string[]>()
+    for (const e of m.events) for (const w of new Set(e.pages.flatMap(pg => pg.warp ? [JSON.stringify(pg.warp)] : []))) {
+      const { map, x, y } = JSON.parse(w) as { map: number; x: number; y: number }
+      out.set(map, [...out.get(map) ?? [], `    ev${e.id} (${e.x},${e.y}) -> lands (${x},${y})${e.pages.every(pg => pg.cond) ? ' [conditional]' : ''}`])
+    }
+    if (!out.size) console.log('  none')
+    for (const [dest, rows] of out) console.log(`  -> map ${dest} "${name(dest)}${dest === id ? '" (same map)' : '"'}\n${rows.join('\n')}`)
+    console.log(`warps into map ${id}`)
+    let into = 0
+    for (const o of allMaps()) {
+      if (o.id === id) continue
+      const rows = o.events.flatMap(e => e.pages.filter(pg => pg.warp?.map === id).slice(0, 1).map(pg => `    ev${e.id} (${e.x},${e.y}) -> lands (${pg.warp!.x},${pg.warp!.y})${e.pages.every(p => p.cond) ? ' [conditional]' : ''}`))
+      if (rows.length) { into += rows.length; console.log(`  <- map ${o.id} "${o.name}"\n${rows.join('\n')}`) }
+    }
+    if (!into) console.log('  none')
+    break
+  }
   case 'grid': {
     const m = loadMap(dir, Number(args[0]))
     const box = parseBox(args[1], m)
@@ -175,7 +236,8 @@ switch (cmd) {
   case 'preview': {
     const [section, only] = args
     if (!section) usage()
-    const defs: RouteDef[] = JSON.parse(readFileSync(join(ROOT, 'routes', game, `${section}.json`), 'utf8'))
+    const defs = readDefs<RouteDef[]>(join(ROOT, 'routes', game, `${section}.json`))
+    if (!defs) { console.log(`no routes/${game}/${section}.json`); break }
     for (const def of defs.filter(d => !only || d.id === only)) {
       const m = loadMap(dir, def.map)
       const r = resolveRoute(def, m, tilesets[m.tileset])
@@ -183,8 +245,18 @@ switch (cmd) {
       const img = renderMap(m, tilesets[m.tileset], load, r.box, new Set(def.hide ?? []))
       grid(img, r.box)
       pathOverlay(img, r.path, r.box)
-      def.points.forEach((p, i) => { if (!p.via) fillRect(img, (r.stops[i].at[0] - r.box.x) * 32 + 6, (r.stops[i].at[1] - r.box.y) * 32 + 6, 20, 20, [220, 38, 38, 255]) })
+      let n = 0
+      const legend: string[] = []
+      def.points.forEach((p, i) => {
+        if (p.via) return
+        const [x, y] = r.stops[i].at
+        if (!p.label) { fillRect(img, (x - r.box.x) * 32 + 6, (y - r.box.y) * 32 + 6, 20, 20, [220, 38, 38, 255]); return }
+        n++
+        tileMarker(img, r.box, x, y, String(p.n ?? n), HIDDEN_RGB)
+        legend.push(`  ${p.n ?? n}: ${p.label} @${x},${y}`)
+      })
       console.log(`${def.id}: ${def.spots ? `${def.points.length} spots` : `${r.path.length - 1} steps`}, box ${JSON.stringify(r.box)}`)
+      legend.forEach(l => console.log(l))
       save(`${section}--${def.id}.png`, img)
     }
     break
@@ -205,7 +277,8 @@ switch (cmd) {
   case 'check': {
     const section = args[0]
     if (!section) usage()
-    const defs: RouteDef[] = JSON.parse(readFileSync(join(ROOT, 'routes', game, `${section}.json`), 'utf8'))
+    const defs = readDefs<RouteDef[]>(join(ROOT, 'routes', game, `${section}.json`))
+    if (!defs) { console.log(`no routes/${game}/${section}.json: nothing to check`); break }
     const errors = validateRouteDefs(section, defs, index)
     const paras = findSection(section).blocks.flatMap(b => b.markdown && (b.type === 'prose' || b.type === 'task') ? paragraphs(b.markdown) : [])
     for (const d of defs) {
@@ -247,7 +320,8 @@ switch (cmd) {
   case 'items-preview': {
     const [section, only] = args
     if (!section) usage()
-    const defs: ItemCardDef[] = JSON.parse(readFileSync(join(ROOT, 'item-maps', game, `${section}.json`), 'utf8'))
+    const defs = readDefs<ItemCardDef[]>(join(ROOT, 'item-maps', game, `${section}.json`))
+    if (!defs) { console.log(`no item-maps/${game}/${section}.json: nothing to ${cmd === 'items-check' ? 'check' : 'preview'}`); break }
     const data = mapData(dir)
     const errors = validateItemCardDefs(section, defs, data)
     if (cmd === 'items-check') {
@@ -272,10 +346,48 @@ switch (cmd) {
       def.items.forEach((it, i) => {
         const e = events.get(it.event)!
         tileMarker(img, box, e.x, e.y, String(i + 1), e.hidden ? HIDDEN_RGB : BALL_RGB)
-        console.log(`  ${i + 1}. ev${e.id} (${e.x},${e.y}) ${e.hidden ? 'hidden' : 'ball'} ${e.item}${it.label ? ` "${it.label}"` : ''}`)
+        console.log(`  ${i + 1}: ev${e.id} (${e.x},${e.y}) ${e.hidden ? 'hidden' : 'ball'} ${e.item}${it.label ? ` "${it.label}"` : ''}`)
       })
       console.log(`${def.id}: map ${m.id} "${m.name}", box ${JSON.stringify(box)}`)
       save(`items-${section}--${def.id}.png`, img)
+    }
+    break
+  }
+  case 'cards': {
+    const section = args[0]
+    if (!section) usage()
+    const sec = findSection(section)
+    console.log(`# ${sec.title}`)
+    const routes = readDefs<RouteDef[]>(join(ROOT, 'routes', game, `${section}.json`)) ?? []
+    console.log(`routes (${routes.length}):`)
+    routes.forEach(d => console.log(`  ${d.id}: map ${d.map} "${name(d.map)}"${d.spots ? ' spots' : ''}, ${d.points.length} point(s), match "${snip(d.match, 50)}"`))
+    const items = readDefs<ItemCardDef[]>(join(ROOT, 'item-maps', game, `${section}.json`)) ?? []
+    console.log(`item cards (${items.length}):`)
+    items.forEach(d => console.log(`  ${d.id}: map ${d.map} "${name(d.map)}", events ${d.items.map(i => i.event).join(',')}, match "${snip(d.match, 50)}"`))
+    const hidden = readDefs<Record<string, { map: number; events: Record<string, number> }>>(join(ROOT, 'hidden-maps', `${game}.json`)) ?? {}
+    const shots = sec.blocks.flatMap(b => b.type === 'image' && b.file && hidden[b.file] ? [b.file] : [])
+    console.log(`hidden-item screenshots (${shots.length}):`)
+    shots.forEach(f => console.log(`  ${f}: map ${hidden[f].map} "${name(hidden[f].map)}", events ${Object.entries(hidden[f].events).map(([k, v]) => `${k}=${v}`).join(',')}`))
+    console.log('paragraph -> map hints:')
+    let last = ''
+    for (const b of sec.blocks) {
+      if ((b.type === 'prose' || b.type === 'task') && b.markdown) last = paragraphs(b.markdown).at(-1) ?? last
+      else if (b.type === 'encounters') console.log(`  encounters map ${b.mapId} "${b.name}" after: "${snip(last, 70)}"`)
+    }
+    break
+  }
+  case 'fmt': {
+    const files = args[0] === '--all'
+      ? ['routes', 'item-maps'].flatMap(d => existsSync(join(ROOT, d, game)) ? readdirSync(join(ROOT, d, game)).filter(f => f.endsWith('.json')).map(f => join(ROOT, d, game, f)) : [])
+      : args[0] ? ['routes', 'item-maps'].map(d => join(ROOT, d, game, `${args[0]}.json`)).filter(existsSync) : (usage(), [])
+    if (!files.length) console.log('no files to format')
+    for (const f of files) {
+      const before = readFileSync(f, 'utf8')
+      const data = JSON.parse(before)
+      const after = compactJson(data)
+      if (JSON.stringify(JSON.parse(after)) !== JSON.stringify(data)) { console.error(`${f}: formatting would change content; left alone`); process.exitCode = 1; continue }
+      if (after !== before) writeFileSync(f, after)
+      console.log(`${after === before ? 'unchanged' : 'formatted'} ${f.slice(ROOT.length + 1)}`)
     }
     break
   }

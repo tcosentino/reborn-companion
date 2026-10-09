@@ -9,13 +9,17 @@ All are `node --no-warnings scripts/maps.ts reborn <command>`:
 | Command | Use |
 | --- | --- |
 | `section <section>` | The section's paragraphs in order, with `[battle]`, `[guide image]`, `[encounters map N]` and `[route id]` markers. Encounter markers give the game map id for an area. |
-| `names <text>` | Maps by name. Interiors are children of the outdoor map (e.g. 37 is Lower Peridot Ward outdoors, 47 a house in it). |
-| `find <text> [mapId...]` | Events whose dialogue contains the text: the fastest way to find a specific NPC and its exact tile, or which interior holds an NPC. |
+| `names <text> [--limit N]` | Maps by name (30 shown by default, then an "N more" line). Interiors are children of the outdoor map (e.g. 37 is Lower Peridot Ward outdoors, 47 a house in it). |
+| `find <text> [mapId...] [--limit N]` | Events whose dialogue contains the text: the fastest way to find a specific NPC and its exact tile, or which interior holds an NPC. |
 | `map <id>` | Every door/warp (destination map and landing tile), NPC (first dialogue) and sign, with coordinates. Door events sit on the door tile. A warp's landing tile is exactly where the player appears, which makes it the natural start point after leaving a building. `[vanishes later]` marks story actors that leave at some point (candidates for `hide`). |
+| `map <id> --brief` | Same, trimmed to doors/warps, NPCs with a graphic, signs and item events. `[conditional]` marks events not visible in the default state (first page conditional, or the graphic only appears on a later page). |
+| `warps <id>` | Every warp out of a map grouped by destination map (source tile, landing tile), plus the warps into it from other maps. For tracing multi-floor buildings. |
+| `cards <section>` | What already exists for a section: route cards (id, map, spots, match), item cards (id, map, event ids), hidden-item screenshots paired in `hidden-maps/` (map, events), and the encounter-marker map hints. Run it before authoring. |
+| `fmt <section\|--all>` | Rewrites `routes/` and `item-maps/` files for the section in the compact house style (one point/item per line, `hide` inline). Content-preserving. Run it on files you wrote; avoid `--all` unless asked. |
 | `grid <id> [x,y,w,h]` | PNG of the map, or a box of it, with a coordinate grid: yellow lines every 5 tiles, labelled. Read the PNG to orient yourself. Prefer boxes of about 30x30. |
 | `reach <id> <x,y> [x,y,w,h] [hide,ids] [--surf]` | ASCII map of the tiles walkable from x,y: `.` reachable, `#` not, `W` warp, `e`/`E` event, `@` start. Use it to debug "no walkable path". |
-| `check <section>` | Validates the route file: ids, match text, map, and that a path exists. |
-| `preview <section> [routeId]` | Renders each route as it will be built: yellow path, red squares on points, grid. Always Read the preview and confirm the path follows the paragraph. |
+| `check <section>` | Validates the route file: ids, match text, map, and that a path exists. A section with no route file prints a note and exits 0. |
+| `preview <section> [routeId]` | Renders each route as it will be built: yellow path, red numbered squares on labelled points (the marker numbers match the legend printed to stdout as `n: label @x,y`), grid. Always Read the preview and confirm the path follows the paragraph and each number sits on the right tile. |
 
 Movement follows the game's rules (`scripts/rmxp.ts`):
 - Doors and stairs that warp within the same map (multi-room dungeons such as factories and caves are often one map) are followed automatically. The line breaks there and the app marks both ends.
