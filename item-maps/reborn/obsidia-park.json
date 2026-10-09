@@ -1,0 +1,34 @@
+[
+  {
+    "id": "alley-hidden-items",
+    "match": "There is a hidden *Potion* in the top rock immediately",
+    "map": 105,
+    "title": "Alleyway: hidden items",
+    "pad": 4,
+    "items": [
+      { "event": 13 },
+      { "event": 14 }
+    ]
+  },
+  {
+    "id": "park-building-items",
+    "match": "Cut wiggly trees #8 and #9.",
+    "map": 108,
+    "title": "Park building: TM54 and Warehouse Key",
+    "pad": 3,
+    "items": [
+      { "event": 3 },
+      { "event": 1 }
+    ]
+  },
+  {
+    "id": "park-x-sp-def",
+    "match": "Cut wiggly trees #8 and #9.",
+    "map": 269,
+    "title": "Park: X Sp. Def",
+    "pad": 8,
+    "items": [
+      { "event": 5 }
+    ]
+  }
+]

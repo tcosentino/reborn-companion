@@ -5,20 +5,8 @@
     "map": 85,
     "title": "Entrance up and left to the Light Shard",
     "points": [
-      {
-        "at": [
-          49,
-          47
-        ],
-        "label": "Entrance"
-      },
-      {
-        "at": [
-          4,
-          25
-        ],
-        "label": "Light Shard"
-      }
+      { "at": [49, 47], "label": "Entrance" },
+      { "at": [4, 25], "label": "Light Shard" }
     ]
   },
   {
@@ -27,27 +15,202 @@
     "map": 85,
     "title": "Up to Victoria and the B1F escalator",
     "points": [
-      {
-        "at": [
-          4,
-          26
-        ],
-        "label": "Light Shard"
-      },
-      {
-        "at": [
-          8,
-          9
-        ],
-        "label": "Victoria"
-      },
-      {
-        "at": [
-          12,
-          8
-        ],
-        "label": "Escalator to B1F"
-      }
+      { "at": [4, 26], "label": "Light Shard" },
+      { "at": [8, 9], "label": "Victoria" },
+      { "at": [12, 8], "label": "Escalator to B1F" }
+    ]
+  },
+  {
+    "id": "victoria-fridge",
+    "match": "If you talked to Victoria near the park earlier",
+    "map": 85,
+    "title": "Slums: fridge and trashcan",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [4, 7], "label": "Fridge (upper corner: deletes the barrier)" },
+      { "at": [5, 8], "label": "Nearby trashcan (PokeSnax)" },
+      { "at": [12, 8], "label": "Escalator down to B1F" }
+    ]
+  },
+  {
+    "id": "b1f-arrival",
+    "match": "A long time from now you can trade Pidove away",
+    "map": 88,
+    "title": "Slums B1F: first room",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [27, 7], "label": "Escalator back up to 1F" },
+      { "at": [20, 5], "label": "Gap between the escalators (to the Max Repel and Carbos room)" },
+      { "at": [25, 17], "label": "Great Ball (not hidden)" }
+    ]
+  },
+  {
+    "id": "slums-1f-stairs",
+    "match": "- (A): *Pop Rocks*",
+    "map": 90,
+    "title": "Slums 1F: stairs up",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [2, 12], "label": "Arrive from the first slums area" },
+      { "at": [24, 39], "label": "Stairs up to 2F" }
+    ]
+  },
+  {
+    "id": "slums-2f-stairs",
+    "match": "Head to the left, then go up the stairs once more.",
+    "map": 91,
+    "title": "Slums 2F: stairs up to 3F",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [25, 5], "label": "Arrive from 1F" },
+      { "at": [11, 15], "label": "Stairs up to 3F (Corey)" }
+    ]
+  },
+  {
+    "id": "slums-3f-corey",
+    "match": "Head to the left, then go up the stairs once more.",
+    "map": 92,
+    "title": "Slums 3F: Corey",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [7, 9], "label": "Stairs down to 2F" },
+      { "at": [11, 4], "label": "Corey" },
+      { "at": [13, 15], "label": "Jar below (hidden Exp. Candy S)" },
+      { "at": [11, 5], "label": "Zinc at the top" }
+    ]
+  },
+  {
+    "id": "slums-roof-exit",
+    "match": "Head left and emerge onto the roof.",
+    "map": 91,
+    "title": "Slums 2F: exit left to the roof",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [6, 30], "label": "Exit left to the roof" },
+      { "at": [3, 44], "label": "Elevator (west)" },
+      { "at": [29, 44], "label": "Elevator (east, with Mankey)" }
+    ]
+  },
+  {
+    "id": "slums-roof",
+    "match": "Head left and emerge onto the roof.",
+    "map": 81,
+    "title": "The roof (South Obsidia Ward)",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [42, 30], "label": "You arrive here from 2F" },
+      { "at": [45, 31], "label": "Light Shard (roof)" },
+      { "at": [47, 40], "label": "Door back inside (2F)" }
+    ]
+  },
+  {
+    "id": "b1f-thief",
+    "match": "Sometimes you even get two!",
+    "map": 88,
+    "title": "B1F: elevators and the thief",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [25, 23], "label": "Elevator (west)" },
+      { "at": [51, 23], "label": "Elevator (east)" },
+      { "at": [48, 31], "label": "Guy at the bottom (stole the $1000 Pokemon)" }
+    ]
+  },
+  {
+    "id": "b1f-box-elevator",
+    "match": "Talk to the box in front of the elevator to watch it scurry away.",
+    "map": 88,
+    "title": "B1F: box in front of the elevator",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [25, 24], "label": "Box in front of the elevator" },
+      { "at": [25, 23], "label": "Elevator (go to 1F)" },
+      { "at": [2, 11], "label": "Gap on the left (Friend Ball)" }
+    ]
+  },
+  {
+    "id": "slums-1f-elevator-kid",
+    "match": "Talk to the box in front of the elevator to watch it scurry away.",
+    "map": 85,
+    "title": "Slums 1F: elevator, Net Ball and the kid",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [13, 24], "label": "Elevator (you arrive here)" },
+      { "at": [11, 26], "label": "Net Ball" },
+      { "at": [13, 27], "label": "Kid (talk to make him move)" }
+    ]
+  },
+  {
+    "id": "big-door",
+    "match": "Back on B1F, enter the big door and head up.",
+    "map": 88,
+    "title": "B1F: the big door",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [46, 6], "label": "Big door (head up)" }
+    ]
+  },
+  {
+    "id": "scrafty-area",
+    "match": "Back on B1F, enter the big door and head up.",
+    "map": 95,
+    "title": "Beyond the big door: Scrafty",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [27, 57], "label": "Enter from B1F (big door)" },
+      { "at": [13, 17], "label": "Rejected Scraggy" },
+      { "at": [16, 10], "label": "Scrafty (battle room)" }
+    ]
+  },
+  {
+    "id": "third-pass-dead-end",
+    "match": "This is a dead end without Rock Smash.",
+    "map": 88,
+    "title": "B1F: Rock Smash dead end and the backpacker",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [86, 24], "label": "Rocks (need Rock Smash)" },
+      { "at": [84, 27], "label": "Backpacker below (opens the grate)" }
+    ]
+  },
+  {
+    "id": "awakening-egg",
+    "match": "Immediately up and to the right, you'll find a box",
+    "map": 85,
+    "title": "Slums 1F: Awakening box and the egg",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [44, 18], "label": "Box (Awakening)" },
+      { "at": [49, 16], "label": "Door to the jumping path" },
+      { "at": [56, 45], "label": "Abandoned egg" },
+      { "at": [55, 40], "label": "Path down to the egg" },
+      { "at": [74, 15], "label": "Spoink under the beams (quest)" },
+      { "at": [77, 23], "label": "Exit into daylight" }
+    ]
+  },
+  {
+    "id": "to-coral-ward",
+    "match": "Grab the hidden *Repel* (A) and enter Coral Ward at the bottom.",
+    "map": 81,
+    "title": "Out of the slums to Coral Ward",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [54, 23], "label": "You come out here" },
+      { "at": [68, 43], "label": "To Coral Ward (stairway)" }
     ]
   }
 ]

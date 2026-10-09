@@ -9,5 +9,46 @@
       { "at": [27, 64], "label": "Potion girl" },
       { "at": [34, 48], "label": "Girl at the Grand Hall doors" }
     ]
+  },
+  {
+    "id": "ice-cream-cart",
+    "match": "If the weather is sunny you will see an Ice Cream Cart here.",
+    "map": 29,
+    "title": "Ice cream cart (sunny days)",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [36, 57], "label": "Ice Cream Cart (appears when sunny)" },
+      { "at": [34, 48], "label": "Grand Hall entrance" }
+    ]
+  },
+  {
+    "id": "starter-room",
+    "match": "Upstairs, you'll be asked which starter Pokemon",
+    "map": 39,
+    "title": "Grand Hall upstairs: starters",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [9, 7], "label": "Starter Pokemon (21 balls)" },
+      { "at": [10, 1], "label": "Random starter computer (top of the room)" },
+      { "at": [1, 3], "label": "Ame / stairs down" }
+    ]
+  },
+  {
+    "id": "hall-places",
+    "match": "Talk to Ame as soon as you're done",
+    "map": 38,
+    "title": "Grand Hall ground floor: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [9, 4], "label": "Stairs up to the starters" },
+      { "at": [6, 5], "label": "Guy in the top left (litemode)" },
+      { "at": [18, 7], "label": "Desk guy (grinding trainers)" },
+      { "at": [19, 19], "label": "Candy seller (Common Candy, balls)" },
+      { "at": [17, 27], "label": "Salesman (Pokemon for $500)" },
+      { "at": [15, 29], "label": "Exit to Opal Ward" }
+    ]
   }
 ]

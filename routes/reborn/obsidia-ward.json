@@ -5,20 +5,8 @@
     "map": 36,
     "title": "Critical Capture up to the Pokemon Center",
     "points": [
-      {
-        "at": [
-          26,
-          37
-        ],
-        "label": "Critical Capture"
-      },
-      {
-        "at": [
-          36,
-          24
-        ],
-        "label": "Pokemon Center"
-      }
+      { "at": [26, 37], "label": "Critical Capture" },
+      { "at": [36, 24], "label": "Pokemon Center" }
     ]
   },
   {
@@ -27,27 +15,9 @@
     "map": 36,
     "title": "Daycare to the Castform trade house and railnet stairs",
     "points": [
-      {
-        "at": [
-          40,
-          25
-        ],
-        "label": "Daycare"
-      },
-      {
-        "at": [
-          25,
-          23
-        ],
-        "label": "Castform trade house"
-      },
-      {
-        "at": [
-          20,
-          18
-        ],
-        "label": "Building with railnet stairs"
-      }
+      { "at": [40, 25], "label": "Daycare" },
+      { "at": [25, 23], "label": "Castform trade house" },
+      { "at": [20, 18], "label": "Building with railnet stairs" }
     ]
   },
   {
@@ -56,20 +26,8 @@
     "map": 36,
     "title": "Railnet building to Devon Corp",
     "points": [
-      {
-        "at": [
-          20,
-          19
-        ],
-        "label": "Railnet building"
-      },
-      {
-        "at": [
-          35,
-          36
-        ],
-        "label": "Devon Corp"
-      }
+      { "at": [20, 19], "label": "Railnet building" },
+      { "at": [35, 36], "label": "Devon Corp" }
     ]
   },
   {
@@ -78,27 +36,9 @@
     "map": 36,
     "title": "From Florinia down to South Obsidia Ward",
     "points": [
-      {
-        "at": [
-          58,
-          38
-        ],
-        "label": "Florinia"
-      },
-      {
-        "at": [
-          41,
-          45
-        ],
-        "label": "Trainer"
-      },
-      {
-        "at": [
-          44,
-          54
-        ],
-        "label": "To South Obsidia Ward"
-      }
+      { "at": [58, 38], "label": "Florinia" },
+      { "at": [41, 45], "label": "Trainer" },
+      { "at": [44, 54], "label": "To South Obsidia Ward" }
     ]
   },
   {
@@ -107,34 +47,86 @@
     "map": 81,
     "title": "Lillipup owner's building, then down to the slums",
     "points": [
-      {
-        "at": [
-          41,
-          9
-        ],
-        "label": "From Obsidia Ward"
-      },
-      {
-        "at": [
-          46,
-          11
-        ],
-        "label": "Lillipup owner's building"
-      },
-      {
-        "at": [
-          47,
-          42
-        ],
-        "label": "Trainer"
-      },
-      {
-        "at": [
-          59,
-          41
-        ],
-        "label": "Obsidia Slums"
-      }
+      { "at": [41, 9], "label": "From Obsidia Ward" },
+      { "at": [46, 11], "label": "Lillipup owner's building" },
+      { "at": [47, 42], "label": "Trainer" },
+      { "at": [59, 41], "label": "Obsidia Slums" }
+    ]
+  },
+  {
+    "id": "places-salon-capture",
+    "match": "Head into the Central Salon.",
+    "map": 36,
+    "title": "Obsidia Ward: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [8, 37], "label": "Opal Bridge (from Opal Ward)" },
+      { "at": [20, 36], "label": "Central Salon" },
+      { "at": [26, 36], "label": "Critical Capture (custom balls)" },
+      { "at": [36, 24], "label": "Pokemon Center" },
+      { "at": [40, 24], "label": "Daycare" },
+      { "at": [25, 23], "label": "Castform trade house" },
+      { "at": [20, 18], "label": "Building with railnet stairs" },
+      { "at": [35, 36], "label": "Devon Corp" },
+      { "at": [43, 36], "label": "Sweet Kiss Candy Shop" },
+      { "at": [44, 54], "label": "To South Obsidia Ward" }
+    ]
+  },
+  {
+    "id": "salon-inside",
+    "match": "A lady on the right will ask to see a Pokemon",
+    "map": 82,
+    "title": "Central Salon inside",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [3, 8], "label": "Friendship checker" },
+      { "at": [3, 11], "label": "Groomer ($1500 friendship)" },
+      { "at": [7, 7], "label": "Receptionist" },
+      { "at": [14, 8], "label": "Lady on the right (Soothe Bell)" },
+      { "at": [7, 12], "label": "Exit to Obsidia Ward" }
+    ]
+  },
+  {
+    "id": "devon-inside",
+    "match": "Nothing special here for sale",
+    "map": 84,
+    "title": "Devon Corp: the mysterious salesman",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [4, 8], "label": "Mysterious salesman (free Premier Ball)" },
+      { "at": [9, 5], "label": "Devon clerk" },
+      { "at": [9, 10], "label": "Exit to Obsidia Ward" }
+    ]
+  },
+  {
+    "id": "sweet-kiss-inside",
+    "match": "The next building in line is the Sweet Kiss Candy Shop building.",
+    "map": 256,
+    "title": "Sweet Kiss Candy Shop",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [3, 5], "label": "Tile puzzle girl (Swirlix)" },
+      { "at": [13, 5], "label": "Kid wanting Vanilla Ice Cream" },
+      { "at": [13, 4], "label": "Vending machine" },
+      { "at": [9, 10], "label": "Candy clerk (Whipped Dream, candy)" },
+      { "at": [9, 14], "label": "Exit to Obsidia Ward" }
+    ]
+  },
+  {
+    "id": "places-park-victoria",
+    "match": "Back outside, follow Victoria to the right.",
+    "map": 36,
+    "title": "Back outside: Florinia and Victoria",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [59, 37], "label": "Florinia (talk for Victoria battle)" },
+      { "at": [60, 39], "label": "Victoria" },
+      { "at": [59, 33], "label": "Obsidia Park entrance" }
     ]
   }
 ]

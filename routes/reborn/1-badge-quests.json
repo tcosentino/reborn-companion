@@ -5,32 +5,46 @@
     "map": 37,
     "title": "Numel spot to the hiker and the Whismur lot",
     "points": [
-      {
-        "at": [
-          35,
-          69
-        ],
-        "label": "Numel spot"
-      },
-      {
-        "at": [
-          45,
-          65
-        ],
-        "label": "Hiker"
-      },
-      {
-        "at": [
-          57,
-          52
-        ],
-        "label": "Whismur house (lot owner)"
-      }
+      { "at": [35, 69], "label": "Numel spot" },
+      { "at": [45, 65], "label": "Hiker" },
+      { "at": [57, 52], "label": "Whismur house (lot owner)" }
     ],
-    "hide": [
-      30,
-      32,
-      33
+    "hide": [30, 32, 33]
+  },
+  {
+    "id": "numel-station",
+    "match": "Head nearby the train station in Lower Peridot.",
+    "map": 37,
+    "title": "Lower Peridot: Numel and the hiker",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [35, 69], "label": "Numel spot (rain, with a snax)" },
+      { "at": [45, 65], "label": "Hiker" }
+    ]
+  },
+  {
+    "id": "glasses-person",
+    "match": "Next, enter the Grand Hall.",
+    "map": 38,
+    "title": "Grand Hall: person with glasses",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [19, 19], "label": "Person with glasses (Rainbow Field Readout), where the candy seller was" },
+      { "at": [15, 29], "label": "Exit to Opal Ward" }
+    ]
+  },
+  {
+    "id": "opal-bridge-trainers",
+    "match": "You'll also notice that there are more trainers on Opal Bridge.",
+    "map": 29,
+    "title": "Opal Bridge trainers",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [39, 60], "label": "Foot of Opal Bridge (trainers, clockwise)" },
+      { "at": [51, 25], "label": "Bridge top (bullies)" }
     ]
   }
 ]

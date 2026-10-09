@@ -8,5 +8,42 @@
       { "at": [40, 10], "label": "Danielle's apartment" },
       { "at": [48, 17], "label": "Trade house (Watchog for Nosepass)" }
     ]
+  },
+  {
+    "id": "places-apartment-trade",
+    "match": "Inside the apartment complex at the top, you'll meet Danielle",
+    "map": 97,
+    "title": "Coral Ward: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [40, 9], "label": "Apartment complex (Danielle's quiz)" },
+      { "at": [48, 17], "label": "House below (Watchog for Nosepass trade)" },
+      { "at": [56, 15], "label": "Pokemon Center" }
+    ]
+  },
+  {
+    "id": "places-dock",
+    "match": "On the dock, if it is raining and you have Snax",
+    "map": 97,
+    "title": "Coral Ward: the dock",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [17, 23], "label": "Lotad (rain and Snax)" },
+      { "at": [18, 26], "label": "Fisherman on the dock" }
+    ]
+  },
+  {
+    "id": "places-blue-haired-girl",
+    "match": "Talk to the blue haired girl towards the top.",
+    "map": 97,
+    "title": "Coral Ward: the blue haired girl",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [17, 11], "label": "Blue haired girl (Amaria, battle)" },
+      { "at": [17, 6], "label": "Her Popplio" }
+    ]
   }
 ]

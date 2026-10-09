@@ -5,178 +5,81 @@
     "map": 71,
     "title": "1F: the four code terminals (3179)",
     "points": [
-      {
-        "at": [
-          47,
-          35
-        ],
-        "label": "From the entrance"
-      },
-      {
-        "at": [
-          24,
-          31
-        ],
-        "label": "Terminal XX7X"
-      },
-      {
-        "at": [
-          23,
-          8
-        ],
-        "label": "Terminal X1XX"
-      },
-      {
-        "at": [
-          50,
-          7
-        ],
-        "label": "Terminal 3XXX"
-      },
-      {
-        "at": [
-          66,
-          6
-        ],
-        "label": "Terminal XXX9"
-      },
-      {
-        "at": [
-          50,
-          16
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          47,
-          28
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          60,
-          30
-        ],
-        "label": "Elevator keypad"
-      }
+      { "at": [47, 35], "label": "From the entrance" },
+      { "at": [24, 31], "label": "Terminal XX7X" },
+      { "at": [23, 8], "label": "Terminal X1XX" },
+      { "at": [50, 7], "label": "Terminal 3XXX" },
+      { "at": [66, 6], "label": "Terminal XXX9" },
+      { "at": [50, 16], "via": true },
+      { "at": [47, 28], "via": true },
+      { "at": [60, 30], "label": "Elevator keypad" }
     ],
-    "hide": [
-      28,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35,
-      48,
-      49,
-      50,
-      51,
-      52,
-      53,
-      64,
-      65,
-      66,
-      67,
-      68,
-      69,
-      70,
-      71,
-      72,
-      73
-    ]
+    "hide": [28, 29, 30, 31, 32, 33, 34, 35, 48, 49, 50, 51, 52, 53, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73]
   },
   {
     "id": "floor-2-terminals",
     "match": "On the second floor, Rini will start us off",
     "map": 71,
     "title": "2F: Data Chip and the code terminals (4862)",
-    "hide": [
-      28,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35,
-      48,
-      49,
-      50,
-      51,
-      52,
-      53,
-      64,
-      65,
-      66,
-      67,
-      68,
-      69,
-      70,
-      71,
-      72,
-      73
-    ],
+    "hide": [28, 29, 30, 31, 32, 33, 34, 35, 48, 49, 50, 51, 52, 53, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73],
     "points": [
-      {
-        "at": [
-          89,
-          27
-        ],
-        "label": "Rini (elevator landing)"
-      },
-      {
-        "at": [
-          94,
-          28
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          94,
-          44
-        ],
-        "label": "Data Chip"
-      },
-      {
-        "at": [
-          89,
-          6
-        ],
-        "label": "Terminal XXX2"
-      },
-      {
-        "at": [
-          18,
-          48
-        ],
-        "label": "Terminal X8XX"
-      },
-      {
-        "at": [
-          5,
-          25
-        ],
-        "label": "Terminal 4XXX"
-      },
-      {
-        "at": [
-          36,
-          4
-        ],
-        "label": "Paralyze Heal"
-      },
-      {
-        "at": [
-          41,
-          2
-        ],
-        "label": "Security keypad"
-      }
+      { "at": [89, 27], "label": "Rini (elevator landing)" },
+      { "at": [94, 28], "via": true },
+      { "at": [94, 44], "label": "Data Chip" },
+      { "at": [89, 6], "label": "Terminal XXX2" },
+      { "at": [18, 48], "label": "Terminal X8XX" },
+      { "at": [5, 25], "label": "Terminal 4XXX" },
+      { "at": [36, 4], "label": "Paralyze Heal" },
+      { "at": [41, 2], "label": "Security keypad" }
+    ]
+  },
+  {
+    "id": "mosswater-entrance",
+    "match": "Time for our first dungeon proper!",
+    "map": 71,
+    "title": "Mosswater Industrial entrance",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [41, 58], "label": "Fern (your partner)" },
+      { "at": [39, 23], "label": "Ace (next room, up from the entrance)" },
+      { "at": [47, 36], "label": "Door up into the factory" }
+    ]
+  },
+  {
+    "id": "explosives-room",
+    "match": "Pickup the explosives!",
+    "map": 71,
+    "title": "Explosives room",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [8, 10], "label": "Explosives (grunts guarding the bombs)" },
+      { "at": [10, 14], "label": "Door back toward the central room" }
+    ]
+  },
+  {
+    "id": "scientist-factory-field",
+    "match": "Go to the factory area where we first met Fern",
+    "map": 57,
+    "title": "Scientist by the factory",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [21, 40], "label": "Scientist (Factory Field Readout)" },
+      { "at": [16, 49], "label": "Factory door" }
+    ]
+  },
+  {
+    "id": "painkiller-guy",
+    "match": "Head down and talk to the purple haired guy",
+    "map": 37,
+    "title": "Purple haired guy above the train station",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [23, 56], "label": "Purple haired guy (painkillers)" },
+      { "at": [54, 7], "label": "Lower Peridot Alley (where the thief runs)" }
     ]
   }
 ]

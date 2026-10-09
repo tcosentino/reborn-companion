@@ -8,5 +8,18 @@
       { "at": [61, 62], "label": "Mosswater Industrial" },
       { "at": [83, 58], "label": "Trade house (Munna)" }
     ]
+  },
+  {
+    "id": "grinding-trainers",
+    "match": "Now is a good time to mention the Grand Hall repeatable",
+    "map": 38,
+    "title": "Grand Hall: grinding trainers",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [18, 7], "label": "Desk guy (lets the trainers in)" },
+      { "at": [24, 8], "label": "Grinding trainers (top right corner)" },
+      { "at": [15, 29], "label": "Exit to Opal Ward" }
+    ]
   }
 ]

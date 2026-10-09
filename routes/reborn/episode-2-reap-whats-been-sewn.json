@@ -1,0 +1,14 @@
+[
+  {
+    "id": "victoria-outside-gym",
+    "match": "Head outside, and talk to Victoria outside the gym.",
+    "map": 37,
+    "title": "Outside the gym",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [64, 29], "label": "Peridot Gym door (Victoria waits outside)" },
+      { "at": [75, 64], "label": "Exit east toward Opal Ward and the Grand Hall" }
+    ]
+  }
+]

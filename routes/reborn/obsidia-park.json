@@ -23,5 +23,129 @@
       { "at": [47, 26], "label": "Warehouse 2 (Macho Brace, Spoink)" },
       { "at": [55, 26], "label": "Warehouse 3 (Meteor Grunt, Happiny)" }
     ]
+  },
+  {
+    "id": "south-obsidia-places",
+    "match": "Return to South Obsidia Ward and use your new field move",
+    "map": 81,
+    "title": "South Obsidia Ward: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [40, 8], "label": "Exit up to Obsidia Ward" },
+      { "at": [63, 11], "label": "Glamazonia Salon" },
+      { "at": [56, 12], "label": "Kid looking for his mom (near the salon)" },
+      { "at": [68, 43], "label": "Stairs to Coral Ward" }
+    ]
+  },
+  {
+    "id": "alley-overview",
+    "match": "Defeating this trainer gives us access to the Obsidia Alleyway.",
+    "map": 105,
+    "title": "Obsidia Alleyway",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [0, 11], "label": "Entrance from Obsidia Ward" },
+      { "at": [15, 3], "label": "Litleo (morning and day, runs off)" },
+      { "at": [20, 3], "label": "Mightyena bullying Electrike (night)" }
+    ]
+  },
+  {
+    "id": "railnet-litleo",
+    "match": "If this is a bit too hard for now feel free to skip this one",
+    "map": 36,
+    "title": "Railnet entrance",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [20, 18], "label": "Building with the Underground Railnet stairs" }
+    ]
+  },
+  {
+    "id": "park-front",
+    "match": "With all that out of the way, return to the park area",
+    "map": 36,
+    "title": "In front of the park",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [59, 33], "label": "Obsidia Park entrance" },
+      { "at": [60, 39], "label": "Victoria" },
+      { "at": [59, 37], "label": "Florinia" },
+      { "at": [61, 38], "label": "Amaria/Florinia (talk to them)" }
+    ]
+  },
+  {
+    "id": "park-overview",
+    "match": "You can start by grabbing a hidden *Oran Berry*",
+    "map": 269,
+    "title": "Obsidia Park: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [36, 42], "label": "Park entrance (from Obsidia Ward)" },
+      { "at": [38, 8], "label": "Building with TM54 and the Warehouse Key" },
+      { "at": [24, 11], "label": "X Sp. Def (path left from the building)" },
+      { "at": [16, 14], "label": "Exit to Obsidia Ward" }
+    ]
+  },
+  {
+    "id": "silph-department",
+    "match": "The building on the left is Silph Co.",
+    "map": 36,
+    "title": "Silph Co. and the Department Store",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [38, 15], "label": "Silph Co." },
+      { "at": [59, 15], "label": "Department Store (employee: Membership Card)" }
+    ]
+  },
+  {
+    "id": "kid-and-center",
+    "match": "Next, head south from Obsidia Park to re-enter South Obsidia Ward.",
+    "map": 81,
+    "title": "The kid by the salon",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [63, 11], "label": "Glamazonia Salon" },
+      { "at": [56, 12], "label": "Kid to talk to (left of the salon)" }
+    ]
+  },
+  {
+    "id": "center-castform",
+    "match": "Next, head south from Obsidia Park to re-enter South Obsidia Ward.",
+    "map": 36,
+    "title": "Pokemon Center and trade house",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [36, 24], "label": "Obsidia Pokemon Center (mom near the PC)" },
+      { "at": [25, 23], "label": "House left of the Pokemon Center (Furret for Castform trade)" }
+    ]
+  },
+  {
+    "id": "central-salon-again",
+    "match": "Take another visit to the Central Salon",
+    "map": 36,
+    "title": "Central Salon",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [20, 36], "label": "Central Salon" }
+    ]
+  },
+  {
+    "id": "glamazonia-again",
+    "match": "Take another visit to the Central Salon",
+    "map": 81,
+    "title": "Glamazonia Salon",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [63, 11], "label": "Glamazonia Salon (lady gives Glameow)" }
+    ]
   }
 ]

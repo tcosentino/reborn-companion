@@ -5,26 +5,10 @@
     "map": 37,
     "title": "Up to the guy asking for change",
     "points": [
-      {
-        "at": [
-          74,
-          64
-        ],
-        "label": "From Opal Ward"
-      },
-      {
-        "at": [
-          68,
-          40
-        ],
-        "label": "Guy asking for $50"
-      }
+      { "at": [74, 64], "label": "From Opal Ward" },
+      { "at": [68, 40], "label": "Guy asking for $50" }
     ],
-    "hide": [
-      30,
-      32,
-      33
-    ]
+    "hide": [30, 32, 33]
   },
   {
     "id": "gym-and-gift-box",
@@ -32,33 +16,11 @@
     "map": 37,
     "title": "Past the gym to the Gift Box",
     "points": [
-      {
-        "at": [
-          68,
-          40
-        ],
-        "label": "Guy asking for $50"
-      },
-      {
-        "at": [
-          64,
-          29
-        ],
-        "label": "Gym (locked)"
-      },
-      {
-        "at": [
-          71,
-          23
-        ],
-        "label": "Gift Box"
-      }
+      { "at": [68, 40], "label": "Guy asking for $50" },
+      { "at": [64, 29], "label": "Gym (locked)" },
+      { "at": [71, 23], "label": "Gift Box" }
     ],
-    "hide": [
-      30,
-      32,
-      33
-    ]
+    "hide": [30, 32, 33]
   },
   {
     "id": "pokesnax-house",
@@ -66,20 +28,8 @@
     "map": 37,
     "title": "To the PokeSnax house",
     "points": [
-      {
-        "at": [
-          46,
-          55
-        ],
-        "label": "Teddiursa spot"
-      },
-      {
-        "at": [
-          38,
-          54
-        ],
-        "label": "PokeSnax house"
-      }
+      { "at": [46, 55], "label": "Teddiursa spot" },
+      { "at": [38, 54], "label": "PokeSnax house" }
     ]
   },
   {
@@ -88,33 +38,11 @@
     "map": 37,
     "title": "Back past the change guy to his house",
     "points": [
-      {
-        "at": [
-          38,
-          55
-        ],
-        "label": "PokeSnax house"
-      },
-      {
-        "at": [
-          68,
-          40
-        ],
-        "label": "Guy asking for $50"
-      },
-      {
-        "at": [
-          58,
-          43
-        ],
-        "label": "House behind him"
-      }
+      { "at": [38, 55], "label": "PokeSnax house" },
+      { "at": [68, 40], "label": "Guy asking for $50" },
+      { "at": [58, 43], "label": "House behind him" }
     ],
-    "hide": [
-      30,
-      32,
-      33
-    ]
+    "hide": [30, 32, 33]
   },
   {
     "id": "old-rod-house",
@@ -122,20 +50,8 @@
     "map": 37,
     "title": "Pokemon Center to the Old Rod house",
     "points": [
-      {
-        "at": [
-          35,
-          34
-        ],
-        "label": "Pokemon Center"
-      },
-      {
-        "at": [
-          19,
-          44
-        ],
-        "label": "Old Rod house"
-      }
+      { "at": [35, 34], "label": "Pokemon Center" },
+      { "at": [19, 44], "label": "Old Rod house" }
     ]
   },
   {
@@ -144,27 +60,9 @@
     "map": 37,
     "title": "Old Rod house to the pool building",
     "points": [
-      {
-        "at": [
-          19,
-          45
-        ],
-        "label": "Old Rod house"
-      },
-      {
-        "at": [
-          38,
-          55
-        ],
-        "label": "PokeSnax house"
-      },
-      {
-        "at": [
-          33,
-          50
-        ],
-        "label": "Pool owner's building"
-      }
+      { "at": [19, 45], "label": "Old Rod house" },
+      { "at": [38, 55], "label": "PokeSnax house" },
+      { "at": [33, 50], "label": "Pool owner's building" }
     ]
   },
   {
@@ -173,27 +71,9 @@
     "map": 37,
     "title": "Pool to the Name Rater",
     "points": [
-      {
-        "at": [
-          33,
-          51
-        ],
-        "label": "Pool owner's house"
-      },
-      {
-        "at": [
-          19,
-          45
-        ],
-        "label": "Rod guy's house"
-      },
-      {
-        "at": [
-          20,
-          32
-        ],
-        "label": "Name Rater's house"
-      }
+      { "at": [33, 51], "label": "Pool owner's house" },
+      { "at": [19, 45], "label": "Rod guy's house" },
+      { "at": [20, 32], "label": "Name Rater's house" }
     ]
   },
   {
@@ -202,20 +82,8 @@
     "map": 37,
     "title": "Name Rater to Seacrest's building",
     "points": [
-      {
-        "at": [
-          20,
-          32
-        ],
-        "label": "Name Rater's house"
-      },
-      {
-        "at": [
-          12,
-          15
-        ],
-        "label": "Seacrest's building"
-      }
+      { "at": [20, 32], "label": "Name Rater's house" },
+      { "at": [12, 15], "label": "Seacrest's building" }
     ]
   },
   {
@@ -224,20 +92,8 @@
     "map": 37,
     "title": "To the injured Skitty's house",
     "points": [
-      {
-        "at": [
-          12,
-          16
-        ],
-        "label": "Seacrest's building"
-      },
-      {
-        "at": [
-          33,
-          11
-        ],
-        "label": "Skitty house"
-      }
+      { "at": [12, 16], "label": "Seacrest's building" },
+      { "at": [33, 11], "label": "Skitty house" }
     ]
   },
   {
@@ -246,27 +102,80 @@
     "map": 37,
     "title": "Gift Box trade and Kricketot houses",
     "points": [
-      {
-        "at": [
-          33,
-          12
-        ],
-        "label": "Skitty house"
-      },
-      {
-        "at": [
-          52,
-          11
-        ],
-        "label": "Gift Box owner (Delibird)"
-      },
-      {
-        "at": [
-          68,
-          9
-        ],
-        "label": "Kricketot house"
-      }
+      { "at": [33, 12], "label": "Skitty house" },
+      { "at": [52, 11], "label": "Gift Box owner (Delibird)" },
+      { "at": [68, 9], "label": "Kricketot house" }
+    ]
+  },
+  {
+    "id": "lp-places",
+    "match": "In the Lower Peridot Ward, things have opened up!",
+    "map": 37,
+    "title": "Lower Peridot Ward: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [75, 64], "label": "To Opal Ward (train station side)" },
+      { "at": [68, 40], "label": "Guy asking for $50 (house behind him)" },
+      { "at": [58, 43], "label": "House behind the $50 guy (Minccino/Espurr)" },
+      { "at": [64, 28], "label": "Gym (locked)" },
+      { "at": [35, 33], "label": "Pokemon Center" },
+      { "at": [29, 33], "label": "Quiz house (what type are you)" },
+      { "at": [38, 54], "label": "PokeSnax house (Whismur)" },
+      { "at": [33, 50], "label": "Pool owner's building" },
+      { "at": [19, 44], "label": "Old Rod house" },
+      { "at": [20, 31], "label": "Name Rater's house" },
+      { "at": [12, 15], "label": "Seacrest's building (garden)" }
+    ]
+  },
+  {
+    "id": "alley-entrance",
+    "match": "Back outside, talk to the yellow haired guy for a battle.",
+    "map": 37,
+    "title": "Lower Peridot Alley entrance",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [54, 7], "label": "Lower Peridot Alley (after beating the yellow haired guy)" }
+    ]
+  },
+  {
+    "id": "alley-places",
+    "match": "When you beat him you can access the Lower Peridot Alley.",
+    "map": 52,
+    "title": "Lower Peridot Alley",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [20, 8], "label": "Exit back to Lower Peridot Ward" },
+      { "at": [17, 7], "label": "Gang member at the hideout" },
+      { "at": [8, 6], "label": "Beam (Tynamo in thunderstorms)" },
+      { "at": [7, 6], "label": "Super Potion" }
+    ]
+  },
+  {
+    "id": "under-bridge",
+    "match": "Head outside and go to the right under the bridge.",
+    "map": 40,
+    "title": "Under the Opal Bridge",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [10, 6], "label": "Pansear/Panpour (rainy weather)" },
+      { "at": [11, 11], "label": "Box with Purple Shard (second from right, bottom row)" },
+      { "at": [16, 8], "label": "Exit right to Opal Ward and the Railnet" }
+    ]
+  },
+  {
+    "id": "to-peridot-north",
+    "match": "A rock at the top left contains a hidden *Guard Spec*.",
+    "map": 37,
+    "title": "Back up to Peridot Ward",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [12, 15], "label": "Seacrest's garden building" },
+      { "at": [27, 6], "label": "North exit to Peridot Ward" }
     ]
   }
 ]

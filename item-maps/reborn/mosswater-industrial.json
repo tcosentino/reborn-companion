@@ -1,0 +1,32 @@
+[
+  {
+    "id": "mosswater-data-chip",
+    "match": "On the second floor, Rini will start us off",
+    "map": 71,
+    "title": "Floor 2: Data Chip",
+    "pad": 8,
+    "items": [
+      { "event": 27 }
+    ]
+  },
+  {
+    "id": "mosswater-west-items",
+    "match": "In here is another terminal: 4XXX",
+    "map": 71,
+    "title": "Floor 2 west: Super Potion",
+    "pad": 8,
+    "items": [
+      { "event": 17 }
+    ]
+  },
+  {
+    "id": "mosswater-paralyze-heal",
+    "match": "In here is another terminal: 4XXX",
+    "map": 71,
+    "title": "Floor 2 top: Paralyze Heal",
+    "pad": 8,
+    "items": [
+      { "event": 18 }
+    ]
+  }
+]

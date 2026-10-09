@@ -1,0 +1,52 @@
+[
+  {
+    "id": "pool-sea-incense",
+    "match": "If you win, he'll let you into his pool",
+    "map": 46,
+    "title": "Pool: Sea Incense",
+    "items": [
+      { "event": 2 }
+    ]
+  },
+  {
+    "id": "alley-super-potion",
+    "match": "There is a *Super Potion* here as well as some hidden items:",
+    "map": 52,
+    "title": "Alley: Super Potion",
+    "items": [
+      { "event": 8 }
+    ]
+  },
+  {
+    "id": "under-bridge-purple-shard",
+    "match": "When the weather is rainy, you'll find **Pansear**",
+    "map": 40,
+    "title": "Under the bridge: Purple Shard",
+    "pad": 4,
+    "items": [
+      { "event": 17 },
+      { "event": 18, "label": "Cheri Berry (hidden, not in the guide)" }
+    ]
+  },
+  {
+    "id": "railnet-guard-spec",
+    "match": "A rock at the top left contains a hidden *Guard Spec*.",
+    "map": 41,
+    "title": "Railnet: Guard Spec",
+    "pad": 8,
+    "items": [
+      { "event": 24 },
+      { "event": 25, "label": "Pecha Berry (hidden, not in the guide)" }
+    ]
+  },
+  {
+    "id": "seacrest-grass-gem",
+    "match": "There is a trade for Sunkern we can do later on",
+    "map": 57,
+    "title": "Seacrest's garden: Grass Gem",
+    "pad": 6,
+    "items": [
+      { "event": 186 }
+    ]
+  }
+]

@@ -5,20 +5,8 @@
     "map": 57,
     "title": "Fountain to the Igglybuff lady's house",
     "points": [
-      {
-        "at": [
-          69,
-          23
-        ],
-        "label": "Fountain"
-      },
-      {
-        "at": [
-          64,
-          18
-        ],
-        "label": "Igglybuff lady's house"
-      }
+      { "at": [69, 23], "label": "Fountain" },
+      { "at": [64, 18], "label": "Igglybuff lady's house" }
     ]
   },
   {
@@ -27,20 +15,8 @@
     "map": 57,
     "title": "Up to the thieves' house",
     "points": [
-      {
-        "at": [
-          64,
-          19
-        ],
-        "label": "Igglybuff lady's house"
-      },
-      {
-        "at": [
-          71,
-          10
-        ],
-        "label": "Thieves' house"
-      }
+      { "at": [64, 19], "label": "Igglybuff lady's house" },
+      { "at": [71, 10], "label": "Thieves' house" }
     ]
   },
   {
@@ -49,20 +25,8 @@
     "map": 57,
     "title": "Across the tracks to the tall building",
     "points": [
-      {
-        "at": [
-          71,
-          11
-        ],
-        "label": "Thieves' house"
-      },
-      {
-        "at": [
-          80,
-          41
-        ],
-        "label": "Tall building"
-      }
+      { "at": [71, 11], "label": "Thieves' house" },
+      { "at": [80, 41], "label": "Tall building" }
     ]
   },
   {
@@ -71,20 +35,8 @@
     "map": 57,
     "title": "To the North Peridot Alley",
     "points": [
-      {
-        "at": [
-          80,
-          42
-        ],
-        "label": "Tall building"
-      },
-      {
-        "at": [
-          83,
-          35
-        ],
-        "label": "North Peridot Alley"
-      }
+      { "at": [80, 42], "label": "Tall building" },
+      { "at": [83, 35], "label": "North Peridot Alley" }
     ]
   },
   {
@@ -93,20 +45,8 @@
     "map": 57,
     "title": "Back over the tracks to the Potion",
     "points": [
-      {
-        "at": [
-          83,
-          36
-        ],
-        "label": "North Peridot Alley"
-      },
-      {
-        "at": [
-          68,
-          43
-        ],
-        "label": "Small building (Potion)"
-      }
+      { "at": [83, 36], "label": "North Peridot Alley" },
+      { "at": [68, 43], "label": "Small building (Potion)" }
     ]
   },
   {
@@ -115,27 +55,9 @@
     "map": 57,
     "title": "Clockwise loop: Grubbin/Joltik and Common Candy",
     "points": [
-      {
-        "at": [
-          68,
-          44
-        ],
-        "label": "Small building (Potion)"
-      },
-      {
-        "at": [
-          60,
-          46
-        ],
-        "label": "Grubbin/Joltik building"
-      },
-      {
-        "at": [
-          41,
-          46
-        ],
-        "label": "Common Candy building"
-      }
+      { "at": [68, 44], "label": "Small building (Potion)" },
+      { "at": [60, 46], "label": "Grubbin/Joltik building" },
+      { "at": [41, 46], "label": "Common Candy building" }
     ]
   },
   {
@@ -144,20 +66,8 @@
     "map": 57,
     "title": "Pokemart to the Protein house",
     "points": [
-      {
-        "at": [
-          29,
-          47
-        ],
-        "label": "Pokemart"
-      },
-      {
-        "at": [
-          33,
-          38
-        ],
-        "label": "Protein house"
-      }
+      { "at": [29, 47], "label": "Pokemart" },
+      { "at": [33, 38], "label": "Protein house" }
     ]
   },
   {
@@ -166,27 +76,9 @@
     "map": 57,
     "title": "To the Common Candy guy and Snax shop",
     "points": [
-      {
-        "at": [
-          33,
-          39
-        ],
-        "label": "Protein house"
-      },
-      {
-        "at": [
-          16,
-          30
-        ],
-        "label": "Common Candy guy's building"
-      },
-      {
-        "at": [
-          27,
-          31
-        ],
-        "label": "Snax shop (clear/sunny)"
-      }
+      { "at": [33, 39], "label": "Protein house" },
+      { "at": [16, 30], "label": "Common Candy guy's building" },
+      { "at": [27, 31], "label": "Snax shop (clear/sunny)" }
     ]
   },
   {
@@ -196,29 +88,10 @@
     "title": "Teddiursa spots in Lower Peridot",
     "spots": true,
     "points": [
-      {
-        "at": [
-          23,
-          68
-        ],
-        "n": 1,
-        "label": "Nearby the train station"
-      },
-      {
-        "at": [
-          61,
-          46
-        ],
-        "n": 6,
-        "label": "Near the Gulpin dumpster"
-      }
+      { "at": [23, 68], "n": 1, "label": "Nearby the train station" },
+      { "at": [61, 46], "n": 6, "label": "Near the Gulpin dumpster" }
     ],
-    "hide": [
-      1,
-      30,
-      32,
-      33
-    ]
+    "hide": [1, 30, 32, 33]
   },
   {
     "id": "teddiursa-opal-bridge",
@@ -227,14 +100,7 @@
     "title": "Teddiursa spot under the Opal Bridge",
     "spots": true,
     "points": [
-      {
-        "at": [
-          5,
-          6
-        ],
-        "n": 2,
-        "label": "Under the Opal Bridge, by Pansear"
-      }
+      { "at": [5, 6], "n": 2, "label": "Under the Opal Bridge, by Pansear" }
     ]
   },
   {
@@ -244,38 +110,66 @@
     "title": "Teddiursa spots in Peridot Ward",
     "spots": true,
     "points": [
-      {
-        "at": [
-          60,
-          53
-        ],
-        "n": 3,
-        "label": "Above Mosswater Industrial"
-      },
-      {
-        "at": [
-          35,
-          43
-        ],
-        "n": 4,
-        "label": "Next to the Pokemart"
-      },
-      {
-        "at": [
-          63,
-          28
-        ],
-        "n": 5,
-        "label": "By the Calcium rock near the fountain"
-      },
-      {
-        "at": [
-          67,
-          81
-        ],
-        "n": 7,
-        "label": "Bottom left of Seacrest's garden"
-      }
+      { "at": [60, 53], "n": 3, "label": "Above Mosswater Industrial" },
+      { "at": [35, 43], "n": 4, "label": "Next to the Pokemart" },
+      { "at": [63, 28], "n": 5, "label": "By the Calcium rock near the fountain" },
+      { "at": [67, 81], "n": 7, "label": "Bottom left of Seacrest's garden" }
+    ]
+  },
+  {
+    "id": "peridot-places",
+    "match": "Choosing to save this Oran Berry",
+    "map": 57,
+    "title": "Peridot Ward: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [64, 18], "label": "Igglybuff lady's house" },
+      { "at": [71, 10], "label": "Thieves' house (top left)" },
+      { "at": [80, 41], "label": "Tall building (Meteor Grunts)" },
+      { "at": [83, 35], "label": "North Peridot Alley" },
+      { "at": [68, 43], "label": "Small building (Potion)" },
+      { "at": [60, 46], "label": "Grubbin/Joltik building" },
+      { "at": [41, 46], "label": "Common Candy building" },
+      { "at": [29, 46], "label": "Pokemart" },
+      { "at": [33, 38], "label": "Protein house" },
+      { "at": [16, 30], "label": "Common Candy guy's building" },
+      { "at": [42, 25], "label": "Jasper gate (Genius Wing rock)" },
+      { "at": [61, 61], "label": "Mosswater Industrial (factory)" }
+    ]
+  },
+  {
+    "id": "garden-and-factory",
+    "match": "You have to two choices:",
+    "map": 57,
+    "title": "Seacrest's garden and Mosswater",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [66, 78], "label": "Seacrest's garden entrance" },
+      { "at": [61, 61], "label": "Mosswater Industrial (talk to the character in front)" }
+    ]
+  },
+  {
+    "id": "lower-peridot-gym",
+    "match": "You have to two choices:",
+    "map": 37,
+    "title": "Lower Peridot Gym",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [64, 28], "label": "Lower Peridot Gym (optional detour)" }
+    ]
+  },
+  {
+    "id": "garden-back",
+    "match": "Around this time, your Zigzagoon/Bidoof",
+    "map": 57,
+    "title": "Seacrest's garden",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [66, 78], "label": "Seacrest's garden (Burmy, Sunkern)" }
     ]
   }
 ]

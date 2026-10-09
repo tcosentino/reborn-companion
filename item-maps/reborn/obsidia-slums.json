@@ -1,0 +1,91 @@
+[
+  {
+    "id": "entrance-potion",
+    "match": "Grab a *Potion* (A, below) in the trash can to the left",
+    "map": 85,
+    "title": "Trash can Potion by the entrance",
+    "pad": 6,
+    "items": [
+      { "event": 11 }
+    ]
+  },
+  {
+    "id": "fridge-trashcan",
+    "match": "If you talked to Victoria near the park earlier",
+    "map": 85,
+    "title": "Trashcan by the fridge",
+    "pad": 6,
+    "items": [
+      { "event": 41 }
+    ]
+  },
+  {
+    "id": "carbos-room",
+    "match": "Sneak between the escalators to reach the latter",
+    "map": 96,
+    "title": "Carbos room",
+    "items": [
+      { "event": 5 },
+      { "event": 6, "label": "Calcium (hidden, not in the guide)" }
+    ]
+  },
+  {
+    "id": "slums-3f-items",
+    "match": "Head to the left, then go up the stairs once more.",
+    "map": 92,
+    "title": "Slums 3F items",
+    "items": [
+      { "event": 3 },
+      { "event": 13 }
+    ]
+  },
+  {
+    "id": "friend-ball-gap",
+    "match": "Enter the gap on the left and pick up the *Friend Ball*",
+    "map": 88,
+    "title": "Friend Ball in the gap on the left",
+    "items": [
+      { "event": 52 }
+    ]
+  },
+  {
+    "id": "net-ball-1f",
+    "match": "Talk to the box in front of the elevator to watch it scurry away.",
+    "map": 85,
+    "title": "Net Ball on 1F",
+    "pad": 6,
+    "items": [
+      { "event": 63 }
+    ]
+  },
+  {
+    "id": "tm60-quash-2f",
+    "match": "Talk to the box in front of the elevator to watch it scurry away.",
+    "map": 91,
+    "title": "TM60 Quash on 2F",
+    "pad": 6,
+    "items": [
+      { "event": 18 }
+    ]
+  },
+  {
+    "id": "awakening-box",
+    "match": "Immediately up and to the right, you'll find a box",
+    "map": 85,
+    "title": "Awakening box",
+    "pad": 6,
+    "items": [
+      { "event": 61 }
+    ]
+  },
+  {
+    "id": "jumping-path-rocks",
+    "match": "Immediately up and to the right, you'll find a box",
+    "map": 90,
+    "title": "Jumping path: rocks on the right",
+    "items": [
+      { "event": 3 },
+      { "event": 34 }
+    ]
+  }
+]

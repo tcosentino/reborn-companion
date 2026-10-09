@@ -1,0 +1,29 @@
+[
+  {
+    "id": "gym-floor",
+    "match": "Enter the Neo-Circuit Power-Plant gym when you're ready.",
+    "map": 78,
+    "title": "Neo-Circuit Power-Plant Gym",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [10, 25], "label": "Gym entrance (from Lower Peridot Ward)" },
+      { "at": [8, 21], "label": "Ame (telecom)" },
+      { "at": [3, 10], "label": "Trainer blocking the way" },
+      { "at": [14, 13], "label": "Voltorb (talk to it)" },
+      { "at": [10, 2], "label": "Door up to Julia's room" }
+    ]
+  },
+  {
+    "id": "gym-leader-room",
+    "match": "Study the Electric Terrain Field Notes",
+    "map": 351,
+    "title": "Julia's room",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [12, 10], "label": "Julia (gym leader)" },
+      { "at": [12, 24], "label": "Door back to the gym floor" }
+    ]
+  }
+]

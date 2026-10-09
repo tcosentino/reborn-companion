@@ -1,0 +1,32 @@
+[
+  {
+    "id": "school-protective-pads",
+    "match": "The next room contains *Protective Pads*.",
+    "map": 122,
+    "title": "School 2F: Protective Pads",
+    "pad": 8,
+    "items": [
+      { "event": 15 }
+    ]
+  },
+  {
+    "id": "school-quick-claw",
+    "match": "The third room contains a *Quick Claw*.",
+    "map": 123,
+    "title": "School 2F: Quick Claw",
+    "pad": 6,
+    "items": [
+      { "event": 18 }
+    ]
+  },
+  {
+    "id": "rooftop-tm63",
+    "match": "Back outside, head into the building to the left.",
+    "map": 128,
+    "title": "Rooftop garden: TM63 Embargo",
+    "pad": 8,
+    "items": [
+      { "event": 15 }
+    ]
+  }
+]

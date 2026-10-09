@@ -1,0 +1,11 @@
+[
+  {
+    "id": "left-statue-green-shard",
+    "match": "On the left side of the area, in the left broken statue",
+    "map": 29,
+    "title": "Green Shard in the left statue",
+    "items": [
+      { "event": 64 }
+    ]
+  }
+]

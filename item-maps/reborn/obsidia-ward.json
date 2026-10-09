@@ -1,0 +1,20 @@
+[
+  {
+    "id": "steel-gem-rock",
+    "match": "Eventually, we will be freeing the real daycare couple!",
+    "map": 36,
+    "title": "Hidden Steel Gem by the railnet building",
+    "items": [
+      { "event": 1 }
+    ]
+  },
+  {
+    "id": "railnet-escape-rope",
+    "match": "Klink is pretty good on the Factory Field",
+    "map": 103,
+    "title": "Railnet: leftmost rock",
+    "items": [
+      { "event": 16 }
+    ]
+  }
+]

@@ -1,5 +1,22 @@
 [
   {
+    "id": "opal-places",
+    "match": "To the right is a trainer.",
+    "map": 29,
+    "title": "Opal Ward: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [8, 62], "label": "Train station (from Lower Peridot Ward)" },
+      { "at": [34, 48], "label": "Grand Hall" },
+      { "at": [35, 50], "label": "Trainer with Snubbull/Stufful" },
+      { "at": [26, 49], "label": "Left broken statue (Green Shard)" },
+      { "at": [39, 60], "label": "Foot of Opal Bridge (bridge trainers)" },
+      { "at": [51, 25], "label": "Three bullies (top right)" },
+      { "at": [59, 36], "label": "To Obsidia Ward (via Opal Bridge)" }
+    ]
+  },
+  {
     "id": "bridge-to-bullies",
     "match": "In the top right, you'll find three bullies.",
     "map": 29,
@@ -9,6 +26,17 @@
       { "at": [40, 61], "via": true },
       { "at": [45, 56], "via": true, "direct": true },
       { "at": [51, 25], "label": "Bullies" }
+    ]
+  },
+  {
+    "id": "back-to-station",
+    "match": "That's it for Opal Ward for now",
+    "map": 29,
+    "title": "Back to the train station",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [8, 62], "label": "Train station (to Lower Peridot Ward)" }
     ]
   }
 ]

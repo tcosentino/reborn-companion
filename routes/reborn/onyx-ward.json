@@ -12,5 +12,190 @@
       { "at": [11, 8], "label": "Talk to the wall-staring guy from the right" },
       { "at": [8, 7], "label": "Door that opens" }
     ]
+  },
+  {
+    "id": "onyx-places",
+    "match": "Head up into Onyx Ward from the northeastern corner of Obsidia.",
+    "map": 115,
+    "title": "Onyx Ward: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [47, 41], "label": "Stairs from Obsidia Ward" },
+      { "at": [16, 38], "label": "Move Relearner house (locked for now)" },
+      { "at": [30, 35], "label": "Apartment (egg girl, rooftop garden)" },
+      { "at": [41, 38], "label": "Onyx Arcade" },
+      { "at": [20, 14], "label": "Trainers' School, top left entrance (locked)" },
+      { "at": [45, 14], "label": "Trainers' School, top right entrance" }
+    ]
+  },
+  {
+    "id": "school-1f-telluric",
+    "match": "Enter the door above and to the right and talk to the girl",
+    "map": 120,
+    "title": "School 1F: Telluric Seed girl and the gate",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [3, 4], "label": "Girl (Telluric Seed)" },
+      { "at": [5, 3], "label": "Gate to unlock (shortcut)" },
+      { "at": [39, 6], "label": "Stairs up to 2F" }
+    ]
+  },
+  {
+    "id": "school-fern-room",
+    "match": "Proceed to the left a few rooms for another rival battle.",
+    "map": 125,
+    "title": "Fern's room",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [5, 9], "label": "Fern (rival battle)" },
+      { "at": [16, 11], "label": "Door back toward the main hall" }
+    ]
+  },
+  {
+    "id": "school-tutors",
+    "match": "In this door, go to the left.",
+    "map": 123,
+    "title": "School 2F: tutor wing",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [10, 14], "label": "Door in from the third room" },
+      { "at": [11, 7], "label": "Quick Claw" },
+      { "at": [6, 28], "label": "Tutor (first tutors)" },
+      { "at": [33, 30], "label": "Tutor" },
+      { "at": [29, 4], "label": "Stairs up to 3F (Desert Field Readout)" }
+    ]
+  },
+  {
+    "id": "school-3f",
+    "match": "Head upstairs to grab the *Desert Field Readout*!",
+    "map": 516,
+    "title": "School 3F",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [4, 8], "label": "Desert Field Readout" },
+      { "at": [12, 7], "label": "Stairs down to 2F" }
+    ]
+  },
+  {
+    "id": "arcade-inside",
+    "match": "First, head on over to the Arcade.",
+    "map": 117,
+    "title": "Onyx Arcade",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [36, 8], "label": "Entrance" },
+      { "at": [13, 2], "label": "Coin seller" },
+      { "at": [12, 2], "label": "Lotto attendant (once a day)" },
+      { "at": [16, 2], "label": "Prize exchange" },
+      { "at": [18, 4], "label": "Guy giving free coins" }
+    ]
+  },
+  {
+    "id": "lillipup-coral",
+    "match": "After talking to it in the apartment in South Obsidia Ward",
+    "map": 97,
+    "title": "Lillipup spot: Coral Ward",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [19, 16], "label": "Second pier from the top" }
+    ]
+  },
+  {
+    "id": "lillipup-obsidia",
+    "match": "After talking to it in the apartment in South Obsidia Ward",
+    "map": 36,
+    "title": "Lillipup spot: Obsidia Ward",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [13, 18], "label": "Left and up from the Central Salon" },
+      { "at": [20, 36], "label": "Central Salon" }
+    ]
+  },
+  {
+    "id": "lillipup-opal",
+    "match": "After talking to it in the apartment in South Obsidia Ward",
+    "map": 29,
+    "title": "Lillipup spot: Opal Ward",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [52, 11], "label": "Between the Panpour/Pansear area and the Railnet" }
+    ]
+  },
+  {
+    "id": "lillipup-peridot",
+    "match": "After talking to it in the apartment in South Obsidia Ward",
+    "map": 57,
+    "title": "Lillipup spots: Peridot Ward",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [77, 10], "label": "Very north point (by the closed gate)" },
+      { "at": [18, 33], "label": "Northwest corner (apartment with Snubbull/Stufful)" }
+    ]
+  },
+  {
+    "id": "lillipup-apartment",
+    "match": "After talking to it in the apartment in South Obsidia Ward",
+    "map": 81,
+    "title": "The Lillipup owner's apartment",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [46, 11], "label": "Apartment in South Obsidia Ward (Lillipup owner)" }
+    ]
+  },
+  {
+    "id": "lillipup-return",
+    "match": "Once you find it, head back to the Onyx Ward.",
+    "map": 115,
+    "title": "Move Relearner house",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [16, 38], "label": "Move Relearner house" },
+      { "at": [13, 37], "label": "Owner with Lillipup (to the left of the house)" }
+    ]
+  },
+  {
+    "id": "zangoose-obsidia",
+    "match": "Whichever you go to at the right time, you'll find a **Zangoose**",
+    "map": 105,
+    "title": "Zangoose: Obsidia Alleyway",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [22, 14], "label": "Zangoose (Monday night)" }
+    ]
+  },
+  {
+    "id": "zangoose-north-peridot",
+    "match": "Whichever you go to at the right time, you'll find a **Zangoose**",
+    "map": 58,
+    "title": "Zangoose: North Peridot Alley",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [6, 10], "label": "Zangoose (Thursday night)" }
+    ]
+  },
+  {
+    "id": "zangoose-lower-peridot",
+    "match": "Whichever you go to at the right time, you'll find a **Zangoose**",
+    "map": 52,
+    "title": "Zangoose: Lower Peridot Alley",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [14, 7], "label": "Zangoose (Friday night)" }
+    ]
   }
 ]
