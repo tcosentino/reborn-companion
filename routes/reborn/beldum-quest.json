@@ -1,0 +1,73 @@
+[
+  {
+    "id": "wasteland-hideout-door",
+    "match": "Fly over to the Byxbysion Wasteland. Inside the hideout",
+    "map": 209,
+    "title": "Byxbysion Wasteland: the hideout",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [100, 23], "label": "Wasteland Hideout door" }
+    ]
+  },
+  {
+    "id": "wasteland-hideout",
+    "match": "Fly over to the Byxbysion Wasteland. Inside the hideout",
+    "map": 223,
+    "title": "Wasteland Hideout: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [11, 17], "label": "Lana (whiteout respawn)" },
+      { "at": [5, 15], "label": "Malfunctioning healing machine (Data Chip)" },
+      { "at": [12, 20], "label": "Exit to the Wasteland" }
+    ]
+  },
+  {
+    "id": "route-1-nature-center",
+    "match": "Fly over to Route 1 Nature Center and defeat a Bouffalant",
+    "map": 290,
+    "title": "Route 1: the Nature Center",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [20, 18], "label": "Nature Center" }
+    ]
+  },
+  {
+    "id": "lanas-house-again",
+    "match": "Once you reappear in Lana's house...",
+    "map": 223,
+    "title": "Lana's house: the way out",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [11, 17], "label": "Lana (you reappear here)" },
+      { "at": [12, 20], "label": "Exit (head out and go down)" }
+    ]
+  },
+  {
+    "id": "squirtle-spot",
+    "match": "Exit the building and go down.",
+    "map": 209,
+    "title": "The area where we found Squirtle",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [8, 55], "label": "Where Squirtle was (push the boulder to get here)" }
+    ]
+  },
+  {
+    "id": "beldum-canister",
+    "match": "From here, climb the ledges up and to the right",
+    "map": 218,
+    "title": "Big Nugget and the broken canister",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [44, 8], "label": "Ladder up" },
+      { "at": [72, 12], "label": "Big Nugget" },
+      { "at": [74, 9], "label": "Broken canister (Beldum)" }
+    ]
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "coral-gym-door",
+    "match": "That's it for the side content, so head down to the Coral Ward",
+    "map": 526,
+    "title": "Coral Ward: Adrienn's gym",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [52, 19], "label": "Coral Gym (Adrienn)" }
+    ]
+  },
+  {
+    "id": "coral-gym-inside",
+    "match": "That's it for the side content, so head down to the Coral Ward",
+    "map": 613,
+    "title": "Coral Gym: talk to Adrienn",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [9, 32], "label": "Gym entrance" },
+      { "at": [14, 27], "label": "Adrienn (the cleanup quest)" }
+    ]
+  },
+  {
+    "id": "volunteer-01-coral-tunnel",
+    "match": "1. Coral Ward tunnel, brown-haired girl",
+    "map": 559,
+    "title": "1. Coral Ward tunnel",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [12, 9], "n": 1, "label": "Brown-haired girl" }
+    ]
+  },
+  {
+    "id": "volunteer-02-obsidia-park",
+    "match": "1. Coral Ward tunnel, brown-haired girl",
+    "map": 520,
+    "title": "2. Obsidia Ward Park",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [73, 32], "n": 2, "label": "Blue-haired girl against the right wall" }
+    ]
+  },
+  {
+    "id": "volunteer-03-onyx-arcade",
+    "match": "1. Coral Ward tunnel, brown-haired girl",
+    "map": 117,
+    "title": "3. Onyx Arcade",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [33, 5], "n": 3, "label": "Yellow-haired guy, right side" }
+    ]
+  },
+  {
+    "id": "volunteer-04-south-obsidia",
+    "match": "1. Coral Ward tunnel, brown-haired girl",
+    "map": 528,
+    "title": "4. South Obsidia Ward",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [48, 43], "n": 4, "label": "Yellow-haired guy, bottom left" }
+    ]
+  },
+  {
+    "id": "volunteer-05-obsidia-alley",
+    "match": "1. Coral Ward tunnel, brown-haired girl",
+    "map": 570,
+    "title": "5. Obsidia Alleyway",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [24, 12], "n": 5, "label": "Yellow-haired girl (wanders)" }
+    ]
+  },
+  {
+    "id": "volunteer-06-north-obsidia",
+    "match": "1. Coral Ward tunnel, brown-haired girl",
+    "map": 527,
+    "title": "6. North Obsidia Ward",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [28, 26], "n": 6, "label": "Blue-haired glasses guy near the stairway" }
+    ]
+  },
+  {
+    "id": "volunteer-07-lapis",
+    "match": "1. Coral Ward tunnel, brown-haired girl",
+    "map": 524,
+    "title": "7. Lapis Ward park",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [29, 38], "n": 7, "label": "Silver-haired woman, park south of the PokeMart" }
+    ]
+  },
+  {
+    "id": "volunteer-08-lower-peridot-east",
+    "match": "1. Coral Ward tunnel, brown-haired girl",
+    "map": 530,
+    "title": "8. Lower Peridot Ward: east of the station",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [74, 64], "n": 8, "label": "Brown-haired guy (wanders east of the station)" }
+    ]
+  },
+  {
+    "id": "volunteer-09-lower-peridot-building",
+    "match": "1. Coral Ward tunnel, brown-haired girl",
+    "map": 530,
+    "title": "9. Lower Peridot Ward: last building",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [72, 11], "n": 9, "label": "Last building before the railnet (blue-hatted guy inside)" }
+    ]
+  },
+  {
+    "id": "volunteer-10-lower-peridot-alley",
+    "match": "1. Coral Ward tunnel, brown-haired girl",
+    "map": 531,
+    "title": "10. Lower Peridot Alleyway",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [7, 6], "n": 10, "label": "Black-haired girl" }
+    ]
+  },
+  {
+    "id": "volunteer-11-blacksteam",
+    "match": "1. Coral Ward tunnel, brown-haired girl",
+    "map": 594,
+    "title": "11. Blacksteam Shelter 1F",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [2, 26], "n": 11, "label": "Black-haired guy on the couch, bottom left" }
+    ]
+  },
+  {
+    "id": "volunteer-12-jasper",
+    "match": "1. Coral Ward tunnel, brown-haired girl",
+    "map": 523,
+    "title": "12. Jasper Ward",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [32, 31], "n": 12, "label": "Building left of the police station (light brown-haired girl inside)" },
+      { "at": [49, 31], "label": "Police station" }
+    ]
+  },
+  {
+    "id": "volunteer-13-beryl-bridge",
+    "match": "1. Coral Ward tunnel, brown-haired girl",
+    "map": 543,
+    "title": "13. Beryl Bridge",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [30, 11], "n": 13, "label": "Girl with blue ribbons, left side of the bridge" }
+    ]
+  },
+  {
+    "id": "volunteer-14-beryl-ward",
+    "match": "1. Coral Ward tunnel, brown-haired girl",
+    "map": 544,
+    "title": "14. Beryl Ward",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [33, 9], "n": 14, "label": "Tan-hatted guy, left of the gym" }
+    ]
+  },
+  {
+    "id": "volunteer-15-beryl-library",
+    "match": "1. Coral Ward tunnel, brown-haired girl",
+    "map": 548,
+    "title": "15. Beryl Library",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [9, 17], "n": 15, "label": "Pink-haired child above the entrance" }
+    ]
+  },
+  {
+    "id": "coral-gym-return",
+    "match": "Return to Adrienn after finding as many volunteers as you like.",
+    "map": 613,
+    "title": "Coral Gym: back to Adrienn",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [14, 27], "label": "Adrienn (turn in the volunteers)" }
+    ]
+  }
+]

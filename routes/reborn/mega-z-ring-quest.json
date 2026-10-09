@@ -8,5 +8,188 @@
       { "at": [33, 15], "label": "Pokemon Center" },
       { "at": [19, 31], "label": "Bottom left building (Lillin)" }
     ]
+  },
+  {
+    "id": "nightclub-entrance",
+    "match": "Head over to the Nightclub in North Obsidia.",
+    "map": 527,
+    "title": "North Obsidia Ward: the Nightclub",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [36, 22], "label": "Nightclub entrance (DJ Arclight inside)" }
+    ]
+  },
+  {
+    "id": "alley-jigglypuff",
+    "match": "Next, take Jigglypuff out of the PC and head over to the North Peridot Alley.",
+    "map": 532,
+    "title": "North Peridot Alley: the bottom guy",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [9, 19], "label": "Alley entrance (from Peridot Ward)" },
+      { "at": [8, 9], "label": "Bottom guy (Santiago, Jigglypuff)" }
+    ]
+  },
+  {
+    "id": "loudred-girl-return",
+    "match": "After defeating him, return to the Jasper Ward and give the Jigglypuff",
+    "map": 523,
+    "title": "Jasper Ward: back to the Loudred girl",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [19, 31], "label": "Bottom left building (Lillin, Loudred girl)" }
+    ]
+  },
+  {
+    "id": "apophyll-felicia",
+    "match": "Fly over to the Apophyll Academy and get Makuhita",
+    "map": 564,
+    "title": "Apophyll Academy: the Makuhita girl",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [5, 19], "label": "Middle room, left side (door)" },
+      { "at": [6, 19], "label": "Felicia (Makuhita girl)" }
+    ]
+  },
+  {
+    "id": "nightclub-arc-autograph",
+    "match": "Fly over to Spinel Town next and grab Roggenrola",
+    "map": 527,
+    "title": "North Obsidia Ward: Arc at the Nightclub",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [36, 22], "label": "Nightclub entrance (talk to Arc inside)" }
+    ]
+  },
+  {
+    "id": "spinel-town",
+    "match": "Fly over to Spinel Town next and grab Roggenrola",
+    "map": 271,
+    "title": "Spinel Town: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [45, 14], "label": "Pokemon Center (PC)" },
+      { "at": [39, 19], "label": "Spinel Museum" },
+      { "at": [31, 23], "label": "McKrezzy's building (left of the museum)" }
+    ]
+  },
+  {
+    "id": "apophyll-felicia-return",
+    "match": "Fly back to Apophyll and give Makuhita girl the autograph",
+    "map": 564,
+    "title": "Apophyll Academy: back to Felicia",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [6, 19], "label": "Felicia (Makuhita girl)" }
+    ]
+  },
+  {
+    "id": "loudred-girl-headphones",
+    "match": "Fly back to Apophyll and give Makuhita girl the autograph",
+    "map": 523,
+    "title": "Jasper Ward: Loudred girl again",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [19, 31], "label": "Bottom left building (Lillin, Loudred girl)" }
+    ]
+  },
+  {
+    "id": "lapis-house",
+    "match": "Fly to Lapis Ward and enter the house to the left of the Pokemart.",
+    "map": 524,
+    "title": "Lapis Ward: the house left of the Pokemart",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [31, 28], "label": "Pokemart" },
+      { "at": [26, 29], "label": "House left of the Pokemart (kidnapped son)" }
+    ]
+  },
+  {
+    "id": "lapis-house-inside",
+    "match": "Fly to Lapis Ward and enter the house to the left of the Pokemart.",
+    "map": 612,
+    "title": "The house: the lady and Eustace's room",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [3, 6], "label": "Lady (her son was kidnapped)" },
+      { "at": [22, 8], "label": "Eustace (room to the right, later)" }
+    ]
+  },
+  {
+    "id": "alley-jigglypuff-again",
+    "match": "Fly to Lapis Ward and enter the house to the left of the Pokemart.",
+    "map": 532,
+    "title": "North Peridot Alley: the Jigglypuff guy again",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [8, 9], "label": "Jigglypuff guy (Santiago)" }
+    ]
+  },
+  {
+    "id": "onyx-rooftop-building",
+    "match": "Fly over to Onyx Ward, prepare your team and save",
+    "map": 521,
+    "title": "Onyx Ward: the building with the rooftop",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [30, 35], "label": "Building with the rooftop garden (stairs up)" }
+    ]
+  },
+  {
+    "id": "onyx-rooftop",
+    "match": "Fly over to Onyx Ward, prepare your team and save",
+    "map": 573,
+    "title": "Onyx rooftop: the kidnappers",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [17, 13], "label": "Stairs down" },
+      { "at": [17, 10], "label": "Cueball and Roughneck (first fight)" }
+    ]
+  },
+  {
+    "id": "lapis-eustace",
+    "match": "Once you win this gauntlet, fly back to Lapis Ward",
+    "map": 524,
+    "title": "Lapis Ward: back to Eustace's house",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [26, 29], "label": "House left of the Pokemart" }
+    ]
+  },
+  {
+    "id": "lapis-eustace-inside",
+    "match": "Once you win this gauntlet, fly back to Lapis Ward",
+    "map": 612,
+    "title": "Eustace upstairs",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [22, 8], "label": "Eustace (upstairs, right room)" }
+    ]
+  },
+  {
+    "id": "nightclub-return",
+    "match": "With all five Pokemon returned, return to DJ Arclight.",
+    "map": 527,
+    "title": "North Obsidia Ward: back to DJ Arclight",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [36, 22], "label": "Nightclub entrance (DJ Arclight)" }
+    ]
   }
 ]

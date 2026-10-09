@@ -1,0 +1,155 @@
+[
+  {
+    "id": "grand-hall-desk",
+    "match": "Head over to the Grand Hall. One of the guys behind the desk",
+    "map": 38,
+    "title": "Grand Hall: the donation desk",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [13, 7], "label": "Donation desk (restoration projects)" },
+      { "at": [19, 4], "label": "Stairs down to the basement (after funding)" }
+    ]
+  },
+  {
+    "id": "basement-hub",
+    "match": "As soon as you fully fund a project, you will be able to access the Grand Hall basement",
+    "map": 764,
+    "title": "Grand Hall basement: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [20, 3], "label": "Stairs from the Grand Hall" },
+      { "at": [18, 28], "label": "Bottom room on the right: mints and Exp. Candy XL" },
+      { "at": [10, 28], "label": "Next door: EV Boosters" },
+      { "at": [21, 18], "label": "Victoria" },
+      { "at": [14, 2], "label": "Room at the very top (computer: Lopunnite, Vulpix)" }
+    ]
+  },
+  {
+    "id": "south-obsidia-places",
+    "match": "Donate the $60000 to fund this project.",
+    "map": 585,
+    "title": "South Obsidia Ward: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [59, 36], "label": "Berry trees (at the bottom)" },
+      { "at": [58, 26], "label": "SOLICE building (GUM Key, SOLICE Application)" },
+      { "at": [66, 20], "label": "Girl up and to the right of the SOLICE office (quest)" }
+    ]
+  },
+  {
+    "id": "malchous-sandy",
+    "match": "Fly over to Jasper and enter the Malchous Forest Park.",
+    "map": 533,
+    "title": "Malchous Forest Park: Sandy",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [84, 39], "label": "Sandy" }
+    ]
+  },
+  {
+    "id": "water-grid-locked-door",
+    "match": "While we're down here, we can use the GUM Key that we got earlier.",
+    "map": 469,
+    "title": "Central Obsidia Water Grid: the locked door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [38, 3], "label": "Locked door, upper right (GUM Key)" }
+    ]
+  },
+  {
+    "id": "basement-sandy",
+    "match": "With that out of the way, return to the Grand Hall basement.",
+    "map": 764,
+    "title": "Grand Hall basement: Sandy in the bottom right room",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [28, 22], "label": "Bottom right room (Sandy)" }
+    ]
+  },
+  {
+    "id": "railnet-entrance",
+    "match": "Essentially, this project funds a revamp of the Underground Railnet",
+    "map": 519,
+    "title": "Opal Ward: the Railnet entrance",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [59, 12], "label": "Underground Railnet entrance (Lost and Found)" }
+    ]
+  },
+  {
+    "id": "devon-railnet-stairs",
+    "match": "Next, enter the Devon Co. building and head down the stairs.",
+    "map": 520,
+    "title": "Obsidia Ward: the Devon Co. building",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [35, 36], "label": "Devon Co. building" }
+    ]
+  },
+  {
+    "id": "devon-railnet-basement",
+    "match": "Next, enter the Devon Co. building and head down the stairs.",
+    "map": 84,
+    "title": "Devon Co.: the basement stairs",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [9, 10], "label": "Entrance" },
+      { "at": [26, 5], "label": "Stairs down to the basement" }
+    ]
+  },
+  {
+    "id": "goldenrod-station",
+    "match": "Enter the railnet building to the left of the Pokemon Center in Obsidia.",
+    "map": 520,
+    "title": "Obsidia Ward: Goldenrod Station",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [21, 18], "label": "Railnet building (Goldenrod Station)" },
+      { "at": [36, 24], "label": "Pokemon Center" }
+    ]
+  },
+  {
+    "id": "kingsbury-station",
+    "match": "The Kingsbury Station though?",
+    "map": 544,
+    "title": "Beryl Ward: Kingsbury Station",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [25, 5], "label": "Kingsbury Station building (NPC inside gives the Weakness Policy)" }
+    ]
+  },
+  {
+    "id": "shantyport-station",
+    "match": "The Kingsbury Station though?",
+    "map": 526,
+    "title": "Coral Ward: Shantyport Station",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [43, 8], "label": "Shantyport Station (Probopass trade inside)" }
+    ]
+  },
+  {
+    "id": "nature-center-outside",
+    "match": "Surf on down to the Azurine Island once more from Coral Ward",
+    "map": 586,
+    "title": "Azurine Island: the Nature Center",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [49, 74], "label": "Nature Center (building at the bottom)" },
+      { "at": [52, 75], "label": "Trade guy in front (Carnivine for Chimchar egg)" }
+    ]
+  }
+]

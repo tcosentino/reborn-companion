@@ -1,0 +1,14 @@
+[
+  {
+    "id": "grand-hall-trainers",
+    "match": "Now that we are back in Reborn City, trainers in the Grand Hall have gotten stronger once more.",
+    "map": 38,
+    "title": "Grand Hall: the battle trainers",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [15, 29], "label": "Grand Hall entrance (from Opal Ward)" },
+      { "at": [22, 9], "label": "Battle trainers (talk to the one for today)" }
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "grand-hall-basement-hall",
+    "match": "Head into the Grand Hall basement and enter the middle room on the left side.",
+    "map": 764,
+    "title": "Grand Hall basement: the middle room on the left",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [20, 3], "label": "Stairs from the Grand Hall" },
+      { "at": [0, 15], "label": "Middle room on the left (Starter Pokemon Storage)" }
+    ]
+  },
+  {
+    "id": "kanaya-room",
+    "match": "Head into the Grand Hall basement and enter the middle room on the left side.",
+    "map": 764,
+    "title": "Kanaya's desk",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [26, 124], "label": "Kanaya (starter egg quest)" }
+    ]
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "devon-6f-items",
+    "match": "You can pick up a *Devon Scope Model*",
+    "map": 627,
+    "title": "Devon 6F",
+    "items": [
+      { "event": 5 },
+      { "event": 8 },
+      { "event": 6 }
+    ]
+  },
+  {
+    "id": "jungle-dread-plate",
+    "match": "Fly on over to the Beryl Ward. We can finally expose Kecleon",
+    "map": 150,
+    "title": "The Jungle cage in the far west",
+    "pad": 6,
+    "items": [
+      { "event": 241 }
+    ]
+  },
+  {
+    "id": "underroot-reflect",
+    "match": "Next, make your way down to the Underroot.",
+    "map": 153,
+    "title": "Underroot: left under the waterfall",
+    "pad": 6,
+    "items": [
+      { "event": 34 }
+    ]
+  },
+  {
+    "id": "underroot-blastoisinite",
+    "match": "Via following the path on the right side down",
+    "map": 153,
+    "title": "Underroot: across the large pool",
+    "pad": 6,
+    "items": [
+      { "event": 130 }
+    ]
+  },
+  {
+    "id": "underroot-rock-gem",
+    "match": "Climb the waterfall and grab the hidden *Rock Gem*.",
+    "map": 153,
+    "title": "Underroot: above the waterfall",
+    "pad": 6,
+    "items": [
+      { "event": 103 }
+    ]
+  },
+  {
+    "id": "underroot-repel",
+    "match": "Past here you can get a hidden *Repel* as well as **Treecko**!",
+    "map": 153,
+    "title": "Underroot: after the Kecleon gauntlet",
+    "pad": 6,
+    "items": [
+      { "event": 5 }
+    ]
+  },
+  {
+    "id": "library-secret-room",
+    "match": "Enter the secret door here to get *TM30 Shadow Ball*",
+    "map": 549,
+    "title": "Library secret room",
+    "pad": 4,
+    "items": [
+      { "event": 30 },
+      { "event": 24 }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "circus-application",
+    "match": "With the Super Rod in our bag, there are some new Pokemon",
+    "map": 355,
+    "title": "Agate Circus: the Circus Application",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [37, 15], "label": "Circus Application (stack at the top of the area)" }
+    ]
+  }
+]

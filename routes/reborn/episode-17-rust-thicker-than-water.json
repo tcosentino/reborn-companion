@@ -8,5 +8,51 @@
       { "at": [45, 8], "label": "From Peridot Ward" },
       { "at": [74, 48], "label": "Hiker (clear days)" }
     ]
+  },
+  {
+    "id": "coral-gym-top",
+    "match": "Before we leave the gym, head to the top of the room.",
+    "map": 613,
+    "title": "Coral Gym: the top of the room",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [9, 4], "label": "Hidden Heart Scale" },
+      { "at": [8, 4], "label": "Corin Rouge (left side of the flowery X)" }
+    ]
+  },
+  {
+    "id": "corin-lookalike",
+    "match": "Return to the north side of Peridot Ward",
+    "map": 522,
+    "title": "Peridot Ward: the Corin Rouge lookalike",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [93, 19], "label": "Corin Rouge lookalike (north side)" }
+    ]
+  },
+  {
+    "id": "police-chief",
+    "match": "Head into Jasper Ward now to talk to the Police Chief",
+    "map": 523,
+    "title": "Jasper Ward: the Police Station",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [49, 31], "label": "Police Station (Police Chief)" }
+    ]
+  },
+  {
+    "id": "mosswater-tutors",
+    "match": "Now that we've defeated Adrienn there is one more move tutor",
+    "map": 522,
+    "title": "Peridot Ward: Mosswater Market",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [88, 64], "label": "Mosswater Market (sign)" },
+      { "at": [83, 55], "label": "Mosswater Move Tutors (Max and Myles)" }
+    ]
   }
 ]

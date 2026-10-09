@@ -1,0 +1,164 @@
+[
+  {
+    "id": "grand-hall-ame",
+    "match": "With all of that content out of the way, we can finally proceed with the story!",
+    "map": 38,
+    "title": "Grand Hall: Ame",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [15, 29], "label": "Grand Hall entrance (from Opal Ward)" },
+      { "at": [15, 9], "label": "Ame" }
+    ]
+  },
+  {
+    "id": "arc-nightclub",
+    "match": "Arc can be found outside his nightclub, Victoria in the Beryl Cemetery",
+    "map": 527,
+    "title": "North Obsidia Ward: Arc outside the nightclub",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [35, 23], "label": "Arc (outside his nightclub)" },
+      { "at": [36, 22], "label": "Nightclub entrance" }
+    ]
+  },
+  {
+    "id": "victoria-cemetery",
+    "match": "Arc can be found outside his nightclub, Victoria in the Beryl Cemetery",
+    "map": 552,
+    "title": "Beryl Cemetery: Victoria",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [10, 23], "label": "Victoria" }
+    ]
+  },
+  {
+    "id": "adrienn-coral-gym",
+    "match": "Arc can be found outside his nightclub, Victoria in the Beryl Cemetery",
+    "map": 526,
+    "title": "Coral Ward: Adrienn outside the gym",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [52, 19], "label": "Coral Gym door" },
+      { "at": [52, 20], "label": "Adrienn (outside the gym)" }
+    ]
+  },
+  {
+    "id": "railnet-tracks-path",
+    "match": "Enter the Underground Railnet and make your way to the room with the tracks",
+    "map": 228,
+    "title": "Tracks room: the second path from the top",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [0, 3], "label": "Top path (not this one)" },
+      { "at": [0, 16], "label": "Second path from the top: to the Aron and Absol room" }
+    ]
+  },
+  {
+    "id": "railnet-aron-room",
+    "match": "Enter the Underground Railnet and make your way to the room with the tracks",
+    "map": 229,
+    "title": "Aron room: Arc, Victoria and the Devon stairs",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [28, 14], "label": "Entrance (from the tracks room)" },
+      { "at": [14, 13], "label": "Absol (you are on the right track)" },
+      { "at": [6, 9], "label": "Arc (talk to him when ready)" },
+      { "at": [6, 11], "label": "Victoria" },
+      { "at": [1, 7], "label": "Stairs up to the Devon basement" }
+    ]
+  },
+  {
+    "id": "devon-basement",
+    "match": "Talk to Arc and Victoria when you're ready, then go up the stairs",
+    "map": 622,
+    "title": "Devon basement: the grunts",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [10, 6], "label": "Stairs down to the Railnet" },
+      { "at": [11, 4], "label": "Mega Stone (Steelixite) in the corner, not yet" },
+      { "at": [24, 10], "label": "Stairs up to the main floor" }
+    ]
+  },
+  {
+    "id": "devon-main-floor",
+    "match": "We can't get the Mega Stone in the corner quite yet.",
+    "map": 84,
+    "title": "Devon main floor: the shining spot",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [26, 5], "label": "Stairs down to the basement" },
+      { "at": [11, 8], "label": "Shining spot (Radio Transceiver)" },
+      { "at": [35, 5], "label": "Stairs up to the electric floor mats" }
+    ]
+  },
+  {
+    "id": "devon-2f",
+    "match": "Up the stairs, you'll see an electric floor mat.",
+    "map": 623,
+    "title": "Devon 2F: electric floor mats",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [12, 9], "label": "Stairs down" },
+      { "at": [6, 3], "label": "Stairs up to 3F" }
+    ]
+  },
+  {
+    "id": "devon-6f",
+    "match": "Scale the building until you find yourself in a strange new place.",
+    "map": 627,
+    "title": "Devon 6F: the way to the strange place",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [2, 3], "label": "Stairs up from 5F" },
+      { "at": [6, 8], "label": "Door to the strange place" }
+    ]
+  },
+  {
+    "id": "strange-place-arrival",
+    "match": "Heal and prepare your team as necessary, then proceed to the right.",
+    "map": 628,
+    "title": "The strange place: proceed to the right",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [30, 8], "label": "Where you arrive" },
+      { "at": [32, 7], "label": "Door to the right" }
+    ]
+  },
+  {
+    "id": "pulse-readout-room",
+    "match": "Start by taking the right path up to monitor #1 (path A).",
+    "map": 629,
+    "title": "The spinner room: PULSE Readout 1",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [5, 28], "label": "Entrance" },
+      { "at": [10, 5], "label": "Power controls (monitor)" },
+      { "at": [18, 14], "label": "PULSE Readout 1 (path C)" },
+      { "at": [12, 2], "label": "Exit toward the next room" }
+    ]
+  },
+  {
+    "id": "zel-room",
+    "match": "Talk to ZEL in the bottom left corner",
+    "map": 632,
+    "title": "ZEL's room",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [4, 26], "label": "ZEL (bottom left corner)" },
+      { "at": [4, 27], "label": "Exit after releasing your allies" }
+    ]
+  }
+]

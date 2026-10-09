@@ -88,5 +88,48 @@
       { "event": 71 },
       { "event": 68 }
     ]
+  },
+  {
+    "id": "basement-mint-room",
+    "match": "As soon as you fully fund a project, you will be able to access the Grand Hall basement",
+    "map": 764,
+    "title": "Basement room on the right: mints and candies",
+    "pad": 3,
+    "items": [
+      { "event": 152 },
+      { "event": 153 },
+      { "event": 151 }
+    ]
+  },
+  {
+    "id": "lopunnite-room",
+    "match": "If you enter the room at the very top and talk to the computer",
+    "map": 764,
+    "title": "The room at the very top",
+    "pad": 4,
+    "items": [
+      { "event": 97 }
+    ]
+  },
+  {
+    "id": "lost-and-found",
+    "match": "This area is the \"Lost and Found\".",
+    "map": 602,
+    "title": "Lost and Found",
+    "pad": 4,
+    "items": [
+      { "event": 17 },
+      { "event": 16 }
+    ]
+  },
+  {
+    "id": "devon-steelixite",
+    "match": "Next, enter the Devon Co. building and head down the stairs.",
+    "map": 622,
+    "title": "Devon basement: Steelixite",
+    "pad": 4,
+    "items": [
+      { "event": 4 }
+    ]
   }
 ]

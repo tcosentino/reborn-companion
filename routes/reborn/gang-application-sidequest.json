@@ -1,0 +1,77 @@
+[
+  {
+    "id": "grandview-station",
+    "match": "The train station in Lower Peridot where we started our journey",
+    "map": 530,
+    "title": "Lower Peridot Ward: the train station",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [45, 66], "label": "Train station (Construction Application)" }
+    ]
+  },
+  {
+    "id": "seventh-street-leaders",
+    "match": "Make your way down to Seventh Street and find your corresponding gang leader.",
+    "map": 324,
+    "title": "7th Street: gang leaders",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [6, 8], "label": "Entrance from Lapis Ward (top)" },
+      { "at": [5, 30], "label": "Entrance from Lapis Ward (bottom)" },
+      { "at": [29, 12], "label": "Archer (Aqua Gang leader)" },
+      { "at": [15, 38], "label": "Maxwell (Magma Gang leader)" }
+    ]
+  },
+  {
+    "id": "magma-members",
+    "match": "|Magma Gang Member |Application",
+    "map": 324,
+    "title": "7th Street: Magma Gang members",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [16, 22], "label": "Darm (Circus)" },
+      { "at": [21, 25], "label": "Nihil (Nightclub)" },
+      { "at": [18, 40], "label": "Break (Medicine)" },
+      { "at": [15, 38], "label": "Maxwell (SOLICE, leader)" }
+    ]
+  },
+  {
+    "id": "magma-kriz",
+    "match": "|Magma Gang Member |Application",
+    "map": 168,
+    "title": "Lapis Ward lift: Kriz",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [31, 23], "label": "Kriz (Spyce), by the 7th Street lift" }
+    ]
+  },
+  {
+    "id": "aqua-members",
+    "match": "|Aqua Gang Member |Application",
+    "map": 324,
+    "title": "7th Street: Aqua Gang members",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [14, 34], "label": "Razzy (Sweet)" },
+      { "at": [18, 40], "label": "Defacto (Library)" },
+      { "at": [25, 18], "label": "Pierce (Apophyll)" },
+      { "at": [29, 12], "label": "Archer (Silph, leader)" }
+    ]
+  },
+  {
+    "id": "aqua-mannie",
+    "match": "|Aqua Gang Member |Application",
+    "map": 168,
+    "title": "Lapis Ward lift: Mannie",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [4, 23], "label": "Mannie (Construction), by the 7th Street lift" }
+    ]
+  }
+]

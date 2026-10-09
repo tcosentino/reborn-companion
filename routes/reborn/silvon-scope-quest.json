@@ -1,0 +1,96 @@
+[
+  {
+    "id": "devon-door",
+    "match": "Reenter the actual Devon Corp. building in Obsidia",
+    "map": 520,
+    "title": "Obsidia Ward: the Devon Corp. building",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [35, 36], "label": "Devon Corp. building (go upstairs)" }
+    ]
+  },
+  {
+    "id": "devon-and-silph",
+    "match": "Exit Devon and enter the Silph building.",
+    "map": 520,
+    "title": "Obsidia Ward: Devon to Silph",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [35, 36], "label": "Devon Corp. (you exit here)" },
+      { "at": [38, 15], "label": "Silph building (talk to the lady)" }
+    ]
+  },
+  {
+    "id": "beryl-ward-jungle",
+    "match": "Fly on over to the Beryl Ward. We can finally expose Kecleon",
+    "map": 544,
+    "title": "Beryl Ward: the Jungle and the Library",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [8, 7], "label": "Rhodochrine Jungle entrance (north)" },
+      { "at": [8, 24], "label": "Rhodochrine Jungle entrance (middle)" },
+      { "at": [8, 33], "label": "Rhodochrine Jungle entrance (south)" },
+      { "at": [23, 16], "label": "Beryl Library (later)" }
+    ]
+  },
+  {
+    "id": "library-return",
+    "match": "Return to Beryl Ward. With the Kecleon gone",
+    "map": 544,
+    "title": "Beryl Ward: back to the Library",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [23, 16], "label": "Beryl Library" }
+    ]
+  },
+  {
+    "id": "library-left-room",
+    "match": "Return to Beryl Ward. With the Kecleon gone",
+    "map": 548,
+    "title": "Library: the left room",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [6, 26], "label": "Library entrance" },
+      { "at": [9, 8], "label": "Left room (press the books)" }
+    ]
+  },
+  {
+    "id": "library-secret-door",
+    "match": "Enter the secret door here to get *TM30 Shadow Ball*",
+    "map": 549,
+    "title": "Left room: the secret door",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [3, 6], "label": "Secret door (after the book puzzle)" }
+    ]
+  },
+  {
+    "id": "route-4-absol",
+    "match": "One more quick thing if you'd like: Fly on over to Calcenon City",
+    "map": 412,
+    "title": "Route 4: Ame's Absol",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [36, 10], "label": "Ame's Absol (hop the lake rocks at night)" }
+    ]
+  },
+  {
+    "id": "underroot-treecko",
+    "match": "Past here you can get a hidden *Repel* as well as **Treecko**!",
+    "map": 153,
+    "title": "Underroot: Treecko",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [21, 15], "label": "Treecko" },
+      { "at": [23, 21], "label": "Hidden Repel" }
+    ]
+  }
+]
