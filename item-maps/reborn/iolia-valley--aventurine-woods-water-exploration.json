@@ -1,0 +1,70 @@
+[
+  {
+    "id": "iolia-hidden",
+    "match": "Climb the waterfall at the top of the area",
+    "map": 333,
+    "title": "Iolia Valley hidden items",
+    "pad": 4,
+    "items": [
+      { "event": 59 },
+      { "event": 57 },
+      { "event": 58 },
+      { "event": 60 },
+      { "event": 61 }
+    ]
+  },
+  {
+    "id": "aventurine-sharpedonite",
+    "match": "At the top, you can surf across to get the *Sharpedonite*!",
+    "map": 289,
+    "title": "North Aventurine Woods: Sharpedonite",
+    "pad": 8,
+    "items": [
+      { "event": 90 }
+    ]
+  },
+  {
+    "id": "aventurine-lake",
+    "match": "Make your way all the way to the left to the entrance",
+    "map": 434,
+    "title": "Across the ice: Shoal Shell and Revive",
+    "pad": 6,
+    "items": [
+      { "event": 7 },
+      { "event": 6 }
+    ]
+  },
+  {
+    "id": "aventurine-underwater-a",
+    "match": "Down here, you'll find a hidden *Steel Gem*",
+    "map": 436,
+    "title": "Underwater: Steel Gem and Blue Shard",
+    "pad": 6,
+    "items": [
+      { "event": 1 },
+      { "event": 2 }
+    ]
+  },
+  {
+    "id": "aventurine-underwater-b",
+    "match": "Down here, you'll find a hidden *Steel Gem*",
+    "map": 435,
+    "title": "Underwater: Blue Shard and Ether",
+    "pad": 6,
+    "items": [
+      { "event": 1 },
+      { "event": 2 }
+    ]
+  },
+  {
+    "id": "aventurine-deep-cavern",
+    "match": "Down here, you'll find a hidden *Steel Gem*",
+    "map": 388,
+    "title": "Deeper cavern",
+    "pad": 6,
+    "items": [
+      { "event": 1 },
+      { "event": 6 }
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "onyx-hidden",
+    "match": "Next, fly into Onyx Ward.",
+    "map": 521,
+    "title": "Onyx Ward hidden items",
+    "pad": 6,
+    "items": [
+      { "event": 23 },
+      { "event": 8 },
+      { "event": 5 }
+    ]
+  },
+  {
+    "id": "onyx-rooftop",
+    "match": "Head up to the rooftop garden.",
+    "map": 573,
+    "title": "Rooftop garden",
+    "pad": 6,
+    "items": [
+      { "event": 33 }
+    ]
+  }
+]

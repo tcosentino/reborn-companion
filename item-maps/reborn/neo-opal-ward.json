@@ -1,0 +1,16 @@
+[
+  {
+    "id": "opal-hidden",
+    "match": "Hidden in the ward are an *Elemental Seed*",
+    "map": 519,
+    "title": "Neo Opal Ward hidden items",
+    "pad": 6,
+    "items": [
+      { "event": 61 },
+      { "event": 60 },
+      { "event": 67 },
+      { "event": 68 },
+      { "event": 64 }
+    ]
+  }
+]

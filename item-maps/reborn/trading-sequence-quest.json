@@ -1,0 +1,34 @@
+[
+  {
+    "id": "mind-plate-room",
+    "match": "Defeat the cop inside and after a conversation",
+    "map": 65,
+    "title": "Police building: Mind Plate",
+    "pad": 6,
+    "items": [
+      { "event": 7 }
+    ]
+  },
+  {
+    "id": "jasper-yellow-flute",
+    "match": "Defeat the two trainers who challenge you, then enter the building.",
+    "map": 534,
+    "title": "Jasper right building: Yellow Flute",
+    "pad": 6,
+    "items": [
+      { "event": 13 }
+    ]
+  },
+  {
+    "id": "sanctum-room",
+    "match": "You'll notice that our new Pokemon is actually holding",
+    "map": 332,
+    "title": "Subseven Sanctum: inner room",
+    "pad": 4,
+    "items": [
+      { "event": 11 },
+      { "event": 27 },
+      { "event": 10 }
+    ]
+  }
+]

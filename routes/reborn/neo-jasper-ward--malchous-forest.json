@@ -19,5 +19,30 @@
       { "at": [98, 41], "label": "From Jasper Ward" },
       { "at": [58, 51], "label": "Corin Rouge lookalike" }
     ]
+  },
+  {
+    "id": "jasper-places",
+    "match": "That wraps up Peridot, so head into Neo Jasper Ward.",
+    "map": 523,
+    "title": "Jasper Ward: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [49, 31], "label": "Police station (talk to the chief)" },
+      { "at": [8, 34], "label": "To Malchous Forest Park (south entrance)" },
+      { "at": [8, 14], "label": "To Malchous Forest Park (north entrance)" }
+    ]
+  },
+  {
+    "id": "malchous-places",
+    "match": "Enter Malchous Forest to the left.",
+    "map": 533,
+    "title": "Malchous Forest Park: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [98, 41], "label": "From Jasper Ward (south entrance)" },
+      { "at": [55, 29], "label": "Berry soil (former abandoned gym)" }
+    ]
   }
 ]

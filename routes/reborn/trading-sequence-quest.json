@@ -5,20 +5,8 @@
     "map": 523,
     "title": "Pokemon Center to the top left building",
     "points": [
-      {
-        "at": [
-          33,
-          15
-        ],
-        "label": "Pokemon Center"
-      },
-      {
-        "at": [
-          19,
-          14
-        ],
-        "label": "Top left building (ring girl)"
-      }
+      { "at": [33, 15], "label": "Pokemon Center" },
+      { "at": [19, 14], "label": "Top left building (ring girl)" }
     ]
   },
   {
@@ -27,20 +15,8 @@
     "map": 526,
     "title": "To the northern warehouse",
     "points": [
-      {
-        "at": [
-          66,
-          19
-        ],
-        "label": "Pokemon Center"
-      },
-      {
-        "at": [
-          38,
-          9
-        ],
-        "label": "Northern warehouse"
-      }
+      { "at": [66, 19], "label": "Pokemon Center" },
+      { "at": [38, 9], "label": "Northern warehouse" }
     ]
   },
   {
@@ -49,32 +25,78 @@
     "map": 523,
     "title": "Pokemon Center to the building on the right",
     "points": [
-      {
-        "at": [
-          33,
-          15
-        ],
-        "label": "Pokemon Center"
-      },
-      {
-        "at": [
-          74,
-          22
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          77,
-          22
-        ],
-        "label": "Building on the right",
-        "direct": true
-      }
+      { "at": [33, 15], "label": "Pokemon Center" },
+      { "at": [74, 22], "via": true },
+      { "at": [77, 22], "label": "Building on the right", "direct": true }
     ],
-    "hide": [
-      48,
-      49
+    "hide": [48, 49]
+  },
+  {
+    "id": "peridot-police-building",
+    "match": "Next, head over to Peridot Ward and enter the building to the left of the North Peridot Alley.",
+    "map": 522,
+    "title": "Peridot Ward: building left of the North Peridot Alley",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [100, 41], "label": "Building to the left of the alley (cop inside, Pink Pearl)" },
+      { "at": [103, 35], "label": "North Peridot Alley" }
+    ]
+  },
+  {
+    "id": "jasper-upstairs-lady",
+    "match": "Defeat the two trainers who challenge you, then enter the building.",
+    "map": 534,
+    "title": "Jasper right building: inside",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [55, 10], "label": "Room at the top (Yellow Flute)" },
+      { "at": [42, 10], "label": "Lady upstairs ('R' Key)" }
+    ]
+  },
+  {
+    "id": "shelter-randall",
+    "match": "Head into the Blacksteam Shelter in Peridot Ward.",
+    "map": 522,
+    "title": "Peridot Ward: Blacksteam Shelter",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [36, 49], "label": "Blacksteam Shelter" }
+    ]
+  },
+  {
+    "id": "shelter-randall-room",
+    "match": "Head into the Blacksteam Shelter in Peridot Ward.",
+    "map": 595,
+    "title": "Blacksteam Shelter: the cage room",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [10, 3], "label": "Randall (return his key, get Klefki)" }
+    ]
+  },
+  {
+    "id": "seventh-to-sanctum",
+    "match": "You'll notice that our new Pokemon is actually holding",
+    "map": 324,
+    "title": "Seventh Street: way to the Subseven Sanctum",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [30, 8], "label": "Door to Beryl Wall and the Subseven Sanctum" }
+    ]
+  },
+  {
+    "id": "sanctum-key-door",
+    "match": "You'll notice that our new Pokemon is actually holding",
+    "map": 330,
+    "title": "Subseven Sanctum maze: key door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [0, 20], "label": "Door on the left side (use the Sanctum Key)" }
     ]
   }
 ]

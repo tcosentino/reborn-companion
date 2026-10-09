@@ -1,0 +1,65 @@
+[
+  {
+    "id": "lower-peridot-hidden",
+    "match": "First, head up into the park to the right of the Pokemon Center",
+    "map": 530,
+    "title": "Lower Peridot Ward hidden items",
+    "pad": 4,
+    "items": [
+      { "event": 125 },
+      { "event": 96 },
+      { "event": 100 },
+      { "event": 122 },
+      { "event": 92 },
+      { "event": 93 },
+      { "event": 136 }
+    ]
+  },
+  {
+    "id": "south-alley-hidden",
+    "match": "Hidden here are *Dark Gem*",
+    "map": 531,
+    "items": [
+      { "event": 22 },
+      { "event": 1 },
+      { "event": 2 }
+    ]
+  },
+  {
+    "id": "upper-peridot-hidden",
+    "match": "Heading to the upper side of the ward, we can get",
+    "map": 522,
+    "title": "Upper Peridot Ward hidden items",
+    "pad": 4,
+    "items": [
+      { "event": 174 },
+      { "event": 169 },
+      { "event": 147 },
+      { "event": 148 },
+      { "event": 129 },
+      { "event": 193 },
+      { "event": 189 },
+      { "event": 192 },
+      { "event": 191 },
+      { "event": 186 }
+    ]
+  },
+  {
+    "id": "north-alley-hidden",
+    "match": "You can find a hidden *Revive*.",
+    "map": 532,
+    "items": [
+      { "event": 10 }
+    ]
+  },
+  {
+    "id": "white-flute-south-obsidia",
+    "match": "Follow this path through to South Obsidia Ward to get a *White Flute*.",
+    "map": 528,
+    "title": "South Obsidia Ward: White Flute",
+    "pad": 8,
+    "items": [
+      { "event": 32 }
+    ]
+  }
+]

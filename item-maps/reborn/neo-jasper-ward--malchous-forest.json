@@ -1,0 +1,25 @@
+[
+  {
+    "id": "jasper-hidden",
+    "match": "Hidden in the ward you'll find a *Cheri Berry*",
+    "map": 523,
+    "title": "Jasper Ward hidden items",
+    "pad": 5,
+    "items": [
+      { "event": 58 },
+      { "event": 57 },
+      { "event": 52 }
+    ]
+  },
+  {
+    "id": "malchous-items",
+    "match": "You'll find a *Balm Mushroom*, 5 *Exp. Candy L*",
+    "map": 533,
+    "title": "Malchous Forest Park items",
+    "pad": 5,
+    "items": [
+      { "event": 19 },
+      { "event": 21 }
+    ]
+  }
+]

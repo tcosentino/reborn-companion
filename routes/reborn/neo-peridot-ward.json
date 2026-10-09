@@ -59,5 +59,22 @@
       { "at": [36, 50], "label": "Blacksteam Shelter" },
       { "at": [103, 35], "label": "North Peridot Alley" }
     ]
+  },
+  {
+    "id": "peridot-upper-places",
+    "match": "Heading to the upper side of the ward, we can get",
+    "map": 522,
+    "title": "Peridot Ward: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [88, 64], "label": "Mosswater Market (former Mosswater factory plot)" },
+      { "at": [89, 60], "label": "EV item seller" },
+      { "at": [84, 18], "label": "Igglybuff lady's house" },
+      { "at": [88, 27], "label": "Orange tent (Expert Belt NPC)" },
+      { "at": [61, 46], "label": "Simon's building" },
+      { "at": [36, 49], "label": "Blacksteam Shelter (former Blacksteam Factory)" },
+      { "at": [103, 35], "label": "North Peridot Alleyway" }
+    ]
   }
 ]

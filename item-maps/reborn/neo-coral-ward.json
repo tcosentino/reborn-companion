@@ -1,0 +1,49 @@
+[
+  {
+    "id": "coral-hidden",
+    "match": "You can find hidden *Green Shard*, *Fairy Gem*",
+    "map": 526,
+    "title": "Coral Ward hidden items",
+    "pad": 4,
+    "items": [
+      { "event": 64 },
+      { "event": 63 },
+      { "event": 66 },
+      { "event": 65 }
+    ]
+  },
+  {
+    "id": "coral-underwater",
+    "match": "You can find a hidden *Elixir* and *Moon Ball* on this map.",
+    "map": 608,
+    "title": "Coral Ward underwater",
+    "pad": 5,
+    "items": [
+      { "event": 2 },
+      { "event": 3 }
+    ]
+  },
+  {
+    "id": "coral-lighthouse-top",
+    "match": "You can find a hidden *Elixir* and *Moon Ball* on this map.",
+    "map": 609,
+    "title": "Coral Lighthouse upstairs",
+    "pad": 5,
+    "items": [
+      { "event": 5 },
+      { "event": 10 },
+      { "event": 9 }
+    ]
+  },
+  {
+    "id": "coral-lighthouse-beyond",
+    "match": "Once you win, you'll get **Popplio**!",
+    "map": 610,
+    "title": "Beyond the underwater lighthouse",
+    "pad": 5,
+    "items": [
+      { "event": 3 },
+      { "event": 2 }
+    ]
+  }
+]

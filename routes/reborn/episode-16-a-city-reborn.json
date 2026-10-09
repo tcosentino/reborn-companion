@@ -1,0 +1,24 @@
+[
+  {
+    "id": "hardy-route-4",
+    "match": "**Relationship Point Choices**:\n- Talk to Hardy on Route 4",
+    "map": 412,
+    "title": "Route 4: Hardy",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [59, 32], "label": "Hardy" }
+    ]
+  },
+  {
+    "id": "cain-calcenon",
+    "match": "**Relationship Point Choices**:\n- Talk to Cain in Calcenon City",
+    "map": 413,
+    "title": "Calcenon City: Cain",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [29, 32], "label": "Cain" }
+    ]
+  }
+]

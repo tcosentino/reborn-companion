@@ -8,5 +8,31 @@
       { "at": [55, 10], "label": "Danielle's building" },
       { "at": [31, 26], "label": "Slowpoke Tail fisherman" }
     ]
+  },
+  {
+    "id": "coral-places",
+    "match": "Go south into Coral.",
+    "map": 526,
+    "title": "Coral Ward: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [55, 10], "label": "Danielle's building (upper right, quiz)" },
+      { "at": [31, 26], "label": "Fisherman at the bottom (Slowpoke Tail)" },
+      { "at": [26, 20], "label": "Bottom lighthouse (hidden dive spot behind it)" },
+      { "at": [26, 5], "label": "Top lighthouse (locked, needs the Coral Key)" }
+    ]
+  },
+  {
+    "id": "coral-top-lighthouse-door",
+    "match": "You can find a hidden *Elixir* and *Moon Ball* on this map.",
+    "map": 526,
+    "title": "Coral Ward: top lighthouse door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [26, 5], "label": "Top lighthouse door (use the Coral Key)" },
+      { "at": [26, 20], "label": "Bottom lighthouse (dive down here, then go left)" }
+    ]
   }
 ]

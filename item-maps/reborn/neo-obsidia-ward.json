@@ -1,0 +1,60 @@
+[
+  {
+    "id": "north-obsidia-hidden",
+    "match": "Pop back up in Lapis and head east into North Obsidia.",
+    "map": 527,
+    "title": "North Obsidia Ward: hidden Full Heal",
+    "pad": 8,
+    "items": [
+      { "event": 85 }
+    ]
+  },
+  {
+    "id": "north-alley-items",
+    "match": "You'll find a *Magical Seed* and hidden *Dusk Ball*",
+    "map": 529,
+    "title": "North Obsidia Alleyway items",
+    "pad": 5,
+    "items": [
+      { "event": 15 },
+      { "event": 12 },
+      { "event": 13 },
+      { "event": 16 }
+    ]
+  },
+  {
+    "id": "central-obsidia-hidden",
+    "match": "Hidden around this part of the ward are an *HP Up*",
+    "map": 520,
+    "title": "Central Obsidia hidden items",
+    "pad": 4,
+    "items": [
+      { "event": 91 },
+      { "event": 98 },
+      { "event": 94 },
+      { "event": 96 },
+      { "event": 85 }
+    ]
+  },
+  {
+    "id": "obsidia-alley-revive",
+    "match": "Inside you'll learn about the password *nuzlocke*.",
+    "map": 570,
+    "title": "Obsidia Alleyway hidden Revive",
+    "pad": 6,
+    "items": [
+      { "event": 13 }
+    ]
+  },
+  {
+    "id": "south-obsidia-hidden",
+    "match": "You'll be able to find hidden *PP Up* and *Blue Shard*",
+    "map": 528,
+    "title": "South Obsidia hidden items",
+    "pad": 4,
+    "items": [
+      { "event": 38 },
+      { "event": 37 }
+    ]
+  }
+]

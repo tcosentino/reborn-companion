@@ -1,0 +1,25 @@
+[
+  {
+    "id": "coral-surf-west",
+    "match": "That wraps up this section of the lake for now.",
+    "map": 526,
+    "title": "Coral Ward: surf west into the lake",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [66, 18], "label": "Coral Pokemon Center (fly here)" },
+      { "at": [8, 16], "label": "West edge of the ward (surf west from here)" }
+    ]
+  },
+  {
+    "id": "peridot-shelter-surf",
+    "match": "That's it for the Sunrise apartments.",
+    "map": 522,
+    "title": "Peridot Ward: shelter and the surf south",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [36, 49], "label": "Blacksteam Shelter (former PULSE Muk site); surf south just east of it" }
+    ]
+  }
+]

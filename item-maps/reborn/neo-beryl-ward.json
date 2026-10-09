@@ -1,0 +1,28 @@
+[
+  {
+    "id": "beryl-lower-hidden",
+    "match": "Hidden in Beryl you can get a *Poison Gem*",
+    "map": 544,
+    "title": "Beryl Ward hidden items",
+    "pad": 4,
+    "items": [
+      { "event": 43 },
+      { "event": 47 },
+      { "event": 45 },
+      { "event": 42 },
+      { "event": 41 },
+      { "event": 46 }
+    ]
+  },
+  {
+    "id": "beryl-hill-hidden",
+    "match": "On the hill by Corey's gym you can find",
+    "map": 551,
+    "title": "Beryl hill hidden items",
+    "pad": 5,
+    "items": [
+      { "event": 19 },
+      { "event": 23 }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "spinel-places",
+    "match": "That wraps up things in the city limits for right now",
+    "map": 271,
+    "title": "Spinel Town: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [39, 19], "label": "Spinel Museum" },
+      { "at": [13, 48], "label": "South exit to Chrysolia Forest (and the Spring)" }
+    ]
+  },
+  {
+    "id": "museum-places",
+    "match": "Towards the top of the ground floor you'll see a new entrance",
+    "map": 241,
+    "title": "Spinel Museum: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [37, 24], "label": "Museum entrance" },
+      { "at": [13, 4], "label": "New entrance to the gift shop (top of the ground floor)" }
+    ]
+  },
+  {
+    "id": "forest-to-spring",
+    "match": "Make your way down to Chrysolia Forest and enter the Chrysolia Spring.",
+    "map": 234,
+    "title": "Chrysolia Forest: to the Spring",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [46, 8], "label": "Arrive from Spinel Town" },
+      { "at": [25, 11], "label": "Chrysolia Spring entrance" }
+    ]
+  }
+]

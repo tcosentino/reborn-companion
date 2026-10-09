@@ -1,0 +1,40 @@
+[
+  {
+    "id": "beryl-places",
+    "match": "You'll notice that there are a ton of invisible obstacles",
+    "map": 544,
+    "title": "Beryl Ward (lower): places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [23, 17], "label": "Beryl Library" },
+      { "at": [15, 29], "label": "The Emporium (shop run by the Inspector, southwest corner)" },
+      { "at": [36, 10], "label": "Central park" }
+    ]
+  },
+  {
+    "id": "beryl-upper-places",
+    "match": "On the hill by Corey's gym you can find",
+    "map": 551,
+    "title": "Beryl Ward (upper): places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [31, 16], "label": "Corey's gym" }
+    ]
+  },
+  {
+    "id": "beryl-library-floor",
+    "match": "Before we leave, there are a few more things to do in Beryl.",
+    "map": 548,
+    "title": "Beryl Library: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [6, 25], "label": "Library entrance" },
+      { "at": [18, 20], "label": "Desk (Library Application)" },
+      { "at": [9, 8], "label": "Stairs up (monowoke password upstairs)" },
+      { "at": [20, 8], "label": "Stairs up (second stairway)" }
+    ]
+  }
+]

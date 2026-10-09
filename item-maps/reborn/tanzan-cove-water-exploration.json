@@ -1,0 +1,43 @@
+[
+  {
+    "id": "cove-underwater-hidden",
+    "match": "Down here you'll find a *Metronome*",
+    "map": 607,
+    "title": "Tanzan Cove underwater hidden items",
+    "pad": 3,
+    "items": [
+      { "event": 3 },
+      { "event": 8 },
+      { "event": 4 },
+      { "event": 7 },
+      { "event": 10 },
+      { "event": 6 },
+      { "event": 5 },
+      { "event": 9 },
+      { "event": 2 },
+      { "event": 1 }
+    ]
+  },
+  {
+    "id": "cove-lake-hidden",
+    "match": "For now, surf onto the lake, and head towards the left side",
+    "map": 232,
+    "title": "Left landmass hidden items",
+    "pad": 6,
+    "items": [
+      { "event": 8 },
+      { "event": 37 }
+    ]
+  },
+  {
+    "id": "tanzan-cave-items",
+    "match": "Grab the *Pearl* and hidden *Blue Shard* in here, then exit.",
+    "map": 371,
+    "title": "Inside the cave",
+    "pad": 6,
+    "items": [
+      { "event": 13 },
+      { "event": 14 }
+    ]
+  }
+]

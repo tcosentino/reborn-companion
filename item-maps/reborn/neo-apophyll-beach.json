@@ -1,0 +1,67 @@
+[
+  {
+    "id": "academy-center-shard",
+    "match": "Fly over to the Apophyll Academy and enter the academy.",
+    "map": 564,
+    "title": "Academy center: hidden Purple Shard",
+    "pad": 6,
+    "items": [
+      { "event": 25 }
+    ]
+  },
+  {
+    "id": "training-grounds-shells",
+    "match": "You'll find 4 hidden *Shoal Shells*.",
+    "map": 563,
+    "title": "Training Grounds hidden Shoal Shells",
+    "pad": 4,
+    "items": [
+      { "event": 1 },
+      { "event": 2 },
+      { "event": 7 },
+      { "event": 8 },
+      { "event": 29 }
+    ]
+  },
+  {
+    "id": "academy-surroundings",
+    "match": "In the map surrounding the academy, you'll be able to find",
+    "map": 564,
+    "title": "Around the academy",
+    "pad": 3,
+    "items": [
+      { "event": 18 },
+      { "event": 19 },
+      { "event": 23 },
+      { "event": 16 },
+      { "event": 20 },
+      { "event": 21 }
+    ]
+  },
+  {
+    "id": "beach-right",
+    "match": "Head to the Apophyll Beach to the right side of the academy.",
+    "map": 565,
+    "title": "Apophyll Beach, right of the academy",
+    "pad": 3,
+    "items": [
+      { "event": 17 },
+      { "event": 11 },
+      { "event": 13 },
+      { "event": 14 },
+      { "event": 15 }
+    ]
+  },
+  {
+    "id": "beach-left",
+    "match": "Head to the Apophyll Beach to the right side of the academy.",
+    "map": 566,
+    "title": "Apophyll Beach, left of the academy",
+    "pad": 4,
+    "items": [
+      { "event": 5 },
+      { "event": 6 },
+      { "event": 4 }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "iolia-places",
+    "match": "Fly on over to the Vanhanen Castle and make your way to the Iolia Valley.",
+    "map": 333,
+    "title": "Iolia Valley: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [9, 24], "label": "Valley entrance from Route 1" },
+      { "at": [23, 6], "label": "Waterfall at the top (climb it)" },
+      { "at": [23, 20], "label": "Lower waterfall (green crystal beneath it)" }
+    ]
+  },
+  {
+    "id": "aventurine-ice-entrance",
+    "match": "Make your way all the way to the left to the entrance",
+    "map": 288,
+    "title": "North Aventurine Woods: far-left entrance",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [12, 18], "label": "Entrance to the Celestinine Mountain 2F area (ice and lake)" }
+    ]
+  }
+]

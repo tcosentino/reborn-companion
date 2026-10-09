@@ -1,0 +1,103 @@
+[
+  {
+    "id": "wtc-hyper-potion",
+    "match": "Exit out of the door at the top right.",
+    "map": 467,
+    "title": "Entrance hall: Hyper Potion",
+    "pad": 5,
+    "items": [
+      { "event": 4 }
+    ]
+  },
+  {
+    "id": "peridot-grid-quick-ball",
+    "match": "Exit out of the door at the top right.",
+    "map": 474,
+    "title": "Peridot Water Grid: Quick Ball",
+    "pad": 5,
+    "items": [
+      { "event": 45 }
+    ]
+  },
+  {
+    "id": "wtc-side-room",
+    "match": "Enter this new room in the top right corner",
+    "map": 477,
+    "title": "Side room: Cell Battery and Electirizer",
+    "pad": 4,
+    "items": [
+      { "event": 3 },
+      { "event": 2 }
+    ]
+  },
+  {
+    "id": "lapis-grid-smoke-ball",
+    "match": "Make your way to the water machine and go down the stairs",
+    "map": 468,
+    "title": "Lapis Water Grid: Smoke Ball",
+    "pad": 5,
+    "items": [
+      { "event": 49 }
+    ]
+  },
+  {
+    "id": "lapis-grid-key",
+    "match": "Unlock the shutter, lower the water, and grab the *Beryl Grid Key*.",
+    "map": 468,
+    "title": "Lapis Water Grid: Beryl Grid Key",
+    "pad": 5,
+    "items": [
+      { "event": 50 }
+    ]
+  },
+  {
+    "id": "peridot-grid-black-sludge",
+    "match": "Return to the Peridot Grid and cross the mud.",
+    "map": 474,
+    "title": "Peridot Water Grid: Black Sludge",
+    "pad": 5,
+    "items": [
+      { "event": 44 }
+    ]
+  },
+  {
+    "id": "jasper-grid-full-heal",
+    "match": "Head left, then follow the path when the water is lowered.",
+    "map": 475,
+    "title": "Jasper Water Grid: Full Heal",
+    "pad": 5,
+    "items": [
+      { "event": 36 }
+    ]
+  },
+  {
+    "id": "central-grid-tm67",
+    "match": "Note that the normal water can be surfed on!",
+    "map": 469,
+    "title": "Central Obsidia Water Grid: TM67",
+    "pad": 5,
+    "items": [
+      { "event": 72 }
+    ]
+  },
+  {
+    "id": "onyx-grid-tm93",
+    "match": "Enter the Coral Water Grid in the bottom right.",
+    "map": 471,
+    "title": "Onyx Water Grid: TM93",
+    "pad": 5,
+    "items": [
+      { "event": 44 }
+    ]
+  },
+  {
+    "id": "jasper-grid-scope-lens",
+    "match": "Fix the water here, head left into the Peridot Water Grid",
+    "map": 475,
+    "title": "Jasper Water Grid: Scope Lens",
+    "pad": 5,
+    "items": [
+      { "event": 35 }
+    ]
+  }
+]

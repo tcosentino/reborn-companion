@@ -1,0 +1,28 @@
+[
+  {
+    "id": "lapis-hidden",
+    "match": "Hidden around Lapis you'll be able to find",
+    "map": 524,
+    "title": "Lapis Ward hidden items",
+    "pad": 4,
+    "items": [
+      { "event": 83 },
+      { "event": 82 },
+      { "event": 85 },
+      { "event": 81 },
+      { "event": 84 },
+      { "event": 51 },
+      { "event": 29 }
+    ]
+  },
+  {
+    "id": "watering-hole-ladder",
+    "match": "Enter the watering hole and go down the now-open ladder.",
+    "map": 478,
+    "title": "Water Treatment Center: ladder room",
+    "pad": 5,
+    "items": [
+      { "event": 19 }
+    ]
+  }
+]

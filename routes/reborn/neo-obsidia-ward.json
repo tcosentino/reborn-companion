@@ -51,5 +51,73 @@
       { "at": [43, 37], "label": "Sweet Kiss Candy Shop" },
       { "at": [17, 53], "label": "Obsidia Alleyway" }
     ]
+  },
+  {
+    "id": "north-obsidia-places",
+    "match": "Pop back up in Lapis and head east into North Obsidia.",
+    "map": 527,
+    "title": "North Obsidia Ward: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [36, 22], "label": "Nightclub (girl outside has the application)" },
+      { "at": [70, 34], "label": "Spyce restaurant (on the right)" },
+      { "at": [63, 18], "label": "North Obsidia Alleyway" }
+    ]
+  },
+  {
+    "id": "central-obsidia-places",
+    "match": "Head south into Central Obsidia.",
+    "map": 520,
+    "title": "Central Obsidia Ward: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [19, 9], "label": "Sweet Co. HQ (former Yureyu building)" },
+      { "at": [38, 15], "label": "Silph building (Saffron Street)" },
+      { "at": [49, 14], "label": "Medicine Market" },
+      { "at": [60, 15], "label": "Department Store" },
+      { "at": [40, 24], "label": "Obsidia Daycare" },
+      { "at": [20, 36], "label": "Cafe Salon" },
+      { "at": [26, 36], "label": "Critical Capture" },
+      { "at": [43, 36], "label": "Sweet Kiss Candy Shop" },
+      { "at": [17, 53], "label": "Obsidia Alleyway" },
+      { "at": [70, 50], "label": "Park on the bottom right (Growth Mulch)" }
+    ]
+  },
+  {
+    "id": "seacrest-back-in-peridot",
+    "match": "Notice that means we have now found all four of the mulches",
+    "map": 530,
+    "title": "Lower Peridot: Seacrest and his assistant",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [60, 27], "label": "Elder Seacrest (Venusaurite, Insect Plate)" },
+      { "at": [62, 28], "label": "Assistant nearby (Decidium-Z)" }
+    ]
+  },
+  {
+    "id": "obsidia-alley-places",
+    "match": "Enter the Obsidia Alleyway next.",
+    "map": 570,
+    "title": "Obsidia Alleyway: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [0, 11], "label": "Entrance from Obsidia Ward" },
+      { "at": [18, 8], "label": "Hardcore guy (nuzlocke password)" }
+    ]
+  },
+  {
+    "id": "south-obsidia-places",
+    "match": "Head into South Obsidia.",
+    "map": 528,
+    "title": "South Obsidia Ward: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [73, 11], "label": "Glamazonia Salon (Glamazonia Application)" }
+    ]
   }
 ]

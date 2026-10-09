@@ -1,0 +1,74 @@
+[
+  {
+    "id": "onyx-places",
+    "match": "Next, fly into Onyx Ward.",
+    "map": 521,
+    "title": "Onyx Ward: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [20, 14], "label": "Onyx Trainer School (left door)" },
+      { "at": [45, 14], "label": "Onyx Trainer School (right door)" }
+    ]
+  },
+  {
+    "id": "school-1f-places",
+    "match": "Enter the Onyx Trainer School and go all the way to the left.",
+    "map": 119,
+    "title": "Trainer School 1F: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [9, 14], "label": "Entrance from Onyx Ward" },
+      { "at": [2, 6], "label": "Door to the west wing (go all the way left)" },
+      { "at": [15, 6], "label": "Door east, toward the stairs to 2F" }
+    ]
+  },
+  {
+    "id": "school-2f-doors",
+    "match": "Enter the Onyx Trainer School and go all the way to the left.",
+    "map": 121,
+    "title": "Trainer School 2F: open double doors",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [7, 7], "label": "Open double doors (left)" },
+      { "at": [8, 7], "label": "Open double doors (right)" }
+    ]
+  },
+  {
+    "id": "school-2f-stairs",
+    "match": "Enter the Onyx Trainer School and go all the way to the left.",
+    "map": 123,
+    "title": "Trainer School 2F: stairs to the 3rd floor",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [31, 14], "label": "Arrive through the double doors" },
+      { "at": [29, 4], "label": "Stairs up to 3F" }
+    ]
+  },
+  {
+    "id": "school-3f-girl",
+    "match": "Enter the Onyx Trainer School and go all the way to the left.",
+    "map": 516,
+    "title": "Trainer School 3F: girl on the left",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [12, 7], "label": "Arrive from the stairs" },
+      { "at": [2, 8], "label": "Girl on the left (then return to the first girl)" }
+    ]
+  },
+  {
+    "id": "spyce-return",
+    "match": "By now, we should be able to give all the ingredients to the Spyce.",
+    "map": 527,
+    "title": "North Obsidia: back to the Spyce",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [70, 34], "label": "Spyce restaurant (give the chef the ingredients)" }
+    ]
+  }
+]

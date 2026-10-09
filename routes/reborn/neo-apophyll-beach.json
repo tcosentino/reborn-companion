@@ -1,0 +1,26 @@
+[
+  {
+    "id": "academy-places",
+    "match": "Fly over to the Apophyll Academy and enter the academy.",
+    "map": 564,
+    "title": "Apophyll Academy grounds: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [11, 31], "label": "Academy entrance (girl in the first room has the application)" },
+      { "at": [15, 14], "label": "Academy center area (hidden Purple Shard)" }
+    ]
+  },
+  {
+    "id": "pyrous-crater-fishing",
+    "match": "Next, make your way all the way to the top of Pyrous Mountain.",
+    "map": 27,
+    "title": "Pyrous Mountain crater: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [21, 31], "label": "Enter the crater from Pyrous Mountain 4F" },
+      { "at": [19, 22], "label": "Bottom edge of the lava crater (fish from here)" }
+    ]
+  }
+]

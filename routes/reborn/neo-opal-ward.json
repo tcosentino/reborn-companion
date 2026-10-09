@@ -1,0 +1,16 @@
+[
+  {
+    "id": "opal-places",
+    "match": "Ok, with that out of the way, we can finally begin",
+    "map": 519,
+    "title": "Neo Opal Ward: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [35, 46], "label": "Grand Hall (talk to Ame to blitz the story)" },
+      { "at": [59, 36], "label": "East gates to Obsidia Ward" },
+      { "at": [8, 62], "label": "West gates to Peridot Ward" },
+      { "at": [35, 8], "label": "North gates to North Obsidia Ward" }
+    ]
+  }
+]

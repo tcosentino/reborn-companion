@@ -11,5 +11,31 @@
       { "at": [23, 43], "label": "Land on the left landmass", "direct": true },
       { "at": [12, 42], "label": "Cave" }
     ]
+  },
+  {
+    "id": "underwater-bodies",
+    "match": "Down here you'll find a *Metronome*",
+    "map": 607,
+    "title": "Tanzan Cove underwater: Meteor grunt bodies",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [15, 43], "label": "Body with the missing ID tag (talk to this one)" },
+      { "at": [39, 34], "label": "Body (Chad Fournier)" },
+      { "at": [36, 45], "label": "Body (Michaela Hermann)" },
+      { "at": [49, 38], "label": "Body (Minta Alkaev)" },
+      { "at": [35, 25], "label": "Body (Winter Green)" }
+    ]
+  },
+  {
+    "id": "cove-fisherman",
+    "match": "Return to the surface and talk to the fisherman",
+    "map": 232,
+    "title": "Tanzan Cove: the fisherman",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [51, 50], "label": "Fisherman on the right side (Super Rod, then Whiscash donation)" }
+    ]
   }
 ]

@@ -1,0 +1,134 @@
+[
+  {
+    "id": "wtc-entrance",
+    "match": "Talk to Titania here, then enter the North Obsidia Water Grid",
+    "map": 467,
+    "title": "Water Treatment Center: entrance hall",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [13, 11], "label": "Titania" },
+      { "at": [13, 28], "label": "Down to the North Obsidia Water Grid (right door)" },
+      { "at": [4, 28], "label": "Down to the North Obsidia Water Grid (left door)" }
+    ]
+  },
+  {
+    "id": "north-grid",
+    "match": "In this area, we can hop across piles of trash",
+    "map": 470,
+    "title": "North Obsidia Water Grid: places in this section",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [16, 8], "label": "Water level machine (to the left of the trash)" },
+      { "at": [16, 9], "label": "Stairs down to the mud" },
+      { "at": [35, 19], "label": "Murkwater Surface Field Readout (bottom right, mud behind a girder)" },
+      { "at": [34, 7], "label": "To the Central Obsidia Water Grid" },
+      { "at": [18, 21], "label": "To the Opal Water Grid" },
+      { "at": [4, 5], "label": "To the Peridot Water Grid (upper door)" },
+      { "at": [21, 3], "label": "Up to the entrance hall" }
+    ]
+  },
+  {
+    "id": "coral-grid",
+    "match": "Raise the water. Once Titania clears the way, lower the water once more",
+    "map": 472,
+    "title": "Coral Water Grid: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [1, 24], "label": "Back to the Central Obsidia Water Grid" },
+      { "at": [19, 2], "label": "To the Onyx Water Grid" }
+    ]
+  },
+  {
+    "id": "central-grid",
+    "match": "Open the gate here. Lower the water level at the center",
+    "map": 469,
+    "title": "Central Obsidia Water Grid: places in this section",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [3, 9], "label": "From the North Obsidia Water Grid" },
+      { "at": [44, 33], "label": "Bottom right corner (stairs and path; door to the Coral grid)" },
+      { "at": [5, 33], "label": "Door at the bottom left (to the Opal Water Grid)" }
+    ]
+  },
+  {
+    "id": "opal-grid",
+    "match": "Open the gate here. Lower the water level at the center",
+    "map": 473,
+    "title": "Opal Water Grid: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [29, 19], "label": "Arrive from the Central Obsidia Water Grid" },
+      { "at": [0, 10], "label": "To the Peridot Water Grid (left)" },
+      { "at": [14, 3], "label": "Up to the North Obsidia Water Grid" }
+    ]
+  },
+  {
+    "id": "peridot-grid",
+    "match": "Proceed to the left to enter the Peridot Water Grid.",
+    "map": 474,
+    "title": "Peridot Water Grid: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [44, 26], "label": "Arrive from the Opal Water Grid" },
+      { "at": [44, 5], "label": "Up to the North Obsidia Water Grid" },
+      { "at": [5, 24], "label": "Left, toward the Jasper Water Grid" },
+      { "at": [21, 3], "label": "Up to the Lapis Water Grid" },
+      { "at": [35, 3], "label": "Door at the top of the room (opens with the shutter)" }
+    ]
+  },
+  {
+    "id": "lapis-grid",
+    "match": "Return to the previous room. Enter the Lapis Water Grid",
+    "map": 468,
+    "title": "Lapis Water Grid: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [10, 27], "label": "Arrive from the Peridot Water Grid" },
+      { "at": [6, 21], "label": "Smoke Ball (bottom left, past the trash)" },
+      { "at": [23, 18], "label": "Beryl Grid Key (top right, behind the shutter)" }
+    ]
+  },
+  {
+    "id": "jasper-grid",
+    "match": "Head left, then follow the path when the water is lowered.",
+    "map": 475,
+    "title": "Jasper Water Grid: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [38, 10], "label": "Arrive from the Peridot Water Grid" },
+      { "at": [9, 3], "label": "Door to the Beryl Water Grid (needs the Beryl Grid Key)" }
+    ]
+  },
+  {
+    "id": "beryl-grid",
+    "match": "Proceed into the door to the Beryl Water Grid at the top with your key.",
+    "map": 476,
+    "title": "Beryl Water Grid: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [12, 28], "label": "Arrive from the Jasper Water Grid" },
+      { "at": [21, 17], "label": "Center of the room" },
+      { "at": [35, 2], "label": "Upper right corner (Titania, after you win)" }
+    ]
+  },
+  {
+    "id": "wtc-exit-waterfall",
+    "match": "After this fight, return to the front of the Water Treatment Center",
+    "map": 467,
+    "title": "Water Treatment Center front: the waterfall",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [8, 8], "label": "Waterfall to climb (to Celestinine Cascade)" }
+    ]
+  }
+]
