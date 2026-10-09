@@ -2,7 +2,7 @@
 
 Goal (Troy, 2026-10-08): every place the guide puts you in has a map, every named place ("where the X house was") has a marker, and hidden items get checkboxes. Guide fixes stay local (no upstream PRs).
 
-Last updated: 2026-10-09.
+Last updated: 2026-10-09 (all 15 groups done, rebuilt, browser-checked).
 
 ## Status at a glance
 
@@ -11,8 +11,8 @@ Last updated: 2026-10-09.
 | Sections in the guide | 207 |
 | Sections with at least one map card | 195 |
 | Route cards (`routes/reborn/`) | 1,060 (901 are "spots" place overviews) |
-| Item map cards (`item-maps/reborn/`) | 800, covering 1,990 item checkboxes |
-| Authoring groups done | 14 of 15 (Episodes 16-17 still running) |
+| Item map cards (`item-maps/reborn/`) | 769, covering 1,990 item checkboxes |
+| Authoring groups done | 15 of 15 |
 
 ## What was done, in order
 
@@ -32,7 +32,7 @@ Last updated: 2026-10-09.
 | `bcf3818` | Episodes 10-12 |
 | `339a6b7` | Episodes 12-15 |
 | `0a2e63c` | Episode 16 wards |
-| pending | Episodes 16-17 (Devon, Mega-Z Ring, Beldum, Tourmaline Desert...) |
+| `c8e568f` | Episodes 16-17 quests (Devon, Mega-Z Ring, Beldum, Amaranth volunteers...) |
 | `9b11a72` | Episodes 17-18 desert arc |
 | `11f1db1` | Episode 18 Agate arc |
 | `56f76a6` | Episode 19 |
@@ -43,11 +43,14 @@ Last updated: 2026-10-09.
 
 7. **Linked checkboxes** (`9e0709d`, Sonnet agent): the same game item on two checklists (two sections, or a card plus a hidden-item screenshot) now ticks and unticks together. Stored progress keys unchanged.
 
+8. **Tourmaline Desert ids restored** (`ddd3411`): the 94 moved items are back on their original card ids, so no saved ticks are lost.
+9. **Full rebuild** (`bash scripts/build.sh reborn`) passes, including the progress-id check. New checkbox ids recorded in the baseline (`2689de2`).
+10. **Browser check** on the scratch server (port 5199): map cards render with no console errors, and a tick on Joining a Gang's Magma hideout TM46 shows as ticked on Defeating the Rival Gang. Test tick and backup snapshot removed.
+
 ## Open issues
 
-- **Tourmaline Desert progress ids** (fix in progress): `88a4ade` moved 94 items from their original cards to new split cards, which would drop existing ticks and fails `sync-data.sh`. Fix: restore the original card ids/events once the Episodes 16-17 group finishes.
-- **Not yet rebuilt**: `bash scripts/build.sh reborn` has not been run on the final set; do that after the last group and the Tourmaline fix, then check the app.
-- Most new cards passed `check`, but only a sample of previews were looked at. Markers flagged as guesses are below.
+- Most new cards passed `check`, but agents only looked at a sample of previews. Markers flagged as guesses are listed below; worth a glance when you reach them in the app.
+- Same-item cards in different sections now tick together (19 linked groups), but they still show as separate markers in each section.
 
 ## Known gaps (follow-up passes)
 
