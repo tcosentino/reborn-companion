@@ -8,5 +8,67 @@
       { "at": [45, 44], "label": "Top of the tree" },
       { "at": [16, 49], "label": "ZCell 57" }
     ]
+  },
+  {
+    "id": "jungle-tree-top",
+    "match": "Accept Nyu's quest in the Nightclub",
+    "map": 150,
+    "title": "Rhodochrine Jungle: the large tree at the top",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [133, 25], "label": "Lumi (picnic by the large tree)" },
+      { "at": [131, 30], "label": "Noel" },
+      { "at": [131, 22], "label": "Eve" },
+      { "at": [129, 20], "label": "New World Door at the tree" },
+      { "at": [90, 21], "label": "Underroot entrance (north)" },
+      { "at": [148, 81], "label": "Underroot entrance (east)" }
+    ]
+  },
+  {
+    "id": "spyce-door",
+    "match": "Accept Nyu's quest in the Nightclub",
+    "map": 527,
+    "title": "North Obsidia Ward: The Spyce",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [70, 35], "label": "The Spyce (Bubble Teas)" }
+    ]
+  },
+  {
+    "id": "underroot-zcells",
+    "match": "Talk to Lumi outside once more",
+    "map": 153,
+    "title": "The Underroot: Shelly and the ten ZCells",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [60, 15], "label": "Underroot entrance (north)" },
+      { "at": [59, 32], "label": "Shelly" },
+      { "at": [67, 34], "label": "ZCell (one of ten)" },
+      { "at": [74, 31], "label": "ZCell (one of ten)" },
+      { "at": [60, 37], "label": "ZCell (one of ten)" },
+      { "at": [72, 43], "label": "ZCell (one of ten)" },
+      { "at": [56, 25], "label": "ZCell (one of ten)" },
+      { "at": [58, 38], "label": "ZCell (one of ten)" },
+      { "at": [64, 46], "label": "ZCell (one of ten)" },
+      { "at": [78, 44], "label": "ZCell (one of ten)" },
+      { "at": [55, 41], "label": "ZCell (one of ten)" },
+      { "at": [65, 55], "label": "ZCell (one of ten)" }
+    ]
+  },
+  {
+    "id": "tree-top-overview",
+    "match": "With that, we finally reach the top of the tree!",
+    "map": 889,
+    "title": "Top of the Rhodochrine Tree: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [45, 43], "label": "Where you arrive" },
+      { "at": [16, 49], "label": "ZCell 57 (far left)" },
+      { "at": [69, 35], "label": "ZCell 58 (surf, right side)" }
+    ]
   }
 ]

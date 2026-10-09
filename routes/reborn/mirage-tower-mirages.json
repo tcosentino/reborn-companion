@@ -1,0 +1,61 @@
+[
+  {
+    "id": "tower-upper-overview",
+    "match": "In this section, more of the same kind of puzzle",
+    "map": 880,
+    "title": "Mirage Tower upper rooms: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [20, 43], "label": "Entrance (from the lower tower)" },
+      { "at": [21, 36], "label": "Charlotte (first room up)" },
+      { "at": [66, 27], "label": "Charlotte (next room, Lin Route)" },
+      { "at": [21, 82], "label": "Charlotte (later room)" },
+      { "at": [68, 146], "label": "Charlotte (room with ZCell 59)" },
+      { "at": [70, 145], "label": "ZCell 59" },
+      { "at": [63, 145], "label": "Solganium-Z" },
+      { "at": [17, 132], "label": "Ho-oh (anomaly, top)" }
+    ]
+  },
+  {
+    "id": "tower-ho-oh-door",
+    "match": "Once you succeed, you'll get the *Latiasite*",
+    "map": 880,
+    "title": "Back up past the New World Door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [17, 141], "label": "New World Door (first)" },
+      { "at": [17, 132], "label": "Ho-oh (second door at the very top)" }
+    ]
+  },
+  {
+    "id": "mirage-b1f-overview",
+    "match": "You'll find a New World Door to the left, so head on in.",
+    "map": 881,
+    "title": "Mirage Tower? B1F: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [14, 22], "label": "Entrance (New World Door)" },
+      { "at": [12, 18], "label": "Saphira" },
+      { "at": [16, 113], "label": "Rare Bone (down the ladder)" },
+      { "at": [62, 45], "label": "ZCell 60" }
+    ]
+  },
+  {
+    "id": "mirage-crystal-overview",
+    "match": "The next section is generally similar",
+    "map": 882,
+    "title": "Crystal dimension: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [14, 22], "label": "Entrance" },
+      { "at": [19, 177], "label": "Lunalium-Z (on the rock)" },
+      { "at": [19, 176], "label": "ZCell 61" },
+      { "at": [12, 12], "label": "ZCell 62 (exit at the top)" },
+      { "at": [68, 137], "label": "Lugia (anomaly)" }
+    ]
+  }
+]

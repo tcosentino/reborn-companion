@@ -1,0 +1,53 @@
+[
+  {
+    "id": "sanctum-maze",
+    "match": "Accept Danielle's quest.",
+    "map": 330,
+    "title": "Subseven Sanctum maze: the left room",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [24, 0], "label": "Entrance (top)" },
+      { "at": [0, 20], "label": "Room on the left side (Luna)" },
+      { "at": [49, 20], "label": "Room on the right side (used later)" }
+    ]
+  },
+  {
+    "id": "sanctum-luna-room",
+    "match": "Accept Danielle's quest.",
+    "map": 332,
+    "title": "Luna's room",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [34, 3], "label": "Luna" },
+      { "at": [36, 3], "label": "New World Door" }
+    ]
+  },
+  {
+    "id": "sanctum-cells",
+    "match": "Defeat the acolytes. You'll wake up in a cage",
+    "map": 871,
+    "title": "Sanctum cells and statues: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [61, 104], "label": "Your cell: Arceus statue" },
+      { "at": [71, 104], "label": "Lukah's cell" },
+      { "at": [27, 51], "label": "Door back to the New World Door room" },
+      { "at": [14, 98], "label": "Palkia (top of the room)" },
+      { "at": [155, 72], "label": "Dialga (right-side room)" }
+    ]
+  },
+  {
+    "id": "sanctum-right-door",
+    "match": "With that taken care of, the maze below",
+    "map": 330,
+    "title": "The right-side door",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [49, 20], "label": "Door on the right side" }
+    ]
+  }
+]

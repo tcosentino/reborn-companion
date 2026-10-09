@@ -1,0 +1,37 @@
+[
+  {
+    "id": "onyx-water-grid",
+    "match": "Talk to Smeargle and accept the quest.",
+    "map": 499,
+    "title": "Onyx Water Grid: the New World Door",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [1, 20], "label": "From Central Obsidia Water Grid" },
+      { "at": [18, 3], "label": "New World Door (top)" }
+    ]
+  },
+  {
+    "id": "dream-shiv",
+    "match": "Ok, so we were actually still dreaming.",
+    "map": 893,
+    "title": "Up to Shiv",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [126, 20], "label": "Shiv (go up)" }
+    ]
+  },
+  {
+    "id": "dream-darkrai",
+    "match": "Once you awaken in a new area, use the Light Shard",
+    "map": 893,
+    "title": "Wake up, then up to Darkrai",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [59, 81], "label": "Where you wake up" },
+      { "at": [57, 54], "label": "Darkrai (head up)" }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "apophyll-cave-door",
+    "match": "Finally, accept Smeargle's quest.",
+    "map": 31,
+    "title": "Apophyll Cave 2F: the New World Door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [16, 8], "label": "New World Door" }
+    ]
+  },
+  {
+    "id": "helix-entrance",
+    "match": "Depending on your story decisions thus far",
+    "map": 887,
+    "title": "New World Helix: entrance and the way on",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [37, 112], "label": "Entrance (from Apophyll Cave)" },
+      { "at": [81, 52], "label": "Door to the next area (New World Helix 2)" }
+    ]
+  },
+  {
+    "id": "helix-legendary-doors",
+    "match": "Once you win, three doors will open.",
+    "map": 888,
+    "title": "The three doors: Reshiram, Zekrom and Kyurem",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [33, 25], "label": "Door to Reshiram's room" },
+      { "at": [10, 52], "label": "Reshiram" },
+      { "at": [40, 25], "label": "Door to Zekrom's room" },
+      { "at": [58, 59], "label": "Zekrom" },
+      { "at": [36, 24], "label": "Door to Kyurem's room" },
+      { "at": [9, 2], "label": "Kyurem" }
+    ]
+  },
+  {
+    "id": "helix-umbral-ace",
+    "match": "Nothing too crazy for this point in the game",
+    "map": 888,
+    "title": "Umbral Ace (top right)",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [69, 3], "label": "Umbral Ace" },
+      { "at": [37, 18], "label": "Door out (fast travel back to the Nightclub)" }
+    ]
+  }
+]

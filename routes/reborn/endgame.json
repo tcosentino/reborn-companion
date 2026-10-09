@@ -1,0 +1,41 @@
+[
+  {
+    "id": "iolia-cave",
+    "match": "Accept the final quest at the Nightclub with Cass.",
+    "map": 339,
+    "title": "Iolia Valley cave: Purple Crystal and the New World Door",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [12, 17], "label": "Purple Crystal" },
+      { "at": [12, 7], "label": "New World Door" }
+    ]
+  },
+  {
+    "id": "endgame-overview",
+    "match": "There's something all of these wild Pokemon have in common",
+    "map": 894,
+    "title": "Endgame: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [75, 106], "label": "Entrance" },
+      { "at": [72, 61], "label": "Anna (heals your team, the center)" },
+      { "at": [84, 53], "label": "??? guy" },
+      { "at": [118, 91], "label": "PULSE Camerupt (right side)" },
+      { "at": [115, 53], "label": "ZCell 46" },
+      { "at": [115, 15], "label": "Door out (Shiv is up from here)" }
+    ]
+  },
+  {
+    "id": "endgame-question-guy",
+    "match": "Win to nab the third *Nanab Berry*",
+    "map": 894,
+    "title": "Back to the ??? guy",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [84, 53], "label": "??? guy" }
+    ]
+  }
+]

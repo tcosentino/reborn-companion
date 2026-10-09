@@ -1,0 +1,71 @@
+[
+  {
+    "id": "seacrest-garden-door",
+    "match": "Accept Zero's quest, then head over to the Peridot Ward.",
+    "map": 522,
+    "title": "Peridot Ward: Seacrest's garden",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [88, 75], "label": "Seacrest's garden: New World Door" }
+    ]
+  },
+  {
+    "id": "pestilence-overview",
+    "match": "Make your way around the right side of the large hill.",
+    "map": 878,
+    "title": "Idyll of Pestilence: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [68, 140], "label": "Entrance (bottom)" },
+      { "at": [82, 80], "label": "Central hill: Eve and Lumi" },
+      { "at": [86, 75], "label": "Shaymin 1 (right above the hill)" },
+      { "at": [136, 61], "label": "Shaymin 2 (island to the right)" },
+      { "at": [13, 36], "label": "Shaymin 3 (top left)" },
+      { "at": [133, 141], "label": "Shaymin 4 (hedge maze, bottom right)" },
+      { "at": [44, 134], "label": "Shaymin 5 (bottom left)" },
+      { "at": [9, 81], "label": "ZCell 44" }
+    ]
+  },
+  {
+    "id": "pestilence-hilltop",
+    "match": "Return to the mushroom area. Follow the left edge",
+    "map": 878,
+    "title": "Back to the top of the central hill",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [82, 80], "label": "Top of the central hill: Eve" }
+    ]
+  },
+  {
+    "id": "panaceance-overview",
+    "match": "Our first destination is the hedge maze in the bottom right corner.",
+    "map": 879,
+    "title": "Idyll of Panaceance: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [68, 140], "label": "Entrance (bottom)" },
+      { "at": [82, 80], "label": "Central hill" },
+      { "at": [133, 141], "label": "Gracidea 1 (hedge maze, bottom right)" },
+      { "at": [13, 36], "label": "Gracidea 2 (top left)" },
+      { "at": [136, 61], "label": "Gracidea 3 (island, top right)" },
+      { "at": [43, 134], "label": "Gracidea 4 (bottom left)" },
+      { "at": [108, 25], "label": "Full Restore (top right)" },
+      { "at": [125, 34], "label": "ZCell 45 (top right)" }
+    ]
+  },
+  {
+    "id": "panaceance-hilltop",
+    "match": "Return to the center and climb the hill.",
+    "map": 879,
+    "title": "Top of the central hill: Craudburry",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [82, 80], "label": "Top of the central hill (Craudburry battle)" }
+    ]
+  }
+]

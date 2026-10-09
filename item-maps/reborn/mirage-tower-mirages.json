@@ -1,0 +1,43 @@
+[
+  {
+    "id": "tower-solganium",
+    "match": "You can also get the *Solganium-Z* here.",
+    "map": 880,
+    "title": "Solganium-Z",
+    "pad": 8,
+    "items": [
+      { "event": 267 }
+    ]
+  },
+  {
+    "id": "tower-latias-latios",
+    "match": "Once you succeed, you'll get the *Latiasite*",
+    "map": 880,
+    "title": "Latiasite and Latiosite",
+    "pad": 8,
+    "items": [
+      { "event": 241 },
+      { "event": 240 }
+    ]
+  },
+  {
+    "id": "mirage-rare-bone",
+    "match": "In the next area, head down the ladder to get a hidden *Rare Bone*.",
+    "map": 881,
+    "title": "Hidden Rare Bone",
+    "pad": 8,
+    "items": [
+      { "event": 65 }
+    ]
+  },
+  {
+    "id": "mirage-lunalium",
+    "match": "The next section is generally similar",
+    "map": 882,
+    "title": "Lunalium-Z",
+    "pad": 8,
+    "items": [
+      { "event": 107 }
+    ]
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "id": "shelter-lobby",
+    "match": "Talk to Ringmaster and accept the quest.",
+    "map": 594,
+    "title": "Blacksteam Shelter 1F: lobby",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [46, 19], "label": "Shelter entrance" },
+      { "at": [11, 20], "label": "Door to the back room (concert)" },
+      { "at": [24, 2], "label": "Stairs down to the basement" }
+    ]
+  },
+  {
+    "id": "shelter-concert-room",
+    "match": "Talk to Ringmaster and accept the quest.",
+    "map": 594,
+    "title": "Blacksteam Shelter 1F: the back room",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [67, 12], "label": "Cain" },
+      { "at": [70, 10], "label": "Arc" },
+      { "at": [71, 12], "label": "Aya" },
+      { "at": [74, 12], "label": "Titania" },
+      { "at": [71, 14], "label": "Hardy" },
+      { "at": [70, 23], "label": "Exit to the lobby" }
+    ]
+  },
+  {
+    "id": "shelter-outside-aya",
+    "match": "Talk to all the named characters in here.",
+    "map": 522,
+    "title": "Peridot Ward: Aya outside the shelter",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [36, 50], "label": "Blacksteam Shelter door" },
+      { "at": [42, 53], "label": "Aya (outside)" }
+    ]
+  },
+  {
+    "id": "shelter-b1f",
+    "match": "Talk to all the named characters in here.",
+    "map": 595,
+    "title": "Shelter basement: B1F",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [16, 2], "label": "Stairs up to 1F" },
+      { "at": [2, 19], "label": "Stairs down to B2F" }
+    ]
+  },
+  {
+    "id": "shelter-b2f",
+    "match": "Talk to all the named characters in here.",
+    "map": 596,
+    "title": "Shelter B2F: the New World Door",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [76, 4], "label": "Stairs up to B1F" },
+      { "at": [4, 6], "label": "New World Door (far left)" }
+    ]
+  },
+  {
+    "id": "fabrication-overview",
+    "match": "A pretty huge puzzle room awaits us.",
+    "map": 877,
+    "title": "Neo Blacksteam Fabrication: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [30, 101], "label": "Entrance (New World Door)" },
+      { "at": [31, 73], "label": "Aya near the Genesects" },
+      { "at": [31, 72], "label": "Shutter Terminal (center)" },
+      { "at": [31, 69], "label": "Drive computer (center)" },
+      { "at": [57, 59], "label": "Arclight (path 1, right)" },
+      { "at": [4, 58], "label": "Cain (path 3, left)" },
+      { "at": [9, 37], "label": "Titania (path 7, top left)" },
+      { "at": [71, 40], "label": "Hardy (path 11, top right)" },
+      { "at": [75, 51], "label": "Combustion power machine" },
+      { "at": [53, 36], "label": "Steam power system (path 12)" },
+      { "at": [74, 83], "label": "Supercooling system (path 13)" },
+      { "at": [3, 82], "label": "Hydroelectric generator (path 14)" },
+      { "at": [30, 4], "label": "Genesect (path 15, top)" }
+    ]
+  },
+  {
+    "id": "fabrication-exit",
+    "match": "Make your way back to the center of the room, remove the remaining Drives",
+    "map": 877,
+    "title": "Exit at the bottom",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [30, 102], "label": "Exit at the bottom (door out)" }
+    ]
+  }
+]

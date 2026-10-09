@@ -1,5 +1,17 @@
 [
   {
+    "id": "citrine-3f-door",
+    "match": "Accept Simon's quest, then fly over to the Beryl Ward.",
+    "map": 383,
+    "title": "Citrine Mountain 3F: the waterfall New World Door",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [11, 24], "label": "Arrival from Citrine Mountain 2F" },
+      { "at": [28, 8], "label": "New World Door (top right, by the waterfall)" }
+    ]
+  },
+  {
     "id": "four-meteors",
     "match": "After the conversation in the middle, follow the narrow paths",
     "map": 884,

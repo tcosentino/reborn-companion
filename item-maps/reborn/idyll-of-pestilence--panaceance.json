@@ -1,0 +1,93 @@
+[
+  {
+    "id": "pestilence-ultra-ball",
+    "match": "Make your way up and right. In this area, you can find an *Ultra Ball*.",
+    "map": 878,
+    "title": "Ultra Ball up and right",
+    "pad": 8,
+    "items": [
+      { "event": 202 }
+    ]
+  },
+  {
+    "id": "pestilence-waterfall-top",
+    "match": "We can actually surf here - climb the waterfall",
+    "map": 878,
+    "title": "Top of the waterfall",
+    "pad": 8,
+    "items": [
+      { "event": 206 },
+      { "event": 126 }
+    ]
+  },
+  {
+    "id": "pestilence-telluric-seed",
+    "match": "Finally, make your way to the bottom left corner, where the mushrooms are.",
+    "map": 878,
+    "title": "Telluric Seed under the mushroom",
+    "pad": 8,
+    "items": [
+      { "event": 144 }
+    ]
+  },
+  {
+    "id": "panaceance-gracidea-1",
+    "match": "Our first destination is the hedge maze in the bottom right corner.",
+    "map": 879,
+    "title": "First Gracidea",
+    "pad": 8,
+    "items": [
+      { "event": 189 }
+    ]
+  },
+  {
+    "id": "panaceance-gracidea-2",
+    "match": "Head to the top left corner next, with all the springy grass.",
+    "map": 879,
+    "title": "Second Gracidea",
+    "pad": 8,
+    "items": [
+      { "event": 191 }
+    ]
+  },
+  {
+    "id": "panaceance-top-right",
+    "match": "Make your way to the top right corner next.",
+    "map": 879,
+    "title": "Full Restore, top right",
+    "pad": 8,
+    "items": [
+      { "event": 144 }
+    ]
+  },
+  {
+    "id": "panaceance-gracidea-3",
+    "match": "Hop to the island in the top right corner (pink path).",
+    "map": 879,
+    "title": "Third Gracidea",
+    "pad": 8,
+    "items": [
+      { "event": 190 }
+    ]
+  },
+  {
+    "id": "panaceance-gracidea-4",
+    "match": "Use the blue mushroom down and left from here",
+    "map": 879,
+    "title": "Final Gracidea",
+    "pad": 8,
+    "items": [
+      { "event": 180 }
+    ]
+  },
+  {
+    "id": "panaceance-hill-gracidea",
+    "match": "Talk to the nearby **Shaymin** once you're done",
+    "map": 879,
+    "title": "Gracidea to keep",
+    "pad": 8,
+    "items": [
+      { "event": 338 }
+    ]
+  }
+]

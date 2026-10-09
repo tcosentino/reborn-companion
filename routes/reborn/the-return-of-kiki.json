@@ -1,0 +1,17 @@
+[
+  {
+    "id": "academy-courtyard",
+    "match": "Accept Simon's quest and fly over to Apophyll Academy.",
+    "map": 564,
+    "title": "Apophyll Academy: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [12, 24], "label": "Victoria (courtyard)" },
+      { "at": [11, 16], "label": "Guy in the center" },
+      { "at": [4, 13], "label": "2F walkway, left side" },
+      { "at": [11, 12], "label": "Middle of the top arc" },
+      { "at": [11, 10], "label": "Door to Kiki's hall (head up)" }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "sugiline-ruin-door",
+    "match": "Accept your gang leader's quest next.",
+    "map": 661,
+    "title": "Sugiline Ruin: the New World Door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [67, 15], "label": "New World Door (just right of the top of the room)" }
+    ]
+  },
+  {
+    "id": "new-world-sugiline",
+    "match": "Follow the path to the New World Door in the water.",
+    "map": 883,
+    "title": "New World (Sugiline Cave): the door in the water",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [33, 87], "label": "Entrance" },
+      { "at": [35, 37], "label": "New World Door in the water" }
+    ]
+  },
+  {
+    "id": "aegir-island",
+    "match": "Follow the path to the New World Door in the water.",
+    "map": 850,
+    "title": "Aegir Cave: down to the island",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [42, 8], "label": "Where you arrive" },
+      { "at": [47, 50], "label": "Island in the middle of the lake (Florinia)" }
+    ]
+  },
+  {
+    "id": "aegir-florinia",
+    "match": "Once you win against both Umbral opponents",
+    "map": 850,
+    "title": "Back to Florinia on the island",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [47, 50], "label": "Florinia (island)" }
+    ]
+  }
+]
