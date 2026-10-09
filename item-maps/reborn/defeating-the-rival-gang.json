@@ -1,0 +1,30 @@
+[
+  {
+    "id": "aqua-hideout-tm41",
+    "match": "Grab *TM41 Torment* while you're here",
+    "map": 170,
+    "title": "Aqua hideout: TM41",
+    "items": [
+      { "event": 36 }
+    ]
+  },
+  {
+    "id": "magma-hideout-items",
+    "match": "Grab *TM46 Thief* as well as a hidden *Red-Hots*",
+    "map": 165,
+    "title": "Magma hideout: TM46 and Red-Hots",
+    "items": [
+      { "event": 24 },
+      { "event": 37 }
+    ]
+  },
+  {
+    "id": "behind-maxwell",
+    "match": "Once you win, the Magma Gang will retreat.",
+    "map": 165,
+    "title": "Behind where Maxwell was",
+    "items": [
+      { "event": 36 }
+    ]
+  }
+]

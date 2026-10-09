@@ -1,0 +1,13 @@
+[
+  {
+    "id": "alleyway-murkrow",
+    "match": "Head over to the Lapis Alleyway during a windy night.",
+    "map": 80,
+    "title": "Lapis Ward: the alleyway",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [41, 55], "label": "Lapis Alleyway (Murkrow on windy nights)" }
+    ]
+  }
+]

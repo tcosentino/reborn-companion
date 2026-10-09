@@ -1,0 +1,70 @@
+[
+  {
+    "id": "kiki-meditation-area",
+    "match": "Now we can continue with the story. Head into the meditation area",
+    "map": 16,
+    "title": "Meditation area south of the academy",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [24, 12], "label": "Kiki (pink hair, meditation area)" }
+    ]
+  },
+  {
+    "id": "kiki-back-room",
+    "match": "Head into the back room of the academy and talk to Kiki again.",
+    "map": 26,
+    "title": "Academy back room",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [9, 13], "label": "Door from Kiki's room" },
+      { "at": [9, 10], "label": "Kiki" }
+    ]
+  },
+  {
+    "id": "victoria-courtyard",
+    "match": "To fight Victoria, head into the courtyard of the academy.",
+    "map": 17,
+    "title": "Academy courtyard",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [11, 15], "label": "Courtyard battle spot" }
+    ]
+  },
+  {
+    "id": "pyrous-entrance-from-beach",
+    "match": "Cal is on the top of Pyrous Mountain.",
+    "map": 21,
+    "title": "Western beach: Pyrous Mountain entrance",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [13, 15], "label": "Pyrous Mountain entrance" }
+    ]
+  },
+  {
+    "id": "pyrous-1f-places",
+    "match": "You can also find Magcargo by smashing the nearby pillars.",
+    "map": 33,
+    "title": "Pyrous Mountain 1F",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [27, 52], "label": "Entrance from the beach" }
+    ]
+  },
+  {
+    "id": "pyrous-peak-cal",
+    "match": "Make your way back to 3F, then go across the empty pool.",
+    "map": 27,
+    "title": "Pyrous Mountain peak",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [21, 31], "label": "Stairs up from 4F" },
+      { "at": [17, 22], "label": "Cal (atop the mountain)" }
+    ]
+  }
+]

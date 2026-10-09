@@ -1,0 +1,13 @@
+[
+  {
+    "id": "sensei-courtyard",
+    "match": "To finish off this section, we have to battle Kiki in the main courtyard.",
+    "map": 17,
+    "title": "Academy main courtyard",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [11, 15], "label": "Kiki (main courtyard)" }
+    ]
+  }
+]

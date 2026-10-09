@@ -1,0 +1,18 @@
+[
+  {
+    "id": "gym-places",
+    "match": "Now it's time to go for our badge.",
+    "map": 182,
+    "title": "Lapis Gym: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [9, 33], "label": "Gym entrance" },
+      { "at": [15, 27], "label": "Front trainer (right)" },
+      { "at": [4, 27], "label": "Front trainer (left)" },
+      { "at": [16, 11], "label": "Back area trainer" },
+      { "at": [25, 24], "label": "Leaf Stone" },
+      { "at": [28, 2], "label": "Shelly (upstairs)" }
+    ]
+  }
+]

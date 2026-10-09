@@ -1,0 +1,13 @@
+[
+  {
+    "id": "yacht-warehouse",
+    "match": "Take the yacht to Azurine Island.",
+    "map": 97,
+    "title": "Coral Ward: warehouse to the yacht",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [29, 10], "label": "Locked warehouse (boat and yacht)" }
+    ]
+  }
+]

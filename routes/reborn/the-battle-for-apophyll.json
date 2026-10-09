@@ -1,0 +1,25 @@
+[
+  {
+    "id": "battle-pyrous-entrance",
+    "match": "Once you're back on Apophyll, prepare your team.",
+    "map": 21,
+    "title": "Western beach: Pyrous Mountain",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [13, 15], "label": "Pyrous Mountain entrance" }
+    ]
+  },
+  {
+    "id": "battle-pyrous-peak",
+    "match": "Once you reach the peak, Victoria will separate",
+    "map": 27,
+    "title": "Pyrous Mountain peak: boss battle",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [21, 31], "label": "Stairs up from 4F" },
+      { "at": [17, 25], "label": "Garchomp (boss battle)" }
+    ]
+  }
+]

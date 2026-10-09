@@ -1,0 +1,110 @@
+[
+  {
+    "id": "magma-alley-door",
+    "match": "Return to Maxwell in North Obsidia, then head over to the Aqua Gang's hideout",
+    "map": 79,
+    "title": "North Obsidia Ward: Magma hideout door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [63, 18], "label": "North Obsidia Alleyway (Maxwell's hideout)" }
+    ]
+  },
+  {
+    "id": "magma-alley-maxwell",
+    "match": "Return to Maxwell in North Obsidia, then head over to the Aqua Gang's hideout",
+    "map": 165,
+    "title": "North Obsidia Alleyway: Maxwell",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [32, 12], "label": "Exit to North Obsidia Ward" },
+      { "at": [8, 12], "label": "Maxwell (Magma boss)" }
+    ]
+  },
+  {
+    "id": "lapis-aqua-door",
+    "match": "Return to Maxwell in North Obsidia, then head over to the Aqua Gang's hideout",
+    "map": 80,
+    "title": "Lapis Ward: Aqua hideout door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [41, 55], "label": "Lapis Alleyway (Aqua Gang hideout)" }
+    ]
+  },
+  {
+    "id": "aqua-hideout-places",
+    "match": "Return to Maxwell in North Obsidia, then head over to the Aqua Gang's hideout",
+    "map": 170,
+    "title": "Lapis Alleyway: Aqua Gang hideout",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [0, 21], "label": "Entrance from Lapis Ward" },
+      { "at": [5, 21], "label": "Guards at the entrance" },
+      { "at": [12, 12], "label": "TM41 Torment" },
+      { "at": [9, 8], "label": "Archer (Aqua boss)" }
+    ]
+  },
+  {
+    "id": "back-to-maxwell",
+    "match": "Anyways, return to Maxwell at your alleyway",
+    "map": 165,
+    "title": "Back to Maxwell's alleyway",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [8, 12], "label": "Maxwell (gives Houndour)" }
+    ]
+  },
+  {
+    "id": "aqua-return-archer",
+    "match": "Return to Archer in Lapis, then head over to the Magma Gang's hideout",
+    "map": 170,
+    "title": "Lapis Alleyway: Archer",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [0, 21], "label": "Entrance from Lapis Ward" },
+      { "at": [9, 8], "label": "Archer (Aqua boss)" }
+    ]
+  },
+  {
+    "id": "magma-door-again",
+    "match": "Return to Archer in Lapis, then head over to the Magma Gang's hideout",
+    "map": 79,
+    "title": "North Obsidia Ward: Magma hideout door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [63, 18], "label": "North Obsidia Alleyway (Magma Gang hideout)" }
+    ]
+  },
+  {
+    "id": "magma-hideout-places",
+    "match": "Return to Archer in Lapis, then head over to the Magma Gang's hideout",
+    "map": 165,
+    "title": "North Obsidia Alleyway: Magma Gang hideout",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [32, 12], "label": "Entrance from North Obsidia Ward" },
+      { "at": [26, 11], "label": "Guards at the entrance" },
+      { "at": [11, 13], "label": "TM46 Thief" },
+      { "at": [16, 13], "label": "Hidden Red-Hots" },
+      { "at": [8, 12], "label": "Maxwell (Magma boss)" }
+    ]
+  },
+  {
+    "id": "back-to-archer",
+    "match": "Anyways, return to Archer at your alleyway",
+    "map": 170,
+    "title": "Back to Archer's alleyway",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [9, 8], "label": "Archer (gives Carvanha)" }
+    ]
+  }
+]

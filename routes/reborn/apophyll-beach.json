@@ -5,55 +5,68 @@
     "map": 17,
     "title": "Academy courtyard: the side rooms",
     "points": [
-      {
-        "at": [
-          11,
-          25
-        ],
-        "label": "From the front hall"
-      },
-      {
-        "at": [
-          6,
-          15
-        ],
-        "label": "Top left (Black Belt)"
-      },
-      {
-        "at": [
-          6,
-          23
-        ],
-        "label": "Bottom left (TV girl)"
-      },
-      {
-        "at": [
-          16,
-          23
-        ],
-        "label": "Bottom right (unrealtime, Hidden Power)"
-      },
-      {
-        "at": [
-          16,
-          19
-        ],
-        "label": "Middle right (Pure Incense)"
-      },
-      {
-        "at": [
-          16,
-          15
-        ],
-        "label": "Top right (Dudebro, Ashen Beach readout)"
-      },
-      {
-        "at": [
-          11,
-          10
-        ],
-        "label": "Area at the top"
-      }
+      { "at": [11, 25], "label": "From the front hall" },
+      { "at": [6, 15], "label": "Top left (Black Belt)" },
+      { "at": [6, 23], "label": "Bottom left (TV girl)" },
+      { "at": [16, 23], "label": "Bottom right (unrealtime, Hidden Power)" },
+      { "at": [16, 19], "label": "Middle right (Pure Incense)" },
+      { "at": [16, 15], "label": "Top right (Dudebro, Ashen Beach readout)" },
+      { "at": [11, 10], "label": "Area at the top" }
+    ]
+  },
+  {
+    "id": "beach-boat",
+    "match": "Make your way towards the Coral Ward and enter the locked warehouse",
+    "map": 15,
+    "title": "Apophyll Beach: arrival",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [30, 13], "label": "Boat from the Coral Ward warehouse" }
+    ]
+  },
+  {
+    "id": "pyrous-entrance-beach",
+    "match": "You'll see the entrance to Pyrous Mountain here",
+    "map": 21,
+    "title": "Western beach: Pyrous Mountain entrance",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [13, 15], "label": "Pyrous Mountain entrance (not yet)" }
+    ]
+  },
+  {
+    "id": "cave-entrance-beach",
+    "match": "The Apophyll Cave is up from here",
+    "map": 20,
+    "title": "Western beach: Apophyll Cave",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [10, 11], "label": "Apophyll Cave entrance" }
+    ]
+  },
+  {
+    "id": "academy-tv",
+    "match": "Back down from here, attempt to steal the TV.",
+    "map": 22,
+    "title": "Academy: the community TV",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [10, 2], "label": "Community TV (steal it)" }
+    ]
+  },
+  {
+    "id": "academy-tv-girl",
+    "match": "Once you win, return to the girl who requested it",
+    "map": 23,
+    "title": "Academy: the girl who wants the TV",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [1, 30], "label": "Girl who requested the TV" }
     ]
   }
 ]

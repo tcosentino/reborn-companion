@@ -1,0 +1,33 @@
+[
+  {
+    "id": "cave-1f-items",
+    "match": "In item balls you can find the *Oval Charm*",
+    "map": 30,
+    "title": "Apophyll Cave 1F: items",
+    "items": [
+      { "event": 35 },
+      { "event": 34 },
+      { "event": 22 },
+      { "event": 6 },
+      { "event": 5 },
+      { "event": 29 },
+      { "event": 21, "label": "Max Revive (not in the guide)" }
+    ]
+  },
+  {
+    "id": "cave-2f-items",
+    "match": "On the second floor you can find in item balls",
+    "map": 31,
+    "title": "Apophyll Cave 2F: items",
+    "items": [
+      { "event": 6 },
+      { "event": 9 },
+      { "event": 5 },
+      { "event": 21 },
+      { "event": 13 },
+      { "event": 11 },
+      { "event": 15 },
+      { "event": 20 }
+    ]
+  }
+]

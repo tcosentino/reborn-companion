@@ -5,31 +5,11 @@
     "map": 178,
     "title": "B1F: smash through to the Mining Kit room",
     "points": [
-      {
-        "at": [
-          33,
-          28
-        ],
-        "label": "From the Grand Stairway"
-      },
-      {
-        "at": [
-          40,
-          12
-        ],
-        "label": "Smash rock"
-      },
-      {
-        "at": [
-          35,
-          5
-        ],
-        "label": "Door up (Mining Kit hiker)"
-      }
+      { "at": [33, 28], "label": "From the Grand Stairway" },
+      { "at": [40, 12], "label": "Smash rock" },
+      { "at": [35, 5], "label": "Door up (Mining Kit hiker)" }
     ],
-    "hide": [
-      6
-    ]
+    "hide": [6]
   },
   {
     "id": "stairway-solrock-ladder",
@@ -37,32 +17,11 @@
     "map": 178,
     "title": "B1F: left to the ladder behind the rock",
     "points": [
-      {
-        "at": [
-          35,
-          6
-        ],
-        "label": "Mining Kit room door"
-      },
-      {
-        "at": [
-          20,
-          21
-        ],
-        "label": "Smash rock"
-      },
-      {
-        "at": [
-          20,
-          19
-        ],
-        "label": "Ladder down"
-      }
+      { "at": [35, 6], "label": "Mining Kit room door" },
+      { "at": [20, 21], "label": "Smash rock" },
+      { "at": [20, 19], "label": "Ladder down" }
     ],
-    "hide": [
-      6,
-      11
-    ]
+    "hide": [6, 11]
   },
   {
     "id": "slums-to-railnet",
@@ -70,38 +29,96 @@
     "map": 88,
     "title": "B1F: right-side room down to the Railnet",
     "points": [
-      {
-        "at": [
-          48,
-          11
-        ],
-        "label": "Top right escalator"
-      },
-      {
-        "at": [
-          58,
-          16
-        ],
-        "label": "Room on the right"
-      },
-      {
-        "at": [
-          86,
-          24
-        ],
-        "label": "Smash rocks"
-      },
-      {
-        "at": [
-          86,
-          22
-        ],
-        "label": "To the Underground Railnet"
-      }
+      { "at": [48, 11], "label": "Top right escalator" },
+      { "at": [58, 16], "label": "Room on the right" },
+      { "at": [86, 24], "label": "Smash rocks" },
+      { "at": [86, 22], "label": "To the Underground Railnet" }
     ],
-    "hide": [
-      31,
-      32
+    "hide": [31, 32]
+  },
+  {
+    "id": "onyx-school-hallway-places",
+    "match": "Head over to the Onyx Ward next.",
+    "map": 121,
+    "title": "Onyx Trainers' School 2F hallway",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [23, 4], "label": "Door to the Mr. Mimecraft room" },
+      { "at": [11, 8], "label": "Guy staring at the wall (talk from the right)" },
+      { "at": [8, 7], "label": "Left door (tutors, opens after talking to him)" }
+    ]
+  },
+  {
+    "id": "onyx-mimecraft-room",
+    "match": "Head over to the Onyx Ward next.",
+    "map": 122,
+    "title": "Mr. Mimecraft room",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [2, 10], "label": "Door from the hallway" },
+      { "at": [0, 9], "label": "Mr. Mimecraft player" },
+      { "at": [0, 8], "label": "PC (use Data Chip for Porygon)" }
+    ]
+  },
+  {
+    "id": "onyx-tutor-password",
+    "match": "Head over to the Onyx Ward next.",
+    "map": 123,
+    "title": "Tutor rooms: stopitems password",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [31, 13], "label": "Left door from the hallway" },
+      { "at": [35, 35], "label": "Student with the stopitems password" }
+    ]
+  },
+  {
+    "id": "lapis-center-passwords",
+    "match": "In Lapis Ward a lady in the Pokemon Center",
+    "map": 80,
+    "title": "Lapis Ward: Pokemon Center",
+    "spots": true,
+    "pad": 7,
+    "points": [
+      { "at": [19, 55], "label": "Lapis Pokemon Center (leveloffset, percentlevel lady)" }
+    ]
+  },
+  {
+    "id": "obsidia-sweet-shop",
+    "match": "Next, head to Obsidia Ward. The Sweet Shop has new inventory.",
+    "map": 36,
+    "title": "Obsidia Ward: Sweet Shop and Pokemon Center",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [43, 36], "label": "Sweet Kiss Candy Shop" },
+      { "at": [36, 24], "label": "Obsidia Pokemon Center" }
+    ]
+  },
+  {
+    "id": "obsidia-center-sticker",
+    "match": "Head all the way back through the railnet and the slums",
+    "map": 36,
+    "title": "Obsidia Ward: Pokemon Center",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [36, 24], "label": "Obsidia Pokemon Center (Aron sticker)" }
+    ]
+  },
+  {
+    "id": "beryl-b1f-places",
+    "match": "On B1F, you'll find a hidden *Green Shard*",
+    "map": 185,
+    "title": "Beryl Cave B1F: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [28, 21], "label": "Nidorina (needs Silver Ring)" },
+      { "at": [19, 23], "label": "Rock Incense" },
+      { "at": [9, 23], "label": "Ladder down to B2F" }
     ]
   }
 ]

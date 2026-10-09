@@ -1,0 +1,15 @@
+[
+  {
+    "id": "cave-1f-places",
+    "match": "We will eventually be able to trade Stunfisk later on",
+    "map": 30,
+    "title": "Apophyll Cave 1F: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [40, 55], "label": "Entrance from the beach" },
+      { "at": [39, 23], "label": "Ledian-for-Shieldon trade (top right)" },
+      { "at": [16, 14], "label": "Stairs to 2F" }
+    ]
+  }
+]

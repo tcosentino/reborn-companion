@@ -1,0 +1,14 @@
+[
+  {
+    "id": "yureyu-side-rooms",
+    "match": "That wraps up all the sidequests for now",
+    "map": 198,
+    "title": "Yureyu Power Plant: side rooms",
+    "spots": true,
+    "pad": 2,
+    "points": [
+      { "at": [17, 6], "label": "Left side room (monitor scenes)" },
+      { "at": [31, 6], "label": "Right side room (monitor scenes)" }
+    ]
+  }
+]

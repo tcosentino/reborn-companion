@@ -1,0 +1,28 @@
+[
+  {
+    "id": "azurine-places",
+    "match": "With that, we can start to explore this island.",
+    "map": 206,
+    "title": "Azurine Island: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [25, 8], "label": "Arrival from the yacht" },
+      { "at": [53, 48], "label": "Light Shard pedestal" },
+      { "at": [39, 50], "label": "Aster and Eclipse battle" },
+      { "at": [40, 64], "label": "Observation Facility door (the building)" }
+    ]
+  },
+  {
+    "id": "azurine-building-inside",
+    "match": "Pick up the *PULSE Readout 6*",
+    "map": 207,
+    "title": "Observation Facility",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [9, 12], "label": "Entrance" },
+      { "at": [14, 8], "label": "PULSE Readout 6" }
+    ]
+  }
+]

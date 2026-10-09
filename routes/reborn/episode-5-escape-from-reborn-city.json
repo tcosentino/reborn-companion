@@ -1,0 +1,14 @@
+[
+  {
+    "id": "gym-to-orphanage",
+    "match": "With that, Cain and Shelly will head over to the Orphanage.",
+    "map": 80,
+    "title": "Lapis Ward: Gym and Orphanage",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [41, 12], "label": "Lapis Gym door (rival battle outside)" },
+      { "at": [30, 53], "label": "Orphanage door" }
+    ]
+  }
+]

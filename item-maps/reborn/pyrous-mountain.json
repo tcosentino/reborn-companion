@@ -1,0 +1,40 @@
+[
+  {
+    "id": "pyrous-b2f-red-shard",
+    "match": "Grab a hidden *Red Shard* and drain the lava.",
+    "map": 200,
+    "title": "Pyrous B2F: Red Shard",
+    "items": [
+      { "event": 10 }
+    ]
+  },
+  {
+    "id": "pyrous-b2f-lower",
+    "match": "Back on B1F, you'll see that the lava has drained",
+    "map": 200,
+    "title": "Pyrous B2F: Charcoal, Fire Stone, Flame Orb",
+    "items": [
+      { "event": 1 },
+      { "event": 11 },
+      { "event": 14 }
+    ]
+  },
+  {
+    "id": "pyrous-4f-x-defend",
+    "match": "Make your way back to 3F, then go across the empty pool.",
+    "map": 205,
+    "title": "Pyrous 4F: X Defend",
+    "items": [
+      { "event": 9 }
+    ]
+  },
+  {
+    "id": "pyrous-peak-candy",
+    "match": "Make your way back to 3F, then go across the empty pool.",
+    "map": 27,
+    "title": "Pyrous peak: Exp. Candy L",
+    "items": [
+      { "event": 26 }
+    ]
+  }
+]

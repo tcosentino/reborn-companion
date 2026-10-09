@@ -1,0 +1,54 @@
+[
+  {
+    "id": "orphanage-data-chip",
+    "match": "Pick up a *Data Chip* down here.",
+    "map": 190,
+    "title": "Orphanage hallway: Data Chip",
+    "items": [
+      { "event": 10 }
+    ]
+  },
+  {
+    "id": "orphanage-cage-items",
+    "match": "Open the patient cages.",
+    "map": 194,
+    "title": "Patient cages: Great Ball and Paralyze Heal",
+    "items": [
+      { "event": 13 },
+      { "event": 9 }
+    ]
+  },
+  {
+    "id": "orphanage-charlotte-items",
+    "match": "Defeat some orderlies, then at the bottom grab",
+    "map": 192,
+    "title": "Charlotte's room: Odd Incense and Archive Key",
+    "items": [
+      { "event": 25 },
+      { "event": 30 }
+    ]
+  },
+  {
+    "id": "orphanage-archive",
+    "match": "Back in the left hallway, use the *Archive Key*",
+    "map": 191,
+    "title": "Archive: Exp. Candy L",
+    "items": [
+      { "event": 16 }
+    ]
+  },
+  {
+    "id": "railnet-return-items",
+    "match": "You can also find a hidden *Pecha Berry*",
+    "map": 196,
+    "title": "Underground Railnet: hidden items",
+    "items": [
+      { "event": 48 },
+      { "event": 50 },
+      { "event": 49 },
+      { "event": 52 },
+      { "event": 51 },
+      { "event": 47, "label": "Dull Key" }
+    ]
+  }
+]

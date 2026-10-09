@@ -1,0 +1,60 @@
+[
+  {
+    "id": "factory-3f-antidote",
+    "match": "Seems like our partner is actually the 16th gym leader.",
+    "map": 8,
+    "title": "Factory 3F: Antidote",
+    "items": [
+      { "event": 10 }
+    ]
+  },
+  {
+    "id": "factory-b1f-dire-hit",
+    "match": "Pick up a hidden *Dire Hit* on this floor",
+    "map": 11,
+    "title": "Factory B1F: Dire Hit",
+    "items": [
+      { "event": 24 }
+    ]
+  },
+  {
+    "id": "factory-b2f-items",
+    "match": "Pick up a hidden *Dire Hit* on this floor",
+    "map": 12,
+    "title": "Factory B2F: left room items",
+    "items": [
+      { "event": 32 },
+      { "event": 5 },
+      { "event": 4 }
+    ]
+  },
+  {
+    "id": "factory-1f-super-potion",
+    "match": "Grab the *Super Potion*.",
+    "map": 10,
+    "title": "Factory 1F: Super Potion",
+    "items": [
+      { "event": 9 }
+    ]
+  },
+  {
+    "id": "factory-1f-hidden",
+    "match": "Beat the grunts and activate the wall panel",
+    "map": 10,
+    "title": "Factory 1F: hidden items",
+    "items": [
+      { "event": 28 },
+      { "event": 29 }
+    ]
+  },
+  {
+    "id": "factory-2f-items",
+    "match": "Grab the hidden *Revive* to the left",
+    "map": 9,
+    "title": "Factory 2F: Revive and Thunderstone",
+    "items": [
+      { "event": 30 },
+      { "event": 37 }
+    ]
+  }
+]
