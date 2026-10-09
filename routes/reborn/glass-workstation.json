@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ground-floor-start",
+    "match": "Once you wake up, climb up the ladder, and go left into the opening.",
+    "map": 732,
+    "title": "Glass Workstation: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [66, 18], "label": "Shaft exit (from the elevator)" },
+      { "at": [72, 19], "label": "Glaceon" },
+      { "at": [70, 23], "label": "Healing machine and PC room" }
+    ]
+  },
+  {
+    "id": "first-glass-window",
+    "match": "Talk to Glaceon again to see another of its abilities",
+    "map": 732,
+    "title": "Meteor Grunt and the first glass window",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [67, 24], "label": "Meteor Grunt at the top (runs away)" },
+      { "at": [58, 27], "label": "Glass window to smash (down and left)" }
+    ]
+  },
+  {
+    "id": "west-rooms",
+    "match": "Exit this room and make your way left.",
+    "map": 732,
+    "title": "West side: small room and second window",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [11, 24], "label": "Small room at the top left (grunt locks you out)" },
+      { "at": [22, 27], "label": "Nearby glass to break (Espeon's cage room)" }
+    ]
+  },
+  {
+    "id": "third-glass-window",
+    "match": "Exit this room at the bottom.",
+    "map": 732,
+    "title": "Another glass window to the right",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [29, 27], "label": "Glass window to the right (Timid Mint room)" }
+    ]
+  },
+  {
+    "id": "hardy-elevator",
+    "match": "Take the elevator back to the bottom floor.",
+    "map": 733,
+    "title": "The elevator where Hardy is sleeping",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [26, 41], "label": "Elevator where Hardy is sleeping" }
+    ]
+  },
+  {
+    "id": "b1f-places",
+    "match": "From here, follow the path to the left, bridging gaps with ice.",
+    "map": 736,
+    "title": "Glass Workstation B1F: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [12, 53], "label": "Room with the grunt (Exp. Candy XL, EV Tuner)" },
+      { "at": [11, 38], "label": "Room with glass (come back later)" },
+      { "at": [13, 18], "label": "Aster (Ruby Ring fight)" },
+      { "at": [14, 13], "label": "Sleeping pods (Noel, Anna, Eclipse)" },
+      { "at": [13, 8], "label": "Meteor Card" }
+    ]
+  },
+  {
+    "id": "pulse-readout-and-elevator",
+    "match": "Defeat the grunt to pick up 3 *Exp. Candy XL* and an *EV Tuner*.",
+    "map": 732,
+    "title": "Elevator and PULSE Readout 8",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [38, 9], "label": "Elevator" },
+      { "at": [43, 19], "label": "PULSE Readout 8" }
+    ]
+  },
+  {
+    "id": "atrium-door",
+    "match": "Undo the moves we did to reach the top right corner.",
+    "map": 732,
+    "title": "The door at the top",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [40, 9], "label": "Atrium door (Meteor Card scanner)" }
+    ]
+  },
+  {
+    "id": "gauntlet-exit",
+    "match": "Once you win this battle, you'll find yourself in an area simply called",
+    "map": 734,
+    "title": "Glass Gauntlet room",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [22, 12], "label": "Door to the area called ???" }
+    ]
+  }
+]

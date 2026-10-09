@@ -1,0 +1,14 @@
+[
+  {
+    "id": "kanaya-grand-hall",
+    "match": "Did you notice? After obtaining Froakie",
+    "map": 764,
+    "title": "Grand Hall: Kanaya",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [26, 124], "label": "Kamaya (Kanaya in game; takes the eggs)" },
+      { "at": [27, 125], "label": "Notebook (egg list)" }
+    ]
+  }
+]

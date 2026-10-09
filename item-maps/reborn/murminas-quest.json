@@ -1,0 +1,11 @@
+[
+  {
+    "id": "charizardite-x",
+    "match": "Follow the path from here and grab the *Charizardite X*",
+    "map": 766,
+    "title": "Charizardite X",
+    "items": [
+      { "event": 2 }
+    ]
+  }
+]

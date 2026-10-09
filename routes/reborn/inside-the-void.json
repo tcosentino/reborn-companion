@@ -1,0 +1,14 @@
+[
+  {
+    "id": "luna-taka-hypno",
+    "match": "After seeing Luna and Taka on the left side, a voice will talk to you.",
+    "map": 758,
+    "title": "Luna and Taka, then the fight",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [23, 157], "label": "Luna and Taka (left side)" },
+      { "at": [28, 99], "label": "Hypno (the voice's fight ahead)" }
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "hiker-purple-shard",
+    "match": "Back in Agate City, starting at the Pokemon Center, head straight to the left",
+    "map": 763,
+    "title": "Hidden Purple Shard",
+    "items": [
+      { "event": 158 }
+    ]
+  },
+  {
+    "id": "everstone",
+    "match": "Head up from here. Near the gym, you'll find a hidden *Everstone*.",
+    "map": 763,
+    "title": "Hidden Everstone near the gym",
+    "items": [
+      { "event": 160 }
+    ]
+  },
+  {
+    "id": "ability-capsule",
+    "match": "Head up from here. Near the gym, you'll find a hidden *Everstone*.",
+    "map": 763,
+    "title": "Hidden Ability Capsule on the waterfalls",
+    "items": [
+      { "event": 159 }
+    ]
+  }
+]

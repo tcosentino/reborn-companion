@@ -1,0 +1,46 @@
+[
+  {
+    "id": "waterfall-stardust-quick-ball",
+    "match": "Climb the first waterfall and grab the hidden *Stardust*.",
+    "map": 763,
+    "title": "Waterfalls: Stardust and Quick Ball",
+    "items": [
+      { "event": 156 },
+      { "event": 157 }
+    ]
+  },
+  {
+    "id": "underwater-items",
+    "match": "You can find a hidden *Silk Scarf*, 2 *Potions*",
+    "map": 741,
+    "title": "Underwater items",
+    "items": [
+      { "event": 6 },
+      { "event": 8 },
+      { "event": 9 },
+      { "event": 13 },
+      { "event": 7 },
+      { "event": 12 },
+      { "event": 10 }
+    ]
+  },
+  {
+    "id": "pinsirite",
+    "match": "You can find a hidden *Silk Scarf*, 2 *Potions*",
+    "map": 763,
+    "title": "Pinsirite (right side waterfalls)",
+    "items": [
+      { "event": 135 }
+    ]
+  },
+  {
+    "id": "lin-room-items",
+    "match": "In the next room, Lin will flex on us.",
+    "map": 741,
+    "title": "Super Potion and Lucky Egg",
+    "items": [
+      { "event": 11 },
+      { "event": 5 }
+    ]
+  }
+]

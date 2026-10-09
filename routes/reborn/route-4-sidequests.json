@@ -1,0 +1,38 @@
+[
+  {
+    "id": "north-of-agate",
+    "match": "By climbing the top waterfall, you'll emerge in a new area of Route 4.",
+    "map": 742,
+    "title": "Route 4 north of Agate",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [20, 23], "label": "Arrival (waterfall from Agate City)" },
+      { "at": [14, 10], "label": "Waterfall at the top (back to the earlier map)" }
+    ]
+  },
+  {
+    "id": "hiker-lake",
+    "match": "From here, make your way to the other map with the lake",
+    "map": 713,
+    "title": "The Hiker at the higher lake",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [30, 32], "label": "Hiker (southwest corner of the higher lake)" }
+    ]
+  },
+  {
+    "id": "snax-pokemon",
+    "match": "Once you've done these things, give snax to the Pokemon.",
+    "map": 713,
+    "title": "Altaria, Golem and the new rock path",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [28, 28], "label": "Altaria (give snax first)" },
+      { "at": [28, 30], "label": "Golem (give snax second)" },
+      { "at": [25, 32], "label": "New rock path down" }
+    ]
+  }
+]

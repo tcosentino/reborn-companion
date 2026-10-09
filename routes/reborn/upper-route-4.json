@@ -10,5 +10,64 @@
       { "at": [20, 16], "direct": true },
       { "at": [20, 12], "label": "Full Restore", "direct": true }
     ]
+  },
+  {
+    "id": "hardy-open-area",
+    "match": "That's it for Route 4 exploration and goodies, so talk to Hardy",
+    "map": 715,
+    "title": "Hardy in the big open area",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [26, 20], "label": "Hardy (big open area, left side)" },
+      { "at": [39, 15], "label": "The building (Glass Workstation entrance)" }
+    ]
+  },
+  {
+    "id": "hardy-building",
+    "match": "Enter the building, and look around with Hardy.",
+    "map": 715,
+    "title": "The building and Hardy",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [39, 15], "label": "Building entrance" },
+      { "at": [26, 20], "label": "Hardy (metal plate nearby)" }
+    ]
+  },
+  {
+    "id": "absol-ladder",
+    "match": "Up and to the right, you'll see a now-accessible ladder, and Absol.",
+    "map": 715,
+    "title": "Ladder and Absol",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [40, 10], "label": "Absol (ladder just beside it)" },
+      { "at": [39, 15], "label": "Building you just left" }
+    ]
+  },
+  {
+    "id": "shed-door",
+    "match": "Once you succeed, climb the mountain.",
+    "map": 717,
+    "title": "The shed",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [12, 13], "label": "Hidden Stardust" },
+      { "at": [14, 12], "label": "Shed door" }
+    ]
+  },
+  {
+    "id": "bagon-spot",
+    "match": "Grab the hidden *Purple Shard* and *Nugget*.",
+    "map": 720,
+    "title": "Bagon",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [25, 10], "label": "Bagon" }
+    ]
   }
 ]

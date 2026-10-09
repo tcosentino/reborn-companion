@@ -1,0 +1,41 @@
+[
+  {
+    "id": "calcenon-places",
+    "match": "Back in Calcenon City, talk to Shelly towards the right side of the map.",
+    "map": 413,
+    "title": "Calcenon City: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [61, 33], "label": "Shelly (right side of the map)" },
+      { "at": [43, 31], "label": "Eve (near the Pokemon Center)" },
+      { "at": [45, 28], "label": "Pokemon Center" }
+    ]
+  },
+  {
+    "id": "agate-raid-entrance",
+    "match": "Defeat the grunts as you progress upwards.",
+    "map": 763,
+    "title": "Agate City raid: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [36, 85], "label": "Entrance from the south (Vanhanen Labyrinth)" },
+      { "at": [46, 70], "label": "Pokemon Center" },
+      { "at": [42, 22], "label": "Agate Gym (Hardy's offer)" }
+    ]
+  },
+  {
+    "id": "shelly-east-of-center",
+    "match": "In the next room, Lin will flex on us.",
+    "map": 763,
+    "title": "East of the Pokemon Center: Shelly",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [46, 70], "label": "Pokemon Center" },
+      { "at": [61, 64], "label": "Shelly (east of the Pokemon Center)" },
+      { "at": [42, 22], "label": "Agate Gym (Hardy's challenge)" }
+    ]
+  }
+]

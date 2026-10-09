@@ -5,18 +5,10 @@
     "map": 710,
     "title": "First Route 4 map",
     "items": [
-      {
-        "event": 62
-      },
-      {
-        "event": 61
-      },
-      {
-        "event": 64
-      },
-      {
-        "event": 60
-      }
+      { "event": 62 },
+      { "event": 61 },
+      { "event": 64 },
+      { "event": 60 }
     ]
   },
   {
@@ -25,12 +17,8 @@
     "map": 711,
     "title": "Second map: up the left rock climb",
     "items": [
-      {
-        "event": 83
-      },
-      {
-        "event": 84
-      }
+      { "event": 83 },
+      { "event": 84 }
     ]
   },
   {
@@ -39,15 +27,9 @@
     "map": 711,
     "title": "Upper level of the second map",
     "items": [
-      {
-        "event": 85
-      },
-      {
-        "event": 86
-      },
-      {
-        "event": 87
-      }
+      { "event": 85 },
+      { "event": 86 },
+      { "event": 87 }
     ]
   },
   {
@@ -56,15 +38,9 @@
     "map": 710,
     "title": "Back on the first map",
     "items": [
-      {
-        "event": 63
-      },
-      {
-        "event": 59
-      },
-      {
-        "event": 65
-      }
+      { "event": 63 },
+      { "event": 59 },
+      { "event": 65 }
     ]
   },
   {
@@ -73,9 +49,7 @@
     "map": 712,
     "title": "Mountain map",
     "items": [
-      {
-        "event": 19
-      }
+      { "event": 19 }
     ]
   },
   {
@@ -84,9 +58,7 @@
     "map": 725,
     "title": "Snowy hilltop",
     "items": [
-      {
-        "event": 16
-      }
+      { "event": 16 }
     ]
   },
   {
@@ -95,27 +67,13 @@
     "map": 713,
     "title": "Lake map",
     "items": [
-      {
-        "event": 119
-      },
-      {
-        "event": 116
-      },
-      {
-        "event": 115
-      },
-      {
-        "event": 104
-      },
-      {
-        "event": 120
-      },
-      {
-        "event": 117
-      },
-      {
-        "event": 118
-      }
+      { "event": 119 },
+      { "event": 116 },
+      { "event": 115 },
+      { "event": 104 },
+      { "event": 120 },
+      { "event": 117 },
+      { "event": 118 }
     ]
   },
   {
@@ -124,12 +82,8 @@
     "map": 717,
     "title": "Rock climb above the lake",
     "items": [
-      {
-        "event": 29
-      },
-      {
-        "event": 28
-      }
+      { "event": 29 },
+      { "event": 28 }
     ]
   },
   {
@@ -138,9 +92,7 @@
     "map": 718,
     "title": "Above the waterfall",
     "items": [
-      {
-        "event": 5
-      }
+      { "event": 5 }
     ]
   },
   {
@@ -149,9 +101,7 @@
     "map": 717,
     "title": "Higher part of the map by the shed",
     "items": [
-      {
-        "event": 30
-      }
+      { "event": 30 }
     ]
   },
   {
@@ -160,9 +110,7 @@
     "map": 719,
     "title": "Top right rock climb",
     "items": [
-      {
-        "event": 24
-      }
+      { "event": 24 }
     ]
   },
   {
@@ -171,12 +119,8 @@
     "map": 750,
     "title": "Charous Mountain B2F: the pond",
     "items": [
-      {
-        "event": 3
-      },
-      {
-        "event": 4
-      }
+      { "event": 3 },
+      { "event": 4 }
     ]
   },
   {
@@ -185,12 +129,8 @@
     "map": 750,
     "title": "Charous Mountain B2F: the ring",
     "items": [
-      {
-        "event": 5
-      },
-      {
-        "event": 6
-      }
+      { "event": 5 },
+      { "event": 6 }
     ]
   },
   {
@@ -199,12 +139,8 @@
     "map": 720,
     "title": "Outside Charous Mountain",
     "items": [
-      {
-        "event": 4
-      },
-      {
-        "event": 5
-      }
+      { "event": 4 },
+      { "event": 5 }
     ]
   },
   {
@@ -213,9 +149,7 @@
     "map": 728,
     "title": "Snowy corner",
     "items": [
-      {
-        "event": 15
-      }
+      { "event": 15 }
     ]
   },
   {
@@ -224,15 +158,9 @@
     "map": 714,
     "title": "Down the left rocks",
     "items": [
-      {
-        "event": 49
-      },
-      {
-        "event": 48
-      },
-      {
-        "event": 47
-      }
+      { "event": 49 },
+      { "event": 48 },
+      { "event": 47 }
     ]
   },
   {
@@ -241,9 +169,7 @@
     "map": 722,
     "title": "Rock wall map",
     "items": [
-      {
-        "event": 13
-      }
+      { "event": 13 }
     ]
   },
   {
@@ -252,12 +178,8 @@
     "map": 723,
     "title": "Snowy climb path",
     "items": [
-      {
-        "event": 15
-      },
-      {
-        "event": 18
-      }
+      { "event": 15 },
+      { "event": 18 }
     ]
   },
   {
@@ -266,24 +188,12 @@
     "map": 715,
     "title": "Large lake map",
     "items": [
-      {
-        "event": 65
-      },
-      {
-        "event": 66
-      },
-      {
-        "event": 68
-      },
-      {
-        "event": 67
-      },
-      {
-        "event": 61
-      },
-      {
-        "event": 64
-      }
+      { "event": 65 },
+      { "event": 66 },
+      { "event": 68 },
+      { "event": 67 },
+      { "event": 61 },
+      { "event": 64 }
     ]
   },
   {
@@ -292,9 +202,16 @@
     "map": 710,
     "title": "Upper left of the first map",
     "items": [
-      {
-        "event": 58
-      }
+      { "event": 58 }
+    ]
+  },
+  {
+    "id": "shed-tm73",
+    "match": "Pick up *TM73 Thunder Wave*.",
+    "map": 748,
+    "title": "Mechanic Shed",
+    "items": [
+      { "event": 5 }
     ]
   }
 ]

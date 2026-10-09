@@ -1,0 +1,25 @@
+[
+  {
+    "id": "north-of-agate-items",
+    "match": "Grab the *Ground Memory* as well as the hidden *Health Wing*",
+    "map": 742,
+    "title": "Items north of Agate",
+    "items": [
+      { "event": 9 },
+      { "event": 11 },
+      { "event": 10 }
+    ]
+  },
+  {
+    "id": "central-creek-items",
+    "match": "Grab the *Sceptilite* and *Big Nugget*.",
+    "map": 716,
+    "title": "Central Creek",
+    "items": [
+      { "event": 23 },
+      { "event": 19 },
+      { "event": 20 },
+      { "event": 21 }
+    ]
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "id": "timid-mint-room",
+    "match": "Defeat the grunt and pick up the *Timid Mint*",
+    "map": 737,
+    "title": "Timid Mint room",
+    "items": [
+      { "event": 68 },
+      { "event": 67 },
+      { "event": 22 }
+    ]
+  },
+  {
+    "id": "cage-key",
+    "match": "Grab the *Cage Key*.",
+    "map": 738,
+    "title": "Cage Key room",
+    "items": [
+      { "event": 10 }
+    ]
+  },
+  {
+    "id": "sablenite",
+    "match": "Back outside, move the right glass pallet down",
+    "map": 732,
+    "title": "Sablenite",
+    "items": [
+      { "event": 94 }
+    ]
+  },
+  {
+    "id": "ev-boosters",
+    "match": "Grab the 2 *EV Boosters*",
+    "map": 738,
+    "title": "EV Boosters",
+    "items": [
+      { "event": 68 }
+    ]
+  },
+  {
+    "id": "tm29-room",
+    "match": "Enter the bottom left room where we found the key.",
+    "map": 738,
+    "title": "TM29 Psychic room",
+    "items": [
+      { "event": 11 }
+    ]
+  },
+  {
+    "id": "gyaradosite",
+    "match": "Enter the bottom left room where we found the key.",
+    "map": 732,
+    "title": "Gyaradosite",
+    "items": [
+      { "event": 178 }
+    ]
+  },
+  {
+    "id": "b1f-grunt-room",
+    "match": "Defeat the grunt to pick up 3 *Exp. Candy XL* and an *EV Tuner*.",
+    "map": 736,
+    "title": "B1F grunt room",
+    "items": [
+      { "event": 73 },
+      { "event": 74 }
+    ]
+  },
+  {
+    "id": "b1f-meteor-card",
+    "match": "If you refused to give Blake the Ruby Ring, grab the *Meteor Card*",
+    "map": 736,
+    "title": "Meteor Card room",
+    "items": [
+      { "event": 32 },
+      { "event": 75 }
+    ]
+  },
+  {
+    "id": "reborn-ball",
+    "match": "Next, switch back to Espeon.",
+    "map": 736,
+    "title": "Reborn Ball (glass room)",
+    "items": [
+      { "event": 31 }
+    ]
+  },
+  {
+    "id": "top-left-candy",
+    "match": "Return to B2F, and switch to Glaceon.",
+    "map": 732,
+    "title": "Exp. Candy XL (top left lava)",
+    "items": [
+      { "event": 95 }
+    ]
+  }
+]

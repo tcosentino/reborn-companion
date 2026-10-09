@@ -8,5 +8,74 @@
       { "at": [46, 70], "label": "Pokemon Center" },
       { "at": [34, 42], "label": "Building below the gym" }
     ]
+  },
+  {
+    "id": "calcenon-south-exit",
+    "match": "Fly over to Calcenon City next.",
+    "map": 413,
+    "title": "Calcenon City: south exit to Route 3",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [27, 41], "label": "South exit (steps down to Route 3)" }
+    ]
+  },
+  {
+    "id": "route-3-cave",
+    "match": "Fly over to Calcenon City next.",
+    "map": 361,
+    "title": "Route 3: the little cave",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [24, 7], "label": "Arrival from Calcenon" },
+      { "at": [38, 6], "label": "Little cave to the east (Murmina's trainer)" }
+    ]
+  },
+  {
+    "id": "agate-basement-child",
+    "match": "Fly over to Agate City, and enter the building below the gym.",
+    "map": 753,
+    "title": "Inside the building: child and basement",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [34, 7], "label": "Child bottom right (lets you into the basement)" },
+      { "at": [35, 2], "label": "Elevator to the basement floor" }
+    ]
+  },
+  {
+    "id": "agate-basement-room",
+    "match": "Fly over to Agate City, and enter the building below the gym.",
+    "map": 767,
+    "title": "Basement: remember the tiles",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [9, 7], "label": "Strange room with the tile layout" }
+    ]
+  },
+  {
+    "id": "calcenon-gym-and-secret",
+    "match": "Enter Charlotte's gym, and make your way to the back.",
+    "map": 413,
+    "title": "Calcenon: the gym and the secret place",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [33, 10], "label": "Charlotte's gym" },
+      { "at": [69, 69], "label": "Secret place (Murmina, Charizardite X)" }
+    ]
+  },
+  {
+    "id": "murmina-secret-room",
+    "match": "Follow the path from here and grab the *Charizardite X*",
+    "map": 766,
+    "title": "Murmina's hiding place",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [13, 4], "label": "Murmina (give her the Family Picture)" }
+    ]
   }
 ]

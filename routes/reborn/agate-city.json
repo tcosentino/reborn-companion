@@ -5,27 +5,9 @@
     "map": 763,
     "title": "Pokemon Center to the Hiker and the trade building",
     "points": [
-      {
-        "at": [
-          46,
-          70
-        ],
-        "label": "Pokemon Center"
-      },
-      {
-        "at": [
-          23,
-          71
-        ],
-        "label": "Hiker's house"
-      },
-      {
-        "at": [
-          16,
-          47
-        ],
-        "label": "Top building (Litten trade)"
-      }
+      { "at": [46, 70], "label": "Pokemon Center" },
+      { "at": [23, 71], "label": "Hiker's house" },
+      { "at": [16, 47], "label": "Top building (Litten trade)" }
     ]
   },
   {
@@ -34,27 +16,9 @@
     "map": 763,
     "title": "Past Bee's house to the apartment complex",
     "points": [
-      {
-        "at": [
-          51,
-          72
-        ],
-        "label": "Quest lady's house"
-      },
-      {
-        "at": [
-          68,
-          58
-        ],
-        "label": "Bee's house (later)"
-      },
-      {
-        "at": [
-          67,
-          43
-        ],
-        "label": "Apartment complex (Oshawott trade)"
-      }
+      { "at": [51, 72], "label": "Quest lady's house" },
+      { "at": [68, 58], "label": "Bee's house (later)" },
+      { "at": [67, 43], "label": "Apartment complex (Oshawott trade)" }
     ]
   },
   {
@@ -63,50 +27,44 @@
     "map": 763,
     "title": "Rock climb and waterfalls in the northeast",
     "points": [
-      {
-        "at": [
-          67,
-          44
-        ],
-        "label": "Apartment complex"
-      },
-      {
-        "at": [
-          69,
-          44
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          73,
-          41
-        ],
-        "label": "Rock climb",
-        "direct": true
-      },
-      {
-        "at": [
-          73,
-          38
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          76,
-          37
-        ],
-        "direct": true
-      },
-      {
-        "at": [
-          76,
-          11
-        ],
-        "label": "Waterfalls up to Route 4",
-        "direct": true
-      }
+      { "at": [67, 44], "label": "Apartment complex" },
+      { "at": [69, 44], "via": true },
+      { "at": [73, 41], "label": "Rock climb", "direct": true },
+      { "at": [73, 38], "via": true },
+      { "at": [76, 37], "direct": true },
+      { "at": [76, 11], "label": "Waterfalls up to Route 4", "direct": true }
+    ]
+  },
+  {
+    "id": "agate-places",
+    "match": "Head to the left side of Agate City and into the Agate Circus.",
+    "map": 763,
+    "title": "Agate City: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [12, 54], "label": "Agate Circus (left side)" },
+      { "at": [46, 70], "label": "Pokemon Center" },
+      { "at": [23, 71], "label": "Hiker's house (left of the Pokemon Center)" },
+      { "at": [16, 47], "label": "Top building (Litten trade)" },
+      { "at": [51, 71], "label": "Lady's house (east of the Pokemon Center)" },
+      { "at": [68, 58], "label": "Bee's house (house up and to the right)" },
+      { "at": [67, 43], "label": "Apartment complex (Oshawott trade)" },
+      { "at": [42, 22], "label": "Agate Gym" },
+      { "at": [76, 11], "label": "Waterfalls up to Route 4" }
+    ]
+  },
+  {
+    "id": "circus-places",
+    "match": "Head to the left side of Agate City and into the Agate Circus.",
+    "map": 355,
+    "title": "Agate Circus: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [13, 34], "label": "Entrance (from Agate City)" },
+      { "at": [21, 8], "label": "Ciel (top left of the circus)" },
+      { "at": [30, 12], "label": "Big Top (Samson)" }
     ]
   }
 ]

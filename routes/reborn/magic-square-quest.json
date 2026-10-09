@@ -1,0 +1,74 @@
+[
+  {
+    "id": "north-obsidia-door",
+    "match": "Fly over to North Obsidia Ward next.",
+    "map": 527,
+    "title": "North Obsidia Ward: the open door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [70, 27], "label": "Open door (building where we fought ZEL and Magnezone)" }
+    ]
+  },
+  {
+    "id": "monitor-shafts",
+    "match": "Fly over to North Obsidia Ward next.",
+    "map": 628,
+    "title": "First room: monitor and shafts",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [28, 48], "label": "Entrance (from the ward)" },
+      { "at": [33, 46], "label": "Shafts to jump down (after the Meteor Card)" }
+    ]
+  },
+  {
+    "id": "magic-square-rooms",
+    "match": "In a room to the right, you can get an *EV Tuner*",
+    "map": 765,
+    "title": "Room to the right and the book",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [12, 50], "label": "EV Tuner" },
+      { "at": [23, 54], "label": "5 Exp. Candy XL" },
+      { "at": [25, 54], "label": "Book (lore, Sirius' real name)" }
+    ]
+  },
+  {
+    "id": "magic-square-monitor",
+    "match": "Back in the main room, time for one of the community's most dreaded puzzles.",
+    "map": 765,
+    "title": "The puzzle room",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [17, 23], "label": "Monitor at the bottom (learn of the quest)" },
+      { "at": [12, 19], "label": "Rewards drop here (Darkinium-Z, Gardevoirite, TM24)" }
+    ]
+  },
+  {
+    "id": "agate-code-building",
+    "match": "Head on back to Agate City, and enter the building to the right of the Pokemon Center.",
+    "map": 763,
+    "title": "Building right of the Pokemon Center",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [46, 70], "label": "Pokemon Center" },
+      { "at": [51, 71], "label": "Building to the right (lady wants the code)" }
+    ]
+  },
+  {
+    "id": "agate-code-lady",
+    "match": "Head on back to Agate City, and enter the building to the right of the Pokemon Center.",
+    "map": 753,
+    "title": "Inside: the lady and the next room",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [31, 34], "label": "Lady (give her 139749)" },
+      { "at": [29, 33], "label": "Door to the next room" }
+    ]
+  }
+]

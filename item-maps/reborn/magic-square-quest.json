@@ -1,0 +1,22 @@
+[
+  {
+    "id": "puzzle-rewards",
+    "match": "Anyways, once you complete the puzzle",
+    "map": 765,
+    "title": "Puzzle rewards",
+    "items": [
+      { "event": 82 },
+      { "event": 83 },
+      { "event": 76 }
+    ]
+  },
+  {
+    "id": "manectite-room",
+    "match": "In the next room, you can get the *Manectite*",
+    "map": 753,
+    "title": "Manectite room",
+    "items": [
+      { "event": 21 }
+    ]
+  }
+]
