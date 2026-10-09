@@ -5,90 +5,19 @@
     "map": 511,
     "title": "Down to the water for the N-Lunarizer",
     "points": [
-      {
-        "at": [
-          39,
-          62
-        ],
-        "label": "Entrance from Tanzan Mountain"
-      },
-      {
-        "at": [
-          36,
-          55
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          31,
-          55
-        ],
-        "direct": true
-      },
-      {
-        "at": [
-          30,
-          48
-        ],
-        "label": "Up the pier"
-      },
-      {
-        "at": [
-          43,
-          92
-        ],
-        "label": "First fork"
-      },
-      {
-        "at": [
-          59,
-          97
-        ],
-        "label": "Stairs down to the water"
-      },
-      {
-        "at": [
-          59,
-          102
-        ],
-        "direct": true
-      },
-      {
-        "at": [
-          46,
-          102
-        ],
-        "direct": true
-      },
-      {
-        "at": [
-          44,
-          100
-        ],
-        "direct": true
-      },
-      {
-        "at": [
-          43,
-          99
-        ],
-        "label": "N-Lunarizer"
-      },
-      {
-        "at": [
-          42,
-          100
-        ],
-        "label": "ZCell 67"
-      }
+      { "at": [39, 62], "label": "Entrance from Tanzan Mountain" },
+      { "at": [36, 55], "via": true },
+      { "at": [31, 55], "direct": true },
+      { "at": [30, 48], "label": "Up the pier" },
+      { "at": [43, 92], "label": "First fork" },
+      { "at": [59, 97], "label": "Stairs down to the water" },
+      { "at": [59, 102], "direct": true },
+      { "at": [46, 102], "direct": true },
+      { "at": [44, 100], "direct": true },
+      { "at": [43, 99], "label": "N-Lunarizer" },
+      { "at": [42, 100], "label": "ZCell 67" }
     ],
-    "hide": [
-      37,
-      38,
-      39,
-      40
-    ]
+    "hide": [37, 38, 39, 40]
   },
   {
     "id": "zcell-68",
@@ -96,27 +25,9 @@
     "map": 511,
     "title": "Up the path to ZCell 68",
     "points": [
-      {
-        "at": [
-          43,
-          92
-        ],
-        "label": "First fork"
-      },
-      {
-        "at": [
-          54,
-          80
-        ],
-        "label": "Passage up"
-      },
-      {
-        "at": [
-          52,
-          36
-        ],
-        "label": "ZCell 68"
-      }
+      { "at": [43, 92], "label": "First fork" },
+      { "at": [54, 80], "label": "Passage up" },
+      { "at": [52, 36], "label": "ZCell 68" }
     ]
   },
   {
@@ -125,41 +36,52 @@
     "map": 511,
     "title": "Around the left of the tower to ZCell 69",
     "points": [
-      {
-        "at": [
-          52,
-          36
-        ],
-        "label": "ZCell 68"
-      },
-      {
-        "at": [
-          20,
-          36
-        ],
-        "label": "First tall tower"
-      },
-      {
-        "at": [
-          13,
-          39
-        ],
-        "label": "Stairs down"
-      },
-      {
-        "at": [
-          11,
-          41
-        ],
-        "direct": true
-      },
-      {
-        "at": [
-          66,
-          32
-        ],
-        "label": "ZCell 69"
-      }
+      { "at": [52, 36], "label": "ZCell 68" },
+      { "at": [20, 36], "label": "First tall tower" },
+      { "at": [13, 39], "label": "Stairs down" },
+      { "at": [11, 41], "direct": true },
+      { "at": [66, 32], "label": "ZCell 69" }
+    ]
+  },
+  {
+    "id": "nightclub-ringmaster",
+    "match": "Head over to talk to the Ringmaster once more.",
+    "map": 827,
+    "title": "Nightclub: Ringmaster",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [48, 6], "label": "Ringmaster (quest)" }
+    ]
+  },
+  {
+    "id": "tower-places",
+    "match": "Head back to the first tall tower and enter.",
+    "map": 895,
+    "title": "Neoteric Isle tower: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [20, 93], "label": "Tower entrance (first tall tower)" },
+      { "at": [13, 18], "label": "ZCell 70 (odd tile on the left wall)" },
+      { "at": [31, 59], "label": "Fern" },
+      { "at": [51, 88], "label": "N-Solarizer" },
+      { "at": [67, 88], "label": "ZCell 71" },
+      { "at": [56, 20], "label": "Fern (final battle)" },
+      { "at": [57, 15], "label": "Mew" },
+      { "at": [46, 16], "label": "Mewtwo" }
+    ]
+  },
+  {
+    "id": "back-at-fork",
+    "match": "Back at the fork, go up for one heck of a battle.",
+    "map": 511,
+    "title": "Back at the fork",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [43, 92], "label": "The fork" },
+      { "at": [54, 80], "label": "Passage up" }
     ]
   }
 ]

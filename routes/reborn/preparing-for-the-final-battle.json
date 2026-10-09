@@ -1,0 +1,47 @@
+[
+  {
+    "id": "nightclub-aster",
+    "match": "Head into the Nightclub and talk to Aster.",
+    "map": 827,
+    "title": "Nightclub: Aster",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [44, 6], "label": "Aster" }
+    ]
+  },
+  {
+    "id": "beryl-door",
+    "match": "Make your way there, and talk to Noel.",
+    "map": 185,
+    "title": "Beryl Cave B1F: New World Door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [22, 18], "label": "New World Door (to Citae Prisma)" }
+    ]
+  },
+  {
+    "id": "prisma-meteor",
+    "match": "Make your way there, and talk to Noel.",
+    "map": 896,
+    "title": "Citae Prisma: the meteor",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [23, 82], "label": "Entrance" },
+      { "at": [22, 9], "label": "Meteor (talk to steal it)" }
+    ]
+  },
+  {
+    "id": "neoteric-back-room",
+    "match": "Next, slog through Tanzan Mountain",
+    "map": 895,
+    "title": "Neoteric Isle: Florinia and Fern",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [56, 20], "label": "Fern (back room)" }
+    ]
+  }
+]

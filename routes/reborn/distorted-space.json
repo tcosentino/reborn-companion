@@ -1,0 +1,81 @@
+[
+  {
+    "id": "branch-room",
+    "match": "Fly over to Byxbysion and make your way into the tunnels.",
+    "map": 219,
+    "title": "Byxbysion Grotto: the room with the branches",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [15, 8], "label": "First entrance" },
+      { "at": [19, 8], "label": "Second entrance (enter this one)" },
+      { "at": [29, 8], "label": "Third entrance" }
+    ]
+  },
+  {
+    "id": "new-world-door",
+    "match": "Once you win, enter the New World Door to reach Distorted Space.",
+    "map": 222,
+    "title": "Battle room: New World Door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [10, 8], "label": "New World Door" },
+      { "at": [9, 12], "label": "Exit back to the branch room" }
+    ]
+  },
+  {
+    "id": "first-room",
+    "match": "Defeat the Malamar here.",
+    "map": 891,
+    "title": "Distorted Space: first room",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [52, 162], "label": "Entrance (from Byxbysion Grotto)" },
+      { "at": [52, 150], "label": "First Malamar" }
+    ]
+  },
+  {
+    "id": "marshadium",
+    "match": "The second room introduces a new wrinkle",
+    "map": 891,
+    "title": "First room: portal and Marshadium-Z",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [40, 128], "label": "Portal to the second room" },
+      { "at": [22, 129], "label": "Marshadium-Z (via the left statue)" }
+    ]
+  },
+  {
+    "id": "third-room",
+    "match": "In the next room, we first will need to interact with the two orbs",
+    "map": 891,
+    "title": "Distorted Space: third room",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [44, 50], "label": "Left orb" },
+      { "at": [62, 50], "label": "Right orb" },
+      { "at": [51, 29], "label": "Lustrous Orb (center of the middle section)" },
+      { "at": [55, 29], "label": "Adamant Orb" },
+      { "at": [53, 29], "label": "ZCell 64" },
+      { "at": [46, 25], "label": "Final puzzle: left column" },
+      { "at": [60, 25], "label": "Final puzzle: right column" },
+      { "at": [53, 32], "label": "Final puzzle: center" }
+    ]
+  },
+  {
+    "id": "giratina",
+    "match": "Catch **Giratina** next.",
+    "map": 892,
+    "title": "Giratina's room",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [23, 11], "label": "Giratina" },
+      { "at": [23, 22], "label": "Exit door" }
+    ]
+  }
+]

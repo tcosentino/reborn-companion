@@ -1,0 +1,13 @@
+[
+  {
+    "id": "bee-agate",
+    "match": "Oh, and there's one more thing we can do.",
+    "map": 753,
+    "title": "Agate City: Bee",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [26, 20], "label": "Bee" }
+    ]
+  }
+]

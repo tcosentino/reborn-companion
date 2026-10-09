@@ -1,0 +1,24 @@
+[
+  {
+    "id": "bee-agate",
+    "match": "With Arceus bagged, we have all 807 Pokemon.",
+    "map": 753,
+    "title": "Agate City: Bee",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [26, 20], "label": "Bee" }
+    ]
+  },
+  {
+    "id": "arc-door",
+    "match": "Remember the Arc underneath the Grand Stairway?",
+    "map": 306,
+    "title": "Citae Astrae: sealed door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [32, 26], "label": "Sealed door (use the Ebony Stonepiece)" }
+    ]
+  }
+]

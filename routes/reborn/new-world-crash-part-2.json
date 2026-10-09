@@ -1,0 +1,36 @@
+[
+  {
+    "id": "nightclub-zero",
+    "match": "Oh yeah, surprise level cap increase to Lv. 140.",
+    "map": 827,
+    "title": "Nightclub: Zero",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [50, 10], "label": "Zero (next quest)" }
+    ]
+  },
+  {
+    "id": "citrine-door",
+    "match": "Oh yeah, surprise level cap increase to Lv. 140.",
+    "map": 383,
+    "title": "Citrine Mountain 3F: door to New World Crash",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [29, 8], "label": "Door to the New World Crash" }
+    ]
+  },
+  {
+    "id": "crash-places",
+    "match": "Talk to the woman in front of the meteor for a fight.",
+    "map": 884,
+    "title": "New World Crash: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [28, 86], "label": "Door back to Citrine Mountain" },
+      { "at": [29, 50], "label": "Woman in front of the meteor (Ciel)" }
+    ]
+  }
+]

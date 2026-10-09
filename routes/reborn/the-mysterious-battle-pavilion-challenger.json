@@ -1,0 +1,14 @@
+[
+  {
+    "id": "nightclub-pavilion",
+    "match": "Accept the Ringmaster's quest next.",
+    "map": 827,
+    "title": "Nightclub: Ringmaster and the Battle Pavilion",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [48, 6], "label": "Ringmaster (quest)" },
+      { "at": [8, 6], "label": "Battle Pavilion door (left side)" }
+    ]
+  }
+]

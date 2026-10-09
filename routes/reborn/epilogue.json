@@ -1,0 +1,13 @@
+[
+  {
+    "id": "another-time-shelly",
+    "match": "With that taken care of, you'll get to play out the section",
+    "map": 900,
+    "title": "Another Time: Shelly",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [30, 22], "label": "Shelly (return to the present)" }
+    ]
+  }
+]

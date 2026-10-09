@@ -1,0 +1,65 @@
+[
+  {
+    "id": "nightclub-marcello",
+    "match": "With all 71 Zygarde Cells collected",
+    "map": 827,
+    "title": "Nightclub: Marcello",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [39, 8], "label": "Marcello" }
+    ]
+  },
+  {
+    "id": "tourmaline-door",
+    "match": "With all 71 Zygarde Cells collected",
+    "map": 694,
+    "title": "Tourmaline Desert: New World Door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [77, 253], "label": "Train platform (Grandview Station)" },
+      { "at": [120, 243], "label": "New World Door (to the right of the platform)" }
+    ]
+  },
+  {
+    "id": "factory-places",
+    "match": "First, if you'd like to, talk to the machine",
+    "map": 846,
+    "title": "Twilight Factory: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [8, 3], "label": "Cell Imprint machine (side room)" },
+      { "at": [22, 23], "label": "Zygarde 10% machine (10 cells)" },
+      { "at": [45, 23], "label": "Terra" },
+      { "at": [44, 22], "label": "Zygarde 50% enhancement machine" },
+      { "at": [50, 10], "label": "Terra (upper room)" },
+      { "at": [51, 7], "label": "Zygarde 100% machine" },
+      { "at": [34, 7], "label": "Monitor puzzle" },
+      { "at": [69, 8], "label": "DNA Splicers" }
+    ]
+  },
+  {
+    "id": "monitor-back",
+    "match": "Before we leave, Walk to the right onto the green tile",
+    "map": 846,
+    "title": "The monitor puzzle",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [34, 7], "label": "Monitor puzzle" }
+    ]
+  },
+  {
+    "id": "dna-splicers",
+    "match": "Head back to the right to pick up the *DNA Splicers*.",
+    "map": 846,
+    "title": "DNA Splicers",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [69, 8], "label": "DNA Splicers" }
+    ]
+  }
+]

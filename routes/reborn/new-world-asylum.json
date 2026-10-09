@@ -1,0 +1,18 @@
+[
+  {
+    "id": "asylum-places",
+    "match": "This area will be different, depending if you're on Lin or Anna Route.",
+    "map": 897,
+    "title": "New World Asylum (Lin Route): places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [44, 118], "label": "Entrance (from the Rhodochrine Tree)" },
+      { "at": [36, 62], "label": "Sigmund (cell)" },
+      { "at": [18, 43], "label": "Charlotte (cell)" },
+      { "at": [44, 64], "label": "Gauntlet: first fight (Lin)" },
+      { "at": [44, 54], "label": "Gauntlet: second fight" },
+      { "at": [44, 39], "label": "Top: final fight, Lin and Arceus" }
+    ]
+  }
+]

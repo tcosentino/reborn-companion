@@ -1,0 +1,36 @@
+[
+  {
+    "id": "aegir-gauntlet",
+    "match": "Now that we have Rayquaza, we can go help out",
+    "map": 850,
+    "title": "Aegir Cave: Florinia and the gauntlet",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [42, 20], "label": "Florinia (PC access)" },
+      { "at": [53, 52], "label": "Gauntlet: Titania and Amaria's orbs" }
+    ]
+  },
+  {
+    "id": "new-world-waterfalls",
+    "match": "Head into the New World via surfing up the waterfalls",
+    "map": 860,
+    "title": "Aegir Cave Depths: door to the New World",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [124, 12], "label": "New World door (up the waterfalls)" }
+    ]
+  },
+  {
+    "id": "back-to-group",
+    "match": "Head back down into Aegir Cave to talk to the group",
+    "map": 850,
+    "title": "Aegir Cave: the group",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [42, 20], "label": "Florinia and the group" }
+    ]
+  }
+]

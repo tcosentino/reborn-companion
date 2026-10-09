@@ -1,0 +1,26 @@
+[
+  {
+    "id": "nightclub-danielle",
+    "match": "Accept Danielle's quest, then fly over",
+    "map": 827,
+    "title": "Nightclub: Danielle",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [50, 12], "label": "Danielle (quest)" }
+    ]
+  },
+  {
+    "id": "charous-statue",
+    "match": "Accept Danielle's quest, then fly over",
+    "map": 814,
+    "title": "Charous Mountain: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [42, 30], "label": "Pokemon Center (fly here)" },
+      { "at": [32, 52], "label": "Large dragon statue (Rayquaza battle)" },
+      { "at": [33, 55], "label": "Hardy" }
+    ]
+  }
+]
