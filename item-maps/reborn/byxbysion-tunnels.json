@@ -1,0 +1,68 @@
+[
+  {
+    "id": "tunnel-slides",
+    "match": "Emerge on the other side and go down the slide. Grab a hidden *Synthetic Seed*",
+    "map": 209,
+    "title": "Down the slides",
+    "items": [
+      { "event": 277 },
+      { "event": 284 }
+    ]
+  },
+  {
+    "id": "tunnel-barbs",
+    "match": "Emerge on the other side and go down the slide. Grab a hidden *Synthetic Seed*",
+    "map": 209,
+    "title": "The outside area past the cave",
+    "items": [
+      { "event": 243 },
+      { "event": 318 },
+      { "event": 57 }
+    ]
+  },
+  {
+    "id": "secret-room",
+    "match": "Interact with both canisters to move the bookshelf at the top",
+    "map": 219,
+    "title": "Secret room behind the bookshelf",
+    "items": [
+      { "event": 5 }
+    ]
+  },
+  {
+    "id": "second-room",
+    "match": "Inside the room to the left, you can use an Odd Keystone",
+    "map": 222,
+    "title": "The second room",
+    "items": [
+      { "event": 7 }
+    ]
+  },
+  {
+    "id": "behind-boss-room",
+    "match": "Behind you'll find *TM09 Venoshock* as well as",
+    "map": 221,
+    "title": "Behind the third room",
+    "items": [
+      { "event": 9 }
+    ]
+  },
+  {
+    "id": "hidden-tunnel",
+    "match": "That's it for this area, so return to the room with the two canisters.",
+    "map": 217,
+    "title": "Hidden tunnel",
+    "items": [
+      { "event": 17 }
+    ]
+  },
+  {
+    "id": "tunnel-exit",
+    "match": "Once you appear outside, go down the slide here and grab a hidden *Moon Stone*.",
+    "map": 209,
+    "title": "Outside the hidden tunnel",
+    "items": [
+      { "event": 236 }
+    ]
+  }
+]

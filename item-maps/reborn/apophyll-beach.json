@@ -93,6 +93,16 @@
     ]
   },
   {
+    "id": "western-beach-pyrous",
+    "match": "On the western beach, you can find hidden items:",
+    "map": 21,
+    "title": "Western beach: by the Pyrous Mountain entrance",
+    "items": [
+      { "event": 8 },
+      { "event": 7 }
+    ]
+  },
+  {
     "id": "academy-courtyard",
     "match": "Pick up a hidden *Guard Spec*.",
     "map": 17,

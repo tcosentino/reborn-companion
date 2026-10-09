@@ -1,0 +1,72 @@
+[
+  {
+    "id": "grand-gate-drop",
+    "match": "Once you enter, you'll see El run to the left.",
+    "map": 302,
+    "title": "Grand Gate: hidden items on the way down",
+    "items": [
+      { "event": 6 },
+      { "event": 5 }
+    ]
+  },
+  {
+    "id": "stairway-b2f-east",
+    "match": "Hey look! We made it to another chunk of the grand stairway",
+    "map": 179,
+    "title": "Grand Stairway B2F: heading right",
+    "items": [
+      { "event": 32 },
+      { "event": 33 },
+      { "event": 40 },
+      { "event": 41 },
+      { "event": 34 }
+    ]
+  },
+  {
+    "id": "stairway-shard-room",
+    "match": "Hey look! We made it to another chunk of the grand stairway",
+    "map": 303,
+    "title": "The next room: Purple Shards",
+    "items": [
+      { "event": 3 },
+      { "event": 5 },
+      { "event": 4 }
+    ]
+  },
+  {
+    "id": "stairway-exp-candy",
+    "match": "Hey look! We made it to another chunk of the grand stairway",
+    "map": 179,
+    "title": "Exiting left: Exp. Candy L",
+    "items": [
+      { "event": 49 }
+    ]
+  },
+  {
+    "id": "stardust-star-pieces-room",
+    "match": "Hey look! We made it to another chunk of the grand stairway",
+    "map": 304,
+    "title": "Below the ladder: Stardust and Star Pieces",
+    "items": [
+      { "event": 3 },
+      { "event": 4 },
+      { "event": 5 },
+      { "event": 6 }
+    ]
+  },
+  {
+    "id": "citae-astrae-hidden",
+    "match": "In this area, you can find 5 hidden *Star Pieces*, *Shoal Shell*, and *Shiny Stone*.",
+    "map": 305,
+    "title": "Citae Astrae: hidden items",
+    "items": [
+      { "event": 17 },
+      { "event": 18 },
+      { "event": 19 },
+      { "event": 20 },
+      { "event": 21 },
+      { "event": 8 },
+      { "event": 7 }
+    ]
+  }
+]

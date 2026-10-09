@@ -1,0 +1,249 @@
+[
+  {
+    "id": "entry-room",
+    "match": "On this first map, you can get a hidden *X Sp. Atk*",
+    "map": 651,
+    "title": "Entry room",
+    "items": [
+      { "event": 24 },
+      { "event": 25 },
+      { "event": 21 },
+      { "event": 23 }
+    ]
+  },
+  {
+    "id": "b1f-grove",
+    "match": "Grab the hidden *Elemental Seed* and *Big Mushroom*",
+    "map": 657,
+    "title": "B1F: grass pocket",
+    "items": [
+      { "event": 35 },
+      { "event": 34 }
+    ]
+  },
+  {
+    "id": "first-vortex-room",
+    "match": "On this map you can get a hidden *Elemental Seed*, *Red Shard*,",
+    "map": 652,
+    "title": "1F: second room",
+    "items": [
+      { "event": 32 },
+      { "event": 33 },
+      { "event": 31 },
+      { "event": 30 }
+    ]
+  },
+  {
+    "id": "b1f-max-elixir",
+    "match": "On this map you can get a hidden *Elemental Seed*, *Red Shard*,",
+    "map": 657,
+    "title": "B1F: bottom-left",
+    "items": [
+      { "event": 33 }
+    ]
+  },
+  {
+    "id": "b1f-west-berries",
+    "match": "This time, take the vortex up and slightly right from the pot",
+    "map": 657,
+    "title": "B1F: west side",
+    "items": [
+      { "event": 37 },
+      { "event": 36 },
+      { "event": 38 }
+    ]
+  },
+  {
+    "id": "draco-plate-ledge",
+    "match": "This time, take the top right vortex, then climb the ladder",
+    "map": 653,
+    "title": "Draco Plate and Super Repel",
+    "items": [
+      { "event": 45 },
+      { "event": 50 }
+    ]
+  },
+  {
+    "id": "b1f-pokesnax",
+    "match": "Jump in the top left vortex this time.",
+    "map": 657,
+    "title": "B1F: top-left room",
+    "items": [
+      { "event": 39 }
+    ]
+  },
+  {
+    "id": "vortex-trap-room",
+    "match": "In this next room, you can find a hidden *X Speed* and *Dark Gem*.",
+    "map": 653,
+    "title": "The vortex trap room",
+    "items": [
+      { "event": 48 },
+      { "event": 49 }
+    ]
+  },
+  {
+    "id": "b1f-telluric",
+    "match": "On B1F, be careful to not fall in again",
+    "map": 658,
+    "title": "B1F: Telluric Seed room",
+    "items": [
+      { "event": 27 },
+      { "event": 28 },
+      { "event": 26 }
+    ]
+  },
+  {
+    "id": "purple-shard",
+    "match": "Grab the hidden *Purple Shard* and proceed",
+    "map": 653,
+    "title": "Purple Shard",
+    "items": [
+      { "event": 51 }
+    ]
+  },
+  {
+    "id": "right-b1f-room",
+    "match": "In this room, you can get a hidden *Carbos*",
+    "map": 656,
+    "title": "B1F: right side",
+    "items": [
+      { "event": 15 },
+      { "event": 14 },
+      { "event": 18 }
+    ]
+  },
+  {
+    "id": "seeds-room",
+    "match": "In this next room, you can find 2 hidden *Elemental Seeds*",
+    "map": 655,
+    "title": "Elemental Seeds room",
+    "items": [
+      { "event": 58 },
+      { "event": 60 },
+      { "event": 59 },
+      { "event": 61 }
+    ]
+  },
+  {
+    "id": "link-stone",
+    "match": "In this next room, you can find 2 hidden *Elemental Seeds*",
+    "map": 659,
+    "title": "Link Stone",
+    "items": [
+      { "event": 51 }
+    ]
+  },
+  {
+    "id": "right-top-vortex-room",
+    "match": "Next, jump into the middle of the top three vortices.",
+    "map": 659,
+    "title": "Ice Heal, Antidote, Star Piece",
+    "items": [
+      { "event": 54 },
+      { "event": 52 },
+      { "event": 53 }
+    ]
+  },
+  {
+    "id": "top-vortex-b1f",
+    "match": "Next, enter the vortex at the very top of the entrance room.",
+    "map": 657,
+    "title": "B1F: top vortex room",
+    "items": [
+      { "event": 40 },
+      { "event": 41 }
+    ]
+  },
+  {
+    "id": "top-vortex-ladder",
+    "match": "Next, enter the vortex at the very top of the entrance room.",
+    "map": 653,
+    "title": "Up the ladder",
+    "items": [
+      { "event": 46 },
+      { "event": 52 }
+    ]
+  },
+  {
+    "id": "straight-up-b1f",
+    "match": "Finally, hop down the vortex straight up from the",
+    "map": 656,
+    "title": "B1F: straight up from the entrance",
+    "items": [
+      { "event": 17 },
+      { "event": 16 },
+      { "event": 19 },
+      { "event": 20 }
+    ]
+  },
+  {
+    "id": "genius-wing-room",
+    "match": "In the next room, grab a hidden *Genius Wing*",
+    "map": 654,
+    "title": "Genius Wing room",
+    "items": [
+      { "event": 59 },
+      { "event": 60 }
+    ]
+  },
+  {
+    "id": "ruin-west",
+    "match": "Explore this room. You can find 2 hidden *Red Shards*,",
+    "map": 661,
+    "title": "Sugiline Ruin: west",
+    "items": [
+      { "event": 42 },
+      { "event": 44 },
+      { "event": 45 },
+      { "event": 46 }
+    ]
+  },
+  {
+    "id": "ruin-east",
+    "match": "Explore this room. You can find 2 hidden *Red Shards*,",
+    "map": 661,
+    "title": "Sugiline Ruin: east and the top",
+    "items": [
+      { "event": 41 },
+      { "event": 43 },
+      { "event": 47 },
+      { "event": 48 },
+      { "event": 38 }
+    ]
+  },
+  {
+    "id": "ruin-b1f-west",
+    "match": "On this floor, you can find the *Medichamite*",
+    "map": 662,
+    "title": "Ruin B1F: west",
+    "items": [
+      { "event": 56 },
+      { "event": 41 },
+      { "event": 42 }
+    ]
+  },
+  {
+    "id": "ruin-b1f-center",
+    "match": "On this floor, you can find the *Medichamite*",
+    "map": 662,
+    "title": "Ruin B1F: center",
+    "items": [
+      { "event": 21 },
+      { "event": 55 },
+      { "event": 43 }
+    ]
+  },
+  {
+    "id": "ruin-b1f-east",
+    "match": "On this floor, you can find the *Medichamite*",
+    "map": 662,
+    "title": "Ruin B1F: east",
+    "items": [
+      { "event": 57 },
+      { "event": 44 },
+      { "event": 46 },
+      { "event": 45 }
+    ]
+  }
+]

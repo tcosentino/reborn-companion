@@ -1,0 +1,300 @@
+[
+  {
+    "id": "first-map-climb",
+    "match": "On the map you can get a hidden *Red Shard*, *Guard Spec*",
+    "map": 710,
+    "title": "First Route 4 map",
+    "items": [
+      {
+        "event": 62
+      },
+      {
+        "event": 61
+      },
+      {
+        "event": 64
+      },
+      {
+        "event": 60
+      }
+    ]
+  },
+  {
+    "id": "second-map-cotton",
+    "match": "Grab a hidden *Cotton Candy* here then use the left",
+    "map": 711,
+    "title": "Second map: up the left rock climb",
+    "items": [
+      {
+        "event": 83
+      },
+      {
+        "event": 84
+      }
+    ]
+  },
+  {
+    "id": "second-map-top",
+    "match": "You can get a hidden *Max Repel*, *Red Shard*, and *Escape Rope*",
+    "map": 711,
+    "title": "Upper level of the second map",
+    "items": [
+      {
+        "event": 85
+      },
+      {
+        "event": 86
+      },
+      {
+        "event": 87
+      }
+    ]
+  },
+  {
+    "id": "first-map-return",
+    "match": "This brings us back to the first map we were on",
+    "map": 710,
+    "title": "Back on the first map",
+    "items": [
+      {
+        "event": 63
+      },
+      {
+        "event": 59
+      },
+      {
+        "event": 65
+      }
+    ]
+  },
+  {
+    "id": "mountain-super-potion",
+    "match": "Pick up the hidden *Super Potion*.",
+    "map": 712,
+    "title": "Mountain map",
+    "items": [
+      {
+        "event": 19
+      }
+    ]
+  },
+  {
+    "id": "snowy-ice-stone",
+    "match": "Grab the *Ice Stone* atop the hill once you're able to.",
+    "map": 725,
+    "title": "Snowy hilltop",
+    "items": [
+      {
+        "event": 16
+      }
+    ]
+  },
+  {
+    "id": "lake-map",
+    "match": "On this map, you will find a hidden *Red-Hots*",
+    "map": 713,
+    "title": "Lake map",
+    "items": [
+      {
+        "event": 119
+      },
+      {
+        "event": 116
+      },
+      {
+        "event": 115
+      },
+      {
+        "event": 104
+      },
+      {
+        "event": 120
+      },
+      {
+        "event": 117
+      },
+      {
+        "event": 118
+      }
+    ]
+  },
+  {
+    "id": "waterfall-rock-climb",
+    "match": "On the next map you can find a hidden *PokeSnax*",
+    "map": 717,
+    "title": "Rock climb above the lake",
+    "items": [
+      {
+        "event": 29
+      },
+      {
+        "event": 28
+      }
+    ]
+  },
+  {
+    "id": "waterfall-revive",
+    "match": "Grab a *Revive*. This is another map",
+    "map": 718,
+    "title": "Above the waterfall",
+    "items": [
+      {
+        "event": 5
+      }
+    ]
+  },
+  {
+    "id": "shed-stardust",
+    "match": "Once you succeed, climb the mountain.",
+    "map": 717,
+    "title": "Higher part of the map by the shed",
+    "items": [
+      {
+        "event": 30
+      }
+    ]
+  },
+  {
+    "id": "lake-top-right",
+    "match": "Return to the area with the lake. This time, take the rock climbing path",
+    "map": 719,
+    "title": "Top right rock climb",
+    "items": [
+      {
+        "event": 24
+      }
+    ]
+  },
+  {
+    "id": "charous-pond",
+    "match": "As in the previous map, it is hinted that we're gonna want",
+    "map": 750,
+    "title": "Charous Mountain B2F: the pond",
+    "items": [
+      {
+        "event": 3
+      },
+      {
+        "event": 4
+      }
+    ]
+  },
+  {
+    "id": "charous-ring",
+    "match": "This room also has a secret.",
+    "map": 750,
+    "title": "Charous Mountain B2F: the ring",
+    "items": [
+      {
+        "event": 5
+      },
+      {
+        "event": 6
+      }
+    ]
+  },
+  {
+    "id": "charous-exit",
+    "match": "Grab the hidden *Purple Shard* and *Nugget*.",
+    "map": 720,
+    "title": "Outside Charous Mountain",
+    "items": [
+      {
+        "event": 4
+      },
+      {
+        "event": 5
+      }
+    ]
+  },
+  {
+    "id": "lycanium",
+    "match": "This time, make your way all the way to the bottom right corner",
+    "map": 728,
+    "title": "Snowy corner",
+    "items": [
+      {
+        "event": 15
+      }
+    ]
+  },
+  {
+    "id": "left-rocks",
+    "match": "You can find a hidden *Swift Wing*, *Big Pearl*, and *Chesto Berry*.",
+    "map": 714,
+    "title": "Down the left rocks",
+    "items": [
+      {
+        "event": 49
+      },
+      {
+        "event": 48
+      },
+      {
+        "event": 47
+      }
+    ]
+  },
+  {
+    "id": "snowy-climb-escape-rope",
+    "match": "Use the rock wall in the bottom right corner to reach a new map.",
+    "map": 722,
+    "title": "Rock wall map",
+    "items": [
+      {
+        "event": 13
+      }
+    ]
+  },
+  {
+    "id": "snowy-climb-top",
+    "match": "Pick up the *Ultra Potion* and hidden *Liechi Berry*",
+    "map": 723,
+    "title": "Snowy climb path",
+    "items": [
+      {
+        "event": 15
+      },
+      {
+        "event": 18
+      }
+    ]
+  },
+  {
+    "id": "big-lake",
+    "match": "You can find a hidden *Elemental Seed*, *Ultra Ball*",
+    "map": 715,
+    "title": "Large lake map",
+    "items": [
+      {
+        "event": 65
+      },
+      {
+        "event": 66
+      },
+      {
+        "event": 68
+      },
+      {
+        "event": 67
+      },
+      {
+        "event": 61
+      },
+      {
+        "event": 64
+      }
+    ]
+  },
+  {
+    "id": "mimikium-z",
+    "match": "Climb the rocks in the upper left corner to reach a new section",
+    "map": 710,
+    "title": "Upper left of the first map",
+    "items": [
+      {
+        "event": 58
+      }
+    ]
+  }
+]

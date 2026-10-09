@@ -1,5 +1,15 @@
 [
   {
+    "id": "south-woods-start",
+    "match": "You'll find hidden *Purple Shard* and *Green Shard* here",
+    "map": 282,
+    "title": "South Aventurine Woods: start",
+    "items": [
+      { "event": 123 },
+      { "event": 125 }
+    ]
+  },
+  {
     "id": "east-levels",
     "match": "Start by going left. Before hopping up or down any edges",
     "map": 286,
@@ -75,6 +85,15 @@
       { "event": 113 },
       { "event": 114 },
       { "event": 115 }
+    ]
+  },
+  {
+    "id": "north-woods-poke-ball",
+    "match": "You can also find a hidden *Poke Ball* in here.",
+    "map": 288,
+    "title": "North Aventurine Woods: Poke Ball",
+    "items": [
+      { "event": 83 }
     ]
   },
   {

@@ -626,6 +626,17 @@
     ]
   },
   {
+    "id": "fire-ice-glitter-balls",
+    "match": "Back on the land, head to the right side of the area and grab the three",
+    "map": 797,
+    "title": "Fire and Ice room: Glitter Balls",
+    "items": [
+      {
+        "event": 47
+      }
+    ]
+  },
+  {
     "id": "fire-ice-ice-heal",
     "match": "Down and left, a new path will be opened up.",
     "map": 797,
@@ -667,6 +678,9 @@
     "map": 803,
     "title": "Ruby B4F: Dragon Gem, Escape Rope, Purple Shard",
     "items": [
+      {
+        "event": 78
+      },
       {
         "event": 73
       },
@@ -844,6 +858,17 @@
       },
       {
         "event": 77
+      }
+    ]
+  },
+  {
+    "id": "amethyst-b4f-salamencite",
+    "match": "Towards the top of the room, you can follow a rock climb path to the",
+    "map": 806,
+    "title": "Amethyst B4F: Salamencite",
+    "items": [
+      {
+        "event": 79
       }
     ]
   },

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "gum-room",
+    "match": "While we're down here, we can use the GUM Key that we got earlier.",
+    "map": 606,
+    "title": "GUM Room hidden items",
+    "items": [
+      { "event": 35 },
+      { "event": 36 },
+      { "event": 37 }
+    ]
+  },
+  {
+    "id": "byxbysion-building",
+    "match": "Via climbing through the building as we have before, hop down a ledge",
+    "map": 210,
+    "title": "Byxbysion building: hidden items",
+    "items": [
+      { "event": 9 },
+      { "event": 10 }
+    ]
+  },
+  {
+    "id": "aggron-nest",
+    "match": "Once you succeed in here, you can get the *Aggronite* and a hidden *Ultra Ball*",
+    "map": 760,
+    "title": "Aggron Nest hidden items",
+    "items": [
+      { "event": 2 },
+      { "event": 3 }
+    ]
+  },
+  {
+    "id": "nature-center-inside",
+    "match": "Inside the building, you can get a *Toxic Plate*.",
+    "map": 601,
+    "title": "Azurine Nature Center",
+    "items": [
+      { "event": 5 },
+      { "event": 21 },
+      { "event": 22 },
+      { "event": 16 }
+    ]
+  },
+  {
+    "id": "azurine-south-west",
+    "match": "This time I'll go left from the building to start.",
+    "map": 586,
+    "title": "Azurine Island: west of the building",
+    "items": [
+      { "event": 48 },
+      { "event": 47 }
+    ]
+  },
+  {
+    "id": "azurine-east-bank",
+    "match": "This time I'll go left from the building to start.",
+    "map": 586,
+    "title": "Azurine Island: east side",
+    "items": [
+      { "event": 62 },
+      { "event": 73 },
+      { "event": 61 },
+      { "event": 69 }
+    ]
+  },
+  {
+    "id": "azurine-river",
+    "match": "Up the river is another hidden *Big Mushroom* in a rock",
+    "map": 586,
+    "title": "Azurine Island: up the river",
+    "items": [
+      { "event": 63 },
+      { "event": 72 },
+      { "event": 67 }
+    ]
+  },
+  {
+    "id": "azurine-north",
+    "match": "Up the river is another hidden *Big Mushroom* in a rock",
+    "map": 586,
+    "title": "Azurine Island: north and the big island",
+    "items": [
+      { "event": 64 },
+      { "event": 66 },
+      { "event": 65 },
+      { "event": 46 },
+      { "event": 71 },
+      { "event": 68 }
+    ]
+  }
+]

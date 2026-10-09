@@ -1,0 +1,457 @@
+[
+  {
+    "id": "cave-south",
+    "match": "Pick up the *Underwater Field Readout* and the *Exp. Candy XL* as well as",
+    "map": 603,
+    "title": "Azurine Cave (south)",
+    "items": [
+      { "event": 3 },
+      { "event": 8 },
+      { "event": 7 }
+    ]
+  },
+  {
+    "id": "sand-strip",
+    "match": "Fight the swimmer if you'd like. You'll see a narrow strip of sand",
+    "map": 565,
+    "title": "The narrow strip of sand",
+    "items": [
+      { "event": 15 },
+      { "event": 16 },
+      { "event": 10 }
+    ]
+  },
+  {
+    "id": "fairview-underwater-west",
+    "match": "Hidden in this part of the large underwater area, you can find a",
+    "map": 547,
+    "title": "Fairview Apartments: underwater",
+    "items": [
+      { "event": 9 },
+      { "event": 10 },
+      { "event": 11 }
+    ]
+  },
+  {
+    "id": "fairview-houses-3-4",
+    "match": "On the right side you can enter a house (marked 3) containing a",
+    "map": 578,
+    "title": "Fairview houses 3 and 4",
+    "items": [
+      { "event": 8 },
+      { "event": 9 },
+      { "event": 5 },
+      { "event": 6 },
+      { "event": 11 }
+    ]
+  },
+  {
+    "id": "fairview-underwater-east",
+    "match": "Up from here, you can find hidden *Blue Shard*, *Ultra Potion*, and *Poke Ball*.",
+    "map": 553,
+    "title": "Fairview Apartments: east underwater",
+    "items": [
+      { "event": 21 },
+      { "event": 24 },
+      { "event": 26 }
+    ]
+  },
+  {
+    "id": "fairview-14",
+    "match": "Up from here, you can find hidden *Blue Shard*, *Ultra Potion*, and *Poke Ball*.",
+    "map": 579,
+    "title": "Fairview 14",
+    "items": [
+      { "event": 22 },
+      { "event": 12 }
+    ]
+  },
+  {
+    "id": "fairview-house-5",
+    "match": "Up from here, you can find hidden *Blue Shard*, *Ultra Potion*, and *Poke Ball*.",
+    "map": 579,
+    "title": "Fairview house 5",
+    "items": [
+      { "event": 21 },
+      { "event": 15 }
+    ]
+  },
+  {
+    "id": "fairview-surface",
+    "match": "Surface somewhere in the upper part of the underwater map.",
+    "map": 567,
+    "title": "Fairview: surface",
+    "items": [
+      { "event": 39 },
+      { "event": 12 },
+      { "event": 11 }
+    ]
+  },
+  {
+    "id": "fairview-34",
+    "match": "Make your way to the very bottom of the underwater area and use your",
+    "map": 578,
+    "title": "Fairview 34",
+    "items": [
+      { "event": 7 },
+      { "event": 10 },
+      { "event": 4 }
+    ]
+  },
+  {
+    "id": "fairview-1",
+    "match": "Make your way to the very bottom of the underwater area and use your",
+    "map": 579,
+    "title": "Fairview 1",
+    "items": [
+      { "event": 35 }
+    ]
+  },
+  {
+    "id": "coral-sand",
+    "match": "Once you see sand, you can get a hidden *Purple Shard* and *Hyper Potion*",
+    "map": 536,
+    "title": "Coral Ward sandbar",
+    "items": [
+      { "event": 32 },
+      { "event": 33 },
+      { "event": 30 }
+    ]
+  },
+  {
+    "id": "faeward-underwater",
+    "match": "From here, go southwest, but not too far. You'll notice a 2-by-2 dive",
+    "map": 556,
+    "title": "Faeward Apartments: underwater",
+    "items": [
+      { "event": 3 },
+      { "event": 4 }
+    ]
+  },
+  {
+    "id": "faeward-top-house",
+    "match": "Inside the top house (7) you can get a *Relic Vase*, 2 *Exp. Candy XL*,",
+    "map": 576,
+    "title": "Faeward top house",
+    "items": [
+      { "event": 2 },
+      { "event": 12 },
+      { "event": 11 },
+      { "event": 3 },
+      { "event": 4 }
+    ]
+  },
+  {
+    "id": "faeward-island",
+    "match": "Inside the top house (7) you can get a *Relic Vase*, 2 *Exp. Candy XL*,",
+    "map": 536,
+    "title": "Island above Faeward",
+    "items": [
+      { "event": 29 }
+    ]
+  },
+  {
+    "id": "sand-islands",
+    "match": "Once you hit a wall, a little bit down you'll see another strip",
+    "map": 567,
+    "title": "Sand strip and island",
+    "items": [
+      { "event": 40 },
+      { "event": 42 },
+      { "event": 10 }
+    ]
+  },
+  {
+    "id": "sunrise-corner-dive",
+    "match": "Once you hit a wall, a little bit down you'll see another strip",
+    "map": 553,
+    "title": "Top left 2-by-2 dive spot",
+    "items": [
+      { "event": 19 },
+      { "event": 14 }
+    ]
+  },
+  {
+    "id": "sunrise-underwater-middle",
+    "match": "Now, return to the larger dive spot we previously skipped to reach",
+    "map": 553,
+    "title": "Sunrise Apartments: underwater",
+    "items": [
+      { "event": 18 },
+      { "event": 15 },
+      { "event": 17 },
+      { "event": 20 }
+    ]
+  },
+  {
+    "id": "sunrise-11",
+    "match": "The building in the bottom right side (11) is unlocked, and you'll find",
+    "map": 579,
+    "title": "Sunrise house 11",
+    "items": [
+      { "event": 24 },
+      { "event": 30 },
+      { "event": 13 }
+    ]
+  },
+  {
+    "id": "sunrise-12",
+    "match": "The building in the bottom right side (11) is unlocked, and you'll find",
+    "map": 579,
+    "title": "Sunrise house 12",
+    "items": [
+      { "event": 25 },
+      { "event": 29 },
+      { "event": 11 }
+    ]
+  },
+  {
+    "id": "sunrise-island",
+    "match": "Surface towards the top of the underwater area and go up and left",
+    "map": 567,
+    "title": "Islands above Sunrise",
+    "items": [
+      { "event": 7 },
+      { "event": 9 },
+      { "event": 5 }
+    ]
+  },
+  {
+    "id": "sunrise-underwater-north",
+    "match": "On this map you can get a hidden *Green Shard*, *X Speed*, and *Red Shard*.",
+    "map": 553,
+    "title": "Sunrise Apartments: north underwater",
+    "items": [
+      { "event": 25 },
+      { "event": 22 },
+      { "event": 23 }
+    ]
+  },
+  {
+    "id": "sunrise-s12",
+    "match": "On this map you can get a hidden *Green Shard*, *X Speed*, and *Red Shard*.",
+    "map": 579,
+    "title": "S12 house",
+    "items": [
+      { "event": 23 },
+      { "event": 28 },
+      { "event": 14 }
+    ]
+  },
+  {
+    "id": "sunrise-13",
+    "match": "On this map you can get a hidden *Green Shard*, *X Speed*, and *Red Shard*.",
+    "map": 579,
+    "title": "Building 13",
+    "items": [
+      { "event": 20 },
+      { "event": 27 }
+    ]
+  },
+  {
+    "id": "sunrise-s9",
+    "match": "On this map you can get a hidden *Green Shard*, *X Speed*, and *Red Shard*.",
+    "map": 579,
+    "title": "S9 house",
+    "items": [
+      { "event": 16 },
+      { "event": 31 }
+    ]
+  },
+  {
+    "id": "sunrise-s4",
+    "match": "On this map you can get a hidden *Green Shard*, *X Speed*, and *Red Shard*.",
+    "map": 579,
+    "title": "S4 house",
+    "items": [
+      { "event": 18 },
+      { "event": 26 }
+    ]
+  },
+  {
+    "id": "apophyll-islands",
+    "match": "At the very top you can get a *King's Rock*.",
+    "map": 522,
+    "title": "King's Rock and Sky Plate",
+    "items": [
+      { "event": 107 },
+      { "event": 115 }
+    ]
+  },
+  {
+    "id": "apophyll-ether",
+    "match": "At the very top you can get a *King's Rock*.",
+    "map": 538,
+    "title": "Ether island",
+    "items": [
+      { "event": 74 }
+    ]
+  },
+  {
+    "id": "apophyll-central-island",
+    "match": "Head down (past the dotted green line). You can also get a hidden",
+    "map": 538,
+    "title": "Large central island",
+    "items": [
+      { "event": 76 },
+      { "event": 77 }
+    ]
+  },
+  {
+    "id": "kingsbury-16",
+    "match": "In the top left corner, a building is unlocked (16) and contains",
+    "map": 575,
+    "title": "Kingsbury building 16",
+    "items": [
+      { "event": 6 }
+    ]
+  },
+  {
+    "id": "kingsbury-underwater",
+    "match": "On this map, you'll find a hidden *Ultra Ball*, *Ether*,",
+    "map": 558,
+    "title": "Kingsbury Apartments: underwater",
+    "items": [
+      { "event": 49 },
+      { "event": 4 },
+      { "event": 51 },
+      { "event": 50 }
+    ]
+  },
+  {
+    "id": "kingsbury-17",
+    "match": "In the top right corner, enter an unlocked building (17) to get the",
+    "map": 577,
+    "title": "Kingsbury building 17",
+    "items": [
+      { "event": 11 },
+      { "event": 18 },
+      { "event": 19 }
+    ]
+  },
+  {
+    "id": "kingsbury-18",
+    "match": "In the top right corner, enter an unlocked building (17) to get the",
+    "map": 577,
+    "title": "Kingsbury building 18",
+    "items": [
+      { "event": 13 },
+      { "event": 22 },
+      { "event": 23 },
+      { "event": 7 }
+    ]
+  },
+  {
+    "id": "kingsbury-k33",
+    "match": "In the top right corner, enter an unlocked building (17) to get the",
+    "map": 577,
+    "title": "Kingsbury K33",
+    "items": [
+      { "event": 15 },
+      { "event": 27 },
+      { "event": 26 }
+    ]
+  },
+  {
+    "id": "kingsbury-19",
+    "match": "Enter the building to the left (19) to get a hidden *Blue Shard*,",
+    "map": 577,
+    "title": "Kingsbury building 19",
+    "items": [
+      { "event": 21 },
+      { "event": 20 },
+      { "event": 8 }
+    ]
+  },
+  {
+    "id": "kingsbury-k22",
+    "match": "Enter the building to the left (19) to get a hidden *Blue Shard*,",
+    "map": 577,
+    "title": "Kingsbury K22",
+    "items": [
+      { "event": 16 },
+      { "event": 17 },
+      { "event": 9 }
+    ]
+  },
+  {
+    "id": "kingsbury-k2-k5",
+    "match": "Enter the building to the left (19) to get a hidden *Blue Shard*,",
+    "map": 575,
+    "title": "Kingsbury K2 and K5",
+    "items": [
+      { "event": 4 },
+      { "event": 5 }
+    ]
+  },
+  {
+    "id": "kingsbury-20",
+    "match": "Make your way all the way to the bottom left corner of the large",
+    "map": 577,
+    "title": "Kingsbury building 20",
+    "items": [
+      { "event": 14 },
+      { "event": 25 },
+      { "event": 12 }
+    ]
+  },
+  {
+    "id": "kingsbury-altarianite",
+    "match": "Make your way all the way to the bottom left corner of the large",
+    "map": 558,
+    "title": "Altarianite dive spot",
+    "items": [
+      { "event": 52 }
+    ]
+  },
+  {
+    "id": "cave-north-entrance",
+    "match": "Next, in the middle of the main underwater section, on the left side",
+    "map": 538,
+    "title": "Bright 2-by-2 spot and cave entrance",
+    "items": [
+      { "event": 19 }
+    ]
+  },
+  {
+    "id": "cave-north-wing",
+    "match": "Past a hidden *Genius Wing* you'll see a Pyukumuku",
+    "map": 605,
+    "title": "Azurine Cave North: entrance",
+    "items": [
+      { "event": 14 }
+    ]
+  },
+  {
+    "id": "cave-north-waterfalls",
+    "match": "Beyond, you'll get *TM59 Brutal Swing*.",
+    "map": 605,
+    "title": "Azurine Cave North: waterfalls",
+    "items": [
+      { "event": 12 },
+      { "event": 13 },
+      { "event": 11 }
+    ]
+  },
+  {
+    "id": "cave-north-frozen",
+    "match": "Enter the cave once it freezes over and you can get",
+    "map": 605,
+    "title": "Azurine Cave North: frozen room",
+    "items": [
+      { "event": 1 },
+      { "event": 8 },
+      { "event": 19 },
+      { "event": 9 }
+    ]
+  },
+  {
+    "id": "fairview-f10",
+    "match": "There is one more thing we can do in these apartment areas:",
+    "map": 579,
+    "title": "Fairview F10",
+    "items": [
+      { "event": 17 }
+    ]
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "id": "seventh-street-hidden",
+    "match": "Hidden around the map you'll find 2 *Purple Shards*",
+    "map": 324,
+    "title": "Hidden items around 7th Street",
+    "items": [
+      { "event": 62 },
+      { "event": 66 },
+      { "event": 69 },
+      { "event": 60 },
+      { "event": 64 },
+      { "event": 61 },
+      { "event": 65 },
+      { "event": 68 },
+      { "event": 58 },
+      { "event": 59 },
+      { "event": 63 },
+      { "event": 67 }
+    ]
+  },
+  {
+    "id": "grotto-right",
+    "match": "Anyways, hidden in this room is *Black Glasses*",
+    "map": 325,
+    "title": "Grotto on the right",
+    "items": [
+      { "event": 14 },
+      { "event": 12 },
+      { "event": 16 }
+    ]
+  },
+  {
+    "id": "bennett-grotto",
+    "match": "Grab the hidden *Blue Shard* then talk to Bennett here.",
+    "map": 325,
+    "title": "Blue Shard by Bennett",
+    "items": [
+      { "event": 11 }
+    ]
+  },
+  {
+    "id": "beryl-wall-rare-candy",
+    "match": "Back outside, a door will be open above you.",
+    "map": 328,
+    "title": "Hidden Rare Candy in the Beryl Wall",
+    "items": [
+      { "event": 2 }
+    ]
+  },
+  {
+    "id": "beryl-wall-purple",
+    "match": "Reenter the narrow hole in the wall.",
+    "map": 328,
+    "title": "Hidden Purple Shard in the Beryl Wall",
+    "items": [
+      { "event": 3 }
+    ]
+  },
+  {
+    "id": "beryl-wall-gum",
+    "match": "Reenter the narrow hole in the wall.",
+    "map": 328,
+    "title": "Hidden Chewing Gum at the far left",
+    "items": [
+      { "event": 4 }
+    ]
+  }
+]

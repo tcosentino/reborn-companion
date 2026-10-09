@@ -1,0 +1,87 @@
+[
+  {
+    "id": "outer-west",
+    "match": "Snag a *Tiny Mushroom* and hidden *Clever Wing* on the first island.",
+    "map": 569,
+    "title": "Outer loop: first island and west",
+    "items": [
+      {
+        "event": 42
+      },
+      {
+        "event": 61
+      },
+      {
+        "event": 63
+      }
+    ]
+  },
+  {
+    "id": "outer-south",
+    "match": "Snag a *Tiny Mushroom* and hidden *Clever Wing* on the first island.",
+    "map": 569,
+    "title": "Outer loop: south",
+    "items": [
+      {
+        "event": 41
+      },
+      {
+        "event": 44
+      },
+      {
+        "event": 40
+      },
+      {
+        "event": 48
+      }
+    ]
+  },
+  {
+    "id": "outer-east",
+    "match": "Snag a *Tiny Mushroom* and hidden *Clever Wing* on the first island.",
+    "map": 569,
+    "title": "Outer loop: east",
+    "items": [
+      {
+        "event": 64
+      },
+      {
+        "event": 62
+      }
+    ]
+  },
+  {
+    "id": "outer-top",
+    "match": "Snag a *Tiny Mushroom* and hidden *Clever Wing* on the first island.",
+    "map": 569,
+    "title": "Outer loop: top",
+    "items": [
+      {
+        "event": 43
+      },
+      {
+        "event": 45
+      }
+    ]
+  },
+  {
+    "id": "middle-island",
+    "match": "Now, head down to the middle island and cut the tree.",
+    "map": 569,
+    "title": "Middle island",
+    "items": [
+      {
+        "event": 46
+      },
+      {
+        "event": 39
+      },
+      {
+        "event": 47
+      },
+      {
+        "event": 60
+      }
+    ]
+  }
+]

@@ -5,7 +5,15 @@
     "map": 694,
     "title": "Both hills and the statue: top left",
     "items": [
-      { "event": 26 },
+      { "event": 26 }
+    ]
+  },
+  {
+    "id": "common-northwest-south",
+    "match": "- In the top left corner up on a hill, you can get hidden 3 *Exp. Candy XL*.",
+    "map": 694,
+    "title": "Statue hill, south",
+    "items": [
       { "event": 43 }
     ]
   },
@@ -15,7 +23,15 @@
     "map": 694,
     "title": "Left wall: broken statue and Volt Switch",
     "items": [
-      { "event": 49 },
+      { "event": 49 }
+    ]
+  },
+  {
+    "id": "common-west-south",
+    "match": "- In the top left corner up on a hill, you can get hidden 3 *Exp. Candy XL*.",
+    "map": 694,
+    "title": "Left wall: Volt Switch",
+    "items": [
       { "event": 36 }
     ]
   },
@@ -23,9 +39,17 @@
     "id": "common-south",
     "match": "- In the top left corner up on a hill, you can get hidden 3 *Exp. Candy XL*.",
     "map": 694,
-    "title": "Bottom: Focus Sash and the Poke Balls",
+    "title": "Bottom: Focus Sash",
     "items": [
-      { "event": 34 },
+      { "event": 34 }
+    ]
+  },
+  {
+    "id": "common-south-balls",
+    "match": "- In the top left corner up on a hill, you can get hidden 3 *Exp. Candy XL*.",
+    "map": 694,
+    "title": "Bottom: the Poke Balls",
+    "items": [
       { "event": 28 },
       { "event": 29 },
       { "event": 30 },
@@ -47,10 +71,18 @@
     "id": "common-northeast",
     "match": "- In the top left corner up on a hill, you can get hidden 3 *Exp. Candy XL*.",
     "map": 694,
-    "title": "Northeast: Max Elixir, Star Piece, Synthetic Seed",
+    "title": "Northeast: Max Elixir and Star Piece",
     "items": [
       { "event": 42 },
-      { "event": 48 },
+      { "event": 48 }
+    ]
+  },
+  {
+    "id": "common-northeast-corner",
+    "match": "- In the top left corner up on a hill, you can get hidden 3 *Exp. Candy XL*.",
+    "map": 694,
+    "title": "Northeast corner: Synthetic Seed",
+    "items": [
       { "event": 99 }
     ]
   },
@@ -58,15 +90,31 @@
     "id": "layout1-west",
     "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Magical Seed*.",
     "map": 694,
+    "title": "Map 1: northwest hill",
+    "items": [
+      { "event": 89 }
+    ]
+  },
+  {
+    "id": "layout1-west-oasis",
+    "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Magical Seed*.",
+    "map": 694,
     "title": "Map 1: west side and the oasis",
     "items": [
-      { "event": 89 },
       { "event": 78 },
       { "event": 70 },
       { "event": 71 },
       { "event": 83 },
       { "event": 72 },
-      { "event": 93 },
+      { "event": 93 }
+    ]
+  },
+  {
+    "id": "layout1-west-south",
+    "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Magical Seed*.",
+    "map": 694,
+    "title": "Map 1: southwest desert",
+    "items": [
       { "event": 94 },
       { "event": 88 }
     ]
@@ -75,10 +123,18 @@
     "id": "layout1-southwest",
     "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Magical Seed*.",
     "map": 694,
-    "title": "Map 1: southwest and the train station",
+    "title": "Map 1: train station",
     "items": [
       { "event": 87 },
-      { "event": 86 },
+      { "event": 86 }
+    ]
+  },
+  {
+    "id": "layout1-southwest-south",
+    "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Magical Seed*.",
+    "map": 694,
+    "title": "Map 1: southwest",
+    "items": [
       { "event": 96 },
       { "event": 95 }
     ]
@@ -87,11 +143,27 @@
     "id": "layout1-east",
     "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Magical Seed*.",
     "map": 694,
+    "title": "Map 1: southeast",
+    "items": [
+      { "event": 84 }
+    ]
+  },
+  {
+    "id": "layout1-east-mid",
+    "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Magical Seed*.",
+    "map": 694,
     "title": "Map 1: east side",
     "items": [
-      { "event": 84 },
       { "event": 79 },
-      { "event": 85 },
+      { "event": 85 }
+    ]
+  },
+  {
+    "id": "layout1-east-north",
+    "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Magical Seed*.",
+    "map": 694,
+    "title": "Map 1: northeast of the cave",
+    "items": [
       { "event": 97 }
     ]
   },
@@ -99,13 +171,37 @@
     "id": "layout1-northeast",
     "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Magical Seed*.",
     "map": 694,
-    "title": "Map 1: northeast",
+    "title": "Map 1: east of the tracks",
     "items": [
       { "event": 80 },
-      { "event": 82 },
-      { "event": 92 },
+      { "event": 82 }
+    ]
+  },
+  {
+    "id": "layout1-northeast-top",
+    "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Magical Seed*.",
+    "map": 694,
+    "title": "Map 1: northeast corner",
+    "items": [
+      { "event": 92 }
+    ]
+  },
+  {
+    "id": "layout1-northeast-west",
+    "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Magical Seed*.",
+    "map": 694,
+    "title": "Map 1: north tracks",
+    "items": [
       { "event": 91 },
-      { "event": 90 },
+      { "event": 90 }
+    ]
+  },
+  {
+    "id": "layout1-northeast-west-south",
+    "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Magical Seed*.",
+    "map": 694,
+    "title": "Map 1: north tracks, south",
+    "items": [
       { "event": 81 }
     ]
   },
@@ -113,9 +209,17 @@
     "id": "layout2-northwest",
     "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Chewing Gum*.",
     "map": 703,
-    "title": "Map 2: northwest",
+    "title": "Map 2: northwest corner",
     "items": [
-      { "event": 86 },
+      { "event": 86 }
+    ]
+  },
+  {
+    "id": "layout2-northwest-south",
+    "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Chewing Gum*.",
+    "map": 703,
+    "title": "Map 2: west side",
+    "items": [
       { "event": 85 },
       { "event": 84 },
       { "event": 83 }
@@ -137,10 +241,18 @@
     "id": "layout2-south",
     "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Chewing Gum*.",
     "map": 703,
-    "title": "Map 2: left wall and Relic Copper",
+    "title": "Map 2: left wall and south",
     "items": [
       { "event": 81 },
-      { "event": 80 },
+      { "event": 80 }
+    ]
+  },
+  {
+    "id": "layout2-south-east",
+    "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Chewing Gum*.",
+    "map": 703,
+    "title": "Map 2: Relic Copper",
+    "items": [
       { "event": 78 },
       { "event": 79 }
     ]
@@ -158,13 +270,29 @@
     "id": "layout3-west",
     "match": "- Just below the hill where we found the 3 Exp. Candies, you can find a hidden *Heart Scale*",
     "map": 704,
-    "title": "Map 3: left wall",
+    "title": "Map 3: left wall, north",
     "items": [
       { "event": 87 },
       { "event": 88 },
-      { "event": 90 },
+      { "event": 90 }
+    ]
+  },
+  {
+    "id": "layout3-west-mid",
+    "match": "- Just below the hill where we found the 3 Exp. Candies, you can find a hidden *Heart Scale*",
+    "map": 704,
+    "title": "Map 3: left wall, middle",
+    "items": [
       { "event": 91 },
-      { "event": 92 },
+      { "event": 92 }
+    ]
+  },
+  {
+    "id": "layout3-west-south",
+    "match": "- Just below the hill where we found the 3 Exp. Candies, you can find a hidden *Heart Scale*",
+    "map": 704,
+    "title": "Map 3: left wall, south",
+    "items": [
       { "event": 93 }
     ]
   },
@@ -172,14 +300,22 @@
     "id": "layout3-oasis",
     "match": "- Just below the hill where we found the 3 Exp. Candies, you can find a hidden *Heart Scale*",
     "map": 704,
-    "title": "Map 3: oasis, station and tracks",
+    "title": "Map 3: oasis and station",
     "items": [
       { "event": 70 },
       { "event": 71 },
       { "event": 72 },
       { "event": 94 },
       { "event": 95 },
-      { "event": 96 },
+      { "event": 96 }
+    ]
+  },
+  {
+    "id": "layout3-oasis-south",
+    "match": "- Just below the hill where we found the 3 Exp. Candies, you can find a hidden *Heart Scale*",
+    "map": 704,
+    "title": "Map 3: south tracks",
+    "items": [
       { "event": 97 }
     ]
   },
@@ -240,13 +376,29 @@
     "id": "layout4-west",
     "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Common Candy*.",
     "map": 705,
-    "title": "Map 4: west side",
+    "title": "Map 4: northwest",
     "items": [
       { "event": 84 },
-      { "event": 82 },
+      { "event": 82 }
+    ]
+  },
+  {
+    "id": "layout4-west-mid",
+    "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Common Candy*.",
+    "map": 705,
+    "title": "Map 4: west side",
+    "items": [
       { "event": 83 },
       { "event": 81 },
-      { "event": 92 },
+      { "event": 92 }
+    ]
+  },
+  {
+    "id": "layout4-west-south",
+    "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Common Candy*.",
+    "map": 705,
+    "title": "Map 4: west side, south",
+    "items": [
       { "event": 93 },
       { "event": 94 }
     ]
@@ -258,7 +410,15 @@
     "title": "Map 4: southwest",
     "items": [
       { "event": 95 },
-      { "event": 79 },
+      { "event": 79 }
+    ]
+  },
+  {
+    "id": "layout4-southwest-south",
+    "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Common Candy*.",
+    "map": 705,
+    "title": "Map 4: south of the oasis",
+    "items": [
       { "event": 96 },
       { "event": 78 }
     ]
@@ -284,7 +444,15 @@
       { "event": 99 },
       { "event": 100 },
       { "event": 80 },
-      { "event": 101 },
+      { "event": 101 }
+    ]
+  },
+  {
+    "id": "layout4-east-south",
+    "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Common Candy*.",
+    "map": 705,
+    "title": "Map 4: below Sugiline Cave",
+    "items": [
       { "event": 97 }
     ]
   },
@@ -292,9 +460,17 @@
     "id": "layout4-north",
     "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Common Candy*.",
     "map": 705,
-    "title": "Map 4: right wall north of Sugiline Cave",
+    "title": "Map 4: north of Sugiline Cave",
     "items": [
-      { "event": 102 },
+      { "event": 102 }
+    ]
+  },
+  {
+    "id": "layout4-north-east",
+    "match": "- On the hill where we found the 3 Exp. Candies, you can find a hidden *Common Candy*.",
+    "map": 705,
+    "title": "Map 4: right wall",
+    "items": [
       { "event": 103 },
       { "event": 85 },
       { "event": 86 },
@@ -326,12 +502,20 @@
     "id": "northwest-hidden",
     "match": "From bottom to top (ordered roughly) you can find hidden: *Blue Shard*, *Red Shard*",
     "map": 687,
-    "title": "Northwest desert: hidden items",
+    "title": "Northwest desert: hidden items, bottom",
     "items": [
       { "event": 24 },
       { "event": 23 },
       { "event": 25 },
-      { "event": 28 },
+      { "event": 28 }
+    ]
+  },
+  {
+    "id": "northwest-hidden-center",
+    "match": "From bottom to top (ordered roughly) you can find hidden: *Blue Shard*, *Red Shard*",
+    "map": 687,
+    "title": "Northwest desert: hidden items, middle",
+    "items": [
       { "event": 38 },
       { "event": 26 },
       { "event": 21 },
@@ -341,7 +525,15 @@
       { "event": 27 },
       { "event": 22 },
       { "event": 34 },
-      { "event": 17 },
+      { "event": 17 }
+    ]
+  },
+  {
+    "id": "northwest-hidden-top",
+    "match": "From bottom to top (ordered roughly) you can find hidden: *Blue Shard*, *Red Shard*",
+    "map": 687,
+    "title": "Northwest desert: hidden items, top",
+    "items": [
       { "event": 20 },
       { "event": 31 },
       { "event": 19 },
@@ -354,9 +546,17 @@
     "id": "northwest-visible",
     "match": "You'll also notice a few non-hidden items: along the right side",
     "map": 687,
-    "title": "Northwest desert: item balls",
+    "title": "Northwest desert: item balls, north",
     "items": [
-      { "event": 10 },
+      { "event": 10 }
+    ]
+  },
+  {
+    "id": "northwest-visible-south",
+    "match": "You'll also notice a few non-hidden items: along the right side",
+    "map": 687,
+    "title": "Northwest desert: item balls, south",
+    "items": [
       { "event": 9 }
     ]
   },
@@ -373,23 +573,47 @@
     "id": "northeast-dirty",
     "match": "Roughly from bottom to top, you can find a hidden *Repel*, *Calcium*",
     "map": 695,
-    "title": "Northeast desert (dirty): hidden items",
+    "title": "Northeast desert (dirty): bottom",
     "items": [
       { "event": 21 },
       { "event": 20 },
-      { "event": 22 },
+      { "event": 22 }
+    ]
+  },
+  {
+    "id": "northeast-dirty-lower",
+    "match": "Roughly from bottom to top, you can find a hidden *Repel*, *Calcium*",
+    "map": 695,
+    "title": "Northeast desert (dirty): lower middle",
+    "items": [
       { "event": 31 },
       { "event": 23 },
       { "event": 24 },
       { "event": 25 },
-      { "event": 19 },
+      { "event": 19 }
+    ]
+  },
+  {
+    "id": "northeast-dirty-upper",
+    "match": "Roughly from bottom to top, you can find a hidden *Repel*, *Calcium*",
+    "map": 695,
+    "title": "Northeast desert (dirty): upper middle",
+    "items": [
       { "event": 26 },
       { "event": 35 },
       { "event": 34 },
       { "event": 27 },
       { "event": 18 },
       { "event": 30 },
-      { "event": 29 },
+      { "event": 29 }
+    ]
+  },
+  {
+    "id": "northeast-dirty-top",
+    "match": "Roughly from bottom to top, you can find a hidden *Repel*, *Calcium*",
+    "map": 695,
+    "title": "Northeast desert (dirty): top",
+    "items": [
       { "event": 28 },
       { "event": 17 },
       { "event": 16 }
@@ -408,20 +632,44 @@
     "id": "northeast-mirage",
     "match": "The layout is the mostly same as before, but there are new items.",
     "map": 688,
-    "title": "Northeast desert (mirage): hidden items",
+    "title": "Northeast desert (mirage): bottom",
     "items": [
       { "event": 29 },
       { "event": 30 },
-      { "event": 23 },
+      { "event": 23 }
+    ]
+  },
+  {
+    "id": "northeast-mirage-lower",
+    "match": "The layout is the mostly same as before, but there are new items.",
+    "map": 688,
+    "title": "Northeast desert (mirage): lower middle",
+    "items": [
       { "event": 24 },
       { "event": 26 },
-      { "event": 25 },
+      { "event": 25 }
+    ]
+  },
+  {
+    "id": "northeast-mirage-upper",
+    "match": "The layout is the mostly same as before, but there are new items.",
+    "map": 688,
+    "title": "Northeast desert (mirage): upper middle",
+    "items": [
       { "event": 35 },
       { "event": 22 },
       { "event": 20 },
       { "event": 31 },
       { "event": 34 },
-      { "event": 33 },
+      { "event": 33 }
+    ]
+  },
+  {
+    "id": "northeast-mirage-top",
+    "match": "The layout is the mostly same as before, but there are new items.",
+    "map": 688,
+    "title": "Northeast desert (mirage): top",
+    "items": [
       { "event": 21 },
       { "event": 37 },
       { "event": 18 },

@@ -1,0 +1,171 @@
+[
+  {
+    "id": "spring-1f-first",
+    "match": "Surf across and push the first boulder out of the way",
+    "map": 238,
+    "title": "Chrysolia Spring 1F: first boulders",
+    "items": [
+      { "event": 40 },
+      { "event": 42 },
+      { "event": 41 },
+      { "event": 24 }
+    ]
+  },
+  {
+    "id": "spring-b1-exp-candy",
+    "match": "Head up and grab the *Exp. Candy XL*.",
+    "map": 545,
+    "title": "Chrysolia Spring B1F: north",
+    "items": [
+      { "event": 28 }
+    ]
+  },
+  {
+    "id": "spring-1f-psychic-gem",
+    "match": "Head up and grab the *Exp. Candy XL*.",
+    "map": 238,
+    "title": "Chrysolia Spring 1F: Psychic Gem",
+    "items": [
+      { "event": 43 }
+    ]
+  },
+  {
+    "id": "spring-b1-nw",
+    "match": "This area contains a hidden *Elixir*",
+    "map": 545,
+    "title": "B1F northwest",
+    "items": [
+      { "event": 21 },
+      { "event": 22 },
+      { "event": 26 }
+    ]
+  },
+  {
+    "id": "spring-1f-nw",
+    "match": "You can get a hidden *Water Gem* here.",
+    "map": 238,
+    "title": "1F northwest",
+    "items": [
+      { "event": 37 }
+    ]
+  },
+  {
+    "id": "sauna-nw",
+    "match": "Inside the sauna, if you want, you can blow away",
+    "map": 546,
+    "title": "Northwest sauna",
+    "items": [
+      { "event": 14 },
+      { "event": 26 },
+      { "event": 15 }
+    ]
+  },
+  {
+    "id": "spring-b1-sw",
+    "match": "Make your way back to B1F. This time, push the boulder in the bottom left",
+    "map": 545,
+    "title": "B1F southwest",
+    "items": [
+      { "event": 25 }
+    ]
+  },
+  {
+    "id": "spring-1f-sw",
+    "match": "In this portion you can find a hidden *Blue Shard*.",
+    "map": 238,
+    "title": "1F southwest",
+    "items": [
+      { "event": 38 }
+    ]
+  },
+  {
+    "id": "spring-b1-sw-red-shard",
+    "match": "Get the hidden *Red Shard*, then go into the nearby sauna.",
+    "map": 545,
+    "title": "B1F west: Red Shard",
+    "items": [
+      { "event": 23 }
+    ]
+  },
+  {
+    "id": "sauna-sw",
+    "match": "Get the hidden *Red Shard*, then go into the nearby sauna.",
+    "map": 546,
+    "title": "Southwest sauna: first room",
+    "items": [
+      { "event": 25 },
+      { "event": 19 }
+    ]
+  },
+  {
+    "id": "sauna-sw-upper",
+    "match": "Get the hidden *Red Shard*, then go into the nearby sauna.",
+    "map": 546,
+    "title": "Southwest sauna: up the tall jet",
+    "items": [
+      { "event": 23 },
+      { "event": 16 }
+    ]
+  },
+  {
+    "id": "spring-b1-ne",
+    "match": "Return to B1F, this time pushing the boulder in the top right",
+    "map": 545,
+    "title": "B1F northeast",
+    "items": [
+      { "event": 27 }
+    ]
+  },
+  {
+    "id": "spring-1f-ne",
+    "match": "On 1F, grab the hidden *Dusk Ball*.",
+    "map": 238,
+    "title": "1F northeast",
+    "items": [
+      { "event": 23 }
+    ]
+  },
+  {
+    "id": "sauna-ne",
+    "match": "In here, you can get a *Jolly Mint*",
+    "map": 546,
+    "title": "Northeast sauna",
+    "items": [
+      { "event": 27 },
+      { "event": 20 },
+      { "event": 21 },
+      { "event": 18 }
+    ]
+  },
+  {
+    "id": "spring-b1-se",
+    "match": "Make your way back to B1F, and finally push the boulder in the bottom right",
+    "map": 545,
+    "title": "B1F southeast",
+    "items": [
+      { "event": 24 },
+      { "event": 8 }
+    ]
+  },
+  {
+    "id": "spring-1f-se",
+    "match": "Up here, you can get a hidden *Awakening*.",
+    "map": 238,
+    "title": "1F southeast",
+    "items": [
+      { "event": 39 }
+    ]
+  },
+  {
+    "id": "sauna-se",
+    "match": "This room has a lot of ledges, and is a bit chaotic.",
+    "map": 546,
+    "title": "Southeast sauna",
+    "items": [
+      { "event": 22 },
+      { "event": 24 },
+      { "event": 13 },
+      { "event": 17 }
+    ]
+  }
+]

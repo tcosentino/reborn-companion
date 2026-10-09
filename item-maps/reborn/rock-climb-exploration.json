@@ -1,0 +1,268 @@
+[
+  {
+    "id": "azurine-poisonium-z",
+    "match": "I'll start with some easy ones. Fly over to Azurine Island.",
+    "map": 586,
+    "title": "Azurine Island: Poisonium-Z",
+    "items": [
+      { "event": 79 }
+    ]
+  },
+  {
+    "id": "apophyll-tm52",
+    "match": "Next, fly over to Apophyll Beach. Make your way towards Pyrous Mountain",
+    "map": 563,
+    "title": "Apophyll Beach: TM52",
+    "items": [
+      { "event": 29 }
+    ]
+  },
+  {
+    "id": "teknite-ridge-jangmoo",
+    "match": "By hopping across some rocks to the top left corner",
+    "map": 646,
+    "title": "Teknite Ridge: top left wall",
+    "items": [
+      { "event": 19 }
+    ]
+  },
+  {
+    "id": "beryl-cave-1f",
+    "match": "Fly over to the Beryl Ward, and enter the Beryl Cave.",
+    "map": 184,
+    "title": "Beryl Cave 1F",
+    "items": [
+      { "event": 14 }
+    ]
+  },
+  {
+    "id": "beryl-cave-2f",
+    "match": "Fly over to the Beryl Ward, and enter the Beryl Cave.",
+    "map": 743,
+    "title": "Beryl Cave 2F",
+    "items": [
+      { "event": 38 }
+    ]
+  },
+  {
+    "id": "teknite-ridge-beryl-side",
+    "match": "Hidden on this map, we can obtain a *Green Shard*",
+    "map": 744,
+    "title": "Teknite Ridge (Beryl Cave side)",
+    "items": [
+      { "event": 23 },
+      { "event": 26 },
+      { "event": 25 },
+      { "event": 22 },
+      { "event": 24 }
+    ]
+  },
+  {
+    "id": "teknite-cave-heart-scale",
+    "match": "Grab the hidden *Heart Scale*. We'll need to transform this field",
+    "map": 746,
+    "title": "Teknite Cave: Heart Scale",
+    "items": [
+      { "event": 3 }
+    ]
+  },
+  {
+    "id": "teknite-cave-larvesta-room",
+    "match": "A fight against one strong Pokemon! Pick up the *Catching Charm: Ruby*",
+    "map": 747,
+    "title": "Teknite Cave: Larvesta room",
+    "items": [
+      { "event": 16 },
+      { "event": 2 },
+      { "event": 7 }
+    ]
+  },
+  {
+    "id": "route-2-tm28",
+    "match": "Fly to the Celestinine Cascade. By heading down the stairs",
+    "map": 360,
+    "title": "Route 2: TM28",
+    "items": [
+      { "event": 125 }
+    ]
+  },
+  {
+    "id": "route-2-exp-candy",
+    "match": "Make your way to the north side of Route 2.",
+    "map": 358,
+    "title": "Route 2: Exp. Candy XL",
+    "items": [
+      { "event": 31 }
+    ]
+  },
+  {
+    "id": "route-3-cave-candy",
+    "match": "Next, climb the ladder to Route 3.",
+    "map": 409,
+    "title": "Route 3 cave: top left rock",
+    "items": [
+      { "event": 27 }
+    ]
+  },
+  {
+    "id": "route-3-synthetic-seed",
+    "match": "From here, go right and climb down the rocks nearby.",
+    "map": 404,
+    "title": "Route 3: Synthetic Seed",
+    "items": [
+      { "event": 86 }
+    ]
+  },
+  {
+    "id": "route-3-dragon-fang-cave",
+    "match": "From here, go right and climb down the rocks nearby.",
+    "map": 410,
+    "title": "Route 3: Dragon Fang cave",
+    "items": [
+      { "event": 7 },
+      { "event": 14 },
+      { "event": 5 }
+    ]
+  },
+  {
+    "id": "tanzan-depths-steelix-top",
+    "match": "In the area where we fought Steelix, make your way to the top left",
+    "map": 260,
+    "title": "Tanzan Depths: above the metal beam",
+    "items": [
+      { "event": 8 },
+      { "event": 29 },
+      { "event": 30 },
+      { "event": 28 },
+      { "event": 17 },
+      { "event": 13 },
+      { "event": 14 },
+      { "event": 15 },
+      { "event": 16 },
+      { "event": 18 },
+      { "event": 21 },
+      { "event": 4 },
+      { "event": 22 },
+      { "event": 20 },
+      { "event": 19 }
+    ]
+  },
+  {
+    "id": "tanzan-depths-mining-room",
+    "match": "In the next room, you can find an *Exp. Candy XL* as well as a hidden *Super Repel*",
+    "map": 615,
+    "title": "Tanzan Depths: mining room",
+    "items": [
+      { "event": 23 },
+      { "event": 24 },
+      { "event": 29 },
+      { "event": 25 },
+      { "event": 26 },
+      { "event": 27 },
+      { "event": 30 },
+      { "event": 28 }
+    ]
+  },
+  {
+    "id": "tanzan-depths-green-crystal-room",
+    "match": "The floor will collapse, creating a new climbing wall.",
+    "map": 616,
+    "title": "Tanzan Depths: green crystal room",
+    "items": [
+      { "event": 32 },
+      { "event": 31 }
+    ]
+  },
+  {
+    "id": "larvitar-puzzle-1",
+    "match": "Pick up the now-accessible *Jolly Mint* and *Timid Mint*.",
+    "map": 620,
+    "title": "Larvitar puzzle 1 rewards",
+    "items": [
+      { "event": 76 },
+      { "event": 77 }
+    ]
+  },
+  {
+    "id": "larvitar-puzzle-2",
+    "match": "Pick up the now-accessible *Focus Sash*, *Modest Mint*, and *Nugget*.",
+    "map": 619,
+    "title": "Larvitar puzzle 2 rewards",
+    "items": [
+      { "event": 105 },
+      { "event": 53 },
+      { "event": 17 }
+    ]
+  },
+  {
+    "id": "larvitar-puzzle-2-capsule",
+    "match": "Pick up the now-accessible *Focus Sash*, *Modest Mint*, and *Nugget*.",
+    "map": 620,
+    "title": "Ability Capsule behind the bottom left door",
+    "items": [
+      { "event": 80 }
+    ]
+  },
+  {
+    "id": "larvitar-puzzle-3",
+    "match": "Pick up the *Amplifield Rock*, *Adamant Mint*, and 4 *Glitter Balls*",
+    "map": 621,
+    "title": "Larvitar puzzle 3 rewards",
+    "items": [
+      { "event": 70 },
+      { "event": 71 },
+      { "event": 72 }
+    ]
+  },
+  {
+    "id": "larvitar-final-room",
+    "match": "Pick up the *Amplifield Rock*, *Adamant Mint*, and 4 *Glitter Balls*",
+    "map": 621,
+    "title": "Final Larvitar room",
+    "items": [
+      { "event": 112 },
+      { "event": 113 },
+      { "event": 117 }
+    ]
+  },
+  {
+    "id": "celestinine-life-orb",
+    "match": "At the top of the ice puzzle, you'll see a climbing wall.",
+    "map": 387,
+    "title": "Celestinine Mountain B2F: Life Orb",
+    "items": [
+      { "event": 16 }
+    ]
+  },
+  {
+    "id": "ametrine-4f-blue-shard",
+    "match": "We've gone this path once before to get some items.",
+    "map": 373,
+    "title": "Ametrine Mountain 4F: Blue Shard",
+    "items": [
+      { "event": 18 }
+    ]
+  },
+  {
+    "id": "ametrine-5f-paralyze-heal",
+    "match": "Complete an ice puzzle here, grab a *Paralyze Heal*",
+    "map": 374,
+    "title": "Ametrine Mountain 5F: Paralyze Heal",
+    "items": [
+      { "event": 10 }
+    ]
+  },
+  {
+    "id": "ametrine-b4f",
+    "match": "On this floor, you can also pick up the *Icium-Z*",
+    "map": 379,
+    "title": "Ametrine Mountain B4F",
+    "items": [
+      { "event": 8 },
+      { "event": 15 },
+      { "event": 14 },
+      { "event": 10 },
+      { "event": 9 }
+    ]
+  }
+]

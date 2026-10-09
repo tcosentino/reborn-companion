@@ -1,0 +1,70 @@
+[
+  {
+    "id": "entry-hidden",
+    "match": "Grab the hidden *Health Wing*, *Potion*, and *Nugget* here.",
+    "map": 414,
+    "title": "Hidden items at the start",
+    "items": [
+      { "event": 153 },
+      { "event": 150 },
+      { "event": 149 }
+    ]
+  },
+  {
+    "id": "purple-shard",
+    "match": "Grab the hidden *Purple Shard* and continue.",
+    "map": 414,
+    "title": "Hidden Purple Shard",
+    "items": [
+      { "event": 154 }
+    ]
+  },
+  {
+    "id": "max-repel",
+    "match": "Defeat the next Meteor Ace and head up to watch the scene.",
+    "map": 414,
+    "title": "Hidden Max Repel",
+    "items": [
+      { "event": 147 }
+    ]
+  },
+  {
+    "id": "left-of-building",
+    "match": "Head outside and go left. Grab the hidden *Full Heal*, and *Max Potion*.",
+    "map": 414,
+    "title": "Left of the building",
+    "items": [
+      { "event": 155 },
+      { "event": 151 }
+    ]
+  },
+  {
+    "id": "blue-shard-burn-heal",
+    "match": "Grab the hidden *Blue Shard* and *Burn Heal* then go up.",
+    "map": 414,
+    "title": "Hidden Blue Shard and Burn Heal",
+    "items": [
+      { "event": 158 },
+      { "event": 156 }
+    ]
+  },
+  {
+    "id": "revive-ice-heal",
+    "match": "After you defeat them, grab the hidden *Revive* and *Ice Heal*.",
+    "map": 414,
+    "title": "Hidden Revive and Ice Heal",
+    "items": [
+      { "event": 152 },
+      { "event": 157 }
+    ]
+  },
+  {
+    "id": "dire-hit",
+    "match": "Anyways, head to the center of the city next.",
+    "map": 414,
+    "title": "Hidden Dire Hit",
+    "items": [
+      { "event": 148 }
+    ]
+  }
+]

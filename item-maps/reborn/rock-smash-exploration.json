@@ -1,0 +1,237 @@
+[
+  {
+    "id": "stairway-b1f-green-shard",
+    "match": "Head over to the Grand Stairway and make your way to B1F.",
+    "map": 178,
+    "title": "Stairway B1F: hidden Green Shard",
+    "items": [
+      { "event": 24 }
+    ]
+  },
+  {
+    "id": "stairway-mining-room",
+    "match": "Head over to the Grand Stairway and make your way to B1F.",
+    "map": 188,
+    "title": "Stairway B1F: the Mining Kit room",
+    "items": [
+      { "event": 9 },
+      { "event": 10 },
+      { "event": 12 }
+    ]
+  },
+  {
+    "id": "stairway-ladder-room",
+    "match": "Back in the main part of B1F, head to the left and smash the rock",
+    "map": 179,
+    "title": "Stairway B2F: below the ladder",
+    "items": [
+      { "event": 29 },
+      { "event": 48 },
+      { "event": 45 }
+    ]
+  },
+  {
+    "id": "slums-calcium",
+    "match": "Next, we're going to head on over to the Obsidia Slums.",
+    "map": 96,
+    "title": "Slums B1F: behind the Dull Key door",
+    "items": [
+      { "event": 6 }
+    ]
+  },
+  {
+    "id": "slums-playground-entrance",
+    "match": "Grab the *Super Repel* and hidden *Exp. Candy L* and enter",
+    "map": 320,
+    "title": "Slums Playground entrance",
+    "items": [
+      { "event": 7 },
+      { "event": 17 }
+    ]
+  },
+  {
+    "id": "slums-playground-floor",
+    "match": "You can find a *Sun Stone* on the floor.",
+    "map": 321,
+    "title": "Slums Playground: floor and hidden items",
+    "items": [
+      { "event": 32 },
+      { "event": 84 },
+      { "event": 83 },
+      { "event": 81 },
+      { "event": 82 }
+    ]
+  },
+  {
+    "id": "slums-playground-rewards",
+    "match": "Once you've defeated the third in the middle, you will get **Scraggy**!",
+    "map": 321,
+    "title": "Slums Playground: after the Pangoro",
+    "items": [
+      { "event": 88 },
+      { "event": 89 },
+      { "event": 79 },
+      { "event": 80 }
+    ]
+  },
+  {
+    "id": "railnet-tracks",
+    "match": "Pick up the *Light Ball* and hidden 2 *Common Candies*",
+    "map": 228,
+    "title": "Railnet: tracks area",
+    "items": [
+      { "event": 85 },
+      { "event": 236 },
+      { "event": 239 },
+      { "event": 237 }
+    ]
+  },
+  {
+    "id": "railnet-narrow-path",
+    "match": "Grab the hidden *Hyper Potion*, *Purple Shard*, and *Dusk Ball*",
+    "map": 762,
+    "title": "Railnet: narrow path",
+    "items": [
+      { "event": 12 },
+      { "event": 11 },
+      { "event": 13 }
+    ]
+  },
+  {
+    "id": "railnet-depths-top",
+    "match": "We don't have Flash yet, so this area can be a bit annoying",
+    "map": 229,
+    "title": "Railnet depths: top right corner",
+    "items": [
+      { "event": 161 },
+      { "event": 163 }
+    ]
+  },
+  {
+    "id": "railnet-depths-east",
+    "match": "We don't have Flash yet, so this area can be a bit annoying",
+    "map": 229,
+    "title": "Railnet depths: down the east stairs",
+    "items": [
+      { "event": 162 }
+    ]
+  },
+  {
+    "id": "railnet-depths-bottom",
+    "match": "Anyways, back outside you can find 2 hidden *Purple Shards*",
+    "map": 229,
+    "title": "Railnet depths: outside the smash walls",
+    "items": [
+      { "event": 164 },
+      { "event": 167 },
+      { "event": 166 },
+      { "event": 105 }
+    ]
+  },
+  {
+    "id": "beryl-cave-1f",
+    "match": "On 1F, you'll find a hidden *Flying Gem*",
+    "map": 184,
+    "title": "Beryl Cave 1F",
+    "items": [
+      { "event": 6 },
+      { "event": 4 },
+      { "event": 5 },
+      { "event": 7 },
+      { "event": 8 }
+    ]
+  },
+  {
+    "id": "beryl-cave-b1f",
+    "match": "On B1F, you'll find a hidden *Green Shard*, *Awakening*",
+    "map": 185,
+    "title": "Beryl Cave B1F",
+    "items": [
+      { "event": 7 },
+      { "event": 8 },
+      { "event": 9 },
+      { "event": 6 },
+      { "event": 11 }
+    ]
+  },
+  {
+    "id": "beryl-cave-b2f",
+    "match": "On B2F, you'll find hidden *Blue Shard*",
+    "map": 186,
+    "title": "Beryl Cave B2F",
+    "items": [
+      { "event": 3 },
+      { "event": 4 },
+      { "event": 5 }
+    ]
+  },
+  {
+    "id": "jungle-new-area",
+    "match": "Well, we're back in the Rhodochrine Jungle, in a new area this time.",
+    "map": 150,
+    "title": "Rhodochrine Jungle: past Beryl Cave",
+    "items": [
+      { "event": 124 },
+      { "event": 138 },
+      { "event": 135 },
+      { "event": 134 }
+    ]
+  },
+  {
+    "id": "citrine-east-south",
+    "match": "1. Start by going to the right.",
+    "map": 382,
+    "title": "Citrine 2F: steps 1 to 3",
+    "items": [
+      { "event": 1 },
+      { "event": 65 },
+      { "event": 66 }
+    ]
+  },
+  {
+    "id": "citrine-left-path",
+    "match": "1. Start by going to the right.",
+    "map": 382,
+    "title": "Citrine 2F: step 4, the left path",
+    "items": [
+      { "event": 69 },
+      { "event": 75 },
+      { "event": 64 },
+      { "event": 67 }
+    ]
+  },
+  {
+    "id": "citrine-left-fork",
+    "match": "1. Start by going to the right.",
+    "map": 382,
+    "title": "Citrine 2F: step 4, the left fork down",
+    "items": [
+      { "event": 62 },
+      { "event": 68 },
+      { "event": 78 }
+    ]
+  },
+  {
+    "id": "citrine-right-fork",
+    "match": "1. Start by going to the right.",
+    "map": 382,
+    "title": "Citrine 2F: step 5, the right fork",
+    "items": [
+      { "event": 77 },
+      { "event": 79 },
+      { "event": 61 },
+      { "event": 71 }
+    ]
+  },
+  {
+    "id": "citrine-smoochum-cave",
+    "match": "1. Start by going to the right.",
+    "map": 429,
+    "title": "Citrine 2F: Smoochum's cave",
+    "items": [
+      { "event": 5 },
+      { "event": 8 },
+      { "event": 7 }
+    ]
+  }
+]

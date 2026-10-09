@@ -1,0 +1,113 @@
+[
+  {
+    "id": "upper-floor",
+    "match": "Time to wander around the area looking for these things. On this floor",
+    "map": 849,
+    "title": "Aegir Cave: upper floor",
+    "items": [
+      { "event": 37 },
+      { "event": 36 },
+      { "event": 78 }
+    ]
+  },
+  {
+    "id": "lower-east",
+    "match": "Jump down the muddy slope to the left. Towards the top of this area",
+    "map": 850,
+    "title": "Aegir Cave: pillars and east side",
+    "items": [
+      { "event": 34 },
+      { "event": 31 },
+      { "event": 115 }
+    ]
+  },
+  {
+    "id": "lower-west",
+    "match": "Jump down the muddy slope to the left. Towards the top of this area",
+    "map": 850,
+    "title": "Aegir Cave: west of the lake",
+    "items": [
+      { "event": 30 }
+    ]
+  },
+  {
+    "id": "upper-pecha-dusk",
+    "match": "Back on the upper level, go up to find a hidden *Pecha Berry* in a rock.",
+    "map": 849,
+    "title": "Aegir Cave: Pecha Berry and Dusk Ball",
+    "items": [
+      { "event": 73 },
+      { "event": 35 }
+    ]
+  },
+  {
+    "id": "ultra-nugget",
+    "match": "Return to the bottom floor and take the ladder up, in the top left.",
+    "map": 850,
+    "title": "Aegir Cave: Ultra Ball and Nugget",
+    "items": [
+      { "event": 28 },
+      { "event": 33 }
+    ]
+  },
+  {
+    "id": "underwater",
+    "match": "You'll find a hidden *Max Repel*, *Super Potion*, and *Net Ball* down here.",
+    "map": 851,
+    "title": "Aegir Cave underwater",
+    "items": [
+      { "event": 11 },
+      { "event": 14 },
+      { "event": 8 }
+    ]
+  },
+  {
+    "id": "berry-juice-room",
+    "match": "You'll find a hidden *Max Repel*, *Super Potion*, and *Net Ball* down here.",
+    "map": 850,
+    "title": "Aegir Cave: Berry Juice room",
+    "items": [
+      { "event": 113 }
+    ]
+  },
+  {
+    "id": "lake-dusk-ultra",
+    "match": "Exit from here at the bottom, grab the hidden *Dusk Ball*",
+    "map": 850,
+    "title": "Aegir Cave: Dusk Ball and lake Ultra Ball",
+    "items": [
+      { "event": 32 },
+      { "event": 35 }
+    ]
+  },
+  {
+    "id": "balm-mushroom",
+    "match": "Exit from here at the bottom, grab the hidden *Dusk Ball*",
+    "map": 850,
+    "title": "Aegir Cave: Balm Mushroom",
+    "items": [
+      { "event": 36 }
+    ]
+  },
+  {
+    "id": "lake-dive",
+    "match": "Back down on the large lake, dive down.",
+    "map": 851,
+    "title": "Aegir Cave: dive in the large lake",
+    "items": [
+      { "event": 10 },
+      { "event": 13 },
+      { "event": 9 },
+      { "event": 12 }
+    ]
+  },
+  {
+    "id": "stick",
+    "match": "Surface, then talk to Serra near the bottom of the lake.",
+    "map": 850,
+    "title": "Aegir Cave: Stick",
+    "items": [
+      { "event": 27 }
+    ]
+  }
+]

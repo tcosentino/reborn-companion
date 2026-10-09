@@ -1,0 +1,129 @@
+[
+  {
+    "id": "route-3-start",
+    "match": "Grab the hidden *Potion*. Head right from here.",
+    "map": 361,
+    "title": "Route 3",
+    "items": [
+      { "event": 39 },
+      { "event": 52 },
+      { "event": 46 }
+    ]
+  },
+  {
+    "id": "route-3-cave-first",
+    "match": "Inside this cave you can find a hidden *Hyper Potion*",
+    "map": 405,
+    "title": "Route 3 Cave",
+    "items": [
+      { "event": 10 },
+      { "event": 12 },
+      { "event": 8, "label": "Repel (north)" },
+      { "event": 11, "label": "Repel (east)" },
+      { "event": 13 },
+      { "event": 9 }
+    ]
+  },
+  {
+    "id": "route-3-outside-first",
+    "match": "Exit the door at the bottom. Outside, you can find a hidden *Max Elixir*",
+    "map": 404,
+    "title": "Outside the first cave",
+    "items": [
+      { "event": 64 },
+      { "event": 66 },
+      { "event": 63 }
+    ]
+  },
+  {
+    "id": "route-3-cave-second",
+    "match": "Enter the next cave. Inside you can find hidden *PokeSnax*",
+    "map": 409,
+    "title": "Second cave entrance",
+    "items": [
+      { "event": 8 },
+      { "event": 11 }
+    ]
+  },
+  {
+    "id": "route-3-cave-beyond",
+    "match": "Beyond you can find a hidden *Max Potion* and *Tiny Mushroom*.",
+    "map": 409,
+    "title": "Beyond the Meteor grunts",
+    "items": [
+      { "event": 26 },
+      { "event": 7 }
+    ]
+  },
+  {
+    "id": "route-3-panel-room",
+    "match": "In this room, you can get hidden *Repeat Ball*",
+    "map": 410,
+    "title": "Panel room",
+    "items": [
+      { "event": 20 },
+      { "event": 4 },
+      { "event": 19 }
+    ]
+  },
+  {
+    "id": "route-3-cave-exit",
+    "match": "Pick up the hidden *Super Repel* and *Poke Ball*.",
+    "map": 409,
+    "title": "Super Repel and Poke Ball",
+    "items": [
+      { "event": 32 },
+      { "event": 10 }
+    ]
+  },
+  {
+    "id": "route-3-outside-x-defend",
+    "match": "Pick up the hidden *Super Repel* and *Poke Ball*.",
+    "map": 404,
+    "title": "Outside: X Defend",
+    "items": [
+      { "event": 67 }
+    ]
+  },
+  {
+    "id": "route-3-hop-rocks",
+    "match": "Right before the hop rocks you can get a hidden *Green Shard*.",
+    "map": 404,
+    "title": "Before the hop rocks",
+    "items": [
+      { "event": 68 }
+    ]
+  },
+  {
+    "id": "route-3-cave-third",
+    "match": "In here, you can get a hidden *Blast Powder*, *Ultra Potion*",
+    "map": 411,
+    "title": "Third cave",
+    "items": [
+      { "event": 7 },
+      { "event": 14 },
+      { "event": 8 }
+    ]
+  },
+  {
+    "id": "route-3-lccc-cave",
+    "match": "After the fight, go to the left and grab *TM43 Flame Charge*",
+    "map": 411,
+    "title": "Cave after the fight",
+    "items": [
+      { "event": 10 },
+      { "event": 9 }
+    ]
+  },
+  {
+    "id": "route-3-outside-last",
+    "match": "After the fight, go to the left and grab *TM43 Flame Charge*",
+    "map": 404,
+    "title": "Outside: toward Route 4",
+    "items": [
+      { "event": 69 },
+      { "event": 89 },
+      { "event": 70 }
+    ]
+  }
+]

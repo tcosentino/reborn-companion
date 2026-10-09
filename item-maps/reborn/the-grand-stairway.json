@@ -1,5 +1,14 @@
 [
   {
+    "id": "stairs-rock-gem",
+    "match": "You can find a hidden *Rock Gem* on the stairs.",
+    "map": 79,
+    "title": "North Obsidia Ward: the stairs down",
+    "items": [
+      { "event": 112 }
+    ]
+  },
+  {
     "id": "stairs-top",
     "match": "You can find a hidden *Rock Gem* on the stairs.",
     "map": 177,
@@ -74,7 +83,17 @@
     "map": 178,
     "title": "B1F: upstairs on the far left",
     "items": [
-      { "event": 22 }
+      { "event": 22 },
+      { "event": 20 }
+    ]
+  },
+  {
+    "id": "second-path-green-shard",
+    "match": "Head down to the sequence of ledges again.",
+    "map": 179,
+    "title": "B2F: Green Shard on the second path",
+    "items": [
+      { "event": 31 }
     ]
   },
   {
@@ -88,6 +107,15 @@
       { "event": 37 },
       { "event": 39 },
       { "event": 28 }
+    ]
+  },
+  {
+    "id": "third-path",
+    "match": "Finally, we can take the huge series of ledges",
+    "map": 179,
+    "title": "B2F: third path from the left",
+    "items": [
+      { "event": 35 }
     ]
   }
 ]

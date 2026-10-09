@@ -1,0 +1,101 @@
+[
+  {
+    "id": "jasper-start",
+    "match": "To the left, grab a hidden *Super Potion*.",
+    "map": 130,
+    "title": "Jasper Ward: left of the start",
+    "items": [
+      { "event": 119 }
+    ]
+  },
+  {
+    "id": "jasper-pokemon-center",
+    "match": "Exit through the top right, where you'll find a Pokemon Center",
+    "map": 130,
+    "title": "Jasper Ward: near the Pokemon Center",
+    "items": [
+      { "event": 121 },
+      { "event": 38 }
+    ]
+  },
+  {
+    "id": "jasper-pecha",
+    "match": "Head back down into the building below the Pokemon Center",
+    "map": 130,
+    "title": "Jasper Ward: west side",
+    "items": [
+      { "event": 60 }
+    ]
+  },
+  {
+    "id": "forest-center",
+    "match": "Head towards the center of the area, and chop the wiggly tree nearby.",
+    "map": 132,
+    "title": "Malchous Forest Park: east of the center",
+    "items": [
+      { "event": 44 },
+      { "event": 93 },
+      { "event": 7 }
+    ]
+  },
+  {
+    "id": "forest-secret-passage",
+    "match": "Down from here you'll find some stairs leading to some grunts",
+    "map": 132,
+    "title": "Malchous Forest Park: secret passage",
+    "items": [
+      { "event": 6 },
+      { "event": 92 }
+    ]
+  },
+  {
+    "id": "forest-south",
+    "match": "Go right and down from here. You'll find a hidden *Purple Shard*",
+    "map": 132,
+    "title": "Malchous Forest Park: south",
+    "items": [
+      { "event": 5 }
+    ]
+  },
+  {
+    "id": "forest-gym-basement",
+    "match": "Head back up, talk to Heather for a heal, then climb the vines",
+    "map": 885,
+    "title": "Malchous Forest Park: main building",
+    "items": [
+      { "event": 3 },
+      { "event": 2 }
+    ]
+  },
+  {
+    "id": "forest-after-battle",
+    "match": "After the battle, you'll be sent outside.",
+    "map": 132,
+    "title": "Malchous Forest Park: outside the building",
+    "items": [
+      { "event": 58 },
+      { "event": 94 },
+      { "event": 36 }
+    ]
+  },
+  {
+    "id": "jasper-snax",
+    "match": "Head back to the main part of Jasper via the bottom right exit",
+    "map": 130,
+    "title": "Jasper Ward: hidden PokeSnax",
+    "items": [
+      { "event": 143 }
+    ]
+  },
+  {
+    "id": "jasper-outside",
+    "match": "Outside, you can now grab a *Paralyze Heal*",
+    "map": 130,
+    "title": "Jasper Ward: outside",
+    "items": [
+      { "event": 27 },
+      { "event": 97 },
+      { "event": 100 }
+    ]
+  }
+]

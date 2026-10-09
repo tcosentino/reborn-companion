@@ -1,5 +1,17 @@
 [
   {
+    "id": "arrival-area",
+    "match": "We will emerge in a new area.",
+    "map": 230,
+    "title": "Chrysolia Region: where the train arrives",
+    "items": [
+      { "event": 39 },
+      { "event": 36 },
+      { "event": 37 },
+      { "event": 38 }
+    ]
+  },
+  {
     "id": "tanzan-mountain",
     "match": "On this map, you'll find hidden *X Speed*, *PokeSnax*, *Hyper Potion*",
     "map": 231,

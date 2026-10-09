@@ -1,0 +1,120 @@
+[
+  {
+    "id": "teknite-1f",
+    "match": "In the first room, grab the hidden *Tamato Berry* then proceed to 2F.",
+    "map": 638,
+    "title": "Teknite Cave 1F",
+    "items": [
+      { "event": 3 }
+    ]
+  },
+  {
+    "id": "teknite-2f",
+    "match": "In the first room, grab the hidden *Tamato Berry* then proceed to 2F.",
+    "map": 639,
+    "title": "Teknite Cave 2F",
+    "items": [
+      { "event": 10 },
+      { "event": 11 }
+    ]
+  },
+  {
+    "id": "teknite-3f",
+    "match": "Grab the hidden *Purple Shard* then transform the field to Crystal Cavern.",
+    "map": 640,
+    "title": "Teknite Cave 3F",
+    "items": [
+      { "event": 13 }
+    ]
+  },
+  {
+    "id": "teknite-4f",
+    "match": "Switch to Crystal Cavern, then remove the obstacle. Grab the hidden *Iron*",
+    "map": 641,
+    "title": "Teknite Cave 4F",
+    "items": [
+      { "event": 8 },
+      { "event": 9 },
+      { "event": 10 },
+      { "event": 11 }
+    ]
+  },
+  {
+    "id": "teknite-3f-return",
+    "match": "Switch to Crystal Cavern, then remove the obstacle. Grab the hidden *Iron*",
+    "map": 640,
+    "title": "Teknite Cave 3F (return)",
+    "items": [
+      { "event": 14 }
+    ]
+  },
+  {
+    "id": "teknite-3-4f-lake",
+    "match": "Surf to a hidden *Repel* unless Taka is with you.",
+    "map": 645,
+    "title": "Teknite Cave 3-4F",
+    "items": [
+      { "event": 33 },
+      { "event": 34 }
+    ]
+  },
+  {
+    "id": "teknite-4f-east",
+    "match": "Surf to a hidden *Repel* unless Taka is with you.",
+    "map": 644,
+    "title": "Teknite Cave 4F (east)",
+    "items": [
+      { "event": 5 }
+    ]
+  },
+  {
+    "id": "ridge-boulders",
+    "match": "Pushing the strength boulders out of the way, hop across",
+    "map": 643,
+    "title": "Teknite Ridge corners",
+    "items": [
+      { "event": 49 },
+      { "event": 48 }
+    ]
+  },
+  {
+    "id": "teknite-4f-exit",
+    "match": "Pushing the strength boulders out of the way, hop across",
+    "map": 644,
+    "title": "Teknite Cave 4F (top left exit)",
+    "items": [
+      { "event": 6 }
+    ]
+  },
+  {
+    "id": "ridge-second",
+    "match": "On this map, you can find a hidden *Green Shard*, *Roseli Berry*",
+    "map": 646,
+    "title": "Teknite Ridge, second map",
+    "items": [
+      { "event": 17 },
+      { "event": 16 },
+      { "event": 20 },
+      { "event": 21 },
+      { "event": 18 },
+      { "event": 45 },
+      { "event": 37 },
+      { "event": 15 },
+      { "event": 46 }
+    ]
+  },
+  {
+    "id": "ridge-tailwind",
+    "match": "Hop your way to the next by the entrance to get the *Pidgeotite*.",
+    "map": 642,
+    "title": "Teknite Ridge, Tailwind map",
+    "items": [
+      { "event": 124 },
+      { "event": 123 },
+      { "event": 126 },
+      { "event": 128 },
+      { "event": 125 },
+      { "event": 101 }
+    ]
+  }
+]
