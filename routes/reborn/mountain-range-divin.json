@@ -1,0 +1,48 @@
+[
+  {
+    "id": "snowy-readout",
+    "match": "To the right, you'll find the *Snowy Mountain Field Readout*.",
+    "map": 398,
+    "title": "Underwater: Snowy Mountain Field Readout",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [88, 47], "label": "Snowy Mountain Field Readout (to the right)" },
+      { "at": [53, 21], "label": "Water Stone (up and to the right)" }
+    ]
+  },
+  {
+    "id": "pulse-readout-2",
+    "match": "To the right, you'll find the *Snowy Mountain Field Readout*.",
+    "map": 430,
+    "title": "Upper right dive spot: PULSE Readout 2",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [86, 28], "label": "PULSE Readout 2" }
+    ]
+  },
+  {
+    "id": "pulse-avalugg",
+    "match": "With 255 in Def and SpD, a respectable HP stat",
+    "map": 364,
+    "title": "Ametrine Mountain 2F: PULSE and the ladder up",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [34, 31], "label": "PULSE Avalugg (inside the iceberg)" }
+    ]
+  },
+  {
+    "id": "ladder-up",
+    "match": "With that out of the way, head up the now-open ladder",
+    "map": 364,
+    "title": "Ametrine Mountain 2F: ladder up",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [34, 31], "label": "PULSE Avalugg (just beaten)" },
+      { "at": [30, 7], "label": "Ladder up to 3F (now open)" }
+    ]
+  }
+]

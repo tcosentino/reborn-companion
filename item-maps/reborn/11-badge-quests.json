@@ -1,0 +1,13 @@
+[
+  {
+    "id": "magby-cave",
+    "match": "Inside, you can get *4 Exp. Candy XL*, a *Magmarizer*, and *Ghost Memory*.",
+    "map": 438,
+    "title": "Magby cave",
+    "items": [
+      { "event": 2 },
+      { "event": 1 },
+      { "event": 4 }
+    ]
+  }
+]

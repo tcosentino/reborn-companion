@@ -1,0 +1,14 @@
+[
+  {
+    "id": "clown-indra",
+    "match": "Before we proceed, one more thing to note in the circus is the colorful clown",
+    "map": 355,
+    "title": "Agate Circus: Clown Indra",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [40, 15], "label": "Clown Indra (Rainbow Challenge)" },
+      { "at": [30, 12], "label": "Big Top entrance" }
+    ]
+  }
+]

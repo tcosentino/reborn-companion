@@ -9,5 +9,43 @@
       { "at": [72, 25], "via": true },
       { "at": [46, 14], "label": "Elekid trade house" }
     ]
+  },
+  {
+    "id": "calcenon-overview",
+    "match": "Inside the Pokemon Center, a person will tell you about the password",
+    "map": 413,
+    "title": "Calcenon City: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [45, 27], "label": "Pokemon Center (Munchlax trade)" },
+      { "at": [46, 14], "label": "Elekid trade house" },
+      { "at": [33, 9], "label": "Gym" },
+      { "at": [20, 27], "label": "Hardy, Saphira, Charlotte (west side)" },
+      { "at": [77, 26], "label": "Route 4 exit" }
+    ]
+  },
+  {
+    "id": "route-4-exit-back",
+    "match": "Anyways, walk over to the Route 4 exit and talk to Charlotte inside.",
+    "map": 413,
+    "title": "Calcenon City: Route 4 exit",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [77, 26], "label": "Route 4 exit (Charlotte inside)" }
+    ]
+  },
+  {
+    "id": "checkpoint-charlotte",
+    "match": "Anyways, walk over to the Route 4 exit and talk to Charlotte inside.",
+    "map": 418,
+    "title": "Checkpoint: Charlotte",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [16, 7], "label": "Entrance from the city" },
+      { "at": [23, 8], "label": "Charlotte" }
+    ]
   }
 ]

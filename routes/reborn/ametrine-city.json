@@ -9,5 +9,94 @@
       { "at": [48, 94], "label": "Rotom house" },
       { "at": [31, 88], "label": "Tall building (Pidove trade on 2F)" }
     ]
+  },
+  {
+    "id": "city-overview",
+    "match": "Enter the small building nearby.",
+    "map": 439,
+    "title": "Ametrine City: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [78, 93], "label": "Old man's building (Glitch Field Readout)" },
+      { "at": [81, 113], "label": "Pokemon Center" },
+      { "at": [73, 113], "label": "House next to the Pokemon Center (glitch computer)" },
+      { "at": [40, 119], "label": "Ice rink" },
+      { "at": [34, 108], "label": "Building above the ice rink (Battle Pass)" },
+      { "at": [65, 93], "label": "Blake's apartment (center of town)" }
+    ]
+  },
+  {
+    "id": "rink-and-gravity",
+    "match": "Talk to the people around the ice rink to progress the story.",
+    "map": 439,
+    "title": "Ice rink, Battle Pass house and exit",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [40, 119], "label": "Ice rink (talk to people)" },
+      { "at": [34, 108], "label": "Building above the rink (Battle Pass - Gravity)" },
+      { "at": [35, 113], "label": "Shelly" },
+      { "at": [38, 133], "label": "Rink exit at the bottom (TM95 Snarl)" }
+    ]
+  },
+  {
+    "id": "apartment-door",
+    "match": "From here, head up to the now-open apartment at the center of town.",
+    "map": 439,
+    "title": "Blake's apartment",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [65, 93], "label": "Apartment entrance (center of town)" }
+    ]
+  },
+  {
+    "id": "apartment-lobby",
+    "match": "From here, head up to the now-open apartment at the center of town.",
+    "map": 457,
+    "title": "Apartment: lobby",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [6, 11], "label": "Entrance" },
+      { "at": [4, 3], "label": "Receptionist" },
+      { "at": [7, 2], "label": "Stairs up to Blake's floor" }
+    ]
+  },
+  {
+    "id": "blakes-room",
+    "match": "Under the left couch you'll find *3 Coins*,",
+    "map": 457,
+    "title": "Blake's room: search spots",
+    "spots": true,
+    "pad": 2,
+    "points": [
+      { "at": [20, 9], "label": "Left couch (3 Coins)" },
+      { "at": [24, 14], "label": "Chair at the bottom (1 Coin)" },
+      { "at": [33, 15], "label": "Bottom right sofa (2 Coins)" },
+      { "at": [21, 6], "label": "Trash can at the top (key head)" },
+      { "at": [22, 7], "label": "Game console (Program Disc)" },
+      { "at": [23, 13], "label": "Drawer at the bottom (key handle)" },
+      { "at": [20, 6], "label": "Cabinet at the top (power cable)" },
+      { "at": [20, 16], "label": "Computer (cable and disc)" },
+      { "at": [20, 10], "label": "Flower pot: 4" },
+      { "at": [33, 10], "label": "Flower pot: 1" },
+      { "at": [20, 13], "label": "Flower pot: 3" },
+      { "at": [33, 16], "label": "Flower pot: 6" }
+    ]
+  },
+  {
+    "id": "small-house-and-mart",
+    "match": "Before we leave Ametrine City, enter the small house just south of Blake's apartment",
+    "map": 439,
+    "title": "Banettite house and Pokemart",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [65, 93], "label": "Blake's apartment" },
+      { "at": [69, 100], "label": "Small house south of the apartment (Banettite)" },
+      { "at": [12, 94], "label": "Pokemart (Magmarizer)" }
+    ]
   }
 ]

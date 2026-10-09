@@ -1,0 +1,24 @@
+[
+  {
+    "id": "route-4-hidden",
+    "match": "Throughout Route 4 you can find 2 hidden *Heart Scales*",
+    "map": 412,
+    "title": "Route 4 hidden items",
+    "items": [
+      { "event": 26 },
+      { "event": 27 },
+      { "event": 28 },
+      { "event": 29 },
+      { "event": 30 },
+      { "event": 31 },
+      { "event": 32 },
+      { "event": 33 },
+      { "event": 34 },
+      { "event": 35 },
+      { "event": 36 },
+      { "event": 44 },
+      { "event": 45 },
+      { "event": 56 }
+    ]
+  }
+]

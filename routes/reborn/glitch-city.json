@@ -21,5 +21,129 @@
       { "at": [2, 17], "label": "Dubious Disc" }
     ],
     "hide": [14, 15]
+  },
+  {
+    "id": "big-top-entrance",
+    "match": "Enter the Big Top and talk to Samson in the back.",
+    "map": 356,
+    "title": "Big Top: way to the back room",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [14, 30], "label": "Entrance from the circus" },
+      { "at": [30, 19], "label": "Door to the back room (Samson)" }
+    ]
+  },
+  {
+    "id": "mt-moon-places",
+    "match": "In Mt. Moon, pick up 2 *Potions*",
+    "map": 445,
+    "title": "Mt. Moon: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [15, 23], "label": "Sign: Welcome to Mt.b00ty" },
+      { "at": [14, 36], "label": "Exit at the bottom" }
+    ]
+  },
+  {
+    "id": "opal-ward-places",
+    "match": "Exit out the bottom.",
+    "map": 447,
+    "title": "Opal Ward: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [26, 24], "label": "Entrance from Mt. Moon" },
+      { "at": [26, 32], "label": "Timmy" },
+      { "at": [34, 32], "label": "NPC who talks about oddishweed" },
+      { "at": [7, 32], "label": "Ladder in the glitchy mess (to Rocket Hideout)" }
+    ]
+  },
+  {
+    "id": "rocket-hideout-places",
+    "match": "Grab the *Super Potion* and make your way through the tile maze",
+    "map": 448,
+    "title": "Rocket Hideout: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [27, 3], "label": "Entrance from Opal Ward" },
+      { "at": [2, 20], "label": "Red (bottom left corner)" },
+      { "at": [25, 15], "label": "Elevator exit to Lavender Town" }
+    ]
+  },
+  {
+    "id": "lavender-places",
+    "match": "When you get to the other side, use the elevator and not the stairs.",
+    "map": 449,
+    "title": "Lavender Town: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [19, 18], "label": "NPC who talks about M3GAT3RR4" },
+      { "at": [20, 28], "label": "Grave at the bottom" },
+      { "at": [18, 20], "label": "House nearby (to Byxbysion Wasteland)" }
+    ]
+  },
+  {
+    "id": "byxbysion-places",
+    "match": "Enter the house nearby the NPC to continue.",
+    "map": 450,
+    "title": "Byxbysion Wasteland: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [43, 38], "label": "Entrance from Lavender Town" },
+      { "at": [32, 33], "label": "Computer (talk for the Terra point)" },
+      { "at": [11, 35], "label": "Door at the top left (Pokemon Mansion)" }
+    ]
+  },
+  {
+    "id": "mansion-upstairs-gap",
+    "match": "Back upstairs, enter the smaller of two gaps to proceed.",
+    "map": 451,
+    "title": "Pokemon Mansion: diary and the gap",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [7, 13], "label": "Diary" },
+      { "at": [20, 15], "label": "Smaller gap (to Citae Astrae)" }
+    ]
+  },
+  {
+    "id": "citae-astrae-exit",
+    "match": "These Porygon are always Shiny!",
+    "map": 452,
+    "title": "Citae Astrae: exit",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [18, 22], "label": "Exit at the bottom" }
+    ]
+  },
+  {
+    "id": "victory-road-exit",
+    "match": "Victory Road? This isn't like any Victory Road",
+    "map": 453,
+    "title": "Victory Road: exit",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [10, 7], "label": "Exit at the top" }
+    ]
+  },
+  {
+    "id": "cerulean-places",
+    "match": "In Cerulean Cave you can get a *Max Repel*.",
+    "map": 455,
+    "title": "Cerulean Cave: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [27, 8], "label": "Max Repel" },
+      { "at": [25, 16], "label": "Light Shard" },
+      { "at": [12, 13], "label": "Door onward to the gym" }
+    ]
   }
 ]

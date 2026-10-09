@@ -1,0 +1,90 @@
+[
+  {
+    "id": "cascade-west",
+    "match": "Hidden are *Water Gem*, 2 *PokeSnax*, *Potion*, *Calcium*",
+    "map": 372,
+    "title": "Celestinine Cascade West",
+    "items": [
+      { "event": 55 },
+      { "event": 56 },
+      { "event": 57 },
+      { "event": 58 },
+      { "event": 59 },
+      { "event": 60 },
+      { "event": 61 },
+      { "event": 62 },
+      { "event": 63 },
+      { "event": 64 },
+      { "event": 65 },
+      { "event": 66 },
+      { "event": 67 },
+      { "event": 54 }
+    ]
+  },
+  {
+    "id": "cascade-east-surf-side",
+    "match": "Hidden are *Water Gem*, 2 *PokeSnax*, *Potion*, *Calcium*",
+    "map": 359,
+    "title": "Celestinine Cascade East (surf side)",
+    "items": [
+      { "event": 16 },
+      { "event": 19 },
+      { "event": 20 },
+      { "event": 21 },
+      { "event": 24 },
+      { "event": 29 }
+    ]
+  },
+  {
+    "id": "citrine-1f-hidden",
+    "match": "Hidden on this floor you'll find 7 *Shoal Salts*",
+    "map": 381,
+    "title": "Citrine Mountain 1F hidden items",
+    "items": [
+      { "event": 13 },
+      { "event": 14 },
+      { "event": 15 },
+      { "event": 18 },
+      { "event": 19 },
+      { "event": 20 },
+      { "event": 22 },
+      { "event": 23 },
+      { "event": 24 },
+      { "event": 25 },
+      { "event": 26 },
+      { "event": 5 }
+    ]
+  },
+  {
+    "id": "citrine-2f-zinc",
+    "match": "On the top there is a ladder that will take us to a different side",
+    "map": 382,
+    "title": "Citrine Mountain 2F: Zinc and Ultra Ball",
+    "items": [
+      { "event": 60 },
+      { "event": 59 }
+    ]
+  },
+  {
+    "id": "celestinine-1f-hidden",
+    "match": "Hidden on this map are a *Super Potion*, and a *Full Heal*.",
+    "map": 380,
+    "title": "Celestinine Mountain 1F",
+    "items": [
+      { "event": 39 },
+      { "event": 40 },
+      { "event": 37 }
+    ]
+  },
+  {
+    "id": "crustle-cave-items",
+    "match": "Inside this cave you can get an *Elemental Seed*",
+    "map": 636,
+    "title": "Crustle cave items",
+    "items": [
+      { "event": 7 },
+      { "event": 10 },
+      { "event": 11 }
+    ]
+  }
+]

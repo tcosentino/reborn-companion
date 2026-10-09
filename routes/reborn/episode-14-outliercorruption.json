@@ -1,0 +1,14 @@
+[
+  {
+    "id": "dive-house",
+    "match": "After your gym fight, enter the building in the bottom left side of Calcenon.",
+    "map": 413,
+    "title": "Calcenon: the Dive house",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [28, 31], "label": "Dive house (TMX6 Dive, Hardy inside)" },
+      { "at": [33, 9], "label": "Gym" }
+    ]
+  }
+]

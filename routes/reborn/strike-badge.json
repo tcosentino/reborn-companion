@@ -1,0 +1,27 @@
+[
+  {
+    "id": "big-top-ringmaster",
+    "match": "Enter the Big Top for a fight.",
+    "map": 356,
+    "title": "Big Top: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [14, 30], "label": "Entrance from the circus" },
+      { "at": [15, 26], "label": "Ringmaster (fight)" },
+      { "at": [30, 19], "label": "Door to the back room" }
+    ]
+  },
+  {
+    "id": "back-room",
+    "match": "Enter the circus back room.",
+    "map": 357,
+    "title": "Back room: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [4, 11], "label": "Entrance from the Big Top" },
+      { "at": [14, 7], "label": "Where the group stands (Aya, Cain, Hardy, Terra, Ciel, Samson)" }
+    ]
+  }
+]

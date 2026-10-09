@@ -1,0 +1,51 @@
+[
+  {
+    "id": "glitch-mt-moon",
+    "match": "In Mt. Moon, pick up 2 *Potions*",
+    "map": 445,
+    "title": "Mt. Moon items",
+    "items": [
+      { "event": 9 },
+      { "event": 10 },
+      { "event": 11 },
+      { "event": 12 }
+    ]
+  },
+  {
+    "id": "glitch-rocket-super-potion",
+    "match": "Grab the *Super Potion* and make your way through the tile maze",
+    "map": 448,
+    "title": "Super Potion",
+    "items": [
+      { "event": 52 }
+    ]
+  },
+  {
+    "id": "glitch-mansion-iron",
+    "match": "In the Pokemon Mansion, grab the *Iron* to the right then press the switch.",
+    "map": 451,
+    "title": "Iron",
+    "items": [
+      { "event": 3 }
+    ]
+  },
+  {
+    "id": "glitch-mansion-disc",
+    "match": "Grab the *Dubious Disc* and hidden *Max Potion*.",
+    "map": 451,
+    "title": "Dubious Disc and Max Potion",
+    "items": [
+      { "event": 2 },
+      { "event": 4 }
+    ]
+  },
+  {
+    "id": "glitch-cerulean-max-repel",
+    "match": "In Cerulean Cave you can get a *Max Repel*.",
+    "map": 455,
+    "title": "Max Repel",
+    "items": [
+      { "event": 3 }
+    ]
+  }
+]

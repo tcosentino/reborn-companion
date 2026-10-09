@@ -132,5 +132,14 @@
       { "event": 49 },
       { "event": 160 }
     ]
+  },
+  {
+    "id": "ice-rink-snarl",
+    "match": "Talk to the people around the ice rink to progress the story.",
+    "map": 439,
+    "title": "TM95 Snarl at the rink exit",
+    "items": [
+      { "event": 165 }
+    ]
   }
 ]

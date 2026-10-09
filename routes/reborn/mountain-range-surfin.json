@@ -17,5 +17,56 @@
       { "at": [72, 44], "direct": true, "label": "Left side of the ice" }
     ],
     "pad": 3
+  },
+  {
+    "id": "cascade-west-places",
+    "match": "Surf to the left.",
+    "map": 372,
+    "title": "Cascade west: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [24, 40], "label": "Clown Indra (Politoed and Torkoal)" },
+      { "at": [16, 21], "label": "Another clown, up from Indra" },
+      { "at": [12, 8], "label": "Citrine Mountain entrance" }
+    ]
+  },
+  {
+    "id": "celestinine-1f-places",
+    "match": "Anyways, without Dive and Waterfall there isn't much else to do",
+    "map": 380,
+    "title": "Celestinine Mountain 1F: places in this section",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [41, 56], "label": "Exit to the cascade (heal shortcut)" },
+      { "at": [51, 6], "label": "Ladder to 2F (top right)" },
+      { "at": [63, 10], "label": "Ultra Ball spot (surf right)" }
+    ]
+  },
+  {
+    "id": "ametrine-2f-places",
+    "match": "Follow the body of water up from here to enter Ametrine Mountain 2F.",
+    "map": 364,
+    "title": "Ametrine Mountain 2F: places in this section",
+    "spots": true,
+    "pad": 10,
+    "points": [
+      { "at": [34, 31], "label": "Avalugg statue (Aya is near the iceberg)" },
+      { "at": [97, 39], "label": "Exit to Route 2 (area on the right)" },
+      { "at": [97, 20], "label": "Exit to Route 3" }
+    ]
+  },
+  {
+    "id": "crustle-cave-salandit",
+    "match": "There's also a Pokemon and a few items we can get right now using Surf",
+    "map": 636,
+    "title": "Crustle cave: Salandit",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [13, 13], "label": "Cave entrance" },
+      { "at": [13, 6], "label": "Rock at the top (Salandit)" }
+    ]
   }
 ]

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "clown-indra-again",
+    "match": "By beating Charlotte, we now have access to stronger teams on Clown Indra.",
+    "map": 355,
+    "title": "Agate Circus: Clown Indra",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [40, 15], "label": "Clown Indra (upper right)" }
+    ]
+  }
+]

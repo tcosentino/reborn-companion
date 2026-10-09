@@ -1,0 +1,27 @@
+[
+  {
+    "id": "titania-in-mansion",
+    "match": "Return to the Celestinine Cascade and talk to Titania inside.",
+    "map": 362,
+    "title": "Fiore Mansion: Titania",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [15, 24], "label": "Mansion entrance" },
+      { "at": [11, 12], "label": "Titania (TMX3 Surf)" },
+      { "at": [12, 12], "label": "Titania's journal" },
+      { "at": [4, 13], "label": "Amaria" }
+    ]
+  },
+  {
+    "id": "mansion-door",
+    "match": "Return to the Celestinine Cascade and talk to Titania inside.",
+    "map": 359,
+    "title": "Cascade: Fiore Mansion door",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [22, 17], "label": "Fiore Mansion front door" }
+    ]
+  }
+]

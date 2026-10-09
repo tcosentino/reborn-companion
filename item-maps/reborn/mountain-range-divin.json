@@ -1,0 +1,52 @@
+[
+  {
+    "id": "first-dive",
+    "match": "Hidden down here, you'll find a hidden *Resist Wing* and a *Red Shard*.",
+    "map": 397,
+    "title": "First dive: Resist Wing and Red Shard",
+    "items": [
+      { "event": 2 },
+      { "event": 1 }
+    ]
+  },
+  {
+    "id": "second-dive",
+    "match": "Emerge at the other dive spot.",
+    "map": 380,
+    "title": "PokeSnax, TM82, Exp. Candy XL",
+    "items": [
+      { "event": 38 },
+      { "event": 17 },
+      { "event": 19 }
+    ]
+  },
+  {
+    "id": "water-stone",
+    "match": "To the right, you'll find the *Snowy Mountain Field Readout*.",
+    "map": 398,
+    "title": "Water Stone",
+    "items": [
+      { "event": 2 }
+    ]
+  },
+  {
+    "id": "ametrine-3f",
+    "match": "With that out of the way, head up the now-open ladder",
+    "map": 366,
+    "title": "Ametrine Mountain 3F (east side)",
+    "items": [
+      { "event": 28 },
+      { "event": 26 },
+      { "event": 30 }
+    ]
+  },
+  {
+    "id": "ametrine-4f-ice-gem",
+    "match": "With that out of the way, head up the now-open ladder",
+    "map": 373,
+    "title": "Ametrine Mountain 4F: Ice Gem",
+    "items": [
+      { "event": 16 }
+    ]
+  }
+]

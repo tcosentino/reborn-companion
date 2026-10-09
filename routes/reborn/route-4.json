@@ -1,0 +1,20 @@
+[
+  {
+    "id": "route-4-places",
+    "match": "Going up the left path first:",
+    "map": 412,
+    "title": "Route 4: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [60, 32], "label": "Path in from the lower Route 4" },
+      { "at": [19, 17], "label": "Trainer (northwest)" },
+      { "at": [25, 26], "label": "Trainer (west)" },
+      { "at": [19, 38], "label": "Trainer (southwest)" },
+      { "at": [41, 37], "label": "Trainer (center)" },
+      { "at": [56, 19], "label": "Trainer (northeast)" },
+      { "at": [32, 39], "label": "Campfire (Fire Memory)" },
+      { "at": [11, 18], "label": "Exit to Calcenon City" }
+    ]
+  }
+]

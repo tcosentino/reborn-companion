@@ -1,0 +1,39 @@
+[
+  {
+    "id": "bridge-gate",
+    "match": "Enter the gate at the bottom of Calcenon.",
+    "map": 413,
+    "title": "Calcenon: gate at the bottom",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [27, 41], "label": "Gate at the bottom (bridge guard)" },
+      { "at": [45, 27], "label": "Pokemon Center" }
+    ]
+  },
+  {
+    "id": "route-3-cave-ladder",
+    "match": "Enter the gate at the bottom of Calcenon.",
+    "map": 361,
+    "title": "Route 3: stairs, cave and ladder",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [24, 6], "label": "Stairs up from the gate" },
+      { "at": [38, 6], "label": "Cave (Exp. Candy XL, Magmarizer, Ghost Memory)" },
+      { "at": [37, 28], "label": "Ladder (shortcut to the circus)" }
+    ]
+  },
+  {
+    "id": "magby-house",
+    "match": "Inside, you can get *4 Exp. Candy XL*, a *Magmarizer*, and *Ghost Memory*.",
+    "map": 413,
+    "title": "Calcenon: Magby trade house",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [45, 27], "label": "Pokemon Center" },
+      { "at": [54, 31], "label": "House right of the Pokemon Center (Magby trade)" }
+    ]
+  }
+]

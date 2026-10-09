@@ -125,5 +125,14 @@
       { "event": 89 },
       { "event": 70 }
     ]
+  },
+  {
+    "id": "lccc-storage-tm43",
+    "match": "After the fight, go to the left and grab *TM43 Flame Charge* in the storage room.",
+    "map": 407,
+    "title": "TM43 in the storage room",
+    "items": [
+      { "event": 3 }
+    ]
   }
 ]
