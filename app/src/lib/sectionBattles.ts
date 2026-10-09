@@ -2,7 +2,7 @@
 // Chapter JSON is lazy-loaded, so the sidebar and resume card read this compact file instead.
 // Only type-erasable TS here: the build script runs under Node's native type stripping.
 import type { Chapter, GuideIndex } from '../data/types'
-import { itemCardIds } from './itemMaps.ts'
+import { itemCardIds, itemLinkGroups } from './itemMaps.ts'
 import { taskRefs, type TaskRef } from './tasks.ts'
 
 // [battle id (same key as the progress checklist), "Class Name" label]
@@ -17,6 +17,9 @@ export interface SectionBattles {
   // Section id -> its item map checkbox ids (lib/itemMaps.ts, `hidden` checklist). Not counted in progress totals,
   // like hidden-item screenshots; listed so the progress-id baseline guards them. Absent when the build had no map dump.
   i?: Record<string, string[]>
+  // Groups of checkbox ids that are the same game item on several checklists (lib/itemMaps.ts itemLinkGroups).
+  // Ticking one ticks all. Absent when nothing is shared.
+  l?: string[][]
 }
 
 interface BattleLike {
@@ -42,15 +45,18 @@ export const buildSectionBattles = (index: GuideIndex, chapters: Map<string, Cha
   const s: Record<string, BattleRef[]> = {}
   const t: Record<string, TaskRef[]> = {}
   const i: Record<string, string[]> = {}
+  const linkable: { id: string; blocks: never[] }[] = []
   for (const c of index.chapters) {
     for (const sec of chapters.get(c.file)?.sections ?? []) {
       const refs = battleRefs(sec.blocks as BattleLike[])
       if (refs.length) s[sec.id ?? c.id] = refs
       const tasks = taskRefs(sec.blocks)
       if (tasks.length) t[sec.id ?? c.id] = tasks
+      linkable.push({ id: sec.id ?? '', blocks: sec.blocks as never[] })
       const items = itemCardIds(sec.blocks)
       if (items.length) i[sec.id ?? c.id] = items
     }
   }
-  return { v: 1, s, t, ...(Object.keys(i).length ? { i } : {}) }
+  const l = itemLinkGroups(linkable)
+  return { v: 1, s, t, ...(Object.keys(i).length ? { i } : {}), ...(l.length ? { l } : {}) }
 }

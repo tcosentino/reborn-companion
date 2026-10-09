@@ -124,7 +124,7 @@ const main = (game: string, suggest: boolean) => {
     const m = mapOf(d.map)
     const marks = Object.entries(d.events).sort(([a], [b]) => a.localeCompare(b)).map(([key, ev]) => {
       const e = m.events.find(x => x.id === ev)!
-      return { key, x: e.x, y: e.y }
+      return { key, event: ev, x: e.x, y: e.y }
     })
     const box = cropBox(marks.map(k => [k.x, k.y] as Tile), m.width, m.height, d.pad)
     const png = file.replace(/\.\w+$/, '.png')
@@ -132,8 +132,8 @@ const main = (game: string, suggest: boolean) => {
     const hash = renderCached(imgDir, png, [JSON.stringify(box), readFileSync(join(maps, `map${d.map}.json`))],
       () => writePng(renderMap(m, tilesets[m.tileset], load, box)))
     return {
-      mapName: m.name, src: `maps/${game}-items/${png}?v=${hash}`, w: box.w, h: box.h,
-      marks: marks.map(k => ({ key: k.key, x: k.x - box.x, y: k.y - box.y }))
+      mapId: d.map, mapName: m.name, src: `maps/${game}-items/${png}?v=${hash}`, w: box.w, h: box.h,
+      marks: marks.map(k => ({ key: k.key, event: k.event, x: k.x - box.x, y: k.y - box.y }))
     }
   }
 

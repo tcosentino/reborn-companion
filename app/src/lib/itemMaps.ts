@@ -13,10 +13,13 @@ export interface HiddenMapDef {
   pad?: number
 }
 
-export interface ItemMark { key: string; x: number; y: number }
+// event: the map event id behind the marker (hidden-item screenshots; lets the same item be linked across checklists)
+export interface ItemMark { key: string; event?: number; x: number; y: number }
 
 // Attached to an ImageBlock. Marks are relative to the crop, in 32 px tiles
 export interface ItemMap {
+  // Game map id, so the same item (map + event) can be linked across checklists
+  mapId?: number
   mapName: string
   // Map crop, relative to the app's BASE_URL
   src: string
@@ -181,6 +184,46 @@ export const itemCardIds = (blocks: { type: string }[]): string[] =>
   blocks.flatMap(b => b.type === 'itemMap'
     ? (b as ItemCardBlock).marks.map(m => itemCheckId((b as ItemCardBlock).section, (b as ItemCardBlock).id, m.event))
     : [])
+
+// One game item (map + event) can sit on several checklists: item cards in different sections, or a hidden-item
+// screenshot. Each group lists every checkbox id (in the `hidden` checklist) for the same item; only groups with
+// two or more ids are kept. Ids are unchanged, so stored progress stays valid. Written to battles.json as `l`.
+interface LinkBlock { type: string; mapId?: number; map?: { mapId?: number; marks: { key: string; event?: number }[] }; file?: string; section?: string; id?: string; marks?: { key: string; event?: number }[] }
+
+export const itemLinkGroups = (sections: { id: string; blocks: LinkBlock[] }[]): string[][] => {
+  const byItem = new Map<string, Set<string>>()
+  const add = (mapId: number | undefined, event: number | undefined, id: string) => {
+    if (mapId === undefined || event === undefined) return
+    const k = `${mapId}:${event}`
+    byItem.set(k, (byItem.get(k) ?? new Set()).add(id))
+  }
+  for (const sec of sections) {
+    for (const b of sec.blocks) {
+      if (b.type === 'itemMap' && b.section && b.id) {
+        for (const m of b.marks ?? []) add(b.mapId, m.event, itemCheckId(b.section, b.id, m.event as number))
+      } else if (b.type === 'image' && b.map && b.file) {
+        for (const m of b.map.marks) add(b.map.mapId, m.event, `${sec.id}:${b.file}:${m.key}`)
+      }
+    }
+  }
+  return [...byItem.values()].filter(s => s.size > 1).map(s => [...s].sort())
+}
+
+// Checked state with links applied: an id counts as checked when it or any linked id is
+export const expandLinked = (done: Record<string, boolean>, groups: string[][]): Record<string, boolean> => {
+  let out = done
+  for (const g of groups) {
+    if (!g.some(id => done[id])) continue
+    if (out === done) out = { ...done }
+    g.forEach(id => { out[id] = true })
+  }
+  return out
+}
+
+// Every id to write when toggling `id`: its whole group (or just itself when unlinked)
+export const linkedIds = (index: Map<string, string[]>, id: string): string[] => index.get(id) ?? [id]
+
+export const linkIndex = (groups: string[][]): Map<string, string[]> => new Map(groups.flatMap(g => g.map(id => [id, g] as const)))
 
 // A map event that gives an item, as recorded by scripts/dump-maps.rb
 export interface ItemEventInfo { id: number; x: number; y: number; item: string; hidden: boolean }

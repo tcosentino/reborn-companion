@@ -31,13 +31,21 @@ export const useChecklist = (game: string, list: Checklist) => {
     listeners.forEach(l => l())
   }, [game, list])
 
+  // Set or clear several ids in one write
+  const setMany = useCallback((ids: string[], on: boolean) => {
+    const next = { ...read(game, list) }
+    ids.forEach(id => { if (on) next[id] = true; else delete next[id] })
+    try { localStorage.setItem(key(game, list), JSON.stringify(next)) } catch { /* storage unavailable */ }
+    listeners.forEach(l => l())
+  }, [game, list])
+
   // Replace the whole list (order of `ids` is kept)
   const replace = useCallback((ids: string[]) => {
     try { localStorage.setItem(key(game, list), JSON.stringify(Object.fromEntries(ids.map(id => [id, true])))) } catch { /* storage unavailable */ }
     listeners.forEach(l => l())
   }, [game, list])
 
-  return { done, toggle, replace }
+  return { done, toggle, replace, setMany }
 }
 
 export const useProgress = (game: string) => useChecklist(game, 'progress')

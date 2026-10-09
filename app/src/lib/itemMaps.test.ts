@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import {
-  assignLetters, cropBox, foldImages, itemCardIds, itemCardMarks, itemCheckId, itemEventInfo, itemSyms, rankMaps, suggestHiddenMap,
+  assignLetters, cropBox, expandLinked, itemLinkGroups, linkIndex, linkedIds, foldImages, itemCardIds, itemCardMarks, itemCheckId, itemEventInfo, itemSyms, rankMaps, suggestHiddenMap,
   validateItemCardDefs, type ItemCardBlock, type ItemCardDef, type ItemEventInfo, type ItemMapCandidate
 } from './itemMaps'
 import { insertAfterParagraphs } from './routes'
@@ -118,5 +118,52 @@ describe('item map cards', () => {
     const r = foldImages(blocks, new Map([['b.png', 'north'], ['c.png', 'south']]))
     expect(r.blocks).toEqual([{ type: 'image', file: 'a.png' }, { type: 'image', file: 'b.png', itemCard: 'north' }])
     expect(r.missing).toEqual(['c.png'])
+  })
+})
+
+describe('item links', () => {
+  const card = (section: string, id: string, mapId: number, events: number[]) => ({
+    type: 'itemMap', section, id, mapId, marks: events.map(event => ({ key: String(event), event }))
+  })
+  const shot = (file: string, mapId: number, marks: Record<string, number>) => ({
+    type: 'image', file, map: { mapId, marks: Object.entries(marks).map(([key, event]) => ({ key, event })) }
+  })
+  const sections = [
+    { id: 'a', blocks: [card('a', 'hideout', 165, [24, 25]), shot('hidden001.png', 333, { A: 57 })] },
+    { id: 'b', blocks: [card('b', 'hideout', 165, [24]), card('b', 'other', 7, [24])] },
+    { id: 'c', blocks: [card('c', 'water', 333, [57])] }
+  ]
+
+  it('groups the same map and event across cards and hidden screenshots', () => {
+    expect(itemLinkGroups(sections)).toEqual([['item:a/hideout/24', 'item:b/hideout/24'], ['a:hidden001.png:A', 'item:c/water/57']])
+  })
+
+  it('does not link different maps with the same event id or unlinked items', () => {
+    const groups = itemLinkGroups(sections).flat()
+    expect(groups).not.toContain('item:b/other/24')
+    expect(groups).not.toContain('item:a/hideout/25')
+  })
+
+  it('ignores marks without a map id or event', () => {
+    expect(itemLinkGroups([{ id: 'a', blocks: [shot('hidden001.png', 1, {}), { type: 'image', file: 'x.png' }, { type: 'itemMap', section: 'a', id: 'c', marks: [{ key: '1', event: 1 }] }] }])).toEqual([])
+  })
+
+  it('shows an id checked when any linked id is, without touching unrelated ids', () => {
+    const groups = itemLinkGroups(sections)
+    const done = expandLinked({ 'item:b/hideout/24': true, 'item:a/hideout/25': true }, groups)
+    expect(done['item:a/hideout/24']).toBe(true)
+    expect(done['item:a/hideout/25']).toBe(true)
+    expect(done['item:c/water/57']).toBeUndefined()
+  })
+
+  it('returns the same object when nothing is linked and checked', () => {
+    const done = { x: true }
+    expect(expandLinked(done, itemLinkGroups(sections))).toBe(done)
+  })
+
+  it('toggles the whole group, or just the id when unlinked', () => {
+    const index = linkIndex(itemLinkGroups(sections))
+    expect(linkedIds(index, 'item:a/hideout/24')).toEqual(['item:a/hideout/24', 'item:b/hideout/24'])
+    expect(linkedIds(index, 'item:b/other/24')).toEqual(['item:b/other/24'])
   })
 })

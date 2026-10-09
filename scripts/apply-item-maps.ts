@@ -70,7 +70,7 @@ const main = (game: string) => {
       () => writePng(renderMap(map, tilesets[map.tileset], load, box)))
     return {
       type: 'itemMap', id: def.id, section, ...(def.title ? { title: def.title } : {}),
-      mapName: map.name, src: `maps/${game}-item-cards/${file}?v=${hash}`, w: box.w, h: box.h,
+      mapId: def.map, mapName: map.name, src: `maps/${game}-item-cards/${file}?v=${hash}`, w: box.w, h: box.h,
       marks: itemCardMarks(def, events as Map<number, ItemEventInfo>, box, itemName),
       ...(shot ? { shot } : {})
     }
