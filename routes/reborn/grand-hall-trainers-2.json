@@ -1,0 +1,15 @@
+[
+  {
+    "id": "grand-hall-battlers",
+    "match": "After defeating Julia, the trainers in the Grand Hall have gotten stronger.",
+    "map": 38,
+    "title": "Grand Hall: where the daily trainers are",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [14, 28], "label": "Grand Hall entrance" },
+      { "at": [18, 7], "label": "Desk NPC (a different battler each day)" },
+      { "at": [24, 7], "label": "Weekday battlers (north-east of the hall)" }
+    ]
+  }
+]

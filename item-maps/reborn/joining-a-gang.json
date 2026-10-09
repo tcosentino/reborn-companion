@@ -1,0 +1,22 @@
+[
+  {
+    "id": "magma-hideout-items",
+    "match": "Once you make it in, you'll find *TM46 Thief*",
+    "map": 165,
+    "title": "Magma hideout items",
+    "items": [
+      { "event": 24 },
+      { "event": 37 },
+      { "event": 36, "label": "X Attack (not in the guide)" }
+    ]
+  },
+  {
+    "id": "aqua-hideout-items",
+    "match": "Once you make it in, you'll find *TM41 Torment*",
+    "map": 170,
+    "title": "Aqua hideout items",
+    "items": [
+      { "event": 36 }
+    ]
+  }
+]

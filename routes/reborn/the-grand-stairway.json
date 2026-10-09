@@ -1,0 +1,111 @@
+[
+  {
+    "id": "stairway-cain-officer",
+    "match": "Talk to Cain here, and he will distract an officer so you can slip by.",
+    "map": 79,
+    "title": "North Obsidia Ward: Cain and the Grand Stairway",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [31, 26], "label": "Cain (distracts the officer)" },
+      { "at": [25, 20], "label": "Grand Stairway entrance (slip past the officer)" }
+    ]
+  },
+  {
+    "id": "stairway-b1f-places",
+    "match": "We will eventually need both a Chimecho and a Dunsparce",
+    "map": 178,
+    "title": "Grand Stairway B1F: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [33, 27], "label": "Arrival (ladder from the top of the stairs)" },
+      { "at": [20, 19], "label": "Ladder down to B2F" }
+    ]
+  },
+  {
+    "id": "stairway-b2f-arrival",
+    "match": "Pick up a hidden *Red Shard* and a *Dire Hit* to the right.",
+    "map": 179,
+    "title": "Grand Stairway B2F: arrival",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [21, 8], "label": "Arrival (ladder from B1F)" }
+    ]
+  },
+  {
+    "id": "stairway-crystal-room",
+    "match": "\"The Crystals glimmer with fissures\"",
+    "map": 512,
+    "title": "Crystal room: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [10, 14], "label": "Entrance (from B3F)" },
+      { "at": [5, 11], "label": "Crystals (use Magnitude or Bulldoze)" },
+      { "at": [16, 8], "label": "Crystal Cavern Field Readout" }
+    ]
+  },
+  {
+    "id": "stairway-b3f-places",
+    "match": "Talk to the guy in the center here, then head to the left",
+    "map": 180,
+    "title": "Grand Stairway B3F: places in this section",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [28, 22], "label": "Guy in the center (talk first)" },
+      { "at": [12, 26], "label": "Two trainers on the left (battle, Victoria partners)" },
+      { "at": [10, 26], "label": "Exit to North Obsidia Ward (Victoria's fast travel)" }
+    ]
+  },
+  {
+    "id": "stairway-victoria-fern",
+    "match": "You can accept Victoria's fast travel request afterwards.",
+    "map": 79,
+    "title": "North Obsidia Ward: Victoria and Fern",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [25, 20], "label": "Grand Stairway entrance (you arrive here)" },
+      { "at": [25, 29], "label": "Victoria (battle), then Fern right next to her" }
+    ]
+  },
+  {
+    "id": "stairway-nightclub-dj",
+    "match": "Head to the nightclub up and to the right.",
+    "map": 79,
+    "title": "North Obsidia Ward: the nightclub",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [36, 22], "label": "Nightclub" },
+      { "at": [35, 23], "label": "DJ Arclight (outside the nightclub)" }
+    ]
+  },
+  {
+    "id": "stairway-lapis-gym",
+    "match": "Head back to Lapis Ward and attempt to enter the gym.",
+    "map": 80,
+    "title": "Lapis Ward: the gym",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [56, 60], "label": "Checkpoint from North Obsidia Ward" },
+      { "at": [41, 12], "label": "Lapis Gym (top of the ward)" }
+    ]
+  },
+  {
+    "id": "stairway-orphanage",
+    "match": "Head into the gym and go upstairs.",
+    "map": 80,
+    "title": "Lapis Ward: gym and orphanage",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [41, 12], "label": "Lapis Gym (go upstairs)" },
+      { "at": [30, 53], "label": "Orphanage (center of Lapis Ward)" }
+    ]
+  }
+]

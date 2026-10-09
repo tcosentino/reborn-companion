@@ -1,0 +1,13 @@
+[
+  {
+    "id": "florinia-arena-exit",
+    "match": "Exit Florinia's Arena.",
+    "map": 127,
+    "title": "Florinia's Arena: the way out",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [9, 15], "label": "Arena exit (to the quiz room)" }
+    ]
+  }
+]

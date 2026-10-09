@@ -5,20 +5,8 @@
     "map": 130,
     "title": "Meteor Grunt back left to the building",
     "points": [
-      {
-        "at": [
-          67,
-          33
-        ],
-        "label": "Meteor Grunt"
-      },
-      {
-        "at": [
-          32,
-          31
-        ],
-        "label": "Building entrance"
-      }
+      { "at": [67, 33], "label": "Meteor Grunt" },
+      { "at": [32, 31], "label": "Building entrance" }
     ]
   },
   {
@@ -27,20 +15,168 @@
     "map": 130,
     "title": "Out the bottom to Malchous Forest Park",
     "points": [
-      {
-        "at": [
-          19,
-          31
-        ],
-        "label": "Building's bottom exit"
-      },
-      {
-        "at": [
-          8,
-          35
-        ],
-        "label": "Malchous Forest Park"
-      }
+      { "at": [19, 31], "label": "Building's bottom exit" },
+      { "at": [8, 35], "label": "Malchous Forest Park" }
+    ]
+  },
+  {
+    "id": "jasper-gate-peridot",
+    "match": "Leave this house, and head into the Jasper gate to your right.",
+    "map": 57,
+    "title": "Peridot Ward: the Jasper gate",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [42, 25], "label": "Jasper gate (stairs up to Jasper Ward)" }
+    ]
+  },
+  {
+    "id": "jasper-gate-guard",
+    "match": "Leave this house, and head into the Jasper gate to your right.",
+    "map": 423,
+    "title": "Jasper gate: the guard",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [9, 10], "label": "Guard (talk to him to get through)" },
+      { "at": [9, 2], "label": "Exit to Jasper Ward" }
+    ]
+  },
+  {
+    "id": "jasper-places",
+    "match": "It's worth noting that when we have like 11 more badges",
+    "map": 130,
+    "title": "Jasper Ward: places in this section",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [52, 38], "label": "Arrival from the Jasper gate" },
+      { "at": [49, 32], "label": "Police station (Corey and Heather outside)" },
+      { "at": [67, 33], "label": "Meteor Grunt (to the right)" },
+      { "at": [32, 31], "label": "Building with trainers (south entrance)" },
+      { "at": [34, 14], "label": "Pokemon Center" },
+      { "at": [36, 23], "label": "Emolga (clear morning or day)" },
+      { "at": [8, 35], "label": "To Malchous Forest Park (bottom-left exit)" },
+      { "at": [8, 14], "label": "To Malchous Forest Park (top-left exit)" }
+    ]
+  },
+  {
+    "id": "forest-entrance-first-grunt",
+    "match": "From here, backtrack to the entrance of the forest.",
+    "map": 132,
+    "title": "Malchous Forest Park: entrance and the first grunt",
+    "spots": true,
+    "pad": 5,
+    "points": [
+      { "at": [99, 41], "label": "Forest entrance (from Jasper)" },
+      { "at": [53, 9], "label": "Meteor Grunt (top of the third stairs)" }
+    ]
+  },
+  {
+    "id": "forest-second-grunt",
+    "match": "Chop down the wiggly tree here.",
+    "map": 132,
+    "title": "Wiggly tree and the second grunt",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [46, 13], "label": "Wiggly tree (chop it)" },
+      { "at": [48, 19], "label": "Meteor Grunt (left, one stair down)" }
+    ]
+  },
+  {
+    "id": "forest-heather-gym",
+    "match": "Head back up, talk to Heather for a heal,",
+    "map": 132,
+    "title": "Heather, the pillar and the main building",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [47, 34], "label": "Heather (heal)" },
+      { "at": [45, 30], "label": "Vine pillar (climb it)" },
+      { "at": [56, 29], "label": "Main building door (jump down inside)" }
+    ]
+  },
+  {
+    "id": "forest-top-right-exit",
+    "match": "Exit Malchous Forest Park in the top right corner.",
+    "map": 132,
+    "title": "Malchous Forest Park: top-right exit",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [106, 14], "label": "Exit (top right) to Jasper Ward" }
+    ]
+  },
+  {
+    "id": "jasper-first-house-grunt",
+    "match": "Exit Malchous Forest Park in the top right corner.",
+    "map": 130,
+    "title": "Jasper Ward: the first house and its neighbour",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [8, 14], "label": "Malchous top-right exit (you arrive here)" },
+      { "at": [19, 14], "label": "First house (grunt, Police Officer #1)" },
+      { "at": [24, 14], "label": "Building next door (elevator to 5F)" }
+    ]
+  },
+  {
+    "id": "jasper-quest-building",
+    "match": "Past the Pokemon Center, enter the first building you see.",
+    "map": 130,
+    "title": "Past the Pokemon Center: the quest building",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [34, 14], "label": "Pokemon Center" },
+      { "at": [44, 14], "label": "First building past it (quest guy, elevator room)" }
+    ]
+  },
+  {
+    "id": "jasper-mareep-house",
+    "match": "Outside, you can now grab a *Paralyze Heal*",
+    "map": 130,
+    "title": "Jasper Ward: the Mareep building",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [76, 25], "label": "Small building (Mareep)" }
+    ]
+  },
+  {
+    "id": "jasper-south-exit",
+    "match": "Before we continue into the next ward, there's a quick thing we can do.",
+    "map": 130,
+    "title": "Jasper Ward: south exit and the Mareep building",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [76, 25], "label": "Mareep building" },
+      { "at": [52, 38], "label": "South exit (shortcut stairs down to Peridot)" }
+    ]
+  },
+  {
+    "id": "peridot-first-house",
+    "match": "Before we continue into the next ward, there's a quick thing we can do.",
+    "map": 57,
+    "title": "Peridot Ward: the first house to the right",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [42, 25], "label": "Jasper gate (you arrive here)" },
+      { "at": [53, 29], "label": "First house to the right (girls: sticker and TM88)" }
+    ]
+  },
+  {
+    "id": "jasper-top-right-stairs",
+    "match": "Back in Jasper, return to the top-right corner and head up",
+    "map": 130,
+    "title": "Jasper Ward: up to the next ward",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [76, 8], "label": "Stairs up to Beryl Ward (top-right corner)" }
     ]
   }
 ]

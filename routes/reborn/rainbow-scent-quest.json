@@ -1,0 +1,37 @@
+[
+  {
+    "id": "laura-obsidia-park",
+    "match": "Head down to the Obsidia Park area.",
+    "map": 36,
+    "title": "Obsidia Ward: where to find Laura",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [59, 33], "label": "Obsidia Park entrance" },
+      { "at": [50, 29], "label": "Laura (pink-haired girl)" }
+    ]
+  },
+  {
+    "id": "peridot-alley-entrance",
+    "match": "Laura tells us that she is looking for three Pokemon",
+    "map": 57,
+    "title": "Peridot Ward: Upper Peridot Alleyway entrance",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [83, 35], "label": "Upper Peridot Alleyway entrance" }
+    ]
+  },
+  {
+    "id": "peridot-alley-comfey",
+    "match": "Laura tells us that she is looking for three Pokemon",
+    "map": 58,
+    "title": "Upper Peridot Alleyway: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [8, 19], "label": "Exit to Peridot Ward" },
+      { "at": [8, 7], "label": "Comfey (with the gentleman)" }
+    ]
+  }
+]

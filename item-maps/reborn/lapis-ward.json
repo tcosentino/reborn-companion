@@ -1,0 +1,25 @@
+[
+  {
+    "id": "lapis-north-hidden",
+    "match": "Hidden around the ward you can find *Great Ball*",
+    "map": 80,
+    "title": "Hidden items in the north of Lapis Ward",
+    "items": [
+      { "event": 118 },
+      { "event": 133 },
+      { "event": 119 }
+    ]
+  },
+  {
+    "id": "lapis-south-hidden",
+    "match": "Hidden around the ward you can find *Great Ball*",
+    "map": 80,
+    "title": "Hidden items in the south of Lapis Ward",
+    "items": [
+      { "event": 120 },
+      { "event": 122 },
+      { "event": 121 },
+      { "event": 22 }
+    ]
+  }
+]

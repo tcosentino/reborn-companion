@@ -1,0 +1,83 @@
+[
+  {
+    "id": "beryl-jungle-doors",
+    "match": "Back in Beryl, head left.",
+    "map": 149,
+    "title": "Beryl Ward: doors into the jungle",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [8, 24], "label": "Doors into Rhodochrine Jungle (left edge)" },
+      { "at": [23, 16], "label": "Library entrance" }
+    ]
+  },
+  {
+    "id": "jungle-healing-house",
+    "match": "All players following along should now be in the same place",
+    "map": 150,
+    "title": "Rhodochrine Jungle: the healing house",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [142, 53], "label": "Healing house (east side of the jungle)" }
+    ]
+  },
+  {
+    "id": "jungle-back-to-healing-house",
+    "match": "Our next move is going to be to head all the way back to the healing house",
+    "map": 150,
+    "title": "Back to the healing house",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [142, 53], "label": "Healing house (heal here)" }
+    ]
+  },
+  {
+    "id": "jungle-sunkern-trade",
+    "match": "Grab a hidden *Blue Shard* as you make your way left.",
+    "map": 150,
+    "title": "The building with the PC and the Sunkern trade",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [86, 70], "label": "Building (PC, Sunkern trade)" }
+    ]
+  },
+  {
+    "id": "jungle-tropius",
+    "match": "You'll find a hidden *Calcium* here.",
+    "map": 150,
+    "title": "Tropius (sunny days)",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [18, 56], "label": "Tropius (sunny days only)" }
+    ]
+  },
+  {
+    "id": "jungle-stantler",
+    "match": "Back in the Underroot, take the path up from here and cut the wiggly tree.",
+    "map": 150,
+    "title": "Stantler",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [34, 53], "label": "Stantler" }
+    ]
+  },
+  {
+    "id": "library-rooms",
+    "match": "You can walk on the tops of bookshelves in here",
+    "map": 426,
+    "title": "Library: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [6, 26], "label": "Library entrance" },
+      { "at": [1, 20], "label": "TM20 Safeguard (bottom-left, on the bookshelves)" },
+      { "at": [20, 8], "label": "Right room door (Ill-Fated Doll, Growlithe)" },
+      { "at": [9, 8], "label": "Left room door (a man, Radomus)" }
+    ]
+  }
+]

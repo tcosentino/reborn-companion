@@ -1,0 +1,20 @@
+[
+  {
+    "id": "north-obsidia-hidden",
+    "match": "You'll find hidden *Zinc*, *X Sp. Def*, *Super Potion*",
+    "map": 79,
+    "title": "Hidden items around North Obsidia Ward",
+    "pad": 4,
+    "items": [
+      { "event": 109 },
+      { "event": 110 },
+      { "event": 115 },
+      { "event": 111 },
+      { "event": 114 },
+      { "event": 143 },
+      { "event": 141 },
+      { "event": 153 },
+      { "event": 113 }
+    ]
+  }
+]

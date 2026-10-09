@@ -1,0 +1,54 @@
+[
+  {
+    "id": "beryl-town",
+    "match": "Around the town, you can find 2 hidden *Blue Shards*",
+    "map": 142,
+    "title": "Hidden items around Beryl",
+    "items": [
+      { "event": 29 },
+      { "event": 30 },
+      { "event": 31 },
+      { "event": 32 }
+    ]
+  },
+  {
+    "id": "beryl-hill",
+    "match": "Around the town, you can find 2 hidden *Blue Shards*",
+    "map": 151,
+    "title": "Hidden items on the Beryl hill",
+    "items": [
+      { "event": 22 },
+      { "event": 23 }
+    ]
+  },
+  {
+    "id": "beryl-cemetery-items",
+    "match": "Continuing to the left into the cemetery area",
+    "map": 152,
+    "title": "Beryl Cemetery",
+    "items": [
+      { "event": 43 },
+      { "event": 42 }
+    ]
+  },
+  {
+    "id": "library-left-room",
+    "match": "Next, we're gonna head back through the jungle to get to the library.",
+    "map": 427,
+    "title": "Library left room",
+    "items": [
+      { "event": 9 }
+    ]
+  },
+  {
+    "id": "jungle-ace-area",
+    "match": "Back in the jungle, explore around the area where we fought Ace.",
+    "map": 150,
+    "title": "Jungle near the Ace fight",
+    "items": [
+      { "event": 153 },
+      { "event": 154 },
+      { "event": 157 }
+    ]
+  }
+]

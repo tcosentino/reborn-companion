@@ -1,0 +1,28 @@
+[
+  {
+    "id": "school-gym-door",
+    "match": "With all that out of the way we can head back to the gym.",
+    "map": 119,
+    "title": "Trainers' School: the way to the Gym",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [9, 14], "label": "School entrance (from Onyx Ward)" },
+      { "at": [2, 6], "label": "Gym door (to Fern and the quiz room)" },
+      { "at": [9, 10], "label": "Fern" }
+    ]
+  },
+  {
+    "id": "quiz-room",
+    "match": "Head to the left and enter the gym room for a battle.",
+    "map": 126,
+    "title": "Quiz room: places in this section",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [8, 14], "label": "Entrance (back to Fern's room)" },
+      { "at": [6, 10], "label": "Quiz guard (answer the questions)" },
+      { "at": [8, 8], "label": "Gym room door (opens after the quiz)" }
+    ]
+  }
+]

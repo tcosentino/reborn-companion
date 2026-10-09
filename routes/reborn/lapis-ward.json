@@ -5,20 +5,8 @@
     "map": 80,
     "title": "Checkpoint to the very tall building",
     "points": [
-      {
-        "at": [
-          55,
-          60
-        ],
-        "label": "From North Obsidia (checkpoint)"
-      },
-      {
-        "at": [
-          30,
-          55
-        ],
-        "label": "Very tall building"
-      }
+      { "at": [55, 60], "label": "From North Obsidia (checkpoint)" },
+      { "at": [30, 55], "label": "Very tall building" }
     ]
   },
   {
@@ -27,27 +15,9 @@
     "map": 80,
     "title": "Up to the top of the ward",
     "points": [
-      {
-        "at": [
-          30,
-          55
-        ],
-        "label": "Very tall building"
-      },
-      {
-        "at": [
-          22,
-          40
-        ],
-        "via": true
-      },
-      {
-        "at": [
-          37,
-          9
-        ],
-        "label": "Purple haired girl and red haired guy"
-      }
+      { "at": [30, 55], "label": "Very tall building" },
+      { "at": [22, 40], "via": true },
+      { "at": [37, 9], "label": "Purple haired girl and red haired guy" }
     ]
   },
   {
@@ -56,20 +26,8 @@
     "map": 80,
     "title": "To the Pledge move tutor",
     "points": [
-      {
-        "at": [
-          37,
-          9
-        ],
-        "label": "Top of the ward"
-      },
-      {
-        "at": [
-          27,
-          10
-        ],
-        "label": "Pledge tutor building"
-      }
+      { "at": [37, 9], "label": "Top of the ward" },
+      { "at": [27, 10], "label": "Pledge tutor building" }
     ]
   },
   {
@@ -78,20 +36,8 @@
     "map": 80,
     "title": "To the Sweet Scent Flower Shop",
     "points": [
-      {
-        "at": [
-          27,
-          11
-        ],
-        "label": "Pledge tutor building"
-      },
-      {
-        "at": [
-          13,
-          19
-        ],
-        "label": "Flower shop"
-      }
+      { "at": [27, 11], "label": "Pledge tutor building" },
+      { "at": [13, 19], "label": "Flower shop" }
     ]
   },
   {
@@ -100,34 +46,45 @@
     "map": 80,
     "title": "TM21 house, Pokemart, Drifloon sticker",
     "points": [
-      {
-        "at": [
-          14,
-          19
-        ],
-        "label": "Flower shop"
-      },
-      {
-        "at": [
-          18,
-          22
-        ],
-        "label": "Small house (TM21 Frustration)"
-      },
-      {
-        "at": [
-          30,
-          22
-        ],
-        "label": "Pokemart (TM07 Hail)"
-      },
-      {
-        "at": [
-          34,
-          23
-        ],
-        "label": "Mom's building (Drifloon sticker)"
-      }
+      { "at": [14, 19], "label": "Flower shop" },
+      { "at": [18, 22], "label": "Small house (TM21 Frustration)" },
+      { "at": [30, 22], "label": "Pokemart (TM07 Hail)" },
+      { "at": [34, 23], "label": "Mom's building (Drifloon sticker)" }
+    ]
+  },
+  {
+    "id": "lapis-alley-entrance",
+    "match": "You can enter the Alleyway towards the middle of the ward",
+    "map": 80,
+    "title": "Lapis Ward: the Alleyway entrance",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [41, 55], "label": "Lapis Alleyway entrance (do not talk to the guys yet)" },
+      { "at": [19, 55], "label": "Pokemon Center" }
+    ]
+  },
+  {
+    "id": "lapis-gym-door",
+    "match": "Enter the building in the middle of the top row of buildings",
+    "map": 80,
+    "title": "Lapis Ward: the gym and the pledge tutor",
+    "spots": true,
+    "pad": 6,
+    "points": [
+      { "at": [41, 12], "label": "Lapis Gym" },
+      { "at": [27, 10], "label": "Building just left of the gym (pledge tutor)" }
+    ]
+  },
+  {
+    "id": "lapis-exit-checkpoint",
+    "match": "Anyways, that's all we can do in Lapis for now",
+    "map": 80,
+    "title": "Lapis Ward: the way to North Obsidia",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [56, 60], "label": "Checkpoint to North Obsidia Ward" }
     ]
   }
 ]

@@ -8,5 +8,41 @@
       { "at": [25, 24], "label": "Elevator" },
       { "at": [5, 7], "label": "Makuhita" }
     ]
+  },
+  {
+    "id": "school-nurse-room",
+    "match": "First, head to the room containing the nurse in the Trainer School.",
+    "map": 120,
+    "title": "Trainers' School: the nurse room",
+    "spots": true,
+    "pad": 4,
+    "points": [
+      { "at": [10, 14], "label": "School entrance (from Onyx Ward)" },
+      { "at": [10, 4], "label": "Nurse" },
+      { "at": [3, 4], "label": "Girl on the left (TM100 Confide)" }
+    ]
+  },
+  {
+    "id": "slums-doctor-itemfinder",
+    "match": "Head into the Obsidia Slums.",
+    "map": 85,
+    "title": "Obsidia Slums 1F: entrance and elevator",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [49, 48], "label": "Slums entrance (doctor and child are nearby)" },
+      { "at": [13, 24], "label": "Elevator down to B1F (to the left)" }
+    ]
+  },
+  {
+    "id": "snubbull-apartment",
+    "match": "Finally, head to the apartment in the top left corner of Peridot Ward.",
+    "map": 57,
+    "title": "Peridot Ward: the top-left apartment",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [16, 30], "label": "Apartment (Snubbull / Stufful)" }
+    ]
   }
 ]

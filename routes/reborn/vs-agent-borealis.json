@@ -1,0 +1,40 @@
+[
+  {
+    "id": "borealis-gym-floor",
+    "match": "Head into the gym.",
+    "map": 162,
+    "title": "Beryl Gym: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [10, 21], "label": "Gym entrance" },
+      { "at": [11, 19], "label": "Chief (saved-officers route)" },
+      { "at": [15, 10], "label": "Door to Corey's bedroom (pillar puzzle)" },
+      { "at": [10, 3], "label": "Door up to the battle room" }
+    ]
+  },
+  {
+    "id": "borealis-arena",
+    "match": "Head up and into the battle room.",
+    "map": 370,
+    "title": "Battle room",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [9, 19], "label": "Entrance (from the gym floor)" },
+      { "at": [9, 6], "label": "Corey / Agent Borealis" }
+    ]
+  },
+  {
+    "id": "borealis-agent-room",
+    "match": "Talk to the agent in his room, then head up into the arena",
+    "map": 370,
+    "title": "The agent's room and arena",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [9, 19], "label": "Entrance (door at the top of the gym floor)" },
+      { "at": [9, 6], "label": "The agent (talk, then battle)" }
+    ]
+  }
+]

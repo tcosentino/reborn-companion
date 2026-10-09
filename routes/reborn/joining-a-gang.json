@@ -5,27 +5,9 @@
     "map": 80,
     "title": "Maxwell's shack, then Craudburry's house",
     "points": [
-      {
-        "at": [
-          55,
-          60
-        ],
-        "label": "From North Obsidia (checkpoint)"
-      },
-      {
-        "at": [
-          18,
-          22
-        ],
-        "label": "Shack right of the flower shop"
-      },
-      {
-        "at": [
-          18,
-          61
-        ],
-        "label": "Ms. Craudburry's house"
-      }
+      { "at": [55, 60], "label": "From North Obsidia (checkpoint)" },
+      { "at": [18, 22], "label": "Shack right of the flower shop" },
+      { "at": [18, 61], "label": "Ms. Craudburry's house" }
     ]
   },
   {
@@ -34,20 +16,8 @@
     "map": 80,
     "title": "To the Aqua Gang member",
     "points": [
-      {
-        "at": [
-          55,
-          60
-        ],
-        "label": "From North Obsidia (checkpoint)"
-      },
-      {
-        "at": [
-          29,
-          16
-        ],
-        "label": "Aqua Gang member"
-      }
+      { "at": [55, 60], "label": "From North Obsidia (checkpoint)" },
+      { "at": [29, 16], "label": "Aqua Gang member" }
     ]
   },
   {
@@ -56,20 +26,8 @@
     "map": 80,
     "title": "Alleyway to Archer's shack",
     "points": [
-      {
-        "at": [
-          40,
-          55
-        ],
-        "label": "Lapis Alleyway"
-      },
-      {
-        "at": [
-          18,
-          22
-        ],
-        "label": "Shack right of the flower shop"
-      }
+      { "at": [40, 55], "label": "Lapis Alleyway" },
+      { "at": [18, 22], "label": "Shack right of the flower shop" }
     ]
   },
   {
@@ -78,27 +36,9 @@
     "map": 80,
     "title": "Shack to Ms. Craudburry's house",
     "points": [
-      {
-        "at": [
-          18,
-          23
-        ],
-        "label": "Archer's shack"
-      },
-      {
-        "at": [
-          19,
-          55
-        ],
-        "label": "Pokemon Center"
-      },
-      {
-        "at": [
-          18,
-          61
-        ],
-        "label": "Ms. Craudburry's house"
-      }
+      { "at": [18, 23], "label": "Archer's shack" },
+      { "at": [19, 55], "label": "Pokemon Center" },
+      { "at": [18, 61], "label": "Ms. Craudburry's house" }
     ]
   },
   {
@@ -107,20 +47,8 @@
     "map": 80,
     "title": "To the Aqua Gang member",
     "points": [
-      {
-        "at": [
-          55,
-          60
-        ],
-        "label": "From North Obsidia (checkpoint)"
-      },
-      {
-        "at": [
-          29,
-          16
-        ],
-        "label": "Aqua Gang member"
-      }
+      { "at": [55, 60], "label": "From North Obsidia (checkpoint)" },
+      { "at": [29, 16], "label": "Aqua Gang member" }
     ]
   },
   {
@@ -129,20 +57,8 @@
     "map": 80,
     "title": "Craudburry's house to the cycle shop",
     "points": [
-      {
-        "at": [
-          18,
-          62
-        ],
-        "label": "Ms. Craudburry's house"
-      },
-      {
-        "at": [
-          19,
-          73
-        ],
-        "label": "Lapis Luxury Cycle"
-      }
+      { "at": [18, 62], "label": "Ms. Craudburry's house" },
+      { "at": [19, 73], "label": "Lapis Luxury Cycle" }
     ]
   },
   {
@@ -151,49 +67,82 @@
     "map": 79,
     "title": "North Obsidia: building left of the alleyway",
     "points": [
-      {
-        "at": [
-          8,
-          20
-        ],
-        "label": "From Lapis (checkpoint)"
-      },
-      {
-        "at": [
-          56,
-          22
-        ],
-        "label": "Building left of the alleyway (Zorua)"
-      },
-      {
-        "at": [
-          63,
-          18
-        ],
-        "label": "North Obsidia Alleyway"
-      }
+      { "at": [8, 20], "label": "From Lapis (checkpoint)" },
+      { "at": [56, 22], "label": "Building left of the alleyway (Zorua)" },
+      { "at": [63, 18], "label": "North Obsidia Alleyway" }
     ],
-    "hide": [
-      23,
-      24,
-      26,
-      27,
-      28,
-      33,
-      34,
-      37,
-      39,
-      40,
-      41,
-      42,
-      43,
-      44,
-      52,
-      59,
-      60,
-      72,
-      134,
-      135
+    "hide": [23, 24, 26, 27, 28, 33, 34, 37, 39, 40, 41, 42, 43, 44, 52, 59, 60, 72, 134, 135]
+  },
+  {
+    "id": "magma-alley-guards",
+    "match": "Talk to the guys guarding the North Obsidia alleyway for a battle.",
+    "map": 79,
+    "title": "North Obsidia Ward: the Magma alleyway",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [63, 18], "label": "North Obsidia Alleyway (Magma guards)" }
+    ]
+  },
+  {
+    "id": "magma-hideout",
+    "match": "Once you make it in, you'll find *TM46 Thief*",
+    "map": 165,
+    "title": "Magma hideout: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [32, 12], "label": "Alleyway entrance" },
+      { "at": [26, 11], "label": "Guards (battle)" },
+      { "at": [8, 12], "label": "Maxwell (in the back)" }
+    ]
+  },
+  {
+    "id": "magma-member-south",
+    "match": "We can now continue our ongoing stolen Pokemon quest as well. Just south of the North Obsidia alleyway you can find a Magma Gang member. He will tell",
+    "map": 79,
+    "title": "Magma Gang member south of the alleyway",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [63, 18], "label": "North Obsidia Alleyway" },
+      { "at": [54, 33], "label": "Magma Gang member (gives the Metronome)" }
+    ]
+  },
+  {
+    "id": "aqua-alley-guards",
+    "match": "Talk to the guys guarding the Lapis alleyway for a battle.",
+    "map": 80,
+    "title": "Lapis Ward: the Aqua alleyway",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [41, 55], "label": "Lapis Alleyway (Aqua guards)" }
+    ]
+  },
+  {
+    "id": "aqua-hideout",
+    "match": "Once you make it in, you'll find *TM41 Torment*",
+    "map": 170,
+    "title": "Aqua hideout: places in this section",
+    "spots": true,
+    "pad": 3,
+    "points": [
+      { "at": [0, 21], "label": "Alleyway entrance" },
+      { "at": [5, 21], "label": "Guards (battle)" },
+      { "at": [9, 8], "label": "Archer (in the back)" }
+    ]
+  },
+  {
+    "id": "craudburry-again",
+    "match": "Regardless of your gang choice, head over to Madame Craudburry's house once more.",
+    "map": 80,
+    "title": "Lapis Ward: Ms. Craudburry's house",
+    "spots": true,
+    "pad": 8,
+    "points": [
+      { "at": [19, 55], "label": "Pokemon Center" },
+      { "at": [18, 61], "label": "Ms. Craudburry's house" }
     ]
   }
 ]
