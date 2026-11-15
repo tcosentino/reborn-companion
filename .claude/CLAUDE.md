@@ -36,6 +36,16 @@ See `README.md` for the data pipeline, layout and run commands.
 - Cards for items the guide lists only in prose live in `item-maps/<game>/<section-id>.json` (see README "Item maps", authoring steps in `item-maps/AUTHORING.md`). One file per section; one card per map. Validate with `node scripts/maps.ts <game> items-check <section>` and look at `items-preview` before building.
 - Checkbox ids are `item:<section>/<card id>/<event id>` and are in the progress-id baseline: never rename a card `id` or replace an event id once shipped. If an upstream text change breaks a card's `match`, update it like a task `match`.
 
+## Guide conventions
+
+- Every location the guide sends the player to needs a map card: a route map (`routes/`) for directions, an item map (`item-maps/`) or hidden-item map (`hidden-maps/`) for items. Do not leave "head back to where X's house was" style prose as the only direction.
+- Every task gets a checkbox: add it in `tasks/<game>/<section-id>.json`; map cards already carry their own checklists.
+
+## Backlog
+
+- Out-of-scope findings and unfinished work go in `backlog/<slug>.md` (one file per item; format and rules in `backlog/README.md`). Not the walkthrough `tasks/`.
+- Start of a session: `node scripts/backlog.ts` to see open items. Add with `node scripts/backlog.ts add "<title>" --area <a> --priority <p>` and fill in Context / Done when so a fresh session can act on it. Close with `node scripts/backlog.ts done <slug>` in the same commit as the fix.
+
 ## Tests
 
 - `bash scripts/test.sh` (override, task and progress-id unit tests + upstream generator tests) and `cd app && yarn test`.
