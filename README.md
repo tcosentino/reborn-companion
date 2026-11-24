@@ -65,7 +65,7 @@ Fork the generator so it emits JSON instead of HTML tables:
 ## Planned layout
 
 ```
-pokemon-rebor/
+pokemon-reborn/
   upstream/          BIGJRA repo clone (gitignored; git clone https://github.com/BIGJRA/BIGJRA.github.io upstream)
   game-scripts/      local copy of Reborn Scripts/ (gitignored, never published)
   scripts/           extraction: Ruby JSON emitter and/or TS post-processing

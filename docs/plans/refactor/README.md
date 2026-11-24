@@ -17,7 +17,7 @@ Source: three read-only review agents (UI, lib and data, build pipeline) coverin
 ## Dispatch prompt (copy per task)
 
 ```
-You are executing refactor task <ID> in /Users/troycosentino/Claude-Experiments/pokemon-rebor.
+You are executing refactor task <ID> in /Users/troycosentino/Projects/games/pokemon-reborn.
 1. Read docs/plans/refactor/CONTRACT.md and follow it exactly.
 2. Read only the "## <ID>" section of docs/plans/refactor/<wave file>. Do that task and nothing else.
 3. Finish with the report format from the contract.
@@ -26,7 +26,7 @@ You are executing refactor task <ID> in /Users/troycosentino/Claude-Experiments/
 ## Wave review prompt (opus)
 
 ```
-Review refactor wave <N> in /Users/troycosentino/Claude-Experiments/pokemon-rebor.
+Review refactor wave <N> in /Users/troycosentino/Projects/games/pokemon-reborn.
 Read docs/plans/refactor/CONTRACT.md and docs/plans/refactor/<wave file>.
 Run `bash scripts/verify.sh --full`. Then read `git diff <wave-start-sha>..HEAD`.
 Check that each task did what its section says and nothing more. Check also:
