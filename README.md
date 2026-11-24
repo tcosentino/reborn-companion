@@ -93,6 +93,8 @@ pokemon-rebor/
 - [ ] Compact view
 - [ ] Deploy (possibly under troycosentino.com)
 
+Open work lives in [`backlog/`](backlog/README.md) (`node scripts/backlog.ts` lists it).
+
 ## Running locally
 
 ```
